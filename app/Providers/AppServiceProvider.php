@@ -32,9 +32,9 @@ class AppServiceProvider extends ServiceProvider
         //Carbon::setLocale($this->app->getLocale());
         Schema::defaultStringLength(191);
 
-        if ($this->app->environment('production')) {
+        /*if ($this->app->environment('production')) {
             \URL::forceScheme('https');
-        }
+        }*/
 
         Paginator::useBootstrap();
     }
