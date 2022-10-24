@@ -6,7 +6,7 @@
     </div>
 @endif
 
-<div class="container" id="pays" style="margin-top:100px">
+<div class="main-body" id="pays" style="padding-top:100px">
     <form action=" {{ route('book.reserve',['locale'=>App::getLocale()]) }}    " method="POST" id="reservations_ultimate" >
         @csrf   
     
