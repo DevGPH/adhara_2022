@@ -30,7 +30,7 @@ use Facade\Ignition\DumpRecorder\Dump;
 
 class ReservaController extends Controller
 {
-    private $endpoint = 'https:adharaexpress.com.mx/api/';
+    private $endpoint = 'https://adharaexpress.com.mx/api/';
 
     public function index(Request $request,$locale)
     {
