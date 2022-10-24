@@ -5,19 +5,12 @@
  </nav>
  <div class="owl-carousel owl-theme" id='carousel'>
     <div class="item">
-        {{-- <img src="{{ asset('images/sliders/tarifa_especial.png') }}" alt="">  --}}
-        <picture>
-            <source srcset="{{ asset('images/sliders/tarifa_especial_mob.png') }}" media="(max-width:575px)">
-            <img src="{{ asset('images/sliders/tarifa_especial.png') }}" alt=""> 
-        </picture>
+        <img src="{{ asset('images/sliders/tarifa_especial_mob.png') }}" class="d-block d-sm-none" alt=""> 
+        <img src="{{ asset('images/sliders/tarifa_especial.png') }}" class="d-none d-sm-block"  alt=""> 
     </div>
     <div class="item">
-        {{-- <img src="{{ asset('images/sliders/fachada.jpg') }}" alt=""> --}}
-        <picture>
-            <source srcset="{{ asset('images/sliders/fachada_mob.png') }}" media="(max-width:575px)">
-            <source srcset="{{ asset('images/sliders/fachada_md.png') }}" media="(max-width:930px)">
-            <img src="{{ asset('images/sliders/fachada.jpg') }}" alt=""> 
-        </picture>
+        <img src="{{ asset('images/sliders/fachada_mob.png') }}" class="d-block d-sm-none" alt=""> 
+        <img src="{{ asset('images/sliders/fachada.jpg') }}" class="d-none d-sm-block" alt=""> 
     </div>
 </div>
 

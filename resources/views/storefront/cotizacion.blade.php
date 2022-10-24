@@ -60,7 +60,7 @@
                 @else
                     @foreach ($estandar as $room)
                 
-                        <div class="col-3 col-lg-3 gray-bg d-flex align-items-center justify-content-center">
+                        <div class="col-3 col-lg-3 adhara-color d-flex align-items-center justify-content-center">
                             <div class="item-d">
                                 @if ($room['magica'])
                                     <img src="{{ asset('images/cotizacion/magica.png') }}" class="wand" alt="">
@@ -71,17 +71,17 @@
                         </div>
                         <div class="col-9 col-lg-9" style="padding: 0px;">
                             <div class="row" style="margin: 0px">
-                                <div class="col-4 gray-bg">
+                                <div class="col-4 adhara-color">
                                     @if ($room['plan_x_alimentos'] == 'Solo Habitacion')
                                         <p class="format-room">@lang('main.quotation-item011')</p>
                                     @else
                                         <p class="format-room">@lang('main.quotation-item012')</p>
                                     @endif
                                 </div>
-                                <div class="col-5 gray-bg">
+                                <div class="col-5 adhara-color">
                                     <p class='format-room'>@lang('main.quotation-item013')</p>
                                 </div>
-                                <div class="col-3 gray-bg border-empty">
+                                <div class="col-3 adhara-color border-empty">
                                     <p class="format-room" style="display: none">Send</p>
                                 </div>
                                 <div class="col-4">
