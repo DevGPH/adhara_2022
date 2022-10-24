@@ -30,6 +30,8 @@ use Facade\Ignition\DumpRecorder\Dump;
 
 class ReservaController extends Controller
 {
+    private $endpoint = 'https:adharaexpress.com.mx/api/';
+
     public function index(Request $request,$locale)
     {
 
@@ -144,7 +146,7 @@ class ReservaController extends Controller
             $full_date_2 = Carbon::parse($dates[1])->format('d F Y');
         }
 
-        $url = url('/').'/api/'.$locale.'/temporada-habitacion'; 
+        $url = $this->endpoint.$locale.'/temporada-habitacion'; 
 
         $response = Http::asForm()->post($url, [
             'checkIn' => $checkIn,
@@ -279,7 +281,7 @@ class ReservaController extends Controller
 
     public function store(Request $request )
     {
-        $url = url('/').'/api/es/reserva';
+        $url = $this->endpoint.'es/reserva';
 
         $response = Http::asForm()->post($url, [
                     'nombre' => $request->nombre,
