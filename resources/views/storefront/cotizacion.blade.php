@@ -114,7 +114,7 @@
                                         @foreach ($infantes_no_bf as $infante_no_bf)
                                             <input type="hidden" name="infantes_no_bf[]" value="{{ $infante_no_bf }}">
                                         @endforeach
-                                        <button type="submit" id="" class="btn btn-outline-danger btn-sm">@lang('main.quotation-item016')</button>
+                                        <button type="submit" id="" class="btn btn-outline-adhara btn-sm">@lang('main.quotation-item016')</button>
                                     </form>
                                 </div>
                             </div>

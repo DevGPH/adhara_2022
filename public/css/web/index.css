@@ -996,3 +996,20 @@ html,body h1,h2,h3,h4{
 .card{
     background-color: #F9EFE4 !important;
 }
+
+.btn-outline-adhara {
+  color: rgb(137, 44, 121);
+  border-color: rgb(137, 44, 121);
+}
+.btn-outline-adhara:hover {
+  color: #fff;
+  background-color: rgb(137, 44, 121);
+  border-color: rgb(137, 44, 121);
+}
+.btn-outline-adhara:focus, .btn-outline-adhara.focus {
+  box-shadow: 0 0 0 0.2rem rgba(227, 52, 47, 0.5);
+}
+.btn-outline-adhara.disabled, .btn-outline-adhara:disabled {
+  color: rgb(137, 44, 121);
+  background-color: transparent;
+}
