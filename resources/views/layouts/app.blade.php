@@ -16,7 +16,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <!-- Styles WEB -->
-    <link rel="stylesheet" href="{{ asset('css/web/index.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/web/inicio.css') }}">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,8 +24,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@200&display=swap" rel="stylesheet">
 	<!-- Cinzel Font -->
 	<link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
-	<!-- Questrial Font -->
-	<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+	<!-- Montserrat Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 

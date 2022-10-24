@@ -2,7 +2,7 @@
 font-family: 'Tangerine', cursive;*/
 
 html,body p,small{
-    font-family: 'Questrial', sans-serif !important;
+    font-family: 'Montserrat', sans-serif !important;
     font-weight: 300;
 }
 
@@ -639,7 +639,7 @@ html,body h1,h2,h3,h4{
 	display: block;
 	width: 100%;
 	color: #ffffff;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 13px;
 }
 .room_feature{
@@ -853,7 +853,7 @@ html,body h1,h2,h3,h4{
 }
 
 #initial-section p{
-    font-family: 'Questrial', sans-serif !important;
+    font-family: 'Montserrat', sans-serif !important;
     text-align: justify;
     letter-spacing: 0;
     font-size: 14px;
