@@ -5,6 +5,11 @@
         {{ session('error') }}
     </div>
 @endif
+<style>
+    #app{
+        margin-top: -20px;
+    }
+</style>
 
 <div class="main-body" id="pays" style="padding-top:100px">
     <form action=" {{ route('book.reserve',['locale'=>App::getLocale()]) }}    " method="POST" id="reservations_ultimate" >
