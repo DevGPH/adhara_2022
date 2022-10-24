@@ -32,4 +32,8 @@ Route::prefix('{locale}')->group(function ()
     Route::post('/booking',[ReservaController::class,'index'])->name('bookingP');// y que  con post al cambiar el idioma se recargaba la pagina y como ya no habia parametros en el requets fallaba  
     Route::get('/accommodations',[AccommodationsController::class,'accommodations'])->name('accommodations');
     Route::get('/menu_restaurant',[HomeController::class,'menu'])->name('menu.hotel');
+
+    Route::get('/reservations',[ReservaController::class,'reservations'])->name('reservations');
+    Route::post('/book-reserve',[ReservaController::class,'store'])->name('book.reserve');
+    Route::post('/contact_mail',[ReservaController::class,'contact_mail'])->name('contact_mail');
 });
