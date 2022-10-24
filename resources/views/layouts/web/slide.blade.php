@@ -5,16 +5,16 @@
  </nav>
  <div class="owl-carousel owl-theme" id='carousel'>
     <div class="item">
-        <img src="{{ asset('images/sliders/home_1.png') }}" class="d-block d-sm-none" alt=""> 
-        <img src="{{ asset('images/sliders/mob_1.png') }}" class="d-none d-sm-block"  alt=""> 
+        <img src="{{ asset('images/sliders/mob_1.png') }}" class="d-block d-sm-none" alt=""> 
+        <img src="{{ asset('images/sliders/home_1.png') }}" class="d-none d-sm-block"  alt=""> 
     </div>
     <div class="item">
-        <img src="{{ asset('images/sliders/home_2.png') }}" class="d-block d-sm-none" alt=""> 
-        <img src="{{ asset('images/sliders/mob_2.png') }}" class="d-none d-sm-block" alt=""> 
+        <img src="{{ asset('images/sliders/mob_2.png') }}" class="d-block d-sm-none" alt=""> 
+        <img src="{{ asset('images/sliders/home_2.png') }}" class="d-none d-sm-block" alt=""> 
     </div>
     <div class="item">
-        <img src="{{ asset('images/sliders/home_3.png') }}" class="d-block d-sm-none" alt=""> 
-        <img src="{{ asset('images/sliders/mob_3.png') }}" class="d-none d-sm-block" alt=""> 
+        <img src="{{ asset('images/sliders/mob_3.png') }}" class="d-block d-sm-none" alt=""> 
+        <img src="{{ asset('images/sliders/home_3.png') }}" class="d-none d-sm-block" alt=""> 
     </div>
 </div>
 
