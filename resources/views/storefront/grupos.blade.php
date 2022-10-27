@@ -11,17 +11,17 @@
 
         <div class="row">
             <div class="col-xs-12 col-sm-12">
-                <img src="{{ asset('images/habitaciones/estandar.png') }}" class="img-fluid">
+                <img src="{{ asset('images/grupos/suitcase.png') }}" class="img-fluid">
                 <h4>@lang('main.grupos-h')</h4>
                 <p>@lang('main.grupos-p')</p>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-xs-6 col-sm-6 col-md-6">
+            <div class="col-xs-6 col-sm-6 col-md-6" style="padding: 0px;">
                 <img src="@lang('main.grupos-home')" class="img-fluid">
             </div>
-            <div class="col-xs-6 col-sm-6 col-md-6">
+            <div class="col-xs-6 col-sm-6 col-md-6" style="padding: 0px;">
                 <img class="img-fluid" src="{{ asset('images/grupos/fachada.png') }}" alt="">
             </div>
         </div>
