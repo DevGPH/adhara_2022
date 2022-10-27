@@ -280,6 +280,9 @@ return [
     'login-item005' => '&#xBF;No tienes cuenta?, Registrarse',
     'login-item006' => '&#xBF;Qu&#xE9; es el Club Estrella?',
 
+    'slider-home' => '/images/sliders/tarifa_esp.png',
+    'slider-home-mob' => '/images/sliders/tarifa_mob_esp.png',
+
 
 
 

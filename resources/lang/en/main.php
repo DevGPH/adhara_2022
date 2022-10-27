@@ -284,4 +284,8 @@ return [
     'login-item006' => 'What is Club Estrella?',
 
 
+    'slider-home' => '/images/sliders/tarifa_en.png',
+    'slider-home-mob' => '/images/sliders/tarifa_mob_en.png',
+
+
 ];
