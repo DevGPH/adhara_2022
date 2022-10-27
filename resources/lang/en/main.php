@@ -286,6 +286,8 @@ return [
 
     'slider-home' => '/images/sliders/tarifa_en.png',
     'slider-home-mob' => '/images/sliders/tarifa_mob_en.png',
+    'slider-home-2' => '/images/sliders/tarifa_especial_en.png',
+    'slider-home-2-mob' => '/images/sliders/tarifa_especial_mob_en.png',
 
 
 ];
