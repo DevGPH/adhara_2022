@@ -33,6 +33,7 @@ Route::prefix('{locale}')->group(function ()
     Route::get('/accommodations',[AccommodationsController::class,'accommodations'])->name('accommodations');
     Route::get('/menu_adhara',[HomeController::class,'menu'])->name('menu.hotel');
     Route::get('/room_service',[HomeController::class,'roomService'])->name('room.service.hotel');
+    Route::get('/grupos',[HomeController::class,'grupos'])->name('grupos.hotel');
 
     Route::get('/reservations',[ReservaController::class,'reservations'])->name('reservations');
     Route::post('/book-reserve',[ReservaController::class,'store'])->name('book.reserve');

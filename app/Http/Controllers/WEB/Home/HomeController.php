@@ -71,6 +71,15 @@ class HomeController extends Controller
         ]);  
     }
 
+    public function grupos($locale)
+    {
+        $rate = $this->rateToday($locale);
+        return view('storefront.grupos')->with([
+            'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
+            'rate' => $rate
+        ]);
+    }
+
     public function getUserC(Request $request, $locale)
     {
         $response = Http::withHeaders([

@@ -290,4 +290,8 @@ return [
     'slider-home-2-mob' => '/images/sliders/tarifa_especial_mob_en.png',
 
 
+    'grupos-home' => '/images/grupos/grupos_en.png',
+    'grupos-h' => 'GROUPS',
+    'grupos-p' => 'You need 10 rooms per night , or more?',
+
 ];

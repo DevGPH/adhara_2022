@@ -286,7 +286,8 @@ return [
     'slider-home-2-mob' => '/images/sliders/tarifa_especial_mob_es.png',
 
 
-
-
+    'grupos-home' => '/images/grupos/grupos_es.png',
+    'grupos-h' => 'GRUPOS',
+    'grupos-p' => '¿Necesitas 10 habitaciones o más por noche?',
 
 ];
