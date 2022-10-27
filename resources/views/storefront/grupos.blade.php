@@ -11,9 +11,9 @@
 
         <div class="row">
             <div class="col-xs-12 col-sm-12">
-                <img src="{{ asset('images/grupos/suitcase.png') }}" class="img-fluid">
-                <h4>@lang('main.grupos-h')</h4>
-                <p>@lang('main.grupos-p')</p>
+                <img src="{{ asset('images/grupos/suitcase.png') }}" class="img-fluid" style="display: block;margin:0 auto; margin-bottom:20px;">
+                <h4 style="text-align: center;margin-bottom:20px;">@lang('main.grupos-h')</h4>
+                <p style="text-align: center;margin-bottom:50px;">@lang('main.grupos-p')</p>
             </div>
         </div>
 
