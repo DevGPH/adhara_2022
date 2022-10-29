@@ -289,6 +289,12 @@ return [
     'slider-home-2' => '/images/sliders/tarifa_especial_en.png',
     'slider-home-2-mob' => '/images/sliders/tarifa_especial_mob_en.png',
 
+    'slider-contacto' => '/images/sliders/contacto.png',
+    'slider-contacto-mob' => '/images/sliders/contacto_mob.png',
+
+    'slider-habitaciones' => '/images/sliders/habitaciones.png',
+    'slider-habitaciones-mob' => '/images/sliders/habitaciones_mob.png',
+
 
     'grupos-home' => '/images/grupos/grupos_en.png',
     'grupos-h' => 'GROUPS',

@@ -2,7 +2,7 @@
 
 @section('content')
   
-@include('layouts.web.slide')
+@include('layouts.web.section_habitacion')
 <!-- INICIO DEL BUSCADOR -->
 @include('layouts.web.buscador')
 <!-- FIN DEL BUSCADOR -->
