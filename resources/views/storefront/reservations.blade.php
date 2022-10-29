@@ -33,7 +33,7 @@
             <div class="row">
                 <div class="col-sm-12">
                     <hr>
-                    <h4 style="font-family: 'Montserrat', sans-serif;color: #b01b30;font-weight: bold;margin-bottom: 30px;">
+                    <h4 style="margin-bottom: 30px;">
                         @lang('main.reservations-item008')
                     </h4>
                 </div>
@@ -137,7 +137,7 @@
             <div class="row">
                 <div class="col-sm-12">
                     <hr>
-                    <button type="submit" id="activate" class="btn btn-danger"> @lang('main.reservations-item022')</button>
+                    <button type="submit" id="activate" class="btn btn-adhara"> @lang('main.reservations-item022')</button>
                     <input type="hidden" name="habitaciones"    value="{{ $habitaciones }}">  
                     <input type="hidden" name="checkIn"         value="{{ $checkIn }}">  
                     <input type="hidden" name="checkOut"        value="{{ $checkOut }}">  

@@ -1013,3 +1013,9 @@ html,body h1,h2,h3,h4{
   color: rgb(137, 44, 121);
   background-color: transparent;
 }
+
+.btn-adhara {
+    color: #fff;
+    background-color: rgb(137, 44, 121);
+    border-color: rgb(137, 44, 121);
+}

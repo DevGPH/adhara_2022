@@ -40,8 +40,8 @@
                                     <td align="center" height="70" style="height:70px;">
                                         <a href="" style="display: block; border-style: none !important; border: 0 !important;">
                                             <img border="0" style="display: block; width: 150px;margin-bottom:30px;"
-                                                src="https://adharaexpress.com.mx/images/logo.png"
-                                                alt="Adhara Express" />
+                                                src="https://adharaexpress.com.mx/images/adhara_email.png"
+                                                alt="Hotel Adhara Cancun" />
                                         </a>
                                     </td>
                                 </tr>
@@ -57,8 +57,8 @@
                                                     </a>
                                                 </td>
                                                 <td width="120" align="center">
-                                                    <a href="https://facebook.com/AdharaExpress" target='_blank'>
-                                                        <img src="https://adharaexpress.com.mx/images/icons/social_media/facebook.png" alt="Facebook Adhara Express" style="width:40px;">
+                                                    <a href="https://www.facebook.com/HotelAdharaCancun" target='_blank'>
+                                                        <img src="https://adharaexpress.com.mx/images/icons/social_media/facebook.png" alt="Facebook Adhara Cancun" style="width:40px;">
                                                     </a>
                                                 </td>
                                             </tr>
@@ -216,11 +216,15 @@
 
                                             <tr>
                                                 <td align="center">
-                                                    <a href=""
-                                                        style=" border-style: none !important; border: 0 !important;"><img
-                                                            src="https://adharaexpress.com.mx/images/home/pool.png"
-                                                            style="display: block; width: 280px;" width="280" border="0"
-                                                            alt="" /></a>
+                                                    <div class="mapouter">
+                                                        <div class="gmap_canvas">
+                                                            <iframe width="516" height="500" id="gmap_canvas" 
+                                                            src="https://maps.google.com/maps?q=hotel%20adhara%20cancun&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                                                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                                            <style>.mapouter{position:relative;text-align:right;height:300px;width:316px;}</style>
+                                                            <style>.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:316px;}</style>
+                                                        </div>
+                                                    </div>
                                                 </td>
                                             </tr>
                                         </table>
@@ -287,7 +291,7 @@
 
                                                     <div style="line-height: 24px">
                                                         
-                                                        Av Yaxchilán 41,22 <br>
+                                                        Av. Carlos Nader 1,2,3 SM.1, MZ.22 <br>
                                                         Cancún Quintana Roo, México <br>
                                                         CP: 77500 <br>
                                                         <a href="https://www.google.com.mx/maps/place/hotel+Adhara+Canc%C3%BAn/@21.167751,-86.8264317,17z/data=!3m1!4b1!4m8!3m7!1s0x8f4c2c02562a3f09:0x9d893fc7c288cf53!5m2!4m1!1i2!8m2!3d21.1677482!4d-86.824202" target="_blank" style="text-decoration: none;">Google Maps</a>
