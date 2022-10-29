@@ -34,9 +34,9 @@
     <div class="row" id='map-footer'>
         <div class="col-12 col-md-4 offset-md-4 col-lg-4 offset-lg-4 col-xl-4 offset-xl-4 col-xxl-4 offset-xxl-4">
             <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1860.3695097197567!2d-86.82930027690459!3d21.16278192360963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smx!4v1625164322134!5m2!1sen!2smx"
+                    src="https://maps.google.com/maps?q=hotel%20adhara%20cancun&t=&z=13&ie=UTF8&iwloc=&output=embed"
                     width="100%" style="border:0;" allowfullscreen="" loading="lazy" id='map-foot'></iframe>
-            <p class="text-c"> <strong>Av Yaxchilán 41,22, C.P. 77500 Cancún, Q.R.</strong> </p>
+            <p class="text-c"> <strong>Av. Carlos Nader 1,2,3 SM.1, MZ.2, C.P. 77500 Cancún, Q.R.</strong> </p>
         </div>
     </div>
     <div class="row" id='termino-footer'>
