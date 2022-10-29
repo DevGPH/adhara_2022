@@ -29,7 +29,7 @@
                 <li class="nav-item">
                     @if (Cookie::get('user'))
                     <div class="dropdown">
-                            <a class="nav-link" href="#" class="dropdown-toggle" id="logout" data-bs-toggle="dropdown" aria-expanded="false">{{ json_decode(Cookie::get('user'))->name }}</a>
+                            <a class="nav-link" href="#" class="dropdown-toggle" id="logout" data-bs-toggle="dropdown" aria-expanded="false" style="color:white;">{{ json_decode(Cookie::get('user'))->name }}</a>
                             
                             <ul class="dropdown-menu" aria-labelledby="logout">
                                 <li><a class="dropdown-item" href="/es/logout-clubestrella">@lang('main.nav-logout')</a></li>
