@@ -37,17 +37,17 @@
                         </div>
                     @else
                         @if (App::getLocale() == 'es')
-                            <a class="nav-link" href="#modal-login" data-bs-toggle="modal"><img src="{{ asset('images/icons/clubestrella_es.png') }}" class="club-main"> </a>  
+                            <a class="nav-link" href="#modal-login" data-bs-toggle="modal"><img src="{{ asset('images/icons/estrella_es.png') }}" class="club-main"> </a>  
                         @else
-                            <a class="nav-link" href="#modal-login" data-bs-toggle="modal"><img src="{{ asset('images/icons/clubestrella_en.png') }}" class="club-main"></a>
+                            <a class="nav-link" href="#modal-login" data-bs-toggle="modal"><img src="{{ asset('images/icons/estrella_en.png') }}" class="club-main"></a>
                         @endif
                     @endif
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{url('https://facebook.com/AdharaExpress')}}" target="_blank"><img src="{{ asset('images/icons/social_media/facebook.png') }}" id='face_nav' alt="facebook" > </a>
+                    <a class="nav-link" href="{{url('https://facebook.com/AdharaExpress')}}" target="_blank"><img src="{{ asset('images/icons/social_media/face.png') }}" id='face_nav' alt="facebook" > </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{url('https://www.instagram.com/adharaexpress')}}" target="_blank"><img src="{{ asset('images/icons/social_media/insta.png') }}" id='face_nav' alt="facebook" > </a>
+                    <a class="nav-link" href="{{url('https://www.instagram.com/adharaexpress')}}" target="_blank"><img src="{{ asset('images/icons/social_media/instagram.png') }}" id='face_nav' alt="facebook" > </a>
                 </li>
             </ul>
         </div>
