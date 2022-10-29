@@ -107,12 +107,12 @@
 	
     $(document).ready(function(){
 
-        //para hacer login club estrella
         $("#login-modal").on('submit', function(e){
+            console.log('here');
             e.preventDefault();
             $.ajax({
                 url: "/es/get-user-clubestrella",
-                type: "post",
+                type: "POST",
                 data: $( this ).serialize()
             }).done(function() {
                 location.reload();

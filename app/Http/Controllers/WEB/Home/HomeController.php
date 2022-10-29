@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\WEB\Home;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Http;
 use Illuminate\Http\Request;
 use App\Models\TipoCambio;
 use App\Models\Temporada;
