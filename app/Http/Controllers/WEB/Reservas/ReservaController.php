@@ -155,6 +155,7 @@ class ReservaController extends Controller
             'adultos' => $adultos,
             'infantes' => $infantes,
             'infantes_no_bf' => $infantes_no_bf,
+            'hotel_id' => 2
         ]);
 
         $result = $response->json();
@@ -314,9 +315,7 @@ class ReservaController extends Controller
 
         $result = $response->json();
 
-        dd($result);
-
-        if((int)$result['code'] == 500)
+        if((int)$result['code'] == 500 || (int) $result['code'] == 409)
         {
             return back()->with('error',$result['message']);
         }
