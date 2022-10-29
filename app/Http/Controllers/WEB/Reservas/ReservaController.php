@@ -306,14 +306,14 @@ class ReservaController extends Controller
                     'precio' => $request->precio,
                     'currency' => $request->currency,
                     'comentarios' => $request->comentarios,
-                    'hotel_id' => 1,
+                    'hotel_id' => 2,
                     'payment' => $request->metodo_pago, #pago_seguro , pago_destino
                     'login' => ($request->cookie('user') !== null )?1:0//verificar si existe la cookie para saber si esta logueado
         ]);
 
 
         $result = $response->json();
-        //dd($result);
+        dd($result);
         if((int)$result['code'] == 500)
         {
             //dd($result['message']);
