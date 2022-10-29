@@ -3,6 +3,12 @@
         <p><strong>@lang('main.hover-whats-p') WhatsApp:</strong><a href="https://api.whatsapp.com/send?phone=529981221816" target='_blank'> 998 122 1816 <img src="{{ asset('images/icons/social_media/whatsapp.png') }}" id='logo-whats-baner' alt=""></a></p>
         {{-- <h4>WhatsApp</h4> --}}
  </nav>
+ <div class="">
+    <div class="item">
+        <img src="@lang('main.slider-habitaciones-mob')" class="d-block d-sm-none" alt=""> 
+        <img src="@lang('main.slider-habitaciones')" class="d-none d-sm-block" alt=""> 
+    </div>
+</div>
 
 <div id='hover-whats'>
     <div class="cotiza-text" style="margin-top: 0px;">
