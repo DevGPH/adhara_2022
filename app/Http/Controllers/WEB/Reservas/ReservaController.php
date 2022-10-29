@@ -282,9 +282,8 @@ class ReservaController extends Controller
     public function store(Request $request )
     {
         $url = $this->endpoint.'es/reserva';
-        dd($request);
 
-        $response = Http::asForm()->post($url, [
+        $response = Http::post($url, [
                     'nombre' => $request->nombre,
                     'apellidos' => $request->apellidos,
                     'email' => $request->email,
