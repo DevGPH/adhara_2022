@@ -29,7 +29,7 @@
                    <h4> Habitacion Estandar</h4>
                 @endif
             </div>
-            <img src="{{ asset('images/accommodations_1.png') }}" class="img-fluid" alt="">
+            <img src="{{ asset('images/habitaciones/room_estandar.png') }}" class="img-fluid" alt="">
             <ul class="features-room">
                 <li><img src="{{ asset('images/cotizacion/wifi.png') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="Wifi" alt=""></li>
                 {{-- <li><img src="{{ asset('images/cotizacion/coffee.png') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="Cafetera" alt=""></li>
