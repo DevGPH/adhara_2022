@@ -37,7 +37,7 @@ return [
     'body-item1' => 'Conveniently located in downtown Cancun, accessible to businesses, entertainment areas, beaches, discos, bars, pharmacies, banks and hospitals.',
     'body-item2' => 'A modern design specially oriented to the business environment, which offers: a first class restaurant, bar - lounge & terrace, gym, pool and work rooms.',
     'body-item3' => 'Privileged location in downtown',
-    'body-item4' => 'Av. Yaxilán 41, Cancun, Quintana Roo, Mexico.',
+    'body-item4' => 'Av. Carlos Nader 1,2,3 SM.1, MZ.2, Cancun, Quintana Roo, Mexico.',
 
     
     'body-item5' => 'Meet our comfortable bedrooms',
