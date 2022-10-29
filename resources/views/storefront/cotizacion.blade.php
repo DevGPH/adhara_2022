@@ -7,7 +7,7 @@
 @include('layouts.web.buscador')
 <!-- FIN DEL BUSCADOR -->
 
-<div class="main-body" id="rooms" style="margin-top:80px;padding-top:60px;">
+<div class="main-body" id="rooms" style="margin-top:40px;padding-top:60px;">
     
     <div class="row">
         <div class="col-sm-6">
