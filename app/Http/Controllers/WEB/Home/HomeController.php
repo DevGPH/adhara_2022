@@ -15,7 +15,7 @@ class HomeController extends Controller
     public function index($locale)
     {   
         $rate = $this->rateToday($locale);
-        dd('here');
+
         return view('index')->with([
             'home_active' => 'active-link',
             'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
