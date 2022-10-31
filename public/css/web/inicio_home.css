@@ -474,7 +474,7 @@ html,body h1,h2,h3,h4{
 #services h5{
     text-align: center;
 	font-family: 'Montserrat', sans-serif;
-    color: #b01b30;
+    color: rgb(137, 44, 121);
     font-weight: bold;
 }
 
@@ -814,7 +814,7 @@ html,body h1,h2,h3,h4{
   border: 0;
 }
 .owl-dots button.owl-dot.active {
-  background-color: #b01b30;
+  background-color: rgb(137, 44, 121);
 }
 .owl-dots button.owl-dot:focus {
   outline: none;
