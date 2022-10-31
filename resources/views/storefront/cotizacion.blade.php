@@ -11,9 +11,9 @@
     
     <div class="row">
         <div class="col-sm-6">
-            <p><img src="{{ asset('images/cotizacion/down.png') }}" width="20" height="20"> @lang('main.quotation-item002') {{ $full_date }} </p>
-            <p><img src="{{ asset('images/cotizacion/up.png') }}" width="20" height="20" > @lang('main.quotation-item003') {{ $full_date_2 }}</p>
-            <p><img src="{{ asset('images/cotizacion/bed.png') }}" width="20" height="20" > @lang('main.quotation-item004') {{ $habitaciones }} &nbsp; <img src="{{ asset('images/cotizacion/Adulto.png') }}" width="20" height="20">: {{ $total_adultos }}  &nbsp; &nbsp;<img src="{{ asset('images/cotizacion/Adulto.png') }}" width="15" height="15"> : {{ $total_kids }}</p>
+            <p><img src="{{ asset('images/cotizacion/down_a.png') }}" width="20" height="20"> @lang('main.quotation-item002') {{ $full_date }} </p>
+            <p><img src="{{ asset('images/cotizacion/up_a.png') }}" width="20" height="20" > @lang('main.quotation-item003') {{ $full_date_2 }}</p>
+            <p><img src="{{ asset('images/cotizacion/bed_a.png') }}" width="20" height="20" > @lang('main.quotation-item004') {{ $habitaciones }} &nbsp; <img src="{{ asset('images/cotizacion/Adulto_a.png') }}" width="20" height="20">: {{ $total_adultos }}  &nbsp; &nbsp;<img src="{{ asset('images/cotizacion/Adulto_a.png') }}" width="15" height="15"> : {{ $total_kids }}</p>
         </div>
         <div class="col-sm-6">
             <h4 id='price_taxes'>@lang('main.quotation-item001')</h4>
@@ -31,7 +31,7 @@
             </div>
             <img src="{{ asset('images/habitaciones/room_estandar.png') }}" class="img-fluid" alt="">
             <ul class="features-room">
-                <li><img src="{{ asset('images/cotizacion/wifi.png') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="Wifi" alt=""></li>
+                <li><img src="{{ asset('images/cotizacion/wifi_a.png') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="Wifi" alt=""></li>
                 {{-- <li><img src="{{ asset('images/cotizacion/coffee.png') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="Cafetera" alt=""></li>
                 <li><img src="{{ asset('images/cotizacion/roomservice.png') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="Servicio Hab." alt=""></li> --}}
             </ul>
