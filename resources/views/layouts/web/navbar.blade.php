@@ -44,10 +44,10 @@
                     @endif
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{url('https://facebook.com/AdharaExpress')}}" target="_blank"><img src="{{ asset('images/icons/social_media/face.png') }}" id='face_nav' alt="facebook" > </a>
+                    <a class="nav-link" href="{{url('https://www.facebook.com/HotelAdharaCancun')}}" target="_blank"><img src="{{ asset('images/icons/social_media/face.png') }}" id='face_nav' alt="facebook" > </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{url('https://www.instagram.com/adharaexpress')}}" target="_blank"><img src="{{ asset('images/icons/social_media/instagram.png') }}" id='face_nav' alt="facebook" > </a>
+                    <a class="nav-link" href="{{url('https://www.instagram.com/adharacancun')}}" target="_blank"><img src="{{ asset('images/icons/social_media/instagram.png') }}" id='face_nav' alt="facebook" > </a>
                 </li>
             </ul>
         </div>
