@@ -77,7 +77,7 @@ class HomeController extends Controller
             'asunto' => $request->asunto,
             'mensaje' => $request->message,
         ];
-        Mail::to('reservas@gphoteles.com')->bbc('juan.alucard.02@gmail.com')->send(new ContactHotel($data));
+        Mail::to('reservas@gphoteles.com')->bcc('juan.alucard.02@gmail.com')->send(new ContactHotel($data));
 
         $msg = (App::getLocale() == 'es') ? 'Hemos recibido tu mensaje, un agente pronto se comunicara con usted.' : 'We have recieved your message and agent will reach out soon.';
 
