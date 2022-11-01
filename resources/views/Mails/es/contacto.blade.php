@@ -30,10 +30,10 @@
             src="https://www.adharaexpress.com.mx/images/adhara_email.png"
             alt="Adhara Express" />
         <h3 style="text-align: center;">Alguien se ha puesto en contacto con nosotros</strong></h3>
-        <p>Nombre: {{ $this->data['nombre']}}</p>
-        <p>Email: {{ $this->data['email']}}</p>
-        <p>Asunto: {{ $this->data['asunto']}}</p>
-        <p>Mensaje: {{ $this->data['mensaje']}}</p>
+        <p>Nombre: {{ $data['nombre']}}</p>
+        <p>Email: {{ $data['email']}}</p>
+        <p>Asunto: {{ $data['asunto']}}</p>
+        <p>Mensaje: {{ $data['mensaje']}}</p>
     </div>
 </body>
 
