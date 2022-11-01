@@ -135,10 +135,10 @@
                     <input class="form-check-input" type="radio" name="metodo_pago" value="1" checked>
                     <p class="center">@lang('main.reservations-item021') </p>
                 </div>
-                <div class="form-check col-4">
+                <!--div class="form-check col-4">
                     <input class="form-check-input" type="radio" name="metodo_pago" value="pago_seguro">
                     <img src="{{ asset('images/cotizacion/tarjeta.png') }}" width="200" height="70" title="Magica">
-                </div>
+                </div-->
             </div>
             <div class="row">
                 <div class="col-sm-12">
