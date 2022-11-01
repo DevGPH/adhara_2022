@@ -104,7 +104,13 @@ class SantanderController extends Controller
                 $error->error = $err;
                 $error->save();
 
-                return $this->errorResponse('CurlError-'.$reserva['folio'],407); #407 CurlError
+                return response()->json([
+                    'msg' => 'Error con la response',
+                    'data' => 'CurlError-'.$reserva['folio'],
+                    'code' => 407
+                ]);
+
+                //return $this->errorResponse('CurlError-'.$reserva['folio'],407); #407 CurlError
             }
             else
             {
@@ -125,7 +131,11 @@ class SantanderController extends Controller
                     $data = [
                         'url' => $sxe->nb_url
                     ];
-                    return $this->successResponse('URL de pago generada con exito',$data,201);
+                    return response()->json([
+                        'msg' => 'URL de pago generada con exito',
+                        'data' => $data,
+                        'code' => 201
+                    ]);
                     //return redirect()->away($sxe->nb_url);
                 }
             }
@@ -134,7 +144,13 @@ class SantanderController extends Controller
 
         }else
         {
-            return $this->errorResponse('Reserva no encontrada-'.$reserva['folio'],408); # Reserva no encontrada se necesita REDIRIGIR
+            return response()->json([
+                'msg' => 'Reserva no encontrada',
+                'data' => $reserva['folio'],
+                'code' => 404
+            ]);
+
+            //return $this->errorResponse('Reserva no encontrada-'.$reserva['folio'],408); # Reserva no encontrada se necesita REDIRIGIR
         }
     }
 
