@@ -241,7 +241,7 @@ class ReservaController extends Controller
             'lang' => (App::getLocale() == 'es') ? 'en' : 'es',
             'status' => $result['status'],
             'rate' => $rate,
-            'minStay' => (App::getLocale() == 'es') ? 'Noches minimas para reservar este cuarto 7' : 'Minimun stay for this room is 7 nights'
+            'minStay' => (App::getLocale() == 'es') ? 'Ésta   Categoría  la puedes  reservar  con una estancia  mínima de 7  noches' : 'Minimun stay for this room is 7 nights'
         ]);
     }
 
