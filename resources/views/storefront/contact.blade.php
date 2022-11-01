@@ -2,12 +2,31 @@
 
 @section('content')
 
-@include('layouts.web.slide')
+@include('layouts.web.section_contacto')
 <!-- INICIO DEL BUSCADOR -->
-@include('layouts.web.buscador')
-<!-- FIN DEL BUSCADOR -->
 
-    <div id="contact-desc" class="container" style="margin-top:30px">
+<!-- FIN DEL BUSCADOR -->
+    @if (session('success'))
+        <div class="alert alert-success">
+            {{ session('success') }}
+        </div>
+    @endif
+    @if (session('error'))
+        <div class="alert alert-danger">
+            {{ session('error') }}
+        </div>
+    @endif
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
+
+    <div id="contact-desc" class="main-body" style="margin-top:30px">
 
         <h4>@lang('main.contact-item001') </h4>
         <p class="main-room-desc custom-w">@lang('main.contact-item002') </p>
@@ -61,7 +80,7 @@
                 <p class="center"><img src="{{ asset('images/Contacto/minifle.png') }}" id="marker-c"> &nbsp; @lang('main.contact-item006') </p>
                 <div class="mapouter">
                     <div class="gmap_canvas">
-                        <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=adhara%20express%20cancun&t=&z=19&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2piratebay.org"></a><br>
+                        <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=hotel%20adhara%20cancun&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2piratebay.org"></a><br>
                     </div>
                 </div>
                 

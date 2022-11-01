@@ -379,12 +379,6 @@ class ReservaController extends Controller
 
     }
 
-    public function contact_mail()
-    {
-        Mail::to('reservas@gphoteles.com')->send(new ConfirmationMail);
-        return redirect('/contact'); 
-    }
-
 }
 
 ///se utilizara el rateToday() de HomeController;

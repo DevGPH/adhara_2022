@@ -5,12 +5,16 @@ namespace App\Http\Controllers\WEB\Home;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Cookie;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Response;
 use Illuminate\Http\Request;
 use App\Models\TipoCambio;
 use App\Models\Temporada;
 use App\Models\PlanHab;
 use App\Models\Pais;
+
+#Mails
+use App\Mail\ContactHotel;
 
 use Carbon\Carbon;
 use App;
@@ -46,6 +50,38 @@ class HomeController extends Controller
             'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
             'rate' => $rate
         ]); 
+    }
+
+    public function postContact(Request $request)
+    {
+        $rules = [
+            'nombre' => 'required',
+            'email' => 'required|email',
+            'asunto' => 'required',
+            'message' => 'required',
+        ];
+
+        $messages = [
+            'nombre.required' => 'Es necesario rellenar este campo',
+            'email.required' => 'Es necesario rellenar este campo',
+            'email.email' => 'Formato invalido',
+            'asunto.required' => 'Es necesario rellenar este campo',
+            'message.required' => 'Es necesario rellenar este campo',
+        ];
+
+        $this->validate($request, $rules, $messages); 
+
+        $data = [
+            'nombre' => $request->nombre,
+            'email' => $request->email,
+            'asunto' => $request->asunto,
+            'mensaje' => $request->message,
+        ];
+        Mail::to('reservas@gphoteles.com')->bbc('juan.alucard.02@gmail.com')->send(new ContactHotel($data));
+
+        $msg = (App::getLocale() == 'es') ? 'Hemos recibido tu mensaje, un agente pronto se comunicara con usted.' : 'We have recieved your message and agent will reach out soon.';
+
+        return back()->with('success', $msg);
     }
 
     public function covid($locale)

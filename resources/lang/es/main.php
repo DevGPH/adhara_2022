@@ -144,7 +144,7 @@ return [
     'contact-item003' => 'Se localiza a 25 minutos del aeropuerto, a 5 minutos de los centros comerciales: plaza Las Américas, plaza Malecón las Américas y Malecón Cancún.',
     'contact-item004' => 'La privilegiada ubicación del hotel sobre la Av. Yaxilán, avenida histórica de la ciudad de Cancún, la cual permite a los huéspedes tener proximidad a los atractivos y servicios más importantes de la ciudad, ofreciendo simultáneamente el acceso rápido a las mejores playas de Cancún  e Isla Mujeres.',
     'contact-item005' => 'Desde el hotel Adhara Express se tiene cercanía a la plaza del ayuntamiento, al parque de las palapas, a los mercados 23 y 28, al mercado de artesanías en la avenida Tulum, instituciones bancarias, farmacias, tiendas de servicios o bien a la amplia gastronomía internacional con restaurantes especializados en comida mexicana, argentina, italiana, entre otros.',
-    'contact-item006' => 'Av. Yaxilán 41, Col. Centro, Cancún Quintana Roo, México.',
+    'contact-item006' => 'Av. Carlos Nader 1,2,3 SM.1, MZ.2, C.P. 77500, Cancún Quintana Roo, México.',
     'contact-item007' => 'Volver al inicio',
     'contact-item008' => 'Nombre',
     'contact-item009' => 'e-mail',

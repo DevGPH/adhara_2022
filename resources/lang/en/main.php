@@ -144,7 +144,7 @@ return [
     'contact-item003' => 'It is located 25 minutes from the airport, 5 minutes from the shopping centers: Plaza Las Américas, Plaza Malecón las Américas and Malecón Cancun.',
     'contact-item004' => 'The hotel´s privileged location on Av. Yaxilán, a historic avenue of the city of Cancun, which allows guests to have proximity to the most important attractions and services of the city, simultaneously offering quick access to the best beaches in Cancun and Women Island.',
     'contact-item005' => 'From the Adhara Express hotel there is proximity to the town hall square, the palapas park, markets 23 and 28, the handicraft market on Tulum avenue, banking institutions, pharmacies, service stores or the wide gastronomy International with restaurants specialized in Mexican, Argentine, Italian food, among others.',
-    'contact-item006' => 'Av. Yaxilán 41, Col. Centro, Cancún Quintana Roo, México.',
+    'contact-item006' => 'Av. Carlos Nader 1,2,3 SM.1, MZ.2, C.P. 77500, Cancún Quintana Roo, México.',
     'contact-item007' => 'Back to top',
     'contact-item008' => 'Name',
     'contact-item009' => 'e-mail',

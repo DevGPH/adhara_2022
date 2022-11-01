@@ -370,8 +370,6 @@ html,body h1,h2,h3,h4{
 }
 
 #rooms-desc h4, #contact-desc h4, #covid h4{
-    font-family: 'Montserrat', sans-serif;
-    color: #b01b30;  
     font-weight: bold;
     margin-bottom: 20px;
     margin-top: 40px;
