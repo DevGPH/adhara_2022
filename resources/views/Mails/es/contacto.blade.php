@@ -26,8 +26,8 @@
 
 <body>
     <div style="width: 600px;display:block;margin:0px auto;padding:16px;">
-        <img style="display: block; width: 150px;margin-bottom:30px;"
-            src="https://www.adharaexpress.com.mx/images/adhara_email.png"
+        <img style="display: block; width: 150px; margin:0 auto;margin-bottom:30px;"
+            src="https://adharaexpress.com.mx/images/adhara_email.png"
             alt="Adhara Express" />
         <h3 style="text-align: center;">Alguien se ha puesto en contacto con nosotros</strong></h3>
         <p>Nombre: {{ $data['nombre']}}</p>
