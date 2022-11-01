@@ -11,7 +11,7 @@ class ContactHotel extends Mailable
 {
     use Queueable, SerializesModels;
 
-    protected array $data;
+    public array $data;
 
     /**
      * Create a new message instance.
