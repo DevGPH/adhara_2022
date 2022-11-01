@@ -18,7 +18,7 @@
         <div class="row">
             <div class="col-12 col-sm-4">
                 @if ($habitacion->categoria->nombre_es == 'Estandar')
-                    <img src="{{ asset('images/habitaciones/room_estadar.png') }}" alt="Habitacion Estandar" class="img-fluid">
+                    <img src="{{ asset('images/habitaciones/room_estandar.png') }}" alt="Habitacion Estandar" class="img-fluid">
                 @elseif ($habitacion->categoria->nombre_es == 'Ejecutiva')
                     <img src="{{ asset('images/habitaciones/room_ejecutive.png') }}" alt="Habitacion Ejecutiva" class="img-fluid">
                 @else
