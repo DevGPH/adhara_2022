@@ -21,6 +21,7 @@ use App\Mail\ConfirmationMail;
 use App\Models\Temporada;
 use App\Models\TipoCambio;
 use App\Models\Habitacion;
+use App\Models\PlanHan;
 use App\Model\Reserva;
 use App\Models\Pais;
 use App;
