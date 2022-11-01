@@ -14,7 +14,7 @@
             <p>@lang('main.body-item1')</p>
             <p>@lang('main.body-item2')</p>
             <p><strong>@lang('main.body-item3')</strong></p>
-            <p><strong>Av. Carlos Nader 1,2,3 SM.1,MZ.2 Quintana Roo, México</strong></p>
+            <!--p><strong>Av. Carlos Nader 1,2,3 SM.1,MZ.2 Quintana Roo, México</strong></p-->
         </div>
         <div class="col-12 col-xs-6 col-md-6 col-lg-6 col-xl-6 padding-cabing">
             <img src="{{ asset('images/home/fachada.jpg') }}" class='img-fluid not-full shadow' alt="Adhara Cancun" id="fachada">
