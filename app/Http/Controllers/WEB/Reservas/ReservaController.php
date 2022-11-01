@@ -12,6 +12,8 @@ use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Cookie;
 use Illuminate\Http\Response;
 
+use App\Http\Controllers\WEB\Santander\SantanderController;
+
 
 use App\Mail\ConfirmationMail;
 
@@ -328,10 +330,13 @@ class ReservaController extends Controller
 
             case 'pago_seguro':
 
-                $url = url('/').'/api/santander';
-                $response = Http::asForm()->post($url,[
+                //$url = url('/').'/api/santander';
+                /*$response = Http::asForm()->post($url,[
                     'id' => $result['data']['folio']
-                ]);
+                ]);*/
+                $santander = new SantanderController();
+                $url = $santander->index($result['data']['folio']);
+                dd($url);
                 $result = $response->json();
 
                 if($response['code'] == 500)

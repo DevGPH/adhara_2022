@@ -37,8 +37,9 @@ Route::prefix('{locale}')->group(function ()
 
     Route::get('/reservations',[ReservaController::class,'reservations'])->name('reservations');
     Route::get('/reserva-response/{id?}',[ReservaController::class,'response'])->name('response.reserva');
-    Route::post('/book-reserve',[ReservaController::class,'store'])->name('book.reserve');
+    Route::post('/reservas/booking',[ReservaController::class,'store'])->name('book.reserve');
     Route::post('/contact_mail',[ReservaController::class,'contact_mail'])->name('contact_mail');
+
 
     #CLUBESTRELLA
     Route::post('get-user-clubestrella',[HomeController::class,'getUserC'])->name('get.clubestrella');
