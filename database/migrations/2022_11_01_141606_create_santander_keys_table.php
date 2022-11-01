@@ -13,7 +13,7 @@ class CreateSantanderKeysTable extends Migration
      */
     public function up()
     {
-        Schema::create('santander_keys', function (Blueprint $table) {
+        Schema::connection('mysql_second')->create('santander_keys', function (Blueprint $table) {
             $table->id();
             $table->longText('id_company');
             $table->longText('id_sucursal');
@@ -22,6 +22,7 @@ class CreateSantanderKeysTable extends Migration
             $table->longText('semilla_xml');
             $table->longText('llave_comercial');
             $table->string('ambiente');
+            $table->integer('hotel_id')->nullable();
             $table->timestamps();
         });
     }

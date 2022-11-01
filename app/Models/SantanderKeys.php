@@ -9,5 +9,7 @@ class SantanderKeys extends Model
 {
     use HasFactory;
 
+    protected $connection = 'mysql_second';
+
     protected $table = 'santander_keys';
 }
