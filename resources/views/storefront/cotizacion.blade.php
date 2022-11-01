@@ -164,6 +164,37 @@
                     <img src="{{ asset('images/cotizacion/missing_dates.png') }}" alt="Missing Dates" style="display:block;margin:0px auto;margin-top:30px;margin-bottom:30px;width:300px;">
                     <div class="error_season" style="text-align: center;">{{ $data }}</div>
                 @else
+                    @if (empty($superior))
+                        <div class="col-3 col-lg-3 adhara-color text-white d-flex align-items-center justify-content-center">
+                            <div class="item-d">
+                                @if ($room['magica'])
+                                    <img src="{{ asset('images/cotizacion/magica.png') }}" class="wand" alt="">
+                                @endif
+                                <p class="title-room-format">{{ $room['isTarifaMagica'] }}</p>
+                                <p class="span-room-format">{{ $room['plan_x_alimentos'] }}</p>
+                            </div>
+                        </div>
+                        <div class="col-9 col-lg-9" style="padding: 0px;">
+                            <div class="row" style="margin: 0px">
+                                <div class="col-4 adhara-color text-white">
+                                    @if ($room['plan_x_alimentos'] == 'Solo Habitacion')
+                                        <p class="format-room">@lang('main.quotation-item011')</p>
+                                    @else
+                                        <p class="format-room">@lang('main.quotation-item012')</p>
+                                    @endif
+                                </div>
+                                <div class="col-5 adhara-color text-white">
+                                    <p class='format-room'>@lang('main.quotation-item013')</p>
+                                </div>
+                                <div class="col-3 adhara-color text-white border-empty">
+                                    <p class="format-room" style="display: none">Send</p>
+                                </div>
+                                <div class="col-12">
+                                    <p class="format-room"> {{ $minStay}} </p>
+                                </div>
+                            </div>
+                        </div>
+                    @endif
                     @foreach ($superior as $room)
                 
                         <div class="col-3 col-lg-3 adhara-color text-white d-flex align-items-center justify-content-center">
