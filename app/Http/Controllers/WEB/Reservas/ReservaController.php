@@ -214,10 +214,10 @@ class ReservaController extends Controller
 
             }else if((string)$room['habitacion'] === 'Superior')
             {
-                array_push($ejecutivo_collection,$room);
+                array_push($superior_collection,$room);
             }else if((string)$room['habitacion'] === 'Ejecutiva')
             {
-                array_push($superior_collection,$room);
+                array_push($ejecutivo_collection,$room);
             }       
         }
 
