@@ -9,6 +9,7 @@ use Illuminate\Http\Response;
 use Illuminate\Http\Request;
 use App\Models\TipoCambio;
 use App\Models\Temporada;
+use App\Models\PlanHab;
 use App\Models\Pais;
 
 use Carbon\Carbon;
