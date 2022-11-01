@@ -155,7 +155,7 @@ class HomeController extends Controller
 
         $plan_total = (double) $plan->desayuno_adulto * 2;
 
-        $price = ($locale == 'es') ? ($conversion->valor_x_moneda * ($temporada->tarifa_x_dolares * $plan_total)) : $temporada->tarifa_x_dolares * $plan_total; 
+        $price = ($locale == 'es') ? ($conversion->valor_x_moneda * ($temporada->tarifa_x_dolares + $plan_total)) : $temporada->tarifa_x_dolares + $plan_total;
         $currency = ($locale == 'es') ? 'MXN' : $temporada->currency;
         if($temporada != null)
             return $price.' '.$currency;
