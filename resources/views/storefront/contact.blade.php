@@ -7,17 +7,17 @@
 
 <!-- FIN DEL BUSCADOR -->
     @if (session('success'))
-        <div class="alert alert-success">
+        <div class="alert alert-success" style="position: absolute;top: 0;z-index: 10000;right: 0;margin-top: 90px;">
             {{ session('success') }}
         </div>
     @endif
     @if (session('error'))
-        <div class="alert alert-danger">
+        <div class="alert alert-danger" style="position: absolute;top: 0;z-index: 10000;right: 0;margin-top: 90px;">
             {{ session('error') }}
         </div>
     @endif
     @if ($errors->any())
-        <div class="alert alert-danger">
+        <div class="alert alert-danger" style="position: absolute;top: 0;z-index: 10000;right: 0;margin-top: 90px;">
             <ul>
                 @foreach ($errors->all() as $error)
                     <li>{{ $error }}</li>
