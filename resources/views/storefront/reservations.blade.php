@@ -17,7 +17,13 @@
     
         <div class="row">
             <div class="col-12 col-sm-4">
-                <img src="{{ asset('images/habitaciones/estandar.png') }}" alt="Habitacion Estandar" class="img-fluid">
+                @if ($habitacion->categoria->nombre_es == 'Estandar')
+                    <img src="{{ asset('images/habitaciones/room_estadar.png') }}" alt="Habitacion Estandar" class="img-fluid">
+                @elseif ($habitacion->categoria->nombre_es == 'Ejecutiva')
+                    <img src="{{ asset('images/habitaciones/room_ejecutive.png') }}" alt="Habitacion Ejecutiva" class="img-fluid">
+                @else
+                    <img src="{{ asset('images/habitaciones/room_superior.png') }}" alt="Habitacion One Bedroom Suite" class="img-fluid">
+                @endif  
             </div>
             <div class="col-6 col-sm-8">
                 <p><strong>@lang('main.reservations-item030') {{ $habitacion->categoria->nombre_es }}</strong> </p>
