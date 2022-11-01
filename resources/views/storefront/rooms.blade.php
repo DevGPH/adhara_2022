@@ -2,12 +2,12 @@
 
 @section('content')
 
-@include('layouts.web.slide')
+@include('layouts.web.section_habitacion')
 <!-- INICIO DEL BUSCADOR -->
 @include('layouts.web.buscador')
 <!-- FIN DEL BUSCADOR -->
 
-    <div id="rooms-desc" class="container" style="margin-top:80px">
+    <div id="rooms-desc" class="main-body" style="margin-top:80px">
 
         <h4>@lang('main.room-item1')</h4>
         <p class="main-room-desc">@lang('main.room-item2') </p>
@@ -15,8 +15,8 @@
 
 
         <div class="row list-rooms" style="margin-top:0px">
-            <div class="col-xs-12 col-sm-4 offset-sm-2 col-md-4 offset-md-2">
-                <img src="{{ asset('images/habitaciones/estandar.png') }}" class="img-fluid">
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <img src="{{ asset('images/habitaciones/room_estandar.png') }}" class="img-fluid">
                 <h4>@lang('main.room-item04')</h4>
                 <p>@lang('main.room-item4')  </p>
                 <p>@lang('main.room-item5')  </p>
@@ -33,7 +33,7 @@
                 
             </div>
             <div class="col-xs-12 col-sm-4 col-md-4">
-                <img class="img-fluid" src="{{ asset('images/habitaciones/estandar_2.png') }}" alt="">
+                <img class="img-fluid" src="{{ asset('images/habitaciones/room_superior.png') }}" alt="">
                 <h4>@lang('main.room-item016')</h4>
                 <p>@lang('main.room-item16') </p>
                 <p>@lang('main.room-item17') </p>
@@ -49,8 +49,8 @@
                 <p>@lang('main.room-item27') </p>
             
             </div>
-            <!--div class="col-xs-4 col-sm-4 col-md-4">
-                <img class="img-fluid" src="{{ asset('images/habitaciones/accommodations_2.png') }}" alt="">
+            <div class="col-xs-4 col-sm-4 col-md-4">
+                <img class="img-fluid" src="{{ asset('images/habitaciones/room_ejecutive.png') }}" alt="">
                 <h4>@lang('main.room-item028')</h4>
                 <p>@lang('main.room-item28') </p>
                 <p>@lang('main.room-item29') </p>
@@ -71,7 +71,7 @@
                 <p>@lang('main.room-item44') </p>
                 <p>@lang('main.room-item45') </p>
                 <p>@lang('main.room-item46') </p>
-            </div-->
+            </div>
         </div>
     </div>
 

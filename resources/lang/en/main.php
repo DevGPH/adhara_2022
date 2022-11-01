@@ -87,7 +87,7 @@ return [
     'room-item2' => 'The rooms at Hotel Adhara Express are the most spacious and comfortable of their category, equipped with modern services for work or rest stays.',
     'room-item3' => 'Meet our bedrooms:',
 
-    'room-item04' => 'Standard room 1',
+    'room-item04' => 'Standard Room',
     'room-item4' => 'TV LCD',
     'room-item5' => 'Air-conditioning',
     'room-item6' => '1 King size bed',
@@ -101,7 +101,7 @@ return [
     'room-item14' => 'Clean towels',
     'room-item15' => 'Phone in the room',
 
-    'room-item016' => 'Standar room 2',
+    'room-item016' => 'One Bedroom Suite',
     'room-item16' => 'TV LCD',
     'room-item17' => 'Air-conditioning',
     'room-item18' => '2 double bed',
@@ -116,7 +116,7 @@ return [
     'room-item27' => 'Phone in the room',
 
 
-    'room-item028' => 'Penthouse Room',
+    'room-item028' => 'Executive Room',
     'room-item28' => '60 m',
     'room-item29' => 'TV LCD 32¨',
     'room-item30' => '2 independent bedrooms ',

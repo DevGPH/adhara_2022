@@ -87,7 +87,7 @@ return [
     'room-item2' => 'Las habitaciones de Hotel Adhara Express son las más amplias y confortables de su categoría, equipadas con modernos servicios para estancias de trabajo o descanso.',
     'room-item3' => 'Conoce nuestras habitaciones:',
 
-    'room-item04' => 'Habitación Estandar 1',
+    'room-item04' => 'Habitación Estandar',
     'room-item4' => 'TV LCD',
     'room-item5' => 'Aire acondicionado',
     'room-item6' => '1 cama King size',
@@ -101,7 +101,7 @@ return [
     'room-item14' => 'Toallas limpias',
     'room-item15' => 'Teléfono en habitación',
 
-    'room-item016' => 'Habitación Estandar 2',
+    'room-item016' => 'Habitación One Bedroom Suite',
     'room-item16' => 'TV LCD',
     'room-item17' => 'Aire acondicionado',
     'room-item18' => '2 camas matrimoniales',
@@ -117,7 +117,7 @@ return [
 
 
 
-    'room-item028' => 'Habitación Penthouse',
+    'room-item028' => 'Habitación Ejecutiva',
     'room-item28' => '60 m2',
     'room-item29' => 'TV LCD 32¨',
     'room-item30' => '2 recamaras independientes ',
