@@ -70,10 +70,10 @@
                         <input type="text" class="form-control" name="asunto">
                     </div>  
                     <div class="mb-3">
-                        <label for="comentarios" class="form-label">@lang('main.contact-item011')</label>
-                        <textarea name="comentarios" class="form-control" cols="30" rows="10" style="resize: none;"></textarea>
+                        <label for="message" class="form-label">@lang('main.contact-item011')</label>
+                        <textarea name="message" class="form-control" cols="30" rows="10" style="resize: none;"></textarea>
                     </div>            
-                   <button type="submit" class="btn btn-danger">@lang('main.contact-item012')</button>
+                   <button type="submit" class="btn btn-adhara">@lang('main.contact-item012')</button>
                 </form>
             </div>
             <div class="col-sm-6">
