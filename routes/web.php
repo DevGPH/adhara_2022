@@ -16,11 +16,12 @@ use App\Http\Controllers\WEB\Reservas\ReservaController;
 |
 */
 
+
+Route::redirect('/', '/es');
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Route::redirect('/', '/es');
 
 Route::prefix('{locale}')->group(function () 
 {
