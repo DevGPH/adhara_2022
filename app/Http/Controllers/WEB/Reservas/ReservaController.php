@@ -323,7 +323,7 @@ class ReservaController extends Controller
         {
             return back()->with('error',$result['message']);
         }
-
+        dd($result);
         switch ($result['data']['metodo_pago']) {
             case 'pago_destino':
                 #El numero 3 representa pago en destino
