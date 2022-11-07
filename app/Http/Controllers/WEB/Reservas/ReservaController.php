@@ -312,7 +312,8 @@ class ReservaController extends Controller
                     'comentarios' => $request->comentarios,
                     'hotel_id' => 2,
                     'payment' => $request->metodo_pago, #pago_seguro , pago_destino
-                    'login' => ($request->cookie('user') !== null )?1:0//verificar si existe la cookie para saber si esta logueado
+                    'login' => ($request->cookie('user') !== null )?1:0,//verificar si existe la cookie para saber si esta logueado
+                    'lang' => App::getLocale()
         ]);
 
 
