@@ -319,11 +319,11 @@ class ReservaController extends Controller
 
         $result = $response->json();
 
-        if((int)$result['code'] == 500 || (int) $result['code'] == 409)
+        if((int)$result['code'] == 500 || (int) $result['code'] == 409 || (int) $result['code'] == 422)
         {
             return back()->with('error',$result['message']);
         }
-        dd($result);
+        
         switch ($result['data']['metodo_pago']) {
             case 'pago_destino':
                 #El numero 3 representa pago en destino
