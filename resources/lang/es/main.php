@@ -34,7 +34,7 @@ return [
 
     'body-item1' => 'Ubicado convenientemente en el centro de Cancún, accesible a negocios, zona de entretenimiento, playas, discotecas, bares, farmacias, bancos y hospitales.',
     'body-item2' => 'Un moderno diseño especialmente orientado al ambiente de negocio, que ofrece: un restaurante de primera categoría, bar - lounge & terraza, gimnasio, alberca y salones de trabajo.',
-    'body-item3' => 'Ubicación privilegiada en el centro de Cancún en',
+    'body-item3' => 'Ubicación privilegiada en el centro de Cancún',
     'body-item4' => 'Av. Carlos Nader 1,2,3 SM.1, MZ.2, Cancún, Quintana Roo, México',
 
 
