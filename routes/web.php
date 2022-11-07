@@ -40,6 +40,7 @@ Route::prefix('{locale}')->group(function ()
     Route::get('/reserva-response/{id?}',[ReservaController::class,'response'])->name('response.reserva');
     Route::post('/reservas/booking',[ReservaController::class,'store'])->name('book.reserve');
     Route::post('/contact_mail',[HomeController::class,'postContact'])->name('contact_mail');
+    Route::get('/test-mail',[HomeController::class,'mail'])->name('test_mail');
 
 
     #CLUBESTRELLA
