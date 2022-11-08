@@ -131,11 +131,11 @@ class SantanderController extends Controller
                     $data = [
                         'url' => $sxe->nb_url
                     ];
-                    return response()->json([
+                    return [
                         'msg' => 'URL de pago generada con exito',
                         'data' => $sxe->nb_url,
                         'code' => 201
-                    ]);
+                    ];
                     //return redirect()->away($sxe->nb_url);
                 }
             }
