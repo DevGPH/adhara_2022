@@ -221,7 +221,7 @@ return [
     'succesfully-item002' => 'please contact the reservations department',
     'succesfully-item003' => 'with the following reservation code:',
     'succesfully-item004' => 'Payment method of the reservation was made:',
-    'succesfully-item005' => 'Pay at Hotel',
+    'succesfully-item005' => 'Card Payment',
     'succesfully-item006' => '',
 
 

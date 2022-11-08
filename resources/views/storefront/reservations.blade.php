@@ -131,12 +131,12 @@
                     <input class="form-check-input" type="radio" name="metodo_pago" value="2">
                     <img src="{{ asset('images/cotizacion/paypal.png') }}" width="150" height="40" title="Magica">
                 </div-->
-                <div class="form-check col-4">
+                <!--div class="form-check col-4">
                     <input class="form-check-input" type="radio" name="metodo_pago" value="1" checked>
                     <p class="center">@lang('main.reservations-item021') </p>
-                </div>
+                </div-->
                 <div class="form-check col-4">
-                    <input class="form-check-input" type="radio" name="metodo_pago" value="pago_seguro">
+                    <input class="form-check-input" type="radio" name="metodo_pago" value="pago_seguro" checked>
                     <img src="{{ asset('images/cotizacion/tarjeta.png') }}" width="200" height="70" title="Magica">
                 </div>
             </div>

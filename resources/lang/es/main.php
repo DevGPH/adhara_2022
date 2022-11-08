@@ -219,7 +219,7 @@ return [
     'succesfully-item002' => 'favor de comunicarse con el departamento de reservaciones',
     'succesfully-item003' => 'con el siguiente folio de reserva:',
     'succesfully-item004' => 'Metodo de Pago con el que se realizo la reserva: ',
-    'succesfully-item005' => 'Pago al llegar al Hotel',
+    'succesfully-item005' => 'Pagado con tarjeta',
     'succesfully-item006' => '',
 
 
