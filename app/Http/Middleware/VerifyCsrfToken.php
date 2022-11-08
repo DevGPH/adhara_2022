@@ -12,7 +12,9 @@ class VerifyCsrfToken extends Middleware
      * @var array<int, string>
      */
     protected $except = [
-        '/santander/response',
-        '/santander/reserve'
+        'https://adharacancun.com/santander/response',
+        'https://adharacancun.com/santander/reserve',
+        'https://www.adharacancun.com/santander/response',
+        'https://www.adharacancun.com/santander/reserve'
     ];
 }
