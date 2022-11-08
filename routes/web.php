@@ -50,4 +50,6 @@ Route::prefix('{locale}')->group(function ()
 });
 
 #Santander
-Route::get('/santander/reserve',[SantanderController::class,'reserve']);
+Route::get('/santander/reserve',[SantanderController::class,'reserve'])->name('santander.response');
+Route::post('/santander/reserve',[SantanderController::class,'store'])->name('santander.reserve');
+Route::post('/santander/response',[SantanderController::class,'store'])->name('santander.result');

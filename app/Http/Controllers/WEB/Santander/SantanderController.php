@@ -15,6 +15,7 @@ use App\Models\Santander;
 use App\Models\CurlError;
 use App\Models\Reserva;
 use App\Models\Huesped;
+use App;
 
 class SantanderController extends Controller
 {
@@ -259,8 +260,22 @@ class SantanderController extends Controller
 
     public function reserve(Request $request)
     {
-        dd($request);
+        $status = 'success';
+        $msg = '';
+        $response = $request->cdResponse;
+        $referencia = $request->referencia;
 
-        return view('storefront.response_santander');
+        if ($request->nbResponse == 'Rechazado') {
+            $status = 'error';
+            $msg = $request->nb_error;
+        }
+
+        return view('storefront.response_santander',[
+            'status' => $status,
+            'msg' => $msg,
+            'response' => $response,
+            'referencia' => $referencia,
+            'lang' =>(App::getLocale() == 'es') ? 'en' : 'es'
+        ]);
     }
 }
