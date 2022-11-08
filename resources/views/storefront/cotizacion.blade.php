@@ -135,7 +135,7 @@
                    <h4> One Bedroom Suite</h4>
                 @endif
             </div>
-            <img src="{{ asset('images/habitaciones/room_superior.png') }}" class="img-fluid" alt="">
+            <img src="{{ asset('images/habitaciones/one_bedroom_3.png') }}" class="img-fluid" alt="">
             <ul class="features-room">
                 <li><img src="{{ asset('images/cotizacion/wifi_a.png') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="Wifi" alt=""></li>
                 {{-- <li><img src="{{ asset('images/cotizacion/coffee.png') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="Cafetera" alt=""></li>

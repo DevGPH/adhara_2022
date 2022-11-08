@@ -24,9 +24,12 @@
     <div class="row separator" id="room-service">
         <div class="col-12 col-xs-6 col-md-6 col-lg-6 col-xl-7 padding-cabing">
             <div id="owl-demo" class="owl-carousel owl-theme">
-                <div class="item"><img src="{{ asset('images/home/hab_3.png') }}" style="width:500px;display:block;margin:0 auto;" alt=""></div>
-                <div class="item"><img src="{{ asset('images/home/hab_1.png') }}" style="width:500px;display:block;margin:0 auto;" alt=""></div>
-                <div class="item"><img src="{{ asset('images/home/hab_2.png') }}" style="width:500px;display:block;margin:0 auto;" alt=""></div>
+                <div class="item"><img src="{{ asset('images/habitaciones/one_bedroom.png') }}" style="width:500px;display:block;margin:0 auto;" alt=""></div>
+                <div class="item"><img src="{{ asset('images/habitaciones/one_bedroom_2.png') }}" style="width:500px;display:block;margin:0 auto;" alt=""></div>
+                <div class="item"><img src="{{ asset('images/habitaciones/one_bedroom_3.png') }}" style="width:500px;display:block;margin:0 auto;" alt=""></div>
+                <div class="item"><img src="{{ asset('images/habitaciones/one_bedroom_4.png') }}" style="width:500px;display:block;margin:0 auto;" alt=""></div>
+                <div class="item"><img src="{{ asset('images/habitaciones/one_bedroom_5.png') }}" style="width:500px;display:block;margin:0 auto;" alt=""></div>
+                <div class="item"><img src="{{ asset('images/habitaciones/one_bedroom_6.png') }}" style="width:500px;display:block;margin:0 auto;" alt=""></div>
             </div>      
             <script>
                     $(document).ready(function() {

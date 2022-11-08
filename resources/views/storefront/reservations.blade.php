@@ -22,7 +22,7 @@
                 @elseif ($habitacion->categoria->nombre_es == 'Ejecutiva')
                     <img src="{{ asset('images/habitaciones/room_ejecutive.png') }}" alt="Habitacion Ejecutiva" class="img-fluid">
                 @else
-                    <img src="{{ asset('images/habitaciones/room_superior.png') }}" alt="Habitacion One Bedroom Suite" class="img-fluid">
+                    <img src="{{ asset('images/habitaciones/one_bedroom_3.png') }}" alt="Habitacion One Bedroom Suite" class="img-fluid">
                 @endif  
             </div>
             <div class="col-6 col-sm-8">

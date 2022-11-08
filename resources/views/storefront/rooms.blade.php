@@ -33,7 +33,7 @@
                 
             </div>
             <div class="col-xs-12 col-sm-4 col-md-4">
-                <img class="img-fluid" src="{{ asset('images/habitaciones/room_superior.png') }}" alt="">
+                <img class="img-fluid" src="{{ asset('images/habitaciones/one_bedroom.png') }}" alt="">
                 <h4>@lang('main.room-item016')</h4>
                 <p>@lang('main.room-item16') </p>
                 <p>@lang('main.room-item17') </p>
