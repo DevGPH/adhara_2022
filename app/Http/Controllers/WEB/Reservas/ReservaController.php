@@ -338,14 +338,14 @@ class ReservaController extends Controller
                 ]);*/
                 $santander = new SantanderController();
                 $url = $santander->index($result['data']['folio']);
-                dd($url['data']);
+                //dd($url['data']);
                 $result = $response->json();
             
                 if($response['code'] == 500)
                 {
                     return back()->with('error','Error al generar su metodo de pago, ponganse en contacto con el area de reservas con numero de folio: '.$result['data']['folio']);
                 }else{
-                    return redirect()->away($result['data']['url'][0]);
+                    return redirect()->away($url['data']);
                 }
                 break;
 
