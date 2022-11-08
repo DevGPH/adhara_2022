@@ -256,4 +256,11 @@ class SantanderController extends Controller
 
         }
     }
+
+    public function reserve(Request $request)
+    {
+        dd($request);
+
+        return view('storefront.response_santander');
+    }
 }

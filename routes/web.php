@@ -42,6 +42,9 @@ Route::prefix('{locale}')->group(function ()
     Route::post('/contact_mail',[HomeController::class,'postContact'])->name('contact_mail');
     Route::get('/test-mail',[HomeController::class,'mail'])->name('test_mail');
 
+    #Santander
+    Route::get('/santander/reserve',[SantanderController::class,'reserve']);
+
 
     #CLUBESTRELLA
     Route::post('get-user-clubestrella',[HomeController::class,'getUserC'])->name('get.clubestrella');
