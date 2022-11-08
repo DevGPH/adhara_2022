@@ -340,7 +340,7 @@ class ReservaController extends Controller
                 $url = $santander->index($result['data']['folio']);
                
                 $result = $response->json();
-
+                dd($result);
                 if($response['code'] == 500)
                 {
                     return back()->with('error','Error al generar su metodo de pago, ponganse en contacto con el area de reservas con numero de folio: '.$result['data']['folio']);
