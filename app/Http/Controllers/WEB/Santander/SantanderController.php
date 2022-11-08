@@ -157,6 +157,32 @@ class SantanderController extends Controller
 
     public function store(Request $request)
     {
+        if(!file_exists("log_santander.txt")){
+            $file = fopen("log_santander.txt", "w");
+            fwrite($file, "---- Inicio de log ---- \n\n" . PHP_EOL);
+            fclose($file);
+        }
+
+        if(!file_exists("santander.txt")){
+            $file2 = fopen("santander.txt", "w");
+            fwrite($file2, "---- Inicio de log ----" . PHP_EOL);
+            fclose($file2);
+        }
+
+        
+
+        $encrypted_xml = $_POST["strResponse"]."\n\n metodo response";
+
+        $file = fopen("log_santander.txt", "a");
+        fwrite($file, $msg . PHP_EOL);
+        fwrite($file, $encrypted_xml . PHP_EOL);
+        fclose($file);
+
+        fwrite($file, $msg . PHP_EOL);
+        fwrite($file, $request->all() . PHP_EOL);
+        fclose($file);
+
+
         if($request->filled('strResponse'))
         {
             $keys = SantanderKeys::where('ambiente','test')->first();
