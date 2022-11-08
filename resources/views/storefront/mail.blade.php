@@ -85,7 +85,7 @@
             </li>
             <li>
                 <a href="https://www.instagram.com/adharacancun/" target="_blank" style="text-decoration: none;color:black;">
-                    <img src="https://adharacancun.com/images/mail/insta.png" style="margin-right: 5px;" />AdharaCancun
+                    <img src="https://adharacancun.com/images/mail/instagram.png" style="margin-right: 5px;" />AdharaCancun
                 </a>
             </li>
         </ul>
