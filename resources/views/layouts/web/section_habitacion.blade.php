@@ -6,7 +6,7 @@
  <div class="">
     <div class="item">
         <img src="@lang('main.slider-habitaciones-mob')" class="d-block d-sm-none" alt=""> 
-        <img src="@lang('main.slider-habitaciones')" class="d-none d-sm-block" alt=""> 
+        <img src="@lang('main.slider-habitaciones')" class="d-none d-sm-block" style="width: 100%;" alt=""> 
     </div>
 </div>
 
