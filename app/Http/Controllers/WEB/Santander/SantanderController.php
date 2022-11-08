@@ -25,7 +25,7 @@ class SantanderController extends Controller
         {
             $huesped = Huesped::findOrFail($reserva['huesped_id']);
             $invoice = 'Inv-'.$reserva['folio'];
-            $keys = SantanderKeys::where('hotel_id',1)->where('ambiente','prod')->first();
+            $keys = SantanderKeys::where('hotel_id',2)->where('ambiente','prod')->first();
             
             $xml = "<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
             <P>
