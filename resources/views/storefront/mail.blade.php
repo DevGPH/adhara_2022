@@ -57,6 +57,7 @@
             <hr style="border-bottom-color: rgb(137, 44, 121);width:680px;">
             <p style="margin-left: 40px;">Plan de alimentos: Con desayuno</p>
             <p style="margin-left: 40px;">Promoción vigente: Ninguna</p>
+            <p style="margin-left: 40px;color: rgb(137, 44, 121);"><strong>Total de la reserva: {{ number_format(1234) }} MXN</strong></p>
             <hr style="border-bottom-color: rgb(137, 44, 121);width:680px;">
             <p style="margin-top: 50px;margin-left: 40px;">Condiciones de cancelación:</p>
             <p style="text-align: justify;margin-left: 40px;">Contamos con un periodo donde no aplican penalidades si cancelas tu reservación. Tome en cuenta que este periodo tiene una duración fija.</p>
