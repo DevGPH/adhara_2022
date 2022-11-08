@@ -338,7 +338,7 @@ class ReservaController extends Controller
                 ]);*/
                 $santander = new SantanderController();
                 $url = $santander->index($result['data']['folio']);
-                dd($url.data);
+                dd($url);
                 $result = $response->json();
             
                 if($response['code'] == 500)
