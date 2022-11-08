@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\WEB\Home\HomeController;
 use App\Http\Controllers\WEB\Reservas\ReservaController;
+use App\Http\Controllers\WEB\Santander\SantanderController;
 
 /*
 |--------------------------------------------------------------------------
