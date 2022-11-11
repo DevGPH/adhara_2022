@@ -161,7 +161,7 @@ class SantanderController extends Controller
 
     public function store(Request $request)
     {
-        Log::channel('single')->info($request->all());
+        Log::channel('santander-response')->info($request->all());
     
         if($request->filled('strResponse'))
         {

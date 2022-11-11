@@ -55,4 +55,4 @@ Route::post('/santander/reserve',[SantanderController::class,'store'])->name('sa
 Route::post('/santander/response',[SantanderController::class,'store'])->name('santander.result');
 
 
-Route::post('/test-santander',[SantanderController::class,'testPost'])->name('santander.result');
+Route::post('/test-santander',[SantanderController::class,'testPost'])->name('santander.test');
