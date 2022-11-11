@@ -5,6 +5,7 @@ namespace App\Http\Controllers\WEB\Santander;
 use App\Http\Controllers\WEB\Santander\AESCrypto;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Crypt;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
@@ -339,5 +340,10 @@ class SantanderController extends Controller
             'referencia' => $referencia,
             'lang' => $lang
         ]);
+    }
+
+    public function testPost() 
+    {
+        Log::channel('test')->info($request->all());
     }
 }
