@@ -68,7 +68,7 @@ return [
 
         'santander-response' => [
             'driver' => 'single',
-            'path' => storage_path('logs/laravel_test.log'),
+            'path' => storage_path('logs/santander_response.log'),
             'level' => env('LOG_LEVEL', 'debug'),
         ],
 
