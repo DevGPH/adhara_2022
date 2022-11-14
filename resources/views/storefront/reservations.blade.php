@@ -5,6 +5,9 @@
         {{ session('error') }}
     </div>
 @endif
+@error('condiciones')
+    <div class="alert alert-danger">{{ $message }}</div>
+@enderror
 <style>
     #app{
         margin-top: -20px;
@@ -119,7 +122,7 @@
             <div class="col-sm-12">
                     
                 <p class="manota"> 
-                    <input type="checkbox" class="form-check-input" name="condiciones">
+                    <input type="checkbox" class="form-check-input" name="condiciones" id="condiciones">
                     @lang('main.reservations-item019a') <a class="opt-ft-ok " data-toggle="modal" data-target="#myModal">@lang('main.body-item35')</a>  @lang('main.reservations-item019b')
                 </p>
                 <p>@lang('main.reservations-item020')</p>
