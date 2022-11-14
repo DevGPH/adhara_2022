@@ -285,6 +285,16 @@ class ReservaController extends Controller
 
     public function store(Request $request )
     {
+        $rules = [
+            'condiciones' => 'required'
+        ];
+
+        $messages = [
+            'condiciones.required' => (App::getLocale() == 'es') ? 'Necesitas aceptar los terminos y condiciones del hotel' : 'You need yo accept terms & conditions of the hotel'
+        ];
+
+        $this->validate($request, $rules, $messages);
+
         $url = $this->endpoint.'es/reserva';
 
         $response = Http::post($url, [
