@@ -1,12 +1,12 @@
 @extends('layouts.app')
 @section('content')
 @if (session('error'))
-    <div class="alert alert-danger">
+    <div class="alert alert-danger" style="position:absolute">
         {{ session('error') }}
     </div>
 @endif
 @error('condiciones')
-    <div class="alert alert-danger">{{ $message }}</div>
+    <div class="alert alert-danger" style="position:absolute">{{ $message }}</div>
 @enderror
 <style>
     #app{
