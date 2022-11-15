@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\WEB\Santander;
 
 use App\Http\Controllers\WEB\Santander\AESCrypto;
+use Illuminate\Support\Facades\Mail;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\Log;
