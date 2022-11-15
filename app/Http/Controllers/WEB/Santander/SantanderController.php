@@ -22,6 +22,8 @@ use App;
 
 #MAIL
 use App\Mail\ConfirmationMail;
+use App\Mail\ReservaFailed;
+use App\Mail\PagoSuccess;
 
 class SantanderController extends Controller
 {
@@ -240,9 +242,7 @@ class SantanderController extends Controller
                 #Enviar correo de pago exitoso
                 Mail::to($huesped->email)
                     ->bcc(['programacionweb@gphoteles.com','gerencia@gphoteles.com','ecommerce@gphoteles.com'])
-                    ->send(new PagoSuccess($response,$huesped,$reserva->currency));
-
-                Mail::to($request->email)->send(new reservaSuccess($reservation));
+                    ->send(new PagoSuccess($response,$huesped,$reservation->currency));
                 
             }
             else
@@ -258,7 +258,7 @@ class SantanderController extends Controller
                 $reserva['santander_pago_id'] = $pago->id;
                 $reserva->save();*/
 
-                Mail::to($request->email)->send(new ReservaFailed($reservation));
+                //Mail::to($request->email)->send(new ReservaFailed($reservation));
             }
 
         }

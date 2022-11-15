@@ -23,7 +23,7 @@
                 <tbody>
                     <tr>
                         <td><b>Hotel</b></td>
-                        <td>Hotel Adhara Express Cancún</td>
+                        <td>Hotel Adhara Cancún</td>
                     </tr>
                     <tr>
                         <td><b>Nombre</b></td>
