@@ -170,7 +170,6 @@ class SantanderController extends Controller
             $aes = new AesCrypto();
             $descrypted_xml = $aes->desencriptar($request->strResponse, $semilla_xml);
             $response = new \SimpleXMLElement($descrypted_xml);
-            dd($response,$descrypted_xml);
             $aux = Str::of($response->reference)->explode('-');
 
 
