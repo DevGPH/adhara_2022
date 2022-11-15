@@ -226,9 +226,9 @@ class SantanderController extends Controller
             #Se actualiza la reserva, el pago fue APROBADO
             if (strcmp( $response->response, "approved") == 0 )
             {
-                DB::table('reservaciones')
+                DB::connection('mysql')->table('reservaciones')
                     ->where('id', $reserva['id'])
-                    ->update(['estatus' => 'aprobada','satander_pago_id' => $pago->id]);
+                    ->update(['estatus' => 'aprobada','santander_pago_id' => $pago->id]);
 
                 $reservation = Reserva::findOrFail($reserva['id']);
 
@@ -246,9 +246,9 @@ class SantanderController extends Controller
             }
             else
             {
-                DB::table('reservaciones')
+                DB::connection('mysql')->table('reservaciones')
                     ->where('id', $reserva['id'])
-                    ->update(['estatus' => 'denegada','satander_pago_id' => $pago->id]);
+                    ->update(['estatus' => 'denegada','santander_pago_id' => $pago->id]);
 
                 
                 $reservation = Reserva::findOrFail($reserva['id']);
