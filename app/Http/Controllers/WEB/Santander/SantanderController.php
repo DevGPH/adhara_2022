@@ -188,7 +188,6 @@ class SantanderController extends Controller
             $amount = ($response->amount != "") ? $response->amount : "0000";
             $id_url = ($response->id_url != "") ? $response->id_url : "0000";
             $correo = ($response->email != "") ? $response->email : "none@gmail.com";
-            $name = ($huesped != NULL)? $huesped->nombre : 'Adhara';
             $id = $aux[1];
 
             $reserva = Reserva::where('folio',$id)->first();
@@ -199,7 +198,7 @@ class SantanderController extends Controller
                 $huesped = Huesped::find($reserva['huesped_id']);
             }
 
-            
+            $name = ($huesped != NULL)? $huesped->nombre : 'Adhara';
 
             $pago = new Santander();
             $pago->reference = $reference;
