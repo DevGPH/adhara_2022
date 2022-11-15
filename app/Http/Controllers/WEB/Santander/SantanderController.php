@@ -167,10 +167,10 @@ class SantanderController extends Controller
         {
             $keys = SantanderKeys::where('ambiente','test')->first();
             $semilla_xml= Crypt::decryptString($keys['semilla_xml']);
-            dd($semilla_xml);
             $aes = new AesCrypto();
             $descrypted_xml = $aes->desencriptar($request->strResponse, $semilla_xml);
             $response = new SimpleXMLElement($descrypted_xml);
+            dd($descrypted_xml,$response);
             $aux = Str::of($response->reference)->explode('-');
 
 
