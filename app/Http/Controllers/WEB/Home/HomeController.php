@@ -8,6 +8,8 @@ use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Response;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
+
 use App\Models\TipoCambio;
 use App\Models\Temporada;
 use App\Models\PlanHab;

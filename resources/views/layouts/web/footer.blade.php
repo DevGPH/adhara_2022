@@ -1,70 +1,60 @@
-<div id='main-footer'>
-
-    <div class="row">
-        <div class="col-12 col-lg-4 offset-lg-4 offset-xl-4 col-xl-4 offset-xxl-4 col-xxl-4">
-            <img src="{{ asset('images/footer/gph_family/gph_aniversary.png') }}" style="img-fluid">
+<!-- Site Footer -->
+<div class="site-footer">
+    <!-- Footer Top -->
+    <div class="footer-top">
+        <div class="wrapper">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h5>SOCIAL MEDIA</h5>
+                    <h6>FOLLOW THE GRADIUM</h6>
+                    <div class="widget-social-icons">
+                        <ul>
+                            <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h5>NEWSLETTER</h5>
+                    <h6>WE LOVE TO SHARE NEW OFFERS AND EXLUSIVE PROMOTIONS</h6>
+                    <div class="widget-newsletter">
+                        <form>
+                            <input type="text" placeholder="ENTER YOUR E-MAIL ADDRESS" required>
+                            <button type="submit"><i class="fa fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-12 col-lg-4 offset-lg-4 offset-xl-4 col-xl-4 offset-xxl-4 col-xxl-4">
-            <p class="center-black">@lang('main.body-item33') </p>
+    <!-- Footer Top End -->
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <div class="wrapper">
+            <div class="footer-logo">
+                <img src="{{ asset('images/logos/logo.png') }}" alt="The Grandium Hotel">
+            </div>
+            <div class="footer-copyright">
+                <p>COPYRIGHT © THE GRANDIUM HOTEL</p>
+            </div>
+            <div class="footer-contact">
+                <ul>
+                    <li><i class="fa fa-map-marker"></i> LONGRIDGE ROAD, EARLS COURT, LONDON</li>
+                    <li><i class="fa fa-phone"></i> +1-800-123-45-67</li>
+                    <li><a href="mailto:info@thegrandiumhotel.com"><i class="fa fa-paper-plane"></i> INFO@THEGRANDIUMHOTEL.COM</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="#">SITEMAP</a></li>
+                    <li><a href="#">PRIVACY POLICY</a></li>
+                    <li><a href="#">TERMS OF USE</a></li>
+                </ul>
+            </div>
         </div>
     </div>
-    <div class="row" id='gph-family'>
-        <div class="col-6 col-sm-6 col-lg-4 col-xl-4 col-xxl-4">
-            <img src="{{ asset('images/footer/gph_family/gph.png') }}" style="img-fluid">
-        </div>
-        <div class="col-6 col-sm-6 col-lg-4 col-xl-4 col-xxl-4">
-            <img src="{{ asset('images/footer/gph_family/oktrip.png') }}" style="img-fluid">
-        </div>
-        <div class="col-6 col-sm-6 col-lg-4 col-xl-4 col-xxl-4">
-            <img src="{{ asset('images/footer/gph_family/eventos.png') }}" style="img-fluid">
-        </div>
-        <div class="col-6 col-sm-6 col-lg-4 col-xl-4 col-xxl-4">
-            <img src="{{ asset('images/footer/gph_family/adhara_grill.png') }}" style="img-fluid">
-        </div>
-        <div class="col-6 col-sm-6 col-lg-4 col-xl-4 col-xxl-4">
-            <img src="{{ asset('images/footer/gph_family/clubestrella.png') }}" style="img-fluid">
-        </div>
-        <div class="col-6 col-sm-6 col-lg-4 col-xl-4 col-xxl-4">
-            <img src="{{ asset('images/footer/gph_family/cocodrillos.png') }}" style="img-fluid">
-        </div>
-    </div>
-    <hr class="new-red">
-    <div class="row" id='map-footer'>
-        <div class="col-12 col-md-4 offset-md-4 col-lg-4 offset-lg-4 col-xl-4 offset-xl-4 col-xxl-4 offset-xxl-4">
-            <iframe
-                    src="https://maps.google.com/maps?q=hotel%20adhara%20cancun&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                    width="100%" style="border:0;" allowfullscreen="" loading="lazy" id='map-foot'></iframe>
-            <p class="text-c"> <strong>Av. Carlos Nader 1,2,3 SM.1, MZ.2, C.P. 77500 Cancún, Q.R.</strong> </p>
-        </div>
-    </div>
-    <div class="row" id='termino-footer'>
-        <div class="col-12 col-sm-6 col-lg-4 col-xl-4 col-xxl-4">
-            <p class="center-black">@lang('main.body-item34') </p>
-        </div>
-        <div class="col-12 col-sm-6 col-lg-4 offset-lg-4 offset-xl-4 col-xl-4 offset-xxl-4 col-xxl-4">
-            <p class="center-black">@lang('main.body-item35') </p>
-        </div>
-    </div>
-    <div class="row" id='secure-icons'>
-        <div class="col-6 col-sm-6 col-lg-4 col-xl-4 col-xxl-4">
-            <img src="{{ asset('images/footer/pago_seguro.png') }}" class="img-fluid">
-        </div>
-        <div class="col-6 col-sm-6 col-lg-4 col-xl-4 col-xxl-4">
-            <img src="{{ asset('images/footer/ssl-300.png') }}" class="img-fluid">
-        </div>
-        <div class="col-6 col-sm-6 col-lg-4 col-xl-4 col-xxl-4">
-            <img src="{{ asset('images/footer/security.png') }}" class="img-fluid">
-        </div>
-        <div class="col-6 col-sm-6 col-lg-4 col-xl-4 col-xxl-4">
-            <img src="{{ asset('images/footer/advance.png') }}" class="img-fluid">
-        </div>
-        <div class="col-6 col-sm-6 col-lg-4 col-xl-4 col-xxl-4">
-            <img src="{{ asset('images/footer/visa_mastercard.png') }}" class="img-fluid">
-        </div>
-        <div class="col-6 col-sm-6 col-lg-4 col-xl-4 col-xxl-4">
-            <img src="{{ asset('images/footer/mexico.png') }}" class="img-fluid">
-        </div>
-    </div>
+    <!-- Footer Bottom End -->
 </div>
+<!-- Site Footer End -->
