@@ -18,11 +18,14 @@ use App\Http\Controllers\WEB\Santander\SantanderController;
 */
 
 
-Route::redirect('/', '/es');
+//Route::redirect('/', '/es');
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+#Menus
+Route::get('/menu_adhara',[HomeController::class,'menu'])->name('menu.hotel');
+Route::get('/room_service',[HomeController::class,'roomService'])->name('room.service.hotel');
 
 Route::prefix('{locale}')->group(function () 
 {
@@ -53,10 +56,6 @@ Route::prefix('{locale}')->group(function ()
 Route::get('/santander/reserve',[SantanderController::class,'reserve'])->name('santander.response');
 Route::post('/santander/reserve',[SantanderController::class,'store'])->name('santander.reserve');
 Route::post('/santander/response',[SantanderController::class,'store'])->name('santander.result');
-
-#Menus
-Route::get('/menu_adhara',[HomeController::class,'menu'])->name('menu.hotel');
-Route::get('/room_service',[HomeController::class,'roomService'])->name('room.service.hotel');
 
 
 Route::post('/test-santander',[SantanderController::class,'testPost'])->name('santander.test');

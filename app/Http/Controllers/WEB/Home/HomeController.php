@@ -94,18 +94,18 @@ class HomeController extends Controller
         ]); 
     }
 
-    public function menu($locale)
+    public function menu()
     {
-        $rate = $this->rateToday($locale);
+        $rate = $this->rateToday(App::getLocale());
         return view('storefront.menu')->with([
             'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
             'rate' => $rate
         ]);    
     }
 
-    public function roomService($locale)
+    public function roomService()
     {
-        $rate = $this->rateToday($locale);
+        $rate = $this->rateToday(App::getLocale());
         return view('storefront.room_service')->with([
             'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
             'rate' => $rate
