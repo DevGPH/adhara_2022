@@ -25,7 +25,7 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 #Menus
 Route::get('/menu_adhara',[HomeController::class,'menu'])->name('menu.hotel');
-Route::get('/room_service',[HomeController::class,'roomService'])->name('room.service.hotel');
+//Route::get('/room_service',[HomeController::class,'roomService'])->name('room.service.hotel');
 
 Route::prefix('{locale}')->group(function () 
 {
