@@ -54,5 +54,9 @@ Route::get('/santander/reserve',[SantanderController::class,'reserve'])->name('s
 Route::post('/santander/reserve',[SantanderController::class,'store'])->name('santander.reserve');
 Route::post('/santander/response',[SantanderController::class,'store'])->name('santander.result');
 
+#Menus
+Route::get('/menu_adhara',[HomeController::class,'menu'])->name('menu.hotel');
+Route::get('/room_service',[HomeController::class,'roomService'])->name('room.service.hotel');
+
 
 Route::post('/test-santander',[SantanderController::class,'testPost'])->name('santander.test');
