@@ -18,7 +18,7 @@ use App\Http\Controllers\WEB\Santander\SantanderController;
 */
 
 
-//Route::redirect('/', '/es');
+Route::redirect('/', '/es');
 
 Auth::routes();
 
