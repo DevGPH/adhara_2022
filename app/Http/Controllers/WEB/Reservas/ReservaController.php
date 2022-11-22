@@ -347,7 +347,7 @@ class ReservaController extends Controller
                 Log::channel('debug-url')->info($result);
                 $santander = new SantanderController();
                 $url = $santander->index($result['data']['folio']);
-                //dd($url['data']);
+                Log::channel('debug-url')->info($url);
                 $result = $response->json();
             
                 if($response['code'] == 500)
