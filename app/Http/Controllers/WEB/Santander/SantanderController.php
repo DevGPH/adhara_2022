@@ -136,7 +136,12 @@ class SantanderController extends Controller
 
                 if( strcmp( $sxe->cd_response, "success") == 0 )
                 {
-                    //header("Location: ".$sxe->nb_url);
+                    Log::channel('debug-url')->info($sxe);
+                    Log::channel('debug-url')->info(Crypt::decryptString($keys['id_company']));
+                    Log::channel('debug-url')->info(Crypt::decryptString($keys['user']));
+                    Log::channel('debug-url')->info(Crypt::decryptString($keys['id_sucursal']));
+                    Log::channel('debug-url')->info(Crypt::decryptString($keys['pass_user']));
+                    Log::channel('debug-url')->info('success');
                     $data = [
                         'url' => $sxe->nb_url
                     ];
@@ -146,6 +151,14 @@ class SantanderController extends Controller
                         'code' => 201
                     ];
                     //return redirect()->away($sxe->nb_url);
+                }
+                if (strcmp( $sxe->cd_response, "error") == 0) {
+                    
+                    return [
+                        'msg' => 'Error al general la URL',
+                        'data' => $sxe->nb_response,
+                        'code' => 500
+                    ];
                 }
             }
 
