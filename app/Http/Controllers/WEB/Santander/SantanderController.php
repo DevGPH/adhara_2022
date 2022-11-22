@@ -133,14 +133,14 @@ class SantanderController extends Controller
                 $satander_response->url_mitec = $sxe->nb_url;
                 $satander_response->huesped_id = $huesped->id;
                 $satander_response->save();
-
+                Log::channel('debug-keys')->info($sxe);
+                Log::channel('debug-keys')->info(Crypt::decryptString($keys['id_company']));
+                Log::channel('debug-keys')->info(Crypt::decryptString($keys['user']));
+                Log::channel('debug-keys')->info(Crypt::decryptString($keys['id_sucursal']));
+                Log::channel('debug-keys')->info(Crypt::decryptString($keys['pass_user']));
                 if( strcmp( $sxe->cd_response, "success") == 0 )
                 {
-                    Log::channel('debug-url')->info($sxe);
-                    Log::channel('debug-url')->info(Crypt::decryptString($keys['id_company']));
-                    Log::channel('debug-url')->info(Crypt::decryptString($keys['user']));
-                    Log::channel('debug-url')->info(Crypt::decryptString($keys['id_sucursal']));
-                    Log::channel('debug-url')->info(Crypt::decryptString($keys['pass_user']));
+                    
                     Log::channel('debug-url')->info('success');
                     $data = [
                         'url' => $sxe->nb_url
