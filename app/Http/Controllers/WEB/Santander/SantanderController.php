@@ -34,7 +34,7 @@ class SantanderController extends Controller
         {
             $huesped = Huesped::findOrFail($reserva['huesped_id']);
             $invoice = 'Inv-'.$reserva['folio'];
-            $keys = SantanderKeys::connection('mysql_second')->where('hotel_id',2)->where('ambiente','prod')->first();
+            $keys = SantanderKeys::where('hotel_id',2)->where('ambiente','prod')->first();
             
             $xml = "<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
             <P>
@@ -169,7 +169,7 @@ class SantanderController extends Controller
     
         if($request->filled('strResponse'))
         {
-            $keys = SantanderKeys::connection('mysql_second')->where('hotel_id',2)->where('ambiente','prod')->first();
+            $keys = SantanderKeys::where('hotel_id',2)->where('ambiente','prod')->first();
             $semilla_xml= Crypt::decryptString($keys['semilla_xml']);
             $aes = new AesCrypto();
             $descrypted_xml = $aes->desencriptar($request->strResponse, $semilla_xml);
