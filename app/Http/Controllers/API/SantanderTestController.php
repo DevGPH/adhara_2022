@@ -138,7 +138,7 @@ class SantanderTestController extends Controller
                 $satander_response->url_mitec = $sxe->nb_url;
                 $satander_response->huesped_id = $huesped->id;
                 $satander_response->save();
-                dd($sxe, $descrypted_xml, $keys, Crypt::decryptString($keys['id_company']), Crypt::decryptString($keys['user']), Crypt::decryptString($keys['id_sucursal']), Crypt::decryptString($keys['pass_user']) );
+                dd($sxe, $xml, $descrypted_xml, $keys, Crypt::decryptString($keys['id_company']), Crypt::decryptString($keys['user']), Crypt::decryptString($keys['id_sucursal']), Crypt::decryptString($keys['pass_user']) );
                 if( strcmp( $sxe->cd_response, "success") == 0 )
                 {
                     //header("Location: ".$sxe->nb_url);
