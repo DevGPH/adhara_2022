@@ -109,7 +109,7 @@ class SantanderTestController extends Controller
             $output = curl_exec($curl);
             $err = curl_error($curl);
             curl_close($curl);
-            dd($output, $err);
+
             if ($err)
             {
                 //echo "cURL Error #:" . $err;
@@ -138,7 +138,7 @@ class SantanderTestController extends Controller
                 $satander_response->url_mitec = $sxe->nb_url;
                 $satander_response->huesped_id = $huesped->id;
                 $satander_response->save();
-
+                dd($sxe->nb_url);
                 if( strcmp( $sxe->cd_response, "success") == 0 )
                 {
                     //header("Location: ".$sxe->nb_url);
