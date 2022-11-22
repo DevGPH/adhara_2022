@@ -3,16 +3,18 @@
 namespace App\Http\Controllers\WEB\Reservas;
 
 use Illuminate\Http\Client\ConnectionException;
+use Illuminate\Support\Facades\Cookie;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
-use App\Http\Controllers\Controller;
-use App\Http\Controllers\WEB\Home\HomeController;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Http\Response;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
-use Illuminate\Support\Facades\Cookie;
-use Illuminate\Http\Response;
 
 use App\Http\Controllers\WEB\Santander\SantanderController;
+use App\Http\Controllers\WEB\Home\HomeController;
+use App\Http\Controllers\Controller;
+
 
 
 use App\Mail\ConfirmationMail;
@@ -342,10 +344,7 @@ class ReservaController extends Controller
 
             case 'pago_seguro':
 
-                //$url = url('/').'/api/santander';
-                /*$response = Http::asForm()->post($url,[
-                    'id' => $result['data']['folio']
-                ]);*/
+                Log::channel('debug-url')->info($result);
                 $santander = new SantanderController();
                 $url = $santander->index($result['data']['folio']);
                 //dd($url['data']);
