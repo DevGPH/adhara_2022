@@ -167,4 +167,13 @@ class SantanderTestController extends Controller
             //return $this->errorResponse('Reserva no encontrada-'.$reserva['folio'],408); # Reserva no encontrada se necesita REDIRIGIR
         }
     }
+
+    public function update() {
+
+        DB::connection('mysql_second')->table('santander_keys')
+              ->where('hotel_id', 2)
+              ->update(['pass_user' => Crypt::encryptString('ADHARA2024')]);
+
+        dd('exito al hacer update de pass_user');
+    }
 }
