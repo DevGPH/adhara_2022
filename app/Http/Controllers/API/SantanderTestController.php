@@ -39,7 +39,7 @@ class SantanderTestController extends Controller
         {
             $huesped = Huesped::findOrFail($reserva['huesped_id']);
             $invoice = 'Inv-'.$reserva['folio'];
-            $keys = SantanderKeys::where('hotel_id',2)->where('ambiente','prod')->first();
+            $keys = SantanderKeys::connection('mysql_second')->where('hotel_id',2)->where('ambiente','prod')->first();
             
             $xml = "<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
             <P>
