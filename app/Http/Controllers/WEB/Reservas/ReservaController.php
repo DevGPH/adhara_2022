@@ -350,7 +350,7 @@ class ReservaController extends Controller
                 Log::channel('debug-url')->info($url);
                 $result = $response->json();
             
-                if($response['code'] == 500)
+                if($response['code'] == 500 || $url['code'] == 500)
                 {
                     return back()->with('error','Error al generar su metodo de pago, ponganse en contacto con el area de reservas con numero de folio: '.$result['data']['folio']);
                 }else{
