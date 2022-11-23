@@ -25,7 +25,6 @@ class ConfirmationMail extends Mailable
      */
     public function __construct($folio, $hotel_name, $lang = 'es', $info = null)
     {
-        $this->action = $action;
         $this->folio = $folio;
         $this->hotel_name = $hotel_name;
         $this->lang = $lang;
