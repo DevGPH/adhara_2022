@@ -44,15 +44,25 @@ class ConfirmationMail extends Mailable
 
             $this->msg = 'Esta reservación esta confirmada ¡Los esperamos!';
             $this->msg_2 = 'Este es tu comprobante de reserva, deberás mostrarlo junto con una identificación oficial en el mostrador del Hotel.';
-
-            return $this->subject('Confirmacion de Reserva')->view('Mails.es.reserva');
+            if ($this->hotel_name == "Adhara Cancun") {
+                return $this->subject('Confirmacion de Reserva')->view('Mails.es.reserva');
+            }
+            else {
+                return $this->subject('Confirmacion de Reserva')->view('Mails.es.reserva_express');
+            }
+            
         }
         else {
 
             $this->msg = 'Esta reservación esta confirmada ¡Los esperamos!';
             $this->msg_2 = 'Este es tu comprobante de reserva, deberás mostrarlo junto con una identificación oficial en el mostrador del Hotel.';
 
-            return $this->subject('Reservation Confirmation')->view('Mails.en.reserva');
+            if ($this->hotel_name == "Adhara Cancun") {
+                return $this->subject('Confirmacion de Reserva')->view('Mails.es.reserva');
+            }
+            else {
+                return $this->subject('Confirmacion de Reserva')->view('Mails.es.reserva_express');
+            }
         }        
     }
 }

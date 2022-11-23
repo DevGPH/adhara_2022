@@ -128,6 +128,13 @@ class HomeController extends Controller
         ]);
     }
 
+    public function mailExpress($locale)
+    {
+        return view('storefront.mail_express')->with([
+            'lang' => (App::getLocale() == 'es') ? 'en' : 'es'
+        ]);
+    }
+
     public function getUserC(Request $request, $locale)
     {
         $response = Http::withHeaders([
