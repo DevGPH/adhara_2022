@@ -15,7 +15,7 @@
 <body>
     <div style="width: 800px;display:block;margin:0 auto;">
         <div style="padding:10px;">
-            <img src="https://adharacancun.com/images/mail/head.png" alt="Adhara Cancun" style="margin-bottom:20px;">
+            <img src="https://adharacancun.com/images/mail/head_express.png" alt="Adhara Express" style="margin-bottom:20px;">
             <p style="text-align: right;">Numero de Reservación #{{ $folio }}</p>
             <p style="text-align: right;">Reserva hecha en {{ $info['created_at']->format('F j, Y, g:i a') }}</p>
             <p style="text-align: right;">Titular de la reservación: {{ $info['nombre'] . ' ' . $info['apellidos'] }}</p>
