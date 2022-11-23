@@ -30,6 +30,7 @@ class SantanderTestController extends Controller
     public function keys()
     {
         $keys = SantanderKeys::where('hotel_id',2)->where('ambiente','prod')->first();
+        dd($keys);
     }
 
     public function index($folio)
@@ -40,7 +41,7 @@ class SantanderTestController extends Controller
             $huesped = Huesped::findOrFail($reserva['huesped_id']);
             $invoice = 'Inv-'.$reserva['folio'];
             $keys = SantanderKeys::where('hotel_id',2)->where('ambiente','prod')->first();
-            
+            dd($keys->id);
             $xml = "<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
             <P>
                 <business>

@@ -216,7 +216,7 @@ class SantanderController extends Controller
 
             if($reserva != null)
             {
-                $huesped = Huesped::find($reserva['huesped_id']);
+                $huesped = Huesped::find($reserva->huesped_id);
             }
 
             $name = ($huesped != NULL)? $huesped->nombre : 'Adhara';
@@ -247,14 +247,10 @@ class SantanderController extends Controller
             if (strcmp( $response->response, "approved") == 0 )
             {
                 DB::connection('mysql')->table('reservaciones')
-                    ->where('id', $reserva['id'])
+                    ->where('id', $reserva->id)
                     ->update(['estatus' => 'aprobada','santander_pago_id' => $pago->id]);
 
-                $reservation = Reserva::findOrFail($reserva['id']);
-
-                /*$reserva['estatus'] = 'aprobada';
-                $reserva['santander_pago_id'] = $pago->id;
-                $reserva->save();*/
+                $reservation = Reserva::findOrFail($reserva->id);
 
                 #Enviar correo de pago exitoso
                 Mail::to($huesped->email)
