@@ -18,6 +18,7 @@ use App\Models\Santander;
 use App\Models\CurlError;
 use App\Models\Reserva;
 use App\Models\Huesped;
+use App\Models\Hotel;
 use App;
 
 #MAIL
