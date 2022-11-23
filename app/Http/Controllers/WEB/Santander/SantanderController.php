@@ -201,7 +201,7 @@ class SantanderController extends Controller
             $cd_response = ($response->cd_response != "") ? $response->cd_response : "none";
             $cd_error = ($response->cd_error != "") ? $response->cd_error : "none";
             $hora = ($response->time != "") ? $response->time : "0000";
-            $fecha = ($response->date != "") ? $response->date : now();
+            $fecha = now();
             $merchant = ($response->nb_merchant != "") ? $response->nb_merchant : "0000";
             $cc_type = ($response->cc_type != "") ? $response->cc_type : "0000";
             $operation = ($response->tp_operation != "") ? $response->tp_operation : "0000";
