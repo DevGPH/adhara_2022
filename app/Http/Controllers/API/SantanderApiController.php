@@ -25,13 +25,8 @@ use App\Mail\ConfirmationMail;
 use App\Mail\ReservaFailed;
 use App\Mail\PagoSuccess;
 
-class SantanderTestController extends Controller
+class SantanderApiController extends Controller
 {
-    public function keys()
-    {
-        $keys = SantanderKeys::where('hotel_id',2)->where('ambiente','prod')->first();
-        dd($keys);
-    }
 
     public function index($folio)
     {
@@ -41,7 +36,7 @@ class SantanderTestController extends Controller
             $huesped = Huesped::findOrFail($reserva['huesped_id']);
             $invoice = 'Inv-'.$reserva['folio'];
             $keys = SantanderKeys::where('hotel_id',2)->where('ambiente','prod')->first();
-            dd($keys->id, $keys['id_company'], $keys->id_company);
+            
             $xml = "<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
             <P>
                 <business>
@@ -124,8 +119,6 @@ class SantanderTestController extends Controller
                     'data' => 'CurlError-'.$reserva['folio'],
                     'code' => 407
                 ]);
-
-                //return $this->errorResponse('CurlError-'.$reserva['folio'],407); #407 CurlError
             }
             else
             {
@@ -139,24 +132,36 @@ class SantanderTestController extends Controller
                 $satander_response->url_mitec = $sxe->nb_url;
                 $satander_response->huesped_id = $huesped->id;
                 $satander_response->save();
-                dd($sxe, $xml, $descrypted_xml, $keys, Crypt::decryptString($keys['id_company']), Crypt::decryptString($keys['user']), Crypt::decryptString($keys['id_sucursal']), Crypt::decryptString($keys['pass_user']) );
+                Log::channel('debug-keys')->info($xml);
+                Log::channel('debug-keys')->info($sxe);
+                Log::channel('debug-keys')->info($descrypted_xml);
+                Log::channel('debug-keys')->info(Crypt::decryptString($keys['id_company']));
+                Log::channel('debug-keys')->info(Crypt::decryptString($keys['user']));
+                Log::channel('debug-keys')->info(Crypt::decryptString($keys['id_sucursal']));
+                Log::channel('debug-keys')->info(Crypt::decryptString($keys['pass_user']));
+                Log::channel('debug-keys')->info(Crypt::decryptString($keys['semilla_xml']));
+                Log::channel('debug-keys')->info(Crypt::decryptString($keys['llave_comercial']));
                 if( strcmp( $sxe->cd_response, "success") == 0 )
                 {
-                    //header("Location: ".$sxe->nb_url);
-                    $data = [
-                        'url' => $sxe->nb_url
-                    ];
-                    return [
+                    
+                    Log::channel('debug-url')->info('success');
+                    
+                    return response()->json([
                         'msg' => 'URL de pago generada con exito',
                         'data' => $sxe->nb_url,
                         'code' => 201
-                    ];
-                    //return redirect()->away($sxe->nb_url);
+                    ]);
+                }
+                if (strcmp( $sxe->cd_response, "error") == 0) {
+                    
+                    return  response()->json([
+                        'msg' => 'Error al general la URL',
+                        'data' => $sxe->nb_response,
+                        'code' => 500
+                    ]);
                 }
             }
-
             /*---------------- Termina integracion con Santader ----------------*/
-
         }else
         {
             return response()->json([
@@ -164,17 +169,6 @@ class SantanderTestController extends Controller
                 'data' => $reserva['folio'],
                 'code' => 404
             ]);
-
-            //return $this->errorResponse('Reserva no encontrada-'.$reserva['folio'],408); # Reserva no encontrada se necesita REDIRIGIR
         }
-    }
-
-    public function update() {
-
-        DB::connection('mysql_second')->table('santander_keys')
-              ->where('hotel_id', 2)
-              ->update(['pass_user' => Crypt::encryptString('ADHARA2024')]);
-
-        dd('exito al hacer update de pass_user');
     }
 }

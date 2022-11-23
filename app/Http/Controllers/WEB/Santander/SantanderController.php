@@ -267,11 +267,6 @@ class SantanderController extends Controller
                 
                 $reservation = Reserva::findOrFail($reserva['id']);
 
-                /*$reserva['estatus'] = 'denegada';
-                $reserva['santander_pago_id'] = $pago->id;
-                $reserva->save();*/
-
-                //Mail::to($request->email)->send(new ReservaFailed($reservation));
             }
 
         }

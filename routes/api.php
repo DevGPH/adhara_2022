@@ -3,7 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\API\SantanderTestController;
+use App\Http\Controllers\API\SantanderApiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +21,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 
-Route::get('/santander-keys',[SantanderTestController::class,'keys']);
-Route::get('/santander-folio/{folio}',[SantanderTestController::class,'index']);
-Route::get('/update-key',[SantanderTestController::class,'update']);
+
+Route::get('/santander-reserve/{folio}',[SantanderApiController::class,'index']);

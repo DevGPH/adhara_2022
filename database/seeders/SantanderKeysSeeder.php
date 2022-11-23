@@ -33,7 +33,7 @@ class SantanderKeysSeeder extends Seeder
             'id_company' =>  Crypt::encryptString('ZC6A'),
             'id_sucursal' =>  Crypt::encryptString('0006'),
             'user' =>  Crypt::encryptString('ZC6ASIUS0'),
-            'pass_user' =>  Crypt::encryptString('APSPVPSRG9'),
+            'pass_user' =>  Crypt::encryptString('ADHARA2024'),
             'semilla_xml' =>  Crypt::encryptString('060FEAA5A3BCC3E31ECF231D6A225A03'),
             'llave_comercial' =>  Crypt::encryptString('9265655153'),
             'ambiente' => 'prod', // test - prod
