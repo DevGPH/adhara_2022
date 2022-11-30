@@ -676,7 +676,7 @@ body p{
 	position: absolute;
     top: 130px;
     left: 50px;
-    background-color: rgba(209, 44, 44, 1.0);
+    background-color: rgb(137, 44, 121);
     width: 200px;
     padding: 8px;
     z-index: 100;
