@@ -208,7 +208,7 @@ class HomeController extends Controller
         $price = ($locale == 'es') ? ($conversion->valor_x_moneda * ($temporada->tarifa_x_dolares + $plan_total)) : $temporada->tarifa_x_dolares + $plan_total;
         $currency = ($locale == 'es') ? 'MXN' : $temporada->currency;
         if($temporada != null)
-            return $price.' '.$currency;
+            return number_format($price).' '.$currency;
     }
 }
 
