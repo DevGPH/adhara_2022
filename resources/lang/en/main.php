@@ -17,9 +17,9 @@ return [
     'mini-banner1-02' => 'WhatsApp',
     'mini-banner1-03' => '998 122 1816',
     'mini-banner1-04' => '',
-    'special-rate' => 'Magic Fee! </br> Breakfast Buffet',
-    'rates-special-mob' => 'Magic Fee! Breakfast Buffet',
-    'taxes-rate' => 'Taxes included',
+    'special-rate' => 'MAGIC </br> RATE',
+    'rates-special-mob' => 'Taxes included*',
+    'taxes-rate' => '¡Include Breakfast!',
 
     'mini-banner2-01' => 'Search',
     'mini-banner2-02' => 'Apply',

@@ -17,9 +17,9 @@ return [
     'mini-banner1-02' => 'WhatsApp',
     'mini-banner1-03' => '998 122 1816',
     'mini-banner1-04' => '',
-    'special-rate' => '¡Tarifa Mágica! </br> Con Desayuno',
-    'rates-special-mob' => '¡Tarifa Mágica! Con Desayuno',
-    'taxes-rate' => 'Impuestos incluidos',
+    'special-rate' => 'TARIFA </br> MÁGICA',
+    'rates-special-mob' => 'Impuestos incluidos*',
+    'taxes-rate' => '¡Incluye desayuno!',
 
     'mini-banner2-01' => 'Buscar',
     'mini-banner2-02' => 'Aplicar',

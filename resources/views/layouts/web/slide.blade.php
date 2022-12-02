@@ -15,19 +15,25 @@
 </div>
 
 <div id='hover-whats'>
+    <img src="{{ asset('images/banner_hover/reloj.png') }}" alt="" style="width: 50px;margin-bottom:-30px;">
     <div class="cotiza-text" style="margin-top: 0px;">
-        <p>@lang('main.special-rate')</p>
+        <p style="margin-bottom: 3px;">@lang('main.special-rate')</p>
+        <p style="margin-bottom: 8px;font-size:12px;">@lang('main.taxes-rate')</p>
         <p>$ {{ $rate }}</p>
-        <p style="margin-bottom: 0px;">@lang('main.taxes-rate')</p>
     </div>
-    <div class="cotiza-text">
+    <p class="taxes-banner" style="margin-bottom: 40px;">@lang('main.rates-special-mob')</p>
+    <a href="https://api.whatsapp.com/send?phone=529981221816" target='_blank'>
+        <img src="{{ asset('images/banner_hover/whats_home.png') }}" alt="">
+    </a>   
+
+    <!--div class="cotiza-text">
         <p class="small-t" style="margin-bottom: 0px;"><strong>@lang('main.hover-whats-p')</strong></p>
-    </div>
-    <div class="cotiza-text">
-        <img src="{{ asset('images/icons/social_media/whatsapp.png') }}" id='logo-whats-hover' alt="">
+    </div-->
+    <!--div class="cotiza-text">
+        <img src="{{ asset('images/banner_hover/whats_home.png') }}" id='logo-whats-hover' alt="">
         <h4>WhatsApp</h4>
         <p class="big-t" style="margin-bottom: 0px;"><a href="https://api.whatsapp.com/send?phone=529981221816" target='_blank'>998 122 1861</a></p>
-    </div>  
+    </div-->  
 </div>
 
 <script type='text/javascript'>
