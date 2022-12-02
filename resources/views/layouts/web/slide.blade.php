@@ -17,8 +17,8 @@
 <div id='hover-whats'>
     <img src="{{ asset('images/banner_hover/reloj.png') }}" alt="" style="width: 50px;margin-bottom:-30px;">
     <div class="cotiza-text" style="margin-top: 0px;">
-        <p style="margin-bottom: 3px;">@lang('main.special-rate')</p>
-        <p style="margin-bottom: 8px;font-size:12px;">@lang('main.taxes-rate')</p>
+        <p style="margin-bottom: 3px;letter-spacing:2px;">@lang('main.special-rate')</p>
+        <p style="margin-bottom: 8px;font-size:12px;letter-spacing:2px;">@lang('main.taxes-rate')</p>
         <p>$ {{ $rate }}</p>
     </div>
     <p class="taxes-banner" style="margin-bottom: 40px;">@lang('main.rates-special-mob')</p>
