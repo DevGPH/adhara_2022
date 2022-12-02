@@ -22,7 +22,7 @@
         <p style="letter-spacing: 1px;">$ {{ $rate }}</p>
     </div>
     <p class="taxes-banner" style="margin-bottom: 40px;">@lang('main.rates-special-mob')</p>
-    <a href="https://api.whatsapp.com/send?phone=529981221816" target='_blank'>
+    <a href="https://api.whatsapp.com/send?phone=529981221861" target='_blank'>
         <img src="{{ asset('images/banner_hover/whats_home.png') }}" alt="">
     </a>   
 

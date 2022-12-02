@@ -24,7 +24,7 @@
                     <a class="nav-link {{ $covid_active ?? 'no-active'}}" href="{{ route('covid',['locale' => App::getLocale()]) }}" ><img src="{{ asset('images/covid_shield.png') }}" id='covid_shield' alt="Free covid"><span class="d-lg-none d-xl-inline">@lang('main.nav-covid-label')</span><span class="d-none d-lg-inline d-xl-none">COVID</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://api.whatsapp.com/send?phone=529981221861" target='_blank'><img src="{{ asset('images/icons/social_media/whatsapp.png') }}" id='whats_nav'> </a>
+                    <a class="nav-link" href="https://api.whatsapp.com/send?phone=529981221861" target='_blank' style="color: white;"><img src="{{ asset('images/icons/social_media/whatsapp.png') }}" id='whats_nav' style="margin-right:10px;">+52 9981221861 </a>
                 </li>
                 <li class="nav-item">
                     @if (Cookie::get('user'))
