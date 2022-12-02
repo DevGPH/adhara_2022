@@ -19,7 +19,7 @@
     <div class="cotiza-text" style="margin-top: 0px;">
         <p style="margin-bottom: 3px;letter-spacing:2px;">@lang('main.special-rate')</p>
         <p style="margin-bottom: 8px;font-size:12px;letter-spacing:2px;">@lang('main.taxes-rate')</p>
-        <p>$ {{ $rate }}</p>
+        <p style="letter-spacing: 1px;">$ {{ $rate }}</p>
     </div>
     <p class="taxes-banner" style="margin-bottom: 40px;">@lang('main.rates-special-mob')</p>
     <a href="https://api.whatsapp.com/send?phone=529981221816" target='_blank'>
