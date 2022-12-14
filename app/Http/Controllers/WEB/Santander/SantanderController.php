@@ -266,10 +266,8 @@ class SantanderController extends Controller
                     ->where('id', $reserva->id)
                     ->update(['estatus' => 'aprobada','santander_pago_id' => $pago->id]);
 
-                $reservation = Reserva::findOrFail($reserva->id);
-
                 #Enviar correo de pago exitoso
-                Mail::to($request->email)->send(new ConfirmationMail($folio, $hotel->nombre_es, $lang, $info));
+                Mail::to($huesped->email)->send(new ConfirmationMail($folio, $hotel->nombre_es, $lang, $info));
                 Mail::to('ecommerce@gphoteles.com')->bcc(['programacionweb@gphoteles.com','gerencia@gphoteles.com','ventas@gphoteles.com','recepcion.express@gphoteles.com','reservaciones@gphoteles.com'])->send(new ConfirmationMail($folio, $hotel->nombre_es, $lang, $info));
               
                 
@@ -279,9 +277,6 @@ class SantanderController extends Controller
                 DB::connection('mysql')->table('reservaciones')
                     ->where('id', $reserva['id'])
                     ->update(['estatus' => 'denegada','santander_pago_id' => $pago->id]);
-
-                
-                $reservation = Reserva::findOrFail($reserva['id']);
 
             }
 
