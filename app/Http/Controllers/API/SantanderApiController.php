@@ -171,4 +171,13 @@ class SantanderApiController extends Controller
             ]);
         }
     }
+
+    public function testResponse(Request $request) {
+        $keys = SantanderKeys::where('hotel_id',2)->where('ambiente','prod')->first();
+        $semilla_xml= Crypt::decryptString($keys['semilla_xml']);
+        $aes = new AesCrypto();
+        $descrypted_xml = $aes->desencriptar($request->strResponse, $semilla_xml);
+        $response = new \SimpleXMLElement($descrypted_xml);
+        dd($response);
+    }
 }
