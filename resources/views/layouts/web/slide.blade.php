@@ -4,14 +4,18 @@
         {{-- <h4>WhatsApp</h4> --}}
  </nav>
  <div class="owl-carousel owl-theme" id='carousel'>
+     <div class="item">
+         <a href="https://api.whatsapp.com/send?phone=529981221861" target='_blank'>
+            <video width="100%" height="600" autoplay='autoplay' loop='true' muted allowfullscreen>
+                <source src="{{ asset('video/tarifa_magica.mp4') }}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </a>   
+    </div>
     <div class="item">
         <img src="@lang('main.slider-home-2-mob')" class="d-block d-sm-none" alt=""> 
         <img src="@lang('main.slider-home-2')" class="d-none d-sm-block" alt=""> 
     </div>
-    <!--div class="item">
-        <img src="@lang('main.slider-home-mob')" class="d-block d-sm-none" alt=""> 
-        <img src="@lang('main.slider-home')" class="d-none d-sm-block" alt=""> 
-    </div-->
 </div>
 
 <div id='hover-whats'>
@@ -42,7 +46,7 @@ $('.owl-carousel').owlCarousel({
     loop:false,
     margin:10,
     autoplay:true,
-    autoplayTimeout:5000,
+    autoplayTimeout:15000,
     autoplayHoverPause:false,
     responsiveClass:true,
     rewind: true,
