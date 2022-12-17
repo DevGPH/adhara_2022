@@ -1035,3 +1035,26 @@ body p{
     background-color: rgb(137, 44, 121);
     border-color: rgb(137, 44, 121);
 }
+
+#video-tarifa {
+    object-fit: contain;
+    margin-top: -40px;
+}
+
+@media (min-width:1300px) {
+    #video-tarifa {
+        margin-top: 0px;
+    }
+}
+
+@media (min-width:1400px) {
+    #video-tarifa {
+        object-fit: fill;
+    }
+}
+
+@media (min-width:1500px) {
+    #video-tarifa {
+        object-fit: cover;
+    }
+}
