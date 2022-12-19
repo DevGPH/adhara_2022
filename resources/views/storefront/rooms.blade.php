@@ -35,23 +35,6 @@
             <div class="col-xs-12 col-sm-4 col-md-4">
                 <img class="img-fluid" src="{{ asset('images/habitaciones/one_bedroom.png') }}" alt="">
                 <h4>@lang('main.room-item016')</h4>
-                <p>@lang('main.room-item16') </p>
-                <p>@lang('main.room-item17') </p>
-                <p>@lang('main.room-item18') </p>
-                <p>@lang('main.room-item19') </p>
-                <p>@lang('main.room-item20') </p>
-                <p>@lang('main.room-item21') </p>
-                <p>@lang('main.room-item22') </p>
-                <p>@lang('main.room-item23') </p>
-                <p>@lang('main.room-item24') </p>
-                <p>@lang('main.room-item25') </p>
-                <p>@lang('main.room-item26') </p>
-                <p>@lang('main.room-item27') </p>
-            
-            </div>
-            <div class="col-xs-4 col-sm-4 col-md-4">
-                <img class="img-fluid" src="{{ asset('images/habitaciones/room_ejecutive.png') }}" alt="">
-                <h4>@lang('main.room-item028')</h4>
                 <p>@lang('main.room-item28') </p>
                 <p>@lang('main.room-item29') </p>
                 <p>@lang('main.room-item30') </p>
@@ -71,6 +54,23 @@
                 <p>@lang('main.room-item44') </p>
                 <p>@lang('main.room-item45') </p>
                 <p>@lang('main.room-item46') </p>
+            
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4">
+                <img class="img-fluid" src="{{ asset('images/habitaciones/room_ejecutive.png') }}" alt="">
+                <h4>@lang('main.room-item028')</h4>
+                <p>@lang('main.room-item16') </p>
+                <p>@lang('main.room-item17') </p>
+                <p>@lang('main.room-item18') </p>
+                <p>@lang('main.room-item19') </p>
+                <p>@lang('main.room-item20') </p>
+                <p>@lang('main.room-item21') </p>
+                <p>@lang('main.room-item22') </p>
+                <p>@lang('main.room-item23') </p>
+                <p>@lang('main.room-item24') </p>
+                <p>@lang('main.room-item25') </p>
+                <p>@lang('main.room-item26') </p>
+                <p>@lang('main.room-item27') </p>
             </div>
         </div>
     </div>
