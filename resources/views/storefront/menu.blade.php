@@ -4,11 +4,11 @@
 
 <div style="margin-top:90px">
     @if ($lang == 'es')
-        <img src="{{ asset('images/menus/menu_en.png') }}" alt="Menu del Restaurante" class="img-fluid img-c">
+        <img src="{{ asset('images/menus/service_en.png') }}" alt="Menu del Restaurante" class="img-fluid img-c">
         <img src="{{ asset('images/menus/coco_en.png') }}" alt="Menu del Restaurante" class="img-fluid img-c">
         <img src="{{ asset('images/menus/drinks_en.png') }}" alt="Menu del Restaurante" class="img-fluid img-c">
     @else
-        <img src="{{ asset('images/menus/menu_es.png') }}" alt="Menu del Restaurante" class="img-fluid img-c">
+        <img src="{{ asset('images/menus/service_es.png') }}" alt="Menu del Restaurante" class="img-fluid img-c">
         <img src="{{ asset('images/menus/coco_es.png') }}" alt="Menu del Restaurante" class="img-fluid img-c">
         <img src="{{ asset('images/menus/drinks_es.png') }}" alt="Menu del Restaurante" class="img-fluid img-c">
     @endif
