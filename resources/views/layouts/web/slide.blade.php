@@ -7,17 +7,11 @@
      <div class="item">
          @if ($lang == 'es')
             <a href="https://api.whatsapp.com/send?phone=529981221861" target='_blank' class="d-block d-sm-none">
-                <video id="video-tarifa" width="100%" height="600" autoplay='autoplay' loop='true' muted allowfullscreen>
-                    <source src="{{ asset('video/tarifa_mo_en.mp4') }}" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+                <img src="{{ asset('video/tarifa_mob_en.png') }}" alt="">
             </a> 
          @else
             <a href="https://api.whatsapp.com/send?phone=529981221861" target='_blank' class="d-block d-sm-none">
-                <video id="video-tarifa" width="100%" height="600" autoplay='autoplay' loop='true' muted allowfullscreen>
-                    <source src="{{ asset('video/tarifa_mob_es.mp4') }}" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+                <img src="{{ asset('video/tarifa_mob_es.png') }}" alt="">
             </a>  
          @endif
         <a href="https://api.whatsapp.com/send?phone=529981221861" target='_blank' class="d-none d-sm-block">
