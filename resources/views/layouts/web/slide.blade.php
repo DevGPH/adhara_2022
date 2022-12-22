@@ -16,7 +16,7 @@
          @endif
         <a href="https://api.whatsapp.com/send?phone=529981221861" target='_blank' class="d-none d-sm-block">
             <video id="video-tarifa" width="100%" height="600" autoplay='autoplay' loop='true' muted allowfullscreen>
-                <source src="{{ asset('video/tarifa_especial.mp4') }}" type="video/mp4">
+                <source src="{{ asset('video/tarifa_season.mp4') }}" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </a>   
