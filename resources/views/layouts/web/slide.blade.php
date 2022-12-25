@@ -7,19 +7,26 @@
      <div class="item">
          @if ($lang == 'es')
             <a href="https://api.whatsapp.com/send?phone=529981221861" target='_blank' class="d-block d-sm-none">
-                <img src="{{ asset('images/slider/tarifa_dec_en.png') }}" alt="">
+                <img src="{{ asset('video/tarifa_mob_en.png') }}" alt="">
             </a> 
+            <a href="https://api.whatsapp.com/send?phone=529981221861" target='_blank' class="d-none d-sm-block">
+                <video id="video-tarifa" width="100%" height="600" autoplay='autoplay' loop='true' muted allowfullscreen>
+                    <source src="{{ asset('video/tarifa_season_en.mp4') }}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </a>   
          @else
             <a href="https://api.whatsapp.com/send?phone=529981221861" target='_blank' class="d-block d-sm-none">
-                <img src="{{ asset('images/sliders/tarifa_dec_es.png') }}" alt="">
-            </a>  
+                <img src="{{ asset('video/tarifa_mob_es.png') }}" alt="">
+            </a> 
+            <a href="https://api.whatsapp.com/send?phone=529981221861" target='_blank' class="d-none d-sm-block">
+                <video id="video-tarifa" width="100%" height="600" autoplay='autoplay' loop='true' muted allowfullscreen>
+                    <source src="{{ asset('video/tarifa_season.mp4') }}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </a>   
          @endif
-        <a href="https://api.whatsapp.com/send?phone=529981221861" target='_blank' class="d-none d-sm-block">
-            <video id="video-tarifa" width="100%" height="600" autoplay='autoplay' loop='true' muted allowfullscreen>
-                <source src="{{ asset('video/tarifa_season.mp4') }}" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </a>   
+        
     </div>
     <div class="item">
         <img src="@lang('main.slider-home-2-mob')" class="d-block d-sm-none" alt=""> 
