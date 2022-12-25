@@ -7,11 +7,11 @@
      <div class="item">
          @if ($lang == 'es')
             <a href="https://api.whatsapp.com/send?phone=529981221861" target='_blank' class="d-block d-sm-none">
-                <img src="{{ asset('video/tarifa_mob_en.png') }}" alt="">
+                <img src="{{ asset('images/slider/tarifa_dec_en.png') }}" alt="">
             </a> 
          @else
             <a href="https://api.whatsapp.com/send?phone=529981221861" target='_blank' class="d-block d-sm-none">
-                <img src="{{ asset('video/tarifa_mob_es.png') }}" alt="">
+                <img src="{{ asset('images/sliders/tarifa_dec_es.png') }}" alt="">
             </a>  
          @endif
         <a href="https://api.whatsapp.com/send?phone=529981221861" target='_blank' class="d-none d-sm-block">
