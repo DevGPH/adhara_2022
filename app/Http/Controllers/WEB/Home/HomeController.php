@@ -190,6 +190,7 @@ class HomeController extends Controller
     {
         $pointer = now();
         $temporada = Temporada::where('hotel_id',2)->where('startDate','<',$pointer->toDateString())->where('endDate','>',$pointer->toDateString())->orWhere('startDate', $pointer->toDateString())->orWhere('endDate', $pointer->toDateString())->first();
+        dd($temporada);
         $conversion = TipoCambio::first();
         if($temporada == null)
         {
