@@ -188,14 +188,33 @@ class HomeController extends Controller
 
     function rateToday($locale)
     {
+        $hotel = Hotel::findOrFail(2);
         $pointer = now();
-        $temporada = Temporada::where('hotel_id',2)->where('startDate','<',$pointer->toDateString())->where('endDate','>',$pointer->toDateString())->orWhere('startDate', $pointer->toDateString())->orWhere('endDate', $pointer->toDateString())->first();
+        $temporada_raw = DB::select('select * from temporadas WHERE hotel_id = ? AND( startDate < ? AND endDate > ? OR startDate = ? OR endDate = ?)', 
+        [
+            $hotel->id,
+            $pointer->toDateString(),
+            $pointer->toDateString(),
+            $pointer->toDateString(),
+            $pointer->toDateString()
+        ]);
+        $temporada = $temporada_raw[0];
+        //$temporada = Temporada::where('hotel_id',2)->where('startDate','<',$pointer->toDateString())->where('endDate','>',$pointer->toDateString())->orWhere('startDate', $pointer->toDateString())->orWhere('endDate', $pointer->toDateString())->first();
         dd($temporada);
         $conversion = TipoCambio::first();
         if($temporada == null)
         {
             $today = Carbon::now()->addDay();
-            $temporada = Temporada::where('hotel_id',2)->where('startDate','<',$today->toDateString())->where('endDate','>',$today->toDateString())->orWhere('startDate', $today->toDateString())->orWhere('endDate', $today->toDateString())->first();
+            $temporada_raw = DB::select('select * from temporadas WHERE hotel_id = ? AND( startDate < ? AND endDate > ? OR startDate = ? OR endDate = ?)', 
+            [
+                $hotel->id,
+                $today->toDateString(),
+                $today->toDateString(),
+                $today->toDateString(),
+                $today->toDateString()
+            ]);
+            $temporada = $temporada_raw[0];
+            //$temporada = Temporada::where('hotel_id',2)->where('startDate','<',$today->toDateString())->where('endDate','>',$today->toDateString())->orWhere('startDate', $today->toDateString())->orWhere('endDate', $today->toDateString())->first();
 
             if ($temporada == null) {
                 return ($locale == 'es') ? 'Sin definir' : 'Undefined';
