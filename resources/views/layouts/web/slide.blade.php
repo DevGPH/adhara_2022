@@ -4,7 +4,7 @@
         {{-- <h4>WhatsApp</h4> --}}
  </nav>
  <div class="owl-carousel owl-theme" id='carousel'>
-     <div class="item">
+     <div class="item" style="margin-top: 18px;">
          @if ($lang == 'es')
             <a href="https://api.whatsapp.com/send?phone=529981221861" target='_blank' class="d-block d-sm-none">
                 <img src="{{ asset('video/tarifa_mob_en.png') }}" alt="">
