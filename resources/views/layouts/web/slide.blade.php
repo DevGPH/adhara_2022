@@ -26,7 +26,6 @@
                 </video>
             </a>   
          @endif
-        
     </div>
     <div class="item">
         <img src="@lang('main.slider-home-2-mob')" class="d-block d-sm-none" alt=""> 

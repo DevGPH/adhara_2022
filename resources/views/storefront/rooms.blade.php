@@ -20,7 +20,7 @@
                 <h4>@lang('main.room-item04')</h4>
                 <p>@lang('main.room-item4')  </p>
                 <p>@lang('main.room-item5')  </p>
-                <p>@lang('main.room-item6')  </p>
+                <!--p>@lang('main.room-item6')  </p-->
                 <p>@lang('main.room-item7')  </p>
                 <p>@lang('main.room-item8')  </p>
                 <p>@lang('main.room-item9')  </p>
@@ -29,7 +29,7 @@
                 <p>@lang('main.room-item12') </p>
                 <p>@lang('main.room-item13') </p>
                 <p>@lang('main.room-item14') </p>
-                <p>@lang('main.room-item15') </p>
+                <!--p>@lang('main.room-item15') </p-->
                 
             </div>
             <div class="col-xs-12 col-sm-4 col-md-4">
@@ -51,7 +51,7 @@
                 <p>@lang('main.room-item41') </p>
                 <p>@lang('main.room-item42') </p>
                 <p>@lang('main.room-item43') </p>
-                <p>@lang('main.room-item44') </p>
+                <!--p>@lang('main.room-item44') </p-->
                 <p>@lang('main.room-item45') </p>
                 <p>@lang('main.room-item46') </p>
             
@@ -70,7 +70,7 @@
                 <p>@lang('main.room-item24') </p>
                 <p>@lang('main.room-item25') </p>
                 <p>@lang('main.room-item26') </p>
-                <p>@lang('main.room-item27') </p>
+                <!--p>@lang('main.room-item27') </p-->
             </div>
         </div>
     </div>
