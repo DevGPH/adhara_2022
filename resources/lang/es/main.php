@@ -121,7 +121,7 @@ return [
     'room-item28' => '60 m2',
     'room-item29' => 'TV LCD 32¨',
     'room-item30' => '2 recamaras independientes ',
-    'room-item31' => '2 con baños completos',
+    'room-item31' => '2 baños completos',
     'room-item32' => 'Sala de estar  (2 sofá camas)',
     'room-item33' => 'Aire acondicionado',
     'room-item34' => '2 camas',
