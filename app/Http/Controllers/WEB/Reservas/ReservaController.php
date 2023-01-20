@@ -207,7 +207,9 @@ class ReservaController extends Controller
                     $room['habitacion_'.$y]['total'] = $room['habitacion_'.$y]['total'] * $cambio->valor_x_moneda;
                 }
                 $room['currency'] = 'MXN';
-                $room['total'] = $room['total'] * $cambio->valor_x_moneda;
+                $room['total'] = round($room['total'] * $cambio->valor_x_moneda);
+            } else {
+                $room['total'] = round($room['total']);
             }
       
             if((string)$room['habitacion'] == "Estandar")
@@ -266,7 +268,7 @@ class ReservaController extends Controller
             'habitaciones' =>  $request->cuartos,
             'checkIn'      =>  $request->checkIn,
             'checkOut'     =>  $request->checkOut,
-            'total'        =>  $request->cookie('user')?($request->total*.9):$request->total,
+            'total'        =>  $request->cookie('user')?round(($request->total*.9)):round($request->total),
             'currency'     =>  $request->currency,
             'noches'       =>  $request->noches,
             'adultos'      =>  $request->adultos,
