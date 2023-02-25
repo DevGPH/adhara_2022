@@ -36,8 +36,10 @@
 
     <script src="https://kit.fontawesome.com/8d420a663d.js" crossorigin="anonymous"></script>
 
-	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<!--script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script-->
+	<script src="{{ asset('js/jquery.min.js') }}"></script>
+	<script src="{{ asset('js/jquery-ui.min.js') }}"></script>
 	<script src="https://cdn.jsdelivr.net/npm/litepicker/dist/litepicker.js"></script>
 	<script src="{{ asset('js/moment.min.js')}}"></script>
 
