@@ -17,7 +17,7 @@
 
 	<!-- Css -->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/font.awesome.min.css') }}">
+	<!--link rel="stylesheet" type="text/css" href="{{ asset('css/font.awesome.min.css') }}"-->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/magnific.popup.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/owl.carousel.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/owl.theme.default.css') }}">
