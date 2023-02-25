@@ -28,7 +28,7 @@ body{
 	height					: 100%;
 	margin					: 0;
 	padding					: 0;
-    font-family             : 'Playfair Display', sans-serif;
+    font-family: 'Frank Ruhl Libre', serif;
 	font-weight				: 400;
     font-size				: 14px;
 	color					: #24324a;
@@ -61,9 +61,10 @@ h2{
     
 }
 h5{
+    font-family: 'Frank Ruhl Libre', serif;
     font-size               : 12px;
     font-weight             : 900;
-    color                   : #d77b5d;
+    color                   : #6e5e78;
     
 }
 h6{

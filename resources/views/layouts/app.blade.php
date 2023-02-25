@@ -22,7 +22,7 @@
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/owl.carousel.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/owl.theme.default.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery-ui.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/master.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/throne.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/mobile_master.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/home.css') }}">
 
@@ -33,6 +33,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@200&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/8d420a663d.js" crossorigin="anonymous"></script>
 
