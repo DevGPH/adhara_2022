@@ -13,4 +13,4 @@
 <script src="{{ asset('js/gmap3.min.js') }}"></script>
 
 <!-- Custom Scripts -->
-<script src="{{ asset('js/custom_page.js') }}"></script>
+<script src="{{ asset('js/custom_loader_index.js') }}"></script>
