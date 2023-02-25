@@ -22,8 +22,9 @@
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/owl.carousel.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/owl.theme.default.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery-ui.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/mobile_styles.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/master.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/mobile_master.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/home.css') }}">
 
    
     <!-- Google Fonts -->
@@ -33,8 +34,12 @@
 	<link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8d420a663d.js" crossorigin="anonymous"></script>
 
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/litepicker/dist/litepicker.js"></script>
+	<script src="{{ asset('js/moment.min.js')}}"></script>
 
 	<!-- Facebook Pixel Code -->
 	<script>

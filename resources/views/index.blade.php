@@ -5,83 +5,7 @@
 <!-- Site Main -->
 <div class="site-main">
     <!-- Section Slider -->
-    <div class="section">
-        <div class="widget-slider">
-            <div class="wrapper-full">
-                <!-- Slider Carousel -->
-                <div class="widget-carousel owl-carousel owl-theme">
-                    <div class="slider-item" data-background="{{ asset('images/slider/photo-slide-1.jpg') }}">
-                        <div class="wrapper">
-                            <div class="item-inner">
-                                <h5>WELCOME TO THE GRANDIUM</h5>
-                                <h1>Experience the Freedom</h1>
-                                <h2>in London</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-item" data-background="{{ asset('images/slider/photo-slide-2.jpg') }}">
-                        <div class="wrapper">
-                            <div class="item-inner">
-                                <h5>WELCOME TO THE GRANDIUM</h5>
-                                <h1>A Place to Relax</h1>
-                                <h2>in Maldives</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-item" data-background="{{ asset('images/slider/photo-slide-3.jpg') }}">
-                        <div class="wrapper">
-                            <div class="item-inner">
-                                <h5>WELCOME TO THE GRANDIUM</h5>
-                                <h1>Touch The Sea</h1>
-                                <h2>in Monaco</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Slider Carousel End -->
-                <!-- Slider Booking -->
-                <div class="slider-booking">
-                    <div class="wrapper">
-                        <h5>BOOK NOW YOUR HOTEL</h5>
-                        <form>
-                            <ul>
-                                <li>
-                                    <i class="fa fa-calendar-plus-o"></i>
-                                    <input type="text" name="checkin" placeholder="CHECK IN" class="datepicker" required>
-                                </li>
-                                <li>
-                                    <i class="fa fa-calendar-plus-o"></i>
-                                    <input type="text" name="checkout" placeholder="CHECK OUT" class="datepicker" required>
-                                </li>
-                                <li>
-                                    <i class="fa fa-caret-down"></i>
-                                    <select name="adults" required>
-                                        <option value="">ADULTS</option>
-                                        <option value="1">1 ADULT</option>
-                                        <option value="2">2 ADULT</option>
-                                        <option value="3">3 ADULT</option>
-                                    </select>
-                                </li>
-                                <li>
-                                    <i class="fa fa-caret-down"></i>
-                                    <select name="childrens" required>
-                                        <option value="">CHILDRENS</option>
-                                        <option value="1">1 CHILDREN</option>
-                                        <option value="2">2 CHILDREN</option>
-                                        <option value="3">3 CHILDREN</option>
-                                    </select>
-                                </li>
-                                <li>
-                                    <button type="submit" class="btn">BOOK NOW</button>
-                                </li>
-                            </ul>
-                        </form>
-                    </div>
-                </div>
-                <!-- Slider Booking End -->
-            </div>
-        </div>
-    </div>
+    @include('_partials.slider')
     <!-- Section Slider End -->
 
     <!-- Section Rooms -->
@@ -97,71 +21,21 @@
                 <!-- Rooms Title End -->
                 <!-- Rooms Carousel -->
                 <div class="widget-carousel owl-carousel owl-theme">
-                    <div class="rooms-item">
-                        <div class="item-inner">
-                            <div class="item-photo">
-                                <a href="rooms-detail.html" data-background="{{ asset('images/rooms/photo-room-1.jpg') }}"></a>
-                            </div>
-                            <div class="item-desc">
-                                <h2><a href="rooms-detail.html">Single Room</a></h2>
-                                <h3>$ 160.00</h3>
-                                <p>Sed fermentum eleifend dui eu faucibus. Donec facilisis, ligula eu interdum luctus nunc massa fermentum</p>
-                                <i class="fa fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rooms-item">
-                        <div class="item-inner">
-                            <div class="item-photo">
-                                <a href="rooms-detail.html" data-background="{{ asset('images/rooms/photo-room-2.jpg') }}"></a>
-                            </div>
-                            <div class="item-desc">
-                                <h2><a href="rooms-detail.html">Double Room</a></h2>
-                                <h3>$ 300.00</h3>
-                                <p>Sed fermentum eleifend dui eu faucibus. Donec facilisis, ligula eu interdum luctus nunc massa fermentum</p>
-                                <i class="fa fa-star"></i>
+                    @foreach ($rooms as $room)
+                        <div class="rooms-item">
+                            <div class="item-inner">
+                                <div class="item-photo">
+                                    <a href="rooms-detail.html" data-background="{{ asset($room->preview) }}"></a>
+                                </div>
+                                <div class="item-desc">
+                                    <h2><a href="rooms-detail.html">{{ (App::getLocale() == 'es') ?  $room->categoria->nombre_es: $room->categoria->nombre_en }}</a></h2>
+                                    <!--h3>$ 160.00</h3-->
+                                    <p>{{ (App::getLocale() == 'es') ? $room->categoria->desc_es : $room->categoria->desc_en }}</p>
+                                    <i class="fa fa-star"></i>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="rooms-item">
-                        <div class="item-inner">
-                            <div class="item-photo">
-                                <a href="rooms-detail.html" data-background="{{ asset('images/rooms/photo-room-3.jpg') }}"></a>
-                            </div>
-                            <div class="item-desc">
-                                <h2><a href="rooms-detail.html">Deluxe Single Room</a></h2>
-                                <h3>$ 420.00</h3>
-                                <p>Sed fermentum eleifend dui eu faucibus. Donec facilisis, ligula eu interdum luctus nunc massa fermentum</p>
-                                <i class="fa fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rooms-item">
-                        <div class="item-inner">
-                            <div class="item-photo">
-                                <a href="rooms-detail.html" data-background="{{ asset('images/rooms/photo-room-4.jpg') }}"></a>
-                            </div>
-                            <div class="item-desc">
-                                <h2><a href="rooms-detail.html">Deluxe Double Room</a></h2>
-                                <h3>$ 540.00</h3>
-                                <p>Sed fermentum eleifend dui eu faucibus. Donec facilisis, ligula eu interdum luctus nunc massa fermentum</p>
-                                <i class="fa fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rooms-item">
-                        <div class="item-inner">
-                            <div class="item-photo">
-                                <a href="rooms-detail.html" data-background="{{ asset('images/rooms/photo-room-5.jpg') }}"></a>
-                            </div>
-                            <div class="item-desc">
-                                <h2><a href="rooms-detail.html">Royal Suit Room</a></h2>
-                                <h3>$ 680.00</h3>
-                                <p>Sed fermentum eleifend dui eu faucibus. Donec facilisis, ligula eu interdum luctus nunc massa fermentum</p>
-                                <i class="fa fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
                 <!-- Rooms Carousel End -->
             </div>
@@ -171,16 +45,17 @@
 
     <!-- Section About Promo -->
     <div class="section">
-        <div class="widget-about-promo" data-background="{{ asset('images/utilities/photo-about.jpg') }}">
+        <div class="widget-about-promo" data-background="{{ asset('images/utilities/hotel.png') }}">
             <div class="wrapper-inner">
                 <div class="widget-inner">
                     <div class="row">
                         <div class="col-md-6">
-                            <h5>ABOUT THE GRANDIUM</h5>
-                            <h2>Your Perfect Escape</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget commodo orci. Integer varius nibh eu mattis porta. Pellentesque dictum sem eget cursus semper. Nullam quis blandit lorem. Morbi blandit orci urna, eu congue magna faucibus at. In bibendum in mauris nec ultrices. Nunc et magna velit.</p>
-                            <p>Nulla vel nisi felis. Vivamus vitae ex a magna cursus pretium. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque nec ante euismod, posuere turpis facilisis, fringilla odio. Nunc eget purus at dolor venenatis cursus et non arcu. Praesent rutrum condimentum risus, sed interdum purus euismod eget.</p>
-                            <a href="aboutus.html" class="btn">LEARN MORE</a>
+                            <h5>@lang('main.index.location')</h5>
+                            <h2>@lang('main.index.hotel')</h2>
+                            <p>@lang('main.index.hotel.item-1')</p>
+                            <p>@lang('main.index.hotel.item-2')</p>
+                            <p>@lang('main.index.hotel.item-3')</p>
+                            <!--a href="aboutus.html" class="btn">LEARN MORE</a-->
                         </div>
                     </div>
                 </div>
@@ -195,59 +70,60 @@
             <div class="wrapper-inner">
                 <!-- Features Title -->
                 <div class="widget-title">
-                    <h5>OUR FACILITIES</h5>
-                    <h2>Explore The Grandium</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget commodo orci. Integer varius nibh eu mattis porta. Pellentesque dictum sem eget cursus semper. Nullam quis blandit lorem.</p>
+                    <h5>@lang('main.index.hotel.amenities')</h5>
+                    <h2>@lang('main.index.hotel.amenities.label')</h2>
+                    <p>@lang('main.index.hotel.amenities.text')</p>
+                    <p>@lang('main.index.hotel.amenities.text.2')</p>
                 </div>
                 <!-- Features Title End -->
                 <!-- Features Content -->
                 <div class="widget-inner">
                     <div class="row">
                         <div class="col-lg-4 col-sm-6">
-                            <div class="features-item" data-background="{{ asset('images/services/photo-services-1-2.jpg') }}">
+                            <div class="features-item" data-background="{{ asset('images/utilities/pool.png') }}">
                                 <a href="#">
-                                    <h3>Sky Bar &amp; Lounge</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget commodo orci. Integer varius nibh eu mattis porta.</p>
+                                    <h3>@lang('main.index.hotel.service.pool.title')</h3>
+                                    <p>@lang('main.index.hotel.service.pool.text')</p>
                                 </a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-sm-6">
-                            <div class="features-item" data-background="{{ asset('images/services/photo-services-2-1.jpg') }}">
+                            <div class="features-item" data-background="{{ asset('images/utilities/restaurant.png') }}">
                                 <a href="#">
-                                    <h3>Private Dining</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget commodo orci. Integer varius nibh eu mattis porta.</p>
+                                    <h3>@lang('main.index.hotel.service.restaurant.title')</h3>
+                                    <p>@lang('main.index.hotel.service.restaurant.text')</p>
                                 </a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-sm-6">
-                            <div class="features-item" data-background="{{ asset('images/services/photo-services-3-1.jpg') }}">
+                            <div class="features-item" data-background="{{ asset('images/utilities/eventos.png') }}">
                                 <a href="#">
-                                    <h3>Conference &amp; Events</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget commodo orci. Integer varius nibh eu mattis porta.</p>
+                                    <h3>@lang('main.index.hotel.service.eventos.title')</h3>
+                                    <p>@lang('main.index.hotel.service.eventos.text')</p>
                                 </a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-sm-6">
-                            <div class="features-item" data-background="{{ asset('images/services/photo-services-4-1.jpg') }}">
+                            <div class="features-item" data-background="{{ asset('images/utilities/negocios.png') }}">
                                 <a href="#">
-                                    <h3>Wedding Venue</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget commodo orci. Integer varius nibh eu mattis porta.</p>
+                                    <h3>@lang('main.index.hotel.service.bussiness.title')</h3>
+                                    <p>@lang('main.index.hotel.service.bussiness.text')</p>
                                 </a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-sm-6">
-                            <div class="features-item" data-background="{{ asset('images/services/photo-services-5-1.jpg') }}">
+                            <div class="features-item" data-background="{{ asset('images/utilities/terraza.png') }}">
                                 <a href="#">
-                                    <h3>Spa &amp; Beauty Center</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget commodo orci. Integer varius nibh eu mattis porta.</p>
+                                    <h3>@lang('main.index.hotel.service.terraza.title')</h3>
+                                    <p>@lang('main.index.hotel.service.terraza.text')</p>
                                 </a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-sm-6">
-                            <div class="features-item" data-background="{{ asset('images/services/photo-services-6-1.jpg') }}">
+                            <div class="features-item" data-background="{{ asset('images/utilities/gym.png') }}">
                                 <a href="#">
-                                    <h3>Swimming Pool</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget commodo orci. Integer varius nibh eu mattis porta.</p>
+                                    <h3>@lang('main.index.hotel.service.gym.title')</h3>
+                                    <p>@lang('main.index.hotel.service.gym.text')</p>
                                 </a>
                             </div>
                         </div>
@@ -265,41 +141,36 @@
             <div class="wrapper-full-inner">
                 <!-- Gallery Title -->
                 <div class="widget-title">
-                    <h5>GALLERY</h5>
-                    <h2>Discover The Grandium</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget commodo orci. Integer varius nibh eu mattis porta. Pellentesque dictum sem eget cursus semper. Nullam quis blandit lorem.</p>
+                    <h5>@lang('main.index.gallery.title')</h5>
+                    <h2>@lang('main.index.gallery.title.2')</h2>
+                    <p>@lang('main.index.gallery.text')</p>
                 </div>
                 <!-- Gallery Title End -->
                 <!-- Gallery Carousel -->
                 <div class="widget-carousel owl-carousel owl-theme">
                     <div class="gallery-item">
-                        <a href="{{ asset('images/services/photo-services-6-1.jpg') }}" data-background="{{ asset('images/services/photo-services-6-1.jpg') }}" title="Photo Name" class="popup-gallery">
-                            <span class="item-text">Swimming Pool</span>
+                        <a href="{{ asset('images/gallery/room.png') }}" data-background="{{ asset('images/gallery/room.png') }}" title="Foto Habitación" class="popup-gallery">
+                            <span class="item-text">Habitación</span>
                         </a>
                     </div>
                     <div class="gallery-item">
-                        <a href="{{ asset('images/services/photo-services-1-2.jpg') }}" data-background="{{ asset('images/services/photo-services-1-2.jpg') }}" title="Photo Name" class="popup-gallery">
-                            <span class="item-text">Sky Bar &amp; Lounge</span>
+                        <a href="{{ asset('images/gallery/pool.png') }}" data-background="{{ asset('images/gallery/pool.png') }}" title="Photo Name" class="popup-gallery">
+                            <span class="item-text">Pool & Bar</span>
                         </a>
                     </div>
                     <div class="gallery-item">
-                        <a href="{{ asset('images/services/photo-services-2-1.jpg') }}" data-background="{{ asset('images/services/photo-services-2-1.jpg') }}" title="Photo Name" class="popup-gallery">
-                            <span class="item-text">Private Dining</span>
+                        <a href="{{ asset('images/gallery/gym.png') }}" data-background="{{ asset('images/gallery/gym.png') }}" title="Photo Name" class="popup-gallery">
+                            <span class="item-text">Gym</span>
                         </a>
                     </div>
                     <div class="gallery-item">
-                        <a href="{{ asset('images/services/photo-services-3-1.jpg') }}" data-background="{{ asset('images/services/photo-services-3-1.jpg') }}" title="Photo Name" class="popup-gallery">
-                            <span class="item-text">Conference &amp; Events</span>
+                        <a href="{{ asset('images/gallery/lobby.png') }}" data-background="{{ asset('images/gallery/lobby.png') }}" title="Photo Name" class="popup-gallery">
+                            <span class="item-text">Lobby</span>
                         </a>
                     </div>
                     <div class="gallery-item">
-                        <a href="{{ asset('images/services/photo-services-4-1.jpg') }}" data-background="{{ asset('images/services/photo-services-4-1.jpg') }}" title="Photo Name" class="popup-gallery">
-                            <span class="item-text">Wedding Venue</span>
-                        </a>
-                    </div>
-                    <div class="gallery-item">
-                        <a href="{{ asset('images/services/photo-services-5-1.jpg') }}" data-background="{{ asset('images/services/photo-services-5-1.jpg') }}" title="Photo Name" class="popup-gallery">
-                            <span class="item-text">Spa &amp; Beauty Center</span>
+                        <a href="{{ asset('images/gallery/restaurant.png') }}" data-background="{{ asset('images/gallery/restaurant.png') }}" title="Photo Name" class="popup-gallery">
+                            <span class="item-text">Restaurant</span>
                         </a>
                     </div>
                 </div>
@@ -311,13 +182,13 @@
 
     <!-- Section Video -->
     <div class="section">
-        <div class="widget-video-full" data-background="{{ asset('/images/utilities/thumb-video-full.jpg') }}">
+        <div class="widget-video-full" data-background="{{ asset('/images/utilities/video.png') }}">
             <div class="wrapper-full-inner">
                 <!-- Video Title -->
                 <div class="widget-title">
-                    <h5>OVERVIEW</h5>
-                    <h2>Video Tour</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget commodo orci. Integer varius nibh eu mattis porta. Pellentesque dictum sem eget cursus semper. Nullam quis blandit lorem.</p>
+                    <h5>@lang('main.index.video.title')</h5>
+                    <h2>@lang('main.index.video.title.2')</h2>
+                    <p>@lang('main.index.video.text')</p>
                 </div>
                 <!-- Video Title End -->
                 <!-- Video Content -->

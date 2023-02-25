@@ -4,6 +4,7 @@ return [
 
     'nav-home' => 'Home',
     'nav-rooms' => 'Rooms',
+    'nav-services' => 'Services',
     'nav-contact' => 'Contact us',
     'nav-flag' => 'mexico.png',
     'nav-lang' => 'Spanish',
@@ -21,22 +22,54 @@ return [
     'rates-special-mob' => 'Magic Fee! Breakfast Buffet',
     'taxes-rate' => 'Taxes included',
 
-    'mini-banner2-01' => 'Search',
-    'mini-banner2-02' => 'Apply',
-    'mini-banner2-03' => 'Room',
-    'mini-banner2-04' => 'Adults',
-    'mini-banner2-05' => 'Kids',
-    'mini-banner2-06' => 'delete',
-    'mini-banner2-07' => 'years',
-    'mini-banner2-08' => 'Age of minors (0 to 12 years)',
-    'mini-banner2-09' => 'Booking dates',
+    'booking.search' => 'Search',
+    'booking.apply' => 'Apply',
+    'booking.room' => 'Room',
+    'booking.adults' => 'Adults',
+    'booking.kids' => 'Kids',
+    'booking.delete' => 'delete',
+    'booking.years' => 'years',
+    'booking.years.label' => 'Age of minors (0 to 12 years)',
+    'booking.dates' => 'Booking dates',
 
 
+    'index.location' => 'Ubicación Privilegiada',
+    'index.hotel' => 'Hotel Adhara Cancun',
+    'index.hotel.item-1' => 'Conveniently located in downtown Cancun, accessible to businesses, entertainment areas, beaches, discos, bars, pharmacies, banks and hospitals.',
+    'index.hotel.item-2' => 'A modern design specially oriented to the business environment, which offers: a first class restaurant, bar - lounge & terrace, gym, pool and work rooms.',
+    'index.hotel.item-3' => 'Privileged location in downtown',
 
+    // SECCION AMENIDADES INDEX
+    'index.hotel.amenities' => 'OUR AMENITIES',
+    'index.hotel.amenities.label' => 'We make magic in every detail',
+    'index.hotel.amenities.text' => 'Hotel Adhara es un Hotel en el paraíso de Cancún, en donde los ejecutivos de negocios tendrán el balance perfecto entre viaje de trabajo y viaje descanso.',
+    'index.hotel.amenities.text.2' => 'La arquitectura estilo colonial propicia la relajación y contrasta con la modernidad de sus servicios.',
 
-    'body-item1' => 'Conveniently located in downtown Cancun, accessible to businesses, entertainment areas, beaches, discos, bars, pharmacies, banks and hospitals.',
-    'body-item2' => 'A modern design specially oriented to the business environment, which offers: a first class restaurant, bar - lounge & terrace, gym, pool and work rooms.',
-    'body-item3' => 'Privileged location in downtown',
+    // SECCION SERVICIOS INDEX
+    'index.hotel.service.pool.title' => 'Pool Bar',
+    'index.hotel.service.pool.text' => 'Our restaurant-bar serves international to the carte specialties and a buffet breakfast in a casual atmosphere with air conditioning',
+    'index.hotel.service.restaurant.title' => 'Restaurant',
+    'index.hotel.service.restaurant.text' => 'Adhara Grill offers you a Mexican-style buffet breakfast.',
+    'index.hotel.service.eventos.title' => 'Executive Events',
+    'index.hotel.service.eventos.text' => 'Our values ​​are responsibility, creativity and total commitment to our clients.',
+    'index.hotel.service.bussiness.title' => 'Bussiness center',
+    'index.hotel.service.bussiness.text' => 'We have adapted spaces so that you do not neglect work pending.',
+    'index.hotel.service.terraza.title' => 'Terrace',
+    'index.hotel.service.terraza.text' => 'Enjoy your meals with a beautiful outdoor view.',
+    'index.hotel.service.gym.title' => 'GYM',
+    'index.hotel.service.gym.text' => 'Continue your daily routine in the right space.',
+
+    //SECCION DE GALLERY INDEX
+    'index.gallery.title' => 'An ideal rest',
+    'index.gallery.title.2' => 'Discover our spaces',
+    'index.gallery.text' => 'A Hotel that has it all, the most complete service and highest quality of its kind, with the largest pool in the center, comfortable rooms. Our restaurant offers you the best Gourmet Buffet Breakfast, 7 rooms for your training, conferences, presentations and events.',
+
+    //SECCION DE VIDEO INDEX
+    'index.video.title' => 'Know Cancun',
+    'index.video.title.2' => 'More than 30 years of experience',
+    'index.video.text' => 'A renovated Hotel with the best technology in a mobile APP. Strategically located, we have perfect connectivity in front of Puerto Cancun, 3 minutes from the entrance to the hotel zone, 150 meters from the bus station and 20 minutes from the airport.',
+    
+    /*  DE AQUI PARA ABAJO SE PUEDE ELIMINAR*/
     'body-item4' => 'Av. Carlos Nader 1,2,3 SM.1, MZ.2, Cancun, Quintana Roo, Mexico.',
 
     

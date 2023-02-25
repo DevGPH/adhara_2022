@@ -254,6 +254,14 @@ a,
 	        box-shadow		: none;
 }
 
+.btn-booking {
+    background-color:  rgb(138 113 153 / 90%);
+}
+
+.btn-booking:hover {
+    background-color:  rgb(138 113 153 / 90%);
+}
+
 .btn-link{
     display                 : inline-block;
     font-family             : 'Lato', sans-serif;
@@ -883,7 +891,7 @@ a,
     height                  : 100%;
     content                 : "";
     display                 : block;
-    background-color        : rgba(36, 50, 74, 0.7);
+    /*background-color        : rgba(36, 50, 74, 0.7);*/
 }
 .widget-slider .widget-carousel .slider-item .item-inner{
     position                : relative;
@@ -1005,7 +1013,7 @@ a,
     width                   : 830px;
     padding                 : 20px;
     margin                  : 0 auto;
-    background-color        : rgba(129, 138, 156, 0.3);
+    background-color        : rgb(213 217 225 / 81%);
     -webkit-box-shadow      : 0px 0px 30px 0px rgba(34, 30, 24, 0.5);
        -moz-box-shadow      : 0px 0px 30px 0px rgba(34, 30, 24, 0.5);
             box-shadow      : 0px 0px 30px 0px rgba(34, 30, 24, 0.5);
@@ -1024,7 +1032,8 @@ a,
     line-height             : 40px;
 	padding					: 0 15px;
     text-transform          : uppercase;
-	background-color		: #5c677b;
+	background-color		: #e8ebf2;
+    color: #6e5e78 !important;
 }
 .widget-slider .slider-booking ul li select{
 	   -webkit-appearance	: none;
@@ -1035,6 +1044,7 @@ a,
         -ms-border-radius   : 0;
          -o-border-radius   : 0;
             border-radius   : 0;
+            color: #6e5e78;
 }
 .widget-slider .slider-booking ul li select::-ms-expand{
     display                 : none;
@@ -1052,24 +1062,25 @@ a,
     height                  : 20px;
     line-height             : 20px;
     text-align              : center;
+    color: #6e5e78;
 }
 .widget-slider .slider-booking ul li ::-webkit-input-placeholder{
-    color                   : #fff;
+    color                   : #6e5e78;
 }
 .widget-slider .slider-booking ul li :-moz-placeholder{
-   color                    : #fff;
+   color                    : #6e5e78;
 }
 .widget-slider .slider-booking ul li ::-moz-placeholder{
-   color                    : #fff;
+   color                    : #6e5e78;
 }
 .widget-slider .slider-booking ul li :-ms-input-placeholder{  
-   color                    : #fff;
+   color                    : #6e5e78;
 }
 .widget-slider .slider-booking ul li:last-child{
     padding-right           : 0;
 }
 .widget-slider.has-rooms .slider-booking{
-    bottom                  : 120px;
+    bottom                  : 80px;
 }
 .widget-slider.has-rooms .widget-carousel .owl-nav.disabled + .owl-dots{
     display                 : none;
@@ -1674,7 +1685,7 @@ a,
 .widget-rooms-carousel .rooms-item .item-desc .fa-star:before{
     content                 : "\f005\f005\f005";
     letter-spacing          : 5px;
-    color                   : #d77b5d;
+    color                   : #6e5e78;
 }
 .widget-rooms-carousel .widget-carousel{
     width                   : auto;
@@ -1690,8 +1701,8 @@ a,
     display                 : none;
 }
 .widget-rooms-carousel.top-over .widget-carousel{
-    margin-top              : -100px;
-    z-index                 : 2;
+    margin-top              : -80px;
+    z-index                 : 1; /* 2 */
 }
 .widget-rooms-carousel.top-over .wrapper-inner,
 .widget-rooms-carousel.top-over .wrapper-full-inner{

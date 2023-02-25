@@ -17,7 +17,7 @@
 		}
 	}
     function loadingStop() {
-		$(site_loading).delay(100).fadeOut("slow");
+		$(site_loading).delay(50).fadeOut("slow");
 	}
     /*-- FUNCTIONS END --*/
 	

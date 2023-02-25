@@ -5,6 +5,7 @@ return [
     'nav-home' => 'Inicio',
     'nav-rooms' => 'Habitaciones',
     'nav-contact' => 'Contáctanos',
+    'nav-services' => 'Servicios',
     'nav-flag' => 'usa.png',
     'nav-lang' => 'English',
     'nav-lang-link' => '/en',
@@ -21,20 +22,54 @@ return [
     'rates-special-mob' => '¡Tarifa Mágica! Con Desayuno',
     'taxes-rate' => 'Impuestos incluidos',
 
-    'mini-banner2-01' => 'Buscar',
-    'mini-banner2-02' => 'Aplicar',
-    'mini-banner2-03' => 'Habitación',
-    'mini-banner2-04' => 'Adultos',
-    'mini-banner2-05' => 'Menores',
-    'mini-banner2-06' => 'quitar',
-    'mini-banner2-07' => 'años',
-    'mini-banner2-08' => 'Edad de los menores (0 a 12 años)',
-    'mini-banner2-09' => 'Fechas a Reservar',
+    'booking.search' => 'Buscar',
+    'booking.apply' => 'Aplicar',
+    'booking.room' => 'Habitación',
+    'booking.adults' => 'Adultos',
+    'booking.kids' => 'Menores',
+    'booking.delete' => 'quitar',
+    'booking.years' => 'años',
+    'booking.tears.label' => 'Edad de los menores (0 a 12 años)',
+    'booking.dates' => 'Fechas a Reservar',
+
+    'index.location' => 'Ubicación Privilegiada',
+    'index.hotel' => 'Hotel Adhara Cancún',
+    'index.hotel.item-1' => 'Ubicado convenientemente en el centro de Cancún, accesible a negocios, zona de entretenimiento, playas, discotecas, bares, farmacias, bancos y hospitales.',
+    'index.hotel.item-2' => 'Un moderno diseño especialmente orientado al ambiente de negocio, que ofrece: un restaurante de primera categoría, bar - lounge & terraza, gimnasio, alberca y salones de trabajo.',
+    'index.hotel.item-3' => 'Ubicación privilegiada en el centro de Cancún',
+
+    //SECCION DE AMENIDADES
+    'index.hotel.amenities' => 'NUESTRAS AMENIDADES',
+    'index.hotel.amenities.label' => 'Hacemos mágia en cada detalle',
+
+    // SECCION DE SERVICIOS INDEX
+    'index.hotel.service.pool.title' => 'Alberca & Pool Bar',
+    'index.hotel.service.pool.text' => 'Un espacio envuelto por una arquitectura y jardinería muy atractivas.',
+    'index.hotel.service.restaurant.title' => 'Restaurant',
+    'index.hotel.service.restaurant.text' => 'Adhara Grill te ofrece un desayuno buffet con estilo mexicano.',
+    'index.hotel.service.eventos.title' => 'Eventos Ejecutivos',
+    'index.hotel.service.eventos.text' => 'Tenemos como valores la responsabilidad, creatividad y compromiso total con nuestros clientes.',
+    'index.hotel.service.bussiness.title' => 'Centro de negocios',
+    'index.hotel.service.bussiness.text' => 'Contamos con espacios adaptados para que no desatiendas los pendientes laborales.',
+    'index.hotel.service.terraza.title' => 'Terraza',
+    'index.hotel.service.terraza.text' => 'Disfruta tus alimentos con una hermosa vista al aire libre.',
+    'index.hotel.service.gym.title' => 'Gimnasio equipado',
+    'index.hotel.service.gym.text' => 'Continúa tu rutina diaria en el espacio adecuado.',
+
+    //SECCION DE GALLERY INDEX
+    'index.gallery.title' => 'Un descanso ideal',
+    'index.gallery.title.2' => 'Descubre nuestros espacios',
+    'index.gallery.text' => 'Un Hotel  que lo tiene todo, el servicio más completo y mayor calidad en su tipo, con la alberca más grande del centro, habitaciones cómodas. Nuestro restaurante te ofrece el mejor Desayuno Buffet Gourmet, 7 Salones para tus capacitaciones, congresos, presentaciones y eventos.',
+
+    //SECCION DE VIDEO INDEX
+    'index.video.title' => 'Conoce Cancún',
+    'index.video.title.2' => 'Más de 30 años de Experiencia',
+    'index.video.text' => 'Un Hotel renovado y con la mejor tecnología  en una APP móvil. Ubicado estratégicamente, contamos con la conectividad perfecta frente a Puerto Cancún, 3 minutos de la entrada a zona hotelera, 150 metros de la estación de autobuses y a 20  minutos del Aeropuerto.',
+    
+    /*  DE AQUI PARA ABAJO SE PUEDE ELIMINAR*/
 
 
-    'body-item1' => 'Ubicado convenientemente en el centro de Cancún, accesible a negocios, zona de entretenimiento, playas, discotecas, bares, farmacias, bancos y hospitales.',
-    'body-item2' => 'Un moderno diseño especialmente orientado al ambiente de negocio, que ofrece: un restaurante de primera categoría, bar - lounge & terraza, gimnasio, alberca y salones de trabajo.',
-    'body-item3' => 'Ubicación privilegiada en el centro de Cancún',
+    
     'body-item4' => 'Av. Carlos Nader 1,2,3 SM.1, MZ.2, Cancún, Quintana Roo, México',
 
 

@@ -10,6 +10,7 @@ use Illuminate\Http\Response;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
+use App\Models\Habitacion;
 use App\Models\TipoCambio;
 use App\Models\Temporada;
 use App\Models\PlanHab;
@@ -26,11 +27,13 @@ class HomeController extends Controller
     public function index($locale)
     {   
         $rate = $this->rateToday($locale);
-
+        $rooms = Habitacion::where('hotel_id', 2)->get();
+    
         return view('index')->with([
             'home_active' => 'active-link',
             'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
-            'rate' => $rate
+            'rate' => $rate,
+            'rooms' => $rooms
         ]); 
     }
 

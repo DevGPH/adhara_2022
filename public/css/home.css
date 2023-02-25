@@ -1,0 +1,100 @@
+.adhara-color {
+    color: #6e5e78 !important;
+}
+
+.flag-lang {
+    width: 30px;
+    margin-right: 10px;
+}
+
+#whats_header {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.rooms_all {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    background-color: #6e5e78;
+    width: 200px;
+    padding: 8px;
+    z-index: 100;
+    border-radius: 8px;
+    z-index: 5;
+}
+
+.controls-box {
+    display: inline-flex;
+    float: right;
+    margin-right: 10px;
+    margin-top: -5px;
+}
+
+.room_feature {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 5px;
+}
+
+.btn-controls {
+    background-color: transparent;
+    border-width: 0px;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.bed-room {
+    width: 25px;
+    margin-right: 10px;
+}
+
+#room_2, #room_3 {
+    display: none;
+}
+
+.minus-room {
+    display: inline-block;
+    float: right;
+    margin-right: 10px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.customW {
+    width: 40% !important;
+    margin-bottom: 0px;
+}
+
+.customW-20 {
+    width: 20%;
+}
+
+@media (max-width:991px) {
+    .widget-slider.has-rooms .booking-mob{
+        display: block;
+    }
+
+    .wp-100 {
+        width: 100%;
+    }
+
+    .widget-slider .slider-booking ul {
+        width: 100%;
+    }
+
+    .customW {
+        width: 100% !important;
+        margin-bottom: 10px;
+    }
+
+    .customW-20{
+        width: 100% !important;
+    }
+}
