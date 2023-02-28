@@ -1,0 +1,76 @@
+version: "3.7"
+
+services:
+    app:
+        image: "laratest/app:${TAG:-latest}"
+        build:
+            args:
+                user: adhara
+                uid: 1000
+            context: ./
+            dockerfile: Dockerfile
+        container_name: adhara
+        restart: unless-stopped
+        working_dir: /var/www/
+        volumes:
+            - ./:/var/www
+        networks:
+            - adhara-network
+
+    web:
+        image: nginx:1.19.4
+        container_name: adhara-nginx
+        restart: unless-stopped
+        ports:
+            - ${SERVER_PORT:-8000}:80
+        volumes:
+            - ./:/var/www
+            - ./docker-compose/nginx:/etc/nginx/conf.d/
+        networks:
+            - adhara-network
+
+    db:
+        image: mysql:5.7
+        container_name: adhara-db
+        restart: unless-stopped
+        ports:
+            - ${SERVER_PORT_DB:-3306}:3306
+        volumes:
+            - dbdata:/var/lib/mysql
+        environment:
+            - MYSQL_DATABASE=${DB_DATABASE:-adhara_express}
+            - MYSQL_USER=${DB_USERNAME:-adhara}
+            - MYSQL_PASSWORD=${DB_PASSWORD:-secret}
+            - MYSQL_ROOT_PASSWORD=${DB_PASSWORD:-secret}
+        networks:
+            - adhara-network
+
+    phpmyadmin:
+        image: phpmyadmin
+        restart: always
+        ports:
+            - ${PHPMYADMIN_PORT_DB:-8080}:80
+        environment:
+            - PMA_ARBITRARY=1
+            - PMA_HOST=${DB_HOST:-db}
+            - PMA_USER=${DB_USERNAME:-adhara}
+            - PMA_PASSWORD=${DB_PASSWORD:-secret}
+        networks:
+            - adhara-network
+
+    mailhog:
+        image: mailhog/mailhog
+        logging:
+            driver: "none"
+        ports:
+            - ${MAIL_PORT:-1025}:1025
+            - ${MAILHOG_PORT:-8025}:8025
+        networks:
+            - adhara-network
+
+networks:
+    adhara-network:
+        driver: bridge
+
+volumes:
+    dbdata:

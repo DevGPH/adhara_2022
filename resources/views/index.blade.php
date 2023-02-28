@@ -150,7 +150,7 @@
                 <div class="widget-carousel owl-carousel owl-theme">
                     <div class="gallery-item">
                         <a href="{{ asset('images/gallery/room.png') }}" data-background="{{ asset('images/gallery/room.png') }}" title="Foto Habitación" class="popup-gallery">
-                            <span class="item-text">Habitación</span>
+                            <span class="item-text">One Bed Room Suite</span>
                         </a>
                     </div>
                     <div class="gallery-item">
@@ -160,17 +160,17 @@
                     </div>
                     <div class="gallery-item">
                         <a href="{{ asset('images/gallery/gym.png') }}" data-background="{{ asset('images/gallery/gym.png') }}" title="Photo Name" class="popup-gallery">
-                            <span class="item-text">Gym</span>
+                            <span class="item-text">Gimnasio</span>
                         </a>
                     </div>
                     <div class="gallery-item">
                         <a href="{{ asset('images/gallery/lobby.png') }}" data-background="{{ asset('images/gallery/lobby.png') }}" title="Photo Name" class="popup-gallery">
-                            <span class="item-text">Lobby</span>
+                            <span class="item-text">Centro de negocios</span>
                         </a>
                     </div>
                     <div class="gallery-item">
                         <a href="{{ asset('images/gallery/restaurant.png') }}" data-background="{{ asset('images/gallery/restaurant.png') }}" title="Photo Name" class="popup-gallery">
-                            <span class="item-text">Restaurant</span>
+                            <span class="item-text">Lobby Bar</span>
                         </a>
                     </div>
                 </div>

@@ -61,7 +61,6 @@ h2{
     
 }
 h5{
-    font-family: 'Frank Ruhl Libre', serif;
     font-size               : 12px;
     font-weight             : 900;
     color                   : #6e5e78;
@@ -1527,7 +1526,7 @@ a,
     text-rendering          : auto;
     -webkit-font-smoothing  : antialiased;
     -moz-osx-font-smoothing : grayscale;
-    color                   : #d77b5d;
+    color                   : #6e5e78;
     background-color        : #fff;
     -webkit-border-radius   : 0;
        -moz-border-radius   : 0;
