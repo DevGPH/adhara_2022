@@ -24,7 +24,7 @@
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery-ui.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/king.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/mobile_master.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/home.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/home_view.css') }}">
 
    
     <!-- Google Fonts -->
