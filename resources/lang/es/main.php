@@ -29,7 +29,7 @@ return [
     'booking.kids' => 'Menores',
     'booking.delete' => 'quitar',
     'booking.years' => 'años',
-    'booking.tears.label' => 'Edad de los menores (0 a 12 años)',
+    'booking.years.label' => 'Edad de los menores (0 a 12 años)',
     'booking.dates' => 'Fechas a Reservar',
 
     'index.location' => 'Ubicación Privilegiada',
