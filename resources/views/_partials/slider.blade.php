@@ -3,14 +3,15 @@
         <div class="wrapper-full">
             <!-- Slider Carousel -->
             <div class="widget-carousel owl-carousel owl-theme">
-                <div class="slider-item" data-background="{{ asset('images/sliders/home_test.png') }}">
-                    <!--div class="wrapper">
+                <div class="slider-item" data-background="{{ asset('images/sliders/cover.png') }}">
+                    <div class="wrapper">
                         <div class="item-inner">
-                            <h5>WELCOME TO THE GRANDIUM</h5>
+                            <img src="{{ asset('images/sliders/data.png') }}" alt="" style="width: 600px;display:block;margin:0px auto;">
+                            <!--h5>WELCOME TO THE GRANDIUM</h5>
                             <h1>Experience the Freedom</h1>
-                            <h2>in London</h2>
+                            <h2>in London</h2-->
                         </div>
-                    </div-->
+                    </div>
                 </div>
                 <div class="slider-item" data-background="{{ asset('images/slider/photo-slide-2.jpg') }}">
                     <div class="wrapper">
