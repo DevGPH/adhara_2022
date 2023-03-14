@@ -55,7 +55,7 @@
                                     <div class="rooms_all">
                                         <div id="room_1" class="pax-room">
                                             <div class="header.room">
-                                                <span><img src="{{ asset('images/icons/buscador/bed.png') }}" alt="Room.1" class="bed-room" style="width: 25px;">@lang('main.booking.room') 1</span>
+                                                <span><i class="fa-solid fa-bed" style="margin-right: 10px;"></i>@lang('main.booking.room') 1</span>
                                             </div>
                                             <div class="body room">
                                                 <div class="room_feature" id="room_1_adult">
@@ -86,7 +86,7 @@
                                         </div>
                                         <div id="room_2" class="pax-room">
                                             <div class="header.room">
-                                                <span><img src="{{ asset('images/icons/buscador/bed.png') }}" alt="Room.1" class="bed-room" style="width: 25px;">@lang('main.booking.room') 2</span>
+                                                <span><i class="fa-solid fa-bed" style="margin-right: 10px;"></i>@lang('main.booking.room') 2</span>
                                                 <div class="minus-room"><i class="fa-solid fa-trash-can"></i></div>
                                             </div>
                                             <div class="body room">
@@ -117,7 +117,7 @@
                                         </div>
                                         <div id="room_3" class="pax-room">
                                             <div class="header.room">
-                                                <span><img src="{{ asset('images/icons/buscador/bed.png') }}" alt="Room.1" class="bed-room" style="width: 25px;">@lang('main.booking.room') 3</span>
+                                                <span><i class="fa-solid fa-bed" style="margin-right: 10px;"></i>@lang('main.booking.room') 3</span>
                                                 <div class="minus-room"> <i class="fa-solid fa-trash-can"></i> </div>
                                             </div>
                                             <div class="body room">
