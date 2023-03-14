@@ -1202,9 +1202,9 @@ a,
     display                 : block;
     padding                 : 60px 30px 30px 30px;
     color                   : #fff;
-    background              : -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(36,50,74,1) 70%);
-    background              : -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(36,50,74,1) 70%);
-    background              : linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(36,50,74,1) 70%);
+    background              : -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(110, 94, 120, 1) 70%);
+    background              : -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(110, 94, 120, 1) 70%);
+    background              : linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(110, 94, 120, 1) 70%);
 }
 .widget-features-grid .features-item a:hover{
     padding-bottom          : 60px;

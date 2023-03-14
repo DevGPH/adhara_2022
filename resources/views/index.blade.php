@@ -182,7 +182,7 @@
 
     <!-- Section Video -->
     <div class="section">
-        <div class="widget-video-full" data-background="{{ asset('/images/utilities/video.png') }}">
+        <div class="widget-video-full" data-background="{{ asset('/images/utilities/video_background.png') }}">
             <div class="wrapper-full-inner">
                 <!-- Video Title -->
                 <div class="widget-title">
