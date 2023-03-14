@@ -3,7 +3,7 @@
         <div class="wrapper-full">
             <!-- Slider Carousel -->
             <div class="widget-carousel owl-carousel owl-theme">
-                <div class="slider-item" data-background="{{ asset('images/sliders/home.png') }}">
+                <div class="slider-item" data-background="{{ asset('images/sliders/home_test.png') }}">
                     <!--div class="wrapper">
                         <div class="item-inner">
                             <h5>WELCOME TO THE GRANDIUM</h5>
