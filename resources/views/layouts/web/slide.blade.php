@@ -31,6 +31,10 @@
         <img src="@lang('main.slider-home-2-mob')" class="d-block d-sm-none" alt=""> 
         <img src="@lang('main.slider-home-2')" class="d-none d-sm-block" alt=""> 
     </div>
+    <div class="item">
+        <img src="@lang('main.slider-home-3-mob')" class="d-block d-sm-none" alt=""> 
+        <img src="@lang('main.slider-home-3')" class="d-none d-sm-block" alt=""> 
+    </div>
 </div>
 
 <div id='hover-whats'>
