@@ -232,7 +232,7 @@
                                 <h3>¡Únete a nuestro club de lealtad!</h3>
                                 <p>¡Inscríbete en el portal!</p>
                                 <p>Compra con nuestros socios y acumula puntos para cambiarlos por recompensas participantes!</p>
-                                <a href="#" class="btn-link">LEER MÁS</a>
+                                <a href="https://clubestrella.mx/es" target="_blank" class="btn-link">LEER MÁS</a>
                             </div>
                         </div>
                     </div>
@@ -253,7 +253,7 @@
                             <div class="item-desc">
                                 <h3>Visita oktrip.mx</h3>
                                 <p>En OkTrip podrás descubrir y reservar los mejores hoteles, tours y experiencias al mejor precio.</p>
-                                <a href="#" class="btn-link">LEER MÁS</a>
+                                <a href="https://oktrip.mx/" target="_blank" class="btn-link">LEER MÁS</a>
                             </div>
                         </div>
                     </div>

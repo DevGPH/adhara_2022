@@ -13,20 +13,20 @@
                         </div>
                     </div>
                 </div>
-                <div class="slider-item" data-background="{{ asset('images/sliders/slide_2.png') }}">
+                <div class="slider-item" data-background="{{ asset('images/sliders/onebed.png') }}">
                     <div class="wrapper">
                         <div class="item-inner">
-                            <img src="{{ asset('images/sliders/bed.png') }}" alt="" style="width: 400px;display:block;margin:0px auto;">
+                            <!--img src="{{ asset('images/sliders/onebed.png') }}" alt="" style="width: 400px;display:block;margin:0px auto;"-->
                             <!--h5>WELCOME TO THE GRANDIUM</h5>
                             <h1>Experience the Freedom</h1>
                             <h2>in London</h2-->
                         </div>
                     </div>
                 </div>
-                <div class="slider-item" data-background="{{ asset('images/sliders/slide_3.png') }}">
+                <div class="slider-item" data-background="{{ asset('images/sliders/clubestrellamx.png') }}">
                     <div class="wrapper">
                         <div class="item-inner">
-                            <img src="{{ asset('images/sliders/clubestrella.png') }}" alt="" style="width: 400px;display:block;margin:0px auto;">
+                            <!--img src="{{ asset('images/sliders/clubestrellamx.png') }}" alt="" style="width: 400px;display:block;margin:0px auto;"-->
                             <!--h5>WELCOME TO THE GRANDIUM</h5>
                             <h1>Experience the Freedom</h1>
                             <h2>in London</h2-->
