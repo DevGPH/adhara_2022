@@ -16,7 +16,7 @@
                 <div class="slider-item" data-background="{{ asset('images/sliders/hotel_2.png') }}">
                     <div class="wrapper">
                         <div class="item-inner">
-                            <!--img src="{{ asset('images/sliders/hotel_1.png') }}" alt="" style="width: 400px;display:block;margin:0px auto;"-->
+                            <img src="{{ asset('images/sliders/hotel_1.png') }}" alt="" style="width: 400px;display:block;margin:0px auto;">
                             <!--h5>WELCOME TO THE GRANDIUM</h5>
                             <h1>Experience the Freedom</h1>
                             <h2>in London</h2-->
@@ -26,7 +26,7 @@
                 <div class="slider-item" data-background="{{ asset('images/sliders/club_2.png') }}">
                     <div class="wrapper">
                         <div class="item-inner">
-                            <!--img src="{{ asset('images/sliders/club_1.png') }}" alt="" style="width: 400px;display:block;margin:0px auto;"-->
+                            <img src="{{ asset('images/sliders/club_1.png') }}" alt="" style="width: 400px;display:block;margin:0px auto;">
                             <!--h5>WELCOME TO THE GRANDIUM</h5>
                             <h1>Experience the Freedom</h1>
                             <h2>in London</h2-->
