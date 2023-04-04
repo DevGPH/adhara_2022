@@ -268,7 +268,7 @@ a,
     font-weight             : 900;
     font-size               : 11px;
     letter-spacing          : 1px;
-    color                   : #d77b5d;
+    color                   : rgba(110, 94, 120, 1);
     text-decoration         : none;
     white-space             : nowrap;
     text-overflow           : ellipsis;
@@ -703,7 +703,7 @@ a,
     font-size               : 36px;
     color                   : #fff;
     border                  : 10px solid #fff;
-    background-color        : rgba(110, 94, 120, 1);
+    background-color        : rgba(110, 94, 120, 0.5);
     -webkit-border-radius   : 50%;
        -moz-border-radius   : 50%;
         -ms-border-radius   : 50%;
@@ -1222,6 +1222,13 @@ a,
     background-position     : top center;
     background-size         : cover;
 }
+
+@media(min-width: 1700px){
+    .widget-offers-grid{
+        background-size     : contain;
+    }
+}
+
 .widget-offers-grid .offers-item{
     width                   : 50%;
     float                   : left;
@@ -1252,7 +1259,7 @@ a,
     display                 : inline-block;
     border-style            : solid;
     border-width            : 0 0 50px 50px;
-    border-color            : transparent transparent #d77b5d transparent;
+    border-color            : transparent transparent rgba(110, 94, 120, 1) transparent;
 }
 .widget-offers-grid .offers-item .item-inner .item-photo:after{
     position                : absolute;

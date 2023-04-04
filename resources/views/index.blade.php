@@ -203,54 +203,57 @@
 
     <!-- Section Offers -->
     <div class="section">
-        <div class="widget-offers-grid" data-background="{{ asset('images/offers/photo-offers.jpg">') }}">
+        <div class="widget-offers-grid" data-background="{{ asset('images/offers/offers.png') }}">
             <div class="wrapper-inner">
                 <!-- Offers Title -->
                 <div class="widget-title">
-                    <h5>OFFERS</h5>
-                    <h2>The Grandium Special Offers</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget commodo orci. Integer varius nibh eu mattis porta. Pellentesque dictum sem eget cursus semper. Nullam quis blandit lorem.</p>
+                    <h5>¡Te garantizamos la mejor tarifa!</h5>
+                    <h2>Todas las temporadas del año</h2>
+                    <p>Estamos completamente seguros de ofrecer esta promesa, porque desde nuestra página web estas haciendo un trato directo con nosotros y ningún intermediario o agencía de ventas externa, puede extender una mejor oferta que la que nosotros te presentamos desde nuestro eficiente y seguro sistema de reservaciones online.</p>
                 </div>
                 <!-- Offers Title End -->
                 <!-- Offers Content -->
                 <div class="widget-inner">
                     <div class="offers-item">
                         <div class="item-inner">
-                            <div class="item-photo" data-background="{{ asset('images/offers/photo-offers-1.jpg') }}"></div>
+                            <div class="item-photo" data-background="{{ asset('images/offers/desayuno.png') }}"></div>
                             <div class="item-desc">
-                                <h3>Stay 3 Nights - Save 20%</h3>
-                                <p>Etiam posuere tortor quis nisl maximus placerat. Phasellus in magna ut libero hendrerit molestie. In placerat vulputate mi, ut placerat massa hendrerit ut.</p>
-                                <a href="#" class="btn-link">READ MORE</a>
+                                <h3>¡Reserva ahora!</h3>
+                                <p>La mejor tarifa disponible hoy en Cancún</p>
+                                <p>¡Obtén beneficios exclusivos al reservar directamente en nuestra página web!</p>
+                                <a href="#" class="btn-link">LEER MÁS</a>
                             </div>
                         </div>
                     </div>
                     <div class="offers-item">
                         <div class="item-inner">
-                            <div class="item-photo" data-background="{{ asset('images/offers/photo-offers-2.jpg') }}"></div>
+                            <div class="item-photo" data-background="{{ asset('images/offers/clubestrella.png') }}"></div>
                             <div class="item-desc">
-                                <h3>Weddings Special Offer 2016</h3>
-                                <p>Etiam posuere tortor quis nisl maximus placerat. Phasellus in magna ut libero hendrerit molestie. In placerat vulputate mi, ut placerat massa hendrerit ut.</p>
-                                <a href="#" class="btn-link">READ MORE</a>
+                                <h3>¡Únete a nuestro club de lealtad!</h3>
+                                <p>¡Inscríbete en el portal!</p>
+                                <p>Compra con nuestros socios y acumula puntos para cambiarlos por recompensas participantes!</p>
+                                <a href="#" class="btn-link">LEER MÁS</a>
                             </div>
                         </div>
                     </div>
                     <div class="offers-item">
                         <div class="item-inner">
-                            <div class="item-photo" data-background="{{ asset('images/offers/photo-offers-3.jpg') }}"></div>
+                            <div class="item-photo" data-background="{{ asset('images/offers/meal.png') }}"></div>
                             <div class="item-desc">
-                                <h3>Spa Treatment Launch Offer</h3>
-                                <p>Etiam posuere tortor quis nisl maximus placerat. Phasellus in magna ut libero hendrerit molestie. In placerat vulputate mi, ut placerat massa hendrerit ut.</p>
-                                <a href="#" class="btn-link">READ MORE</a>
+                                <h3>¿Grande o enorme?</h3>
+                                <p>Como te guste más.</p>
+                                <p>¡Pruébalos todos! Conoce nuestros sabores disponibles en las plataformas de alimentos participantes.</p>
+                                <a href="#" class="btn-link">LEER MÁS</a>
                             </div>
                         </div>
                     </div>
                     <div class="offers-item">
                         <div class="item-inner">
-                            <div class="item-photo" data-background="{{ asset('images/offers/photo-offers-4.jpg') }}"></div>
+                            <div class="item-photo" data-background="{{ asset('images/offers/oktrip.png') }}"></div>
                             <div class="item-desc">
-                                <h3>Free Glass of Wine with Daily Classics Menu</h3>
-                                <p>Etiam posuere tortor quis nisl maximus placerat. Phasellus in magna ut libero hendrerit molestie. In placerat vulputate mi, ut placerat massa hendrerit ut.</p>
-                                <a href="#" class="btn-link">READ MORE</a>
+                                <h3>Visita oktrip.mx</h3>
+                                <p>En OkTrip podrás descubrir y reservar los mejores hoteles, tours y experiencias al mejor precio.</p>
+                                <a href="#" class="btn-link">LEER MÁS</a>
                             </div>
                         </div>
                     </div>
