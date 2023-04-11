@@ -34,7 +34,7 @@
     <div class="footer-bottom">
         <div class="wrapper">
             <div class="footer-logo">
-                <img src="{{ asset('images/logos/logo.png') }}" alt="The Grandium Hotel">
+                <img src="{{ asset('images/logos/logo_adhara.png') }}" alt="The Grandium Hotel">
             </div>
             <div class="footer-copyright">
                 <p>COPYRIGHT © THE GRANDIUM HOTEL</p>
