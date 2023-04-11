@@ -378,91 +378,41 @@
             <div class="wrapper-inner">
                 <!-- Testimonials Title -->
                 <div class="widget-title">
-                    <h5>TESTIMONIALS</h5>
-                    <h2>Happy Clients</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget commodo orci. Integer varius nibh eu mattis porta. Pellentesque dictum sem eget cursus semper. Nullam quis blandit lorem.</p>
+                    <h5>TESTIMONIOS DE</h5>
+                    <h2>Clientes Satisfechos</h2>
+                    <p>Crear una buena experiencia para tus vacaciones no ocurre por coincidencia. Ocurre por que nos esforzamos de hacerlo realidad con magia en cada detalle.</p>
                 </div>
                 <!-- Testimonials Title End -->
                 <!-- Testimonials Carousel -->
                 <div class="widget-carousel owl-carousel owl-theme">
                     <div class="testimonials-item">
                         <div class="item-comment">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et nisl consequat, semper est non, convallis neque. Phasellus id dictum libero. Etiam nunc libero feugiat vel sem non.
+                            Highly Recommended. Me quedo en Adhara cada vez que viajo a Cancun y la verdad me siento como en casa! El staff es muy cordial, la comida es excelente y los cuartos son perfectos! El desayuno incluido, tipo buffet...
                         </div>
                         <div class="item-customer">
-                            <div class="customer-photo" data-background="{{ asset('images/utilities/user-1.jpg') }}"></div>
-                            <h5>MARILYN SUTTLE</h5>
-                            <h6>UK, BRIGHTON</h6>
+                            <div class="customer-photo" data-background="{{ asset('images/utilities/1.png') }}"></div>
+                            <h5>VANESSA N.</h5>
+                            <h6>UK, LONDRES</h6>
                         </div>
                     </div>
                     <div class="testimonials-item">
                         <div class="item-comment">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et nisl consequat, semper est non, convallis neque. Phasellus id dictum libero. Etiam nunc libero feugiat vel sem non.
+                            Súper genial la atención la limpieza el lugar súper tranquilo. La limpieza súper ordenada la decoración fue hermosa Lo recomiendo mil en mi próxima visita también lo escogería el precio súper económico.
                         </div>
                         <div class="item-customer">
-                            <div class="customer-photo" data-background="{{ asset('images/utilities/user-2.jpg') }}"></div>
-                            <h5>JACK MASON</h5>
-                            <h6>IRELAND</h6>
+                            <div class="customer-photo" data-background="{{ asset('images/utilities/2.png') }}"></div>
+                            <h5>STEFFGA MB.</h5>
+                            <h6>COSTA RICA, MS</h6>
                         </div>
                     </div>
                     <div class="testimonials-item">
                         <div class="item-comment">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et nisl consequat, semper est non, convallis neque. Phasellus id dictum libero. Etiam nunc libero feugiat vel sem non.
+                            Super agusto, muy bonito, limpio me encantó el hotel, el área de la alberca muy bello sobretodo las atenciones de sus empleados, Don Ezequiel muy pendiente de nuestra petición por nuestro aniversario 25, atento y amable y la Sra Carmen...
                         </div>
                         <div class="item-customer">
-                            <div class="customer-photo" data-background="{{ asset('images/utilities/user-3.jpg') }}"></div>
-                            <h5>MICHAEL FELDSTEIN</h5>
-                            <h6>POLAND</h6>
-                        </div>
-                    </div>
-                    <div class="testimonials-item">
-                        <div class="item-comment">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et nisl consequat, semper est non, convallis neque. Phasellus id dictum libero. Etiam nunc libero feugiat vel sem non.
-                        </div>
-                        <div class="item-customer">
-                            <div class="customer-photo" data-background="{{ asset('images/utilities/user-4.jpg') }}"></div>
-                            <h5>JOHN FEDERICO</h5>
-                            <h6>ITALY</h6>
-                        </div>
-                    </div>
-                    <div class="testimonials-item">
-                        <div class="item-comment">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et nisl consequat, semper est non, convallis neque. Phasellus id dictum libero. Etiam nunc libero feugiat vel sem non.
-                        </div>
-                        <div class="item-customer">
-                            <div class="customer-photo" data-background="{{ asset('images/utilities/user-1.jpg') }}"></div>
-                            <h5>MARILYN SUTTLE</h5>
-                            <h6>UK, BRIGHTON</h6>
-                        </div>
-                    </div>
-                    <div class="testimonials-item">
-                        <div class="item-comment">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et nisl consequat, semper est non, convallis neque. Phasellus id dictum libero. Etiam nunc libero feugiat vel sem non.
-                        </div>
-                        <div class="item-customer">
-                            <div class="customer-photo" data-background="{{ asset('images/utilities/user-2.jpg') }}"></div>
-                            <h5>JACK MASON</h5>
-                            <h6>IRELAND</h6>
-                        </div>
-                    </div>
-                    <div class="testimonials-item">
-                        <div class="item-comment">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et nisl consequat, semper est non, convallis neque. Phasellus id dictum libero. Etiam nunc libero feugiat vel sem non.
-                        </div>
-                        <div class="item-customer">
-                            <div class="customer-photo" data-background="{{ asset('images/utilities/user-3.jpg') }}"></div>
-                            <h5>MICHAEL FELDSTEIN</h5>
-                            <h6>POLAND</h6>
-                        </div>
-                    </div>
-                    <div class="testimonials-item">
-                        <div class="item-comment">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et nisl consequat, semper est non, convallis neque. Phasellus id dictum libero. Etiam nunc libero feugiat vel sem non.
-                        </div>
-                        <div class="item-customer">
-                            <div class="customer-photo" data-background="{{ asset('images/utilities/user-4.jpg') }}"></div>
-                            <h5>JOHN FEDERICO</h5>
-                            <h6>ITALY</h6>
+                            <div class="customer-photo" data-background="{{ asset('images/utilities/3.png') }}"></div>
+                            <h5>LAURA A.</h5>
+                            <h6>MÉXICO</h6>
                         </div>
                     </div>
                 </div>
