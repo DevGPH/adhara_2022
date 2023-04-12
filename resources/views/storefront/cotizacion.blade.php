@@ -16,7 +16,8 @@
             <p><img src="{{ asset('images/cotizacion/bed_a.png') }}" width="20" height="20" > @lang('main.quotation-item004') {{ $habitaciones }} &nbsp; <img src="{{ asset('images/cotizacion/Adulto_a.png') }}" width="20" height="20">: {{ $total_adultos }}  &nbsp; &nbsp;<img src="{{ asset('images/cotizacion/Adulto_a.png') }}" width="15" height="15"> : {{ $total_kids }}</p>
         </div>
         <div class="col-sm-6">
-            <h4 id='price_taxes'>@lang('main.quotation-item001')</h4>
+            <h4 id='price_taxes' style="margin-bottom:5px;">@lang('main.quotation-item001')</h4>
+            <p style="font-size:12px;font-weight:bolder;">@lang('main.tasa-turistica')</p>
         </div>
     </div>
 

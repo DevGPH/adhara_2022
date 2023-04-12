@@ -126,6 +126,7 @@
                     @lang('main.reservations-item019a') <a class="opt-ft-ok " data-toggle="modal" data-target="#myModal">@lang('main.body-item35')</a>  @lang('main.reservations-item019b')
                 </p>
                 <p>@lang('main.reservations-item020')</p>
+                <p>@lang('main.tasa-turistica')</p>
             </div>
         </div>
         <div style="margin-top:30px">

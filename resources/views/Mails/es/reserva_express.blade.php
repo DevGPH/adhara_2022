@@ -59,6 +59,7 @@
             <p style="margin-left: 40px;">Promoción vigente: Ninguna</p>
             <p style="margin-left: 40px;color: #b01b30;"><strong>Total de la reserva: {{ number_format($info['total']) }} MXN</strong></p>
             <hr style="border-bottom-color: #b01b30;width:680px;">
+            <p style="margin-top: 50px;">Tasa turística no incluida 72.62 MXN por persona/noche a pagar en el hotel</p>
             <p style="margin-top: 50px;margin-left: 40px;">Condiciones de cancelación:</p>
             <p style="text-align: justify;margin-left: 40px;">Contamos con un periodo donde no aplican penalidades si cancelas tu reservación. Tome en cuenta que este periodo tiene una duración fija.</p>
             <p style="text-align: justify;margin-left: 40px;">En caso de que tengas que irte antes de que termine tu estancia (Salida anticipada), o no te presentes al hotel (Conocido como no show) se considera como cancelación y no aplican reembol-sos. Si reduce el número de huéspedes una vez pagada la reser-vación, no es reembolsable.</p>
