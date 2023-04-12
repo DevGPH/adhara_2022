@@ -89,11 +89,12 @@
                                         style="color: #343434; font-size: 28px; font-family: Quicksand, Calibri, sans-serif; font-weight:700;letter-spacing: 3px; line-height: 35px;"
                                         class="main-header">
 
+                                        <div style="line-height: 35px">
+                                            Your reservation has been <span style="color: #5caad2;">confirmed</span>
+                                        </div>
 
                                         <div style="line-height: 35px">
-
-                                            Your reservation has been <span style="color: #5caad2;">confirmed</span>
-
+                                            Tourist tax not included 4.05 USD per person/night to pay at check-in
                                         </div>
                                     </td>
                                 </tr>
