@@ -2368,7 +2368,7 @@ a,
     text-overflow           : ellipsis;
     text-transform          : uppercase;
     overflow                : hidden;
-    background-color        : #d77b5d;
+    background-color        : rgba(110, 94, 120, 1);
 }
 .widget-blog-carousel .blog-item .item-date b{
     display                 : block;

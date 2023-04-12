@@ -270,56 +270,73 @@
             <div class="wrapper-full-inner">
                 <!-- Blog Title -->
                 <div class="widget-title">
-                    <h5>BLOG</h5>
-                    <h2>Latest News</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget commodo orci. Integer varius nibh eu mattis porta. Pellentesque dictum sem eget cursus semper. Nullam quis blandit lorem.</p>
+                    <h5>SERVICIOS</h5>
+                    <h2>Especiales para ti</h2>
+                    <p>Crear una buena experiencia para tus vacaciones no ocurre por coincidencia. Ocurre por que nos esforzamos de hacerlo realidad con magia en cada detalle.</p>
                 </div>
                 <!-- Blog Title End -->
                 <!-- Blog Carousel -->
                 <div class="widget-carousel owl-carousel owl-theme">
                     <div class="blog-item">
                         <div class="item-media">
-                            <div class="item-date"><b>24</b>DEC</div>
+                            <div class="item-date"><img src="{{ asset('images/services/icon.png') }}" alt=""><!--b>24</b>DEC--></div>
                             <div class="media-photo">
-                                <a href="blog-single.html" data-background="{{ asset('images/blogs/photo-blog-1.jpg') }}"></a>    
+                                <a href="blog-single.html" data-background="{{ asset('images/services/service.png') }}"></a>    
                             </div>
                         </div>
                         <div class="item-desc">
-                            <h3><a href="blog-single.html">Best Things to Do In London Enjoy the Nightlife</a></h3>
-                            <h5>EVENTS</h5>
-                            <p>Sed fermentum eleifend dui eu faucibus. Donec facilisis, ligula eu interdum luctus nunc massa fermentum</p>
-                            <a href="blog-single.html" class="btn-link">READ MORE</a>
+                            <h3><a href="blog-single.html">Un Hotel con App Móvil</a></h3>
+                            <h5>Nos renovamos para ti</h5>
+                            <p>Contamos con una App para que puedas realizar reservaciones</p>
+                            <p>¡Fácil, rápido y seguro! Disponible en Google Play y Apple Store...</p>
+                            <a href="blog-single.html" class="btn-link">MÁS INFORMACIÓN</a>
                         </div>
                     </div>
                     <div class="blog-item">
                         <div class="item-media">
-                            <div class="item-date"><b>21</b>NOV</div>
+                            <div class="item-date"><img src="{{ asset('images/services/icon3.png') }}" alt=""><!--b>21</b>NOV--></div>
                             <div class="media-photo">
-                                <a href="blog-single.html" data-background="{{ asset('images/blogs/photo-blog-2.jpg') }}"></a>    
+                                <a href="blog-single.html" data-background="{{ asset('images/services/service2.png') }}"></a>    
                             </div>
                         </div>
                         <div class="item-desc">
-                            <h3><a href="blog-single.html">A Walk from The Grandium Hotel Around</a></h3>
-                            <h5>TRAVEL</h5>
-                            <p>Sed fermentum eleifend dui eu faucibus. Donec facilisis, ligula eu interdum luctus nunc massa fermentum</p>
-                            <a href="blog-single.html" class="btn-link">READ MORE</a>
+                            <h3><a href="blog-single.html">Transportación incluida</a></h3>
+                            <h5>nosotros te llevamos gratis</h5>
+                            <p>Todos los huéspedes de nuestro hotel tienen incluido el servicio de transportación de:</p>
+                            <p>Hotel - Playa - Hotel.</p>
+                            <p>Hotel - Aeropuerto Internacional de Cancún.</p>
+                            <a href="blog-single.html" class="btn-link">MÁS INFORMACIÓN</a>
                         </div>
                     </div>
                     <div class="blog-item">
                         <div class="item-media">
-                            <div class="item-date"><b>19</b>OCT</div>
+                            <div class="item-date"><img src="{{ asset('images/services/icon4.png') }}" alt=""><!--b>19</b>OCT--></div>
                             <div class="media-photo">
-                                <a href="blog-single.html" data-background="{{ asset('images/blogs/photo-blog-3.jpg') }}"></a>    
+                                <a href="blog-single.html" data-background="{{ asset('images/services/service3.png') }}"></a>    
                             </div>
                         </div>
                         <div class="item-desc">
-                            <h3><a href="blog-single.html">Top Events in London This February</a></h3>
-                            <h5>EVENTS</h5>
-                            <p>Sed fermentum eleifend dui eu faucibus. Donec facilisis, ligula eu interdum luctus nunc massa fermentum</p>
-                            <a href="blog-single.html" class="btn-link">READ MORE</a>
+                            <h3><a href="blog-single.html">Estacionamiento</a></h3>
+                            <h5>amplio y gratuito</h5>
+                            <p>Contamos con un seguro y amplio estacionamiento privado, para recibir todo tipo de vehículos.</p>
+                            <a href="blog-single.html" class="btn-link">MÁS INFORMACIÓN</a>
                         </div>
                     </div>
                     <div class="blog-item">
+                        <div class="item-media">
+                            <div class="item-date"><img src="{{ asset('images/services/icon2.png') }}" alt=""><!--b>19</b>OCT--></div>
+                            <div class="media-photo">
+                                <a href="blog-single.html" data-background="{{ asset('images/services/service4.png') }}"></a>    
+                            </div>
+                        </div>
+                        <div class="item-desc">
+                            <h3><a href="blog-single.html">Piscina de lujo</a></h3>
+                            <h5>siempre con una temperatura agradable</h5>
+                            <p>Un espacio envuelto por una arquitectura y jardinería muy atractivas, con áreas que proyectan las sombras de las altas palmeras reales, en su relajante vaivén...</p>
+                            <a href="blog-single.html" class="btn-link">MÁS INFORMACIÓN</a>
+                        </div>
+                    </div>
+                    <!--div class="blog-item">
                         <div class="item-media">
                             <div class="item-date"><b>17</b>SEP</div>
                             <div class="media-gallery">
@@ -364,7 +381,7 @@
                             <p>Sed fermentum eleifend dui eu faucibus. Donec facilisis, ligula eu interdum luctus nunc massa fermentum</p>
                             <a href="blog-single-youtube.html" class="btn-link">READ MORE</a>
                         </div>
-                    </div>
+                    </div-->
                 </div>
                 <!-- Blog Carousel End -->
             </div>
