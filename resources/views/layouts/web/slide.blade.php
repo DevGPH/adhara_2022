@@ -8,33 +8,33 @@
          @if ($lang == 'es')
             <a href="https://api.whatsapp.com/send?phone=529981221861" target='_blank' class="d-block d-sm-none">
                 <img src="{{ asset('video/tarifa_mob_en.png') }}" alt="">
-            </a> 
+            </a>
             <a href="https://api.whatsapp.com/send?phone=529981221861" target='_blank' class="d-none d-sm-block">
                 <video id="video-tarifa" width="100%" height="600" autoplay='autoplay' loop='true' muted allowfullscreen>
                     <source src="{{ asset('video/tarifa_season_en.mp4') }}" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-            </a>   
+            </a>
          @else
             <a href="https://api.whatsapp.com/send?phone=529981221861" target='_blank' class="d-block d-sm-none">
                 <img src="{{ asset('video/tarifa_mob_es.png') }}" alt="">
-            </a> 
+            </a>
             <a href="https://api.whatsapp.com/send?phone=529981221861" target='_blank' class="d-none d-sm-block">
                 <video id="video-tarifa" width="100%" height="600" autoplay='autoplay' loop='true' muted allowfullscreen>
                     <source src="{{ asset('video/tarifa_season.mp4') }}" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-            </a>   
+            </a>
          @endif
     </div>
-    <div class="item">
-        <img src="@lang('main.slider-home-2-mob')" class="d-block d-sm-none" alt=""> 
-        <img src="@lang('main.slider-home-2')" class="d-none d-sm-block" alt=""> 
+    <!--div class="item">
+        <img src="@lang('main.slider-home-2-mob')" class="d-block d-sm-none" alt="">
+        <img src="@lang('main.slider-home-2')" class="d-none d-sm-block" alt="">
     </div>
     <div class="item">
-        <img src="@lang('main.slider-home-3-mob')" class="d-block d-sm-none" alt=""> 
-        <img src="@lang('main.slider-home-3')" class="d-none d-sm-block" alt=""> 
-    </div>
+        <img src="@lang('main.slider-home-3-mob')" class="d-block d-sm-none" alt="">
+        <img src="@lang('main.slider-home-3')" class="d-none d-sm-block" alt="">
+    </div-->
 </div>
 
 <div id='hover-whats'>
@@ -47,7 +47,7 @@
     <p class="taxes-banner" style="margin-bottom: 40px;">@lang('main.rates-special-mob')</p>
     <a href="https://api.whatsapp.com/send?phone=529981221861" target='_blank'>
         <img src="{{ asset('images/banner_hover/whats_home.png') }}" alt="">
-    </a>   
+    </a>
 
     <!--div class="cotiza-text">
         <p class="small-t" style="margin-bottom: 0px;"><strong>@lang('main.hover-whats-p')</strong></p>
@@ -56,7 +56,7 @@
         <img src="{{ asset('images/banner_hover/whats_home.png') }}" id='logo-whats-hover' alt="">
         <h4>WhatsApp</h4>
         <p class="big-t" style="margin-bottom: 0px;"><a href="https://api.whatsapp.com/send?phone=529981221816" target='_blank'>998 122 1861</a></p>
-    </div-->  
+    </div-->
 </div>
 
 <script type='text/javascript'>
@@ -76,6 +76,7 @@ $('.owl-carousel').owlCarousel({
             items:1,
             nav:false
         },
+
         600:{
             items:1,
             nav:false
