@@ -7,7 +7,7 @@
 @include('layouts.web.buscador')
 <!-- FIN DEL BUSCADOR -->
 
-<div class='main-body'>
+<div class='main-body' style="margin-top:10px;">
     <div class="row" id="initial-section">
         <div class="col-12 col-xs-6 col-md-6 col-lg-6 col-xl-6 padding-cabing">
             <h4>Hotel Adhara Cancún</h4>
@@ -30,7 +30,7 @@
                 <div class="item"><img src="{{ asset('images/habitaciones/one_bedroom_4.png') }}" style="width:500px;display:block;margin:0 auto;" alt=""></div>
                 <div class="item"><img src="{{ asset('images/habitaciones/one_bedroom_5.png') }}" style="width:500px;display:block;margin:0 auto;" alt=""></div>
                 <div class="item"><img src="{{ asset('images/habitaciones/one_bedroom_6.png') }}" style="width:500px;display:block;margin:0 auto;" alt=""></div>
-            </div>      
+            </div>
             <script>
                     $(document).ready(function() {
                         $('#owl-demo').owlCarousel({
@@ -60,10 +60,10 @@
                                 }
                             }
                         })
-                    
+
                     });
-                
-                
+
+
             </script>
         </div>
         <div class="col-12 col-xs-6 col-md-6 col-lg-6 col-xl-5 padding-cabing">
@@ -85,7 +85,7 @@
                 <div class="item"><img src="{{ asset('images/home/grill_1.png') }}" style="border-radius:8px;width:400px;display:block;margin:0 auto;" alt=""></div>
                 <div class="item"><img src="{{ asset('images/home/grill_2.png') }}" style="border-radius:8px;width:400px;display:block;margin:0 auto;" alt=""></div>
                 <div class="item"><img src="{{ asset('images/home/grill_3.png') }}" style="border-radius:8px;width:400px;display:block;margin:0 auto;" alt=""></div>
-            </div>      
+            </div>
             <script>
                     $(document).ready(function() {
                         $('#owl-rest').owlCarousel({
@@ -114,10 +114,10 @@
                                 }
                             }
                         })
-                    
+
                     });
-                
-                
+
+
             </script>
         </div>
     </div>
@@ -126,7 +126,7 @@
             <div id="owl-pool" class="owl-carousel owl-theme">
                 <div class="item"><img src="{{ asset('images/home/pool_4.png') }}" style="width:500px;display:block;margin:0 auto;" alt=""></div>
                 <div class="item"><img src="{{ asset('images/home/pool_6.png') }}" style="width:500px;display:block;margin:0 auto;" alt=""></div>
-            </div>      
+            </div>
             <script>
                     $(document).ready(function() {
                         $('#owl-pool').owlCarousel({
@@ -155,10 +155,10 @@
                                 }
                             }
                         })
-                    
+
                     });
-                
-                
+
+
             </script>
         </div>
         <div class="col-12 col-xs-6 col-md-6 col-lg-6 col-xl-5 padding-cabing">
@@ -194,7 +194,7 @@
             <div id="owl-eve" class="owl-carousel owl-theme">
                 <div class="item"><img src="{{ asset('images/home/eventos_1.png') }}" style="width:500px;display:block;margin:0 auto;" alt=""></div>
                 <div class="item"><img src="{{ asset('images/home/eventos_2.png') }}" style="width:500px;display:block;margin:0 auto;" alt=""></div>
-            </div>      
+            </div>
             <script>
                     $(document).ready(function() {
                         $('#owl-eve').owlCarousel({
@@ -223,10 +223,10 @@
                                 }
                             }
                         })
-                    
+
                     });
-                
-                
+
+
             </script>
         </div>
         <div class="col-12 col-xs-6 col-md-6 col-lg-6 col-xl-4 padding-cabing">
