@@ -8,14 +8,14 @@
 	Author URI: http://www.locotheme.com
 
 	- - - - - Contents - - - - -
-	
+
 	01 - Basic Stylesheet
 	02 - General Stylesheet
 	03 - Layout Stylesheet
 
 	- - - - - - - - - - - - - -
-	
-*/	
+
+*/
 
 /*  01 - Basic Stylesheet
 -----------------------------------------------------------*/
@@ -53,18 +53,18 @@ h5, h6{
 h1{
     font-size               : 48px;
     margin-bottom           : 40px;
-    
+
 }
 h2{
     font-size               : 30px;
     margin-bottom           : 20px;
-    
+
 }
 h5{
     font-size               : 12px;
     font-weight             : 900;
     color                   : #6e5e78;
-    
+
 }
 h6{
     font-size               : 11px;
@@ -234,7 +234,7 @@ a,
     text-transform          : uppercase;
     overflow                : hidden;
 	border					: none;
-    background-color        : #d77b5d;
+    background-color        : #6e5e78;
     -webkit-border-radius   : 0;
        -moz-border-radius   : 0;
         -ms-border-radius   : 0;
@@ -279,7 +279,7 @@ a,
 .btn-link:active,
 .btn-link:active:focus,
 .btn-link:focus{
-    color                   : #d77b5d;
+    color                   : #6e5e78;
     text-decoration         : none;
 }
 
@@ -325,7 +325,7 @@ a,
 }
 .owl-carousel.owl-type1 .owl-nav [class*="owl-"]:hover{
     color                   : #FFF;
-    background              : #d77b5d;
+    background              : #6e5e78;
 }
 .owl-carousel.owl-type1 .owl-nav .owl-prev:before,
 .owl-carousel.owl-type1 .owl-nav .owl-next:before{
@@ -355,7 +355,7 @@ a,
 }
 .owl-carousel.owl-type1 .owl-dots .owl-dot.active span,
 .owl-carousel.owl-type1 .owl-dots .owl-dot:hover span{
-    background              : #d77b5d;
+    background              : #6e5e78;
 }
 
 .data-form ::-webkit-input-placeholder{
@@ -461,7 +461,7 @@ a,
             border-radius   : 50%;
 }
 .widget-social-icons ul li:hover a{
-    background-color        : #d77b5d;
+    background-color        : #6e5e78;
 }
 .widget-social-icons ul li:last-child{
     margin-right            : 0;
@@ -489,12 +489,12 @@ a,
     background-color        : #fff;
 }
 .widget-pager ul li:hover a{
-    color                   : #d77b5d;
+    color                   : #6e5e78;
 }
 .widget-pager ul li.active a,
 .widget-pager ul li.active:hover a{
     color                   : #fff;
-    background-color        : #d77b5d;
+    background-color        : #6e5e78;
 }
 
 .widget-breadcrumb ul li{
@@ -505,7 +505,7 @@ a,
     font-size               : 10px;
     font-weight             : 900;
     letter-spacing          : 2px;
-    color                   : #d77b5d;
+    color                   : #6e5e78;
     text-transform          : uppercase;
     padding-left            : 20px;
     margin-right            : 10px;
@@ -533,7 +533,7 @@ a,
     margin-right            : 0;
 }
 .widget-breadcrumb ul li:last-child a{
-    color                   : #d77b5d;
+    color                   : #6e5e78;
 }
 .widget-breadcrumb ul li a{
     display                 : block;
@@ -541,7 +541,7 @@ a,
     color                   : #818a9c;
 }
 .widget-breadcrumb ul li:hover a{
-    color                   : #d77b5d;
+    color                   : #6e5e78;
 }
 
 .widget-google-map{
@@ -571,7 +571,7 @@ a,
 }
 .widget-google-map .map-title .fa{
     font-size               : 24px;
-    color                   : #d77b5d;
+    color                   : #6e5e78;
     margin-bottom           : 10px;
 }
 
@@ -612,7 +612,7 @@ a,
     color                   : #fff;
     text-transform          : uppercase;
 }
-.widget-newsletter :-ms-input-placeholder{  
+.widget-newsletter :-ms-input-placeholder{
     color                   : #fff;
     text-transform          : uppercase;
 }
@@ -830,8 +830,8 @@ a,
 }
 .widget-team-carousel .team-item .item-desc h3{
     font-size               : 12px;
-    font-weight             : 900;   
-    color                   : #d77b5d;
+    font-weight             : 900;
+    color                   : #6e5e78;
 }
 .widget-team-carousel .team-item .item-desc h4{
     font-size               : 10px;
@@ -861,7 +861,7 @@ a,
     color                   : #818a9c;
 }
 .widget-team-carousel .team-item .item-desc ul li a:hover{
-    color                   : #d77b5d;
+    color                   : #6e5e78;
 }
 .widget-team-carousel .team-item .item-desc ul li:last-child a{
     border-right            : 0;
@@ -940,9 +940,9 @@ a,
 .widget-slider .widget-carousel .owl-dots .owl-dot span{
     background-color        : #fff;
 }
-.widget-slider .widget-carousel .owl-dots .owl-dot.active span, 
+.widget-slider .widget-carousel .owl-dots .owl-dot.active span,
 .widget-slider .widget-carousel .owl-dots .owl-dot:hover span{
-    background-color        : #d77b5d;
+    background-color        : #6e5e78;
 }
 .widget-slider .widget-carousel .owl-nav{
     margin                  : 0;
@@ -1073,7 +1073,7 @@ a,
 .widget-slider .slider-booking ul li ::-moz-placeholder{
    color                    : #6e5e78;
 }
-.widget-slider .slider-booking ul li :-ms-input-placeholder{  
+.widget-slider .slider-booking ul li :-ms-input-placeholder{
    color                    : #6e5e78;
 }
 .widget-slider .slider-booking ul li:last-child{
@@ -1141,12 +1141,12 @@ a,
 }
 
 .widget-features-carousel{
-    background-color        : #f5f5f5;   
+    background-color        : #f5f5f5;
 }
 .widget-features-carousel .features-item{
     position                : relative;
     padding-top             : 100%;
-    background-color        : #fff;   
+    background-color        : #fff;
 }
 .widget-features-carousel .features-item .item-inner{
     position                : absolute;
@@ -1170,7 +1170,7 @@ a,
     overflow                : hidden;
 }
 .widget-features-carousel .features-item:hover .item-inner h5{
-    color                   : #d77b5d;
+    color                   : #6e5e78;
 }
 
 .widget-features-grid{
@@ -1308,7 +1308,7 @@ a,
     margin-top              : -1px;
     content                 : "";
     display                 : inline-block;
-    background-color        : #d77b5d;
+    background-color        : #6e5e78;
 }
 .widget-offers-grid .offers-item .item-inner .item-desc .btn-link:hover:before{
     width                   : 15px;
@@ -1375,12 +1375,12 @@ a,
             border-radius   : 22px;
 }
 .widget-filter-top ul li:hover a{
-    color                   : #d77b5d;
+    color                   : #6e5e78;
 }
 .widget-filter-top ul li.active a,
 .widget-filter-top ul li.active:hover a{
     color                   : #fff;
-    background-color        : #d77b5d;
+    background-color        : #6e5e78;
 }
 .widget-filter-top ul li:last-child{
     margin-right            : 0;
@@ -1426,13 +1426,13 @@ a,
     display                 : inline-block;
     font                    : normal normal normal 14px/1 FontAwesome;
     font-size               : 12px;
-    color                   : #d77b5d;
+    color                   : #6e5e78;
     text-rendering          : auto;
     -webkit-font-smoothing  : antialiased;
     -moz-osx-font-smoothing : grayscale;
 }
 .widget-gallery-grid .gallery-item:hover a:before{
-    border-bottom-color     : #d77b5d;
+    border-bottom-color     : #6e5e78;
 }
 .widget-gallery-grid .gallery-item:hover a:after{
     color                   : #fff;
@@ -1542,7 +1542,7 @@ a,
             border-radius   : 0;
 }
 .widget-gallery-carousel .widget-carousel .owl-nav [class*='owl-']:hover{
-    color                   : #d77b5d;
+    color                   : #6e5e78;
     background-color        : #fff;
 }
 .widget-gallery-carousel .widget-carousel .owl-nav .owl-prev{
@@ -1664,12 +1664,12 @@ a,
     margin-bottom           : 10px;
 }
 .widget-rooms-carousel .rooms-item .item-desc h2 a:hover{
-    color                   : #d77b5d;
+    color                   : #6e5e78;
 }
 .widget-rooms-carousel .rooms-item .item-desc h3{
     font-family             : 'Lato', sans-serif;
     font-weight             : 900;
-    color                   : #d77b5d;
+    color                   : #6e5e78;
     margin-bottom           : 20px;
 }
 .widget-rooms-carousel .rooms-item .item-desc p{
@@ -1750,7 +1750,7 @@ a,
     margin-bottom           : 10px;
 }
 .widget-rooms-list .rooms-item .item-desc h2 a:hover{
-    color                   : #d77b5d;
+    color                   : #6e5e78;
 }
 .widget-rooms-list .rooms-item .item-desc p{
     font-size               : 18px;
@@ -1813,8 +1813,8 @@ a,
     line-height             : 20px;
     text-align              : center;
     font-size               : 7px;
-    color                   : #d77b5d;
-    border                  : 1px solid #d77b5d;
+    color                   : #6e5e78;
+    border                  : 1px solid #6e5e78;
     -webkit-border-radius   : 50%;
        -moz-border-radius   : 50%;
         -ms-border-radius   : 50%;
@@ -1885,7 +1885,7 @@ a,
 .widget-rooms-list .rooms-item .item-price .price-inner .fa-star{
     position                : relative;
     left                    : 5px;
-    color                   : #d77b5d;
+    color                   : #6e5e78;
     margin-bottom           : 10px;
 }
 .widget-rooms-list .rooms-item .item-price .price-inner .fa-star:before{
@@ -1918,7 +1918,7 @@ a,
     font-weight             : 900;
     font-size               : 24px;
     color                   : #fff;
-    background-color        : #d77b5d;
+    background-color        : #6e5e78;
 }
 .widget-rooms-detail .room-slider .room-price small{
     position                : relative;
@@ -1993,7 +1993,7 @@ a,
 .widget-rooms-detail .room-booking .data-form ::-moz-placeholder{
    color                    : #24324a;
 }
-.widget-rooms-detail .room-booking .data-form :-ms-input-placeholder{  
+.widget-rooms-detail .room-booking .data-form :-ms-input-placeholder{
    color                    : #24324a;
 }
 .widget-rooms-detail .room-features{
@@ -2029,8 +2029,8 @@ a,
     line-height             : 20px;
     text-align              : center;
     font-size               : 7px;
-    color                   : #d77b5d;
-    border                  : 1px solid #d77b5d;
+    color                   : #6e5e78;
+    border                  : 1px solid #6e5e78;
     -webkit-border-radius   : 50%;
        -moz-border-radius   : 50%;
         -ms-border-radius   : 50%;
@@ -2080,7 +2080,7 @@ a,
     color                   : #24324a;
     text-transform          : uppercase;
 }
-.widget-booking-form .booking-form .data-form :-ms-input-placeholder{  
+.widget-booking-form .booking-form .data-form :-ms-input-placeholder{
     color                   : #24324a;
     text-transform          : uppercase;
 }
@@ -2109,13 +2109,13 @@ a,
     font-size               : 24px;
 }
 .widget-booking-form .booking-detail .detail-room .room-desc h3 a:hover{
-    color                   : #d77b5d;
+    color                   : #6e5e78;
 }
 .widget-booking-form .booking-detail .detail-room .room-desc h4{
     font-family             : 'Lato', sans-serif;
     font-size               : 14px;
     font-weight             : 900;
-    color                   : #d77b5d;
+    color                   : #6e5e78;
     margin-bottom           : 0;
     text-transform          : uppercase;
 }
@@ -2159,7 +2159,7 @@ a,
 }
 .widget-booking-form .booking-detail .detail-info ul li.total p{
     font-weight             : 900;
-    color                   : #d77b5d;
+    color                   : #6e5e78;
     font-size               : 18px;
 }
 .widget-booking-form .booking-help{
@@ -2175,7 +2175,7 @@ a,
 }
 .widget-booking-form .booking-help h3 .fa{
     margin-right            : 10px;
-    color                   : #d77b5d;
+    color                   : #6e5e78;
 }
 .widget-booking-form .booking-complete{
     display                 : none;
@@ -2386,7 +2386,7 @@ a,
     color                   : #818a9c;
 }
 .widget-blog-carousel .blog-item .item-desc h3 a:hover{
-    color                   : #d77b5d;
+    color                   : #6e5e78;
 }
 .widget-blog-carousel .blog-item .item-desc .btn-link{
     position                : absolute;
@@ -2465,7 +2465,7 @@ a,
     padding                 : 40px;
 }
 .widget-blog-list .blog-item .item-desc h2 a:hover{
-    color                   : #d77b5d;
+    color                   : #6e5e78;
 }
 .widget-blog-list .blog-item .item-desc h5{
     font-size               : 10px;
@@ -2474,7 +2474,7 @@ a,
     letter-spacing          : 0;
 }
 .widget-blog-list .blog-item .item-desc h5 a{
-    color                   : #d77b5d;
+    color                   : #6e5e78;
 }
 .widget-blog-list .blog-item .item-desc h5 .fa{
     margin-left             : 10px;
@@ -2554,7 +2554,7 @@ a,
     margin-bottom           : 0;
 }
 .widget-blog-sidebar .sidebar-categories ul li a:hover{
-    color                   : #d77b5d;
+    color                   : #6e5e78;
 }
 .widget-blog-sidebar .sidebar-events ul li{
     margin-bottom           : 15px;
@@ -2567,7 +2567,7 @@ a,
     padding-top             : 10px;
 }
 .widget-blog-sidebar .sidebar-events ul li a:hover{
-    color                   : #d77b5d;
+    color                   : #6e5e78;
 }
 .widget-blog-sidebar .sidebar-events ul li span{
     position                : absolute;
@@ -2604,7 +2604,7 @@ a,
     text-overflow           : ellipsis;
     text-transform          : uppercase;
     overflow                : hidden;
-    background-color        : #d77b5d;
+    background-color        : #6e5e78;
 }
 .widget-blog-sidebar .sidebar-events ul li:last-child{
     margin-bottom           : 0;
@@ -2617,7 +2617,7 @@ a,
     font-weight             : 400;
 }
 .widget-blog-sidebar .sidebar-recent ul li a:hover{
-    color                   : #d77b5d;
+    color                   : #6e5e78;
 }
 .widget-blog-sidebar .sidebar-recent ul li span{
     display                 : block;
@@ -2648,7 +2648,7 @@ a,
 }
 .widget-blog-sidebar .sidebar-tags ul li a:hover{
     color                   : #fff;
-    background-color        : #d77b5d;
+    background-color        : #6e5e78;
 }
 .widget-blog-sidebar .sidebar-archive ul li{
     margin-bottom           : 15px;
@@ -2663,7 +2663,7 @@ a,
     margin-bottom           : 0;
 }
 .widget-blog-sidebar .sidebar-archive ul li a:hover{
-    color                   : #d77b5d;
+    color                   : #6e5e78;
 }
 
 .widget-blog-single h5{
@@ -2697,7 +2697,7 @@ a,
     margin-bottom           : 20px;
 }
 .widget-blog-single .single-detail .detail-head a{
-    color                   : #d77b5d;
+    color                   : #6e5e78;
 }
 .widget-blog-single .single-detail .detail-head .fa{
     margin-left             : 10px;
@@ -2731,7 +2731,7 @@ a,
 }
 .widget-blog-single .single-detail .detail-tags ul li a:hover{
     color                   : #fff;
-    background-color        : #d77b5d;
+    background-color        : #6e5e78;
 }
 .widget-blog-single .single-comments{
     padding                 : 0 40px 40px 40px;
@@ -2789,7 +2789,7 @@ a,
 }
 .widget-blog-single .single-comments .comments-list .comment .comment-info .comment-reply a{
     font-size               : 10px;
-    color                   : #d77b5d;
+    color                   : #6e5e78;
 }
 .widget-blog-single .single-comments .comments-form{
     padding-top             : 100px;
@@ -2848,7 +2848,7 @@ a,
     margin-bottom           : 20px;
 }
 .widget-contact-info a:hover{
-    color                   : #d77b5d;
+    color                   : #6e5e78;
 }
 .widget-contact-info > ul > li{
     margin-bottom           : 40px;
@@ -2890,7 +2890,7 @@ a,
     font-size               : 40px;
 }
 .widget-contact-review .review-item .item-inner a:hover{
-    color                   : #d77b5d;
+    color                   : #6e5e78;
 }
 
 /*  03 - Layout Stylesheet
@@ -3050,7 +3050,7 @@ a,
     color                   : #fff;
 }
 .site-header .header-bottom .header-nav ul li:hover > a{
-    color                   : #d77b5d;
+    color                   : #6e5e78;
 }
 .site-header .header-bottom .header-nav ul li.sub{
     position                : relative;
@@ -3073,7 +3073,7 @@ a,
     font-size               : 11px;
     white-space             : nowrap;
     text-align              : left;
-    background-color        : #1a2436;
+    background-color        : #6e5e78;
 }
 .site-header .header-bottom .header-nav > ul > li.sub ul li ul{
     position                : absolute;
@@ -3088,7 +3088,7 @@ a,
     height                  : 1px;
     content                 : "";
     display                 : none;
-    background-color        : #d77b5d;
+    background-color        : #6e5e78;
 }
 .site-header .header-bottom .header-nav > ul > li.sub > a{
     -webkit-transition		: none;
@@ -3107,7 +3107,7 @@ a,
 }
 .site-header .header-bottom .header-nav > ul > li.sub:hover > a{
     color                   : #fff;
-    background-color        : #1a2436;
+    background-color        : #6e5e78;
 }
 .site-header .header-bottom .header-nav > ul.nav-left{
     padding-right           : 150px;
@@ -3150,7 +3150,7 @@ a,
     position                : relative;
     padding-top             : 60px;
     padding-bottom          : 60px;
-    background-color        : #5e476c;
+    background-color        : #48405e;
 }
 .site-footer .footer-top:before{
     position                : absolute;
@@ -3225,7 +3225,7 @@ a,
     text-transform          : uppercase;
 }
 .site-footer .footer-bottom .footer-nav ul li a:hover{
-    color                   : #d77b5d;
+    color                   : #6e5e78;
 }
 
 .client-footers{
@@ -3241,4 +3241,36 @@ a,
 
 .client-footers li img{
     width: 130px;
+}
+
+.custom-link {
+    padding: 8px;
+    border-color: white;
+    border-radius: 8px;
+    border-style: solid;
+    padding-bottom: 10px;
+}
+
+.custom-tarifa {
+    padding: 8px;
+    border-color: white;
+    border-radius: 8px;
+    border-style: solid;
+    padding-bottom: 10px;
+    margin-right: 0px !important;
+}
+
+#tarifa-first{
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#tarifa-middle{
+    border-radius: 0px !important;
+    background-color: white;
+}
+
+#tarifa-last{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
 }

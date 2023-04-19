@@ -5,6 +5,7 @@ return [
     'nav-home' => 'Home',
     'nav-rooms' => 'Rooms',
     'nav-services' => 'Services',
+    'nav-hotel' => 'Hotel',
     'nav-contact' => 'Contact us',
     'nav-flag' => 'mexico.png',
     'nav-lang' => 'Spanish',
@@ -68,22 +69,22 @@ return [
     'index.video.title' => 'Know Cancun',
     'index.video.title.2' => 'More than 30 years of experience',
     'index.video.text' => 'A renovated Hotel with the best technology in a mobile APP. Strategically located, we have perfect connectivity in front of Puerto Cancun, 3 minutes from the entrance to the hotel zone, 150 meters from the bus station and 20 minutes from the airport.',
-    
+
     /*  DE AQUI PARA ABAJO SE PUEDE ELIMINAR*/
     'body-item4' => 'Av. Carlos Nader 1,2,3 SM.1, MZ.2, Cancun, Quintana Roo, Mexico.',
 
-    
+
     'body-item5' => 'Meet our comfortable bedrooms',
     'body-item6' => 'The bedrooms at Hotel Adhara Express are the most spacious and comfortable of their category, equipped with modern services for work or rest stays.',
-    
-    
+
+
     'body-item7' => 'Restaurant Bar',
     'body-item8' => 'Our restaurant-bar serves international to the carte specialties and a buffet breakfast in a casual atmosphere with air conditioning, wireless internet and 32-inch LDC screens where you can enjoy current sports broadcasts, as well as an outdoor terrace.',
     'body-item9' => 'Clean and desinfected spaces.',
-    
+
     'body-item10' => 'Pool with Jacuzzi',
     'body-item11' => 'A space surrounded by very attractive architecture and gardening, with areas that project the shadows of the tall royal palm trees, in their relaxing sway caused by the pleasant Caribbean wind that is felt there every day.',
-    
+
     'body-item12' => 'Special services for you!',
     'body-item13' => 'Transportation to the beach',
     'body-item14' => 'All the guests of our hotel have included the transportation service to the beach, at established times.',
@@ -106,7 +107,7 @@ return [
     'body-item27' => 'Visit us:',
     'body-item28' => 'Book with us for tours, transfers and hotels.',
     'body-oktrip' => 'Ask about our special rates for groups, where we will provide you with special services.',
-    
+
     'body-item29' => 'Club Estrella',
     'body-item30' => 'The frequent traveler rewards program, created to recognize your preference through exclusive benefits.',
     'body-item31' => 'Register in the portal, shop with our partners and accumulate points to exchange them for participating rewards!',
@@ -169,7 +170,7 @@ return [
     'room-item44' => 'Kitchen',
     'room-item45' => 'Fridge',
     'room-item46' => 'Dining room',
-    
+
 
 
     'contact-item001' => 'Prime location',
@@ -250,7 +251,7 @@ return [
     'reservations-item031' => 'Room Plan: ',
 
 
-    'succesfully-item001' => 'Your reservation was made successfully, any questions', 
+    'succesfully-item001' => 'Your reservation was made successfully, any questions',
     'succesfully-item002' => 'please contact the reservations department',
     'succesfully-item003' => 'with the following reservation code:',
     'succesfully-item004' => 'Payment method of the reservation was made:',

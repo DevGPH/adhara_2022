@@ -8,12 +8,12 @@
 }
 
 #whats_header {
-    width: 25px;
+    width: 23px;
     margin-right: 10px;
 }
 
 .nav-link {
-    color: white !important;
+    color: white;
 }
 
 .rooms_all {

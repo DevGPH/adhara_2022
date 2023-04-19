@@ -22,11 +22,11 @@
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/owl.carousel.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/owl.theme.default.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery-ui.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/king_penelope.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/king_uthred.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/mobile_master.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/home_view.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/homelander_view.css') }}">
 
-   
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,11 +54,11 @@
 		t.src=v;s=b.getElementsByTagName(e)[0];
 		s.parentNode.insertBefore(t,s)}(window,document,'script',
 		'https://connect.facebook.net/en_US/fbevents.js');
-		fbq('init', '1173848656751842'); 
+		fbq('init', '1173848656751842');
 		fbq('track', 'PageView');
 	</script>
 	<noscript>
-		<img height="1" width="1" 
+		<img height="1" width="1"
 		src="https://www.facebook.com/tr?id=1173848656751842&ev=PageView
 		&noscript=1"/>
 	</noscript>
@@ -73,7 +73,7 @@
 		gtag('config', 'UA-199595741-1');
 	</script>
 
-	
+
 </head>
 
 <body>
@@ -97,7 +97,7 @@
 		@yield('content')
 
 		@include('layouts.web.footer')
-	
+
     </div>
 
 	@include('layouts.web.scripts')
@@ -152,7 +152,7 @@
 	</div>
 
 	<script type="text/javascript">
-		
+
 		$(document).ready(function(){
 
 			$("#login-modal").on('submit', function(e){
@@ -177,7 +177,7 @@
 				});
 			});
 
-		
+
 		});
 	</script>
 
@@ -200,7 +200,7 @@
 
 						<p><strong><u>DECLARACIONES.</u></strong></p>
 						<p>
-							a) GPHOTELES S.A. de C.V.es un prestador de servicios turísticos para agencia de viajes (operadora), y consumidor final, con constancia de inscripción en el Registro Nacional de Turismo número ## en la Secretaría de Turismo. 
+							a) GPHOTELES S.A. de C.V.es un prestador de servicios turísticos para agencia de viajes (operadora), y consumidor final, con constancia de inscripción en el Registro Nacional de Turismo número ## en la Secretaría de Turismo.
 						</p>
 						<p>
 							b) GPHOTELES S. A. de C.V., al prestar sus servicios, observa y se obliga estrictamente a las disposiciones de la Ley General de Turismo, la Ley Federal de Protección al Consumidor y demás legislación aplicable.&nbsp;<strong>&nbsp;</strong>Así mismo se encuentra registrada ante las autoridades Hacendarias con el Registro Federal de Contribuyentes clave <strong>OKT130624DUA</strong>.
@@ -510,7 +510,7 @@
 
 						<p>Última actualización: 08 Enero 2014 </p>
 
-					</div>       
+					</div>
 
 				</div>
 

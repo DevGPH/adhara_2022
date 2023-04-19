@@ -6,6 +6,7 @@ return [
     'nav-rooms' => 'Habitaciones',
     'nav-contact' => 'Contáctanos',
     'nav-services' => 'Servicios',
+    'nav-hotel' => 'Hotel',
     'nav-flag' => 'usa.png',
     'nav-lang' => 'English',
     'nav-lang-link' => '/en',
@@ -43,9 +44,9 @@ return [
     'index.hotel.amenities.label' => 'Hacemos mágia en cada detalle',
 
     // SECCION DE SERVICIOS INDEX
-    'index.hotel.service.pool.title' => 'Alberca & Pool Bar',
+    'index.hotel.service.pool.title' => 'Piscina & Pool Bar',
     'index.hotel.service.pool.text' => 'Un espacio envuelto por una arquitectura y jardinería muy atractivas.',
-    'index.hotel.service.restaurant.title' => 'Restaurant',
+    'index.hotel.service.restaurant.title' => 'Restaurante',
     'index.hotel.service.restaurant.text' => 'Adhara Grill te ofrece un desayuno buffet con estilo mexicano.',
     'index.hotel.service.eventos.title' => 'Eventos Ejecutivos',
     'index.hotel.service.eventos.text' => 'Tenemos como valores la responsabilidad, creatividad y compromiso total con nuestros clientes.',
@@ -65,26 +66,26 @@ return [
     'index.video.title' => 'Conoce Cancún',
     'index.video.title.2' => 'Más de 30 años de Experiencia',
     'index.video.text' => 'Un Hotel renovado y con la mejor tecnología  en una APP móvil. Ubicado estratégicamente, contamos con la conectividad perfecta frente a Puerto Cancún, 3 minutos de la entrada a zona hotelera, 150 metros de la estación de autobuses y a 20  minutos del Aeropuerto.',
-    
+
     /*  DE AQUI PARA ABAJO SE PUEDE ELIMINAR*/
 
 
-    
+
     'body-item4' => 'Av. Carlos Nader 1,2,3 SM.1, MZ.2, Cancún, Quintana Roo, México',
 
 
     'body-item5' => 'Nuestras habitaciones',
     'body-item6' => 'Las habitaciones de Hotel Adhara Cancún son las más amplias y confortables de su categoría.',
     'body-item61' => 'La arquitectura e interiorismo estilo hacienda mexicana, se presentan de una manera atractiva y son acordes a la modernidad de los servicios del hotel, ofreciendo a nuestros huéspedes la experiencia de vivir su estancia en un México de actualidad y vanguardia.',
-    
-    
+
+
     'body-item7' => 'Nuestro Restaurante',
     'body-item8' => 'Somos un restaurante artesanal por que hacemos todo desde el principio y de una forma muy personal, con dedicacion y trabajo diario.',
     'body-item9' => 'Espacios limpios y desinfectados.',
-    
+
     'body-item10' => 'TERRAZA, ALBERCA <br> & POOL BAR',
     'body-item11' => 'Un espacio envuelto por una arquitectura y jardinería muy atractivas, con áreas que proyectan las sombras de las altas palmeras reales, en su relajante vaivén provocado por el agradable viento caribeño que ahí se deja sentir todos los días.',
-    
+
     'body-item12' => '¡Servicios especiales para ti!',
     'body-item13' => 'Transportación a la playa',
     'body-item14' => 'Todos los huéspedes de nuestro hotel tienen incluido el servicio de transportación a las playa, en horarios establecidos.',
@@ -107,7 +108,7 @@ return [
     'body-item27' => 'Visita:',
     'body-item28' => 'Reserva con nosotros para tours, traslados y hoteles.',
     'body-oktrip' => 'Pregunta por nuestras tarifas especiales para grupos, en donde te brindaremos servicios especiales.',
-    
+
     'body-item29' => 'Club Estrella',
     'body-item30' => 'El programa de recompensas para el viajero frecuente, creado para reconocer su preferencia mediante beneficios exclusivos.',
     'body-item31' => '¡Inscríbete en el portal, compra con nuestros socios y acumula puntos para cambiarlos por recompensas participantes!',
@@ -116,7 +117,7 @@ return [
     'body-item33' => 'Pertenece a:',
     'body-item34' => 'Aviso de privacidad',
     'body-item35' => 'Terminos y Condiciones',
-    
+
 
     'room-item1' => 'Habitaciones en Adhara Express',
     'room-item2' => 'Las habitaciones de Hotel Adhara Express son las más amplias y confortables de su categoría, equipadas con modernos servicios para estancias de trabajo o descanso.',
@@ -173,7 +174,7 @@ return [
     'room-item45' => 'Refrigerador',
     'room-item46' => 'Comedor',
 
-    
+
     'contact-item001' => 'Ubicación Privilegiada',
     'contact-item002' => 'El hotel Adhara Cancún está en el centro de la ciudad de Cancún, donde se desarrolla su actividad económica, con fácil acceso a las avenidas Tulum y Bonampak, principales vías de entrada a la ciudad.',
     'contact-item003' => 'Se localiza a 25 minutos del aeropuerto, a 5 minutos de los centros comerciales: plaza Las Américas, plaza Malecón las Américas y Malecón Cancún.',
@@ -250,7 +251,7 @@ return [
     'reservations-item030' => 'Habitacion: ',
     'reservations-item031' => 'Plan Habitacion: ',
 
-    'succesfully-item001' => 'Su reservación se hizo de manera exitosa, cualquier duda', 
+    'succesfully-item001' => 'Su reservación se hizo de manera exitosa, cualquier duda',
     'succesfully-item002' => 'favor de comunicarse con el departamento de reservaciones',
     'succesfully-item003' => 'con el siguiente folio de reserva:',
     'succesfully-item004' => 'Metodo de Pago con el que se realizo la reserva: ',

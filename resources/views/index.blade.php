@@ -281,14 +281,13 @@
                         <div class="item-media">
                             <div class="item-date"><img src="{{ asset('images/services/icon.png') }}" alt=""><!--b>24</b>DEC--></div>
                             <div class="media-photo">
-                                <a href="blog-single.html" data-background="{{ asset('images/services/service.png') }}"></a>    
+                                <a href="blog-single.html" data-background="{{ asset('images/services/movile.png') }}"></a>
                             </div>
                         </div>
                         <div class="item-desc">
-                            <h3><a href="blog-single.html">Un Hotel con App Móvil</a></h3>
-                            <h5>Nos renovamos para ti</h5>
-                            <p>Contamos con una App para que puedas realizar reservaciones</p>
-                            <p>¡Fácil, rápido y seguro! Disponible en Google Play y Apple Store...</p>
+                            <h3><a href="blog-single.html">Asistencia vía WhatsApp</a></h3>
+                            <h5>Una respuesta inmediata para ti</h5>
+                            <p>Ponemos a tu disposición asistencia inmediata vía WhatsApp, ahora todo es mas cómodo, fácil y sencillo, sólo enviamos un mensaje al número 998 122 1861…</p>
                             <a href="blog-single.html" class="btn-link">MÁS INFORMACIÓN</a>
                         </div>
                     </div>
@@ -296,7 +295,7 @@
                         <div class="item-media">
                             <div class="item-date"><img src="{{ asset('images/services/icon3.png') }}" alt=""><!--b>21</b>NOV--></div>
                             <div class="media-photo">
-                                <a href="blog-single.html" data-background="{{ asset('images/services/service2.png') }}"></a>    
+                                <a href="blog-single.html" data-background="{{ asset('images/services/service2.png') }}"></a>
                             </div>
                         </div>
                         <div class="item-desc">
@@ -312,7 +311,7 @@
                         <div class="item-media">
                             <div class="item-date"><img src="{{ asset('images/services/icon4.png') }}" alt=""><!--b>19</b>OCT--></div>
                             <div class="media-photo">
-                                <a href="blog-single.html" data-background="{{ asset('images/services/service3.png') }}"></a>    
+                                <a href="blog-single.html" data-background="{{ asset('images/services/service3.png') }}"></a>
                             </div>
                         </div>
                         <div class="item-desc">
@@ -326,13 +325,13 @@
                         <div class="item-media">
                             <div class="item-date"><img src="{{ asset('images/services/icon2.png') }}" alt=""><!--b>19</b>OCT--></div>
                             <div class="media-photo">
-                                <a href="blog-single.html" data-background="{{ asset('images/services/service4.png') }}"></a>    
+                                <a href="blog-single.html" data-background="{{ asset('images/services/baño.png') }}"></a>
                             </div>
                         </div>
                         <div class="item-desc">
-                            <h3><a href="blog-single.html">Piscina de lujo</a></h3>
-                            <h5>siempre con una temperatura agradable</h5>
-                            <p>Un espacio envuelto por una arquitectura y jardinería muy atractivas, con áreas que proyectan las sombras de las altas palmeras reales, en su relajante vaivén...</p>
+                            <h3><a href="blog-single.html">Habitaciones adaptadas</a></h3>
+                            <h5>para personas con movilidad reducida</h5>
+                            <p>En Hotel Adhara Cancún contamos con habitaciones que cuentan con las condiciones necesarias para personas con movilidad reducida dentro del sanitario y regadera…</p>
                             <a href="blog-single.html" class="btn-link">MÁS INFORMACIÓN</a>
                         </div>
                     </div>
