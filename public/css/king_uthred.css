@@ -3073,7 +3073,7 @@ a,
     font-size               : 11px;
     white-space             : nowrap;
     text-align              : left;
-    background-color        : #6e5e78;
+    background-color        : #48405e;
 }
 .site-header .header-bottom .header-nav > ul > li.sub ul li ul{
     position                : absolute;
@@ -3088,7 +3088,7 @@ a,
     height                  : 1px;
     content                 : "";
     display                 : none;
-    background-color        : #6e5e78;
+    background-color        : #48405e;
 }
 .site-header .header-bottom .header-nav > ul > li.sub > a{
     -webkit-transition		: none;

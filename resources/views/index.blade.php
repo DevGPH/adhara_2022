@@ -279,7 +279,7 @@
                 <div class="widget-carousel owl-carousel owl-theme">
                     <div class="blog-item">
                         <div class="item-media">
-                            <div class="item-date"><img src="{{ asset('images/services/icon.png') }}" alt=""><!--b>24</b>DEC--></div>
+                            <!--div class="item-date"><img src="{{ asset('images/services/icon.png') }}" alt=""></div-->
                             <div class="media-photo">
                                 <a href="blog-single.html" data-background="{{ asset('images/services/movile.png') }}"></a>
                             </div>
@@ -293,7 +293,7 @@
                     </div>
                     <div class="blog-item">
                         <div class="item-media">
-                            <div class="item-date"><img src="{{ asset('images/services/icon3.png') }}" alt=""><!--b>21</b>NOV--></div>
+                            <!--div class="item-date"><img src="{{ asset('images/services/icon3.png') }}" alt=""></div-->
                             <div class="media-photo">
                                 <a href="blog-single.html" data-background="{{ asset('images/services/service2.png') }}"></a>
                             </div>
@@ -309,7 +309,7 @@
                     </div>
                     <div class="blog-item">
                         <div class="item-media">
-                            <div class="item-date"><img src="{{ asset('images/services/icon4.png') }}" alt=""><!--b>19</b>OCT--></div>
+                            <!--div class="item-date"><img src="{{ asset('images/services/icon4.png') }}" alt=""></div-->
                             <div class="media-photo">
                                 <a href="blog-single.html" data-background="{{ asset('images/services/service3.png') }}"></a>
                             </div>
@@ -323,7 +323,7 @@
                     </div>
                     <div class="blog-item">
                         <div class="item-media">
-                            <div class="item-date"><img src="{{ asset('images/services/icon2.png') }}" alt=""><!--b>19</b>OCT--></div>
+                            <!--div class="item-date"><img src="{{ asset('images/services/icon2.png') }}" alt=""></div-->
                             <div class="media-photo">
                                 <a href="blog-single.html" data-background="{{ asset('images/services/baño.png') }}"></a>
                             </div>

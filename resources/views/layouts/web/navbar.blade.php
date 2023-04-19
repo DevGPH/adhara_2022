@@ -36,12 +36,12 @@
     <!-- Header Top End -->
     <!-- Header Bottom -->
     <div class="header-bottom">
-        <div class="wrapper">
-            <div class="header-logo">
+        <div class="wrapper center-block">
+            <!--div class="header-logo">
                 <a href="{{ route('inicio', ['locale' => App::getLocale()]) }}"><img src="{{ asset('images/logos/logo_adhara.png') }}" alt="Hotel Adhara Cancun"></a>
-            </div>
-            <div class="header-nav">
-                <ul class="nav-left">
+            </div-->
+            <div class="header-nav" style="display: inline-block;width:100%;">
+                <ul class="nav-left" style="padding-right: 0px;">
                     <li><a href="index.html">@lang('main.nav-home')</a></li>
                     <!--li><a href="aboutus.html">ABOUT US</a></li-->
                     <li><a href="services.html">@lang('main.nav-rooms')</a></li>
@@ -56,7 +56,10 @@
                         </ul>
                     </li>
                 </ul>
-                <ul class="nav-right">
+                <ul>
+                    <li><img src="{{ asset('images/logos/logo_adhara.png') }}" alt="Hotel Adhara Cancun" style="width: 200px; margin-left:20px;margin-right:20px;"></li>
+                </ul>
+                <ul class="nav-right" style="padding-left: 0px;">
 
                     <!--li><a href="booking.html">BOOKING</a></li-->
                     <li class="sub"><a href="blog.html">@lang('main.nav-services')</a>
