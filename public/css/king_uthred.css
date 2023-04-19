@@ -3050,7 +3050,7 @@ a,
     color                   : #fff;
 }
 .site-header .header-bottom .header-nav ul li:hover > a{
-    color                   : #6e5e78;
+    color                   : #48405e;
 }
 .site-header .header-bottom .header-nav ul li.sub{
     position                : relative;
@@ -3107,7 +3107,7 @@ a,
 }
 .site-header .header-bottom .header-nav > ul > li.sub:hover > a{
     color                   : #fff;
-    background-color        : #6e5e78;
+    background-color        : #48405e;
 }
 .site-header .header-bottom .header-nav > ul.nav-left{
     padding-right           : 150px;
