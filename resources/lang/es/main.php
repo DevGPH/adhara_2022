@@ -41,15 +41,15 @@ return [
     'body-item5' => 'Nuestras habitaciones',
     'body-item6' => 'Las habitaciones de Hotel Adhara Cancún son las más amplias y confortables de su categoría.',
     'body-item61' => 'La arquitectura e interiorismo estilo hacienda mexicana, se presentan de una manera atractiva y son acordes a la modernidad de los servicios del hotel, ofreciendo a nuestros huéspedes la experiencia de vivir su estancia en un México de actualidad y vanguardia.',
-    
-    
+
+
     'body-item7' => 'Nuestro Restaurante',
     'body-item8' => 'Somos un restaurante artesanal por que hacemos todo desde el principio y de una forma muy personal, con dedicacion y trabajo diario.',
     'body-item9' => 'Espacios limpios y desinfectados.',
-    
+
     'body-item10' => 'TERRAZA, ALBERCA <br> & POOL BAR',
     'body-item11' => 'Un espacio envuelto por una arquitectura y jardinería muy atractivas, con áreas que proyectan las sombras de las altas palmeras reales, en su relajante vaivén provocado por el agradable viento caribeño que ahí se deja sentir todos los días.',
-    
+
     'body-item12' => '¡Servicios especiales para ti!',
     'body-item13' => 'Transportación a la playa',
     'body-item14' => 'Todos los huéspedes de nuestro hotel tienen incluido el servicio de transportación a las playa, en horarios establecidos.',
@@ -72,7 +72,7 @@ return [
     'body-item27' => 'Visita:',
     'body-item28' => 'Reserva con nosotros para tours, traslados y hoteles.',
     'body-oktrip' => 'Pregunta por nuestras tarifas especiales para grupos, en donde te brindaremos servicios especiales.',
-    
+
     'body-item29' => 'Club Estrella',
     'body-item30' => 'El programa de recompensas para el viajero frecuente, creado para reconocer su preferencia mediante beneficios exclusivos.',
     'body-item31' => '¡Inscríbete en el portal, compra con nuestros socios y acumula puntos para cambiarlos por recompensas participantes!',
@@ -81,10 +81,10 @@ return [
     'body-item33' => 'Pertenece a:',
     'body-item34' => 'Aviso de privacidad',
     'body-item35' => 'Terminos y Condiciones',
-    
 
-    'room-item1' => 'Habitaciones en Adhara Express',
-    'room-item2' => 'Las habitaciones de Hotel Adhara Express son las más amplias y confortables de su categoría, equipadas con modernos servicios para estancias de trabajo o descanso.',
+
+    'room-item1' => 'Habitaciones en Adhara',
+    'room-item2' => 'Las habitaciones de Hotel Adhara son las más amplias y confortables de su categoría, equipadas con modernos servicios para estancias de trabajo o descanso.',
     'room-item3' => 'Conoce nuestras habitaciones:',
 
     'room-item04' => 'Habitación Estandar',
@@ -138,12 +138,12 @@ return [
     'room-item45' => 'Refrigerador',
     'room-item46' => 'Comedor',
 
-    
+
     'contact-item001' => 'Ubicación Privilegiada',
     'contact-item002' => 'El hotel Adhara Cancún está en el centro de la ciudad de Cancún, donde se desarrolla su actividad económica, con fácil acceso a las avenidas Tulum y Bonampak, principales vías de entrada a la ciudad.',
     'contact-item003' => 'Se localiza a 25 minutos del aeropuerto, a 5 minutos de los centros comerciales: plaza Las Américas, plaza Malecón las Américas y Malecón Cancún.',
     'contact-item004' => 'La privilegiada ubicación del hotel sobre la Av. Yaxilán, avenida histórica de la ciudad de Cancún, la cual permite a los huéspedes tener proximidad a los atractivos y servicios más importantes de la ciudad, ofreciendo simultáneamente el acceso rápido a las mejores playas de Cancún  e Isla Mujeres.',
-    'contact-item005' => 'Desde el hotel Adhara Express se tiene cercanía a la plaza del ayuntamiento, al parque de las palapas, a los mercados 23 y 28, al mercado de artesanías en la avenida Tulum, instituciones bancarias, farmacias, tiendas de servicios o bien a la amplia gastronomía internacional con restaurantes especializados en comida mexicana, argentina, italiana, entre otros.',
+    'contact-item005' => 'Desde el hotel Adhara se tiene cercanía a la plaza del ayuntamiento, al parque de las palapas, a los mercados 23 y 28, al mercado de artesanías en la avenida Tulum, instituciones bancarias, farmacias, tiendas de servicios o bien a la amplia gastronomía internacional con restaurantes especializados en comida mexicana, argentina, italiana, entre otros.',
     'contact-item006' => 'Av. Carlos Nader 1,2,3 SM.1, MZ.2, C.P. 77500, Cancún Quintana Roo, México.',
     'contact-item007' => 'Volver al inicio',
     'contact-item008' => 'Nombre',
@@ -215,7 +215,7 @@ return [
     'reservations-item030' => 'Habitacion: ',
     'reservations-item031' => 'Plan Habitacion: ',
 
-    'succesfully-item001' => 'Su reservación se hizo de manera exitosa, cualquier duda', 
+    'succesfully-item001' => 'Su reservación se hizo de manera exitosa, cualquier duda',
     'succesfully-item002' => 'favor de comunicarse con el departamento de reservaciones',
     'succesfully-item003' => 'con el siguiente folio de reserva:',
     'succesfully-item004' => 'Metodo de Pago con el que se realizo la reserva: ',
