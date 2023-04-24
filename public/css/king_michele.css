@@ -3075,6 +3075,7 @@ a,
     text-align              : left;
     background-color        : #48405e;
 }
+
 .site-header .header-bottom .header-nav > ul > li.sub ul li ul{
     position                : absolute;
     top                     : 0;
@@ -3088,7 +3089,7 @@ a,
     height                  : 1px;
     content                 : "";
     display                 : none;
-    background-color        : #48405e;
+    background-color        : white;
 }
 .site-header .header-bottom .header-nav > ul > li.sub > a{
     -webkit-transition		: none;
@@ -3273,4 +3274,15 @@ a,
 #tarifa-last{
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
+}
+
+.simpson li, .simpson li a {
+    color: white !important;
+    transition: 1s;
+}
+
+.simpson li :hover, .simpson li a:hover {
+    font-size: 10px !important;
+    transition: 1s;
+    color: white !important;
 }

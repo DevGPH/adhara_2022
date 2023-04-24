@@ -13,7 +13,7 @@
                     </li>
                     <li class="custom-tarifa" id="tarifa-first"><a class="nav-link" target="_blank" style="color: white;">TARIFA MÁGICA</a></li>
                     <li class="custom-tarifa" id="tarifa-middle"><a class="nav-link" target="_blank" style="color: rgb(138 113 153 / 90%);">$1,880 MXN</a></li>
-                    <li class="custom-tarifa" id="tarifa-last"><a class="nav-link" target="_blank" style="color: white;"><img src="{{ asset('images/logos/coffee_white.png') }}" style="width: 25px;margin-right:6px;" alt=""> INCLUYE DESAYUNO</a></li>
+                    <li class="custom-tarifa" id="tarifa-last"><a class="nav-link" target="_blank" style="color: white;"><img src="{{ asset('images/logos/coffeet.png') }}" style="width: 25px;margin-right:6px;" alt=""> INCLUYE DESAYUNO</a></li>
                     <!--li><a class="nav-link" href="https://www.facebook.com/HotelAdharaCancun" target="_blank"><i class="fa fa-facebook"></i></a></li>
                     <li><a class="nav-link" href="https://www.instagram.com/adharacancun/" target="_blank"><i class="fa fa-instagram"></i></a></li>
                     <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
@@ -46,7 +46,7 @@
                     <!--li><a href="aboutus.html">ABOUT US</a></li-->
                     <li><a href="services.html">@lang('main.nav-rooms')</a></li>
                     <li class="sub"><a href="rooms.html">@lang('main.nav-hotel')</a>
-                        <ul>
+                        <ul class="simpson">
                             <li><a href="rooms.html">RESTAURANTE ADHARA GRILL</a></li>
                             <li><a href="rooms-detail.html">PISCINA Y POOL & BAR</a></li>
                             <li><a href="rooms-detail.html">EVENTOS EJECUTIVOS</a></li>
@@ -63,7 +63,7 @@
 
                     <!--li><a href="booking.html">BOOKING</a></li-->
                     <li class="sub"><a href="blog.html">@lang('main.nav-services')</a>
-                        <ul>
+                        <ul class="simpson">
                             <li><a href="blog.html">HABITACIONES ADAPTADAS</a></li>
                             <li><a href="blog-single.html">ESTACIONAMIENTO</a></li>
                             <li><a href="blog-single-gallery.html">TRANSPORTACIÓN</a></li>
