@@ -51,14 +51,14 @@
                             <li><a href="{{ route('rooms', ['locale' => App::getLocale(), 'id' => 8]) }}">Ejecutiva</a></li>
                         </ul>
                     </li>
-                    <li class="sub"><a href="rooms.html">@lang('main.nav-hotel')</a>
+                    <li class="sub"><a href="#">@lang('main.nav-hotel')</a>
                         <ul class="simpson">
-                            <li><a href="rooms.html">RESTAURANTE ADHARA GRILL</a></li>
-                            <li><a href="rooms-detail.html">PISCINA Y POOL & BAR</a></li>
-                            <li><a href="rooms-detail.html">EVENTOS EJECUTIVOS</a></li>
-                            <li><a href="rooms-detail.html">CENTRO DE NEGOCIOS</a></li>
-                            <li><a href="rooms-detail.html">TERRAZA</a></li>
-                            <li><a href="rooms-detail.html">GYM</a></li>
+                            <li><a href="#">RESTAURANTE ADHARA GRILL</a></li>
+                            <li><a href="#">PISCINA Y POOL & BAR</a></li>
+                            <li><a href="#">EVENTOS EJECUTIVOS</a></li>
+                            <li><a href="#">CENTRO DE NEGOCIOS</a></li>
+                            <li><a href="#">TERRAZA</a></li>
+                            <li><a href="#">GYM</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -68,12 +68,12 @@
                 <ul class="nav-right" style="padding-left: 0px;">
 
                     <!--li><a href="booking.html">BOOKING</a></li-->
-                    <li class="sub"><a href="blog.html">@lang('main.nav-services')</a>
+                    <li class="sub"><a href="#">@lang('main.nav-services')</a>
                         <ul class="simpson">
-                            <li><a href="blog.html">HABITACIONES ADAPTADAS</a></li>
-                            <li><a href="blog-single.html">ESTACIONAMIENTO</a></li>
-                            <li><a href="blog-single-gallery.html">TRANSPORTACIÓN</a></li>
-                            <li><a href="blog-single-vimeo.html">ASISTENCIA VIA WHATSAPP</a></li>
+                            <li><a href="#">HABITACIONES ADAPTADAS</a></li>
+                            <li><a href="#">ESTACIONAMIENTO</a></li>
+                            <li><a href="#">TRANSPORTACIÓN</a></li>
+                            <li><a href="#">ASISTENCIA VIA WHATSAPP</a></li>
                         </ul>
                     </li>
                     <li><a href="{{ route('gallery', App::getLocale(), 0) }}">GALERÍA</a></li>
