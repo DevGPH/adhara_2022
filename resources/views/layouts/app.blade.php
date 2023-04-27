@@ -22,9 +22,9 @@
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/owl.carousel.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/owl.theme.default.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery-ui.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/king_michele.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/king_osiris.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/mobile_master.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/homelander_view.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/krypton.css') }}">
 
 
     <!-- Google Fonts -->

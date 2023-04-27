@@ -32,7 +32,7 @@
         <h3 style="text-align: center;">Alguien se ha puesto en contacto con nosotros</strong></h3>
         <p>Nombre: {{ $data['nombre']}}</p>
         <p>Email: {{ $data['email']}}</p>
-        <p>Asunto: {{ $data['asunto']}}</p>
+        <p>Teléfono: {{ $data['telefono']}}</p>
         <p>Mensaje: {{ $data['mensaje']}}</p>
     </div>
 </body>

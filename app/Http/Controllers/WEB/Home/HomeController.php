@@ -25,26 +25,30 @@ use App;
 class HomeController extends Controller
 {
     public function index($locale)
-    {   
+    {
         $rate = $this->rateToday($locale);
         $rooms = Habitacion::where('hotel_id', 2)->get();
-    
+
         return view('index')->with([
             'home_active' => 'active-link',
             'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
+            'id' => 0,
             'rate' => $rate,
             'rooms' => $rooms
-        ]); 
+        ]);
     }
 
-    public function rooms($locale)
+    public function rooms($locale, $id)
     {
+        $habitacion = Habitacion::find($id);
         $rate = $this->rateToday($locale);
         return view('storefront.rooms')->with([
             'room_active' => 'active-link',
             'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
-            'rate' => $rate
-        ]); 
+            'id' => $habitacion->id,
+            'rate' => $rate,
+            'name' => (App::getLocale() == 'es') ? $habitacion->categoria->nombre_es : $habitacion->categoria->nombre_en,
+        ]);
     }
 
     public function contact($locale)
@@ -53,33 +57,36 @@ class HomeController extends Controller
         return view('storefront.contact')->with([
             'contact_active' => 'active-link',
             'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
+            'id' => 0,
             'rate' => $rate
-        ]); 
+        ]);
     }
 
     public function postContact(Request $request)
     {
         $rules = [
             'nombre' => 'required',
+            'apellidos' => 'required',
             'email' => 'required|email',
-            'asunto' => 'required',
+            'telefono' => 'required',
             'message' => 'required',
         ];
 
         $messages = [
             'nombre.required' => 'Es necesario rellenar este campo',
+            'apellidos.required' => 'Es necesario rellenar este campo',
             'email.required' => 'Es necesario rellenar este campo',
             'email.email' => 'Formato invalido',
-            'asunto.required' => 'Es necesario rellenar este campo',
+            'telefono.required' => 'Es necesario rellenar este campo',
             'message.required' => 'Es necesario rellenar este campo',
         ];
 
-        $this->validate($request, $rules, $messages); 
+        $this->validate($request, $rules, $messages);
 
         $data = [
-            'nombre' => $request->nombre,
+            'nombre' => $request->nombre .' '. $request->apellidos,
             'email' => $request->email,
-            'asunto' => $request->asunto,
+            'telefono' => $request->telefono,
             'mensaje' => $request->message,
         ];
         Mail::to('reservas@gphoteles.com')->bcc('juan.alucard.02@gmail.com')->send(new ContactHotel($data));
@@ -95,8 +102,9 @@ class HomeController extends Controller
         return view('storefront.covid')->with([
             'covid_active' => 'active-link',
             'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
+            'id' => 0,
             'rate' => $rate
-        ]); 
+        ]);
     }
 
     public function menu($locale)
@@ -104,8 +112,9 @@ class HomeController extends Controller
         $rate = $this->rateToday($locale);
         return view('storefront.menu')->with([
             'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
+            'id' => 0,
             'rate' => $rate
-        ]);    
+        ]);
     }
 
     public function roomService($locale)
@@ -113,8 +122,9 @@ class HomeController extends Controller
         $rate = $this->rateToday($locale);
         return view('storefront.room_service')->with([
             'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
+            'id' => 0,
             'rate' => $rate
-        ]);  
+        ]);
     }
 
     public function grupos($locale)
@@ -122,6 +132,17 @@ class HomeController extends Controller
         $rate = $this->rateToday($locale);
         return view('storefront.grupos')->with([
             'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
+            'id' => 0,
+            'rate' => $rate
+        ]);
+    }
+
+    public function gallery($locale)
+    {
+        $rate = $this->rateToday($locale);
+        return view('storefront.gallery')->with([
+            'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
+            'id' => 0,
             'rate' => $rate
         ]);
     }
@@ -129,7 +150,8 @@ class HomeController extends Controller
     public function mail($locale)
     {
         return view('storefront.mail')->with([
-            'lang' => (App::getLocale() == 'es') ? 'en' : 'es'
+            'lang' => (App::getLocale() == 'es') ? 'en' : 'es',
+            'id' => 0
         ]);
     }
 
@@ -149,7 +171,7 @@ class HomeController extends Controller
         }
 
         $countryName = $result['data']['cliente']['pais'];
-        
+
         $paises = Pais::where('nombre', $countryName)->first();
         if ($paises == null) {
             $paises = Pais::where('id', 145)->first();
@@ -173,7 +195,7 @@ class HomeController extends Controller
 
         $response = new Response('Set Cookie');
         $response->withCookie(cookie('user', json_encode($arrayUser), $minutes));
-        
+
         return $response;
 
         // return "session iniciada";
@@ -197,7 +219,7 @@ class HomeController extends Controller
             if ($temporada == null) {
                 return ($locale == 'es') ? 'Sin definir' : 'Undefined';
             }
-    
+
         }
         $plan = PlanHab::findOrFail(4);
 
@@ -206,7 +228,7 @@ class HomeController extends Controller
         $price = ($locale == 'es') ? ($conversion->valor_x_moneda * ($temporada->tarifa_x_dolares + $plan_total)) : $temporada->tarifa_x_dolares + $plan_total;
         $currency = ($locale == 'es') ? 'MXN' : $temporada->currency;
         if($temporada != null)
-            return $price.' '.$currency;
+            return round($price).' '.$currency;
     }
 }
 

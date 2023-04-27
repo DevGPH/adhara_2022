@@ -246,7 +246,7 @@ a,
 .btn:active:focus,
 .btn:focus{
     color                   : #fff;
-    background-color        : #ef805c;
+    background-color        : rgb(138 113 153 / 90%);
 	text-decoration			: none;
 	outline					: 0;
 	-webkit-box-shadow		: none;
@@ -453,7 +453,7 @@ a,
     line-height             : 44px;
     text-align              : center;
     color                   : #fff;
-    background-color        : #5c677b;
+    background-color        : #48405e;
     -webkit-border-radius   : 50%;
        -moz-border-radius   : 50%;
         -ms-border-radius   : 50%;
@@ -461,7 +461,7 @@ a,
             border-radius   : 50%;
 }
 .widget-social-icons ul li:hover a{
-    background-color        : #6e5e78;
+    background-color        : #48405e;
 }
 .widget-social-icons ul li:last-child{
     margin-right            : 0;
@@ -586,7 +586,7 @@ a,
     line-height             : 44px;
     padding                 : 0 64px 0 20px;
     color                   : #fff;
-    background-color        : #5c677b;
+    background-color        : #48405e;
 }
 .widget-newsletter button{
     position                : absolute;
@@ -2961,7 +2961,7 @@ a,
     position                : relative;
     z-index                 : 999;
     width                   : 100%;
-    background-color        : #24324a;
+    background-color        : #523465;
 }
 .site-header .header-top{
     padding-top             : 50px;
@@ -2973,7 +2973,7 @@ a,
     color                   : #818a9c;
 }
 .site-header .header-top a{
-    color                   : #818a9c;
+    color                   : rgba(72,64,94,1);
 }
 .site-header .header-top .header-contact{
     float                   : left;
@@ -3073,7 +3073,7 @@ a,
     font-size               : 11px;
     white-space             : nowrap;
     text-align              : left;
-    background-color        : #48405e;
+    background-color        : rgba(72,64,94,0.7);
 }
 
 .site-header .header-bottom .header-nav > ul > li.sub ul li ul{
@@ -3108,7 +3108,7 @@ a,
 }
 .site-header .header-bottom .header-nav > ul > li.sub:hover > a{
     color                   : #fff;
-    background-color        : #48405e;
+    background-color        : rgba(72,64,94,0.7);
 }
 .site-header .header-bottom .header-nav > ul.nav-left{
     padding-right           : 150px;
@@ -3138,9 +3138,9 @@ a,
     position                : absolute;
     top                     : 0;
     left                    : 0;
-    background              : -moz-linear-gradient(top, rgba(36,50,74,0.65) 0%, rgba(0,0,0,0) 100%);
-    background              : -webkit-linear-gradient(top, rgba(36,50,74,0.65) 0%,rgba(0,0,0,0) 100%);
-    background              : linear-gradient(to bottom, rgba(36,50,74,0.65) 0%,rgba(0,0,0,0) 100%);
+    background              : -moz-linear-gradient(top, rgba(72,64,94,0.6) 0%, rgba(0,0,0,0) 100%);
+    background              : -webkit-linear-gradient(top, rgba(72,64,94,0.6) 0%,rgba(0,0,0,0) 100%);
+    background              : linear-gradient(to bottom, rgba(72,64,94,0.6) 0%,rgba(0,0,0,0) 100%);
 }
 
 .site-main{
@@ -3151,7 +3151,7 @@ a,
     position                : relative;
     padding-top             : 60px;
     padding-bottom          : 60px;
-    background-color        : #48405e;
+    background-color        : #554d6d;
 }
 .site-footer .footer-top:before{
     position                : absolute;
@@ -3276,13 +3276,42 @@ a,
     border-bottom-left-radius: 0px;
 }
 
+#club-nav {
+    border-color: white;
+    padding: 8px;
+    border-style: solid;
+}
+
 .simpson li, .simpson li a {
     color: white !important;
     transition: 1s;
 }
 
-.simpson li :hover, .simpson li a:hover {
-    font-size: 10px !important;
+.simpson li a:hover {
     transition: 1s;
-    color: white !important;
+    font-weight: 100 !important;
+}
+
+.custom-tarifa a {
+    color: white;
+}
+
+
+.breakpoint-slider {
+    width: 1500px !important;
+    display: block;
+    margin: 0px auto;
+    margin-top: -100px;
+}
+
+@media (min-width: 1000px) {
+    .breakpoint-slider {
+        width: 2000px !important;
+    }
+}
+
+@media (min-width: 2000px) {
+    .breakpoint-slider {
+        width: 2500px !important;
+    }
 }

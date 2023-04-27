@@ -1,373 +1,98 @@
 @extends('layouts.app')
 
 @section('content')
-  
-@include('layouts.web.section_habitacion')
-<!-- INICIO DEL BUSCADOR -->
-@include('layouts.web.buscador')
-<!-- FIN DEL BUSCADOR -->
 
-<div class="main-body" id="rooms" style="margin-top:40px;padding-top:60px;">
-    
-    <div class="row">
-        <div class="col-sm-6">
-            <p><img src="{{ asset('images/cotizacion/down_a.png') }}" width="20" height="20"> @lang('main.quotation-item002') {{ $full_date }} </p>
-            <p><img src="{{ asset('images/cotizacion/up_a.png') }}" width="20" height="20" > @lang('main.quotation-item003') {{ $full_date_2 }}</p>
-            <p><img src="{{ asset('images/cotizacion/bed_a.png') }}" width="20" height="20" > @lang('main.quotation-item004') {{ $habitaciones }} &nbsp; <img src="{{ asset('images/cotizacion/Adulto_a.png') }}" width="20" height="20">: {{ $total_adultos }}  &nbsp; &nbsp;<img src="{{ asset('images/cotizacion/Adulto_a.png') }}" width="15" height="15"> : {{ $total_kids }}</p>
-        </div>
-        <div class="col-sm-6">
-            <h4 id='price_taxes'>@lang('main.quotation-item001')</h4>
-        </div>
-    </div>
-
-    <div class="row" style="margin-top:20px">
-        <div class="col-12 col-xs-12 col-md-12 col-lg-6 col-xl-5">
-            <div class="room-title">
-                @if ($lang == 'es')
-                    <h4>Estandar Room</h4> 
-                @else
-                   <h4> Habitacion Estandar</h4>
-                @endif
-            </div>
-            <img src="{{ asset('images/habitaciones/room_estandar.png') }}" class="img-fluid" alt="">
-            <ul class="features-room">
-                <li><img src="{{ asset('images/cotizacion/wifi_a.png') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="Wifi" alt=""></li>
-                {{-- <li><img src="{{ asset('images/cotizacion/coffee.png') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="Cafetera" alt=""></li>
-                <li><img src="{{ asset('images/cotizacion/roomservice.png') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="Servicio Hab." alt=""></li> --}}
-            </ul>
-            <a class="plus-features" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                @lang('main.quotation-item014')
-            </a>
-            <div class="collapse" id="collapseExample">
-                <div class="card card-body no-style">
-                    <ul class='plus-facilities'>
-                        <li>@lang('main.room-item4')</li>
-                        <li>@lang('main.room-item5')</li>
-                        <li>@lang('main.room-item6')</li>
-                        <li>@lang('main.room-item7')</li>
-                        <li>@lang('main.room-item8')</li>
-                        <li>@lang('main.room-item9')</li>
-                        <li>@lang('main.room-item10')</li>
+<div class="site-main">
+    <!-- Section Page Title -->
+    <div class="section">
+        <div class="widget-page-title">
+            <div class="widget-background" data-background="assets/img/photo-title.jpg"></div>
+            <div class="wrapper-inner">
+                <!-- Title -->
+                <h5>EXPERIENCE THE FREEDOM</h5>
+                <h1>Rooms Page</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget commodo orci. Integer varius nibh eu mattis porta. Pellentesque dictum sem eget cursus semper. Nullam quis blandit lorem. Morbi blandit orci urna, eu congue magna faucibus at. In bibendum in mauris nec ultrices. Nunc et magna velit.</p>
+                <!-- Title End -->
+                <!-- Breadcrumb -->
+                <div class="widget-breadcrumb">
+                    <ul>
+                        <li><a href="{{ route('inicio', ['locale' => App::getLocale(), 'id' => 0]) }}">HOME</a></li>
+                        <li>ROOMS PAGE</li>
                     </ul>
                 </div>
-            </div>
-        </div>
-        <div class="col-12 col-xs-12 col-md-12 col-lg-6 col-xl-7">
-            <div class="row" style="margin: 0px;padding-top:35px;">
-                @if ($status == 'Error')
-                    <img src="{{ asset('images/cotizacion/missing_dates.png') }}" alt="Missing Dates" style="display:block;margin:0px auto;margin-top:30px;margin-bottom:30px;width:300px;">
-                    <div class="error_season" style="text-align: center;">{{ $data }}</div>
-                @else
-                    @foreach ($estandar as $room)
-                
-                        <div class="col-3 col-lg-3 adhara-color text-white d-flex align-items-center justify-content-center">
-                            <div class="item-d">
-                                @if ($room['magica'])
-                                    <img src="{{ asset('images/cotizacion/magica.png') }}" class="wand" alt="">
-                                @endif
-                                <p class="title-room-format">{{ $room['isTarifaMagica'] }}</p>
-                                <p class="span-room-format">{{ $room['plan_x_alimentos'] }}</p>
-                            </div>
-                        </div>
-                        <div class="col-9 col-lg-9" style="padding: 0px;">
-                            <div class="row" style="margin: 0px">
-                                <div class="col-4 adhara-color text-white">
-                                    @if ($room['plan_x_alimentos'] == 'Solo Habitacion')
-                                        <p class="format-room">@lang('main.quotation-item011')</p>
-                                    @else
-                                        <p class="format-room">@lang('main.quotation-item012')</p>
-                                    @endif
-                                </div>
-                                <div class="col-5 adhara-color text-white">
-                                    <p class='format-room'>@lang('main.quotation-item013')</p>
-                                </div>
-                                <div class="col-3 adhara-color text-white border-empty">
-                                    <p class="format-room" style="display: none">Send</p>
-                                </div>
-                                <div class="col-4">
-                                    <p class="format-room">$ {{ number_format($room['total'],2) }} {{ $room['currency'] }}</p>
-                                </div>
-                                <div class="col-5">
-                                    <p class="format-room">$ {{ number_format($room['total']*0.90,2) }} {{ $room['currency'] }}</p>
-                                </div>
-                                <div class="col-3 d-flex align-items-center justify-content-center">
-                                    <form action="{{ route('reservations',['locale'=>App::getLocale()]) }}" method="GET">
-                                        @csrf
-                                        <input type="hidden" name="habitacion_id" value="{{ $room['id'] }}" readonly>
-                                        <input type="hidden" name="checkIn" value="{{ $checkIn }}" readonly>
-                                        <input type="hidden" name="checkOut" value="{{ $checkOut }}" readonly>
-                                        <input type="hidden" name="cuartos" value="{{ $room['cuartos'] }}" readonly>
-                                        <input type="hidden" name="noches" value="{{ $room['noches'] }}" readonly>
-                                        <input type="hidden" name="total" value="{{ $room['total'] }}" readonly>
-                                        <input type="hidden" name="currency" value="{{ $room['currency'] }}" readonly>
-                                        <input type="hidden" name="fullDate" value="{{ $full_date }}" readonly>
-                                        <input type="hidden" name="fullDate2" value="{{ $full_date_2 }}" readonly>
-                                        <input type="hidden" name="total_adultos" value="{{ $total_adultos }}" readonly>
-                                        <input type="hidden" name="total_kids" value="{{ $total_kids }}" readonly>
-                                        <input type="hidden" name="total_kids_no_bf" value="{{ $total_kids_no_bf }}" readonly>
-                                        @foreach ($adultos as $adulto)
-                                            <input type="hidden" name="adultos[]" value="{{ $adulto }}">
-                                        @endforeach
-                                        @foreach ($infantes as $infante)
-                                            <input type="hidden" name="infantes[]" value="{{ $infante }}">
-                                        @endforeach
-                                        @foreach ($infantes_no_bf as $infante_no_bf)
-                                            <input type="hidden" name="infantes_no_bf[]" value="{{ $infante_no_bf }}">
-                                        @endforeach
-                                        <button type="submit" id="" class="btn btn-outline-adhara btn-sm">@lang('main.quotation-item016')</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    @endforeach
-                @endif
-                
+                <!-- Breadcrumb End -->
             </div>
         </div>
     </div>
+    <!-- Section Page Title End -->
 
-    <div class="row" style="margin-top:20px">
-        <div class="col-12 col-xs-12 col-md-12 col-lg-6 col-xl-5">
-            <div class="room-title">
-                @if ($lang == 'es')
-                    <h4>One Bedroom Suite</h4> 
-                @else
-                   <h4> One Bedroom Suite</h4>
-                @endif
+    <!-- Section Rooms -->
+    <div class="section">
+        <div class="wrapper-inner">
+            <!-- Rooms List -->
+            <div class="widget-rooms-list">
+                @foreach ($data as $room)
+                    <div class="rooms-item">
+                        <div class="item-photo">
+                            <a href="rooms-detail.html" data-background="assets/img/photo-room-1.jpg"></a>
+                        </div>
+                        <div class="item-desc">
+                            <h2><a href="rooms-detail.html">{{ $room['habitacion']}}</a></h2>
+                            <p>Sed fermentum eleifend dui eu faucibus. Donec facilisis, ligula eu interdum luctus nunc massa fermentum</p>
+                            <div class="desc-features">
+                                <ul>
+                                    <li><i class="fa fa-check"></i> BREAKFAST</li>
+                                    <li><i class="fa fa-check"></i> WI-FI</li>
+                                    <li><i class="fa fa-check"></i> HAIR DRYER</li>
+                                    <li><i class="fa fa-check"></i> LCD TV</li>
+                                    <li><i class="fa fa-check"></i> SHOWER AND TAB</li>
+                                    <li><i class="fa fa-check"></i> SECURITY SYSTEM</li>
+                                    <li><i class="fa fa-check"></i> AIR CONDITIONING</li>
+                                    <li><i class="fa fa-check"></i> MINI BAR</li>
+                                    <li><i class="fa fa-check"></i> TEA AND COFFEE SET</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            <div class="price-inner">
+                                <i class="fa fa-star"></i>
+                                <h3>$ {{ (App::getLocale() == 'es') ? number_format(round($room['total'] * $cambio_moneda)) .' '. 'MXN' : $room['total'] .' '. $room['currency']}}</h3>
+                                <h4>$ 180.00</h4>
+                                <h5>TOTAL</h5>
+                                <form action="{{ route('reservations',['locale'=>App::getLocale()]) }}" method="GET">
+                                    @csrf
+                                    <input type="hidden" name="habitacion_id" value="{{ $room['id'] }}" readonly>
+                                    <input type="hidden" name="checkIn" value="{{ $checkIn }}" readonly>
+                                    <input type="hidden" name="checkOut" value="{{ $checkOut }}" readonly>
+                                    <input type="hidden" name="cuartos" value="{{ $room['cuartos'] }}" readonly>
+                                    <input type="hidden" name="noches" value="{{ $room['noches'] }}" readonly>
+                                    <input type="hidden" name="total" value="{{ $room['total'] }}" readonly>
+                                    <input type="hidden" name="currency" value="{{ $room['currency'] }}" readonly>
+                                    <input type="hidden" name="fullDate" value="{{ $full_date }}" readonly>
+                                    <input type="hidden" name="fullDate2" value="{{ $full_date_2 }}" readonly>
+                                    <input type="hidden" name="total_adultos" value="{{ $total_adultos }}" readonly>
+                                    <input type="hidden" name="total_kids" value="{{ $total_kids }}" readonly>
+                                    <input type="hidden" name="total_kids_no_bf" value="{{ $total_kids_no_bf }}" readonly>
+                                    @foreach ($adultos as $adulto)
+                                        <input type="hidden" name="adultos[]" value="{{ $adulto }}">
+                                    @endforeach
+                                    @foreach ($infantes as $infante)
+                                        <input type="hidden" name="infantes[]" value="{{ $infante }}">
+                                    @endforeach
+                                    @foreach ($infantes_no_bf as $infante_no_bf)
+                                        <input type="hidden" name="infantes_no_bf[]" value="{{ $infante_no_bf }}">
+                                    @endforeach
+                                    <button type="submit" id="" class="btn">@lang('main.quotation-item016')</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
             </div>
-            <img src="{{ asset('images/habitaciones/one_bedroom_3.png') }}" class="img-fluid" alt="">
-            <ul class="features-room">
-                <li><img src="{{ asset('images/cotizacion/wifi_a.png') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="Wifi" alt=""></li>
-                {{-- <li><img src="{{ asset('images/cotizacion/coffee.png') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="Cafetera" alt=""></li>
-                <li><img src="{{ asset('images/cotizacion/roomservice.png') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="Servicio Hab." alt=""></li> --}}
-            </ul>
-            <a class="plus-features" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                @lang('main.quotation-item014')
-            </a>
-            <div class="collapse" id="collapseExample">
-                <div class="card card-body no-style">
-                    <ul class='plus-facilities'>
-                        <li>@lang('main.room-item4')</li>
-                        <li>@lang('main.room-item5')</li>
-                        <li>@lang('main.room-item6')</li>
-                        <li>@lang('main.room-item7')</li>
-                        <li>@lang('main.room-item8')</li>
-                        <li>@lang('main.room-item9')</li>
-                        <li>@lang('main.room-item10')</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-xs-12 col-md-12 col-lg-6 col-xl-7">
-            <div class="row" style="margin: 0px;padding-top:35px;">
-                @if ($status == 'Error')
-                    <img src="{{ asset('images/cotizacion/missing_dates.png') }}" alt="Missing Dates" style="display:block;margin:0px auto;margin-top:30px;margin-bottom:30px;width:300px;">
-                    <div class="error_season" style="text-align: center;">{{ $data }}</div>
-                @else
-                    @if (empty($superior))
-                        <div class="col-3 col-lg-3 adhara-color text-white d-flex align-items-center justify-content-center">
-                            <div class="item-d">
-                                @if ($room['magica'])
-                                    <img src="{{ asset('images/cotizacion/magica.png') }}" class="wand" alt="">
-                                @endif
-                                <p class="title-room-format">{{ $room['isTarifaMagica'] }}</p>
-                                <p class="span-room-format">{{ $room['plan_x_alimentos'] }}</p>
-                            </div>
-                        </div>
-                        <div class="col-9 col-lg-9" style="padding: 0px;">
-                            <div class="row" style="margin: 0px">
-                                <div class="col-4 adhara-color text-white">
-                                    @if ($room['plan_x_alimentos'] == 'Solo Habitacion')
-                                        <p class="format-room">@lang('main.quotation-item011')</p>
-                                    @else
-                                        <p class="format-room">@lang('main.quotation-item012')</p>
-                                    @endif
-                                </div>
-                                <div class="col-5 adhara-color text-white">
-                                    <p class='format-room'>@lang('main.quotation-item013')</p>
-                                </div>
-                                <div class="col-3 adhara-color text-white border-empty">
-                                    <p class="format-room" style="display: none">Send</p>
-                                </div>
-                                <div class="col-12">
-                                    <p class="format-room"> {{ $minStay}} </p>
-                                </div>
-                            </div>
-                        </div>
-                    @endif
-                    @foreach ($superior as $room)
-                
-                        <div class="col-3 col-lg-3 adhara-color text-white d-flex align-items-center justify-content-center">
-                            <div class="item-d">
-                                @if ($room['magica'])
-                                    <img src="{{ asset('images/cotizacion/magica.png') }}" class="wand" alt="">
-                                @endif
-                                <p class="title-room-format">{{ $room['isTarifaMagica'] }}</p>
-                                <p class="span-room-format">{{ $room['plan_x_alimentos'] }}</p>
-                            </div>
-                        </div>
-                        <div class="col-9 col-lg-9" style="padding: 0px;">
-                            <div class="row" style="margin: 0px">
-                                <div class="col-4 adhara-color text-white">
-                                    @if ($room['plan_x_alimentos'] == 'Solo Habitacion')
-                                        <p class="format-room">@lang('main.quotation-item011')</p>
-                                    @else
-                                        <p class="format-room">@lang('main.quotation-item012')</p>
-                                    @endif
-                                </div>
-                                <div class="col-5 adhara-color text-white">
-                                    <p class='format-room'>@lang('main.quotation-item013')</p>
-                                </div>
-                                <div class="col-3 adhara-color text-white border-empty">
-                                    <p class="format-room" style="display: none">Send</p>
-                                </div>
-                                <div class="col-4">
-                                    <p class="format-room">$ {{ number_format($room['total'],2) }} {{ $room['currency'] }}</p>
-                                </div>
-                                <div class="col-5">
-                                    <p class="format-room">$ {{ number_format($room['total']*0.90,2) }} {{ $room['currency'] }}</p>
-                                </div>
-                                <div class="col-3 d-flex align-items-center justify-content-center">
-                                    <form action="{{ route('reservations',['locale'=>App::getLocale()]) }}" method="GET">
-                                        @csrf
-                                        <input type="hidden" name="habitacion_id" value="{{ $room['id'] }}" readonly>
-                                        <input type="hidden" name="checkIn" value="{{ $checkIn }}" readonly>
-                                        <input type="hidden" name="checkOut" value="{{ $checkOut }}" readonly>
-                                        <input type="hidden" name="cuartos" value="{{ $room['cuartos'] }}" readonly>
-                                        <input type="hidden" name="noches" value="{{ $room['noches'] }}" readonly>
-                                        <input type="hidden" name="total" value="{{ $room['total'] }}" readonly>
-                                        <input type="hidden" name="currency" value="{{ $room['currency'] }}" readonly>
-                                        <input type="hidden" name="fullDate" value="{{ $full_date }}" readonly>
-                                        <input type="hidden" name="fullDate2" value="{{ $full_date_2 }}" readonly>
-                                        <input type="hidden" name="total_adultos" value="{{ $total_adultos }}" readonly>
-                                        <input type="hidden" name="total_kids" value="{{ $total_kids }}" readonly>
-                                        <input type="hidden" name="total_kids_no_bf" value="{{ $total_kids_no_bf }}" readonly>
-                                        @foreach ($adultos as $adulto)
-                                            <input type="hidden" name="adultos[]" value="{{ $adulto }}">
-                                        @endforeach
-                                        @foreach ($infantes as $infante)
-                                            <input type="hidden" name="infantes[]" value="{{ $infante }}">
-                                        @endforeach
-                                        @foreach ($infantes_no_bf as $infante_no_bf)
-                                            <input type="hidden" name="infantes_no_bf[]" value="{{ $infante_no_bf }}">
-                                        @endforeach
-                                        <button type="submit" id="" class="btn btn-outline-adhara btn-sm">@lang('main.quotation-item016')</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    @endforeach
-                @endif
-                
-            </div>
+            <!-- Rooms List End -->
         </div>
     </div>
-
-    <div class="row" style="margin-top:20px">
-        <div class="col-12 col-xs-12 col-md-12 col-lg-6 col-xl-5">
-            <div class="room-title">
-                @if ($lang == 'es')
-                    <h4>Habitacion Ejecutiva</h4> 
-                @else
-                   <h4> Executive Room</h4>
-                @endif
-            </div>
-            <img src="{{ asset('images/habitaciones/room_superior.png') }}" class="img-fluid" alt="">
-            <ul class="features-room">
-                <li><img src="{{ asset('images/cotizacion/wifi_a.png') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="Wifi" alt=""></li>
-                {{-- <li><img src="{{ asset('images/cotizacion/coffee.png') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="Cafetera" alt=""></li>
-                <li><img src="{{ asset('images/cotizacion/roomservice.png') }}" data-bs-toggle="tooltip" data-bs-placement="top" title="Servicio Hab." alt=""></li> --}}
-            </ul>
-            <a class="plus-features" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                @lang('main.quotation-item014')
-            </a>
-            <div class="collapse" id="collapseExample">
-                <div class="card card-body no-style">
-                    <ul class='plus-facilities'>
-                        <li>@lang('main.room-item4')</li>
-                        <li>@lang('main.room-item5')</li>
-                        <li>@lang('main.room-item6')</li>
-                        <li>@lang('main.room-item7')</li>
-                        <li>@lang('main.room-item8')</li>
-                        <li>@lang('main.room-item9')</li>
-                        <li>@lang('main.room-item10')</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-xs-12 col-md-12 col-lg-6 col-xl-7">
-            <div class="row" style="margin: 0px;padding-top:35px;">
-                @if ($status == 'Error')
-                    <img src="{{ asset('images/cotizacion/missing_dates.png') }}" alt="Missing Dates" style="display:block;margin:0px auto;margin-top:30px;margin-bottom:30px;width:300px;">
-                    <div class="error_season" style="text-align: center;">{{ $data }}</div>
-                @else
-                    @foreach ($ejecutivo as $room)
-                
-                        <div class="col-3 col-lg-3 adhara-color text-white d-flex align-items-center justify-content-center">
-                            <div class="item-d">
-                                @if ($room['magica'])
-                                    <img src="{{ asset('images/cotizacion/magica.png') }}" class="wand" alt="">
-                                @endif
-                                <p class="title-room-format">{{ $room['isTarifaMagica'] }}</p>
-                                <p class="span-room-format">{{ $room['plan_x_alimentos'] }}</p>
-                            </div>
-                        </div>
-                        <div class="col-9 col-lg-9" style="padding: 0px;">
-                            <div class="row" style="margin: 0px">
-                                <div class="col-4 adhara-color text-white">
-                                    @if ($room['plan_x_alimentos'] == 'Solo Habitacion')
-                                        <p class="format-room">@lang('main.quotation-item011')</p>
-                                    @else
-                                        <p class="format-room">@lang('main.quotation-item012')</p>
-                                    @endif
-                                </div>
-                                <div class="col-5 adhara-color text-white">
-                                    <p class='format-room'>@lang('main.quotation-item013')</p>
-                                </div>
-                                <div class="col-3 adhara-color text-white border-empty">
-                                    <p class="format-room" style="display: none">Send</p>
-                                </div>
-                                <div class="col-4">
-                                    <p class="format-room">$ {{ number_format($room['total'],2) }} {{ $room['currency'] }}</p>
-                                </div>
-                                <div class="col-5">
-                                    <p class="format-room">$ {{ number_format($room['total']*0.90,2) }} {{ $room['currency'] }}</p>
-                                </div>
-                                <div class="col-3 d-flex align-items-center justify-content-center">
-                                    <form action="{{ route('reservations',['locale'=>App::getLocale()]) }}" method="GET">
-                                        @csrf
-                                        <input type="hidden" name="habitacion_id" value="{{ $room['id'] }}" readonly>
-                                        <input type="hidden" name="checkIn" value="{{ $checkIn }}" readonly>
-                                        <input type="hidden" name="checkOut" value="{{ $checkOut }}" readonly>
-                                        <input type="hidden" name="cuartos" value="{{ $room['cuartos'] }}" readonly>
-                                        <input type="hidden" name="noches" value="{{ $room['noches'] }}" readonly>
-                                        <input type="hidden" name="total" value="{{ $room['total'] }}" readonly>
-                                        <input type="hidden" name="currency" value="{{ $room['currency'] }}" readonly>
-                                        <input type="hidden" name="fullDate" value="{{ $full_date }}" readonly>
-                                        <input type="hidden" name="fullDate2" value="{{ $full_date_2 }}" readonly>
-                                        <input type="hidden" name="total_adultos" value="{{ $total_adultos }}" readonly>
-                                        <input type="hidden" name="total_kids" value="{{ $total_kids }}" readonly>
-                                        <input type="hidden" name="total_kids_no_bf" value="{{ $total_kids_no_bf }}" readonly>
-                                        @foreach ($adultos as $adulto)
-                                            <input type="hidden" name="adultos[]" value="{{ $adulto }}">
-                                        @endforeach
-                                        @foreach ($infantes as $infante)
-                                            <input type="hidden" name="infantes[]" value="{{ $infante }}">
-                                        @endforeach
-                                        @foreach ($infantes_no_bf as $infante_no_bf)
-                                            <input type="hidden" name="infantes_no_bf[]" value="{{ $infante_no_bf }}">
-                                        @endforeach
-                                        <button type="submit" id="" class="btn btn-outline-adhara btn-sm">@lang('main.quotation-item016')</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    @endforeach
-                @endif
-                
-            </div>
-        </div>
-    </div>
+    <!-- Section Rooms End -->
 </div>
 
 <script type="text/javascript">
@@ -377,7 +102,7 @@
             return new bootstrap.Tooltip(tooltipTriggerEl)
         })
 
-    });   
+    });
 </script>
 
 

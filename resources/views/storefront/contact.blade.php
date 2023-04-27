@@ -2,10 +2,6 @@
 
 @section('content')
 
-@include('layouts.web.section_contacto')
-<!-- INICIO DEL BUSCADOR -->
-
-<!-- FIN DEL BUSCADOR -->
     @if (session('success'))
         <div class="alert alert-success" style="position: absolute;top: 0;z-index: 10000;right: 0;margin-top: 90px;">
             {{ session('success') }}
@@ -26,72 +22,161 @@
         </div>
     @endif
 
-    <div id="contact-desc" class="main-body" style="margin-top:30px">
-
-        <h4>@lang('main.contact-item001') </h4>
-        <p class="main-room-desc custom-w">@lang('main.contact-item002') </p>
-        <p class="main-room-desc custom-w"> @lang('main.contact-item003') </p>
- 
-        <div class="row" style="margin-top:20px">
-            <div class="col-sm-12">
-                <img src="{{ asset('images/Contacto/1.png') }}" class="img-fluid" id="downtown">
-                
-            </div>
-        </div>
-
-        <div class="row" style="margin-top:20px">
-            <div class="col-sm-12">
-                <p class="main-room-desc custom-w"> @lang('main.contact-item004') </p>
-                <p class="main-room-desc custom-w"> @lang('main.contact-item005') </p>
-            </div>
-        </div>
-
-        <div class="row" style="margin-top:20px">
-            <div class="col-sm-12 col-md-8 offset-md-2">
-                <img src="{{ asset('images/Contacto/3.png') }}" class="img-fluid">
-            </div>
-        </div>
-
-        <div class="row" style="margin-top:20px">
-            
-            <div class="col-sm-6">
-                <form action=" {{ route('contact_mail',['locale'=>App::getLocale()]) }} " method="POST" id="contactt" >
-                    @csrf 
-                    <div class="mb-3">
-                        <label for="nombre" class="form-label">@lang('main.contact-item008')</label>
-                        <input type="text" class="form-control" name="nombre">
-                    </div>  
-                    <div class="mb-3">
-                        <label for="email" class="form-label">@lang('main.contact-item009')</label>
-                        <input type="email" class="form-control" name="email" aria-describedby="emailHelp">
-                    </div>  
-                    <div class="mb-3">
-                        <label for="asunto" class="form-label">@lang('main.contact-item010')</label>
-                        <input type="text" class="form-control" name="asunto">
-                    </div>  
-                    <div class="mb-3">
-                        <label for="message" class="form-label">@lang('main.contact-item011')</label>
-                        <textarea name="message" class="form-control" cols="30" rows="10" style="resize: none;"></textarea>
-                    </div>            
-                   <button type="submit" class="btn btn-adhara">@lang('main.contact-item012')</button>
-                </form>
-            </div>
-            <div class="col-sm-6">
-                <p class="center"><img src="{{ asset('images/Contacto/minifle.png') }}" id="marker-c"> &nbsp; @lang('main.contact-item006') </p>
-                <div class="mapouter">
-                    <div class="gmap_canvas">
-                        <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=hotel%20adhara%20cancun&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2piratebay.org"></a><br>
-                    </div>
+    <!-- Site Main -->
+<div class="site-main">
+    <!-- Section Page Title -->
+    <div class="section">
+        <div class="widget-page-title">
+            <div class="widget-background" data-background="assets/img/photo-title.jpg"></div>
+            <div class="wrapper-inner">
+                <!-- Title -->
+                <h5>GET IN TOUCH WITH US</h5>
+                <h1>Contact Page</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget commodo orci. Integer varius nibh eu mattis porta. Pellentesque dictum sem eget cursus semper. Nullam quis blandit lorem. Morbi blandit orci urna, eu congue magna faucibus at. In bibendum in mauris nec ultrices. Nunc et magna velit.</p>
+                <!-- Title End -->
+                <!-- Breadcrumb -->
+                <div class="widget-breadcrumb">
+                    <ul>
+                        <li><a href="{{ route('inicio', ['locale' => App::getLocale()]) }}">HOME</a></li>
+                        <li>CONTACT PAGE</li>
+                    </ul>
                 </div>
-                
-            </div>
-        </div>
-        
-        <div class="row" style="margin-top:20px">
-            <div class="col-sm-12">
-                <p class="center"> </p>
+                <!-- Breadcrumb End -->
             </div>
         </div>
     </div>
+    <!-- Section Page Title End -->
+
+    <!-- Section Contact -->
+    <div class="section">
+        <div class="wrapper-inner">
+            <div class="row">
+                <div class="col-lg-6">
+                    <!-- Contact Info -->
+                    <div class="widget-contact-info">
+                        <ul>
+                            <li>
+                                <h5>THE GRANDIUM HOTEL</h5>
+                                <ul>
+                                    <li>The Grandium Hotel 41-49 Longridge Road, Earls Court, London</li>
+                                    <li>Phone: +1-800-123-45-67  Fax: +1-800-123-45-67</li>
+                                    <li><a href="mailto:info@thegrandiumhotel.com">info@thegrandiumhotel.com</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5>RESERVATION</h5>
+                                <ul>
+                                    <li>Mr. Michael Feldstein - Director of Reservation</li>
+                                    <li>Phone: +1-800-123-45-67  Fax: +1-800-123-45-67</li>
+                                    <li><a href="mailto:reservation@thegrandiumhotel.com">reservation@thegrandiumhotel.com</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5>PUBLIC RELATIONS</h5>
+                                <ul>
+                                    <li>Ms. Marilyn Suttle - Public Relations Manager</li>
+                                    <li>Phone: +1-800-123-45-67  Fax: +1-800-123-45-67</li>
+                                    <li><a href="mailto:public.relations@thegrandiumhotel.com">public.relations@thegrandiumhotel.com</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Contact Info End -->
+                </div>
+                <div class="col-lg-6">
+                    <!-- Contact Form -->
+                    <div class="widget-contact-form">
+                        <h5>CONTACT FORM</h5>
+                        <p>We are eager to hear from you; please fill in your contact information and one of our staff members will contact you shortly.</p>
+                        <div class="data-form">
+                            <form action="contact.php" id="contact-form" method="post">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="text" id="form-name" name="form-name" placeholder="YOUR NAME">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" id="form-surname" name="form-surname" placeholder="YOUR SURNAME">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" id="form-email" name="form-email" placeholder="YOUR EMAIL ADDRESS">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" id="form-phone" name="form-phone" placeholder="YOUR PHONE">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <textarea cols="6" rows="8" id="form-message" name="form-message" placeholder="YOUR MESSAGE"></textarea>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="note">* Please fill in all of the required fields</p>
+                                    </div>
+                                    <div class="col-md-6 align-right">
+                                        <input type="submit" value="SEND FORM" class="btn">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Contact Form End -->
+                </div>
+                <div class="col-lg-12">
+                    <!-- Contact Review -->
+                    <div class="widget-contact-review">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="review-item">
+                                    <div class="item-inner">
+                                        <i class="fa fa-commenting-o"></i> READ OR WRITE REVIEWS
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="review-item">
+                                    <div class="item-inner">
+                                        <a href="#" target="_blank"><i class="fa fa-google-plus"></i> GOOGLE PLUS +</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="review-item">
+                                    <div class="item-inner">
+                                        <a href="#" target="_blank"><i class="fa fa-yelp"></i> YELP</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="review-item">
+                                    <div class="item-inner">
+                                        <a href="#" target="_blank"><i class="fa fa-tripadvisor"></i> TRIPADVISOR</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Contact Review End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Section Contact End -->
+
+    <!-- Section Map -->
+    <div class="section">
+        <div class="wrapper-full">
+            <div class="widget-google-map">
+                <!-- Google Map Title -->
+                <div class="map-title">
+                    <i class="fa fa-map-marker"></i>
+                    <h5>MAP</h5>
+                </div>
+                <!-- Google Map Title End -->
+                <!-- Google Map -->
+                <div class="map-google"></div>
+                <!-- Google Map End -->
+            </div>
+        </div>
+    </div>
+    <!-- Section Map End -->
+</div>
+<!-- Site Main End -->
 
 @endsection

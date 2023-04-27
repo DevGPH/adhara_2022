@@ -5,12 +5,12 @@
  </nav>
  <div class="owl-carousel owl-theme" id='carousel'>
     <div class="item">
-        <img src="@lang('main.slider-home-2-mob')" class="d-block d-sm-none" alt=""> 
-        <img src="@lang('main.slider-home-2')" class="d-none d-sm-block" alt=""> 
+        <img src="@lang('main.slider-home-2-mob')" class="d-block d-sm-none" alt="">
+        <img src="@lang('main.slider-home-2')" class="d-none d-sm-block" alt="">
     </div>
     <div class="item">
-        <img src="@lang('main.slider-home-mob')" class="d-block d-sm-none" alt=""> 
-        <img src="@lang('main.slider-home')" class="d-none d-sm-block" alt=""> 
+        <img src="@lang('main.slider-home-mob')" class="d-block d-sm-none" alt="">
+        <img src="@lang('main.slider-home')" class="d-none d-sm-block" alt="">
     </div>
 </div>
 
@@ -27,12 +27,12 @@
         <img src="{{ asset('images/icons/social_media/whatsapp.png') }}" id='logo-whats-hover' alt="">
         <h4>WhatsApp</h4>
         <p class="big-t" style="margin-bottom: 0px;"><a href="https://api.whatsapp.com/send?phone=529981221816" target='_blank'>998 122 1861</a></p>
-    </div>  
+    </div>
 </div>
 
 <script type='text/javascript'>
 
-$('.owl-carousel').owlCarousel({
+$('.owl-carousel').({
     loop:false,
     margin:10,
     autoplay:true,
