@@ -6,7 +6,7 @@
                 <div class="slider-item" data-background="{{ asset('images/sliders/cover.png') }}">
                     <div class="wrapper">
                         <div class="item-inner">
-                            <img src="{{ asset('images/sliders/data.png') }}" alt="" style="width: 600px;display:block;margin:0px auto;">
+                            <img src="{{ asset('images/sliders/data.png') }}" alt="" class="slider-special">
                             <!--h5>WELCOME TO THE GRANDIUM</h5>
                             <h1>Experience the Freedom</h1>
                             <h2>in London</h2-->

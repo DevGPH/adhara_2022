@@ -99,3 +99,18 @@
         width: 100% !important;
     }
 }
+
+.slider-special {
+    width: 1000px !important;
+    display: block;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+
+@media screen and (max-width: 1800px) {
+    .slider-special {
+        width: 700px !important;
+        margin-top: 0px;
+    }
+}
