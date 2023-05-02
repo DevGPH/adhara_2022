@@ -249,16 +249,59 @@ class ReservaController extends Controller
 
     public function reservations(Request $request,$locale)
     {
-        if (Cookie::get('dataBooking') !== null){ // cookie utilizada para guardar la informacion de booking en caso de cambiar el idioma o refrescar la pagina
-            Cookie::queue(Cookie::forget('dataBooking')); //se borra al dar click en reservar
-        }
-
         $paises = Pais::all();
         $habitacion = Habitacion::findOrFail($request->habitacion_id);
-        // $rate = rateToday($locale);
         $homecontroller = new HomeController();
         $rate = $homecontroller->rateToday($locale);
 
+        if ($request->has('custom_booking')) {
+            $url = $this->endpoint.$locale.'/select-habitacion/' . $habitacion->id;
+
+            $response = Http::asForm()->post($url, [
+                'checkIn' => $request->checkin,
+                'checkOut' => $request->checkout,
+                'habitaciones' => $request->rooms,
+                'adultos' => $request->adultos,
+                'infantes' => $request->infantes,
+                'noches' => 0,
+                'hotel_id' => 2
+            ]);
+
+            $result = $response->json();
+
+            $price = $request->cookie('user') ? ($result['data']['total']*.9) : $result['data']['total'];
+
+            $cambio = TipoCambio::first();
+            $total = (App::getLocale() == 'es') ? $price * $cambio->valor_x_moneda : $price;
+
+            return view('storefront.reservations',[
+                'paises' => $paises,
+                'habitaciones' =>  $result['data']['cuartos'],
+                'checkIn'      =>  $request->checkin,
+                'checkOut'     =>  $request->checkout,
+                'total'        =>  $total,
+                'currency'     =>  (App::getLocale() == 'es') ? 'MXN' : 'USD',
+                'noches'       =>  $result['data']['noches'],
+                'adultos'      =>  [$result['data']['habitacion_1']['adultos']],
+                'infantes'     =>  [$result['data']['habitacion_1']['infantes']],
+                'infantes_no_bf'=> [0],
+                'habitacion_id'=>  $habitacion->id,
+                '_tot_adultos'  =>  $result['data']['habitacion_1']['adultos'],
+                '_tot_infantes' =>  $result['data']['habitacion_1']['infantes'],
+                '_tot_infantes_no_bf' =>  0,
+                'fullDate'          =>  '',
+                'fullDate2'  =>  '',
+                'habitacion' => $habitacion,
+                'id' => 0,
+                'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
+                'rate' => $rate
+            ]);
+        }
+
+        if (Cookie::get('dataBooking') !== null){ // cookie utilizada para guardar la informacion de booking en caso de cambiar el idioma o refrescar la pagina
+            Cookie::queue(Cookie::forget('dataBooking')); //se borra al dar click en reservar
+        }
+        // $rate = rateToday($locale);
         return view('storefront.reservations',[
             'paises' => $paises,
             'habitaciones' =>  $request->cuartos,

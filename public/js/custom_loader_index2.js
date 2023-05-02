@@ -93,7 +93,9 @@
     /*-- DATEPICKER --*/
     if ($("input.datepicker").length) {
         var datepicker_width = $("input.datepicker").outerWidth();
-        $("input.datepicker").datepicker();
+        $("input.datepicker").datepicker({
+            dateFormat: 'yy-mm-dd'
+        });
         $("body").append("<style>.ui-datepicker{width:auto; min-width: " + datepicker_width + "px !important;}</style>");
     }
     /*-- DATEPICKER END --*/

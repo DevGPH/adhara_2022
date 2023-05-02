@@ -76,19 +76,19 @@
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <i class="fa fa-calendar-plus-o"></i>
-                                                <input type="text" name="checkin" placeholder="CHECK IN" class="datepicker" required>
+                                                <input type="text" name="checkin" placeholder="CHECK IN" class="datepicker" required autocomplete="off">
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <i class="fa fa-calendar-plus-o"></i>
-                                                <input type="text" name="checkout" placeholder="CHECK OUT" class="datepicker" required>
+                                                <input type="text" name="checkout" placeholder="CHECK OUT" class="datepicker" required autocomplete="off">
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <i class="fa fa-caret-down"></i>
-                                                <select name="adults" required>
+                                                <select name="adultos" required>
                                                     <option value="">ADULTS</option>
                                                     <option value="1">1 ADULT</option>
                                                     <option value="2">2 ADULT</option>
@@ -99,7 +99,7 @@
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <i class="fa fa-caret-down"></i>
-                                                <select name="childrens" required>
+                                                <select name="infantes" required>
                                                     <option value="">CHILDRENS</option>
                                                     <option value="1">1 CHILDREN</option>
                                                     <option value="2">2 CHILDREN</option>
@@ -110,6 +110,8 @@
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <input type="hidden" name="habitacion_id" value="{{ $id }}">
+                                                <input type="hidden" name="rooms" value="1">
+                                                <input type="hidden" name="custom_booking" value="true">
                                                 <button type="submit" class="btn">BOOK NOW THIS ROOM</button>
                                             </div>
                                         </div>
