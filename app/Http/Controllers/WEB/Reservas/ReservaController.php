@@ -252,6 +252,8 @@ class ReservaController extends Controller
         $paises = Pais::all();
         $habitacion = Habitacion::findOrFail($request->habitacion_id);
         $homecontroller = new HomeController();
+        $cambio = TipoCambio::first();
+
         $rate = $homecontroller->rateToday($locale);
 
         if ($request->has('custom_booking')) {
@@ -270,8 +272,6 @@ class ReservaController extends Controller
             $result = $response->json();
 
             $price = $request->cookie('user') ? ($result['data']['total']*.9) : $result['data']['total'];
-
-            $cambio = TipoCambio::first();
             $total = (App::getLocale() == 'es') ? $price * $cambio->valor_x_moneda : $price;
 
             return view('storefront.reservations',[
@@ -302,13 +302,20 @@ class ReservaController extends Controller
             Cookie::queue(Cookie::forget('dataBooking')); //se borra al dar click en reservar
         }
         // $rate = rateToday($locale);
+        $total = $request->cookie('user')?($request->total*.9):$request->total;
+        $currency = $request->currency;
+        if (App::getLocale() == 'es' && $request->currency != 'MXN') {
+            $total = $total * $cambio->valor_x_moneda ;
+            $currency = 'MXN';
+        }
+
         return view('storefront.reservations',[
             'paises' => $paises,
             'habitaciones' =>  $request->cuartos,
             'checkIn'      =>  $request->checkIn,
             'checkOut'     =>  $request->checkOut,
-            'total'        =>  $request->cookie('user')?($request->total*.9):$request->total,
-            'currency'     =>  $request->currency,
+            'total'        =>  number_format(round($total)),
+            'currency'     =>  $currency,
             'noches'       =>  $request->noches,
             'adultos'      =>  $request->adultos,
             'infantes'     =>  $request->infantes,
