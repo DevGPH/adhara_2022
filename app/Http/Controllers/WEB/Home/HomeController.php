@@ -10,6 +10,8 @@ use Illuminate\Http\Response;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
+use App\Models\AmenidadHabitacion;
+use App\Models\AmenidadCuarto;
 use App\Models\Habitacion;
 use App\Models\TipoCambio;
 use App\Models\Temporada;
@@ -41,6 +43,7 @@ class HomeController extends Controller
     public function rooms($locale, $id)
     {
         $habitacion = Habitacion::find($id);
+        $amenidades = AmenidadCuarto::where('categoria_habitacion_id', $habitacion->categoria->id)->get();
         $rate = $this->rateToday($locale);
         return view('storefront.rooms')->with([
             'room_active' => 'active-link',
@@ -48,6 +51,8 @@ class HomeController extends Controller
             'id' => $habitacion->id,
             'rate' => $rate,
             'name' => (App::getLocale() == 'es') ? $habitacion->categoria->nombre_es : $habitacion->categoria->nombre_en,
+            'amenidades' => $amenidades,
+            'habitacion' => $habitacion
         ]);
     }
 

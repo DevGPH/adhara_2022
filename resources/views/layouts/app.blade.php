@@ -22,7 +22,7 @@
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/owl.carousel.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/owl.theme.default.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery-ui.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/queen_osiris.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/queen_osirism.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/mobile_master.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/home_test.css') }}">
 
@@ -111,7 +111,7 @@
 					<div class="row mx-0" >
 						<div class="col-12 col-lg-6 logo-panel-login">
 							<div id="pseudo-element"></div>
-							<img src="{{ asset('/images/ClubEstrellaAdhara1.png') }}"/>
+							<img src="{{ asset('/images/logos/club_estrella.png') }}"/>
 						</div>
 						<div class="col-12 col-lg-6">
 							<div class="modal-header border-0 pb-0">
