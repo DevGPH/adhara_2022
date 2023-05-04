@@ -30,15 +30,15 @@
             <div class="widget-background" data-background="assets/img/photo-title.jpg"></div>
             <div class="wrapper-inner">
                 <!-- Title -->
-                <h5>GET IN TOUCH WITH US</h5>
-                <h1>Contact Page</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget commodo orci. Integer varius nibh eu mattis porta. Pellentesque dictum sem eget cursus semper. Nullam quis blandit lorem. Morbi blandit orci urna, eu congue magna faucibus at. In bibendum in mauris nec ultrices. Nunc et magna velit.</p>
+                <h5>@lang('main.contact.touch')</h5>
+                <h1>@lang('main.contact.page')</h1>
+                <p>@lang('main.contact.description')</p>
                 <!-- Title End -->
                 <!-- Breadcrumb -->
                 <div class="widget-breadcrumb">
                     <ul>
-                        <li><a href="{{ route('inicio', ['locale' => App::getLocale()]) }}">HOME</a></li>
-                        <li>CONTACT PAGE</li>
+                        <li><a href="{{ route('inicio', ['locale' => App::getLocale()]) }}">{{ (App::getLocale() == 'es') ? 'INICIO' : 'HOME' }}</a></li>
+                        <li>{{ (App::getLocale() == 'es') ? 'CONTACTO' : 'CONTACT' }}</li>
                     </ul>
                 </div>
                 <!-- Breadcrumb End -->
@@ -64,7 +64,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <h5>RESERVACIONES</h5>
+                                <h5>@lang('main.contact.reservaciones')</h5>
                                 <ul>
                                     <li>Mr. Michael Feldstein - Director of Reservation</li>
                                     <li>Phone: +1-800-123-45-67  Fax: +1-800-123-45-67</li>
@@ -118,8 +118,7 @@
                     </div>
                     <!-- Contact Form End -->
                 </div>
-                <div class="col-lg-12">
-                    <!-- Contact Review -->
+                <!--div class="col-lg-12">
                     <div class="widget-contact-review">
                         <div class="row">
                             <div class="col-lg-3 col-md-6 col-sm-6">
@@ -152,8 +151,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Contact Review End -->
-                </div>
+                </div-->
             </div>
         </div>
     </div>
@@ -170,7 +168,7 @@
                 </div>
                 <!-- Google Map Title End -->
                 <!-- Google Map -->
-                <div class="map-google"></div>
+                <div class="map-google" id="map" style="width: 100%; height:100%;"></div>
                 <!-- Google Map End -->
             </div>
         </div>

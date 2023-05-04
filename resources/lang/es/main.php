@@ -178,10 +178,9 @@ return [
     'room-item45' => 'Refrigerador',
     'room-item46' => 'Comedor',
 
-
+    // PAGINA DE CONTACTO
     'contact-item001' => 'Ubicación Privilegiada',
-    'contact-item002' => 'El hotel Adhara Cancún está en el centro de la ciudad de Cancún, donde se desarrolla su actividad económica, con fácil acceso a las avenidas Tulum y Bonampak, principales vías de entrada a la ciudad.',
-    'contact-item003' => 'Se localiza a 25 minutos del aeropuerto, a 5 minutos de los centros comerciales: plaza Las Américas, plaza Malecón las Américas y Malecón Cancún.',
+    'contact.description' => 'El hotel Adhara Cancún está en el centro de la ciudad de Cancún, donde se desarrolla su actividad económica, con fácil acceso a las avenidas Tulum y Bonampak, principales vías de entrada a la ciudad. Se localiza a 25 minutos del aeropuerto, a 5 minutos de los centros comerciales: plaza Las Américas, plaza Malecón las Américas y Malecón Cancún.',
     'contact-item004' => 'La privilegiada ubicación del hotel sobre la Av. Yaxilán, avenida histórica de la ciudad de Cancún, la cual permite a los huéspedes tener proximidad a los atractivos y servicios más importantes de la ciudad, ofreciendo simultáneamente el acceso rápido a las mejores playas de Cancún  e Isla Mujeres.',
     'contact-item005' => 'Desde el hotel Adhara Express se tiene cercanía a la plaza del ayuntamiento, al parque de las palapas, a los mercados 23 y 28, al mercado de artesanías en la avenida Tulum, instituciones bancarias, farmacias, tiendas de servicios o bien a la amplia gastronomía internacional con restaurantes especializados en comida mexicana, argentina, italiana, entre otros.',
     'contact-item006' => 'Av. Carlos Nader 1,2,3 SM.1, MZ.2, C.P. 77500, Cancún Quintana Roo, México.',
@@ -191,6 +190,10 @@ return [
     'contact-item010' => 'Asunto',
     'contact-item011' => 'Mensaje',
     'contact-item012' => 'Enviar',
+    'contact.reservaciones' => 'RESERVACIONES',
+    'contact.page' => 'Página de Contacto',
+    'contact.touch' => 'PONTE EN CONTACTO CON NOSOTROS',
+
 
 
 

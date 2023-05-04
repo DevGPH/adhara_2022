@@ -322,7 +322,26 @@
 	/*-- WIDGET TEAM CAROUSEL END --*/
 
     /*-- WIDGET GOOGLE MAP --*/
-    if ($(".widget-google-map").length) {
+    // Initialize and add the map
+    function initMap() {
+        // The location of Uluru
+        const uluru = { lat: 21.168589278141646, lng: -86.82408117836486 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 17,
+            center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+            position: uluru,
+            map: map,
+            icon: "/images/logos/map-marker.png"
+        });
+    }
+
+    window.initMap = initMap;
+
+    /*if ($(".widget-google-map").length) {
         try {
             $(".widget-google-map .map-google").width("100%").height("100%").gmap3({
                 map: {
@@ -344,7 +363,7 @@
         } catch (error) {
             console.log(error);
         }
-    }
+    }*/
 	/*-- WIDGET GOOGLE MAP END --*/
 
 	/*-- WINDOW SCROLL --*/

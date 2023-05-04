@@ -176,11 +176,9 @@ return [
     'room-item45' => 'Fridge',
     'room-item46' => 'Dining room',
 
-
-
+    //PAGINA DE CONTACTO
     'contact-item001' => 'Prime location',
-    'contact-item002' => 'The Adhara Cancun hotel is in the center of the city of Cancun, where its economic activity takes place, with easy access to Tulum and Bonampak avenues, the main entryways to the city.',
-    'contact-item003' => 'It is located 25 minutes from the airport, 5 minutes from the shopping centers: Plaza Las Américas, Plaza Malecón las Américas and Malecón Cancun.',
+    'contact.description' => 'The Adhara Cancun hotel is in the center of the city of Cancun, where its economic activity takes place, with easy access to Tulum and Bonampak avenues, the main entryways to the city. It is located 25 minutes from the airport, 5 minutes from the shopping centers: Plaza Las Américas, Plaza Malecón las Américas and Malecón Cancun.',
     'contact-item004' => 'The hotel´s privileged location on Av. Yaxilán, a historic avenue of the city of Cancun, which allows guests to have proximity to the most important attractions and services of the city, simultaneously offering quick access to the best beaches in Cancun and Women Island.',
     'contact-item005' => 'From the Adhara Express hotel there is proximity to the town hall square, the palapas park, markets 23 and 28, the handicraft market on Tulum avenue, banking institutions, pharmacies, service stores or the wide gastronomy International with restaurants specialized in Mexican, Argentine, Italian food, among others.',
     'contact-item006' => 'Av. Carlos Nader 1,2,3 SM.1, MZ.2, C.P. 77500, Cancún Quintana Roo, México.',
@@ -190,6 +188,9 @@ return [
     'contact-item010' => 'Issue',
     'contact-item011' => 'Message',
     'contact-item012' => 'Send',
+    'contact.reservaciones' => 'RESERVACIONES',
+    'contact.page' => 'Contact Page',
+    'contact.touch' => 'GET IN TOUCH WITH US',
 
 
 
