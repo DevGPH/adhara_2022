@@ -12,7 +12,7 @@
                         </a>
                     </li>
                     <li class="custom-tarifa" id="tarifa-first"><a class="nav-link" target="_blank" style="color: white;">TARIFA MÁGICA</a></li>
-                    <li class="custom-tarifa" id="tarifa-middle"><a class="nav-link" target="_blank" style="color: rgb(138 113 153 / 90%);">${{ $rate }}</a></li>
+                    <li class="custom-tarifa" id="tarifa-middle"><a class="nav-link" target="_blank" style="color: red;">${{ $rate }}</a></li>
                     <li class="custom-tarifa" id="tarifa-last"><a class="nav-link" target="_blank" style="color: white;"><img src="{{ asset('images/logos/coffeet.png') }}" style="width: 25px;margin-right:6px;" alt=""> INCLUYE DESAYUNO</a></li>
                     @if (Cookie::get('user'))
                         <li class="custom-tarifa" style="margin-left:10px;"><a class="nav-link" href="https://clubestrella.mx" target="_blank" style="color: white;" data-toggle="modal" data-target="#modal-login"><img src="{{ asset('images/logos/clubestrella.png') }}" alt="Clubestrella" style="width: 25px;margin-right:6px;">{{ json_decode(Cookie::get('user'))->name }}</a></li>
@@ -50,9 +50,9 @@
                     <!--li><a href="aboutus.html">ABOUT US</a></li-->
                     <li class="sub"><a href="#">@lang('main.nav-rooms')</a>
                         <ul class="simpson">
-                            <li><a href="{{ route('rooms', ['locale' => App::getLocale(), 'id' => 6]) }}">Estandar</a></li>
-                            <li><a href="{{ route('rooms', ['locale' => App::getLocale(), 'id' => 7]) }}">One Bedroom Suite</a></li>
-                            <li><a href="{{ route('rooms', ['locale' => App::getLocale(), 'id' => 8]) }}">Ejecutiva</a></li>
+                            <li><a href="{{ route('rooms', ['locale' => App::getLocale(), 'id' => 6]) }}">Habitación Estandar</a></li>
+                            <li><a href="{{ route('rooms', ['locale' => App::getLocale(), 'id' => 7]) }}">Habitación One Bedroom Suite</a></li>
+                            <li><a href="{{ route('rooms', ['locale' => App::getLocale(), 'id' => 8]) }}">Habitación Ejecutiva</a></li>
                         </ul>
                     </li>
                     <li class="sub"><a href="#">@lang('main.nav-hotel')</a>

@@ -9,7 +9,9 @@
 <script src="{{ asset('js/contact.form.js') }}"></script-->
 
 <!-- Map Scripts -->
-<script src="https://maps.google.com/maps/api/js?sensor=false&amp;language=en"></script>
+<!--script src="https://maps.google.com/maps/api/js?sensor=false&amp;language=en"></script-->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGp4a2I1yctVHpeRE4SyF_8JQmLtMijdw"></script>
+
 <script src="{{ asset('js/gmap3.min.js') }}"></script>
 
 <!-- Custom Scripts -->

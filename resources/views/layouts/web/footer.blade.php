@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <h5>REDES SOCIALES</h5>
-                    <h6>SIGUENOS EN TU PLATAFORMA FAVORITA</h6>
+                    <h6>SÍGUENOS EN TU PLATAFORMA FAVORITA</h6>
                     <div class="widget-social-icons">
                         <ul>
                             <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
@@ -62,7 +62,7 @@
                 <ul>
                     <!--li><a href="#">SITEMAP</a></li-->
                     <li><a href="#">AVISO DE PRIVACIDAD</a></li>
-                    <li><a href="#">TERMINOS Y CONDICIONES</a></li>
+                    <li><a href="#">TÉRMINOS Y CONDICIONES</a></li>
                 </ul>
             </div>
         </div>

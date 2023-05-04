@@ -22,7 +22,7 @@
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/owl.carousel.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/owl.theme.default.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery-ui.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/queen_osirism.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/queen_morales.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/mobile_master.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/home_test.css') }}">
 

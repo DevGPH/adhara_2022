@@ -39,7 +39,7 @@ body{
 	        font-smoothing	: antialiased;
 }
 
-@media screen and (max-width: 1800px) {
+@media screen and (max-width: 2310px) {
     body {
         font-size: 14px;
     }
@@ -890,7 +890,7 @@ a,
     background-size         : cover;
 }
 
-@media screen and (max-width: 1800px) {
+@media screen and (max-width: 2310px) {
     .widget-slider .widget-carousel .slider-item{
         min-height: 100vh;
     }
@@ -2930,7 +2930,7 @@ a,
     padding-right           : 60px;
 }
 
-@media screen and (max-width: 1800px) {
+@media screen and (max-width: 2310px) {
     .wrapper{
         max-width: 1300px;
     }
@@ -2994,7 +2994,7 @@ a,
     margin-bottom: 50px;
 }
 
-@media screen and (max-width: 1800px) {
+@media screen and (max-width: 2310px) {
     .site-header .header-top{
         font-size: 13px;
         margin-bottom: 0px;
@@ -3079,7 +3079,7 @@ a,
     color                   : #fff;
 }
 
-@media screen and (max-width: 1800px) {
+@media screen and (max-width: 2310px) {
     .site-header .header-bottom .header-nav ul li a{
         font-size           : 12px;
     }
@@ -3322,11 +3322,9 @@ a,
 
 .simpson li, .simpson li a {
     color: white !important;
-    transition: 1s;
 }
 
 .simpson li a:hover {
-    transition: 1s;
     font-weight: 100 !important;
 }
 
@@ -3342,16 +3340,9 @@ a,
     margin-top: -100px;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 2310px) {
     .breakpoint-slider {
         width: 2000px !important;
-        margin-top: 80px;
-    }
-}
-
-@media (min-width: 2000px) {
-    .breakpoint-slider {
-        width: 2500px !important;
         margin-top: 80px;
     }
 }

@@ -30,7 +30,13 @@
                                 <div class="item-desc">
                                     <h2><a href="rooms-detail.html">{{ (App::getLocale() == 'es') ?  $room->categoria->nombre_es: $room->categoria->nombre_en }}</a></h2>
                                     <!--h3>$ 160.00</h3-->
-                                    <p>{{ (App::getLocale() == 'es') ? $room->categoria->desc_es : $room->categoria->desc_en }}</p>
+                                    @if ($room->categoria->tag_es == 'estandar')
+                                        <p> @lang('main.room-estandar')</p>
+                                    @elseif ($room->categoria->tag_es == 'one-bedroom-suite')
+                                        <p> @lang('main.room-one')</p>
+                                    @elseif ($room->categoria->tag_es == 'ejecutiva')
+                                        <p> @lang('main.room-ejecutivo')</p>
+                                    @endif
                                     <i class="fa fa-star"></i>
                                 </div>
                             </div>
@@ -149,27 +155,27 @@
                 <!-- Gallery Carousel -->
                 <div class="widget-carousel owl-carousel owl-theme">
                     <div class="gallery-item">
-                        <a href="{{ asset('images/gallery/room.png') }}" data-background="{{ asset('images/gallery/room.png') }}" title="Foto Habitación" class="popup-gallery">
+                        <a href="{{ asset('images/gallery/room.png') }}" data-background="{{ asset('images/gallery/room.png') }}" title="One Bed Room Suite" class="popup-gallery">
                             <span class="item-text">One Bed Room Suite</span>
                         </a>
                     </div>
                     <div class="gallery-item">
-                        <a href="{{ asset('images/gallery/pool.png') }}" data-background="{{ asset('images/gallery/pool.png') }}" title="Photo Name" class="popup-gallery">
-                            <span class="item-text">Pool & Bar</span>
+                        <a href="{{ asset('images/gallery/pool.png') }}" data-background="{{ asset('images/gallery/pool.png') }}" title="Piscina & bar" class="popup-gallery">
+                            <span class="item-text">Piscina & Bar</span>
                         </a>
                     </div>
                     <div class="gallery-item">
-                        <a href="{{ asset('images/gallery/gym.png') }}" data-background="{{ asset('images/gallery/gym.png') }}" title="Photo Name" class="popup-gallery">
+                        <a href="{{ asset('images/gallery/gym.png') }}" data-background="{{ asset('images/gallery/gym.png') }}" title="Gimnasio" class="popup-gallery">
                             <span class="item-text">Gimnasio</span>
                         </a>
                     </div>
                     <div class="gallery-item">
-                        <a href="{{ asset('images/gallery/lobby.png') }}" data-background="{{ asset('images/gallery/lobby.png') }}" title="Photo Name" class="popup-gallery">
+                        <a href="{{ asset('images/gallery/lobby.png') }}" data-background="{{ asset('images/gallery/lobby.png') }}" title="Centro de negocios" class="popup-gallery">
                             <span class="item-text">Centro de negocios</span>
                         </a>
                     </div>
                     <div class="gallery-item">
-                        <a href="{{ asset('images/gallery/restaurant.png') }}" data-background="{{ asset('images/gallery/restaurant.png') }}" title="Photo Name" class="popup-gallery">
+                        <a href="{{ asset('images/gallery/restaurant.png') }}" data-background="{{ asset('images/gallery/restaurant.png') }}" title="Lobby Bar" class="popup-gallery">
                             <span class="item-text">Lobby Bar</span>
                         </a>
                     </div>
@@ -288,7 +294,7 @@
                             <h3><a href="blog-single.html">Asistencia vía WhatsApp</a></h3>
                             <h5>Una respuesta inmediata para ti</h5>
                             <p>Ponemos a tu disposición asistencia inmediata vía WhatsApp, ahora todo es mas cómodo, fácil y sencillo, sólo enviamos un mensaje al número 998 122 1861…</p>
-                            <a href="blog-single.html" class="btn-link">MÁS INFORMACIÓN</a>
+                            <a href="https://api.whatsapp.com/send?phone=529981221861" target="_blank" class="btn-link">MÁS INFORMACIÓN</a>
                         </div>
                     </div>
                     <div class="blog-item">

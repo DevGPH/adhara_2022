@@ -56,15 +56,15 @@
                     <div class="widget-contact-info">
                         <ul>
                             <li>
-                                <h5>THE GRANDIUM HOTEL</h5>
+                                <h5>HOTEL ADHARA CANCÚN</h5>
                                 <ul>
-                                    <li>The Grandium Hotel 41-49 Longridge Road, Earls Court, London</li>
+                                    <li>Av. Carlos Nader 1,2,3 SM.1, MZ.2, C.P. 77500, Cancún Quintana Roo, México.</li>
                                     <li>Phone: +1-800-123-45-67  Fax: +1-800-123-45-67</li>
                                     <li><a href="mailto:info@thegrandiumhotel.com">info@thegrandiumhotel.com</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <h5>RESERVATION</h5>
+                                <h5>RESERVACIONES</h5>
                                 <ul>
                                     <li>Mr. Michael Feldstein - Director of Reservation</li>
                                     <li>Phone: +1-800-123-45-67  Fax: +1-800-123-45-67</li>

@@ -40,6 +40,11 @@ return [
     'index.hotel.item-2' => 'A modern design specially oriented to the business environment, which offers: a first class restaurant, bar - lounge & terrace, gym, pool and work rooms.',
     'index.hotel.item-3' => 'Privileged location in downtown',
 
+    // SECCION DE HABITACIONS - VISTA HOME
+    'room-estandar' => 'Habitación amplia que cuenta con Aire acondicionado, Wifi gratuito, Caja de Seguridad, Kit de Planchado, Hielera, 2 aguas de cortesía, Secadora de Cabello, ver más...',
+    'room-one' => 'Habitación compartida que cuenta con 60 m2, TV LCD 32", 2 recamaras independientes, 2 baños completos, Sala de estar, Aire acondicionado, 2 camas, ver más...',
+    'room-ejecutivo' => 'TV LCD, Aire acondicionado, 1 o 2 camas individuales, Wifi gratuito, Caja de Seguridad, Kit de Planchado, Escritorio de Trabajo, Toallas limpias, ver más...',
+
     // SECCION AMENIDADES INDEX
     'index.hotel.amenities' => 'OUR AMENITIES',
     'index.hotel.amenities.label' => 'We make magic in every detail',
