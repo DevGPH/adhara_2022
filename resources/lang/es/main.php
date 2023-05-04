@@ -12,6 +12,9 @@ return [
     'nav-lang-link' => '/en',
     'nav-covid-label' => 'Actualización COVID',
     'nav-logout' => 'Cerrar Sesión',
+    'nav.magic.rate' => 'TARIFA MÁGICA',
+    'nav.breakfast' => 'INCLUYE DESAYUNO',
+    'nav.gallery' => 'GALERÍA',
 
     'hover-whats-p' => 'Cotiza, reserva y paga por',
 
@@ -23,11 +26,21 @@ return [
     'rates-special-mob' => '¡Tarifa Mágica! Con Desayuno',
     'taxes-rate' => 'Impuestos incluidos',
 
+    // BREADCRUMBS
+    'breadcrumb.home' => 'INICIO',
+    'breadcrumb.rooms' => 'CUARTOS',
+
+    //  BUSCADOR
+    'booking.checkIn' => 'LLEGADA',
+    'booking.checkOut' => 'SALIDA',
     'booking.search' => 'Buscar',
     'booking.apply' => 'Aplicar',
     'booking.room' => 'Habitación',
-    'booking.adults' => 'Adultos',
-    'booking.kids' => 'Menores',
+    'booking.adults' => 'ADULTOS',
+    'booking.adult' => 'ADULTO',
+    'booking.kids' => 'INFANTES',
+    'booking.kid' => 'INFANTE',
+    'booking.now' => 'RESERVA AHORA',
     'booking.delete' => 'quitar',
     'booking.years' => 'años',
     'booking.years.label' => 'Edad de los menores (0 a 12 años)',
@@ -122,7 +135,13 @@ return [
     'body-item34' => 'Aviso de privacidad',
     'body-item35' => 'Terminos y Condiciones',
 
-
+    // PAGINA HABITACIONES
+    'room.title' => 'HABITACIÓN ',
+    'room.desc.title' => 'DESCRIPCIÓN DEL CUARTO',
+    'room.booking' => 'RESERVA',
+    'room.booking.room' => 'Reserva una habitación',
+    'room.feafures.room' => 'Equipada con',
+    'room.feafures' => 'AMENIDADES',
     'room-item1' => 'Habitaciones en Adhara Express',
     'room-item2' => 'Las habitaciones de Hotel Adhara Express son las más amplias y confortables de su categoría, equipadas con modernos servicios para estancias de trabajo o descanso.',
     'room-item3' => 'Conoce nuestras habitaciones:',
@@ -185,14 +204,18 @@ return [
     'contact-item005' => 'Desde el hotel Adhara Express se tiene cercanía a la plaza del ayuntamiento, al parque de las palapas, a los mercados 23 y 28, al mercado de artesanías en la avenida Tulum, instituciones bancarias, farmacias, tiendas de servicios o bien a la amplia gastronomía internacional con restaurantes especializados en comida mexicana, argentina, italiana, entre otros.',
     'contact-item006' => 'Av. Carlos Nader 1,2,3 SM.1, MZ.2, C.P. 77500, Cancún Quintana Roo, México.',
     'contact-item007' => 'Volver al inicio',
-    'contact-item008' => 'Nombre',
-    'contact-item009' => 'e-mail',
-    'contact-item010' => 'Asunto',
-    'contact-item011' => 'Mensaje',
-    'contact-item012' => 'Enviar',
+    'contact.form.name' => 'NOMBRE',
+    'contact.form.lastname' => 'APELLIDOS',
+    'contact.form.email' => 'CORREO ELECTRONICO',
+    'contact.form.require' => 'Llena todos los campos requeridos',
+    'contact.form.phone' => 'TELEFONO',
+    'contact.form.message' => 'MENSAJE',
+    'contact.form.send' => 'ENVIAR',
     'contact.reservaciones' => 'RESERVACIONES',
     'contact.page' => 'Página de Contacto',
     'contact.touch' => 'PONTE EN CONTACTO CON NOSOTROS',
+    'contact.form.title' => 'FORMULARIO DE CONTACTO',
+    'contact.form.label' => 'Estamos ansiosos por saber de usted; por favor complete su información de contacto y uno de los miembros de nuestro personal se pondrá en contacto con usted en breve.',
 
 
 

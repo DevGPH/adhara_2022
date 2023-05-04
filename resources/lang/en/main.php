@@ -12,6 +12,9 @@ return [
     'nav-lang-link' => '/es',
     'nav-covid-label' => 'COVID update',
     'nav-logout' => 'Logout',
+    'nav.magic.rate' => 'MAGIC RATE',
+    'nav.breakfast' => 'BREAKFAST INCLUDED',
+    'nav.gallery' => 'GALLERY',
 
     'hover-whats-p' => 'Quote, reserve and pay for',
 
@@ -23,11 +26,21 @@ return [
     'rates-special-mob' => 'Magic Fee! Breakfast Buffet',
     'taxes-rate' => 'Taxes included',
 
+    // BREADCRUMBS
+    'breadcrumb.home' => 'HOME',
+    'breadcrumb.rooms' => 'CUARTOS',
+
+    //  BUSCADOR
+    'booking.checkIn' => 'CHECK IN',
+    'booking.checkOut' => 'CHECK OUT',
     'booking.search' => 'Search',
     'booking.apply' => 'Apply',
     'booking.room' => 'Room',
-    'booking.adults' => 'Adults',
-    'booking.kids' => 'Kids',
+    'booking.adults' => 'ADULTS',
+    'booking.adult' => 'ADULT',
+    'booking.kids' => 'KIDS',
+    'booking.kid' => 'KID',
+    'booking.now' => 'BOOK NOW',
     'booking.delete' => 'delete',
     'booking.years' => 'years',
     'booking.years.label' => 'Age of minors (0 to 12 years)',
@@ -122,6 +135,13 @@ return [
     'body-item34' => 'Notice of Privacy',
     'body-item35' => 'Terms and Conditions',
 
+    // PAGINA HABITACIONES
+    'room.title' => ' ROOM',
+    'room.desc.title' => 'ROOM DESCRIPTION',
+    'room.booking' => 'BOOKING',
+    'room.booking.room' => 'Book a Room',
+    'room.feafures' => 'FEATURES',
+    'room.feafures.room' => 'Room Features',
     'room-item1' => 'Rooms at Adhara Express',
     'room-item2' => 'The rooms at Hotel Adhara Express are the most spacious and comfortable of their category, equipped with modern services for work or rest stays.',
     'room-item3' => 'Meet our bedrooms:',
@@ -183,14 +203,18 @@ return [
     'contact-item005' => 'From the Adhara Express hotel there is proximity to the town hall square, the palapas park, markets 23 and 28, the handicraft market on Tulum avenue, banking institutions, pharmacies, service stores or the wide gastronomy International with restaurants specialized in Mexican, Argentine, Italian food, among others.',
     'contact-item006' => 'Av. Carlos Nader 1,2,3 SM.1, MZ.2, C.P. 77500, Cancún Quintana Roo, México.',
     'contact-item007' => 'Back to top',
-    'contact-item008' => 'Name',
-    'contact-item009' => 'e-mail',
-    'contact-item010' => 'Issue',
-    'contact-item011' => 'Message',
-    'contact-item012' => 'Send',
+    'contact.form.name' => 'NAME',
+    'contact.form.lastname' => 'LASTNAME',
+    'contact.form.email' => 'EMAIL ADDRESS',
+    'contact.form.require' => 'Please fill in all of the required fields',
+    'contact.form.phone' => 'PHONE',
+    'contact.form.message' => 'MESSAGE',
+    'contact.form.send' => 'SEND',
     'contact.reservaciones' => 'RESERVACIONES',
     'contact.page' => 'Contact Page',
     'contact.touch' => 'GET IN TOUCH WITH US',
+    'contact.form.title' => 'CONTACT FORM',
+    'contact.form.label' => 'We are eager to hear from you; please fill in your contact information and one of our staff members will contact you shortly.',
 
 
 

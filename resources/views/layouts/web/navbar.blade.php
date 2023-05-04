@@ -11,9 +11,9 @@
                             COTIZA, RESERVA Y PAGA POR WHATSAPP: 998 122 1861
                         </a>
                     </li>
-                    <li class="custom-tarifa" id="tarifa-first"><a class="nav-link" target="_blank" style="color: white;">TARIFA MÁGICA</a></li>
+                    <li class="custom-tarifa" id="tarifa-first"><a class="nav-link" target="_blank" style="color: white;">@lang('main.nav.magic.rate')</a></li>
                     <li class="custom-tarifa" id="tarifa-middle"><a class="nav-link" target="_blank" style="color: red;">${{ $rate }}</a></li>
-                    <li class="custom-tarifa" id="tarifa-last"><a class="nav-link" target="_blank" style="color: white;"><img src="{{ asset('images/logos/coffeet.png') }}" style="width: 25px;margin-right:6px;" alt=""> INCLUYE DESAYUNO</a></li>
+                    <li class="custom-tarifa" id="tarifa-last"><a class="nav-link" target="_blank" style="color: white;"><img src="{{ asset('images/logos/coffeet.png') }}" style="width: 25px;margin-right:6px;" alt="">@lang('main.nav.breakfast')</a></li>
                     @if (Cookie::get('user'))
                         <li class="custom-tarifa" style="margin-left:10px;"><a class="nav-link" href="https://clubestrella.mx" target="_blank" style="color: white;" data-toggle="modal" data-target="#modal-login"><img src="{{ asset('images/logos/clubestrella.png') }}" alt="Clubestrella" style="width: 25px;margin-right:6px;">{{ json_decode(Cookie::get('user'))->name }}</a></li>
                     @else
@@ -50,9 +50,9 @@
                     <!--li><a href="aboutus.html">ABOUT US</a></li-->
                     <li class="sub"><a href="#">@lang('main.nav-rooms')</a>
                         <ul class="simpson">
-                            <li><a href="{{ route('rooms', ['locale' => App::getLocale(), 'id' => 6]) }}">Habitación Estandar</a></li>
-                            <li><a href="{{ route('rooms', ['locale' => App::getLocale(), 'id' => 7]) }}">Habitación One Bedroom Suite</a></li>
-                            <li><a href="{{ route('rooms', ['locale' => App::getLocale(), 'id' => 8]) }}">Habitación Ejecutiva</a></li>
+                            <li><a href="{{ route('rooms', ['locale' => App::getLocale(), 'id' => 6]) }}">{{ (App::getlocale() == 'es') ? 'Habitación Estandar' : 'Standar Room'}}</a></li>
+                            <li><a href="{{ route('rooms', ['locale' => App::getLocale(), 'id' => 7]) }}">{{ (App::getlocale() == 'es') ? 'Habitación One Bedroom Suite' : 'One Bedroom Suite Room'}}</a></li>
+                            <li><a href="{{ route('rooms', ['locale' => App::getLocale(), 'id' => 8]) }}">{{ (App::getlocale() == 'es') ? 'Habitación Ejecutiva' : 'Ejecutive Room'}}</a></li>
                         </ul>
                     </li>
                     <li class="sub"><a href="#">@lang('main.nav-hotel')</a>
@@ -80,7 +80,7 @@
                             <li><a href="#">ASISTENCIA VIA WHATSAPP</a></li>
                         </ul>
                     </li>
-                    <li><a href="{{ route('gallery', App::getLocale(), 0) }}">GALERÍA</a></li>
+                    <li><a href="{{ route('gallery', App::getLocale(), 0) }}">@lang('main.nav.gallery')</a></li>
                     <li><a href="{{ route('contact', ['locale' => App::getLocale()]) }}">@lang('main.nav-contact')</a></li>
                 </ul>
             </div>

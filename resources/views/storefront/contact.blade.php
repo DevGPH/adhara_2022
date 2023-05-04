@@ -37,7 +37,7 @@
                 <!-- Breadcrumb -->
                 <div class="widget-breadcrumb">
                     <ul>
-                        <li><a href="{{ route('inicio', ['locale' => App::getLocale()]) }}">{{ (App::getLocale() == 'es') ? 'INICIO' : 'HOME' }}</a></li>
+                        <li><a href="{{ route('inicio', ['locale' => App::getLocale()]) }}">@lang('main.breadcrumb.home')</a></li>
                         <li>{{ (App::getLocale() == 'es') ? 'CONTACTO' : 'CONTACT' }}</li>
                     </ul>
                 </div>
@@ -86,31 +86,31 @@
                 <div class="col-lg-6">
                     <!-- Contact Form -->
                     <div class="widget-contact-form">
-                        <h5>CONTACT FORM</h5>
-                        <p>We are eager to hear from you; please fill in your contact information and one of our staff members will contact you shortly.</p>
+                        <h5>@lang('main.contact.form.title')</h5>
+                        <p>@lang('main.contact.form.label')</p>
                         <div class="data-form">
                             <form action="contact.php" id="contact-form" method="post">
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <input type="text" id="form-name" name="form-name" placeholder="YOUR NAME">
+                                        <input type="text" id="form-name" name="form-name" placeholder="@lang('main.contact.form.name')*">
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="text" id="form-surname" name="form-surname" placeholder="YOUR SURNAME">
+                                        <input type="text" id="form-surname" name="form-surname" placeholder="@lang('main.contact.form.lastname')*">
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="text" id="form-email" name="form-email" placeholder="YOUR EMAIL ADDRESS">
+                                        <input type="text" id="form-email" name="form-email" placeholder="@lang('main.contact.form.email')*">
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="text" id="form-phone" name="form-phone" placeholder="YOUR PHONE">
+                                        <input type="text" id="form-phone" name="form-phone" placeholder="@lang('main.contact.form.phone')*">
                                     </div>
                                     <div class="col-md-12">
-                                        <textarea cols="6" rows="8" id="form-message" name="form-message" placeholder="YOUR MESSAGE"></textarea>
+                                        <textarea cols="6" rows="8" id="form-message" name="form-message" placeholder="@lang('main.contact.form.message')*"></textarea>
                                     </div>
                                     <div class="col-md-6">
-                                        <p class="note">* Please fill in all of the required fields</p>
+                                        <p class="note">* @lang('main.contact.form.require')</p>
                                     </div>
                                     <div class="col-md-6 align-right">
-                                        <input type="submit" value="SEND FORM" class="btn">
+                                        <input type="submit" value="@lang('main.contact.form.send')" class="btn">
                                     </div>
                                 </div>
                             </form>

@@ -34,14 +34,24 @@
                 @foreach ($data as $room)
                     <div class="rooms-item">
                         <div class="item-photo">
-                            <a href="rooms-detail.html" data-background="assets/img/photo-room-1.jpg"></a>
+                            @if ($room['tag'] == 'estandar')
+                                <a href="#" data-background="{{ asset('images/rooms/estandar_1.png') }}"></a>
+                            @elseif ($room['tag'] == 'one-bedroom-suite')
+                                <a href="#" data-background="{{ asset('images/rooms/one1.png') }}"></a>
+                            @elseif ($room['tag'] == 'ejecutiva')
+                                <a href="#" data-background="{{ asset('images/rooms/ejecutiva1.png') }}"></a>
+                            @endif
+
                         </div>
                         <div class="item-desc">
-                            <h2><a href="rooms-detail.html">{{ $room['habitacion']}}</a></h2>
+                            <h2><a href="#">{{(App::getLocale() == 'es') ? 'Habitación ' . $room['habitacion'] : $room['habitacion'] . ' Room'}}</a></h2>
                             <p>Sed fermentum eleifend dui eu faucibus. Donec facilisis, ligula eu interdum luctus nunc massa fermentum</p>
                             <div class="desc-features">
                                 <ul>
-                                    <li><i class="fa fa-check"></i> BREAKFAST</li>
+                                    @foreach ($room['amenidades'] as $amenidad)
+                                        <li><i class="fa fa-check"></i> {{$amenidad}}</li>
+                                    @endforeach
+                                    <!--li><i class="fa fa-check"></i> BREAKFAST</li>
                                     <li><i class="fa fa-check"></i> WI-FI</li>
                                     <li><i class="fa fa-check"></i> HAIR DRYER</li>
                                     <li><i class="fa fa-check"></i> LCD TV</li>
@@ -49,7 +59,7 @@
                                     <li><i class="fa fa-check"></i> SECURITY SYSTEM</li>
                                     <li><i class="fa fa-check"></i> AIR CONDITIONING</li>
                                     <li><i class="fa fa-check"></i> MINI BAR</li>
-                                    <li><i class="fa fa-check"></i> TEA AND COFFEE SET</li>
+                                    <li><i class="fa fa-check"></i> TEA AND COFFEE SET</li-->
                                 </ul>
                             </div>
                         </div>
