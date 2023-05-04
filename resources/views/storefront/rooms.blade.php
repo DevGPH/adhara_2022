@@ -6,7 +6,13 @@
     <!-- Section Page Title -->
     <div class="section">
         <div class="widget-page-title">
-            <div class="widget-background" data-background="{{ asset('images/rooms/background.png') }}"></div>
+            @if ($habitacion->categoria->tag_es == 'estandar')
+                <div class="widget-background" data-background="{{ asset('images/rooms/background_estandar.png') }}"></div>
+            @elseif ($habitacion->categoria->tag_es == 'one-bedroom-suite')
+                <div class="widget-background" data-background="{{ asset('images/rooms/background.png') }}"></div>
+            @elseif ($habitacion->categoria->tag_es == 'ejecutiva')
+                <div class="widget-background" data-background="{{ asset('images/rooms/background_ejecutivo.png') }}"></div>
+            @endif
             <div class="wrapper-inner">
                 <!-- Title -->
                 <h5>{{ (App::getLocale() == 'es') ? $habitacion->categoria->subtittulo_es : $habitacion->categoria->subtittulo_en }}</h5>

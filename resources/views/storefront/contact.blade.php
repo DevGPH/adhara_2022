@@ -27,12 +27,13 @@
     <!-- Section Page Title -->
     <div class="section">
         <div class="widget-page-title">
-            <div class="widget-background" data-background="assets/img/photo-title.jpg"></div>
+            <div class="widget-background" data-background="{{ asset('images/contacto/contacto.png') }}"></div>
             <div class="wrapper-inner">
                 <!-- Title -->
                 <h5>@lang('main.contact.touch')</h5>
                 <h1>@lang('main.contact.page')</h1>
                 <p>@lang('main.contact.description')</p>
+                <p>@lang('main.contact.description.second')</p>
                 <!-- Title End -->
                 <!-- Breadcrumb -->
                 <div class="widget-breadcrumb">
@@ -59,16 +60,16 @@
                                 <h5>HOTEL ADHARA CANCÚN</h5>
                                 <ul>
                                     <li>Av. Carlos Nader 1,2,3 SM.1, MZ.2, C.P. 77500, Cancún Quintana Roo, México.</li>
-                                    <li>Phone: +1-800-123-45-67  Fax: +1-800-123-45-67</li>
-                                    <li><a href="mailto:info@thegrandiumhotel.com">info@thegrandiumhotel.com</a></li>
+                                    <li>Teléfono: 998 881 6500</li>
+                                    <li><a href="mailto:reservaciones@gphoteles.com">reservaciones@gphoteles.com</a></li>
                                 </ul>
                             </li>
                             <li>
                                 <h5>@lang('main.contact.reservaciones')</h5>
                                 <ul>
-                                    <li>Mr. Michael Feldstein - Director of Reservation</li>
-                                    <li>Phone: +1-800-123-45-67  Fax: +1-800-123-45-67</li>
-                                    <li><a href="mailto:reservation@thegrandiumhotel.com">reservation@thegrandiumhotel.com</a></li>
+                                    <li>Ramón Lazo - Director de Reservaciones</li>
+                                    <li>WhatsApp: 998 122 1861</li>
+                                    <li><a href="mailto:reservaciones@gphoteles.com">reservaciones@gphoteles.com</a></li>
                                 </ul>
                             </li>
                             <li>
