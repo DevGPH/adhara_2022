@@ -30,7 +30,7 @@ use App;
 
 #Fecha libreria
 use Carbon\Carbon;
-use Facade\Ignition\DumpRecorder\Dump;  
+use Facade\Ignition\DumpRecorder\Dump;
 
 class ReservaController extends Controller
 {
@@ -40,7 +40,7 @@ class ReservaController extends Controller
     {
 
         if(empty($request->all())){ //se verifiva si el request esta vacio que quiere decir que viene de un refresh o cambio de idioma
-            //si esta vacio, se toma la informacion del cookie 
+            //si esta vacio, se toma la informacion del cookie
             $dataBooking = (array)json_decode(Cookie::get('dataBooking'));//$dataBooking: variable utilizada para no tomarla directamente del request ya que puede estar vacio y entonces se toma de los cookies
         } else { // si tiene informacion quiere decir que viene del la consulta de reserva
             Cookie::queue(Cookie::forget('dataBooking'));//se borra el cookie guardado para poder guardar la nueva informacion
@@ -64,7 +64,7 @@ class ReservaController extends Controller
         $total_kids_no_bf = 0;
         array_push($adultos,$dataBooking['room_1_adults']);
         $total_adultos += $dataBooking['room_1_adults'];
-        
+
 
         if($dataBooking['rooms'] > 1)
         {
@@ -98,7 +98,7 @@ class ReservaController extends Controller
                     $total_kids_no_bf += $dataBooking['room_2_kids_no_bf'];
                     array_push($infantes_no_bf,$dataBooking['room_2_kids_no_bf']);
                 }
-                    
+
 
                 if(isset($dataBooking['room_3_kids']))
                 {
@@ -108,10 +108,10 @@ class ReservaController extends Controller
                     $total_kids_no_bf += $dataBooking['room_3_kids_no_bf'];
                     array_push($infantes_no_bf,$dataBooking['room_3_kids_no_bf']);
                 }
-                    
+
             }
         }else{
-            for ($i=0; $i < $dataBooking['rooms'] ; $i++) { 
+            for ($i=0; $i < $dataBooking['rooms'] ; $i++) {
                 array_push($infantes,0);
                 array_push($infantes_no_bf,0);
             }
@@ -123,7 +123,7 @@ class ReservaController extends Controller
         $day2 =     Carbon::parse($dates[1])->format('d');
         $month2 =   Carbon::parse($dates[1])->format('m');
         $year2 =    Carbon::parse($dates[1])->format('Y');
-    
+
         switch ($month1){
             case  "1"; $month_label1 = "Enero";      break;  case  "2"; $month_label1 = "Febrero";    break;   case  "3"; $month_label1 = "Marzo";      break;
             case  "4"; $month_label1 = "Abril";      break;  case  "5"; $month_label1 = "Mayo";       break;   case  "6"; $month_label1 = "Junio";      break;
@@ -150,7 +150,7 @@ class ReservaController extends Controller
             $full_date_2 = Carbon::parse($dates[1])->format('d F Y');
         }
 
-        $url = $this->endpoint.$locale.'/temporada-habitacion'; 
+        $url = $this->endpoint.$locale.'/temporada-habitacion';
 
         $response = Http::asForm()->post($url, [
             'checkIn' => $checkIn,
@@ -163,6 +163,8 @@ class ReservaController extends Controller
         ]);
 
         $result = $response->json();
+
+        //dd($result);
 
         if($result['code'] != 200)
         {
@@ -189,20 +191,20 @@ class ReservaController extends Controller
                 'rate' => $rate
             ]);
         }
-        
-        #vista de la reserva   
-        $estandar_collection = array(); 
-        $ejecutivo_collection = array(); 
-        $superior_collection = array(); 
+
+        #vista de la reserva
+        $estandar_collection = array();
+        $ejecutivo_collection = array();
+        $superior_collection = array();
 
         $cambio = TipoCambio::first();
 
-        foreach ($result['data'] as $room)  
+        foreach ($result['data'] as $room)
         {
             if($locale == 'es')
             {
-                for ($i=0; $i < (int)$room['cuartos']; $i++) 
-                {     
+                for ($i=0; $i < (int)$room['cuartos']; $i++)
+                {
                     $y = $i +1;
                     $room['habitacion_'.$y]['total'] = $room['habitacion_'.$y]['total'] * $cambio->valor_x_moneda;
                 }
@@ -211,19 +213,20 @@ class ReservaController extends Controller
             } else {
                 $room['total'] = round($room['total']);
             }
-      
+
             if((string)$room['habitacion'] == "Estandar")
             {
                 array_push($estandar_collection,$room);
 
-            }else if((string)$room['habitacion'] === 'Superior')
+            }else if((string)$room['habitacion'] === 'One Bedroom Suite')
             {
                 array_push($superior_collection,$room);
             }else if((string)$room['habitacion'] === 'Ejecutiva')
             {
                 array_push($ejecutivo_collection,$room);
-            }       
+            }
         }
+
 
         return view('storefront.cotizacion')->with([
             'data'              => $result['data'],
@@ -262,7 +265,7 @@ class ReservaController extends Controller
         $homecontroller = new HomeController();
         $rate = $homecontroller->rateToday($locale);
 
-        
+
         return view('storefront.reservations',[
             'paises' => $paises,
             'habitaciones' =>  $request->cuartos,
@@ -272,7 +275,7 @@ class ReservaController extends Controller
             'currency'     =>  $request->currency,
             'noches'       =>  $request->noches,
             'adultos'      =>  $request->adultos,
-            'infantes'     =>  $request->infantes, 
+            'infantes'     =>  $request->infantes,
             'infantes_no_bf'=> $request->infantes_no_bf,
             'habitacion_id'=>  $habitacion->id,
             '_tot_adultos'  =>  $request->total_adultos,
@@ -318,7 +321,7 @@ class ReservaController extends Controller
                     'plataforma' => $request->plataforma,
                     'noches' => $request->noches,
                     'habitaciones' => $request->habitaciones,
-                    'adultos' => $request->adultoss,   
+                    'adultos' => $request->adultoss,
                     'infantes' => $request->infantess,
                     'infantes_no_bf' => $request->infantess_no_bf,
                     'precio' => $request->precio,
@@ -337,7 +340,7 @@ class ReservaController extends Controller
         {
             return back()->with('error',$result['message']);
         }
-        
+
         switch ($result['data']['metodo_pago']) {
             case 'pago_destino':
                 #El numero 3 representa pago en destino
@@ -351,7 +354,7 @@ class ReservaController extends Controller
                 $url = $santander->index($result['data']['folio']);
                 Log::channel('debug-url')->info($url);
                 $result = $response->json();
-            
+
                 if($response['code'] == 500 || $url['code'] == 500)
                 {
                     return back()->with('error','Error al generar su metodo de pago, ponganse en contacto con el area de reservas con numero de folio: '.$result['data']['folio']);
@@ -361,7 +364,7 @@ class ReservaController extends Controller
                 break;
 
             case 'paypal':
-                
+
                 $url = url('/').'/api/paypal';
                 $response = Http::asForm()->post($url,[
                     'id' => $result['data']['folio']
@@ -375,7 +378,7 @@ class ReservaController extends Controller
                     return redirect()->away($result['data']['url'][0]);
                 }
                 break;
-            
+
             default:
                 return redirect()->route('response.reserva', ['locale' => App::getLocale(),'id' => $result['data']['folio']]);
                 break;
@@ -401,7 +404,7 @@ class ReservaController extends Controller
 //     $today = now();
 //     $temporada = Temporadas::wereDate('startDate','<=',$today->toDateString())->first();
 //     $conversion = TipoCambio::first();
-//     $price = ($locale == 'es') ? ($conversion->valor_x_moneda * $temporada['tarifa_x_dolares']) : $temporada['tarifa_x_dolares']; 
+//     $price = ($locale == 'es') ? ($conversion->valor_x_moneda * $temporada['tarifa_x_dolares']) : $temporada['tarifa_x_dolares'];
 //     $currency = ($locale == 'es') ? 'MXN' : $temporada['currency'];
 //     if($temporada != null)
 //         return $price.' '.$currency;
