@@ -34,7 +34,7 @@
                 <div class="services-item">
                     <div class="item-photo">
                         <div class="photo-big" data-background="{{ asset('images/services/whats_service.png') }}"></div>
-                        <div class="photo-small" data-background="{{ asset('images/services/whats_service.png') }}"></div>
+                        <div class="photo-small" data-background="{{ asset('images/services/qr.png') }}"></div>
                         <a href="https://api.whatsapp.com/send?phone=529981221861" target="_blank" class="btn btn-default">IR A WHATSAPP</a>
                     </div>
                     <div class="item-desc">
@@ -47,7 +47,7 @@
                 <div class="services-item">
                     <div class="item-photo">
                         <div class="photo-big" data-background="{{ asset('images/services/transportation_service.png') }}"></div>
-                        <div class="photo-small" data-background="{{ asset('images/services/transportation_service.png') }}"></div>
+                        <div class="photo-small" data-background="{{ asset('images/services/beach.png') }}"></div>
                         <!--a href="#" class="btn btn-default">LEARN MORE</a-->
                     </div>
                     <div class="item-desc">
@@ -60,7 +60,7 @@
                 <div class="services-item">
                     <div class="item-photo">
                         <div class="photo-big" data-background="{{ asset('images/services/location_service.png') }}"></div>
-                        <div class="photo-small" data-background="{{ asset('images/services/location_service.png') }}"></div>
+                        <div class="photo-small" data-background="{{ asset('images/services/parking.png') }}"></div>
                         <!--a href="#" class="btn btn-default">LEARN MORE</a-->
                     </div>
                     <div class="item-desc">
@@ -72,7 +72,7 @@
                 <div class="services-item">
                     <div class="item-photo">
                         <div class="photo-big" data-background="{{ asset('images/services/room_service.png') }}"></div>
-                        <div class="photo-small" data-background="{{ asset('images/services/room_service.png') }}"></div>
+                        <div class="photo-small" data-background="{{ asset('images/services/asistencia.png') }}"></div>
                         <!--a href="#" class="btn btn-default">LEARN MORE</a-->
                     </div>
                     <div class="item-desc">
