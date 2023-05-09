@@ -22,7 +22,7 @@
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/owl.carousel.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/owl.theme.default.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery-ui.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/queen_morales.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/queen_osiris.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/mobile_master.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/home_test.css') }}">
 
@@ -106,14 +106,14 @@
 	<div class="modal fade " id="modal-login" tabindex="-1" role="dialog" aria-labelledby="modal-login" aria-hidden="true" ng-controller="LoginController">
 		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
 			<div class="modal-content modal-login-content">
-				<div class="modal-body py-0 px-0">
+				<div class="modal-body" style="padding: 0px;">
 					<!-- start login and recovery pass -->
-					<div class="row mx-0" >
+					<div class="row" style="margin:0px; background-color: #ae1857;display: flex; align-items: center;">
 						<div class="col-12 col-lg-6 logo-panel-login">
 							<div id="pseudo-element"></div>
 							<img src="{{ asset('/images/logos/club_estrella.png') }}"/>
 						</div>
-						<div class="col-12 col-lg-6">
+						<div class="col-12 col-lg-6" style="background-color: white;">
 							<div class="modal-header border-0 pb-0">
 								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 							</div>
@@ -124,16 +124,16 @@
 									<h5 class="mb-3">@lang('main.login-item001')</h5>
 									@csrf
 									<div id="login-error"></div>
-									<div class="mb-3">
+									<div style="margin-bottom: 10px;">
 										<input type="email" class="form-control" id="email" placeholder="@lang('main.login-item002')" name="email" required  data-val-required="The Username field is required.">
 									</div>
-									<div class="mb-4">
+									<div style="margin-bottom: 20px;">
 										<input type="password" class="form-control" id="login-password" placeholder="@lang('main.login-item003')" name="password" required  data-val-required="The Password field is required.">
 									</div>
-									<div class="mb-3">
+									<div style="margin-bottom: 10px;">
 										<button class="btn btn-dark w-100" id="login">@lang('main.login-item001')</button>
 									</div>
-									<div class="mb-4">
+									<div style="margin-bottom: 20px;">
 										<a type="button" id="evt-recovery" class="font-12 text-end d-block text-dark mb-3" target="_blank" href="https://clubestrella.mx/es/password/reset">@lang('main.login-item004')</a>
 										<a id="evt-create-account" class="font-12 text-end d-block text-dark mb-3" target="_blank" href="https://clubestrella.mx/es/register">@lang('main.login-item005')</a>
 									</div>

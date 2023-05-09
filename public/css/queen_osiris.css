@@ -3346,3 +3346,16 @@ a,
         margin-top: 80px;
     }
 }
+
+
+/* CLUBESTRELLA MODAL */
+
+.logo-panel-login{
+    background-color: #ae1857;
+}
+
+.logo-panel-login img{
+    width: 210px;
+    display: block;
+    margin: 0 auto;
+}
