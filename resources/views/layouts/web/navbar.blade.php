@@ -72,13 +72,13 @@
                 <ul class="nav-right" style="padding-left: 0px;">
 
                     <!--li><a href="booking.html">BOOKING</a></li-->
-                    <li class="sub"><a href="#">@lang('main.nav-services')</a>
-                        <ul class="simpson">
+                    <li><a href="{{ route('servicios', [App::getLocale()]) }}">@lang('main.nav-services')</a>
+                        <!--ul class="simpson">
                             <li><a href="#">HABITACIONES ADAPTADAS</a></li>
                             <li><a href="#">ESTACIONAMIENTO</a></li>
                             <li><a href="#">TRANSPORTACIÓN</a></li>
                             <li><a href="#">ASISTENCIA VIA WHATSAPP</a></li>
-                        </ul>
+                        </ul-->
                     </li>
                     <li><a href="{{ route('gallery', App::getLocale(), 0) }}">@lang('main.nav.gallery')</a></li>
                     <li><a href="{{ route('contact', ['locale' => App::getLocale()]) }}">@lang('main.nav-contact')</a></li>

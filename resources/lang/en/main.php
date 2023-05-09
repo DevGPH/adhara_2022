@@ -29,6 +29,7 @@ return [
     // BREADCRUMBS
     'breadcrumb.home' => 'HOME',
     'breadcrumb.rooms' => 'CUARTOS',
+    'breadcrumb.services' => 'SERVICES',
 
     //  BUSCADOR
     'booking.checkIn' => 'CHECK IN',

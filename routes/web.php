@@ -37,6 +37,7 @@ Route::prefix('{locale}')->group(function ()
     Route::get('/room_service',[HomeController::class,'roomService'])->name('room.service.hotel');
     Route::get('/grupos',[HomeController::class,'grupos'])->name('grupos.hotel');
     Route::get('/gallery',[HomeController::class,'gallery'])->name('gallery');
+    Route::get('/servicios',[HomeController::class,'servicios'])->name('servicios');
 
     Route::get('/reservations',[ReservaController::class,'reservations'])->name('reservations');
     Route::get('/reserva-response/{id?}',[ReservaController::class,'response'])->name('response.reserva');

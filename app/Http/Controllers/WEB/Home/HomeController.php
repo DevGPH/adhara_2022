@@ -142,6 +142,16 @@ class HomeController extends Controller
         ]);
     }
 
+    public function servicios($locale)
+    {
+        $rate = $this->rateToday($locale);
+        return view('storefront.servicios')->with([
+            'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
+            'id' => 0,
+            'rate' => $rate
+        ]);
+    }
+
     public function gallery($locale)
     {
         $rate = $this->rateToday($locale);
