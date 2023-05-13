@@ -36,12 +36,12 @@ class Habitacion extends Model
     protected function preview(): Attribute
     {
         $preview = '';
-        if ($this->categoria->tag_es == 'standar') {
-            $preview = '/images/rooms/room_estandar.png';
+        if ($this->categoria->tag_es == 'estandar') {
+            $preview = '/images/rooms/estandar_1.png';
         } else if ($this->categoria->tag_es == 'one-bedroom-suite') {
             $preview = '/images/rooms/room_suite.png';
         } else {
-            $preview = '/images/rooms/room_ejecutive.png';
+            $preview = '/images/rooms/ejecutiva_2.png';
         }
         return new Attribute(
             get: fn () => $preview,

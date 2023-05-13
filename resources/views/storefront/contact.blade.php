@@ -27,7 +27,7 @@
     <!-- Section Page Title -->
     <div class="section">
         <div class="widget-page-title">
-            <div class="widget-background" data-background="{{ asset('images/contacto/contacto.png') }}"></div>
+            <div class="widget-background" data-background="{{ asset('images/contacto/fondo.png') }}"></div>
             <div class="wrapper-inner">
                 <!-- Title -->
                 <h5>@lang('main.contact.touch')</h5>
@@ -68,16 +68,16 @@
                                 <h5>@lang('main.contact.reservaciones')</h5>
                                 <ul>
                                     <li>Ramón Lazo - Director de Reservaciones</li>
-                                    <li>WhatsApp: 998 122 1861</li>
+                                    <li>WhatsApp: (+52) 998 122 1861</li>
                                     <li><a href="mailto:reservaciones@gphoteles.com">reservaciones@gphoteles.com</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <h5>PUBLIC RELATIONS</h5>
+                                <h5>@lang('main.contact.sales')</h5>
                                 <ul>
-                                    <li>Ms. Marilyn Suttle - Public Relations Manager</li>
-                                    <li>Phone: +1-800-123-45-67  Fax: +1-800-123-45-67</li>
-                                    <li><a href="mailto:public.relations@thegrandiumhotel.com">public.relations@thegrandiumhotel.com</a></li>
+                                    <li>Fabiola Navarro - Sales Manager</li>
+                                    <li>WhatsApp: (+52) 998 241 1535</li>
+                                    <li><a href="mailto:ecommerce@gphoteles.com">ecommerce@gphoteles.com</a></li>
                                 </ul>
                             </li>
                         </ul>

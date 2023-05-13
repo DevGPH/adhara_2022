@@ -6,7 +6,7 @@
     <!-- Section Page Title -->
     <div class="section">
         <div class="widget-page-title">
-            <div class="widget-background" data-background="assets/img/photo-title.jpg"></div>
+            <div class="widget-background" data-background="{{ asset('images/services/fondo.png') }}"></div>
             <div class="wrapper-inner">
                 <!-- Title -->
                 <h5>Servicios</h5>
@@ -33,8 +33,8 @@
             <div class="widget-services-list">
                 <div class="services-item">
                     <div class="item-photo">
-                        <div class="photo-big" data-background="{{ asset('images/services/whats_service.png') }}"></div>
-                        <div class="photo-small" data-background="{{ asset('images/services/qr.png') }}"></div>
+                        <div class="photo-big" data-background="{{ asset('images/services/whats1.png') }}"></div>
+                        <div class="photo-small" data-background="{{ asset('images/services/whats2.png') }}"></div>
                         <a href="https://api.whatsapp.com/send?phone=529981221861" target="_blank" class="btn btn-default">IR A WHATSAPP</a>
                     </div>
                     <div class="item-desc">
@@ -46,8 +46,8 @@
                 </div>
                 <div class="services-item">
                     <div class="item-photo">
-                        <div class="photo-big" data-background="{{ asset('images/services/transportation_service.png') }}"></div>
-                        <div class="photo-small" data-background="{{ asset('images/services/beach.png') }}"></div>
+                        <div class="photo-big" data-background="{{ asset('images/services/transpor1.png') }}"></div>
+                        <div class="photo-small" data-background="{{ asset('images/services/transpor2.png') }}"></div>
                         <!--a href="#" class="btn btn-default">LEARN MORE</a-->
                     </div>
                     <div class="item-desc">
@@ -59,8 +59,8 @@
                 </div>
                 <div class="services-item">
                     <div class="item-photo">
-                        <div class="photo-big" data-background="{{ asset('images/services/location_service.png') }}"></div>
-                        <div class="photo-small" data-background="{{ asset('images/services/parking.png') }}"></div>
+                        <div class="photo-big" data-background="{{ asset('images/services/estacionamiento1.png') }}"></div>
+                        <div class="photo-small" data-background="{{ asset('images/services/estacionamiento2.png') }}"></div>
                         <!--a href="#" class="btn btn-default">LEARN MORE</a-->
                     </div>
                     <div class="item-desc">
@@ -71,8 +71,8 @@
                 </div>
                 <div class="services-item">
                     <div class="item-photo">
-                        <div class="photo-big" data-background="{{ asset('images/services/room_service.png') }}"></div>
-                        <div class="photo-small" data-background="{{ asset('images/services/asistencia.png') }}"></div>
+                        <div class="photo-big" data-background="{{ asset('images/services/especial1.png') }}"></div>
+                        <div class="photo-small" data-background="{{ asset('images/services/especial2.png') }}"></div>
                         <!--a href="#" class="btn btn-default">LEARN MORE</a-->
                     </div>
                     <div class="item-desc">

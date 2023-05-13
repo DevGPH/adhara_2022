@@ -216,6 +216,7 @@ return [
     'contact.touch' => 'GET IN TOUCH WITH US',
     'contact.form.title' => 'CONTACT FORM',
     'contact.form.label' => 'We are eager to hear from you; please fill in your contact information and one of our staff members will contact you shortly.',
+    'contact.sales' => 'SALES',
 
 
 

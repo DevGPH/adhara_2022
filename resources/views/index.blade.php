@@ -25,10 +25,10 @@
                         <div class="rooms-item">
                             <div class="item-inner">
                                 <div class="item-photo">
-                                    <a href="rooms-detail.html" data-background="{{ asset($room->preview) }}"></a>
+                                    <a href="#" data-background="{{ asset($room->preview) }}"></a>
                                 </div>
                                 <div class="item-desc">
-                                    <h2><a href="rooms-detail.html">{{ (App::getLocale() == 'es') ?  $room->categoria->nombre_es: $room->categoria->nombre_en }}</a></h2>
+                                    <h2><a href="#">{{ (App::getLocale() == 'es') ?  $room->categoria->nombre_es: $room->categoria->nombre_en }}</a></h2>
                                     <!--h3>$ 160.00</h3-->
                                     @if ($room->categoria->tag_es == 'estandar')
                                         <p> @lang('main.room-estandar')</p>

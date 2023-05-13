@@ -217,6 +217,7 @@ return [
     'contact.touch' => 'PONTE EN CONTACTO CON NOSOTROS',
     'contact.form.title' => 'FORMULARIO DE CONTACTO',
     'contact.form.label' => 'Estamos ansiosos por saber de usted; por favor complete su información de contacto y uno de los miembros de nuestro personal se pondrá en contacto con usted en breve.',
+    'contact.sales' => 'VENTAS',
 
 
 
