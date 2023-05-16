@@ -55,15 +55,15 @@
                             <li><a href="{{ route('rooms', ['locale' => App::getLocale(), 'id' => 8]) }}">{{ (App::getlocale() == 'es') ? 'Habitación Ejecutiva' : 'Ejecutive Room'}}</a></li>
                         </ul>
                     </li>
-                    <li class="sub"><a href="#">@lang('main.nav-hotel')</a>
-                        <ul class="simpson">
+                    <li><a href="{{ route('hotel.details', ['locale' => App::getLocale()]) }}">@lang('main.nav-hotel')</a>
+                        <!--ul class="simpson">
                             <li><a href="#">RESTAURANTE ADHARA GRILL</a></li>
                             <li><a href="#">PISCINA Y POOL & BAR</a></li>
                             <li><a href="#">EVENTOS EJECUTIVOS</a></li>
                             <li><a href="#">CENTRO DE NEGOCIOS</a></li>
                             <li><a href="#">TERRAZA</a></li>
                             <li><a href="#">GYM</a></li>
-                        </ul>
+                        </ul-->
                     </li>
                 </ul>
                 <ul>

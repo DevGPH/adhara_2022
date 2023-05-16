@@ -152,6 +152,16 @@ class HomeController extends Controller
         ]);
     }
 
+    public function hotel($locale)
+    {
+        $rate = $this->rateToday($locale);
+        return view('storefront.hotel_details')->with([
+            'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
+            'id' => 0,
+            'rate' => $rate
+        ]);
+    }
+
     public function gallery($locale)
     {
         $rate = $this->rateToday($locale);
