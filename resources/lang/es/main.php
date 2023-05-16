@@ -49,9 +49,8 @@ return [
 
     'index.location' => 'Ubicación Privilegiada',
     'index.hotel' => 'Hotel Adhara Cancún',
-    'index.hotel.item-1' => 'Ubicado convenientemente en el centro de Cancún, accesible a negocios, zona de entretenimiento, playas, discotecas, bares, farmacias, bancos y hospitales.',
-    'index.hotel.item-2' => 'Un moderno diseño especialmente orientado al ambiente de negocio, que ofrece: un restaurante de primera categoría, bar - lounge & terraza, gimnasio, alberca y salones de trabajo.',
-    'index.hotel.item-3' => 'Ubicación privilegiada en el centro de Cancún',
+    'index.hotel.item-1' => 'Ubicación privilegiada en el centro de Cancún, accesible a negocios, zonas de entretenimientos, playas, discotecas, bares, farmacias, bancos y hospitales.',
+    'index.hotel.item-2' => 'Un moderno diseño especialmente orientado al ambiente de negocios y estancias familiares, que ofrece: Un restaurante de primera categoría, piscina, pool bar, terraza para tomar alimentos al aire libre, un gimnasio moderno y equipado, salones para eventos corporativos, centro de negocios, jardín amplio y estacionamiento gratuito.',
 
     // SECCION DE HABITACIONS - VISTA HOME
     'room-estandar' => 'Habitación amplia que cuenta con Aire acondicionado, Wifi gratuito, Caja de Seguridad, Kit de Planchado, Hielera, 2 aguas de cortesía, Secadora de Cabello, ver más...',

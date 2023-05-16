@@ -60,7 +60,6 @@
                             <h2>@lang('main.index.hotel')</h2>
                             <p>@lang('main.index.hotel.item-1')</p>
                             <p>@lang('main.index.hotel.item-2')</p>
-                            <p>@lang('main.index.hotel.item-3')</p>
                             <!--a href="aboutus.html" class="btn">LEARN MORE</a-->
                         </div>
                     </div>
@@ -160,8 +159,8 @@
                         </a>
                     </div>
                     <div class="gallery-item">
-                        <a href="{{ asset('images/gallery/pool.png') }}" data-background="{{ asset('images/gallery/pool.png') }}" title="Piscina & bar" class="popup-gallery">
-                            <span class="item-text">Piscina & Bar</span>
+                        <a href="{{ asset('images/gallery/pool.png') }}" data-background="{{ asset('images/gallery/pool.png') }}" title="Piscina & Pool Bar" class="popup-gallery">
+                            <span class="item-text">Piscina & Pool Bar</span>
                         </a>
                     </div>
                     <div class="gallery-item">
@@ -317,7 +316,7 @@
                         <div class="item-media">
                             <!--div class="item-date"><img src="{{ asset('images/services/icon4.png') }}" alt=""></div-->
                             <div class="media-photo">
-                                <a href="blog-single.html" data-background="{{ asset('images/services/service3.png') }}"></a>
+                                <a href="blog-single.html" data-background="{{ asset('images/services/park_front.png') }}"></a>
                             </div>
                         </div>
                         <div class="item-desc">

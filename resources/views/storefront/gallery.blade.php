@@ -6,7 +6,7 @@
     <!-- Section Page Title -->
     <div class="section">
         <div class="widget-page-title">
-            <div class="widget-background" data-background="assets/img/photo-title.jpg"></div>
+            <div class="widget-background" data-background="{{ asset('images/gallery/fondo_galeria.png') }}"></div>
             <div class="wrapper-inner">
                 <!-- Title -->
                 <h5>DISCOVER THE GRANDIUM</h5>

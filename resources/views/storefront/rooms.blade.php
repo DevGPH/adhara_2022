@@ -55,8 +55,8 @@
                                         <a href="{{ asset('images/rooms/one3.png') }}" data-background="{{ asset('images/rooms/one3.png') }}" title="One BedRoom Room" class="popup-gallery"></a>
                                         <a href="{{ asset('images/rooms/one4.png') }}" data-background="{{ asset('images/rooms/one4.png') }}" title="One BedRoom Room" class="popup-gallery"></a>
                                     @elseif ($habitacion->categoria->tag_es == 'ejecutiva')
-                                        <a href="{{ asset('images/rooms/ejecutiva_1.png') }}" data-background="{{ asset('images/rooms/ejecutiva_1.png') }}" title="Ejecutive Room" class="popup-gallery"></a>
                                         <a href="{{ asset('images/rooms/ejecutiva_2.png') }}" data-background="{{ asset('images/rooms/ejecutiva_2.png') }}" title="Ejecutive Room" class="popup-gallery"></a>
+                                        <a href="{{ asset('images/rooms/ejecutiva_1.png') }}" data-background="{{ asset('images/rooms/ejecutiva_1.png') }}" title="Ejecutive Room" class="popup-gallery"></a>
                                         <a href="{{ asset('images/rooms/ejecutiva_3.png') }}" data-background="{{ asset('images/rooms/ejecutiva_3.png') }}" title="Ejecutive Room" class="popup-gallery"></a>
                                         <a href="{{ asset('images/rooms/ejecutiva_4.png') }}" data-background="{{ asset('images/rooms/ejecutiva_4.png') }}" title="Ejecutive Room" class="popup-gallery"></a>
                                     @endif
@@ -79,8 +79,8 @@
                                         <a href="#" data-background="{{ asset('images/rooms/one4.png') }}" title="One BedRoom Room"></a>
 
                                     @elseif ($habitacion->categoria->tag_es == 'ejecutiva')
-                                        <a href="#" data-background="{{ asset('images/rooms/ejecutiva_1.png') }}" title="Two BedRoom Room"></a>
                                         <a href="#" data-background="{{ asset('images/rooms/ejecutiva_2.png') }}" title="Two BedRoom Room"></a>
+                                        <a href="#" data-background="{{ asset('images/rooms/ejecutiva_1.png') }}" title="Two BedRoom Room"></a>
                                         <a href="#" data-background="{{ asset('images/rooms/ejecutiva_3.png') }}" title="Two BedRoom Room"></a>
                                         <a href="#" data-background="{{ asset('images/rooms/ejecutiva_4.png') }}" title="Two BedRoom Room"></a>
                                     @endif
