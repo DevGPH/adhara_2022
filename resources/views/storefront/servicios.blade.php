@@ -72,7 +72,7 @@
                 <div class="services-item">
                     <div class="item-photo">
                         <div class="photo-big" data-background="{{ asset('images/services/especial1.png') }}"></div>
-                        <div class="photo-small" data-background="{{ asset('images/services/especial2.png') }}"></div>
+                        <div class="photo-small" data-background="{{ asset('images/services/especial3.png') }}"></div>
                         <!--a href="#" class="btn btn-default">LEARN MORE</a-->
                     </div>
                     <div class="item-desc">

@@ -316,7 +316,7 @@
                         <div class="item-media">
                             <!--div class="item-date"><img src="{{ asset('images/services/icon4.png') }}" alt=""></div-->
                             <div class="media-photo">
-                                <a href="blog-single.html" data-background="{{ asset('images/services/park_front.png') }}"></a>
+                                <a href="blog-single.html" data-background="{{ asset('images/services/service5.png') }}"></a>
                             </div>
                         </div>
                         <div class="item-desc">
