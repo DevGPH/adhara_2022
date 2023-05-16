@@ -30,6 +30,7 @@ return [
     'breadcrumb.home' => 'HOME',
     'breadcrumb.rooms' => 'CUARTOS',
     'breadcrumb.services' => 'SERVICES',
+    'breadcrumb.gallery' => 'GALLERY',
 
     //  BUSCADOR
     'booking.checkIn' => 'CHECK IN',

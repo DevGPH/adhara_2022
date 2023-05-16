@@ -9,16 +9,15 @@
             <div class="widget-background" data-background="{{ asset('images/gallery/fondo_galeria.png') }}"></div>
             <div class="wrapper-inner">
                 <!-- Title -->
-                <h5>DISCOVER THE GRANDIUM</h5>
-                <h1>Gallery Page</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget commodo orci. Integer varius nibh eu mattis porta. Pellentesque dictum sem eget cursus semper. Nullam quis blandit lorem. Morbi blandit orci urna, eu congue magna faucibus at. In bibendum in mauris nec ultrices. Nunc et magna velit.</p>
+                <h5>DESCUBRE NUESTROS ESPACIOS</h5>
+                <h1>Galería Hotel Adhara Cancún </h1>
+                <p>Conoce nuestros espacios y enamórate de los detalles que hacen único nuestro Hotel.</p>
                 <!-- Title End -->
                 <!-- Breadcrumb -->
                 <div class="widget-breadcrumb">
                     <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">PAGES</a></li>
-                        <li>GALLERY PAGE</li>
+                        <li><a href="{{ route('inicio', App::getLocale()) }}">@lang('main.breadcrumb.home')</a></li>
+                        <li>@lang('main.breadcrumb.gallery')</li>
                     </ul>
                 </div>
                 <!-- Breadcrumb End -->
@@ -33,13 +32,13 @@
             <!-- Gallery Filter -->
             <div class="widget-filter-top">
                 <ul>
-                    <li class="active"><a href="#" data-filter="*">ALL PHOTOS</a></li>
-                    <li><a href="#" data-filter=".rooms">ROOMS</a></li>
-                    <li><a href="#" data-filter=".skybar">SKY BAR &amp; LOUNGE</a></li>
-                    <li><a href="#" data-filter=".welness">WELNESS &amp; SPA</a></li>
-                    <li><a href="#" data-filter=".restaurant">RESTAURANT</a></li>
-                    <li><a href="#" data-filter=".wedding">WEDDING</a></li>
-                    <li><a href="#" data-filter=".conference">CONFERENCE</a></li>
+                    <li class="active"><a href="#" data-filter="*">TODAS LAS FOTOS</a></li>
+                    <li><a href="#" data-filter=".rooms">HABITACIONES</a></li>
+                    <li><a href="#" data-filter=".restaurant">RESTAURANTE</a></li>
+                    <li><a href="#" data-filter=".welness">GIMNASIO</a></li>
+                    <li><a href="#" data-filter=".skybar">PISCINA & POOL BAR</a></li>
+                    <li><a href="#" data-filter=".conference">EVENTOS CORPORATIVOS</a></li>
+                    <!--li><a href="#" data-filter=".conference">CONFERENCE</a></li-->
                 </ul>
             </div>
             <!-- Gallery Filter End -->
@@ -48,10 +47,215 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item rooms">
                         <div class="gallery-item">
-                            <a href="assets/img/photo-gallery-1.jpg" data-background="assets/img/photo-gallery-1.jpg" title="Photo Name" class="popup-gallery"></a>
+                            <a href="{{ asset('images/gallery/1.png') }}" data-background="{{ asset('images/gallery/1.png') }}" title="Photo Name" class="popup-gallery"></a>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item skybar restaurant">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item rooms">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/2.png') }}" data-background="{{ asset('images/gallery/2.png') }}" title="Photo Name" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item rooms">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/3.png') }}" data-background="{{ asset('images/gallery/3.png') }}" title="Photo Name" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item rooms">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/4.png') }}" data-background="{{ asset('images/gallery/4.png') }}" title="Photo Name" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item rooms">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/5.png') }}" data-background="{{ asset('images/gallery/5.png') }}" title="Photo Name" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item rooms">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/6.png') }}" data-background="{{ asset('images/gallery/6.png') }}" title="Photo Name" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item restaurant">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/7.png') }}" data-background="{{ asset('images/gallery/7.png') }}" title="Photo Name" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item restaurant">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/8.png') }}" data-background="{{ asset('images/gallery/8.png') }}" title="Photo Name" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item restaurant">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/9.png') }}" data-background="{{ asset('images/gallery/9.png') }}" title="Photo Name" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item restaurant">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/10.png') }}" data-background="{{ asset('images/gallery/10.png') }}" title="Photo Name" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item restaurant">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/11.png') }}" data-background="{{ asset('images/gallery/11.png') }}" title="Photo Name" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item restaurant">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/12.png') }}" data-background="{{ asset('images/gallery/12.png') }}" title="Photo Name" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item restaurant">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/13.png') }}" data-background="{{ asset('images/gallery/13.png') }}" title="Photo Name" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item restaurant">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/14.png') }}" data-background="{{ asset('images/gallery/14.png') }}" title="Photo Name" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item restaurant">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/15.png') }}" data-background="{{ asset('images/gallery/15.png') }}" title="Photo Name" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item restaurant">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/16.png') }}" data-background="{{ asset('images/gallery/16.png') }}" title="Photo Name" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item restaurant">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/17.png') }}" data-background="{{ asset('images/gallery/17.png') }}" title="Photo Name" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item restaurant">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/18.png') }}" data-background="{{ asset('images/gallery/18.png') }}" title="Photo Name" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item welness">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/19.png') }}" data-background="{{ asset('images/gallery/19.png') }}" title="Photo Name" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item welness">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/20.png') }}" data-background="{{ asset('images/gallery/20.png') }}" title="Photo Name" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item welness">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/21.png') }}" data-background="{{ asset('images/gallery/21.png') }}" title="Photo Name" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item skybar">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/22.png') }}" data-background="{{ asset('images/gallery/22.png') }}" title="Photo Name" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item skybar">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/23.png') }}" data-background="{{ asset('images/gallery/23.png') }}" title="Photo Name" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item skybar">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/24.png') }}" data-background="{{ asset('images/gallery/24.png') }}" title="Photo Name" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item skybar">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/25.png') }}" data-background="{{ asset('images/gallery/25.png') }}" title="Photo Name" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item conference">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/26.png') }}" data-background="{{ asset('images/gallery/26.png') }}" title="Photo Name" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item skybar">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/27.png') }}" data-background="{{ asset('images/gallery/27.png') }}" title="Photo Name" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item skybar">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/28.png') }}" data-background="{{ asset('images/gallery/28.png') }}" title="Photo Name" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item skybar">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/29.png') }}" data-background="{{ asset('images/gallery/29.png') }}" title="Photo Name" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item skybar">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/30.png') }}" data-background="{{ asset('images/gallery/30.png') }}" title="Photo Name" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item restaurant">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/31.png') }}" data-background="{{ asset('images/gallery/31.png') }}" title="Photo Name" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item rooms">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/32.png') }}" data-background="{{ asset('images/gallery/32.png') }}" title="Photo Name" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item restaurant">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/33.png') }}" data-background="{{ asset('images/gallery/33.png') }}" title="Photo Name" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item conference">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/34.png') }}" data-background="{{ asset('images/gallery/34.png') }}" title="Photo Name" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item conference">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/35.png') }}" data-background="{{ asset('images/gallery/35.png') }}" title="Photo Name" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item skybar">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/36.png') }}" data-background="{{ asset('images/gallery/36.png') }}" title="Photo Name" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item skybar">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/37.png') }}" data-background="{{ asset('images/gallery/37.png') }}" title="Photo Name" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item conference">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/38.png') }}" data-background="{{ asset('images/gallery/38.png') }}" title="Photo Name" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item conference">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/39.png') }}" data-background="{{ asset('images/gallery/39.png') }}" title="Photo Name" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item conference">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/40.png') }}" data-background="{{ asset('images/gallery/40.png') }}" title="Photo Name" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item conference">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/41.png') }}" data-background="{{ asset('images/gallery/41.png') }}" title="Photo Name" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item conference">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/42.png') }}" data-background="{{ asset('images/gallery/42.png') }}" title="Photo Name" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <!--div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item skybar restaurant">
                         <div class="gallery-item">
                             <a href="assets/img/photo-gallery-6.jpg" data-background="assets/img/photo-gallery-6.jpg" title="Photo Name" class="popup-gallery"></a>
                         </div>
@@ -125,7 +329,7 @@
                         <div class="gallery-item">
                             <a href="assets/img/photo-gallery-4.jpg" data-background="assets/img/photo-gallery-4.jpg" title="Photo Name" class="popup-gallery"></a>
                         </div>
-                    </div>
+                    </div-->
                 </div>
             </div>
             <!-- Gallery List End -->
