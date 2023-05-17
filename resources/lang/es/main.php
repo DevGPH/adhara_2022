@@ -28,7 +28,7 @@ return [
     'mini-banner2-05' => 'Menores',
     'mini-banner2-06' => 'quitar',
     'mini-banner2-07' => 'años',
-    'mini-banner2-08' => 'Edad de los menores (0 a 12 años)',
+    'mini-banner2-08' => 'Edad de los menores (0 a 11 años)',
     'mini-banner2-09' => 'Fechas a Reservar',
 
 

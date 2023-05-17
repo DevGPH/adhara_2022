@@ -28,7 +28,7 @@ return [
     'mini-banner2-05' => 'Kids',
     'mini-banner2-06' => 'delete',
     'mini-banner2-07' => 'years',
-    'mini-banner2-08' => 'Age of minors (0 to 12 years)',
+    'mini-banner2-08' => 'Age of minors (0 to 11 years)',
     'mini-banner2-09' => 'Booking dates',
 
 
