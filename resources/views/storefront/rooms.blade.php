@@ -48,7 +48,7 @@
                                         <a href="{{ asset('images/rooms/estandar_1.png') }}" data-background="{{ asset('images/rooms/estandar_1.png') }}" title="Standar Room" class="popup-gallery"></a>
                                         <a href="{{ asset('images/rooms/estandar_2.png') }}" data-background="{{ asset('images/rooms/estandar_2.png') }}" title="Standar Room" class="popup-gallery"></a>
                                         <a href="{{ asset('images/rooms/estandar_3.png') }}" data-background="{{ asset('images/rooms/estandar_3.png') }}" title="Standar Room" class="popup-gallery"></a>
-                                        <a href="{{ asset('images/rooms/estandar_4.png') }}" data-background="{{ asset('images/rooms/estandar_4.png') }}" title="Standar Room" class="popup-gallery"></a>
+                                        <!--a href="{{ asset('images/rooms/estandar_4.png') }}" data-background="{{ asset('images/rooms/estandar_4.png') }}" title="Standar Room" class="popup-gallery"></a-->
                                     @elseif ($habitacion->categoria->tag_es == 'one-bedroom-suite')
                                         <a href="{{ asset('images/rooms/one1.png') }}" data-background="{{ asset('images/rooms/one1.png') }}" title="One BedRoom Room" class="popup-gallery"></a>
                                         <a href="{{ asset('images/rooms/one2.png') }}" data-background="{{ asset('images/rooms/one2.png') }}" title="One BedRoom Room" class="popup-gallery"></a>
@@ -70,7 +70,7 @@
                                         <a href="#" data-background="{{ asset('images/rooms/estandar_1.png') }}" title="Standar Room"></a>
                                         <a href="#" data-background="{{ asset('images/rooms/estandar_2.png') }}" title="Standar Room"></a>
                                         <a href="#" data-background="{{ asset('images/rooms/estandar_3.png') }}" title="Standar Room"></a>
-                                        <a href="#" data-background="{{ asset('images/rooms/estandar_4.png') }}" title="Standar Room"></a>
+                                        <!--a href="#" data-background="{{ asset('images/rooms/estandar_4.png') }}" title="Standar Room"></a-->
 
                                     @elseif ($habitacion->categoria->tag_es == 'one-bedroom-suite')
                                         <a href="#" data-background="{{ asset('images/rooms/one1.png') }}" title="One BedRoom Room"></a>
