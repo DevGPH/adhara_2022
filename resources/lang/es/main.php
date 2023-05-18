@@ -28,7 +28,7 @@ return [
 
     // BREADCRUMBS
     'breadcrumb.home' => 'INICIO',
-    'breadcrumb.rooms' => 'CUARTOS',
+    'breadcrumb.rooms' => 'HABITACIONES',
     'breadcrumb.services' => 'SERVICIOS',
     'breadcrumb.gallery' => 'GALERÍA',
 
@@ -138,7 +138,7 @@ return [
 
     // PAGINA HABITACIONES
     'room.title' => 'HABITACIÓN ',
-    'room.desc.title' => 'DESCRIPCIÓN DEL CUARTO',
+    'room.desc.title' => 'DESCRIPCIÓN DE LA HABITACIÓN',
     'room.booking' => 'RESERVA',
     'room.booking.room' => 'Reserva una habitación',
     'room.feafures.room' => 'Equipada con',

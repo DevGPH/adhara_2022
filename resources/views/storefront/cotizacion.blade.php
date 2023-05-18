@@ -6,18 +6,18 @@
     <!-- Section Page Title -->
     <div class="section">
         <div class="widget-page-title">
-            <div class="widget-background" data-background="assets/img/photo-title.jpg"></div>
+            <div class="widget-background" data-background="{{ asset('images/backgrounds/coitzacion_background.png') }}"></div>
             <div class="wrapper-inner">
                 <!-- Title -->
-                <h5>EXPERIENCE THE FREEDOM</h5>
+                <h5>LISTADO DE HABITACIONES</h5>
                 <h1>Rooms Page</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget commodo orci. Integer varius nibh eu mattis porta. Pellentesque dictum sem eget cursus semper. Nullam quis blandit lorem. Morbi blandit orci urna, eu congue magna faucibus at. In bibendum in mauris nec ultrices. Nunc et magna velit.</p>
+                <p>Descubre un refugio de elegancia y tranquilidad en Hotel Adhara Cancún. Habitaciones cuidadosamente diseñadas, atención personalizada, espacios relajantes y una ubicación ideal para explorar la ciudad.</p>
                 <!-- Title End -->
                 <!-- Breadcrumb -->
                 <div class="widget-breadcrumb">
                     <ul>
-                        <li><a href="{{ route('inicio', ['locale' => App::getLocale(), 'id' => 0]) }}">HOME</a></li>
-                        <li>ROOMS PAGE</li>
+                        <li><a href="{{ route('inicio', App::getLocale()) }}">@lang('main.breadcrumb.home')</a></li>
+                        <li>TEMPORADA - HABITACIÓN</li>
                     </ul>
                 </div>
                 <!-- Breadcrumb End -->

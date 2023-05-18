@@ -78,7 +78,7 @@
                     <div class="item-desc">
                         <h5>Habitaciones adaptadas</h5>
                         <h2>Para personas con movilidad reducida</h2>
-                        <p>En Hotel Adhara Cancún contamos con habitaciones que cuentan co las condiciones necesarias para personas con movilidad reducida dentro del sanitario y regadera</p>
+                        <p>Descubre nuestras habitaciones especiales para personas con movilidad reducida. Diseñadas pensando en tu comodidad, cuentan con baños adaptados,  amplios espacios y equipamiento especializado. Nuestro personal capacitado te brindará asistencia para asegurarte una estancia sin preocupaciones. Reserva una de nuestras habitaciones y disfruta de la comodidad y seguridad que necesitas. En Hotel Adhara Cancún, la inclusión y satisfacción de nuestros huéspedes son lo más importante.</p>
                     </div>
                 </div>
                 <!--div class="services-item">

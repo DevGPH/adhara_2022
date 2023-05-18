@@ -15,19 +15,18 @@
     <!-- Section Page Title -->
     <div class="section">
         <div class="widget-page-title">
-            <div class="widget-background" data-background="assets/img/photo-title.jpg"></div>
+            <div class="widget-background" data-background="{{ asset('images/backgrounds/reserva_background.png') }}"></div>
             <div class="wrapper-inner">
                 <!-- Title -->
-                <h5>STAY THE GRANDIUM</h5>
-                <h1>Booking Page</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget commodo orci. Integer varius nibh eu mattis porta. Pellentesque dictum sem eget cursus semper. Nullam quis blandit lorem. Morbi blandit orci urna, eu congue magna faucibus at. In bibendum in mauris nec ultrices. Nunc et magna velit.</p>
+                <!--h5>STAY THE GRANDIUM</h5-->
+                <h1>Formulario de Reserva</h1>
+                <p>¡Listo para crear recuerdos maravillosos! Revisa tus datos antes de reservar y asegúrate de que todo esté perfecto. ¡Descubre la magia de Hotel Adhara Cancún y disfruta de una estancia encantadora!</p>
                 <!-- Title Emd -->
                 <!-- Breadcrumb -->
                 <div class="widget-breadcrumb">
                     <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">PAGES</a></li>
-                        <li>BOOKING PAGE</li>
+                        <li><a href="{{ route('inicio', App::getLocale()) }}">@lang('main.breadcrumb.home')</a></li>
+                        <li>RESERVA</li>
                     </ul>
                 </div>
                 <!-- Breadcrumb End -->
