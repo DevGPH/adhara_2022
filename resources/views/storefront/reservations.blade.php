@@ -3,12 +3,12 @@
 @section('content')
 
 @if (session('error'))
-    <div class="alert alert-danger" style="position:absolute">
+    <div class="alert alert-danger" style="position:absolute;z-index:100;">
         {{ session('error') }}
     </div>
 @endif
 @error('condiciones')
-    <div class="alert alert-danger" style="position:absolute">{{ $message }}</div>
+    <div class="alert alert-danger" style="position:absolute;z-index:100;">{{ $message }}</div>
 @enderror
 
 <div class="site-main">
@@ -44,30 +44,31 @@
                         <div class="col-lg-8 col-md-7">
                             <!-- Booking Complete -->
                             <div class="booking-complete">
-                                <h5>BOOKING</h5>
-                                <h2>Your Reservation Completed</h2>
+                                <h5>RESERVA AHORA</h5>
+                                <h2>Información Personal</h2>
                                 <div class="complete-message">
-                                    <i class="fa fa-check"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget commodo orci. Integer varius nibh eu mattis porta. Pellentesque dictum sem eget cursus semper.
+                                    <i class="fa fa-check"></i>
+                                    Llena todos los campos correctamente con tu información para completar el registro de tu reserva. Revisa bien que tus datos sean correctos antes de continuar.
                                 </div>
                             </div>
                             <!-- Booking Complete End -->
                             <!-- Booking Form -->
                             <div class="booking-form">
-                                <h5>BOOKING FORM</h5>
-                                <h2>Personal Info</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget commodo orci. Integer varius nibh eu mattis porta. Pellentesque dictum sem eget cursus semper.</p>
+                                <h5>RESERVA AHORA</h5>
+                                <h2>Información Personal</h2>
+                                <p>Llena todos los campos correctamente con tu información para completar el registro de tu reserva. Revisa bien que tus datos sean correctos antes de continuar.</p>
                                 <div class="data-form">
-                                    <form action="booking.php" id="booking-form" method="POST">
+                                    <form action="{{ route('book.reserve',[App::getLocale()]) }}" id="booking-form" method="POST">
                                         @csrf
                                         <input type="hidden" name="form-room" value="Royal Single Room">
                                         <div class="row">
-                                            <div class="col-md-6">
+                                            <!--div class="col-md-6">
                                                 <i class="fa fa-calendar-plus-o"></i>
-                                                <input type="text" name="form-checkin" id="form-checkin" value="04/20/2016" placeholder="CHECK IN" class="datepicker">
+                                                <input type="text" name="form-checkin" id="form-checkin" value="{{$checkIn}}" class="datepicker" readonly>
                                             </div>
                                             <div class="col-md-6">
                                                 <i class="fa fa-calendar-plus-o"></i>
-                                                <input type="text" name="form-checkout" id="form-checkout" value="05/22/2016" placeholder="CHECK OUT" class="datepicker">
+                                                <input type="text" name="form-checkout" id="form-checkout" value="{{ $checkOut}}" class="datepicker" readonly>
                                             </div>
                                             <div class="col-md-6">
                                                 <i class="fa fa-caret-down"></i>
@@ -86,33 +87,38 @@
                                                     <option value="2">2 CHILDREN</option>
                                                     <option value="3">3 CHILDREN</option>
                                                 </select>
+                                            </div-->
+                                            <div class="col-md-6">
+                                                <input type="text" name="nombre" id="form-name" placeholder="@lang('main.reserve.name')" value="{{ ($clubestrella != null) ? $clubestrella->name : '' }}">
                                             </div>
                                             <div class="col-md-6">
-                                                <input type="text" name="form-name" id="form-name" placeholder="YOUR NAME">
+                                                <input type="text" name="apellidos" id="form-surname" placeholder="@lang('main.reserve.lastname')" value="{{ ($clubestrella != null) ? $clubestrella->lastname : '' }}">
                                             </div>
                                             <div class="col-md-6">
-                                                <input type="text" name="form-surname" id="form-surname" placeholder="YOUR SURNAME">
+                                                <input type="text" name="email" id="form-email" placeholder="@lang('main.reserve.email')" value="{{ ($clubestrella != null) ? $clubestrella->email : '' }}">
                                             </div>
                                             <div class="col-md-6">
-                                                <input type="text" name="form-email" id="form-email" placeholder="YOUR EMAIL ADDRESS">
+                                                <input type="text" name="telefono" id="form-phone" placeholder="@lang('main.reserve.phone')" value="{{ ($clubestrella != null) ? $clubestrella->number : '' }}">
                                             </div>
                                             <div class="col-md-6">
-                                                <input type="text" name="form-phone" id="form-phone" placeholder="YOUR PHONE">
+                                                <input type="text" name="ciudad" id="form-address1" placeholder="@lang('main.reserve.city')" value="{{ ($clubestrella != null) ? $clubestrella->city : '' }}">
                                             </div>
                                             <div class="col-md-6">
-                                                <input type="text" name="form-address1" id="form-address1" placeholder="ADDRESS LINE 1">
+                                                <input type="text" name="estado_region" id="form-address2" placeholder="@lang('main.reserve.state')" value="{{ ($clubestrella != null) ? $clubestrella->state : '' }}">
                                             </div>
                                             <div class="col-md-6">
-                                                <input type="text" name="form-address2" id="form-address2" placeholder="ADDRESS LINE 2">
+                                                <select name="pais_id" id="form-adults">
+                                                    <option value="" selected>@lang('main.reserve.country')</option>
+                                                    <option value="1">USA</option>
+                                                    <option value="2">MÉXICO</option>
+                                                    <option value="3">OTRO</option>
+                                                </select>
                                             </div>
-                                            <div class="col-md-6">
-                                                <input type="text" name="form-city" id="form-city" placeholder="CITY">
-                                            </div>
-                                            <div class="col-md-6">
+                                            <!--div class="col-md-6">
                                                 <input type="text" name="form-country" id="form-country" placeholder="COUNTRY">
-                                            </div>
+                                            </div-->
                                             <div class="col-md-12">
-                                                <textarea cols="6" rows="8" name="form-requirements" id="form-requirements" placeholder="SPECIAL REQUIREMENTS"></textarea>
+                                                <textarea cols="6" rows="8" name="comentarios" id="form-requirements" placeholder="@lang('main.reserve.details')"></textarea>
                                             </div>
                                             <div class="col-md-12">
                                                <p>
@@ -155,11 +161,17 @@
                         <div class="col-lg-4 col-md-5">
                             <!-- Booking Detail -->
                             <div class="booking-detail">
-                                <h5>BOOKING DETAILS</h5>
-                                <h2>Selected Room</h2>
+                                <h5>INFORMACIÓN SOBRE</h5>
+                                <h2>Habitación Seleccionada</h2>
                                 <div class="detail-room">
                                     <div class="room-photo">
-                                        <a href="rooms-detail.html" data-background="assets/img/photo-room-5.jpg"></a>
+                                        @if ($habitacion->categoria->tag_es == 'estandar')
+                                            <a href="#" data-background="{{ asset('images/rooms/estandar_1.png') }}"></a>
+                                        @elseif ($habitacion->categoria->tag_es == 'one-bedroom-suite')
+                                            <a href="#" data-background="{{ asset('images/rooms/one1.png') }}"></a>
+                                        @elseif ($habitacion->categoria->tag_es == 'ejecutiva')
+                                            <a href="#" data-background="{{ asset('images/rooms/ejecutiva_2.png') }}"></a>
+                                        @endif
                                     </div>
                                     <div class="room-desc">
                                         <h3><a href="rooms-detail.html">{{ $habitacion->categoria->nombre_es }}</a></h3>
@@ -169,31 +181,31 @@
                                 <div class="detail-info">
                                     <ul>
                                         <li>
-                                            <label>CHECK IN</label>
+                                            <label>@lang('main.reserve.checkIn')</label>
                                             <p>{{ $checkIn }}</p>
                                         </li>
                                         <li>
-                                            <label>CHECK OUT</label>
+                                            <label>@lang('main.reserve.checkOut')</label>
                                             <p>{{ $checkOut }}</p>
                                         </li>
                                         <li>
-                                            <label>ADULTS</label>
+                                            <label>@lang('main.reserve.adults')</label>
                                             <p>{{ $_tot_adultos }}</p>
                                         </li>
                                         <li>
-                                            <label>CHILDRENS</label>
+                                            <label>@lang('main.reserve.kids')</label>
                                             <p>{{ $_tot_infantes }}</p>
                                         </li>
                                         <li>
-                                            <label>NIGHT</label>
+                                            <label>@lang('main.reserve.night')</label>
                                             <p>{{ $noches }}</p>
                                         </li>
                                         <li>
-                                            <label>TAX (10%)</label>
-                                            <p>$ 50</p>
+                                            <!--label>TAX (10%)</label>
+                                            <p>$ 50</p-->
                                         </li>
                                         <li class="total">
-                                            <label>TOTAL PRICE</label>
+                                            <label>@lang('main.reserve.price')</label>
                                             <p>$ {{ $total }}</p>
                                         </li>
                                     </ul>
@@ -202,11 +214,11 @@
                             <!-- Booking Detail End -->
                             <!-- Booking Help -->
                             <div class="booking-help">
-                                <h5>HELP</h5>
-                                <h2>Need Booking Help?</h2>
-                                <p>If you need help with booking, Our advisor team are 24/7 at your service to help you.</p>
-                                <p><a href="mailto:help@thegrandiumhotel.com">help@thegrandiumhotel.com</a></p>
-                                <h3><i class="fa fa-phone-square"></i>1-800-123-45-67</h3>
+                                <h5>@lang('main.reserve.help')</h5>
+                                <h2>@lang('main.reserve.help.title')</h2>
+                                <p>@lang('main.reserve.help.text')</p>
+                                <p><a href="mailto:reservaciones@gphoteles.com">reservaciones@gphoteles.com</a></p>
+                                <h3 style="font-size: 20px;"><i class="fa fa-phone-square"></i>998 881 6500 EXT. 6503</h3>
                             </div>
                             <!-- Booking Help End -->
                         </div>

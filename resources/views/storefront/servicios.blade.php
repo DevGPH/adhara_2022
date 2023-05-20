@@ -33,8 +33,8 @@
             <div class="widget-services-list">
                 <div class="services-item">
                     <div class="item-photo">
-                        <div class="photo-big" data-background="{{ asset('images/services/whats1.png') }}"></div>
-                        <div class="photo-small" data-background="{{ asset('images/services/whats2.png') }}"></div>
+                        <div class="photo-big" data-background="{{ asset('images/services/whats3.png') }}"></div>
+                        <div class="photo-small" data-background="{{ asset('images/services/whats4.png') }}"></div>
                         <a href="https://api.whatsapp.com/send?phone=529981221861" target="_blank" class="btn btn-default">IR A WHATSAPP</a>
                     </div>
                     <div class="item-desc">
@@ -66,7 +66,8 @@
                     <div class="item-desc">
                         <h5>Estacionamiento</h5>
                         <h2>Amplio y gratuito</h2>
-                        <p>Contamos con un seguro y amplio estacionamiento privado para recibir todo tipo de vehículos. Si eres nuestro huésped pregunta por nuestro área de estacionamiento exclusiva, donde contamos con vigilancia las 24 Hrs. En la parte posterior del hotel. </p>
+                        <p>Como huésped valioso, queremos garantizar su comodidad, seguridad y tranquilidad durante su estadía con nosotros. Nuestro estacionamiento ofrece una variedad de beneficios, diseñados para mejorar su experiencia general: </p>
+                        <p>Nuestro estacionamiento está convenientemente ubicado en el lugar, lo que le permite acceder fácilmente a su vehículo durante su estadía. Puede estacionar su automóvil a solo unos pasos de la entrada del hotel, lo que minimiza la molestia de buscar estacionamiento en áreas concurridas. Tenga la seguridad de que su vehículo estará resguardado en nuestro estacionamiento privado ya que implementamos medidas de seguridad integrales, que incluyen cámaras de vigilancia, patrullas periódicas y acceso controlado.</p>
                     </div>
                 </div>
                 <div class="services-item">

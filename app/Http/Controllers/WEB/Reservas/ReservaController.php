@@ -317,6 +317,8 @@ class ReservaController extends Controller
             $currency = 'MXN';
         }
 
+        $clubestrella = (Cookie::get('user') !== null) ? json_decode(Cookie::get('user')) : null;
+
         return view('storefront.reservations',[
             'paises' => $paises,
             'habitaciones' =>  $request->cuartos,
@@ -337,7 +339,8 @@ class ReservaController extends Controller
             'habitacion' => $habitacion,
             'id' => 0,
             'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
-            'rate' => $rate
+            'rate' => $rate,
+            'clubestrella' => $clubestrella
         ]);
 
     }
@@ -380,7 +383,7 @@ class ReservaController extends Controller
                     'currency' => $request->currency,
                     'comentarios' => $request->comentarios,
                     'hotel_id' => 2,
-                    'payment' => $request->metodo_pago, #pago_seguro , pago_destino
+                    'payment' => 'pago_seguro', //$request->metodo_pago, #pago_seguro , pago_destino
                     'login' => ($request->cookie('user') !== null )?1:0,//verificar si existe la cookie para saber si esta logueado
                     'lang' => App::getLocale()
         ]);

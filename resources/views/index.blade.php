@@ -25,10 +25,10 @@
                         <div class="rooms-item">
                             <div class="item-inner">
                                 <div class="item-photo">
-                                    <a href="#" data-background="{{ asset($room->preview) }}"></a>
+                                    <a href="{{ route('rooms',[App::getLocale(),$room->id]) }}" data-background="{{ asset($room->preview) }}"></a>
                                 </div>
                                 <div class="item-desc">
-                                    <h2><a href="#">{{ (App::getLocale() == 'es') ?  $room->categoria->nombre_es: $room->categoria->nombre_en }}</a></h2>
+                                    <h2><a href="{{ route('rooms',[App::getLocale(),$room->id]) }}">{{ (App::getLocale() == 'es') ?  $room->categoria->nombre_es: $room->categoria->nombre_en }}</a></h2>
                                     <!--h3>$ 160.00</h3-->
                                     @if ($room->categoria->tag_es == 'estandar')
                                         <p> @lang('main.room-estandar')</p>
@@ -286,11 +286,11 @@
                         <div class="item-media">
                             <!--div class="item-date"><img src="{{ asset('images/services/icon.png') }}" alt=""></div-->
                             <div class="media-photo">
-                                <a href="blog-single.html" data-background="{{ asset('images/services/movile.png') }}"></a>
+                                <a href="https://api.whatsapp.com/send?phone=529981221861" data-background="{{ asset('images/services/movile.png') }}"></a>
                             </div>
                         </div>
                         <div class="item-desc">
-                            <h3><a href="blog-single.html">Asistencia vía WhatsApp</a></h3>
+                            <h3><a href="https://api.whatsapp.com/send?phone=529981221861">Asistencia vía WhatsApp</a></h3>
                             <h5>Una respuesta inmediata para ti</h5>
                             <p>Ponemos a tu disposición asistencia inmediata vía WhatsApp, ahora todo es mas cómodo, fácil y sencillo, sólo enviamos un mensaje al número 998 122 1861…</p>
                             <a href="https://api.whatsapp.com/send?phone=529981221861" target="_blank" class="btn-link">MÁS INFORMACIÓN</a>
@@ -300,44 +300,44 @@
                         <div class="item-media">
                             <!--div class="item-date"><img src="{{ asset('images/services/icon3.png') }}" alt=""></div-->
                             <div class="media-photo">
-                                <a href="blog-single.html" data-background="{{ asset('images/services/service2.png') }}"></a>
+                                <a href="{{ route('servicios',[App::getLocale()]) }}" data-background="{{ asset('images/services/service2.png') }}"></a>
                             </div>
                         </div>
                         <div class="item-desc">
-                            <h3><a href="blog-single.html">Transportación incluida</a></h3>
+                            <h3><a href="{{ route('servicios',[App::getLocale()]) }}">Transportación incluida</a></h3>
                             <h5>nosotros te llevamos gratis</h5>
                             <p>Todos los huéspedes de nuestro hotel tienen incluido el servicio de transportación de:</p>
                             <p>Hotel - Playa - Hotel.</p>
                             <p>Hotel - Aeropuerto Internacional de Cancún.</p>
-                            <a href="blog-single.html" class="btn-link">MÁS INFORMACIÓN</a>
+                            <a href="{{ route('servicios',[App::getLocale()]) }}" class="btn-link">MÁS INFORMACIÓN</a>
                         </div>
                     </div>
                     <div class="blog-item">
                         <div class="item-media">
                             <!--div class="item-date"><img src="{{ asset('images/services/icon4.png') }}" alt=""></div-->
                             <div class="media-photo">
-                                <a href="blog-single.html" data-background="{{ asset('images/services/service5.png') }}"></a>
+                                <a href="{{ route('servicios',[App::getLocale()]) }}" data-background="{{ asset('images/services/service5.png') }}"></a>
                             </div>
                         </div>
                         <div class="item-desc">
-                            <h3><a href="blog-single.html">Estacionamiento</a></h3>
+                            <h3><a href="{{ route('servicios',[App::getLocale()]) }}">Estacionamiento</a></h3>
                             <h5>amplio y gratuito</h5>
                             <p>Contamos con un seguro y amplio estacionamiento privado, para recibir todo tipo de vehículos.</p>
-                            <a href="blog-single.html" class="btn-link">MÁS INFORMACIÓN</a>
+                            <a href="{{ route('servicios',[App::getLocale()]) }}" class="btn-link">MÁS INFORMACIÓN</a>
                         </div>
                     </div>
                     <div class="blog-item">
                         <div class="item-media">
                             <!--div class="item-date"><img src="{{ asset('images/services/icon2.png') }}" alt=""></div-->
                             <div class="media-photo">
-                                <a href="blog-single.html" data-background="{{ asset('images/services/baño.png') }}"></a>
+                                <a href="{{ route('servicios',[App::getLocale()]) }}" data-background="{{ asset('images/services/baño.png') }}"></a>
                             </div>
                         </div>
                         <div class="item-desc">
-                            <h3><a href="blog-single.html">Habitaciones adaptadas</a></h3>
+                            <h3><a href="{{ route('servicios',[App::getLocale()]) }}">Habitaciones adaptadas</a></h3>
                             <h5>para personas con movilidad reducida</h5>
                             <p>En Hotel Adhara Cancún contamos con habitaciones que cuentan con las condiciones necesarias para personas con movilidad reducida dentro del sanitario y regadera…</p>
-                            <a href="blog-single.html" class="btn-link">MÁS INFORMACIÓN</a>
+                            <a href="{{ route('servicios',[App::getLocale()]) }}" class="btn-link">MÁS INFORMACIÓN</a>
                         </div>
                     </div>
                     <!--div class="blog-item">
