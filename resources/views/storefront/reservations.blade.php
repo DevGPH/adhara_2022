@@ -174,7 +174,7 @@
                                         @endif
                                     </div>
                                     <div class="room-desc">
-                                        <h3><a href="rooms-detail.html">{{ $habitacion->categoria->nombre_es }}</a></h3>
+                                        <h3><a href="#">{{ $habitacion->categoria->nombre_es }}</a></h3>
                                         <h4>$ {{ $total }} <small>total</small></h4>
                                     </div>
                                 </div>

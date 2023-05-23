@@ -9,9 +9,9 @@
             <div class="widget-background" data-background="{{ asset('images/hotel_detalles/fondo_hotel.png') }}"></div>
             <div class="wrapper-inner">
                 <!-- Title -->
-                <h5>Servicios</h5>
-                <h1>Especiales para ti</h1>
-                <p>Crear una buena experiencia para tus vacaciones no ocurre por coincidencia. Ocurre por que nos esforzamos de hacerlo realidad con magia en cada detalle.</p>
+                <h5>Una estancia mas agradable</h5>
+                <h1>Servicios</h1>
+                <p>Nuestros servicios aseguran que los huéspedes tengan una experiencia completa y satisfactoria durante su estadía, brindándoles opciones para relajarse, mantenerse en forma, disfrutar de deliciosos desayunos al aire libre y atender sus necesidades laborales.</p>
                 <!-- Title End -->
                 <!-- Breadcrumb -->
                 <div class="widget-breadcrumb">
@@ -33,80 +33,82 @@
             <div class="widget-services-list">
                 <div class="services-item">
                     <div class="item-photo">
-                        <div class="photo-big" data-background="{{ asset('images/services/whats1.png') }}"></div>
-                        <div class="photo-small" data-background="{{ asset('images/services/whats2.png') }}"></div>
-                        <a href="https://api.whatsapp.com/send?phone=529981221861" target="_blank" class="btn btn-default">IR A WHATSAPP</a>
+                        <div class="photo-big" data-background="{{ asset('images/hotel_detalles/1.png') }}"></div>
+                        <div class="photo-small" data-background="{{ asset('images/hotel_detalles/11.png') }}"></div>
+                        <!--a href="https://api.whatsapp.com/send?phone=529981221861" target="_blank" class="btn btn-default">IR A WHATSAPP</a-->
                     </div>
                     <div class="item-desc">
-                        <h5>Asistencia vía WhatsApp</h5>
-                        <h2>Una respuesta inmediata para ti</h2>
-                        <p>Ahora todo es más cómodo, fácil y sencillo por WhatsApp, hemos puesto a tu disposición asistencia inmediata vía WhatsApp, ahora todo es más cómodo, fácil y sencillo, sólo envíanos un mensaje al número: 998 122 1861. Después de enviarnos un mensaje deberá elegir en nuestro menú de opciones el servicio u opción que requiera tales como:  Servicio al huésped, reservaciones, eventos, grupos u/o tours.</p>
-                        <p>Le recordamos que toda la información usada por este medio, está protegida por nuestro aviso de privacidad.</p>
+                        <h5>Piscina & Pool Bar</h5>
+                        <h2>Oasis de relajación y diversión.</h2>
+                        <p>Nuestra piscina es un oasis de relajación y diversión. Ubicada en un hermoso entorno tropical, de un tamaño generoso, con aguas cristalinas y una temperatura perfecta para disfrutar de un refrescante chapuzón.</p>
+                        <p>El Pool Bar cuenta con cómodos taburetes y mesas al aire libre, perfectos para socializar y disfrutar de una charla amena con amigos o seres queridos. Además de las bebidas, el bar también ofrece una variedad de aperitivos y refrigerios para satisfacer los antojos de los huéspedes.</p>
                     </div>
                 </div>
                 <div class="services-item">
                     <div class="item-photo">
-                        <div class="photo-big" data-background="{{ asset('images/services/transpor1.png') }}"></div>
-                        <div class="photo-small" data-background="{{ asset('images/services/transpor2.png') }}"></div>
+                        <div class="photo-big" data-background="{{ asset('images/hotel_detalles/2.png') }}"></div>
+                        <div class="photo-small" data-background="{{ asset('images/hotel_detalles/22.png') }}"></div>
                         <!--a href="#" class="btn btn-default">LEARN MORE</a-->
                     </div>
                     <div class="item-desc">
-                        <h5>Transportación incluida </h5>
-                        <h2>Nosotros te llevamos gratis</h2>
-                        <p>Todos los huéspedes de nuestro hotel tienen incluido el servicio de transportación de: <br> Hotel - Playa - Hotel <br> Hotel - Aeropuerto Internacional de Cancún.</p>
-                        <p>Este servicio solo aplica reservando tu estancia en nuestro sitio web: www.adharacancun.com o vía WhatsApp* Este servicio está sujeto a disponibilidad y horario* Reserva con nosotros y agenda tu transporte con anticipación* Aplican restricciones*</p>
+                        <h5>Restaurante Adhara Grill</h5>
+                        <h2>Cocina con magia</h2>
+                        <p>Te invitamos a disfrutar en nuestro restaurante con buffet incluido en tu estancia. Es un lugar encantador que ofrece una experiencia culinaria llena de auténticos sabores mexicanos ideal para aquellos que disfrutan de los sabores típicos y platillos tanto clásicos como contemporáneos. </p>
+                        <p>También contamos con una variedad de pan recién horneado en casa. Platillos especiales del chef y una variedad de bebidas para todos los gustos.</p>
                     </div>
                 </div>
                 <div class="services-item">
                     <div class="item-photo">
-                        <div class="photo-big" data-background="{{ asset('images/services/park_intern.png') }}"></div>
-                        <div class="photo-small" data-background="{{ asset('images/services/estacionamiento2.png') }}"></div>
+                        <div class="photo-big" data-background="{{ asset('images/hotel_detalles/3.png') }}"></div>
+                        <div class="photo-small" data-background="{{ asset('images/hotel_detalles/33.png') }}"></div>
                         <!--a href="#" class="btn btn-default">LEARN MORE</a-->
                     </div>
                     <div class="item-desc">
-                        <h5>Estacionamiento</h5>
-                        <h2>Amplio y gratuito</h2>
-                        <p>Contamos con un seguro y amplio estacionamiento privado para recibir todo tipo de vehículos. Si eres nuestro huésped pregunta por nuestro área de estacionamiento exclusiva, donde contamos con vigilancia las 24 Hrs. En la parte posterior del hotel. </p>
+                        <h5>Adhara eventos</h5>
+                        <h2>Hacemos magia en cada evento</h2>
+                        <p>Contamos con una opción ideal para aquellos que buscan organizar reuniones de negocios, conferencias o eventos corporativos de alto nivel. Nuestros salones se encuentran adaptados específicamente para brindar un entorno profesional y elegante que se adapte a las necesidades de los ejecutivos y empresarios.</p>
+                        <p>Los salones pueden adaptarse a diferentes configuraciones según los requisitos del evento. Puede ser acomodado en formato de sala de juntas, según la preferencia y la dinámica de la reunión. Además ofrecemos opciones de menús personalizables que van desde desayunos, coffee breaks o comidas. Los alimentos y bebidas son preparados con calidad y presentación, brindando opciones saludables y deliciosas para los asistentes.</p>
                     </div>
                 </div>
                 <div class="services-item">
                     <div class="item-photo">
-                        <div class="photo-big" data-background="{{ asset('images/services/especial1.png') }}"></div>
-                        <div class="photo-small" data-background="{{ asset('images/services/especial2.png') }}"></div>
+                        <div class="photo-big" data-background="{{ asset('images/hotel_detalles/4.png') }}"></div>
+                        <div class="photo-small" data-background="{{ asset('images/hotel_detalles/44.png') }}"></div>
                         <!--a href="#" class="btn btn-default">LEARN MORE</a-->
                     </div>
                     <div class="item-desc">
-                        <h5>Habitaciones adaptadas</h5>
-                        <h2>Para personas con movilidad reducida</h2>
-                        <p>En Hotel Adhara Cancún contamos con habitaciones que cuentan co las condiciones necesarias para personas con movilidad reducida dentro del sanitario y regadera</p>
-                    </div>
-                </div>
-                <!--div class="services-item">
-                    <div class="item-photo">
-                        <div class="photo-big" data-background="assets/img/photo-services-5-1.jpg"></div>
-                        <div class="photo-small" data-background="assets/img/photo-services-5-2.jpg"></div>
-                        <a href="#" class="btn btn-default">LEARN MORE</a>
-                    </div>
-                    <div class="item-desc">
-                        <h5>OUR FACILITIES</h5>
-                        <h2>Spa &amp; Beauty Center</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget commodo orci. Integer varius nibh eu mattis porta. Pellentesque dictum sem eget cursus semper. Nullam quis blandit lorem.</p>
-                        <p>Pellentesque dictum sem eget cursus semper. Nullam quis blandit lorem. Morbi blandit orci urna, eu congue magna faucibus at. In bibendum in mauris nec ultrices.</p>
+                        <h5>Centro de negocios</h5>
+                        <h2>Espacio ideal para trabajar</h2>
+                        <p>El servicio de centro de negocios es una facilidad indispensable para aquellos que viajan por motivos de trabajo o necesitan llevar a cabo tareas empresariales durante su estadía en nuestro hotel. Este centro proporciona un entorno profesional y funcional, equipado con las herramientas y servicios necesarios para satisfacer las necesidades de los huéspedes de negocios.</p>
+                        <p>Nuestro centro de negocios está diseñado para ofrecer un espacio tranquilo y adecuado para llevar a cabo actividades laborales. Cuenta con escritorios, sillas cómodas y áreas de trabajo bien iluminadas, creando un ambiente propicio para la concentración y la productividad.</p>
                     </div>
                 </div>
                 <div class="services-item">
                     <div class="item-photo">
-                        <div class="photo-big" data-background="assets/img/photo-services-6-1.jpg"></div>
-                        <div class="photo-small" data-background="assets/img/photo-services-6-2.jpg"></div>
-                        <a href="#" class="btn btn-default">LEARN MORE</a>
+                        <div class="photo-big" data-background="{{ asset('images/hotel_detalles/5.png') }}"></div>
+                        <div class="photo-small" data-background="{{ asset('images/hotel_detalles/55.png') }}"></div>
+                        <!--a href="#" class="btn btn-default">LEARN MORE</a-->
                     </div>
                     <div class="item-desc">
-                        <h5>OUR FACILITIES</h5>
-                        <h2>Swimming Pool</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget commodo orci. Integer varius nibh eu mattis porta. Pellentesque dictum sem eget cursus semper. Nullam quis blandit lorem.</p>
-                        <p>Pellentesque dictum sem eget cursus semper. Nullam quis blandit lorem. Morbi blandit orci urna, eu congue magna faucibus at. In bibendum in mauris nec ultrices.</p>
+                        <h5>Terraza</h5>
+                        <h2>Un espacio único para ti</h2>
+                        <p>Nuestra terraza es un espacio encantador y relajante que ofrece una experiencia única para comenzar el día. Ubicada junto a la piscina, esta área está diseñada para que los huéspedes disfruten de su desayuno al aire libre, rodeados de un entorno tranquilo y agradable.</p>
+                        <p>El desayuno se sirve en un buffet completo, con una amplia selección de platos y opciones para satisfacer todos los gustos y preferencias. Desde opciones saludables como frutas frescas, yogurt y cereales, hasta platos calientes como huevos revueltos, quesadillas y una variedad de alimentos para energizar el día.</p>
                     </div>
-                </div-->
+                </div>
+                <div class="services-item">
+                    <div class="item-photo">
+                        <div class="photo-big" data-background="{{ asset('images/hotel_detalles/6.png') }}"></div>
+                        <div class="photo-small" data-background="{{ asset('images/hotel_detalles/66.png') }}"></div>
+                        <!--a href="#" class="btn btn-default">LEARN MORE</a-->
+                    </div>
+                    <div class="item-desc">
+                        <h5>Gimnasio</h5>
+                        <h2>Tu rutina siempre activa</h2>
+                        <p>Nuestro gimnasio equipado es una excelente opción para huéspedes que desean mantenerse en forma durante su estadía. Proporcionamos un espacio dedicado al ejercicio y está equipado con una variedad de aparatos modernos y de alta calidad.</p>
+                        <p>El ambiente del gimnasio es limpio, bien iluminado y climatizado, lo que proporciona un entorno cómodo y agradable para realizar ejercicios. Se proporcionan toallas y agua potable para mantener a los huéspedes hidratados durante sus entrenamientos.</p>
+                    </div>
+                </div>
             </div>
             <!-- Services List End -->
         </div>
