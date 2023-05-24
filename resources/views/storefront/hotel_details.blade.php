@@ -39,7 +39,7 @@
                     </div>
                     <div class="item-desc">
                         <h5>Piscina & Pool Bar</h5>
-                        <h2>Oasis de relajación y diversión.</h2>
+                        <h2>Oasis de relajación y diversión</h2>
                         <p>Nuestra piscina es un oasis de relajación y diversión. Ubicada en un hermoso entorno tropical, de un tamaño generoso, con aguas cristalinas y una temperatura perfecta para disfrutar de un refrescante chapuzón.</p>
                         <p>El Pool Bar cuenta con cómodos taburetes y mesas al aire libre, perfectos para socializar y disfrutar de una charla amena con amigos o seres queridos. Además de las bebidas, el bar también ofrece una variedad de aperitivos y refrigerios para satisfacer los antojos de los huéspedes.</p>
                     </div>

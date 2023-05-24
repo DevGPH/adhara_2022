@@ -119,40 +119,40 @@
                     </div>
                     <!-- Contact Form End -->
                 </div>
-                <!--div class="col-lg-12">
+                <div class="col-lg-12">
                     <div class="widget-contact-review">
                         <div class="row">
                             <div class="col-lg-3 col-md-6 col-sm-6">
-                                <div class="review-item">
+                                <!--div class="review-item">
                                     <div class="item-inner">
                                         <i class="fa fa-commenting-o"></i> READ OR WRITE REVIEWS
                                     </div>
-                                </div>
+                                </div-->
                             </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6">
+                            <!--div class="col-lg-3 col-md-6 col-sm-6">
                                 <div class="review-item">
                                     <div class="item-inner">
                                         <a href="#" target="_blank"><i class="fa fa-google-plus"></i> GOOGLE PLUS +</a>
                                     </div>
                                 </div>
-                            </div>
+                            </div-->
                             <div class="col-lg-3 col-md-6 col-sm-6">
                                 <div class="review-item">
                                     <div class="item-inner">
-                                        <a href="#" target="_blank"><i class="fa fa-yelp"></i> YELP</a>
+                                        <a href="https://www.yelp.com.mx/biz/hotel-adhara-canc%C3%BAn" target="_blank"><i class="fa fa-yelp"></i> YELP</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6 col-sm-6">
                                 <div class="review-item">
                                     <div class="item-inner">
-                                        <a href="#" target="_blank"><i class="fa fa-tripadvisor"></i> TRIPADVISOR</a>
+                                        <a href="https://www.tripadvisor.com.mx/Hotel_Review-g150807-d154412-Reviews-Hotel_Adhara_Cancun-Cancun_Yucatan_Peninsula.html" target="_blank"><i class="fa fa-tripadvisor"></i> TRIPADVISOR</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div-->
+                </div>
             </div>
         </div>
     </div>
