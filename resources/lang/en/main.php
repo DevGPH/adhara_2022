@@ -22,6 +22,8 @@ return [
     'mini-banner1-02' => 'WhatsApp',
     'mini-banner1-03' => '998 122 1816',
     'mini-banner1-04' => '',
+    'mini-banner2-077' => 'year',
+    'mini-banner2-07' => 'years',
     'special-rate' => 'Magic Fee! </br> Breakfast Buffet',
     'rates-special-mob' => 'Magic Fee! Breakfast Buffet',
     'taxes-rate' => 'Taxes included',
@@ -37,7 +39,7 @@ return [
     'booking.checkOut' => 'CHECK OUT',
     'booking.search' => 'Search',
     'booking.apply' => 'Apply',
-    'booking.room' => 'Room',
+    'booking.room' => 'ROOM',
     'booking.adults' => 'ADULTS',
     'booking.adult' => 'ADULT',
     'booking.kids' => 'KIDS',
@@ -45,7 +47,7 @@ return [
     'booking.now' => 'BOOK NOW',
     'booking.delete' => 'delete',
     'booking.years' => 'years',
-    'booking.years.label' => 'Age of minors (0 to 12 years)',
+    'booking.years.label' => 'Age of minors (0 to 11 years)',
     'booking.dates' => 'Booking dates',
 
 

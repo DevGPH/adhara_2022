@@ -7,9 +7,9 @@
     <title>Reserva Adhara Cancun</title>
     <style>
         thead tr th {
-            border-top: 1px solid rgb(137, 44, 121); 
-            border-bottom: 1px solid rgb(137, 44, 121); 
-        } 
+            border-top: 1px solid rgb(137, 44, 121);
+            border-bottom: 1px solid rgb(137, 44, 121);
+        }
     </style>
 </head>
 <body>
@@ -24,7 +24,7 @@
             <div style="padding: 8px;border: 1px solid rgb(137, 44, 121);width: 600px;display: block;text-align: center;margin: 0 auto; margin-bottom:20px;">Esta reservación esta pagada y confirmada ¡Los esperamos!</div>
             <p style="margin-left: 40px;">Itinerario de viaje</p>
             <p style="letter-spacing: 1px;margin-bottom: 40px;margin-left: 40px;">Este es tu comprobante de reserva, deberás mostrarlo junto con una identificación oficial para reclamar los servicios reservados.</p>
-            
+
             <p style="margin-left: 40px;">Hotel Adhara Cancún</p>
             <p style="margin-bottom:5px;margin-left: 40px;">Av. Carlos Nader 1,2,3 SMZ 1 MZ 2,</p>
             <p style="margin-top: 0px;margin-bottom:5px;margin-left: 40px;">Cancún, Quintana Roo, Benito Juárez</p>
@@ -63,7 +63,7 @@
             <p style="text-align: justify;margin-left: 40px;">Contamos con un periodo donde no aplican penalidades si cancelas tu reservación. Tome en cuenta que este periodo tiene una duración fija.</p>
             <p style="text-align: justify;margin-left: 40px;">En caso de que tengas que irte antes de que termine tu estancia (Salida anticipada), o no te presentes al hotel (Conocido como no show) se considera como cancelación y no aplican reembol-sos. Si reduce el numero de huéspedes una vez pagada la reser-vación, es decisión del hotel aplicar penalidades o reembolsos.</p>
             <p style="margin-bottom:50px;text-align: justify;margin-left: 40px;">Temporada  Baja  cancelación  sin  penalidad  4 días antes de la llegada / Temporada  Alta  cancelación  sin  penalidad  7 días  antes  de la llegada.
-            En caso de estar  dentro de las políticas de penalidad  la  penalidad  es  total. 
+            En caso de estar  dentro de las políticas de penalidad  la  penalidad  es  total.
             Consulta   fechas  de temporadas altas.</p>
             <hr style="border-bottom-color: rgb(137, 44, 121);width:680px;">
             <p style="margin-top:50px;margin-left: 40px;">Muchas gracias por reservar con nosotros. Por favor conserve este correo y muéstrelo a su llega junto a una identificación vigente con fotografía.</p>

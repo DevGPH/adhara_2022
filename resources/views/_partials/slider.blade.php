@@ -3,33 +3,33 @@
         <div class="wrapper-full">
             <!-- Slider Carousel -->
             <div class="widget-carousel owl-carousel owl-theme">
-                <div class="slider-item" data-background="{{ asset('images/sliders/cover.png') }}">
+                <div class="slider-item" data-background="{{ asset('images/sliders/slide1.png') }}">
                     <div class="wrapper">
                         <div class="item-inner">
-                            <img src="{{ asset('images/sliders/data.png') }}" alt="" class="slider-special">
-                            <!--h5>WELCOME TO THE GRANDIUM</h5>
-                            <h1>Experience the Freedom</h1>
-                            <h2>in London</h2-->
+                            <!--img src="{{ asset('images/sliders/data.png') }}" alt="" class="slider-special"-->
+                            <h5 style="color:white;">RESERVA AHORA LA MEJOR TARÍFA DISPONIBLE</h5>
+                            <h1>${{ $rate }}</h1>
+                            <h2>HABITACIÓN DOBLE O SENCILLA</h2>
                         </div>
                     </div>
                 </div>
-                <div class="slider-item" data-background="{{ asset('images/sliders/hotel_2.png') }}">
+                <div class="slider-item" data-background="{{ asset('images/sliders/slide2.png') }}">
                     <div class="wrapper">
                         <div class="item-inner">
-                            <img src="{{ asset('images/sliders/hotel_1.png') }}" alt="" class="breakpoint-slider">
-                            <!--h5>WELCOME TO THE GRANDIUM</h5>
-                            <h1>Experience the Freedom</h1>
-                            <h2>in London</h2-->
+                            <!--img src="{{ asset('images/sliders/hotel_1.png') }}" alt="" class="breakpoint-slider"-->
+                            <h5 style="color:white;">TU MEJOR OPCIÓN EN ESTANCIAS LARGAS</h5>
+                            <h1>ONE BED ROOM</h1>
+                            <h2>¡RESERVA ESTE VERANO!</h2>
                         </div>
                     </div>
                 </div>
-                <div class="slider-item" data-background="{{ asset('images/sliders/club_2.png') }}">
+                <div class="slider-item" data-background="{{ asset('images/sliders/slide3.png') }}">
                     <div class="wrapper">
                         <div class="item-inner">
-                            <img src="{{ asset('images/sliders/club_1.png') }}" alt="" class="breakpoint-slider">
-                            <!--h5>WELCOME TO THE GRANDIUM</h5>
-                            <h1>Experience the Freedom</h1>
-                            <h2>in London</h2-->
+                            <!--img src="{{ asset('images/sliders/club_1.png') }}" alt="" class="breakpoint-slider"-->
+                            <h5 style="color:white;">ÚNETE A NUESTRO CLUB DE LEALTAD</h5>
+                            <h1>CLUB ESTRELLA</h1>
+                            <h2>WWW.CLUBESTRELLA.MX</h2>
                         </div>
                     </div>
                 </div>
@@ -58,7 +58,7 @@
                                     <div class="rooms_all">
                                         <div id="room_1" class="pax-room">
                                             <div class="header.room">
-                                                <span><i class="fa-solid fa-bed" style="margin-right: 10px;"></i>@lang('main.booking.room') 1</span>
+                                                <span><!--i class="fa-solid fa-bed" style="margin-right: 10px;"></i-->@lang('main.booking.room') 1</span>
                                             </div>
                                             <div class="body room">
                                                 <div class="room_feature" id="room_1_adult">
@@ -89,7 +89,7 @@
                                         </div>
                                         <div id="room_2" class="pax-room">
                                             <div class="header.room">
-                                                <span><i class="fa-solid fa-bed" style="margin-right: 10px;"></i>@lang('main.booking.room') 2</span>
+                                                <span><!--i class="fa-solid fa-bed" style="margin-right: 10px;"></i-->@lang('main.booking.room') 2</span>
                                                 <div class="minus-room"><i class="fa-solid fa-trash-can"></i></div>
                                             </div>
                                             <div class="body room">
@@ -120,7 +120,7 @@
                                         </div>
                                         <div id="room_3" class="pax-room">
                                             <div class="header.room">
-                                                <span><i class="fa-solid fa-bed" style="margin-right: 10px;"></i>@lang('main.booking.room') 3</span>
+                                                <span><!--i class="fa-solid fa-bed" style="margin-right: 10px;"></i-->@lang('main.booking.room') 3</span>
                                                 <div class="minus-room"> <i class="fa-solid fa-trash-can"></i> </div>
                                             </div>
                                             <div class="body room">
@@ -244,11 +244,11 @@
             }
         });
 
-        var warning_kids = '<p style="font-size: 11px;text-align: center;">Edad de los menores (0 a 12 años)</p>';
+        var warning_kids = '<p style="font-size: 11px;text-align: center;">Edad de los menores (0 a 11 años)</p>';
 
         var age_template = '<select name="" id="" class="form-control ageKids">'+
                             '<option value="0">0 @lang("main.mini-banner2-07") </option>'+
-                            '<option value="1">1 @lang("main.mini-banner2-07")</option>'+
+                            '<option value="1">1 @lang("main.mini-banner2-077")</option>'+
                             '<option value="2">2 @lang("main.mini-banner2-07")</option>'+
                             '<option value="3">3 @lang("main.mini-banner2-07")</option>'+
                             '<option value="4">4 @lang("main.mini-banner2-07")</option>'+
@@ -259,7 +259,6 @@
                             '<option value="9">9 @lang("main.mini-banner2-07")</option>'+
                             '<option value="10">10 @lang("main.mini-banner2-07")</option>'+
                             '<option value="11">11 @lang("main.mini-banner2-07")</option>'+
-                            '<option value="12">12 @lang("main.mini-banner2-07")</option>'+
                             '</select>';
 
         $(".room_feature .label-plus").on('click',addRoom);

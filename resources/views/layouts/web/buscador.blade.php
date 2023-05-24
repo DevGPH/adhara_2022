@@ -191,7 +191,7 @@
             }
         });
 
-        var warning_kids = '<p style="font-size: 11px;text-align: center;">Edad de los menores (0 a 12 años)</p>';
+        var warning_kids = '<p style="font-size: 11px;text-align: center;">Edad de los menores (0 a 11 años)</p>';
 
         var age_template = '<select name="" id="" class="form-control ageKids">'+
                             '<option value="0">0 @lang("main.mini-banner2-07") </option>'+

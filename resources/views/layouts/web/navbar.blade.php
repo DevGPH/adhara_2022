@@ -46,8 +46,7 @@
             </div-->
             <div class="header-nav" style="display: inline-block;width:100%;">
                 <ul class="nav-left" style="padding-right: 0px;">
-                    <li><a href="{{ route('inicio', ['locale' => App::getLocale()])}}">@lang('main.nav-home')</a></li>
-                    <!--li><a href="aboutus.html">ABOUT US</a></li-->
+                    <li class="sub"><a href="{{ route('inicio', ['locale' => App::getLocale()])}}">@lang('main.nav-home')</a></li>
                     <li class="sub"><a href="#">@lang('main.nav-rooms')</a>
                         <ul class="simpson">
                             <li><a href="{{ route('rooms', ['locale' => App::getLocale(), 'id' => 6]) }}">{{ (App::getlocale() == 'es') ? 'Habitación Estandar' : 'Standar Room'}}</a></li>
@@ -55,24 +54,14 @@
                             <li><a href="{{ route('rooms', ['locale' => App::getLocale(), 'id' => 8]) }}">{{ (App::getlocale() == 'es') ? 'Habitación Ejecutiva' : 'Ejecutive Room'}}</a></li>
                         </ul>
                     </li>
-                    <li><a href="{{ route('hotel.details', ['locale' => App::getLocale()]) }}">@lang('main.nav-hotel')</a>
-                        <!--ul class="simpson">
-                            <li><a href="#">RESTAURANTE ADHARA GRILL</a></li>
-                            <li><a href="#">PISCINA Y POOL & BAR</a></li>
-                            <li><a href="#">EVENTOS EJECUTIVOS</a></li>
-                            <li><a href="#">CENTRO DE NEGOCIOS</a></li>
-                            <li><a href="#">TERRAZA</a></li>
-                            <li><a href="#">GYM</a></li>
-                        </ul-->
+                    <li class="sub"><a href="{{ route('hotel.details', ['locale' => App::getLocale()]) }}">@lang('main.nav-hotel')</a>
                     </li>
                 </ul>
                 <ul>
                     <li><img src="{{ asset('images/logos/logo_adhara.png') }}" alt="Hotel Adhara Cancun" style="width: 200px; margin-left:20px;margin-right:20px;"></li>
                 </ul>
                 <ul class="nav-right" style="padding-left: 0px;">
-
-                    <!--li><a href="booking.html">BOOKING</a></li-->
-                    <li><a href="{{ route('servicios', [App::getLocale()]) }}">@lang('main.nav-services')</a>
+                    <li class="sub"><a href="{{ route('servicios', [App::getLocale()]) }}">@lang('main.nav-services')</a>
                         <!--ul class="simpson">
                             <li><a href="#">HABITACIONES ADAPTADAS</a></li>
                             <li><a href="#">ESTACIONAMIENTO</a></li>
@@ -80,8 +69,8 @@
                             <li><a href="#">ASISTENCIA VIA WHATSAPP</a></li>
                         </ul-->
                     </li>
-                    <li><a href="{{ route('gallery', App::getLocale(), 0) }}">@lang('main.nav.gallery')</a></li>
-                    <li><a href="{{ route('contact', ['locale' => App::getLocale()]) }}">@lang('main.nav-contact')</a></li>
+                    <li class="sub"><a href="{{ route('gallery', App::getLocale(), 0) }}">@lang('main.nav.gallery')</a></li>
+                    <li class="sub"><a href="{{ route('contact', ['locale' => App::getLocale()]) }}">@lang('main.nav-contact')</a></li>
                 </ul>
             </div>
             <div class="header-toggle">

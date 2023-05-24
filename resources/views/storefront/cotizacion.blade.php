@@ -10,7 +10,7 @@
             <div class="wrapper-inner">
                 <!-- Title -->
                 <h5>LISTADO DE HABITACIONES</h5>
-                <h1>Rooms Page</h1>
+                <h1>Elige la mejor para tus vacaciones.</h1>
                 <p>Descubre un refugio de elegancia y tranquilidad en Hotel Adhara Cancún. Habitaciones cuidadosamente diseñadas, atención personalizada, espacios relajantes y una ubicación ideal para explorar la ciudad.</p>
                 <!-- Title End -->
                 <!-- Breadcrumb -->
@@ -39,13 +39,13 @@
                             @elseif ($room['tag'] == 'one-bedroom-suite')
                                 <a href="#" data-background="{{ asset('images/rooms/one1.png') }}"></a>
                             @elseif ($room['tag'] == 'ejecutiva')
-                                <a href="#" data-background="{{ asset('images/rooms/ejecutiva1.png') }}"></a>
+                                <a href="#" data-background="{{ asset('images/rooms/ejecutiva_2.png') }}"></a>
                             @endif
 
                         </div>
                         <div class="item-desc">
                             <h2><a href="#">{{(App::getLocale() == 'es') ? 'Habitación ' . $room['habitacion'] : $room['habitacion'] . ' Room'}}</a></h2>
-                            <p>Sed fermentum eleifend dui eu faucibus. Donec facilisis, ligula eu interdum luctus nunc massa fermentum</p>
+                            <p>{{ (App::getLocale() == 'es') ? $room['desc_es'] : $room['desc_en'] }}</p>
                             <div class="desc-features">
                                 <ul>
                                     @foreach ($room['amenidades'] as $amenidad)
@@ -65,10 +65,14 @@
                         </div>
                         <div class="item-price">
                             <div class="price-inner">
+                                <h5>TARÍFA REGULAR CON DESAYUNO</h5>
+                                <h4>$ {{ (App::getLocale() == 'es') ? number_format(round($room['total'] * $cambio_moneda)) .' '. 'MXN' : $room['total'] .' '. $room['currency']}}</h4>
+                                <hr style="border-bottom: 1px solid #6e5e78">
+                                <div style="margin-bottom: 15px;"></div>
                                 <i class="fa fa-star"></i>
-                                <h3>$ {{ (App::getLocale() == 'es') ? number_format(round($room['total'] * $cambio_moneda)) .' '. 'MXN' : $room['total'] .' '. $room['currency']}}</h3>
-                                <h4>$ 180.00</h4>
-                                <h5>TOTAL</h5>
+                                <h5>TARIFA SOCIO CLUB ESTRELLA CON DESAYUNO</h5>
+                                <h3>$ {{ (App::getLocale() == 'es') ? number_format(round($room['clubestrella'] * $cambio_moneda)) .' '. 'MXN' : $room['clubestrella'] .' '. $room['currency']}}</h3>
+                                <!--h4>$ 180.00</h4-->
                                 <form action="{{ route('reservations',['locale'=>App::getLocale()]) }}" method="GET">
                                     @csrf
                                     <input type="hidden" name="habitacion_id" value="{{ $room['id'] }}" readonly>
