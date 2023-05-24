@@ -282,6 +282,8 @@ class ReservaController extends Controller
             $price = $request->cookie('user') ? ($result['data']['total']*.9) : $result['data']['total'];
             $total = (App::getLocale() == 'es') ? $price * $cambio->valor_x_moneda : $price;
 
+            $clubestrella = (Cookie::get('user') !== null) ? json_decode(Cookie::get('user')) : null;
+
             return view('storefront.reservations',[
                 'paises' => $paises,
                 'habitaciones' =>  $result['data']['cuartos'],
@@ -302,7 +304,8 @@ class ReservaController extends Controller
                 'habitacion' => $habitacion,
                 'id' => 0,
                 'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
-                'rate' => $rate
+                'rate' => $rate,
+                'clubestrella' => $clubestrella
             ]);
         }
 
