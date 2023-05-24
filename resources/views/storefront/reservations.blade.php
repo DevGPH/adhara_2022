@@ -150,7 +150,7 @@
                                                 @endforeach
                                                 <input type="hidden" name="plataforma"      value="WEB">
                                                 <input type="hidden" name="habitacion_id"   value="{{ $habitacion_id }}">
-                                                <input type="submit" value="BOOK NOW BY EMAIL" class="btn">
+                                                <input type="submit" value="RESERVA AHORA" class="btn">
                                             </div>
                                         </div>
                                     </form>
