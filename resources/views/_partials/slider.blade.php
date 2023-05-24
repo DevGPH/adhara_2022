@@ -9,7 +9,7 @@
                             <!--img src="{{ asset('images/sliders/data.png') }}" alt="" class="slider-special"-->
                             <h5 style="color:white;">RESERVA AHORA LA MEJOR TARÍFA DISPONIBLE</h5>
                             <h1>${{ $rate }}</h1>
-                            <h2>HABITACIÓN DOBLE O SENCILLA</h2>
+                            <h2 style="font-family: 'Playfair Display', sans-serif;">HABITACIÓN DOBLE O SENCILLA</h2>
                         </div>
                     </div>
                 </div>
@@ -19,7 +19,7 @@
                             <!--img src="{{ asset('images/sliders/hotel_1.png') }}" alt="" class="breakpoint-slider"-->
                             <h5 style="color:white;">TU MEJOR OPCIÓN EN ESTANCIAS LARGAS</h5>
                             <h1>ONE BED ROOM</h1>
-                            <h2>¡RESERVA ESTE VERANO!</h2>
+                            <h2 style="font-family: 'Playfair Display', sans-serif;">¡RESERVA ESTE VERANO!</h2>
                         </div>
                     </div>
                 </div>
@@ -29,7 +29,7 @@
                             <!--img src="{{ asset('images/sliders/club_1.png') }}" alt="" class="breakpoint-slider"-->
                             <h5 style="color:white;">ÚNETE A NUESTRO CLUB DE LEALTAD</h5>
                             <h1>CLUB ESTRELLA</h1>
-                            <h2>WWW.CLUBESTRELLA.MX</h2>
+                            <h2 style="font-family: 'Playfair Display', sans-serif;">WWW.CLUBESTRELLA.MX</h2>
                         </div>
                     </div>
                 </div>
