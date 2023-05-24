@@ -37,6 +37,9 @@
 	<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/8d420a663d.js" crossorigin="anonymous"></script>
+    <style>
+        .fa-tripadvisor:before{content:"\f262"}
+    </style>
 
 	<!--script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script-->

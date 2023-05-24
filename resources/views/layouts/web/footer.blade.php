@@ -9,9 +9,9 @@
                     <h6>SÍGUENOS EN TU PLATAFORMA FAVORITA</h6>
                     <div class="widget-social-icons">
                         <ul>
-                            <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
-                            <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://www.facebook.com/HotelAdharaCancun" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://www.tiktok.com/@hoteladharacancun" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+                            <li><a href="https://www.instagram.com/adharacancun" target="_blank"><i class="fa fa-instagram"></i></a></li>
                         </ul>
                     </div>
                 </div>
