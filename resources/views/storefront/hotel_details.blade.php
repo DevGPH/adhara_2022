@@ -35,7 +35,7 @@
                     <div class="item-photo">
                         <div class="photo-big" data-background="{{ asset('images/hotel_detalles/1.png') }}"></div>
                         <div class="photo-small" data-background="{{ asset('images/hotel_detalles/11.png') }}"></div>
-                        <!--a href="https://api.whatsapp.com/send?phone=529981221861" target="_blank" class="btn btn-default">IR A WHATSAPP</a-->
+                        <a href="{{ route('gallery', [App::getLocale()]) }}" target="_blank" class="btn btn-default">@lang('main.button.more')</a>
                     </div>
                     <div class="item-desc">
                         <h5>Piscina & Pool Bar</h5>
@@ -48,7 +48,7 @@
                     <div class="item-photo">
                         <div class="photo-big" data-background="{{ asset('images/hotel_detalles/2.png') }}"></div>
                         <div class="photo-small" data-background="{{ asset('images/hotel_detalles/22.png') }}"></div>
-                        <!--a href="#" class="btn btn-default">LEARN MORE</a-->
+                        <a href="{{ route('gallery', [App::getLocale()]) }}" target="_blank" class="btn btn-default">@lang('main.button.more')</a>
                     </div>
                     <div class="item-desc">
                         <h5>Restaurante Adhara Grill</h5>
@@ -61,7 +61,7 @@
                     <div class="item-photo">
                         <div class="photo-big" data-background="{{ asset('images/hotel_detalles/3.png') }}"></div>
                         <div class="photo-small" data-background="{{ asset('images/hotel_detalles/33.png') }}"></div>
-                        <!--a href="#" class="btn btn-default">LEARN MORE</a-->
+                        <a href="{{ route('gallery', [App::getLocale()]) }}" target="_blank" class="btn btn-default">@lang('main.button.more')</a>
                     </div>
                     <div class="item-desc">
                         <h5>Adhara eventos</h5>
@@ -74,7 +74,7 @@
                     <div class="item-photo">
                         <div class="photo-big" data-background="{{ asset('images/hotel_detalles/4.png') }}"></div>
                         <div class="photo-small" data-background="{{ asset('images/hotel_detalles/44.png') }}"></div>
-                        <!--a href="#" class="btn btn-default">LEARN MORE</a-->
+                        <a href="{{ route('gallery', [App::getLocale()]) }}" target="_blank" class="btn btn-default">@lang('main.button.more')</a>
                     </div>
                     <div class="item-desc">
                         <h5>Centro de negocios</h5>
@@ -87,7 +87,7 @@
                     <div class="item-photo">
                         <div class="photo-big" data-background="{{ asset('images/hotel_detalles/5.png') }}"></div>
                         <div class="photo-small" data-background="{{ asset('images/hotel_detalles/55.png') }}"></div>
-                        <!--a href="#" class="btn btn-default">LEARN MORE</a-->
+                        <a href="{{ route('gallery', [App::getLocale()]) }}" target="_blank" class="btn btn-default">@lang('main.button.more')</a>
                     </div>
                     <div class="item-desc">
                         <h5>Terraza</h5>
@@ -100,7 +100,7 @@
                     <div class="item-photo">
                         <div class="photo-big" data-background="{{ asset('images/hotel_detalles/6.png') }}"></div>
                         <div class="photo-small" data-background="{{ asset('images/hotel_detalles/66.png') }}"></div>
-                        <!--a href="#" class="btn btn-default">LEARN MORE</a-->
+                        <a href="{{ route('gallery', [App::getLocale()]) }}" target="_blank" class="btn btn-default">@lang('main.button.more')</a>
                     </div>
                     <div class="item-desc">
                         <h5>Gimnasio</h5>

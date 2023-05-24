@@ -92,6 +92,9 @@ return [
     'index.video.title.2' => 'More than 30 years of experience',
     'index.video.text' => 'A renovated Hotel with the best technology in a mobile APP. Strategically located, we have perfect connectivity in front of Puerto Cancun, 3 minutes from the entrance to the hotel zone, 150 meters from the bus station and 20 minutes from the airport.',
 
+    //BOTON VER MAS
+    'button.more' => 'SEE MORE',
+
     /*  DE AQUI PARA ABAJO SE PUEDE ELIMINAR*/
     'body-item4' => 'Av. Carlos Nader 1,2,3 SM.1, MZ.2, Cancun, Quintana Roo, Mexico.',
 

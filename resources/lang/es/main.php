@@ -87,6 +87,9 @@ return [
     'index.video.title.2' => 'Más de 30 años de Experiencia',
     'index.video.text' => 'Un Hotel renovado y con la mejor tecnología  en una APP móvil. Ubicado estratégicamente, contamos con la conectividad perfecta frente a Puerto Cancún, 3 minutos de la entrada a zona hotelera, 150 metros de la estación de autobuses y a 20  minutos del Aeropuerto.',
 
+    //BOTON VER MAS
+    'button.more' => 'VER MÁS',
+
     /*  DE AQUI PARA ABAJO SE PUEDE ELIMINAR*/
 
 
