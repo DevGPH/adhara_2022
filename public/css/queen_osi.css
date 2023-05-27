@@ -38,8 +38,8 @@ body{
 	   -moz-font-smoothing	: antialiased;
 	        font-smoothing	: antialiased;
 }
-
-@media screen and (max-width: 2310px) {
+/* 2310 */
+@media screen and (max-width: 2500px) {
     body {
         font-size: 14px;
     }
@@ -889,8 +889,8 @@ a,
     background-position     : top center;
     background-size         : cover;
 }
-
-@media screen and (max-width: 2310px) {
+/* 2310 */
+@media screen and (max-width: 2500px) {
     .widget-slider .widget-carousel .slider-item{
         min-height: 100vh;
     }
@@ -1235,8 +1235,8 @@ a,
     background-position     : top center;
     background-size         : cover;
 }
-
-@media(min-width: 1700px){
+/* 1700 */
+@media(min-width: 2500px){
     .widget-offers-grid{
         background-size     : contain;
     }
@@ -2929,8 +2929,8 @@ a,
     padding-left            : 60px;
     padding-right           : 60px;
 }
-
-@media screen and (max-width: 2310px) {
+/* 2310 */
+@media screen and (max-width: 2500px) {
     .wrapper{
         max-width: 1300px;
     }
@@ -2993,8 +2993,8 @@ a,
     color                   : #818a9c;
     margin-bottom: 50px;
 }
-
-@media screen and (max-width: 2310px) {
+/* 2310 */
+@media screen and (max-width: 2500px) {
     .site-header .header-top{
         font-size: 13px;
         margin-bottom: 0px;
@@ -3078,8 +3078,8 @@ a,
     text-transform          : uppercase;
     color                   : #fff;
 }
-
-@media screen and (max-width: 2310px) {
+/* 2310 */
+@media screen and (max-width: 2500px) {
     .site-header .header-bottom .header-nav ul li a{
         font-size           : 12px;
     }
@@ -3339,8 +3339,8 @@ a,
     margin: 0px auto;
     margin-top: -100px;
 }
-
-@media (min-width: 2310px) {
+/* 2310 */
+@media (min-width: 2500px) {
     .breakpoint-slider {
         width: 2000px !important;
         margin-top: 80px;

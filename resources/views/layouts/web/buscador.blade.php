@@ -35,7 +35,7 @@
     <div class="layout-room">
         <div class="rooms_all">
             <div id="room_1" class="pax-room">
-                <div class="header.room">
+                <div class="header.room" style="padding-left:5px;">
                     <span><img src="{{ asset('images/icons/buscador/bed.png') }}" alt="Room.1" class="bed-room" style="width: 25px;">@lang('main.mini-banner2-03') 1</span>
                 </div>
                 <div class="body room">
@@ -66,7 +66,7 @@
                 </div>
             </div>
             <div id="room_2" class="pax-room">
-                <div class="header.room">
+                <div class="header.room" style="padding-left:5px;">
                     <span><img src="{{ asset('images/icons/bed.png') }}" alt="Room.1" class="bed-room" style="width: 25px;">@lang('main.mini-banner2-03') 2</span>
                     <div class="minus-room">@lang('main.mini-banner2-06')</div>
                 </div>
@@ -97,7 +97,7 @@
                 </div>
             </div>
             <div id="room_3" class="pax-room">
-                <div class="header.room">
+                <div class="header.room" style="padding-left:5px;">
                     <span><img src="{{ asset('images/icons/buscador/bed.png') }}" alt="Room.1" class="bed-room" style="width: 25px;">@lang('main.mini-banner2-03') 3</span>
                     <div class="minus-room"> @lang('main.mini-banner2-06') </div>
                 </div>

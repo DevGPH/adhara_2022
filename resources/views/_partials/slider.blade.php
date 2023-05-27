@@ -57,7 +57,7 @@
                                 <div class="layout-room">
                                     <div class="rooms_all">
                                         <div id="room_1" class="pax-room">
-                                            <div class="header.room">
+                                            <div class="header.room" style="padding-left:5px;">
                                                 <span><!--i class="fa-solid fa-bed" style="margin-right: 10px;"></i-->@lang('main.booking.room') 1</span>
                                             </div>
                                             <div class="body room">
@@ -88,7 +88,7 @@
                                             </div>
                                         </div>
                                         <div id="room_2" class="pax-room">
-                                            <div class="header.room">
+                                            <div class="header.room" style="padding-left:5px;">
                                                 <span><!--i class="fa-solid fa-bed" style="margin-right: 10px;"></i-->@lang('main.booking.room') 2</span>
                                                 <div class="minus-room"><i class="fa-solid fa-trash-can"></i></div>
                                             </div>
@@ -119,7 +119,7 @@
                                             </div>
                                         </div>
                                         <div id="room_3" class="pax-room">
-                                            <div class="header.room">
+                                            <div class="header.room" style="padding-left:5px;">
                                                 <span><!--i class="fa-solid fa-bed" style="margin-right: 10px;"></i-->@lang('main.booking.room') 3</span>
                                                 <div class="minus-room"> <i class="fa-solid fa-trash-can"></i> </div>
                                             </div>
