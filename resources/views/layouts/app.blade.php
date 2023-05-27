@@ -21,7 +21,7 @@
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/magnific.popup.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/owl.carousel.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/owl.theme.default.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery-ui.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery-uit.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/queen_osi.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/mobile_master.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/homev2.css') }}">
