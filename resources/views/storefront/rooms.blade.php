@@ -90,7 +90,7 @@
                             <!-- Room Description -->
                             <div class="room-desc">
                                 <h5>@lang('main.room.desc.title')</h5>
-                                <p> {{ (App::getLocale() == 'es') ? $habitacion->categoria->desc_es : $habitacion->categoria->desc_en }} </p>
+                                <p> {{ (App::getLocale() == 'es') ? $habitacion->categoria->short_desc3_es : $habitacion->categoria->short_desc3_en }} </p>
                             </div>
                             <!-- Room Description End -->
                         </div>
