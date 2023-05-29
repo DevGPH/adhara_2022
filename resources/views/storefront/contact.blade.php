@@ -139,14 +139,14 @@
                             <div class="col-lg-3 col-md-6 col-sm-6">
                                 <div class="review-item">
                                     <div class="item-inner">
-                                        <a href="https://www.yelp.com.mx/biz/hotel-adhara-canc%C3%BAn" target="_blank"><i class="fa fa-yelp"></i> YELP</a>
+                                        <a href="https://www.yelp.com.mx/biz/hotel-adhara-canc%C3%BAn" target="_blank"><i class="fa fa-yelp" style="color: #4d3662;"></i> YELP</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6 col-sm-6">
                                 <div class="review-item">
                                     <div class="item-inner">
-                                        <a href="https://www.tripadvisor.com.mx/Hotel_Review-g150807-d154412-Reviews-Hotel_Adhara_Cancun-Cancun_Yucatan_Peninsula.html" target="_blank"><i class="fa fa-tripadvisor"></i> TRIPADVISOR</a>
+                                        <a href="https://www.tripadvisor.com.mx/Hotel_Review-g150807-d154412-Reviews-Hotel_Adhara_Cancun-Cancun_Yucatan_Peninsula.html" target="_blank"><!--i class="fa fa-tripadvisor"></i--> <img src="{{ asset('images/icons/tripadvisor.png') }}" alt="Tripadvisor" style="margin-right: 10px;"> TRIPADVISOR</a>
                                     </div>
                                 </div>
                             </div>
