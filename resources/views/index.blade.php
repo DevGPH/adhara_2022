@@ -198,7 +198,7 @@
                 <!-- Video Title End -->
                 <!-- Video Content -->
                 <div class="widget-inner">
-                    <a href="https://vimeo.com/39493181" class="video-play popup-video"><i class="fa fa-play"></i></a>
+                    <a href="https://youtu.be/z6c5hqiFFgs" class="video-play popup-video"><i class="fa fa-play"></i></a>
                 </div>
                 <!-- Video Content End -->
             </div>
