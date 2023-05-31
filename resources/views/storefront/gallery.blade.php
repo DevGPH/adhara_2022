@@ -9,9 +9,9 @@
             <div class="widget-background" data-background="{{ asset('images/gallery/fondo_galeria.png') }}"></div>
             <div class="wrapper-inner">
                 <!-- Title -->
-                <h5>DESCUBRE NUESTROS ESPACIOS</h5>
-                <h1>Galería Hotel Adhara Cancún </h1>
-                <p>Conoce nuestros espacios y enamórate de los detalles que hacen único nuestro Hotel.</p>
+                <h5>@lang('main.gallery.title')</h5>
+                <h1>@lang('main.gallery.subtitle')</h1>
+                <p>@lang('main.gallery.text')</p>
                 <!-- Title End -->
                 <!-- Breadcrumb -->
                 <div class="widget-breadcrumb">
@@ -32,12 +32,12 @@
             <!-- Gallery Filter -->
             <div class="widget-filter-top">
                 <ul>
-                    <li class="active"><a href="#" data-filter="*">TODAS LAS FOTOS</a></li>
-                    <li><a href="#" data-filter=".rooms">HABITACIONES</a></li>
-                    <li><a href="#" data-filter=".restaurant">RESTAURANTE</a></li>
-                    <li><a href="#" data-filter=".welness">GIMNASIO</a></li>
-                    <li><a href="#" data-filter=".skybar">PISCINA & POOL BAR</a></li>
-                    <li><a href="#" data-filter=".conference">EVENTOS CORPORATIVOS</a></li>
+                    <li class="active"><a href="#" data-filter="*">@lang('main.gallery.all')</a></li>
+                    <li><a href="#" data-filter=".rooms">@lang('main.gallery.rooms')</a></li>
+                    <li><a href="#" data-filter=".restaurant">@lang('main.gallery.food')</a></li>
+                    <li><a href="#" data-filter=".welness">@lang('main.gallery.gym')</a></li>
+                    <li><a href="#" data-filter=".skybar">@lang('main.gallery.pool')</a></li>
+                    <li><a href="#" data-filter=".conference">@lang('main.gallery.event')</a></li>
                     <!--li><a href="#" data-filter=".conference">CONFERENCE</a></li-->
                 </ul>
             </div>

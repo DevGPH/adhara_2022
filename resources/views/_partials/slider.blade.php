@@ -7,9 +7,9 @@
                     <div class="wrapper">
                         <div class="item-inner">
                             <!--img src="{{ asset('images/sliders/data.png') }}" alt="" class="slider-special"-->
-                            <h5 style="color:white;">RESERVA AHORA LA MEJOR TARÍFA DISPONIBLE</h5>
+                            <h5 style="color:white;">@lang('main.slider.01')</h5>
                             <h1>${{ $rate }}</h1>
-                            <h2 style="font-family: 'Playfair Display', sans-serif;">Habitación doble o sencilla</h2>
+                            <h2 style="font-family: 'Playfair Display', sans-serif;">@lang('main.slider.02')</h2>
                         </div>
                     </div>
                 </div>

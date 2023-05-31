@@ -5,8 +5,8 @@
         <div class="wrapper">
             <div class="row">
                 <div class="col-lg-6">
-                    <h5>REDES SOCIALES</h5>
-                    <h6>SÍGUENOS EN TU PLATAFORMA FAVORITA</h6>
+                    <h5>@lang('main.footer.media')</h5>
+                    <h6>@lang('main.footer.follow')</h6>
                     <div class="widget-social-icons">
                         <ul>
                             <li><a href="https://www.facebook.com/HotelAdharaCancun" target="_blank"><i class="fa fa-facebook"></i></a></li>
@@ -16,11 +16,11 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <h5>NOTICIAS RECIENTES</h5>
-                    <h6>TE ENVIAREMOS NUESTRAS PROMOCIONES MAS RECIENTES</h6>
+                    <h5>@lang('main.footer.news')</h5>
+                    <h6>@lang('main.footer.send')</h6>
                     <div class="widget-newsletter">
                         <form>
-                            <input type="text" placeholder="ESCRIBE TU E-MAIL" required>
+                            <input type="text" placeholder="@lang('main.footer.mail')" required>
                             <button type="submit"><i class="fa fa-paper-plane"></i></button>
                         </form>
                     </div>
@@ -36,7 +36,7 @@
                 <img src="{{ asset('images/logos/logo_adhara.png') }}" alt="The Grandium Hotel">
             </div>
             <div class="footer-copyright">
-                <p>HOTEL ADHARA CANCÚN PERTENECE A GRUPO PENINSULAR DE HOTELES</p>
+                <p>@lang('main.footer.company')</p>
             </div>
             <div id="gph" style="margin-top:40px;">
                 <img src="{{ asset('images/footer/gph.png') }}" alt="Grupo Peninsular de Hoteles" style="width:150px;display:block;margin:0px auto;">
@@ -61,8 +61,8 @@
             <div class="footer-nav">
                 <ul>
                     <!--li><a href="#">SITEMAP</a></li-->
-                    <li><a href="#">AVISO DE PRIVACIDAD</a></li>
-                    <li><a href="#">TÉRMINOS Y CONDICIONES</a></li>
+                    <li><a href="#">@lang('main.footer.privacy')</a></li>
+                    <li><a href="#">@lang('main.footer.policy')</a></li>
                 </ul>
             </div>
         </div>

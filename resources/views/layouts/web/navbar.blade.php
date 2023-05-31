@@ -8,7 +8,7 @@
                     <li class="custom-link">
                         <a class="nav-link" href="https://api.whatsapp.com/send?phone=529981221861" target='_blank' style="color:white;">
                             <img src="{{ asset('images/logos/whats_icon.png') }}" id='whats_header'>
-                            COTIZA, RESERVA Y PAGA POR WHATSAPP: 998 122 1861
+                            @lang('main.nav.whats')
                         </a>
                     </li>
                     <li class="custom-tarifa" id="tarifa-first"><a class="nav-link" target="_blank" style="color: white;">@lang('main.nav.magic.rate')</a></li>

@@ -165,12 +165,12 @@
                     </div>
                     <div class="gallery-item">
                         <a href="{{ asset('images/gallery/gym.png') }}" data-background="{{ asset('images/gallery/gym.png') }}" title="Gimnasio" class="popup-gallery">
-                            <span class="item-text">Gimnasio</span>
+                            <span class="item-text">@lang('main.index.gallery.gym')</span>
                         </a>
                     </div>
                     <div class="gallery-item">
                         <a href="{{ asset('images/gallery/lobby.png') }}" data-background="{{ asset('images/gallery/lobby.png') }}" title="Centro de negocios" class="popup-gallery">
-                            <span class="item-text">Centro de negocios</span>
+                            <span class="item-text">@lang('main.index.gallery.center')</span>
                         </a>
                     </div>
                     <div class="gallery-item">
@@ -198,7 +198,7 @@
                 <!-- Video Title End -->
                 <!-- Video Content -->
                 <div class="widget-inner">
-                    <a href="https://www.youtube.com/watch?v=z6c5hqiFFgs" class="video-play popup-video"><i class="fa fa-play"></i></a>
+                    <a href="https://www.youtube.com/watch?v=dZ3SroWHwkE" class="video-play popup-video"><i class="fa fa-play"></i></a>
                 </div>
                 <!-- Video Content End -->
             </div>
@@ -212,9 +212,9 @@
             <div class="wrapper-inner">
                 <!-- Offers Title -->
                 <div class="widget-title">
-                    <h5>¡Te garantizamos la mejor tarifa!</h5>
-                    <h2>Todas las temporadas del año</h2>
-                    <p>Estamos completamente seguros de ofrecer esta promesa, porque desde nuestra página web estas haciendo un trato directo con nosotros y ningún intermediario o agencía de ventas externa, puede extender una mejor oferta que la que nosotros te presentamos desde nuestro eficiente y seguro sistema de reservaciones online.</p>
+                    <h5>@lang('main.index.offers.title')</h5>
+                    <h2>@lang('main.index.offers.subtitle')</h2>
+                    <p>@lang('main.index.offers.text')</p>
                 </div>
                 <!-- Offers Title End -->
                 <!-- Offers Content -->
@@ -223,10 +223,10 @@
                         <div class="item-inner">
                             <div class="item-photo" data-background="{{ asset('images/offers/desayuno.png') }}"></div>
                             <div class="item-desc">
-                                <h3>¡Reserva ahora!</h3>
-                                <p>La mejor tarifa disponible hoy en Cancún</p>
-                                <p>¡Obtén beneficios exclusivos al reservar directamente en nuestra página web!</p>
-                                <a href="#" class="btn-link">LEER MÁS</a>
+                                <h3>@lang('main.index.offers.hotel.title')</h3>
+                                <p>@lang('main.index.offers.hotel.subtitle')</p>
+                                <p>@lang('main.index.offers.hotel.text')</p>
+                                <a href="#" class="btn-link">@lang('main.button.more')</a>
                             </div>
                         </div>
                     </div>
@@ -234,10 +234,10 @@
                         <div class="item-inner">
                             <div class="item-photo" data-background="{{ asset('images/offers/clubestrella.png') }}"></div>
                             <div class="item-desc">
-                                <h3>¡Únete a nuestro club de lealtad!</h3>
-                                <p>¡Inscríbete en el portal!</p>
-                                <p>Compra con nuestros socios y acumula puntos para cambiarlos por recompensas participantes!</p>
-                                <a href="https://clubestrella.mx/es" target="_blank" class="btn-link">LEER MÁS</a>
+                                <h3>@lang('main.index.offers.club.title')</h3>
+                                <p>@lang('main.index.offers.club.subtitle')</p>
+                                <p>@lang('main.index.offers.text')</p>
+                                <a href="https://clubestrella.mx/es" target="_blank" class="btn-link">@lang('main.button.more')</a>
                             </div>
                         </div>
                     </div>
@@ -245,10 +245,10 @@
                         <div class="item-inner">
                             <div class="item-photo" data-background="{{ asset('images/offers/meal.png') }}"></div>
                             <div class="item-desc">
-                                <h3>¿Grande o enorme?</h3>
-                                <p>Como te guste más.</p>
-                                <p>¡Pruébalos todos! Conoce nuestros sabores disponibles en las plataformas de alimentos participantes.</p>
-                                <a href="#" class="btn-link">LEER MÁS</a>
+                                <h3>@lang('main.index.offers.restaurant.title')</h3>
+                                <p>@lang('main.index.offers.restaurant.subtitle')</p>
+                                <p>@lang('main.index.offers.restaurant.text')</p>
+                                <a href="#" class="btn-link">@lang('main.button.more')</a>
                             </div>
                         </div>
                     </div>
@@ -256,9 +256,9 @@
                         <div class="item-inner">
                             <div class="item-photo" data-background="{{ asset('images/offers/oktrip.png') }}"></div>
                             <div class="item-desc">
-                                <h3>Visita oktrip.mx</h3>
-                                <p>En OkTrip podrás descubrir y reservar los mejores hoteles, tours y experiencias al mejor precio.</p>
-                                <a href="https://oktrip.mx/" target="_blank" class="btn-link">LEER MÁS</a>
+                                <h3>@lang('main.index.offers.oktrip.title')</h3>
+                                <p>@lang('main.index.offers.oktrip.text')</p>
+                                <a href="https://oktrip.mx/" target="_blank" class="btn-link">@lang('main.button.more')</a>
                             </div>
                         </div>
                     </div>
@@ -275,9 +275,9 @@
             <div class="wrapper-full-inner">
                 <!-- Blog Title -->
                 <div class="widget-title">
-                    <h5>SERVICIOS</h5>
-                    <h2>Especiales para ti</h2>
-                    <p>Crear una buena experiencia para tus vacaciones no ocurre por coincidencia. Ocurre por que nos esforzamos de hacerlo realidad con magia en cada detalle.</p>
+                    <h5>@lang('main.index.services.title')</h5>
+                    <h2>@lang('main.index.services.subtitle')</h2>
+                    <p>@lang('main.index.services.text')</p>
                 </div>
                 <!-- Blog Title End -->
                 <!-- Blog Carousel -->
@@ -290,10 +290,10 @@
                             </div>
                         </div>
                         <div class="item-desc">
-                            <h3><a href="https://api.whatsapp.com/send?phone=529981221861">Asistencia vía WhatsApp</a></h3>
-                            <h5>Una respuesta inmediata para ti</h5>
-                            <p>Ponemos a tu disposición asistencia inmediata vía WhatsApp, ahora todo es mas cómodo, fácil y sencillo, sólo enviamos un mensaje al número 998 122 1861…</p>
-                            <a href="https://api.whatsapp.com/send?phone=529981221861" target="_blank" class="btn-link">MÁS INFORMACIÓN</a>
+                            <h3><a href="https://api.whatsapp.com/send?phone=529981221861"></a>@lang('main.index.service.whats.title')</h3>
+                            <h5>@lang('main.index.service.whats.subtitle')</h5>
+                            <p>@lang('main.index.service.whats.text')</p>
+                            <a href="https://api.whatsapp.com/send?phone=529981221861" target="_blank" class="btn-link">@lang('main.button.info')</a>
                         </div>
                     </div>
                     <div class="blog-item">
@@ -304,12 +304,12 @@
                             </div>
                         </div>
                         <div class="item-desc">
-                            <h3><a href="{{ route('servicios',[App::getLocale()]) }}">Transportación incluida</a></h3>
-                            <h5>nosotros te llevamos gratis</h5>
-                            <p>Todos los huéspedes de nuestro hotel tienen incluido el servicio de transportación de:</p>
-                            <p>Hotel - Playa - Hotel.</p>
-                            <p>Hotel - Aeropuerto Internacional de Cancún.</p>
-                            <a href="{{ route('servicios',[App::getLocale()]) }}" class="btn-link">MÁS INFORMACIÓN</a>
+                            <h3><a href="{{ route('servicios',[App::getLocale()]) }}"></a>@lang('main.index.service.bus.title')</h3>
+                            <h5>@lang('main.index.service.bus.subtitle')</h5>
+                            <p>@lang('main.index.service.bus.text')</p>
+                            <p>@lang('main.index.service.bus.text2')</p>
+                            <p>@lang('main.index.service.bus.text3')</p>
+                            <a href="{{ route('servicios',[App::getLocale()]) }}" class="btn-link">@lang('main.button.info')</a>
                         </div>
                     </div>
                     <div class="blog-item">
@@ -320,10 +320,10 @@
                             </div>
                         </div>
                         <div class="item-desc">
-                            <h3><a href="{{ route('servicios',[App::getLocale()]) }}">Estacionamiento</a></h3>
-                            <h5>amplio y gratuito</h5>
-                            <p>Contamos con un seguro y amplio estacionamiento privado, para recibir todo tipo de vehículos.</p>
-                            <a href="{{ route('servicios',[App::getLocale()]) }}" class="btn-link">MÁS INFORMACIÓN</a>
+                            <h3><a href="{{ route('servicios',[App::getLocale()]) }}"></a>@lang('main.index.service.parking.title')</h3>
+                            <h5>@lang('main.index.service.parking.subtitle')</h5>
+                            <p>@lang('main.index.service.parking.text')</p>
+                            <a href="{{ route('servicios',[App::getLocale()]) }}" class="btn-link">@lang('main.button.info')</a>
                         </div>
                     </div>
                     <div class="blog-item">
@@ -334,10 +334,10 @@
                             </div>
                         </div>
                         <div class="item-desc">
-                            <h3><a href="{{ route('servicios',[App::getLocale()]) }}">Habitaciones adaptadas</a></h3>
-                            <h5>para personas con movilidad reducida</h5>
-                            <p>En Hotel Adhara Cancún contamos con habitaciones que cuentan con las condiciones necesarias para personas con movilidad reducida dentro del sanitario y regadera…</p>
-                            <a href="{{ route('servicios',[App::getLocale()]) }}" class="btn-link">MÁS INFORMACIÓN</a>
+                            <h3><a href="{{ route('servicios',[App::getLocale()]) }}"></a>@lang('main.index.service.room.title')</h3>
+                            <h5>@lang('main.index.service.room.subtitle')</h5>
+                            <p>@lang('main.index.service.room.text')</p>
+                            <a href="{{ route('servicios',[App::getLocale()]) }}" class="btn-link">@lang('main.button.info')</a>
                         </div>
                     </div>
                     <!--div class="blog-item">
