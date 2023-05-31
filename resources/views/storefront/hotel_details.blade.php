@@ -48,7 +48,7 @@
                     <div class="item-photo">
                         <div class="photo-big" data-background="{{ asset('images/hotel_detalles/2.png') }}"></div>
                         <div class="photo-small" data-background="{{ asset('images/hotel_detalles/22.png') }}"></div>
-                        <a href="{{ route('gallery', [App::getLocale()]) }}" target="_blank" class="btn btn-default">@lang('main.button.more')</a>
+                        <a href="{{ route('menu.hotel', [App::getLocale()]) }}" target="_blank" class="btn btn-default">@lang('main.button.more')</a>
                     </div>
                     <div class="item-desc">
                         <h5>@lang('main.details.hotel.food.title')</h5>

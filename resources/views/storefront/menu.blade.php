@@ -4,13 +4,13 @@
 
 <div class="site-main">
     @if ($lang == 'es')
-        <img src="{{ asset('images/menus/menu_en.png') }}" alt="Menu del Restaurante" class="img-fluid img-c">
-        <img src="{{ asset('images/menus/menu_coco_en.png') }}" alt="Menu del Restaurante" class="img-fluid img-c">
-        <img src="{{ asset('images/menus/menu_drinks_en.png') }}" alt="Menu del Restaurante" class="img-fluid img-c">
+        <img src="{{ asset('images/menus/grill_en.png') }}" alt="Menu del Restaurante" style="display:block;margin:0px auto;">
+        <img src="{{ asset('images/menus/cocodrillos_en.png') }}" alt="Menu del Restaurante" style="display:block;margin:0px auto;">
+        <img src="{{ asset('images/menus/bebidas_en.png') }}" alt="Menu del Restaurante" style="display:block;margin:0px auto;">
     @else
-        <img src="{{ asset('images/menus/menu_es.png') }}" alt="Menu del Restaurante" class="img-fluid img-c">
-        <img src="{{ asset('images/menus/menu_coco_es.png') }}" alt="Menu del Restaurante" class="img-fluid img-c">
-        <img src="{{ asset('images/menus/menu_drinks_es.png') }}" alt="Menu del Restaurante" class="img-fluid img-c">
+        <img src="{{ asset('images/menus/grill_es.png') }}" alt="Menu del Restaurante" style="display:block;margin:0px auto;">
+        <img src="{{ asset('images/menus/cocodrillos_es.png') }}" alt="Menu del Restaurante" style="display:block;margin:0px auto;">
+        <img src="{{ asset('images/menus/bebidas_es.png') }}" alt="Menu del Restaurante" style="display:block;margin:0px auto;">
     @endif
 </div>
 
