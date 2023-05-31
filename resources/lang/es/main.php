@@ -19,6 +19,9 @@ return [
 
     'slider.01' => 'RESERVA AHORA LA MEJOR TARÍFA DISPONIBLE',
     'slider.02' => 'Habitación doble o sencilla',
+    'slider.03' => 'TU MEJOR OPCIÓN EN ESTANCIAS LARGAS',
+    'slider.04' => '¡Reserva este verano!',
+    'slider.05' => 'ÚNETE A NUESTRO CLUB DE LEALTAD',
 
     'hover-whats-p' => 'Cotiza, reserva y paga por',
 
@@ -193,6 +196,16 @@ return [
     'footer.send' => 'TE ENVIAREMOS NUESTRAS PROMOCIONES MAS RECIENTES',
     'footer.mail' => 'ESCRIBE TU E-MAIL',
     'footer.company' => 'HOTEL ADHARA CANCÚN PERTENECE A GRUPO PENINSULAR DE HOTELES',
+    'footer.privacy' => 'AVISO DE PRIVACIDAD',
+    'footer.policy' => 'TÉRMINOS Y CONDICIONES',
+
+    //SECCION DE TESTIMONIOS
+    'testimonials.title' => 'TESTIMONIOS DE',
+    'testimonials.subtitle' => 'Clientes Satisfechos',
+    'testimonials.text' => 'Crear una buena experiencia para tus vacaciones no ocurre por coincidencia. Ocurre por que nos esforzamos de hacerlo realidad con magia en cada detalle.',
+    'testimonials.item1' => 'Highly Recommended. Me quedo en Adhara cada vez que viajo a Cancun y la verdad me siento como en casa! El staff es muy cordial, la comida es excelente y los cuartos son perfectos! El desayuno incluido, tipo buffet...',
+    'testimonials.item2' => 'Súper genial la atención la limpieza el lugar súper tranquilo. La limpieza súper ordenada la decoración fue hermosa Lo recomiendo mil en mi próxima visita también lo escogería el precio súper económico.',
+    'testimonials.item2' => 'Super agusto, muy bonito, limpio me encantó el hotel, el área de la alberca muy bello sobretodo las atenciones de sus empleados, Don Ezequiel muy pendiente de nuestra petición por nuestro aniversario 25, atento y amable y la Sra Carmen...',
 
     //BOTON VER MAS
     'button.more' => 'VER MÁS',

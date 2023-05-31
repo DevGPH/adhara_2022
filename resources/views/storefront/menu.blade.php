@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div style="margin-top:90px">
+<div class="site-main">
     @if ($lang == 'es')
         <img src="{{ asset('images/menus/menu_en.png') }}" alt="Menu del Restaurante" class="img-fluid img-c">
         <img src="{{ asset('images/menus/menu_coco_en.png') }}" alt="Menu del Restaurante" class="img-fluid img-c">

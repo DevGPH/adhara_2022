@@ -399,16 +399,16 @@
             <div class="wrapper-inner">
                 <!-- Testimonials Title -->
                 <div class="widget-title">
-                    <h5>TESTIMONIOS DE</h5>
-                    <h2>Clientes Satisfechos</h2>
-                    <p>Crear una buena experiencia para tus vacaciones no ocurre por coincidencia. Ocurre por que nos esforzamos de hacerlo realidad con magia en cada detalle.</p>
+                    <h5>@lang('main.testimonials.title')</h5>
+                    <h2>@lang('main.testimonials.subtitle')</h2>
+                    <p>@lang('main.testimonials.text')</p>
                 </div>
                 <!-- Testimonials Title End -->
                 <!-- Testimonials Carousel -->
                 <div class="widget-carousel owl-carousel owl-theme">
                     <div class="testimonials-item">
                         <div class="item-comment">
-                            Highly Recommended. Me quedo en Adhara cada vez que viajo a Cancun y la verdad me siento como en casa! El staff es muy cordial, la comida es excelente y los cuartos son perfectos! El desayuno incluido, tipo buffet...
+                            @lang('main.testimonials.item1')
                         </div>
                         <div class="item-customer">
                             <div class="customer-photo" data-background="{{ asset('images/utilities/1.png') }}"></div>
@@ -418,7 +418,7 @@
                     </div>
                     <div class="testimonials-item">
                         <div class="item-comment">
-                            Súper genial la atención la limpieza el lugar súper tranquilo. La limpieza súper ordenada la decoración fue hermosa Lo recomiendo mil en mi próxima visita también lo escogería el precio súper económico.
+                            @lang('main.testimonials.item2')
                         </div>
                         <div class="item-customer">
                             <div class="customer-photo" data-background="{{ asset('images/utilities/2.png') }}"></div>
@@ -428,7 +428,7 @@
                     </div>
                     <div class="testimonials-item">
                         <div class="item-comment">
-                            Super agusto, muy bonito, limpio me encantó el hotel, el área de la alberca muy bello sobretodo las atenciones de sus empleados, Don Ezequiel muy pendiente de nuestra petición por nuestro aniversario 25, atento y amable y la Sra Carmen...
+                            @lang('main.testimonials.item3')
                         </div>
                         <div class="item-customer">
                             <div class="customer-photo" data-background="{{ asset('images/utilities/3.png') }}"></div>

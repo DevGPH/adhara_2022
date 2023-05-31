@@ -19,6 +19,9 @@ return [
 
     'slider.01' => 'BOOK NOW THE BEST AVAILABLE RATE',
     'slider.02' => 'Single or double room',
+    'slider.03' => 'YOUR BEST OPTION FOR LONG STAYS',
+    'slider.04' => '¡Book now this summer!',
+    'slider.05' => 'JOIN OUR LOYALTY CLUB',
 
     'hover-whats-p' => 'Quote, reserve and pay for',
 
@@ -201,6 +204,14 @@ return [
     'footer.company' => 'HOTEL ADHARA CANCUN BELONGS TO THE PENINSULAR GROUP OF HOTELS',
     'footer.privacy' => 'NOTICE OF PRIVACY',
     'footer.policy' => 'TERMS AND CONDITIONS',
+
+    //SECCION DE TESTIMONIOS
+    'testimonials.title' => 'Testimonials from',
+    'testimonials.subtitle' => 'Satisfied Customers',
+    'testimonials.text' => "Creating a great vacation experience doesn't happen by coincidence. It happens because we strive to make it a reality with magic in every detail.",
+    'testimonials.item1' => 'Highly Recommended. I stay at Adhara every time I travel to Cancun, and honestly, I feel at home! The staff is very friendly, the food is excellent, and the rooms are perfect! The included breakfast, buffet style...',
+    'testimonials.item2' => 'Super cool attention, cleanliness, and a super peaceful place. The cleanliness is very organized, the decoration was beautiful. I would highly recommend it, and I would also choose it for my next visit, considering the super affordable price.',
+    'testimonials.item2' => 'Super comfortable, very nice, clean. I loved the hotel, the pool area is beautiful, and above all, the attentions of its employees. Don Ezequiel was very attentive and kind to our request for our 25th anniversary, and Mrs. Carmen...',
 
     //BOTON VER MAS
     'button.more' => 'SEE MORE',

@@ -17,9 +17,9 @@
                     <div class="wrapper">
                         <div class="item-inner">
                             <!--img src="{{ asset('images/sliders/hotel_1.png') }}" alt="" class="breakpoint-slider"-->
-                            <h5 style="color:white;">TU MEJOR OPCIÓN EN ESTANCIAS LARGAS</h5>
+                            <h5 style="color:white;">@lang('main.slider.03')</h5>
                             <h1>ONE BED ROOM</h1>
-                            <h2 style="font-family: 'Playfair Display', sans-serif;">¡Reserva este verano!</h2>
+                            <h2 style="font-family: 'Playfair Display', sans-serif;">@lang('main.slider.04')</h2>
                         </div>
                     </div>
                 </div>
@@ -27,7 +27,7 @@
                     <div class="wrapper">
                         <div class="item-inner">
                             <!--img src="{{ asset('images/sliders/club_1.png') }}" alt="" class="breakpoint-slider"-->
-                            <h5 style="color:white;">ÚNETE A NUESTRO CLUB DE LEALTAD</h5>
+                            <h5 style="color:white;">@lang('main.slider.05')</h5>
                             <h1>CLUB ESTRELLA</h1>
                             <h2 style="font-family: 'Playfair Display', sans-serif;">www.clubestrella.mx</h2>
                         </div>
