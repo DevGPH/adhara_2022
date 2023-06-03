@@ -51,6 +51,8 @@ Route::prefix('{locale}')->group(function ()
     #CLUBESTRELLA
     Route::post('get-user-clubestrella',[HomeController::class,'getUserC'])->name('get.clubestrella');
     Route::get('logout-clubestrella',[HomeController::class,'closeUserC'])->name('logout.clubestrella');
+
+    Route::get('/test-response',[SantanderController::class,'testPost'])->name('test.response');
 });
 
 #Santander

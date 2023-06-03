@@ -25,7 +25,7 @@ class ConfirmationMail extends Mailable
      */
     public function __construct($folio, $hotel_name, $lang = 'es', $info = null)
     {
-        $this->action = $action;
+        //$this->action = $action;
         $this->folio = $folio;
         $this->hotel_name = $hotel_name;
         $this->lang = $lang;
@@ -39,7 +39,7 @@ class ConfirmationMail extends Mailable
      */
     public function build()
     {
- 
+
         if ($this->lang == 'es') {
 
             $this->msg = 'Esta reservación esta confirmada ¡Los esperamos!';
@@ -53,6 +53,6 @@ class ConfirmationMail extends Mailable
             $this->msg_2 = 'Este es tu comprobante de reserva, deberás mostrarlo junto con una identificación oficial en el mostrador del Hotel.';
 
             return $this->subject('Reservation Confirmation')->view('Mails.en.reserva');
-        }        
+        }
     }
 }

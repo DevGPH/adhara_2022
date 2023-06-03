@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\WEB\Santander;
 
 use App\Http\Controllers\WEB\Santander\AESCrypto;
+use App\Http\Controllers\WEB\Home\HomeController;
 use Illuminate\Support\Facades\Mail;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Crypt;
@@ -35,7 +36,7 @@ class SantanderController extends Controller
             $huesped = Huesped::findOrFail($reserva['huesped_id']);
             $invoice = 'Inv-'.$reserva['folio'];
             $keys = SantanderKeys::where('hotel_id',2)->where('ambiente','prod')->first();
-            
+
             $xml = "<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
             <P>
                 <business>
@@ -63,14 +64,14 @@ class SantanderController extends Controller
 
 
             $prev_xml = $xml;
-        
+
             $semilla_xml= Crypt::decryptString($keys['semilla_xml']);
             $key_commerce = Crypt::decryptString($keys['llave_comercial']);
 
             $aes = new AESCrypto();
             $encrypted_xml = $aes->encriptar($xml, $semilla_xml);
 
-            
+
             $xml = "<pgs><data0>".$key_commerce."</data0><data>".$encrypted_xml."</data></pgs>";
             $encode = urlencode($xml);
             $post_str = "xml=".$encode;
@@ -123,7 +124,7 @@ class SantanderController extends Controller
             }
             else
             {
-                
+
                 $descrypted_xml = $aes->desencriptar($output, $semilla_xml);
                 $sxe = new \SimpleXMLElement($descrypted_xml);
 
@@ -166,7 +167,7 @@ class SantanderController extends Controller
     public function store(Request $request)
     {
         Log::channel('santander-response')->info($request->all());
-    
+
         if($request->filled('strResponse'))
         {
             $keys = SantanderKeys::where('hotel_id',2)->where('ambiente','prod')->first();
@@ -243,7 +244,7 @@ class SantanderController extends Controller
                 Mail::to($huesped->email)
                     ->bcc(['programacionweb@gphoteles.com','gerencia@gphoteles.com','ecommerce@gphoteles.com'])
                     ->send(new PagoSuccess($response,$huesped,$reservation->currency));
-                
+
             }
             else
             {
@@ -251,7 +252,7 @@ class SantanderController extends Controller
                     ->where('id', $reserva['id'])
                     ->update(['estatus' => 'denegada','santander_pago_id' => $pago->id]);
 
-                
+
                 $reservation = Reserva::findOrFail($reserva['id']);
 
                 /*$reserva['estatus'] = 'denegada';
@@ -270,8 +271,8 @@ class SantanderController extends Controller
         $msg = '';
         $response = $request->cdResponse;
         $referencia = $request->referencia;
-        $result = explode('-',$referencia); 
-        $lang = (App::getLocale() == 'es') ? 'en' : 'es';   
+        $result = explode('-',$referencia);
+        $lang = (App::getLocale() == 'es') ? 'en' : 'es';
 
         if ($request->nbResponse == 'Rechazado') {
             $status = 'error';
@@ -306,20 +307,56 @@ class SantanderController extends Controller
 
             Mail::to($request->email)->send(new ConfirmationMail($referencia, $hotel->nombre_es, $lang, $info));
             Mail::to('ecommerce@gphoteles.com')->bcc(['programacionweb@gphoteles.com','gerencia@gphoteles.com','ventas@gphoteles.com','recepcion.express@gphoteles.com','reservaciones@gphoteles.com'])->send(new ConfirmationMail($referencia, $hotel->nombre_es, $lang, $info));
-              
+
         }
+
+        $rate = $homecontroller->rateToday($lang);
 
         return view('storefront.response_santander',[
             'status' => $status,
             'msg' => $msg,
             'response' => $response,
             'referencia' => $referencia,
-            'lang' => $lang
+            'lang' => $lang,
+            'id' => 0,
+            'rate' => $rate
         ]);
     }
 
-    public function testPost(Request $request) 
+    public function testPost($lang)
     {
-        Log::channel('single')->info($request->all());
+        $info = [
+            'plan_x_habitacion' => 'Con Alimentos',
+            'habitacion' => 'Habitación Doble',
+            'created_at' => now(),
+            'checkIn' => now(),
+            'checkOut' => now(),
+            'total' => 2000,
+            'adultos' => 2,
+            'infantes' => 0,
+            'nombre' => 'Juan Pablo',
+            'apellidos' => 'Gomez Tejeda',
+            'noches' => 2
+        ];
+
+        if ($lang == 'en') {
+            $info['plan_x_habitacion'] = 'With Breakfast';
+            $info['habitacion'] = 'Double Room';
+        }
+
+        //Mail::to('juan.alucard.02@gmail.com')->send(new ConfirmationMail('2312-GPH', 'Hotel Adhara Cancun', 'es', $info));
+
+        $homecontroller = new HomeController();
+        $rate = $homecontroller->rateToday($lang);
+
+        return view('storefront.response_santander',[
+            'status' => 'error',
+            'msg' => 'Todo ok',
+            'response' => 'Reserva test',
+            'referencia' => '455453-Adhara',
+            'lang' => $lang,
+            'rate' => $rate,
+            'id' => 0
+        ]);
     }
 }
