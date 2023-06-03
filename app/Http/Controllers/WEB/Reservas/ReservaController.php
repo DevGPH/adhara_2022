@@ -396,7 +396,7 @@ class ReservaController extends Controller
 
         if((int)$result['code'] == 500 || (int) $result['code'] == 409 || (int) $result['code'] == 422)
         {
-            return back()->with('error',$result['message']);
+            return back()->with('error-api',$result['message']);
         }
 
         switch ($result['data']['metodo_pago']) {

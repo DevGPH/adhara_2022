@@ -2,14 +2,20 @@
 
 @section('content')
 
-@if (session('error'))
+@if (session('error-api'))
     <div class="alert alert-danger" style="position:absolute;z-index:100;">
-        {{ session('error') }}
+        @foreach (session('error-api') as $item)
+            <p>{{ $item[0] }}</p>
+        @endforeach
     </div>
 @endif
 @error('condiciones')
     <div class="alert alert-danger" style="position:absolute;z-index:100;">{{ $message }}</div>
 @enderror
+
+@if(session('error'))
+    <div class="alert alert-danger" style="position:absolute;z-index:100;">{{ session('error') }}</div>
+@endif
 
 <div class="site-main">
     <!-- Section Page Title -->
