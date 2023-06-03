@@ -23,6 +23,7 @@ Route::redirect('/', '/es');
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/menu-adhara',[HomeController::class,'menu'])->name('menu.hotel');
 
 Route::prefix('{locale}')->group(function ()
 {

@@ -112,7 +112,7 @@ class HomeController extends Controller
         ]);
     }
 
-    public function menu($locale)
+    public function menu($locale = 'es')
     {
         $rate = $this->rateToday($locale);
         return view('storefront.menu')->with([
