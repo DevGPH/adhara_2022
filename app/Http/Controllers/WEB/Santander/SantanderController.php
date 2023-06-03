@@ -344,14 +344,14 @@ class SantanderController extends Controller
             $info['habitacion'] = 'Double Room';
         }
 
-        //Mail::to('juan.alucard.02@gmail.com')->send(new ConfirmationMail('2312-GPH', 'Hotel Adhara Cancun', 'es', $info));
+        Mail::to('juan.alucard.02@gmail.com')->send(new ConfirmationMail('2312-GPH', 'Hotel Adhara Cancun', 'es', $info));
 
         $homecontroller = new HomeController();
         $rate = $homecontroller->rateToday($lang);
 
         return view('storefront.response_santander',[
-            'status' => 'error',
-            'msg' => 'Todo ok',
+            'status' => 'aprobada',
+            'msg' => 'Hubo un error en la reserva',
             'response' => 'Reserva test',
             'referencia' => '455453-Adhara',
             'lang' => $lang,

@@ -4,7 +4,7 @@
     <!-- Site Main -->
 <div class="site-main">
     <!-- Section Page Title -->
-    <div class="section" style="padding-top:40px;padding-bottom:40px;">
+    <div class="section" style="padding-top:80px;padding-bottom:80px; width:800px;display:block;margin:0px auto;">
         @if ($status == 'error')
             <img src="{{ asset('images/santander/caution-error.svg') }}" class="img-responsive" alt="" style="width: 200px; display:block;margin:0px auto;">
             <img src="{{ asset('images/santander/line-error.svg') }}" class="img-responsive" alt="">
