@@ -25,14 +25,14 @@
             <div class="wrapper-inner">
                 <!-- Title -->
                 <!--h5>STAY THE GRANDIUM</h5-->
-                <h1>Formulario de Reserva</h1>
-                <p>¡Listo para crear recuerdos maravillosos! Revisa tus datos antes de reservar y asegúrate de que todo esté perfecto. ¡Descubre la magia de Hotel Adhara Cancún y disfruta de una estancia encantadora!</p>
+                <h1>@lang('main.book.title')</h1>
+                <p>@lang('main.book.subtitle')</p>
                 <!-- Title Emd -->
                 <!-- Breadcrumb -->
                 <div class="widget-breadcrumb">
                     <ul>
                         <li><a href="{{ route('inicio', App::getLocale()) }}">@lang('main.breadcrumb.home')</a></li>
-                        <li>RESERVA</li>
+                        <li>@lang('main.breadcrumb.book')</li>
                     </ul>
                 </div>
                 <!-- Breadcrumb End -->
@@ -50,19 +50,19 @@
                         <div class="col-lg-8 col-md-7">
                             <!-- Booking Complete -->
                             <div class="booking-complete">
-                                <h5>RESERVA AHORA</h5>
-                                <h2>Información Personal</h2>
+                                <h5>@lang('main.book.now')</h5>
+                                <h2>@lang('main.book.info')</h2>
                                 <div class="complete-message">
                                     <i class="fa fa-check"></i>
-                                    Llena todos los campos correctamente con tu información para completar el registro de tu reserva. Revisa bien que tus datos sean correctos antes de continuar.
+                                    @lang('main.book.details')
                                 </div>
                             </div>
                             <!-- Booking Complete End -->
                             <!-- Booking Form -->
                             <div class="booking-form">
-                                <h5>RESERVA AHORA</h5>
-                                <h2>Información Personal</h2>
-                                <p>Llena todos los campos correctamente con tu información para completar el registro de tu reserva. Revisa bien que tus datos sean correctos antes de continuar.</p>
+                                <h5>@lang('main.book.now')</h5>
+                                <h2>@lang('main.book.info')</h2>
+                                <p>@lang('main.book.details')</p>
                                 <div class="data-form">
                                     <form action="{{ route('book.reserve',[App::getLocale()]) }}" id="booking-form" method="POST">
                                         @csrf
@@ -167,8 +167,8 @@
                         <div class="col-lg-4 col-md-5">
                             <!-- Booking Detail -->
                             <div class="booking-detail">
-                                <h5>INFORMACIÓN SOBRE</h5>
-                                <h2>Habitación Seleccionada</h2>
+                                <h5>@lang('main.book.about')</h5>
+                                <h2>@lang('main.book.selected.room')</h2>
                                 <div class="detail-room">
                                     <div class="room-photo">
                                         @if ($habitacion->categoria->tag_es == 'estandar')
@@ -180,7 +180,7 @@
                                         @endif
                                     </div>
                                     <div class="room-desc">
-                                        <h3><a href="#">{{ $habitacion->categoria->nombre_es }}</a></h3>
+                                        <h3><a href="#">{{ (App::getLocale() == 'es') ? $habitacion->categoria->nombre_es : $habitacion->categoria->nombre_en }}</a></h3>
                                         <h4>$ {{ $total }} <small>total</small></h4>
                                     </div>
                                 </div>

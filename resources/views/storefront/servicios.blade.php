@@ -34,8 +34,13 @@
                 <div class="services-item">
                     <div class="item-photo">
                         <div class="photo-big" data-background="{{ asset('images/services/whats3.png') }}"></div>
-                        <div class="photo-small" data-background="{{ asset('images/services/whats4.png') }}"></div>
-                        <a href="https://api.whatsapp.com/send?phone=529981221861" target="_blank" class="btn btn-default">IR A WHATSAPP</a>
+                        @if (App::getLocale() == 'es')
+                            <div class="photo-small" data-background="{{ asset('images/services/whats_es.png') }}"></div>
+                        @else
+                            <div class="photo-small" data-background="{{ asset('images/services/whats_en.png') }}"></div>
+                        @endif
+
+                        <a href="https://api.whatsapp.com/send?phone=529981221861" target="_blank" class="btn btn-default">@lang('main.service.whats.button')</a>
                     </div>
                     <div class="item-desc">
                         <h5>@lang('main.service.whats.title')</h5>

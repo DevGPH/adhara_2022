@@ -57,7 +57,7 @@
                     <div class="widget-contact-info">
                         <ul>
                             <li>
-                                <h5>HOTEL ADHARA CANCÚN</h5>
+                                <h5>@lang('main.contact.hotel')</h5>
                                 <ul>
                                     <li>Av. Carlos Nader 1,2,3 SM.1, MZ.2, C.P. 77500, Cancún Quintana Roo, México.</li>
                                     <li>Teléfono: 998 881 6500</li>

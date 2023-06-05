@@ -286,7 +286,11 @@
                         <div class="item-media">
                             <!--div class="item-date"><img src="{{ asset('images/services/icon.png') }}" alt=""></div-->
                             <div class="media-photo">
-                                <a href="https://api.whatsapp.com/send?phone=529981221861" data-background="{{ asset('images/services/movile.png') }}"></a>
+                                @if (App::getLocale() == 'en')
+                                    <a href="https://api.whatsapp.com/send?phone=529981221861" data-background="{{ asset('images/services/movile_en.png') }}"></a>
+                                @else
+                                    <a href="https://api.whatsapp.com/send?phone=529981221861" data-background="{{ asset('images/services/movile_es.png') }}"></a>
+                                @endif
                             </div>
                         </div>
                         <div class="item-desc">

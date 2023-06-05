@@ -40,6 +40,7 @@ return [
     'breadcrumb.rooms' => 'HABITACIONES',
     'breadcrumb.services' => 'SERVICIOS',
     'breadcrumb.gallery' => 'GALERÍA',
+    'breadcrumb.book' => 'RESERVA',
 
     //  BUSCADOR
     'booking.checkIn' => 'LLEGADA',
@@ -177,6 +178,7 @@ return [
     'service.room.title' => 'Habitaciones adaptadas',
     'service.room.subtitle' => 'Para personas con movilidad reducida',
     'service.room.text' => 'Descubre nuestras habitaciones especiales para personas con movilidad reducida. Diseñadas pensando en tu comodidad, cuentan con baños adaptados,  amplios espacios y equipamiento especializado. Nuestro personal capacitado te brindará asistencia para asegurarte una estancia sin preocupaciones. Reserva una de nuestras habitaciones y disfruta de la comodidad y seguridad que necesitas. En Hotel Adhara Cancún, la inclusión y satisfacción de nuestros huéspedes son lo más importante.',
+    'service.whats.button' => 'IR A WHATSAPP',
 
     // SECCION GALERIA
     'gallery.title' => 'DESCUBRE NUESTROS ESPACIOS',
@@ -205,7 +207,7 @@ return [
     'testimonials.text' => 'Crear una buena experiencia para tus vacaciones no ocurre por coincidencia. Ocurre por que nos esforzamos de hacerlo realidad con magia en cada detalle.',
     'testimonials.item1' => 'Highly Recommended. Me quedo en Adhara cada vez que viajo a Cancun y la verdad me siento como en casa! El staff es muy cordial, la comida es excelente y los cuartos son perfectos! El desayuno incluido, tipo buffet...',
     'testimonials.item2' => 'Súper genial la atención la limpieza el lugar súper tranquilo. La limpieza súper ordenada la decoración fue hermosa Lo recomiendo mil en mi próxima visita también lo escogería el precio súper económico.',
-    'testimonials.item2' => 'Super agusto, muy bonito, limpio me encantó el hotel, el área de la alberca muy bello sobretodo las atenciones de sus empleados, Don Ezequiel muy pendiente de nuestra petición por nuestro aniversario 25, atento y amable y la Sra Carmen...',
+    'testimonials.item3' => 'Super agusto, muy bonito, limpio me encantó el hotel, el área de la alberca muy bello sobretodo las atenciones de sus empleados, Don Ezequiel muy pendiente de nuestra petición por nuestro aniversario 25, atento y amable y la Sra Carmen...',
 
     //BOTON VER MAS
     'button.more' => 'VER MÁS',
@@ -338,6 +340,7 @@ return [
     'contact.form.phone' => 'TELEFONO',
     'contact.form.message' => 'MENSAJE',
     'contact.form.send' => 'ENVIAR',
+    'contact.hotel' => 'HOTEL ADHARA CANCÚN',
     'contact.reservaciones' => 'RESERVACIONES',
     'contact.page' => 'Página de Contacto',
     'contact.touch' => 'PONTE EN CONTACTO CON NOSOTROS',
@@ -346,6 +349,14 @@ return [
     'contact.sales' => 'VENTAS',
 
 
+    // PAGINA DE RESERVACIONES
+    'book.title' => 'Formulario de Reserva',
+    'book.subtitle' => '¡Listo para crear recuerdos maravillosos! Revisa tus datos antes de reservar y asegúrate de que todo esté perfecto. ¡Descubre la magia de Hotel Adhara Cancún y disfruta de una estancia encantadora!',
+    'book.now' => 'RESERVAR AHORA',
+    'book.info' => 'Información Personal',
+    'book.details' => 'Llena todos los campos correctamente con tu información para completar el registro de tu reserva. Revisa bien que tus datos sean correctos antes de continuar.',
+    'book.about' => 'INFORMACIÓN SOBRE',
+    'book.selected.room' => 'Habitacion Seleccionada',
 
 
     'quotation-item001' => 'Todos los precios incluyen impuestos',

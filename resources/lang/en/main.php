@@ -37,9 +37,10 @@ return [
 
     // BREADCRUMBS
     'breadcrumb.home' => 'HOME',
-    'breadcrumb.rooms' => 'CUARTOS',
+    'breadcrumb.rooms' => 'ROOMS',
     'breadcrumb.services' => 'SERVICES',
     'breadcrumb.gallery' => 'GALLERY',
+    'breadcrumb.book' => 'BOOK NOW',
 
     //  BUSCADOR
     'booking.checkIn' => 'CHECK IN',
@@ -135,6 +136,7 @@ return [
     'index.service.room.title' => 'Adapted Rooms',
     'index.service.room.subtitle' => 'For people with reduced mobility',
     'index.service.room.text' => 'At Hotel Adhara Cancun we have rooms that have the necessary conditions for people with reduced mobility inside the toilet and shower',
+    'service.whats.button' => 'GO TO WHATSAPP',
 
     // SECCION DE DETALLES DEL HOTEL
     'details.hotel.title' => 'A MORE PLEASANT STAY',
@@ -211,7 +213,7 @@ return [
     'testimonials.text' => "Creating a great vacation experience doesn't happen by coincidence. It happens because we strive to make it a reality with magic in every detail.",
     'testimonials.item1' => 'Highly Recommended. I stay at Adhara every time I travel to Cancun, and honestly, I feel at home! The staff is very friendly, the food is excellent, and the rooms are perfect! The included breakfast, buffet style...',
     'testimonials.item2' => 'Super cool attention, cleanliness, and a super peaceful place. The cleanliness is very organized, the decoration was beautiful. I would highly recommend it, and I would also choose it for my next visit, considering the super affordable price.',
-    'testimonials.item2' => 'Super comfortable, very nice, clean. I loved the hotel, the pool area is beautiful, and above all, the attentions of its employees. Don Ezequiel was very attentive and kind to our request for our 25th anniversary, and Mrs. Carmen...',
+    'testimonials.item3' => 'Super comfortable, very nice, clean. I loved the hotel, the pool area is beautiful, and above all, the attentions of its employees. Don Ezequiel was very attentive and kind to our request for our 25th anniversary, and Mrs. Carmen...',
 
     //BOTON VER MAS
     'button.more' => 'SEE MORE',
@@ -339,14 +341,22 @@ return [
     'contact.form.phone' => 'PHONE',
     'contact.form.message' => 'MESSAGE',
     'contact.form.send' => 'SEND',
-    'contact.reservaciones' => 'RESERVACIONES',
+    'contact.hotel' => 'ADHARA CANCUN HOTEL',
+    'contact.reservaciones' => 'RESERVATIONS',
     'contact.page' => 'Contact Page',
     'contact.touch' => 'GET IN TOUCH WITH US',
     'contact.form.title' => 'CONTACT FORM',
     'contact.form.label' => 'We are eager to hear from you; please fill in your contact information and one of our staff members will contact you shortly.',
     'contact.sales' => 'SALES',
 
-
+    // PAGINA DE RESERVACIONES
+    'book.title' => 'Booking Form',
+    'book.subtitle' => 'Ready to create wonderful memories! Review your information before booking and make sure everything is perfect. Discover the magic of Hotel Adhara Cancun and enjoy a delightful stay!',
+    'book.now' => 'BOOK NOW',
+    'book.info' => 'Personal Information',
+    'book.details' => 'Fill in all the fields correctly with your information to complete the registration of your reservation. Double-check that your data is correct before proceeding.',
+    'book.about' => 'INFORMATION ABOUT',
+    'book.selected.room' => 'Selected Room',
 
 
     'quotation-item001' => 'All prices include taxes',
