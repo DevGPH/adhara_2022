@@ -213,6 +213,15 @@ return [
     'button.more' => 'VER MÁS',
     'button.info' => 'MÁS INFORMACIÓN',
 
+    // VISTA COTIZACION
+    'check.title' => 'LISTADO DE HABITACIONES',
+    'check.subtitle' => 'Elige la mejor para tus vacaciones.',
+    'check.text' => 'Descubre un refugio de elegancia y tranquilidad en Hotel Adhara Cancún. Habitaciones cuidadosamente diseñadas, atención personalizada, espacios relajantes y una ubicación ideal para explorar la ciudad.',
+    'check.season' => 'TEMPORADA - HABITACIÓN',
+    'check.regular' => 'TARÍFA REGULAR CON DESAYUNO',
+    'check.club' => 'TARIFA SOCIO CLUB ESTRELLA CON DESAYUNO',
+
+
     /*  DE AQUI PARA ABAJO SE PUEDE ELIMINAR*/
 
 

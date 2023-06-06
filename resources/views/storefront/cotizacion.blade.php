@@ -9,15 +9,15 @@
             <div class="widget-background" data-background="{{ asset('images/backgrounds/coitzacion_background.png') }}"></div>
             <div class="wrapper-inner">
                 <!-- Title -->
-                <h5>LISTADO DE HABITACIONES</h5>
-                <h1>Elige la mejor para tus vacaciones.</h1>
-                <p>Descubre un refugio de elegancia y tranquilidad en Hotel Adhara Cancún. Habitaciones cuidadosamente diseñadas, atención personalizada, espacios relajantes y una ubicación ideal para explorar la ciudad.</p>
+                <h5>@lang('main.check.title')</h5>
+                <h1>@lang('main.check.subtitle')</h1>
+                <p>@lang('main.check.text')</p>
                 <!-- Title End -->
                 <!-- Breadcrumb -->
                 <div class="widget-breadcrumb">
                     <ul>
                         <li><a href="{{ route('inicio', App::getLocale()) }}">@lang('main.breadcrumb.home')</a></li>
-                        <li>TEMPORADA - HABITACIÓN</li>
+                        <li>@lang('main.check.season')</li>
                     </ul>
                 </div>
                 <!-- Breadcrumb End -->
@@ -65,12 +65,12 @@
                         </div>
                         <div class="item-price">
                             <div class="price-inner">
-                                <h5>TARÍFA REGULAR CON DESAYUNO</h5>
+                                <h5>@lang('main.check.regular')</h5>
                                 <h4>$ {{ (App::getLocale() == 'es') ? number_format(round($room['total'] * $cambio_moneda)) .' '. 'MXN' : $room['total'] .' '. $room['currency']}}</h4>
                                 <hr style="border-bottom: 1px solid #6e5e78">
                                 <div style="margin-bottom: 15px;"></div>
                                 <i class="fa fa-star"></i>
-                                <h5>TARIFA SOCIO CLUB ESTRELLA CON DESAYUNO</h5>
+                                <h5>@lang('main.check.club')</h5>
                                 <h3>$ {{ (App::getLocale() == 'es') ? number_format(round($room['clubestrella'] * $cambio_moneda)) .' '. 'MXN' : $room['clubestrella'] .' '. $room['currency']}}</h3>
                                 <!--h4>$ 180.00</h4-->
                                 <form action="{{ route('reservations',['locale'=>App::getLocale()]) }}" method="GET">
@@ -96,7 +96,7 @@
                                     @foreach ($infantes_no_bf as $infante_no_bf)
                                         <input type="hidden" name="infantes_no_bf[]" value="{{ $infante_no_bf }}">
                                     @endforeach
-                                    <button type="submit" id="" class="btn">@lang('main.quotation-item016')</button>
+                                    <button type="submit" id="" class="btn">@lang('main.breadcrumb.book')</button>
                                 </form>
                             </div>
                         </div>

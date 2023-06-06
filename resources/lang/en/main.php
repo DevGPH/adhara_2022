@@ -219,6 +219,14 @@ return [
     'button.more' => 'SEE MORE',
     'button.info' => 'MORE INFO',
 
+    'check.title' => 'ROOM LIST',
+    'check.subtitle' => 'Choose the best one for your vacation.',
+    'check.text' => 'Discover a haven of elegance and tranquility at Hotel Adhara Cancun. Carefully designed rooms, personalized attention, relaxing spaces, and an ideal location to explore the city.',
+    'check.season' => 'SEASON - ROOM',
+    'check.regular' => 'REGULAR RATE WITH BREAKFAST',
+    'check.club' => 'CLUB ESTRELLA MEMBER RATE WITH BREAKFAST',
+
+
     /*  DE AQUI PARA ABAJO SE PUEDE ELIMINAR*/
     'body-item4' => 'Av. Carlos Nader 1,2,3 SM.1, MZ.2, Cancun, Quintana Roo, Mexico.',
 
