@@ -94,7 +94,7 @@
                                         </div>
 
                                         <div style="line-height: 35px">
-                                            Tourist tax not included 4.05 USD per person/night to pay at check-in
+                                            Tourist tax not included 4.05 USD per room x night to pay at check-in
                                         </div>
                                     </td>
                                 </tr>

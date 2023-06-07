@@ -302,5 +302,5 @@ return [
     'grupos-h' => 'GROUPS',
     'grupos-p' => 'You need 10 rooms per night , or more?',
 
-    'tasa-turistica' => 'Tourist tax not included 4.05 USD per person x night to pay at check-in',
+    'tasa-turistica' => 'Tourist tax not included 4.05 USD per room x night to pay at check-in',
 ];
