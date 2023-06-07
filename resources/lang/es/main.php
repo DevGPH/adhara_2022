@@ -298,6 +298,6 @@ return [
     'grupos-h' => 'GRUPOS',
     'grupos-p' => '¿Necesitas 10 habitaciones o más por noche?',
 
-    'tasa-turistica' => 'Tasa turística no incluida 72.62 MXN por persona/noche a pagar en el hotel',
+    'tasa-turistica' => 'Tasa turística no incluida 72.62 MXN por persona x noche a pagar en el hotel',
 
 ];
