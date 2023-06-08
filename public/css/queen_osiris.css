@@ -3052,7 +3052,7 @@ a,
 .site-header .header-bottom .header-logo{
     position                : absolute;
     top                     : 0;
-    left                    : 50%;
+    left                    : 49%;
     width                   : 220px;
     -webkit-transform       : translateX(-50%);
        -moz-transform       : translateX(-50%);

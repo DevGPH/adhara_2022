@@ -40,12 +40,12 @@
     <!-- Header Top End -->
     <!-- Header Bottom -->
     <div class="header-bottom">
-        <div class="wrapper center-block">
-            <!--div class="header-logo">
+        <div class="wrapper">
+            <div class="header-logo">
                 <a href="{{ route('inicio', ['locale' => App::getLocale()]) }}"><img src="{{ asset('images/logos/logo_adhara.png') }}" alt="Hotel Adhara Cancun"></a>
-            </div-->
-            <div class="header-nav" style="display: inline-block;width:100%;">
-                <ul class="nav-left" style="padding-right: 0px;">
+            </div>
+            <div class="header-nav">
+                <ul class="nav-left">
                     <li class="sub"><a href="{{ route('inicio', ['locale' => App::getLocale()])}}">@lang('main.nav-home')</a></li>
                     <li class="sub"><a href="#">@lang('main.nav-rooms')</a>
                         <ul class="simpson">
@@ -57,10 +57,7 @@
                     <li class="sub"><a href="{{ route('hotel.details', ['locale' => App::getLocale()]) }}">@lang('main.nav-hotel')</a>
                     </li>
                 </ul>
-                <ul>
-                    <li><img src="{{ asset('images/logos/logo_adhara.png') }}" alt="Hotel Adhara Cancun" style="width: 200px; margin-left:20px;margin-right:20px;"></li>
-                </ul>
-                <ul class="nav-right" style="padding-left: 0px;">
+                <ul class="nav-right">
                     <li class="sub"><a href="{{ route('servicios', [App::getLocale()]) }}">@lang('main.nav-services')</a>
                         <!--ul class="simpson">
                             <li><a href="#">HABITACIONES ADAPTADAS</a></li>
