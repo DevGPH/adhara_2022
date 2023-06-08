@@ -511,4 +511,8 @@ return [
     'grupos-h' => 'GROUPS',
     'grupos-p' => 'You need 10 rooms per night , or more?',
 
+    // TAXES
+    'tax.done' => 'All prices include taxes!',
+    'tax.missing' => 'Tourist tax not included 5 USD per room/night to be paid at the hotel.'
+
 ];

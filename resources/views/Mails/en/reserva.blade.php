@@ -88,17 +88,15 @@
                                     <td align="center"
                                         style="color: #343434; font-size: 28px; font-family: Quicksand, Calibri, sans-serif; font-weight:700;letter-spacing: 3px; line-height: 35px;"
                                         class="main-header">
-
-
                                         <div style="line-height: 35px">
-
                                             Your reservation has been <span style="color: #5caad2;">confirmed</span>
-
+                                        </div>
+                                        <div style="line-height: 35px">
+                                            Tourist tax not included 5 USD per room x night to pay at check-in
                                         </div>
                                     </td>
                                 </tr>
                                 <tr>
-
                                     <td align="center" class="section-img">
                                         <a href=""
                                             style=" border-style: none !important; display: block; border: 0 !important;"><img
@@ -113,7 +111,6 @@
                                 <tr>
                                     <td height="10" style="font-size: 10px; line-height: 10px;">&nbsp;</td>
                                 </tr>
-
                                 <tr>
                                     <td align="center">
                                         <table border="0" width="40" align="center" cellpadding="0" cellspacing="0"

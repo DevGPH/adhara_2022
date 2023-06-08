@@ -29,6 +29,10 @@
     <!-- Section Rooms -->
     <div class="section">
         <div class="wrapper-inner">
+            <div style="display: flex;justify-content: flex-end;margin-bottom: 40px;">
+                <h4 style="margin-right: auto;">@lang('main.tax.done')</h4>
+                <h4>@lang('main.tax.missing')</h4>
+            </div>
             <!-- Rooms List -->
             <div class="widget-rooms-list">
                 @foreach ($data as $room)
@@ -51,15 +55,6 @@
                                     @foreach ($room['amenidades'] as $amenidad)
                                         <li><i class="fa fa-check"></i> {{$amenidad}}</li>
                                     @endforeach
-                                    <!--li><i class="fa fa-check"></i> BREAKFAST</li>
-                                    <li><i class="fa fa-check"></i> WI-FI</li>
-                                    <li><i class="fa fa-check"></i> HAIR DRYER</li>
-                                    <li><i class="fa fa-check"></i> LCD TV</li>
-                                    <li><i class="fa fa-check"></i> SHOWER AND TAB</li>
-                                    <li><i class="fa fa-check"></i> SECURITY SYSTEM</li>
-                                    <li><i class="fa fa-check"></i> AIR CONDITIONING</li>
-                                    <li><i class="fa fa-check"></i> MINI BAR</li>
-                                    <li><i class="fa fa-check"></i> TEA AND COFFEE SET</li-->
                                 </ul>
                             </div>
                         </div>
@@ -72,7 +67,7 @@
                                 <i class="fa fa-star"></i>
                                 <h5>@lang('main.check.club')</h5>
                                 <h3>$ {{ (App::getLocale() == 'es') ? number_format(round($room['clubestrella'] * $cambio_moneda)) .' '. 'MXN' : $room['clubestrella'] .' '. $room['currency']}}</h3>
-                                <!--h4>$ 180.00</h4-->
+
                                 <form action="{{ route('reservations',['locale'=>App::getLocale()]) }}" method="GET">
                                     @csrf
                                     <input type="hidden" name="habitacion_id" value="{{ $room['id'] }}" readonly>

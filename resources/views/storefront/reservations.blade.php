@@ -216,6 +216,8 @@
                                         </li>
                                     </ul>
                                 </div>
+                                <p style='text-align:center;margin-top:20px;'>@lang('main.tax.done')</p>
+                                <p style="text-align: center;">@lang('main.tax.missing')</p>
                             </div>
                             <!-- Booking Detail End -->
                             <!-- Booking Help -->

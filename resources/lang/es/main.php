@@ -509,4 +509,8 @@ return [
     'grupos-h' => 'GRUPOS',
     'grupos-p' => '¿Necesitas 10 habitaciones o más por noche?',
 
+    // TAXES
+    'tax.done' => '¡Todos los precios Incluyen impuestos!',
+    'tax.missing' => 'Tasa turística no incluida 72.62 MXN por habitación/noche a pagar en el hotel.',
+
 ];
