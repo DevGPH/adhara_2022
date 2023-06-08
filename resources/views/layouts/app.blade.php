@@ -4,9 +4,10 @@
 	<!-- Basic Page Head -->
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>Hotel Adhara Cancún</title>
+    <link rel="icon" type="image/x-icon" href="{{ asset('images/icons/adhara.png') }}">
     <meta property="og:title"content="Hotel Adhara Cancún reserva en línea tu hospedaje con nuestra tarifa mágica, reserva, somos tu mejor  opción en el centro de Cancún, nuestra ubicación es privilegiada, viajeros de negocios y placer, habitaciones muy amplias y confortables, Wifi gratis, alberca, gimnasio, desayuno buffet, transportación gratis en horario establecido sujeto a  disponibilidad, contamos  con nuestro  programa de  lealtad  Club  Estrella ,  acumula  puntos  y  obtén recompensas, reserva  en  nuestro  sitio  oficial y  obtén  grandes beneficios, hoteles en  Cancun"/>
     <meta property=”og.type” content=hotel/>
-    <!--meta property=”og:image content=hotel/-->
+    <meta property=”og:image” content="{{ asset('images/icons/adhara.png') }}" />
     <meta name=”twitter:title” content="Hotel Adhara Cancún">
     <meta name=”twitter:description” content="Hotel Adhara Cancún reserva en línea tu hospedaje con nuestra tarifa mágica, reserva, somos tu mejor  opción en el centro de Cancún, nuestra ubicación es privilegiada, viajeros de negocios y placer, habitaciones muy amplias y confortables, Wifi gratis, alberca, gimnasio, desayuno buffet, transportación gratis en horario establecido sujeto a  disponibilidad, contamos  con nuestro  programa de  lealtad  Club  Estrella ,  acumula  puntos  y  obtén recompensas, reserva  en  nuestro  sitio  oficial y  obtén  grandes beneficios, hoteles en  Cancun">
 	<meta name="description" content="Hotel Adhara Cancún reserva en línea tu hospedaje con nuestra tarifa mágica, reserva, somos tu mejor  opción en el centro de Cancún, nuestra ubicación es privilegiada, viajeros de negocios y placer, habitaciones muy amplias y confortables, Wifi gratis, alberca, gimnasio, desayuno buffet, transportación gratis en horario establecido sujeto a  disponibilidad, contamos  con nuestro  programa de  lealtad  Club  Estrella ,  acumula  puntos  y  obtén recompensas, reserva  en  nuestro  sitio  oficial y  obtén  grandes beneficios, hoteles en  Cancun">
