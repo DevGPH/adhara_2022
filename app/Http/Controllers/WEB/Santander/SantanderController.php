@@ -310,6 +310,7 @@ class SantanderController extends Controller
 
         }
 
+        $homecontroller = new HomeController();
         $rate = $homecontroller->rateToday($lang);
 
         return view('storefront.response_santander',[
