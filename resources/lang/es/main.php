@@ -157,9 +157,9 @@ return [
     'details.hotel.terrace.text' => 'Nuestra terraza es un espacio encantador y relajante que ofrece una experiencia única para comenzar el día. Ubicada junto a la piscina, esta área está diseñada para que los huéspedes disfruten de su desayuno al aire libre, rodeados de un entorno tranquilo y agradable.',
     'details.hotel.terrace.text2' => 'El desayuno se sirve en un buffet completo, con una amplia selección de platos y opciones para satisfacer todos los gustos y preferencias. Desde opciones saludables como frutas frescas, yogurt y cereales, hasta platos calientes como huevos revueltos, quesadillas y una variedad de alimentos para energizar el día.',
     'details.hotel.gym.title' => 'Gimnasio',
-    'details.hotel.gym.title' => 'Tu rutina siempre activa',
-    'details.hotel.gym.title' => 'Nuestro gimnasio equipado es una excelente opción para huéspedes que desean mantenerse en forma durante su estadía. Proporcionamos un espacio dedicado al ejercicio y está equipado con una variedad de aparatos modernos y de alta calidad.',
-    'details.hotel.gym.title' => 'El ambiente del gimnasio es limpio, bien iluminado y climatizado, lo que proporciona un entorno cómodo y agradable para realizar ejercicios. Se proporcionan toallas y agua potable para mantener a los huéspedes hidratados durante sus entrenamientos.',
+    'details.hotel.gym.subtitle' => 'Tu rutina siempre activa',
+    'details.hotel.gym.text' => 'Nuestro gimnasio equipado es una excelente opción para huéspedes que desean mantenerse en forma durante su estadía. Proporcionamos un espacio dedicado al ejercicio y está equipado con una variedad de aparatos modernos y de alta calidad.',
+    'details.hotel.gym.text2' => 'El ambiente del gimnasio es limpio, bien iluminado y climatizado, lo que proporciona un entorno cómodo y agradable para realizar ejercicios. Se proporcionan toallas y agua potable para mantener a los huéspedes hidratados durante sus entrenamientos.',
 
     // SECCION SERVICIOS
     'services.title' => 'Servicios',
