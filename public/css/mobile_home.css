@@ -8,31 +8,31 @@
 	Author URI: http://www.locotheme.com
 
 	- - - - - Contents - - - - -
-	
+
     01 - Max 1199px
     02 - Max 991px
 	03 - Max 767px
 	04 - Min 1200px
     05 - Min 992px
 	06 - Min 768px
-	
+
 	- - - - - - - - - - - - - -
-	
+
 */
 
 /*  01 -  Max 1199px
 -----------------------------------------------------------*/
 @media (max-width: 1199px){
-    
+
     .widget-title p{
         max-width               : 70vw;
     }
-    
+
     .widget-rooms-detail .room-booking h2,
     .widget-rooms-detail .room-features h2{
         font-size               : 28px;
     }
-    
+
     .widget-contact-form{
         padding-top             : 40px;
         margin-top              : 100px;
@@ -40,7 +40,7 @@
     .widget-contact-form:after{
         display                 : none;
     }
-    
+
     .site-header .header-bottom{
         min-height              : inherit;
         padding-bottom          : 60px;
@@ -118,12 +118,12 @@
         display                 : inline-block;
     }
     .site-header.nav-open{
-        background              : #24324a;
+        background              : #523465;
     }
     .site-header.nav-open .header-bottom .header-nav{
         display                 : block;
     }
-    
+
     .site-footer .footer-top:before{
         display                 : none;
     }
@@ -138,7 +138,7 @@
     .site-footer .footer-top .widget-social-icons ul{
         display                 : inline-block;
     }
-	
+
 }
 
 /*  02 -  Max 991px
@@ -149,7 +149,7 @@
         padding-left            : 40px;
         padding-right           : 40px;
     }
-    
+
     .widget-slider .widget-carousel .owl-nav .owl-prev{
         left                    : 40px;
     }
@@ -159,11 +159,11 @@
     .widget-slider.has-rooms .slider-booking{
         display                 : none;
     }
-    
+
     .widget-about-promo{
         background-image        : none !important;
     }
-    
+
     .widget-about-grid .widget-inner{
         display                 : block;
         -webkit-flex-flow       : none;
@@ -180,7 +180,7 @@
     .widget-about-grid .widget-inner .widget-item:last-child{
         margin-bottom           : 0;
     }
-    
+
     .widget-rooms-list .rooms-item{
         padding-left            : 0;
         padding-right           : 0;
@@ -216,7 +216,7 @@
              -o-transform       : none;
                 transform       : none;
     }
-    
+
     .widget-rooms-detail .room-booking,
     .widget-rooms-detail .room-features{
         margin-top              : 50px;
@@ -225,7 +225,7 @@
     .widget-rooms-detail .room-features h2{
         font-size               : 42px;
     }
-    
+
     .widget-offers-grid .offers-item{
         width                   : 100%;
         float                   : none;
@@ -277,7 +277,7 @@
     .widget-offers-grid .wrapper-inner{
         padding-bottom          : 100px;
     }
-    
+
     .widget-services-list .services-item .item-photo{
         position                : relative;
         width                   : 100%;
@@ -298,33 +298,33 @@
         padding-left            : 60px;
         padding-top             : 40px;
     }
-    
+
     .widget-services-list .services-item:nth-child(even) .item-photo .photo-small{
         left                    : 0;
     }
     .widget-services-list .services-item:nth-child(even) .item-desc{
         padding-right           : 60px;
     }
-    
+
     .widget-booking-form .booking-detail{
         margin-top              : 100px;
     }
-    
+
     .widget-blog-sidebar{
         margin-top              : 100px;
     }
-    
+
     .site-header .header-bottom .header-nav{
         margin-left             : -40px;
         margin-right            : -40px;
     }
-    
-    .site-footer .footer-bottom .footer-contact ul li, 
+
+    .site-footer .footer-bottom .footer-contact ul li,
     .site-footer .footer-bottom .footer-nav ul li{
         float                   : none;
         margin-bottom           : 10px;
     }
-    .site-footer .footer-bottom .footer-contact ul li:last-child, 
+    .site-footer .footer-bottom .footer-contact ul li:last-child,
     .site-footer .footer-bottom .footer-nav ul li:last-child{
         margin-bottom           : 0;
     }
@@ -338,13 +338,13 @@
         padding-top             : 40px;
         padding-bottom          : 40px;
     }
-    
+
     .wrapper-full .widget-title,
     .wrapper-full-inner .widget-title{
         padding-left            : 40px;
         padding-right           : 40px;
     }
-    
+
     .widget-title{
         margin-bottom           : 40px;
     }
@@ -357,15 +357,15 @@
         line-height             : 24px;
         margin-top              : 20px;
     }
-    
+
     .widget-newsletter{
         width                   : 100%;
     }
-    
+
     .widget-contact-info{
         text-align              : center;
     }
-    
+
     .widget-contact-form{
         padding                 : 20px;
         margin-top              : 40px;
@@ -375,11 +375,11 @@
         display                 : block;
         width                   : 100%;
     }
-    
+
     .widget-contact-review{
         margin-top              : 40px;
     }
-    
+
     .widget-google-map .map-title{
         -webkit-transform       : translate(-50%, 0%);
            -moz-transform       : translate(-50%, 0%);
@@ -387,21 +387,21 @@
              -o-transform       : translate(-50%, 0%);
                 transform       : translate(-50%, 0%);
     }
-    
+
     .widget-breadcrumb{
         display                 : none;
     }
-    
+
     .widget-pager{
         margin-top              : 40px;
     }
-    
+
     .widget-page-title{
         text-align              : center;
         margin-bottom           : 32px;
     }
-    .widget-page-title h5, 
-    .widget-page-title h1, 
+    .widget-page-title h5,
+    .widget-page-title h1,
     .widget-page-title p{
         width                   : 100%;
         margin-top              : 20px;
@@ -419,7 +419,7 @@
     .widget-page-title .wrapper-inner{
         padding-top             : 70px;
     }
-    
+
     .widget-filter-top{
         margin-bottom           : 40px;
     }
@@ -434,7 +434,7 @@
     .widget-filter-top ul li:last-child{
         margin-bottom           : 0;
     }
-    
+
     .widget-slider .widget-carousel .slider-item{
         padding-top             : 240px;
     }
@@ -466,8 +466,8 @@
     .widget-slider .widget-carousel .owl-nav .owl-next{
         left                    : auto;
     }
-    
-    .widget-about-promo .widget-inner h2, 
+
+    .widget-about-promo .widget-inner h2,
     .widget-about-promo .widget-inner h5{
         text-align              : center;
     }
@@ -485,7 +485,7 @@
         width                   : 100%;
         margin-top              : 40px;
     }
-    
+
     .widget-about-grid .widget-inner .widget-item{
         margin-bottom           : 40px;
     }
@@ -493,7 +493,7 @@
     .widget-about-grid .widget-inner .widget-item h5{
         text-align              : center;
     }
-    
+
     .widget-history-timeline ul:after{
         display                 : none;
     }
@@ -530,7 +530,7 @@
     .widget-history-timeline ul li:nth-child(even) h5{
         right                   : inherit;
     }
-    
+
     .widget-offers-grid .offers-item .item-inner .item-photo{
         position                : relative;
         width                   : 100%;
@@ -543,7 +543,7 @@
     .widget-offers-grid .wrapper-inner{
         padding-bottom          : 40px;
     }
-    
+
     .widget-features-grid .features-item{
         border-width            : 10px;
     }
@@ -557,11 +557,11 @@
     .widget-features-grid .features-item p{
         display                 : none;
     }
-    
+
     .widget-rooms-carousel .rooms-item .item-desc{
         padding                 : 20px 20px 40px;
     }
-    
+
     .widget-rooms-list .rooms-item .item-desc{
         padding                 : 20px;
         text-align              : center;
@@ -585,7 +585,7 @@
     .widget-rooms-list .rooms-item .item-price .price-inner{
         padding                 : 0;
     }
-    
+
     .widget-rooms-detail .room-slider a{
         height                  : 300px;
     }
@@ -598,7 +598,7 @@
     .widget-rooms-detail .room-thumbnails{
         display                 : none;
     }
-    .widget-rooms-detail .room-booking h2, 
+    .widget-rooms-detail .room-booking h2,
     .widget-rooms-detail .room-features h2{
         font-size               : 28px;
     }
@@ -607,7 +607,7 @@
         padding                 : 20px;
         margin-top              : 40px;
     }
-    
+
     .widget-services-list .services-item{
         margin-bottom           : 50px;
     }
@@ -626,7 +626,7 @@
         text-align              : center;
         padding                 : 5px 20px 20px 20px;
     }
-    .widget-services-list .services-item .item-desc h2, 
+    .widget-services-list .services-item .item-desc h2,
     .widget-services-list .services-item .item-desc h5{
         text-align              : center;
     }
@@ -646,8 +646,8 @@
     .widget-services-list .services-item:nth-child(even) .item-desc{
         padding                 : 5px 20px 20px 20px;
     }
-    
-    .widget-gallery-carousel .widget-carousel:before, 
+
+    .widget-gallery-carousel .widget-carousel:before,
     .widget-gallery-carousel .widget-carousel:after{
         display                 : none;
     }
@@ -667,11 +667,11 @@
     .widget-gallery-carousel .widget-carousel .owl-nav .owl-next{
         right                   : 0;
     }
-    
+
     .widget-blog-carousel .blog-item .item-desc{
         text-align              : center;
     }
-    
+
     .widget-blog-list .blog-item{
         padding-left: 0;
     }
@@ -696,10 +696,10 @@
     .widget-blog-list .blog-item .item-desc h5{
         line-height             : 20px;
     }
-    
+
     .widget-blog-single .single-detail{
         padding                 : 20px;
-        
+
     }
     .widget-blog-single .single-detail .detail-head{
         padding                 : 20px;
@@ -724,14 +724,14 @@
         display                 : block;
         width                   : 100%;
     }
-    
+
     .widget-blog-sidebar{
         margin-top              : 40px;
         padding-left            : 0;
     }
-    
-    .widget-booking-form .booking-form, 
-    .widget-booking-form .booking-complete, 
+
+    .widget-booking-form .booking-form,
+    .widget-booking-form .booking-complete,
     .widget-booking-form .booking-detail{
         padding                 : 20px;
     }
@@ -755,7 +755,7 @@
     .widget-booking-form .booking-help h3{
         font-size               : 18px;
     }
-    
+
     .site-header .header-top{
         display                 : none;
     }
@@ -773,7 +773,7 @@
              -o-transform       : translateX(-50%);
                 transform       : translateX(-50%);
     }
-    
+
     .site-footer .footer-top{
         padding-top             : 40px;
         padding-bottom          : 40px;
@@ -783,17 +783,17 @@
 /*  04 -  Min 1200px
 -----------------------------------------------------------*/
 @media (min-width: 1200px){
-	
+
 }
 
 /*  05 -  Min 992px
 -----------------------------------------------------------*/
 @media (min-width: 992px){
-    
+
 }
 
 /*  06 -  Min 768px
 -----------------------------------------------------------*/
 @media (min-width: 768px){
-    
+
 }

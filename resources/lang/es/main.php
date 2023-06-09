@@ -70,6 +70,8 @@ return [
     //SECCION DE AMENIDADES
     'index.hotel.amenities' => 'NUESTRAS AMENIDADES',
     'index.hotel.amenities.label' => 'Hacemos mágia en cada detalle',
+    'index.hotel.amenities.text' => 'Hotel Adhara es un hotel en el paraíso de Cancún, donde los ejecutivos de negocios tendrán el equilibrio perfecto entre un viaje de negocios y un viaje de relax.',
+    'index.hotel.amenities.text.2' => 'La arquitectura de estilo colonial promueve el descanso y contrasta con la modernidad de sus servicios.',
 
     // SECCION DE SERVICIOS INDEX
     'index.hotel.service.pool.title' => 'Piscina & Pool Bar',

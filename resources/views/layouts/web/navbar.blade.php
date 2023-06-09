@@ -46,7 +46,7 @@
             </div>
             <div class="header-nav">
                 <ul class="nav-left">
-                    <li class="sub"><a href="{{ route('inicio', ['locale' => App::getLocale()])}}">@lang('main.nav-home')</a></li>
+                    <li><a href="{{ route('inicio', ['locale' => App::getLocale()])}}">@lang('main.nav-home')</a></li>
                     <li class="sub"><a href="#">@lang('main.nav-rooms')</a>
                         <ul class="simpson">
                             <li><a href="{{ route('rooms', ['locale' => App::getLocale(), 'id' => 6]) }}">{{ (App::getlocale() == 'es') ? 'Habitación Estandar' : 'Standar Room'}}</a></li>
@@ -54,20 +54,13 @@
                             <li><a href="{{ route('rooms', ['locale' => App::getLocale(), 'id' => 8]) }}">{{ (App::getlocale() == 'es') ? 'Habitación Ejecutiva' : 'Ejecutive Room'}}</a></li>
                         </ul>
                     </li>
-                    <li class="sub"><a href="{{ route('hotel.details', ['locale' => App::getLocale()]) }}">@lang('main.nav-hotel')</a>
+                    <li><a href="{{ route('hotel.details', ['locale' => App::getLocale()]) }}">@lang('main.nav-hotel')</a>
                     </li>
                 </ul>
                 <ul class="nav-right">
-                    <li class="sub"><a href="{{ route('servicios', [App::getLocale()]) }}">@lang('main.nav-services')</a>
-                        <!--ul class="simpson">
-                            <li><a href="#">HABITACIONES ADAPTADAS</a></li>
-                            <li><a href="#">ESTACIONAMIENTO</a></li>
-                            <li><a href="#">TRANSPORTACIÓN</a></li>
-                            <li><a href="#">ASISTENCIA VIA WHATSAPP</a></li>
-                        </ul-->
-                    </li>
-                    <li class="sub"><a href="{{ route('gallery', App::getLocale(), 0) }}">@lang('main.nav.gallery')</a></li>
-                    <li class="sub"><a href="{{ route('contact', ['locale' => App::getLocale()]) }}">@lang('main.nav-contact')</a></li>
+                    <li><a href="{{ route('servicios', [App::getLocale()]) }}">@lang('main.nav-services')</a></li>
+                    <li><a href="{{ route('gallery', App::getLocale(), 0) }}">@lang('main.nav.gallery')</a></li>
+                    <li><a href="{{ route('contact', ['locale' => App::getLocale()]) }}">@lang('main.nav-contact')</a></li>
                 </ul>
             </div>
             <div class="header-toggle">

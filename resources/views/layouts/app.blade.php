@@ -29,7 +29,7 @@
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/owl.theme.default.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery-uit.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/queen_osiris.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/mobile_master.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/mobile_home.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/homev2.css') }}">
 
 
