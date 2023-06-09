@@ -86,7 +86,7 @@
                     <div class="row">
                         <div class="col-lg-4 col-sm-6">
                             <div class="features-item" data-background="{{ asset('images/utilities/pool.png') }}">
-                                <a href="{{ route('servicios',[App::getLocale()]) }}">
+                                <a href="{{ route('hotel.details',[App::getLocale()]) }}">
                                     <h3>@lang('main.index.hotel.service.pool.title')</h3>
                                     <p>@lang('main.index.hotel.service.pool.text')</p>
                                 </a>
@@ -94,7 +94,7 @@
                         </div>
                         <div class="col-lg-4 col-sm-6">
                             <div class="features-item" data-background="{{ asset('images/utilities/restaurant.png') }}">
-                                <a href="{{ route('servicios',[App::getLocale()]) }}">
+                                <a href="{{ route('hotel.details',[App::getLocale()]) }}">
                                     <h3>@lang('main.index.hotel.service.restaurant.title')</h3>
                                     <p>@lang('main.index.hotel.service.restaurant.text')</p>
                                 </a>
@@ -102,7 +102,7 @@
                         </div>
                         <div class="col-lg-4 col-sm-6">
                             <div class="features-item" data-background="{{ asset('images/utilities/eventos.png') }}">
-                                <a href="{{ route('servicios',[App::getLocale()]) }}">
+                                <a href="{{ route('hotel.details',[App::getLocale()]) }}">
                                     <h3>@lang('main.index.hotel.service.eventos.title')</h3>
                                     <p>@lang('main.index.hotel.service.eventos.text')</p>
                                 </a>
@@ -110,7 +110,7 @@
                         </div>
                         <div class="col-lg-4 col-sm-6">
                             <div class="features-item" data-background="{{ asset('images/utilities/negocios.png') }}">
-                                <a href="{{ route('servicios',[App::getLocale()]) }}">
+                                <a href="{{ route('hotel.details',[App::getLocale()]) }}">
                                     <h3>@lang('main.index.hotel.service.bussiness.title')</h3>
                                     <p>@lang('main.index.hotel.service.bussiness.text')</p>
                                 </a>
@@ -118,7 +118,7 @@
                         </div>
                         <div class="col-lg-4 col-sm-6">
                             <div class="features-item" data-background="{{ asset('images/utilities/terraza.png') }}">
-                                <a href="{{ route('servicios',[App::getLocale()]) }}">
+                                <a href="{{ route('hotel.details',[App::getLocale()]) }}">
                                     <h3>@lang('main.index.hotel.service.terraza.title')</h3>
                                     <p>@lang('main.index.hotel.service.terraza.text')</p>
                                 </a>
@@ -126,7 +126,7 @@
                         </div>
                         <div class="col-lg-4 col-sm-6">
                             <div class="features-item" data-background="{{ asset('images/utilities/gym.png') }}">
-                                <a href="{{ route('servicios',[App::getLocale()]) }}">
+                                <a href="{{ route('hotel.details',[App::getLocale()]) }}">
                                     <h3>@lang('main.index.hotel.service.gym.title')</h3>
                                     <p>@lang('main.index.hotel.service.gym.text')</p>
                                 </a>
