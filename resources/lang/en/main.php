@@ -18,6 +18,7 @@ return [
     'nav.whats' => 'QUOTE, RESERVE AND PAY BY WHATSAPP: 998 122 1861',
 
     'slider.01' => 'BOOK NOW THE BEST AVAILABLE RATE',
+    'slider.011' => 'BREAKFAST INCLUDED',
     'slider.02' => 'Single or double room',
     'slider.03' => 'YOUR BEST OPTION FOR LONG STAYS',
     'slider.04' => '¡Book now this summer!',

@@ -18,6 +18,7 @@ return [
     'nav.whats' => 'COTIZA, RESERVA Y PAGA POR WHATSAPP: 998 122 1861',
 
     'slider.01' => 'RESERVA AHORA LA MEJOR TARÍFA DISPONIBLE',
+    'slider.011' => 'Incluye Desayuno Buffet',
     'slider.02' => 'Habitación doble o sencilla',
     'slider.03' => 'TU MEJOR OPCIÓN EN ESTANCIAS LARGAS',
     'slider.04' => '¡Reserva este verano!',
