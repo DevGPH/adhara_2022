@@ -80,6 +80,8 @@ class ReservaController extends Controller
             }
             if($dataBooking['rooms'] == 3)
             {
+                $total_adultos += $dataBooking['room_2_adults'];
+                array_push($adultos,$dataBooking['room_2_adults']);
                 $total_adultos += $dataBooking['room_3_adults'];
                 array_push($adultos,$dataBooking['room_3_adults']);
             }

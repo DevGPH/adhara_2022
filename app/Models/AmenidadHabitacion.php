@@ -10,4 +10,9 @@ class AmenidadHabitacion extends Model
     use HasFactory;
 
     protected $table = "amenidades_x_cuarto";
+
+    public function amenidad()
+    {
+        return $this->belongsTo(AmenidadHabitacion::class, 'amenidad_id');
+    }
 }
