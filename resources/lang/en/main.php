@@ -224,7 +224,7 @@ return [
     'check.subtitle' => 'Choose the best one for your vacation.',
     'check.text' => 'Discover a haven of elegance and tranquility at Hotel Adhara Cancun. Carefully designed rooms, personalized attention, relaxing spaces, and an ideal location to explore the city.',
     'check.season' => 'SEASON - ROOM',
-    'check.regular' => 'REGULAR RATE WITH BREAKFAST',
+    'check.regular' => 'MAGIC RATE WITH BREAKFAST',
     'check.club' => 'CLUB ESTRELLA MEMBER RATE WITH BREAKFAST',
 
 
