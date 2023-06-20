@@ -70,16 +70,15 @@
     src="https://www.facebook.com/tr?id=322333031458441&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Meta Pixel Code -->
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-199595741-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-49691355-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-		gtag('config', 'UA-199595741-1');
-	</script>
-
+    gtag('config', 'UA-49691355-1');
+    </script>
 
 </head>
 
