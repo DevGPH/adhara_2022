@@ -193,7 +193,9 @@ class ReservaController extends Controller
                 'infantes_no_bf'    => $infantes_no_bf,
                 'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
                 'status' => 'Error',
-                'rate' => $rate
+                'rate' => $rate,
+                'id' => 0,
+                'minStay' => (App::getLocale() == 'es') ? 'Ésta   Categoría  la puedes  reservar  con una estancia  mínima de 4  noches' : 'Minimun stay for this room is 4 nights'
             ]);
         }
 
