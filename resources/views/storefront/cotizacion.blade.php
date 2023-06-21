@@ -35,68 +35,74 @@
             </div>
             <!-- Rooms List -->
             <div class="widget-rooms-list">
-                @foreach ($data as $room)
-                    <div class="rooms-item">
-                        <div class="item-photo">
-                            @if ($room['tag'] == 'estandar')
-                                <a href="#" data-background="{{ asset('images/rooms/estandar_1.png') }}"></a>
-                            @elseif ($room['tag'] == 'one-bedroom-suite')
-                                <a href="#" data-background="{{ asset('images/rooms/one1.png') }}"></a>
-                            @elseif ($room['tag'] == 'ejecutiva')
-                                <a href="#" data-background="{{ asset('images/rooms/ejecutiva_2.png') }}"></a>
-                            @endif
-
-                        </div>
-                        <div class="item-desc">
-                            <h2><a href="#">{{(App::getLocale() == 'es') ? 'Habitación ' . $room['habitacion'] : $room['habitacion'] . ' Room'}}</a></h2>
-                            <p>{{ (App::getLocale() == 'es') ? $room['desc_es'] : $room['desc_en'] }}</p>
-                            <div class="desc-features">
-                                <ul>
-                                    @foreach ($room['amenidades'] as $amenidad)
-                                        <li><i class="fa fa-check"></i> {{$amenidad}}</li>
-                                    @endforeach
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="item-price">
-                            <div class="price-inner">
-                                <h5>@lang('main.check.club')</h5>
-                                <h4 style="text-decoration: none;">$ {{ (App::getLocale() == 'es') ? number_format(round($room['clubestrella'] * $cambio_moneda)) .' '. 'MXN' : $room['clubestrella'] .' '. $room['currency']}}</h4>
-                                <hr style="border-bottom: 1px solid #6e5e78">
-                                <div style="margin-bottom: 15px;"></div>
-                                <i class="fa fa-star"></i>
-                                <h5>@lang('main.check.regular')</h5>
-                                <h3>$ {{ (App::getLocale() == 'es') ? number_format(round($room['total'] * $cambio_moneda)) .' '. 'MXN' : $room['total'] .' '. $room['currency']}}</h3>
-
-                                <form action="{{ route('reservations',['locale'=>App::getLocale()]) }}" method="GET">
-                                    @csrf
-                                    <input type="hidden" name="habitacion_id" value="{{ $room['id'] }}" readonly>
-                                    <input type="hidden" name="checkIn" value="{{ $checkIn }}" readonly>
-                                    <input type="hidden" name="checkOut" value="{{ $checkOut }}" readonly>
-                                    <input type="hidden" name="cuartos" value="{{ $room['cuartos'] }}" readonly>
-                                    <input type="hidden" name="noches" value="{{ $room['noches'] }}" readonly>
-                                    <input type="hidden" name="total" value="{{ $room['total'] }}" readonly>
-                                    <input type="hidden" name="currency" value="{{ $room['currency'] }}" readonly>
-                                    <input type="hidden" name="fullDate" value="{{ $full_date }}" readonly>
-                                    <input type="hidden" name="fullDate2" value="{{ $full_date_2 }}" readonly>
-                                    <input type="hidden" name="total_adultos" value="{{ $total_adultos }}" readonly>
-                                    <input type="hidden" name="total_kids" value="{{ $total_kids }}" readonly>
-                                    <input type="hidden" name="total_kids_no_bf" value="{{ $total_kids_no_bf }}" readonly>
-                                    @foreach ($adultos as $adulto)
-                                        <input type="hidden" name="adultos[]" value="{{ $adulto }}">
-                                    @endforeach
-                                    @foreach ($infantes as $infante)
-                                        <input type="hidden" name="infantes[]" value="{{ $infante }}">
-                                    @endforeach
-                                    @foreach ($infantes_no_bf as $infante_no_bf)
-                                        <input type="hidden" name="infantes_no_bf[]" value="{{ $infante_no_bf }}">
-                                    @endforeach
-                                    <button type="submit" id="" class="btn">@lang('main.breadcrumb.book')</button>
-                                </form>
-                            </div>
-                        </div>
+                @if ($status == 'Error')
+                    <div class="alert alert-success" role="alert">
+                        {{ $data }}
                     </div>
-                @endforeach
+                @else
+                    @foreach ($data as $room)
+                        <div class="rooms-item">
+                            <div class="item-photo">
+                                @if ($room['tag'] == 'estandar')
+                                    <a href="#" data-background="{{ asset('images/rooms/estandar_1.png') }}"></a>
+                                @elseif ($room['tag'] == 'one-bedroom-suite')
+                                    <a href="#" data-background="{{ asset('images/rooms/one1.png') }}"></a>
+                                @elseif ($room['tag'] == 'ejecutiva')
+                                    <a href="#" data-background="{{ asset('images/rooms/ejecutiva_2.png') }}"></a>
+                                @endif
+
+                            </div>
+                            <div class="item-desc">
+                                <h2><a href="#">{{(App::getLocale() == 'es') ? 'Habitación ' . $room['habitacion'] : $room['habitacion'] . ' Room'}}</a></h2>
+                                <p>{{ (App::getLocale() == 'es') ? $room['desc_es'] : $room['desc_en'] }}</p>
+                                <div class="desc-features">
+                                    <ul>
+                                        @foreach ($room['amenidades'] as $amenidad)
+                                            <li><i class="fa fa-check"></i> {{$amenidad}}</li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item-price">
+                                <div class="price-inner">
+                                    <h5>@lang('main.check.club')</h5>
+                                    <h4 style="text-decoration: none;">$ {{ (App::getLocale() == 'es') ? number_format(round($room['clubestrella'] * $cambio_moneda)) .' '. 'MXN' : $room['clubestrella'] .' '. $room['currency']}}</h4>
+                                    <hr style="border-bottom: 1px solid #6e5e78">
+                                    <div style="margin-bottom: 15px;"></div>
+                                    <i class="fa fa-star"></i>
+                                    <h5>@lang('main.check.regular')</h5>
+                                    <h3>$ {{ (App::getLocale() == 'es') ? number_format(round($room['total'] * $cambio_moneda)) .' '. 'MXN' : $room['total'] .' '. $room['currency']}}</h3>
+
+                                    <form action="{{ route('reservations',['locale'=>App::getLocale()]) }}" method="GET">
+                                        @csrf
+                                        <input type="hidden" name="habitacion_id" value="{{ $room['id'] }}" readonly>
+                                        <input type="hidden" name="checkIn" value="{{ $checkIn }}" readonly>
+                                        <input type="hidden" name="checkOut" value="{{ $checkOut }}" readonly>
+                                        <input type="hidden" name="cuartos" value="{{ $room['cuartos'] }}" readonly>
+                                        <input type="hidden" name="noches" value="{{ $room['noches'] }}" readonly>
+                                        <input type="hidden" name="total" value="{{ $room['total'] }}" readonly>
+                                        <input type="hidden" name="currency" value="{{ $room['currency'] }}" readonly>
+                                        <input type="hidden" name="fullDate" value="{{ $full_date }}" readonly>
+                                        <input type="hidden" name="fullDate2" value="{{ $full_date_2 }}" readonly>
+                                        <input type="hidden" name="total_adultos" value="{{ $total_adultos }}" readonly>
+                                        <input type="hidden" name="total_kids" value="{{ $total_kids }}" readonly>
+                                        <input type="hidden" name="total_kids_no_bf" value="{{ $total_kids_no_bf }}" readonly>
+                                        @foreach ($adultos as $adulto)
+                                            <input type="hidden" name="adultos[]" value="{{ $adulto }}">
+                                        @endforeach
+                                        @foreach ($infantes as $infante)
+                                            <input type="hidden" name="infantes[]" value="{{ $infante }}">
+                                        @endforeach
+                                        @foreach ($infantes_no_bf as $infante_no_bf)
+                                            <input type="hidden" name="infantes_no_bf[]" value="{{ $infante_no_bf }}">
+                                        @endforeach
+                                        <button type="submit" id="" class="btn">@lang('main.breadcrumb.book')</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                @endif
             </div>
             <!-- Rooms List End -->
         </div>
