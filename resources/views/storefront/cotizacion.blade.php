@@ -36,7 +36,7 @@
             <!-- Rooms List -->
             <div class="widget-rooms-list">
                 @if ($status == 'Error')
-                    <div class="alert alert-success" role="alert">
+                    <div class="alert alert-warning" role="alert" style="text-align: center;">
                         {{ $data }}
                     </div>
                 @else
