@@ -1,7 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-
+@if (session('error'))
+    <div class="alert alert-danger alert-dismissible" role="alert" style="display:inline-block;">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        {{ session('error') }}
+    </div>
+@endif
 <div class="site-main">
     <!-- Section Page Title -->
     <div class="section">
@@ -130,8 +135,8 @@
                                                 <i class="fa fa-caret-down"></i>
                                                 <select name="infantes" required>
                                                     <option value="">@lang('main.booking.kids')</option>
-                                                    <option value="1">0 @lang('main.booking.kids')</option>
-                                                    <option value="1">1 @lang('main.booking.kid')</option>
+                                                    <option value="0">0 @lang('main.booking.kids')</option>
+                                                    <option value="1">1 @lang('main.booking.kids')</option>
                                                     <option value="2">2 @lang('main.booking.kids')</option>
                                                     <option value="3">3 @lang('main.booking.kids')</option>
                                                 </select>

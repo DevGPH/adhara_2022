@@ -11,6 +11,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Cookie;
 use Illuminate\Http\Response;
+use DateTime;
 
 use App\Http\Controllers\WEB\Santander\SantanderController;
 
@@ -268,6 +269,13 @@ class ReservaController extends Controller
 
         $rate = $homecontroller->rateToday($locale);
 
+        $datetime1 = new DateTime($request->checkin);
+        $datetime2 = new DateTime($request->checkout);
+        $interval = $datetime1->diff($datetime2);
+        $days = $interval->format('%a');
+        if ( (int)$days < 4 && $habitacion->categoria->tag_es == 'one-bedroom-suite') {
+            return redirect()->back()->with('error', 'La habitación One Bedroom Suite solo se puede reservar con una estancia mínima de 4 noches');
+        }
         if ($request->has('custom_booking')) {
             $url = $this->endpoint.$locale.'/select-habitacion/' . $habitacion->id;
 
