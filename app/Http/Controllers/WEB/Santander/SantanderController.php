@@ -242,7 +242,7 @@ class SantanderController extends Controller
 
                 #Enviar correo de pago exitoso
                 Mail::to($huesped->email)
-                    ->bcc(['programacionweb@gphoteles.com','gerencia@gphoteles.com','ecommerce@gphoteles.com'])
+                    ->bcc(['programacionweb@gphoteles.com','gerencia@gphoteles.com','ecommerce@gphoteles.com','recepcion.express@gphoteles.com','reservaciones@gphoteles.com'])
                     ->send(new PagoSuccess($response,$huesped,$reservation->currency));
 
             }
