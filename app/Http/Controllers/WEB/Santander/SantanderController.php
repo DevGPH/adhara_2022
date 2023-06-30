@@ -19,6 +19,7 @@ use App\Models\Santander;
 use App\Models\CurlError;
 use App\Models\Reserva;
 use App\Models\Huesped;
+use App\Models\Hotel;
 use App;
 
 #MAIL
@@ -170,11 +171,14 @@ class SantanderController extends Controller
 
         if($request->filled('strResponse'))
         {
+            $hotel = Hotel::find(2);
+
             $keys = SantanderKeys::where('hotel_id',2)->where('ambiente','prod')->first();
             $semilla_xml= Crypt::decryptString($keys['semilla_xml']);
             $aes = new AesCrypto();
             $descrypted_xml = $aes->desencriptar($request->strResponse, $semilla_xml);
             $response = new \SimpleXMLElement($descrypted_xml);
+            Log::channel('santander-response-decrypt')->info($response);
             $aux = Str::of($response->reference)->explode('-');
 
 
@@ -200,7 +204,7 @@ class SantanderController extends Controller
 
             if($reserva != null)
             {
-                $huesped = Huesped::find($reserva['huesped_id']);
+                $huesped = Huesped::find($reserva->huesped_id);
             }
 
             $name = ($huesped != NULL)? $huesped->nombre : 'Adhara';
@@ -227,39 +231,71 @@ class SantanderController extends Controller
             $pago->huesped_id = ($huesped != NULL) ? $huesped->id : 1; # 1 siempre sera usuario Dummy
             $pago->save();
 
+            $info = [
+                'plan_x_habitacion' => $reserva->habitacion->plan->nombre_es,
+                'habitacion' => $reserva->habitacion->categoria->nombre_es,
+                'created_at' => $reserva->created_at,
+                'checkIn' => $reserva->checkIn,
+                'checkOut' => $reserva->checkOut,
+                'total' => $reserva->precio,
+                'adultos' => $reserva->adultos,
+                'infantes' => $reserva->infantes,
+                'nombre' => $reserva->huesped->nombre,
+                'apellidos' => $reserva->huesped->apellidos,
+                'noches' => $reserva->noches
+            ];
+
+            if (App::getlocal() == 'en') {
+                $info['plan_x_habitacion'] = $reserva->habitacion->plan->nombre_en;
+                $info['habitacion'] = $reserva->habitacion->categoria->nombre_en;
+            }
+
             #Se actualiza la reserva, el pago fue APROBADO
             if (strcmp( $response->response, "approved") == 0 )
             {
                 DB::connection('mysql')->table('reservaciones')
-                    ->where('id', $reserva['id'])
+                    ->where('id', $reserva->id)
                     ->update(['estatus' => 'aprobada','santander_pago_id' => $pago->id]);
 
-                $reservation = Reserva::findOrFail($reserva['id']);
-
-                /*$reserva['estatus'] = 'aprobada';
-                $reserva['santander_pago_id'] = $pago->id;
-                $reserva->save();*/
 
                 #Enviar correo de pago exitoso
-                Mail::to($huesped->email)
-                    ->bcc(['programacionweb@gphoteles.com','gerencia@gphoteles.com','ecommerce@gphoteles.com','recepcion.express@gphoteles.com','reservaciones@gphoteles.com'])
-                    ->send(new PagoSuccess($response,$huesped,$reservation->currency));
+                Mail::to($reserva->huesped->email)->send(new ConfirmationMail($referencia, $hotel->nombre_es, 'es', $info));
+                Mail::to('ecommerce@gphoteles.com')->bcc(['programacionweb@gphoteles.com','gerencia@gphoteles.com','ventas@gphoteles.com','recepcion.express@gphoteles.com','reservaciones@gphoteles.com'])->send(new ConfirmationMail($id, $hotel->nombre_es, App::getLocale(), $info));
 
+
+                Log::channel('mail-success')->info('Mail enviado con exito');
             }
             else
             {
                 DB::connection('mysql')->table('reservaciones')
-                    ->where('id', $reserva['id'])
+                    ->where('id', $reserva->id)
                     ->update(['estatus' => 'denegada','santander_pago_id' => $pago->id]);
 
+                $info = [
+                    'plan_x_habitacion' => $reserva->habitacion->plan->nombre_es,
+                    'habitacion' => $reserva->habitacion->categoria->nombre_es,
+                    'created_at' => $reserva->created_at,
+                    'checkIn' => $reserva->checkIn,
+                    'checkOut' => $reserva->checkOut,
+                    'total' => $reserva->precio,
+                    'adultos' => $reserva->adultos,
+                    'infantes' => $reserva->infantes,
+                    'nombre' => $reserva->huesped->nombre,
+                    'apellidos' => $reserva->huesped->apellidos,
+                    'noches' => $reserva->noches
+                ];
 
-                $reservation = Reserva::findOrFail($reserva['id']);
-
-                /*$reserva['estatus'] = 'denegada';
-                $reserva['santander_pago_id'] = $pago->id;
-                $reserva->save();*/
+                if (App::getlocal() == 'en') {
+                    $info['plan_x_habitacion'] = $reserva->habitacion->plan->nombre_en;
+                    $info['habitacion'] = $reserva->habitacion->categoria->nombre_en;
+                }
 
                 //Mail::to($request->email)->send(new ReservaFailed($reservation));
+                //Mail::to($reserva->huesped->email)->send(new ReservaFailed($referencia, $hotel->nombre_es, 'es', $info));
+                Mail::to('ecommerce@gphoteles.com')->bcc(['programacionweb@gphoteles.com','gerencia@gphoteles.com','ventas@gphoteles.com','recepcion.express@gphoteles.com','reservaciones@gphoteles.com'])->send(new ReservaFailed($id, $hotel->nombre_es, App::getLocale(), $info));
+
+
+                Log::channel('mail-success')->info('Mail enviado con reserva fallida');
             }
 
         }

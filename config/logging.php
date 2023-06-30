@@ -72,6 +72,24 @@ return [
             'level' => env('LOG_LEVEL', 'debug'),
         ],
 
+        'santander-response-decrypt' => [
+            'driver' => 'single',
+            'path' => storage_path('logs/santander_response_decrypt.log'),
+            'level' => env('LOG_LEVEL', 'debug'),
+        ],
+
+        'mail-success' => [
+            'driver' => 'single',
+            'path' => storage_path('logs/mail_success.log'),
+            'level' => env('LOG_LEVEL', 'debug'),
+        ],
+
+        'mail-failed' => [
+            'driver' => 'single',
+            'path' => storage_path('logs/mail_failed.log'),
+            'level' => env('LOG_LEVEL', 'debug'),
+        ],
+
         'daily' => [
             'driver' => 'daily',
             'path' => storage_path('logs/laravel.log'),
