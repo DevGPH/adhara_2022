@@ -90,7 +90,8 @@
                         <h5>@lang('main.contact.form.title')</h5>
                         <p>@lang('main.contact.form.label')</p>
                         <div class="data-form">
-                            <form action="{{ route('contact_mail',['locale' => App::getLocale()]) }}" id="contact-form" method="POST">
+                            <form action="{{ route('send_contact',['locale' => App::getLocale()]) }}" id="contact-form" method="POST">
+                                @csrf
                                 <div class="row">
                                     <div class="col-md-6">
                                         <input type="text" id="form-name" name="form-name" placeholder="@lang('main.contact.form.name')*">

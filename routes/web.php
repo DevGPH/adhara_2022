@@ -30,6 +30,7 @@ Route::prefix('{locale}')->group(function ()
     Route::get('/',[HomeController::class,'index'])->name('inicio');
     Route::get('/rooms/{id}',[HomeController::class,'rooms'])->name('rooms');
     Route::get('/contact',[HomeController::class,'contact'])->name('contact');
+    Route::post('/contact',[HomeController::class,'postContact'])->name('send_contact');
     Route::get('/covid',[HomeController::class,'covid'])->name('covid');
     Route::get('/booking',[ReservaController::class,'index'])->name('booking');//se crearon 2 rutas de bookin para resolver el problema de que en el formulario al usar get se busca con la informacion de la consulta anterior
     Route::post('/booking',[ReservaController::class,'index'])->name('bookingP');// y que  con post al cambiar el idioma se recargaba la pagina y como ya no habia parametros en el requets fallaba
@@ -44,7 +45,6 @@ Route::prefix('{locale}')->group(function ()
     Route::get('/reservations',[ReservaController::class,'reservations'])->name('reservations');
     Route::get('/reserva-response/{id?}',[ReservaController::class,'response'])->name('response.reserva');
     Route::post('/reservas/booking',[ReservaController::class,'store'])->name('book.reserve');
-    Route::post('/contact_mail',[HomeController::class,'postContact'])->name('contact_mail');
     Route::get('/test-mail',[HomeController::class,'mail'])->name('test_mail');
 
 
