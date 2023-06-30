@@ -94,19 +94,19 @@
                                 @csrf
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <input type="text" id="form-name" name="form-name" placeholder="@lang('main.contact.form.name')*">
+                                        <input type="text" id="form-name" name="nombre" placeholder="@lang('main.contact.form.name')*">
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="text" id="form-surname" name="form-surname" placeholder="@lang('main.contact.form.lastname')*">
+                                        <input type="text" id="form-surname" name="apellidos" placeholder="@lang('main.contact.form.lastname')*">
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="text" id="form-email" name="form-email" placeholder="@lang('main.contact.form.email')*">
+                                        <input type="text" id="form-email" name="email" placeholder="@lang('main.contact.form.email')*">
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="text" id="form-phone" name="form-phone" placeholder="@lang('main.contact.form.phone')*">
+                                        <input type="text" id="form-phone" name="telefono" placeholder="@lang('main.contact.form.phone')*">
                                     </div>
                                     <div class="col-md-12">
-                                        <textarea cols="6" rows="8" id="form-message" name="form-message" placeholder="@lang('main.contact.form.message')*"></textarea>
+                                        <textarea cols="6" rows="8" id="form-message" name="message" placeholder="@lang('main.contact.form.message')*"></textarea>
                                     </div>
                                     <div class="col-md-6">
                                         <p class="note">* @lang('main.contact.form.require')</p>

@@ -69,7 +69,6 @@ class HomeController extends Controller
 
     public function postContact(Request $request)
     {
-        dd('here');
         $rules = [
             'nombre' => 'required',
             'apellidos' => 'required',
