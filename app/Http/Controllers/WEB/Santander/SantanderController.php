@@ -313,7 +313,7 @@ class SantanderController extends Controller
         if ($request->nbResponse == 'Rechazado') {
             $status = 'error';
             $msg = $request->nb_error;
-            Mail::to('ecommerce@gphoteles.com')->bcc(['programacionweb@gphoteles.com','gerencia@gphoteles.com','ventas@gphoteles.com','recepcion.express@gphoteles.com','reservaciones@gphoteles.com'])->send(new ReservaFailed($id, $hotel->nombre_es, App::getLocale(), $info));
+            Mail::to('ecommerce@gphoteles.com')->bcc(['programacionweb@gphoteles.com','gerencia@gphoteles.com','ventas@gphoteles.com','recepcion.express@gphoteles.com','reservaciones@gphoteles.com'])->send(new ReservaFailed($result[1], $hotel->nombre_es, App::getLocale(), $info));
 
         }
 
