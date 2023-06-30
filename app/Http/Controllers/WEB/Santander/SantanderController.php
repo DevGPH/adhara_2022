@@ -245,7 +245,7 @@ class SantanderController extends Controller
                 'noches' => $reserva->noches
             ];
 
-            if (App::getlocal() == 'en') {
+            if (App::getLocale() == 'en') {
                 $info['plan_x_habitacion'] = $reserva->habitacion->plan->nombre_en;
                 $info['habitacion'] = $reserva->habitacion->categoria->nombre_en;
             }
@@ -285,7 +285,7 @@ class SantanderController extends Controller
                     'noches' => $reserva->noches
                 ];
 
-                if (App::getlocal() == 'en') {
+                if (App::getLocale() == 'en') {
                     $info['plan_x_habitacion'] = $reserva->habitacion->plan->nombre_en;
                     $info['habitacion'] = $reserva->habitacion->categoria->nombre_en;
                 }
@@ -330,7 +330,7 @@ class SantanderController extends Controller
             'noches' => $reserva->noches
         ];
 
-        if (App::getlocal() == 'en') {
+        if (App::getLocale() == 'en') {
             $info['plan_x_habitacion'] = $reserva->habitacion->plan->nombre_en;
             $info['habitacion'] = $reserva->habitacion->categoria->nombre_en;
         }
