@@ -310,38 +310,42 @@ class SantanderController extends Controller
         $result = explode('-',$referencia);
         $lang = (App::getLocale() == 'es') ? 'en' : 'es';
 
+        $reserva = Reserva::where('folio', $result[1])->first();
+        $reserva->estatus = 'aprobada';
+        $reserva->save();
+
+        $hotel = Hotel::find($reserva->hotel_id);
+
+        $info = [
+            'plan_x_habitacion' => $reserva->habitacion->plan->nombre_es,
+            'habitacion' => $reserva->habitacion->categoria->nombre_es,
+            'created_at' => $reserva->created_at,
+            'checkIn' => $reserva->checkIn,
+            'checkOut' => $reserva->checkOut,
+            'total' => $reserva->precio,
+            'adultos' => $reserva->adultos,
+            'infantes' => $reserva->infantes,
+            'nombre' => $reserva->huesped->nombre,
+            'apellidos' => $reserva->huesped->apellidos,
+            'noches' => $reserva->noches
+        ];
+
+        if (App::getlocal() == 'en') {
+            $info['plan_x_habitacion'] = $reserva->habitacion->plan->nombre_en;
+            $info['habitacion'] = $reserva->habitacion->categoria->nombre_en;
+        }
+
         if ($request->nbResponse == 'Rechazado') {
             $status = 'error';
             $msg = $request->nb_error;
-            Mail::to('ecommerce@gphoteles.com')->bcc(['programacionweb@gphoteles.com','gerencia@gphoteles.com','ventas@gphoteles.com','recepcion.express@gphoteles.com','reservaciones@gphoteles.com'])->send(new ReservaFailed($result[1], $hotel->nombre_es, App::getLocale(), $info));
+            Mail::to('ecommerce@gphoteles.com')->bcc(['programacionweb@gphoteles.com','gerencia@gphoteles.com','ventas@gphoteles.com','recepcion.express@gphoteles.com','reservaciones@gphoteles.com'])->send(new ReservaFailed($result[1], 'Hotel Adhara Cancun', App::getLocale(), $info));
 
         }
 
         if ($request->nbResponse == 'Aprobado') {
-            $reserva = Reserva::where('folio', $result[1])->first();
+
             $reserva->estatus = 'aprobada';
             $reserva->save();
-
-            $hotel = Hotel::find($reserva->hotel_id);
-
-            $info = [
-                'plan_x_habitacion' => $reserva->habitacion->plan->nombre_es,
-                'habitacion' => $reserva->habitacion->categoria->nombre_es,
-                'created_at' => $reserva->created_at,
-                'checkIn' => $reserva->checkIn,
-                'checkOut' => $reserva->checkOut,
-                'total' => $reserva->precio,
-                'adultos' => $reserva->adultos,
-                'infantes' => $reserva->infantes,
-                'nombre' => $reserva->huesped->nombre,
-                'apellidos' => $reserva->huesped->apellidos,
-                'noches' => $reserva->noches
-            ];
-
-            if ($lang == 'en') {
-                $info['plan_x_habitacion'] = $reserva->habitacion->plan->nombre_en;
-                $info['habitacion'] = $reserva->habitacion->categoria->nombre_en;
-            }
 
             Mail::to($request->email)->send(new ConfirmationMail($referencia, $hotel->nombre_es, $lang, $info));
             Mail::to('ecommerce@gphoteles.com')->bcc(['programacionweb@gphoteles.com','gerencia@gphoteles.com','ventas@gphoteles.com','recepcion.express@gphoteles.com','reservaciones@gphoteles.com'])->send(new ConfirmationMail($referencia, $hotel->nombre_es, $lang, $info));
