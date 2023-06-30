@@ -310,7 +310,9 @@ class SantanderController extends Controller
         $result = explode('-',$referencia);
         $lang = (App::getLocale() == 'es') ? 'en' : 'es';
 
+
         $reserva = Reserva::where('folio', $result[1])->first();
+
         $reserva->estatus = 'aprobada';
         $reserva->save();
 
@@ -338,8 +340,13 @@ class SantanderController extends Controller
         if ($request->nbResponse == 'Rechazado') {
             $status = 'error';
             $msg = $request->nb_error;
-            Mail::to('ecommerce@gphoteles.com')->bcc(['programacionweb@gphoteles.com','gerencia@gphoteles.com','ventas@gphoteles.com','recepcion.express@gphoteles.com','reservaciones@gphoteles.com'])->send(new ReservaFailed($result[1], 'Hotel Adhara Cancun', App::getLocale(), $info));
+            if ($reserva->hotel_id == 2) {
+                Mail::to('ecommerce@gphoteles.com')->bcc(['programacionweb@gphoteles.com','gerencia@gphoteles.com','ventas@gphoteles.com','recepcion.express@gphoteles.com','reservaciones@gphoteles.com'])->send(new ReservaFailed($result[1], 'Hotel Adhara Cancun', App::getLocale(), $info));
+            }
+        }
 
+        if ($reserva->hotel_id == 1) {
+            return redirect()->away('https://adharaexpress.com.mx/santander/response?status='.$status.'&msg='.$msg.'&response='.$response.'&referencia='.$referencia.'&lang='.$lang);
         }
 
         if ($request->nbResponse == 'Aprobado') {

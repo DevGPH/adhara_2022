@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\API\SantanderTestController;
+use App\Http\Controllers\API\SantanderApiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,5 +21,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-
+Route::get('/santander-reserve/{folio}',[SantanderApiController::class,'index']);
 Route::get('/santander-keys',[SantanderTestController::class,'keys']);

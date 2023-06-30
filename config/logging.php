@@ -78,6 +78,12 @@ return [
             'level' => env('LOG_LEVEL', 'debug'),
         ],
 
+        'debug-keys' => [
+            'driver' => 'single',
+            'path' => storage_path('logs/debug_keys.log'),
+            'level' => env('LOG_LEVEL', 'debug'),
+        ],
+
         'mail-success' => [
             'driver' => 'single',
             'path' => storage_path('logs/mail_success.log'),
