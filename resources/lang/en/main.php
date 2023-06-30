@@ -177,7 +177,7 @@ return [
     'service.whats.text2' => 'Reservations, Events, Groups, or Tours.We remind you that all information used through this means is protected by our privacy notice.',
     'service.bus.title' => 'TRANSPORTATION INCLUDED',
     'service.bus.subtitle' => 'We take you there for free',
-    'service.bus.text' => 'All guests of our hotel have included the transportation service of: <br> Hotel - Beach - Hotel <br> Hotel - Cancun International Airport.',
+    'service.bus.text' => 'All guests of our hotel have included the transportation service of: <br> Hotel - Beach - Hotel <br> <hr/> <br> Hotel - Cancun International Airport.',
     'service.bus.text2' => 'This service only applies when booking your stay through our website: www.adharacancun.com or via WhatsApp* This service is subject to availability and schedule* Book with us and schedule your transportation in advance* Restrictions apply*',
     'service.parking.title' => 'Free parking ',
     'service.parking.subtitle' => 'We take you for free',
