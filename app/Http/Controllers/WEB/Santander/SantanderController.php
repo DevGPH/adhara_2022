@@ -23,7 +23,9 @@ use App\Models\Hotel;
 use App;
 
 #MAIL
+use App\Mail\ConfirmationMailAdex;
 use App\Mail\ConfirmationMail;
+use App\Mail\ReservaFailedAdex;
 use App\Mail\ReservaFailed;
 use App\Mail\PagoSuccess;
 
@@ -342,21 +344,28 @@ class SantanderController extends Controller
             $msg = $request->nb_error;
             if ($reserva->hotel_id == 2) {
                 Mail::to('ecommerce@gphoteles.com')->bcc(['programacionweb@gphoteles.com','gerencia@gphoteles.com','ventas@gphoteles.com','recepcion.express@gphoteles.com','reservaciones@gphoteles.com'])->send(new ReservaFailed($result[1], 'Hotel Adhara Cancun', App::getLocale(), $info));
+            } else {
+                Mail::to('ecommerce@gphoteles.com')->bcc(['programacionweb@gphoteles.com','gerencia@gphoteles.com','ventas@gphoteles.com','recepcion.express@gphoteles.com','reservaciones@gphoteles.com'])->send(new ReservaFailedAdex($result[1], 'Hotel Adhara Express Cancun', App::getLocale(), $info));
             }
         }
 
-        if ($reserva->hotel_id == 1) {
-            return redirect()->away('https://adharaexpress.com.mx/santander/response?status='.$status.'&msg='.$msg.'&response='.$response.'&referencia='.$referencia.'&lang='.$lang);
-        }
 
         if ($request->nbResponse == 'Aprobado') {
 
             $reserva->estatus = 'aprobada';
             $reserva->save();
+            if ($reserva->hotel_id == 2) {
+                Mail::to($request->email)->send(new ConfirmationMail($referencia, $hotel->nombre_es, $lang, $info));
+                Mail::to('ecommerce@gphoteles.com')->bcc(['programacionweb@gphoteles.com','gerencia@gphoteles.com','ventas@gphoteles.com','recepcion.express@gphoteles.com','reservaciones@gphoteles.com'])->send(new ConfirmationMail($referencia, $hotel->nombre_es, $lang, $info));
 
-            Mail::to($request->email)->send(new ConfirmationMail($referencia, $hotel->nombre_es, $lang, $info));
-            Mail::to('ecommerce@gphoteles.com')->bcc(['programacionweb@gphoteles.com','gerencia@gphoteles.com','ventas@gphoteles.com','recepcion.express@gphoteles.com','reservaciones@gphoteles.com'])->send(new ConfirmationMail($referencia, $hotel->nombre_es, $lang, $info));
+            } else {
+                Mail::to($request->email)->send(new ConfirmationMailAdex($referencia, $hotel->nombre_es, $lang, $info));
+                Mail::to('ecommerce@gphoteles.com')->bcc(['programacionweb@gphoteles.com','gerencia@gphoteles.com','ventas@gphoteles.com','recepcion.express@gphoteles.com','reservaciones@gphoteles.com'])->send(new ConfirmationMailAdex($referencia, $hotel->nombre_es, $lang, $info));
+            }
+        }
 
+        if ($reserva->hotel_id == 1) {
+            return redirect()->away('https://adharaexpress.com.mx/santander/response?status='.$status.'&msg='.$msg.'&response='.$response.'&referencia='.$referencia.'&lang='.$lang);
         }
 
         $homecontroller = new HomeController();

@@ -7,7 +7,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class ReservaFailed extends Mailable
+class ReservaFailedAdex extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -44,7 +44,7 @@ class ReservaFailed extends Mailable
         $this->msg = 'Esta reservación esta fallida';
         $this->msg_2 = 'Contacta al cliente para ver como lo podemos apoyar para terminar la reserva';
 
-        return $this->subject('Reserva Fallida')->view('Mails.es.reservaFailed');
+        return $this->subject('Reserva Fallida')->view('Mails.es.reservaFailedAdex');
 
     }
 }

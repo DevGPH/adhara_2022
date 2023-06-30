@@ -7,7 +7,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class ReservaFailed extends Mailable
+class ConfirmationMailAdex extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -40,11 +40,9 @@ class ReservaFailed extends Mailable
     public function build()
     {
 
+        $this->msg = 'Esta reservación esta confirmada ¡Los esperamos!';
+        $this->msg_2 = 'Este es tu comprobante de reserva, deberás mostrarlo junto con una identificación oficial en el mostrador del Hotel.';
 
-        $this->msg = 'Esta reservación esta fallida';
-        $this->msg_2 = 'Contacta al cliente para ver como lo podemos apoyar para terminar la reserva';
-
-        return $this->subject('Reserva Fallida')->view('Mails.es.reservaFailed');
-
+        return $this->subject('Confirmacion de Reserva')->view('Mails.es.reserva_adex');
     }
 }
