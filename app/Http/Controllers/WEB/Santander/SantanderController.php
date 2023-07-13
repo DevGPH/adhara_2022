@@ -219,7 +219,7 @@ class SantanderController extends Controller
             $pago->cd_response = $cd_response;
             $pago->cd_error = $cd_error;
             $pago->hora = $hora;
-            $pago->fecha = $fecha;
+            $pago->fecha = now();
             $pago->merchant = $merchant;
             $pago->cc_type = $cc_type;
             $pago->tp_operation = $operation;
