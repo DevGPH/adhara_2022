@@ -23,3 +23,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::get('/santander-reserve/{folio}',[SantanderApiController::class,'index']);
 Route::get('/santander-keys',[SantanderTestController::class,'keys']);
+Route::get('/santander-test-response/{response}',[SantanderTestController::class,'testResponse']);
