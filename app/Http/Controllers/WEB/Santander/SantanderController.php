@@ -445,8 +445,8 @@ class SantanderController extends Controller
         dd($response);
     }
 
-     public function sendMail(Request $request)
-    {
+     public function mail(Request $request) {
+
         $lang = (App::getLocale() == 'es') ? 'en' : 'es';
         $reserva = Reserva::where('folio', $request->folio)->first();
 
@@ -480,8 +480,7 @@ class SantanderController extends Controller
             Mail::to('ecommerce@gphoteles.com')->bcc(['programacionweb@gphoteles.com','gerencia@gphoteles.com','ventas@gphoteles.com','recepcion.express@gphoteles.com','reservaciones@gphoteles.com'])->send(new ConfirmationMailAdex($referencia, $hotel->nombre_es, $lang, $info));
         }
 
-
-        echo "Mail Enviado";
+        dd('Mail enviado');
     }
 
 }
