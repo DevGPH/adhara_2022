@@ -449,7 +449,7 @@ class SantanderController extends Controller
 
         $lang = (App::getLocale() == 'es') ? 'en' : 'es';
         $reserva = Reserva::where('folio', $request->folio)->first();
-
+dd($reserva);
         $hotel = Hotel::find($reserva->hotel_id);
 
         $info = [
