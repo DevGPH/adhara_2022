@@ -447,9 +447,9 @@ class SantanderController extends Controller
 
      public function mail(Request $request) {
 
-        $lang = (App::getLocale() == 'es') ? 'en' : 'es';
+        $lang = 'es';
         $reserva = Reserva::where('folio', $request->folio)->first();
-dd($reserva);
+
         $hotel = Hotel::find($reserva->hotel_id);
 
         $info = [
@@ -466,10 +466,6 @@ dd($reserva);
             'noches' => $reserva->noches
         ];
 
-        if (App::getLocale() == 'en') {
-            $info['plan_x_habitacion'] = $reserva->habitacion->plan->nombre_en;
-            $info['habitacion'] = $reserva->habitacion->categoria->nombre_en;
-        }
 
         if ($reserva->hotel_id == 2) {
             Mail::to($request->email)->send(new ConfirmationMail($request->folio, $hotel->nombre_es, $lang, $info));
