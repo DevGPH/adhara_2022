@@ -21,6 +21,7 @@ class VerifyCsrfToken extends Middleware
         'http://www.adharacancun.com/santander/response',
         'http://www.adharacancun.com/santander/reserve',
         'https://adharacancun.com/test-santander',
+        'https://adharacancun.com/santander-test-response',
         'https://adhara-cancun-2022:8890/test-santander'
 
     ];
