@@ -63,3 +63,4 @@ Route::post('/santander/response',[SantanderController::class,'store'])->name('s
 
 Route::post('/santander-test-response',[SantanderController::class,'testResponse']);
 Route::post('/test-santander',[SantanderController::class,'testPost'])->name('santander.test');
+Route::get('/santander-send-mail/{folio}',[SantanderController::class,'testPost'])->name('santander.folio');

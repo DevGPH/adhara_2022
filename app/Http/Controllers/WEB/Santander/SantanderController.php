@@ -201,6 +201,10 @@ class SantanderController extends Controller
             $correo = ($response->email != "") ? $response->email : "none@gmail.com";
             $id = $aux[1];
 
+            $dates = explode('/', $fecha);
+
+            $date = $dates[2] . '-' . $dates[1] . '-' . $dates[0];
+
             $reserva = Reserva::where('folio',$id)->first();
             $huesped = NULL; #Huesped dummy equivale al 0
 
@@ -219,7 +223,7 @@ class SantanderController extends Controller
             $pago->cd_response = $cd_response;
             $pago->cd_error = $cd_error;
             $pago->hora = $hora;
-            $pago->fecha = now();
+            $pago->fecha = $date;
             $pago->merchant = $merchant;
             $pago->cc_type = $cc_type;
             $pago->tp_operation = $operation;
@@ -440,4 +444,44 @@ class SantanderController extends Controller
         $response = new \SimpleXMLElement($descrypted_xml);
         dd($response);
     }
+
+     public function sendMail(string $folio)
+    {
+        $lang = (App::getLocale() == 'es') ? 'en' : 'es';
+        $reserva = Reserva::where('folio', $folio)->first();
+
+        $hotel = Hotel::find($reserva->hotel_id);
+
+        $info = [
+            'plan_x_habitacion' => $reserva->habitacion->plan->nombre_es,
+            'habitacion' => $reserva->habitacion->categoria->nombre_es,
+            'created_at' => $reserva->created_at,
+            'checkIn' => $reserva->checkIn,
+            'checkOut' => $reserva->checkOut,
+            'total' => $reserva->precio,
+            'adultos' => $reserva->adultos,
+            'infantes' => $reserva->infantes,
+            'nombre' => $reserva->huesped->nombre,
+            'apellidos' => $reserva->huesped->apellidos,
+            'noches' => $reserva->noches
+        ];
+
+        if (App::getLocale() == 'en') {
+            $info['plan_x_habitacion'] = $reserva->habitacion->plan->nombre_en;
+            $info['habitacion'] = $reserva->habitacion->categoria->nombre_en;
+        }
+
+        if ($reserva->hotel_id == 2) {
+            Mail::to($request->email)->send(new ConfirmationMail($referencia, $hotel->nombre_es, $lang, $info));
+            Mail::to('ecommerce@gphoteles.com')->bcc(['programacionweb@gphoteles.com','gerencia@gphoteles.com','ventas@gphoteles.com','recepcion.express@gphoteles.com','reservaciones@gphoteles.com'])->send(new ConfirmationMail($referencia, $hotel->nombre_es, $lang, $info));
+
+        } else {
+            Mail::to($request->email)->send(new ConfirmationMailAdex($referencia, $hotel->nombre_es, $lang, $info));
+            Mail::to('ecommerce@gphoteles.com')->bcc(['programacionweb@gphoteles.com','gerencia@gphoteles.com','ventas@gphoteles.com','recepcion.express@gphoteles.com','reservaciones@gphoteles.com'])->send(new ConfirmationMailAdex($referencia, $hotel->nombre_es, $lang, $info));
+        }
+
+
+        echo "Mail Enviado";
+    }
+
 }
