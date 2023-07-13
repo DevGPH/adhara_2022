@@ -468,11 +468,11 @@ class SantanderController extends Controller
 
 
         if ($reserva->hotel_id == 2) {
-            Mail::to($request->email)->send(new ConfirmationMail($request->folio, $hotel->nombre_es, $lang, $info));
+            Mail::to($reserva->huesped->email)->send(new ConfirmationMail($request->folio, $hotel->nombre_es, $lang, $info));
             Mail::to('ecommerce@gphoteles.com')->bcc(['programacionweb@gphoteles.com','gerencia@gphoteles.com','ventas@gphoteles.com','recepcion.express@gphoteles.com','reservaciones@gphoteles.com'])->send(new ConfirmationMail($request->folio, $hotel->nombre_es, $lang, $info));
 
         } else {
-            Mail::to($request->email)->send(new ConfirmationMailAdex($request->folio, $hotel->nombre_es, $lang, $info));
+            Mail::to($reserva->huesped->email)->send(new ConfirmationMailAdex($request->folio, $hotel->nombre_es, $lang, $info));
             Mail::to('ecommerce@gphoteles.com')->bcc(['programacionweb@gphoteles.com','gerencia@gphoteles.com','ventas@gphoteles.com','recepcion.express@gphoteles.com','reservaciones@gphoteles.com'])->send(new ConfirmationMailAdex($request->folio, $hotel->nombre_es, $lang, $info));
         }
 
