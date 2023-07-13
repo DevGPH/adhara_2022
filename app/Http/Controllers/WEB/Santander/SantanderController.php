@@ -445,10 +445,10 @@ class SantanderController extends Controller
         dd($response);
     }
 
-     public function sendMail(string $folio)
+     public function sendMail(Request $request)
     {
         $lang = (App::getLocale() == 'es') ? 'en' : 'es';
-        $reserva = Reserva::where('folio', $folio)->first();
+        $reserva = Reserva::where('folio', $request->folio)->first();
 
         $hotel = Hotel::find($reserva->hotel_id);
 
