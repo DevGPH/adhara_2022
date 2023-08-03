@@ -132,20 +132,17 @@ class SantanderApiController extends Controller
                 $satander_response->url_mitec = $sxe->nb_url;
                 $satander_response->huesped_id = $huesped->id;
                 $satander_response->save();
-                Log::channel('debug-keys')->info($xml);
-                Log::channel('debug-keys')->info($sxe);
-                Log::channel('debug-keys')->info($descrypted_xml);
-                Log::channel('debug-keys')->info(Crypt::decryptString($keys['id_company']));
-                Log::channel('debug-keys')->info(Crypt::decryptString($keys['user']));
-                Log::channel('debug-keys')->info(Crypt::decryptString($keys['id_sucursal']));
-                Log::channel('debug-keys')->info(Crypt::decryptString($keys['pass_user']));
-                Log::channel('debug-keys')->info(Crypt::decryptString($keys['semilla_xml']));
-                Log::channel('debug-keys')->info(Crypt::decryptString($keys['llave_comercial']));
+                Log::channel('debugkeys')->info($xml);
+                Log::channel('debugkeys')->info($sxe);
+                Log::channel('debugkeys')->info($descrypted_xml);
+                Log::channel('debugkeys')->info(Crypt::decryptString($keys['id_company']));
+                Log::channel('debugkeys')->info(Crypt::decryptString($keys['user']));
+                Log::channel('debugkeys')->info(Crypt::decryptString($keys['id_sucursal']));
+                Log::channel('debugkeys')->info(Crypt::decryptString($keys['pass_user']));
+                Log::channel('debugkeys')->info(Crypt::decryptString($keys['semilla_xml']));
+                Log::channel('debugkeys')->info(Crypt::decryptString($keys['llave_comercial']));
                 if( strcmp( $sxe->cd_response, "success") == 0 )
                 {
-
-                    Log::channel('debug-url')->info('success');
-
                     return response()->json([
                         'msg' => 'URL de pago generada con exito',
                         'data' => $sxe->nb_url,

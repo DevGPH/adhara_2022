@@ -169,7 +169,7 @@ class SantanderController extends Controller
 
     public function store(Request $request)
     {
-        Log::channel('santander-response')->info($request->all());
+        Log::channel('santanderresponse')->info($request->all());
 
         if($request->filled('strResponse'))
         {
@@ -180,7 +180,7 @@ class SantanderController extends Controller
             $aes = new AesCrypto();
             $descrypted_xml = $aes->desencriptar($request->strResponse, $semilla_xml);
             $response = new \SimpleXMLElement($descrypted_xml);
-            Log::channel('santander-response-decrypt')->info($response);
+            Log::channel('santanderresponsedecrypt')->info($response);
             $aux = Str::of($response->reference)->explode('-');
 
 
@@ -266,16 +266,16 @@ class SantanderController extends Controller
 
                 #Enviar correo de pago exitoso
                 if ($reserva->hotel_id == 2) {
-                    Mail::to($reserva->huesped->email)->send(new ConfirmationMail($referencia, $hotel->nombre_es, 'es', $info));
+                    Mail::to($reserva->huesped->email)->send(new ConfirmationMail($reference, $hotel->nombre_es, 'es', $info));
                     Mail::to('ecommerce@gphoteles.com')->bcc(['programacionweb@gphoteles.com','gerencia@gphoteles.com','ventas@gphoteles.com','recepcion.express@gphoteles.com','reservaciones@gphoteles.com'])->send(new ConfirmationMail($id, $hotel->nombre_es, App::getLocale(), $info));
 
                 } else {
-                    Mail::to($request->email)->send(new ConfirmationMailAdex($referencia, $hotel->nombre_es, $lang, $info));
+                    Mail::to($request->email)->send(new ConfirmationMailAdex($reference, $hotel->nombre_es, $lang, $info));
                     Mail::to('ecommerce@gphoteles.com')->bcc(['programacionweb@gphoteles.com','gerencia@gphoteles.com','ventas@gphoteles.com','recepcion.express@gphoteles.com','reservaciones@gphoteles.com'])->send(new ConfirmationMailAdex($id, $hotel->nombre_es, App::getLocale(), $info));
                 }
 
 
-                Log::channel('mail-success')->info('Mail enviado con exito');
+                Log::channel('mailsuccess')->info('Mail enviado con exito a: ' . $request->email);
             }
             else
             {
@@ -310,7 +310,7 @@ class SantanderController extends Controller
                     Mail::to('ecommerce@gphoteles.com')->bcc(['programacionweb@gphoteles.com','gerencia@gphoteles.com','ventas@gphoteles.com','recepcion.express@gphoteles.com','reservaciones@gphoteles.com'])->send(new ReservaFailedAdex($id, 'Hotel Adhara Express Cancun', App::getLocale(), $info));
                 }
 
-                Log::channel('mail-success')->info('Mail enviado con reserva fallida');
+                Log::channel('mailsuccess')->info('Mail enviado con reserva fallida');
             }
 
         }

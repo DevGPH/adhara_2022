@@ -66,25 +66,25 @@ return [
             'level' => env('LOG_LEVEL', 'debug'),
         ],
 
-        'santander-response' => [
+        'santanderresponse' => [
             'driver' => 'single',
             'path' => storage_path('logs/santander_response.log'),
             'level' => env('LOG_LEVEL', 'debug'),
         ],
 
-        'santander-response-decrypt' => [
+        'santanderresponsedecrypt' => [
             'driver' => 'single',
             'path' => storage_path('logs/santander_response_decrypt.log'),
             'level' => env('LOG_LEVEL', 'debug'),
         ],
 
-        'debug-keys' => [
+        'debugkeys' => [
             'driver' => 'single',
             'path' => storage_path('logs/debug_keys.log'),
             'level' => env('LOG_LEVEL', 'debug'),
         ],
 
-        'mail-success' => [
+        'mailsuccess' => [
             'driver' => 'single',
             'path' => storage_path('logs/mail_success.log'),
             'level' => env('LOG_LEVEL', 'debug'),
