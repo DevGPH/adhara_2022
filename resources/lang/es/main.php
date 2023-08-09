@@ -66,7 +66,7 @@ return [
 
     // SECCION DE HABITACIONS - VISTA HOME
     'room-estandar' => 'Habitación amplia que cuenta con Aire acondicionado, Wifi gratuito, Caja de Seguridad, Kit de Planchado, Hielera, 2 aguas de cortesía, Secadora de Cabello, ver más...',
-    'room-one' => 'Habitación compartida que cuenta con 60 m2, TV LCD 32", 2 recamaras independientes, 2 baños completos, Sala de estar, Aire acondicionado, 2 camas, ver más...',
+    'room-one' => 'Habitación compartida que cuenta con 60 m2, TV LCD 32", 1 recamara independientes, 2 baños completos, Sala de estar, Aire acondicionado, 2 camas, ver más...',
     'room-ejecutivo' => 'TV LCD, Aire acondicionado, 1 o 2 camas individuales, Wifi gratuito, Caja de Seguridad, Kit de Planchado, Escritorio de Trabajo, Toallas limpias, ver más...',
     //SECCION DE AMENIDADES
     'index.hotel.amenities' => 'NUESTRAS AMENIDADES',
@@ -320,7 +320,7 @@ return [
     'room-item028' => 'Habitación Ejecutiva',
     'room-item28' => '60 m2',
     'room-item29' => 'TV LCD 32¨',
-    'room-item30' => '2 recamaras independientes ',
+    'room-item30' => '1 recamara independientes ',
     'room-item31' => '1 con baño completo',
     'room-item32' => 'Sala de estar  (2 sofá camas)',
     'room-item33' => 'Aire acondicionado',

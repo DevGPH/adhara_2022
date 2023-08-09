@@ -68,7 +68,7 @@ return [
 
     // SECCION DE HABITACIONS - VISTA HOME
     'room-estandar' => 'Spacious room with air conditioning, free Wi-Fi, safety box, ironing kit, cooler, 2 complimentary waters, hairdryer, see more...',
-    'room-one' => 'Shared room with 60 sqm, 32" LCD TV, 2 separate bedrooms, 2 full bathrooms, living room, air conditioning, 2 beds, see more...',
+    'room-one' => 'Shared room with 60 sqm, 32" LCD TV, 1 separate bedroom, 2 full bathrooms, living room, air conditioning, 2 beds, see more...',
     'room-ejecutivo' => 'LCD TV, air conditioning, 1 or 2 single beds, free Wi-Fi, safety box, ironing kit, work desk, clean towels, see more...',
 
     // SECCION AMENIDADES INDEX
@@ -318,7 +318,7 @@ return [
     'room-item028' => 'Executive Room',
     'room-item28' => '60 m',
     'room-item29' => 'TV LCD 32¨',
-    'room-item30' => '2 independent bedrooms ',
+    'room-item30' => '1 independent bedroom ',
     'room-item31' => '1 with full bathroom',
     'room-item32' => 'Living room (2 sofa beds)',
     'room-item33' => 'Air-conditioning',
