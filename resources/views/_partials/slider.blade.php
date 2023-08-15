@@ -11,6 +11,7 @@
                             <h1>${{ $rate }}</h1>
                             <h2 style="font-family: 'Playfair Display', sans-serif;">@lang('main.slider.02')</h2>
                             <h5 style="color:white;margin-top:10px;">@lang('main.slider.011')</h5>
+                            <h5 style="color:white;margin-top:10px;">@lang('main.nav.taxes')</h5>
                         </div>
                     </div>
                 </div>
@@ -21,6 +22,7 @@
                             <h5 style="color:white;">@lang('main.slider.03')</h5>
                             <h1>ONE BED ROOM</h1>
                             <h2 style="font-family: 'Playfair Display', sans-serif;">@lang('main.slider.04')</h2>
+                            <h5 style="color:white;margin-top:10px;">@lang('main.nav.taxes')</h5>
                         </div>
                     </div>
                 </div>

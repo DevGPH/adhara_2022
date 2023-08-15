@@ -16,6 +16,7 @@ return [
     'nav.breakfast' => 'INCLUYE DESAYUNO',
     'nav.gallery' => 'GALERÍA',
     'nav.whats' => 'COTIZA, RESERVA Y PAGA POR WHATSAPP: 998 122 1861',
+    'nav.taxes' => 'IMPUESTOS INCLUIDOS',
 
     'slider.01' => 'RESERVA AHORA LA MEJOR TARÍFA DISPONIBLE',
     'slider.011' => 'Incluye Desayuno Buffet',
@@ -66,7 +67,7 @@ return [
 
     // SECCION DE HABITACIONS - VISTA HOME
     'room-estandar' => 'Habitación amplia que cuenta con Aire acondicionado, Wifi gratuito, Caja de Seguridad, Kit de Planchado, Hielera, 2 aguas de cortesía, Secadora de Cabello, ver más...',
-    'room-one' => 'Habitación compartida que cuenta con 60 m2, TV LCD 32", 1 recamara independientes, 2 baños completos, Sala de estar, Aire acondicionado, 2 camas, ver más...',
+    'room-one' => 'Habitación compartida que cuenta con 60 m2, TV LCD 32", 1 recamara independiente, 2 baños completos, Sala de estar, Aire acondicionado, 2 camas, ver más...',
     'room-ejecutivo' => 'TV LCD, Aire acondicionado, 1 o 2 camas individuales, Wifi gratuito, Caja de Seguridad, Kit de Planchado, Escritorio de Trabajo, Toallas limpias, ver más...',
     //SECCION DE AMENIDADES
     'index.hotel.amenities' => 'NUESTRAS AMENIDADES',

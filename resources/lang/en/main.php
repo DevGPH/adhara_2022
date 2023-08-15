@@ -16,6 +16,7 @@ return [
     'nav.breakfast' => 'BREAKFAST INCLUDED',
     'nav.gallery' => 'GALLERY',
     'nav.whats' => 'QUOTE, RESERVE AND PAY BY WHATSAPP: 998 122 1861',
+    'nav.taxes' => 'TAXES INCLUDED',
 
     'slider.01' => 'BOOK NOW THE BEST AVAILABLE RATE',
     'slider.011' => 'BREAKFAST INCLUDED',
