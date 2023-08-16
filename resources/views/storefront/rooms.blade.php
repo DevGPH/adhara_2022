@@ -134,7 +134,7 @@
                                             <div class="col-md-12">
                                                 <i class="fa fa-caret-down"></i>
                                                 <select name="infantes" required>
-                                                    <option value="">@lang('main.booking.kids')</option>
+                                                    <option value="0">@lang('main.booking.kids')</option>
                                                     <option value="0">0 @lang('main.booking.kids')</option>
                                                     <option value="1">1 @lang('main.booking.kids')</option>
                                                     <option value="2">2 @lang('main.booking.kids')</option>
