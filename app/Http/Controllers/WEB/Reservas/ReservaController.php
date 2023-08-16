@@ -37,22 +37,22 @@ class ReservaController extends Controller
 
     public function index(Request $request,$locale)
     {
-        //dd(Cookie::get('dataBooking'));
         if(empty($request->all())){ //se verifiva si el request esta vacio que quiere decir que viene de un refresh o cambio de idioma
             //si esta vacio, se toma la informacion del cookie
-            $dataBooking = (array)json_decode(Cookie::get('dataBooking'));//$dataBooking: variable utilizada para no tomarla directamente del request ya que puede estar vacio y entonces se toma de los cookies
-
+            //$dataBooking = (array)json_decode(Cookie::get('dataBooking'));//$dataBooking: variable utilizada para no tomarla directamente del request ya que puede estar vacio y entonces se toma de los cookies
+            return redirect('/');
         } else { // si tiene informacion quiere decir que viene del la consulta de reserva
 
             $dataBooking = $request->all();
-            if (count($dataBooking) > 1) {
+            /*if (count($dataBooking) > 1) {
                 // Se tiene data de la request
                 //se borra el cookie guardado para poder guardar la nueva informacion
                 Cookie::queue(Cookie::forget('dataBooking'));
                 Cookie::queue(Cookie::make('dataBooking', json_encode($request->all()))); // cookie utilizada para guardar la informacion de booking en caso de cambiar el idioma o refrescar la pagina
             } else {
+                dd('here');
                 $dataBooking = (array)json_decode(Cookie::get('dataBooking'));
-            }
+            }*/
         }
 
         config(['app.timezone' => 'America/Cancun']);
