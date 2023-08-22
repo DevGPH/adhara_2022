@@ -2,13 +2,16 @@
 
 @section('content')
 
-@if(session('error'))
-{{ session('error') }}
-@endif
-
 <div class="site-main">
     <!-- Section Page Title -->
     <div class="section">
+        @if(session('error'))
+            <div class="alert alert-warning" role="alert"> {{ session('error') }}
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        @endif
         <div class="widget-page-title">
             <div class="widget-background" data-background="{{ asset('images/backgrounds/coitzacion_background.png') }}"></div>
             <div class="wrapper-inner">
