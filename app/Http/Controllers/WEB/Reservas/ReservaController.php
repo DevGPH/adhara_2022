@@ -30,6 +30,7 @@ use App;
 #Fecha libreria
 use Carbon\Carbon;
 use Facade\Ignition\DumpRecorder\Dump;
+//use Carbon;
 
 class ReservaController extends Controller
 {
@@ -37,10 +38,17 @@ class ReservaController extends Controller
 
     public function index(Request $request,$locale)
     {
+        //dd($request->all());
         if(empty($request->all())){ //se verifiva si el request esta vacio que quiere decir que viene de un refresh o cambio de idioma
             //si esta vacio, se toma la informacion del cookie
-            //$dataBooking = (array)json_decode(Cookie::get('dataBooking'));//$dataBooking: variable utilizada para no tomarla directamente del request ya que puede estar vacio y entonces se toma de los cookies
-            return redirect('/');
+            $dataBooking = [
+                'dates_booking' => date('Y-m-d', strtotime('+1 day')) .' - '. date('Y-m-d', strtotime('+2 day')),
+                'rooms' => 1,
+                'room_1_adults' => 1,
+                'kids' => 0
+            ];//$dataBooking: variable utilizada para no tomarla directamente del request ya que puede estar vacio y entonces se toma de los cookies
+            //return redirect('/');
+
         } else { // si tiene informacion quiere decir que viene del la consulta de reserva
 
             $dataBooking = $request->all();
@@ -262,6 +270,7 @@ class ReservaController extends Controller
 
     public function reservations(Request $request,$locale)
     {
+        //dd($request->all(),'pre booking');
         $paises = Pais::all();
         $habitacion = Habitacion::findOrFail($request->habitacion_id);
         $homecontroller = new HomeController();
@@ -274,6 +283,7 @@ class ReservaController extends Controller
         $interval = $datetime1->diff($datetime2);
         $days = $interval->format('%a');
         if ( (int)$days < 4 && $habitacion->categoria->tag_es == 'one-bedroom-suite') {
+            //dd('here');
             return redirect()->back()->with('error', 'La habitación One Bedroom Suite solo se puede reservar con una estancia mínima de 4 noches');
         }
         if ($request->has('custom_booking')) {
