@@ -2,6 +2,10 @@
 
 @section('content')
 
+@if(session('error'))
+{{ session('error') }}
+@endif
+
 <div class="site-main">
     <!-- Section Page Title -->
     <div class="section">
