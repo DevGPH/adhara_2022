@@ -278,10 +278,11 @@ class ReservaController extends Controller
 
         $rate = $homecontroller->rateToday($locale);
 
-        $datetime1 = new DateTime($request->checkin);
-        $datetime2 = new DateTime($request->checkout);
+        $datetime1 = new DateTime($request->checkIn);
+        $datetime2 = new DateTime($request->checkOut);
         $interval = $datetime1->diff($datetime2);
         $days = $interval->format('%a');
+
         if ( (int)$days < 4 && $habitacion->categoria->tag_es == 'one-bedroom-suite') {
             //dd('here');
             return redirect()->back()->with('error', 'La habitación One Bedroom Suite solo se puede reservar con una estancia mínima de 4 noches');
