@@ -1,3 +1,15 @@
+<style>
+        .mob-only {
+            display: none;
+        }
+
+        @media (max-width: 600px) {
+            .mob-only{
+                display: block;
+            }
+        }
+
+</style>
 <!-- Site Header -->
 <div class="site-header">
     <!-- Header Top -->
@@ -61,6 +73,12 @@
                     <li><a href="{{ route('servicios', [App::getLocale()]) }}">@lang('main.nav-services')</a></li>
                     <li><a href="{{ route('gallery', App::getLocale(), 0) }}">@lang('main.nav.gallery')</a></li>
                     <li><a href="{{ route('contact', ['locale' => App::getLocale()]) }}">@lang('main.nav-contact')</a></li>
+                    <li class="mob-only">
+                        <a href="{{ route(Route::currentRouteName(),[$lang,$id])}}">
+                            <img src="/images/logos/{{(App::getLocale() == 'es') ? 'usa.png' : 'mexico.png' }}" alt="{{ (App::getLocale() == 'es') ? 'English' : 'Spanish'}}" class="flag-lang">
+                            {{ (App::getLocale() == 'es') ? 'EN' : 'ES' }}
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div class="header-toggle">
