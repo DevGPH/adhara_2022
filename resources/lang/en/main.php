@@ -367,6 +367,7 @@ return [
     'book.details' => 'Fill in all the fields correctly with your information to complete the registration of your reservation. Double-check that your data is correct before proceeding.',
     'book.about' => 'INFORMATION ABOUT',
     'book.selected.room' => 'Selected Room',
+    'book.at.hotel' => 'Paga at Hotel',
 
 
     'quotation-item001' => 'All prices include taxes',

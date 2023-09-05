@@ -370,6 +370,7 @@ return [
     'book.details' => 'Llena todos los campos correctamente con tu información para completar el registro de tu reserva. Revisa bien que tus datos sean correctos antes de continuar.',
     'book.about' => 'INFORMACIÓN SOBRE',
     'book.selected.room' => 'Habitacion Seleccionada',
+    'book.at.hotel' => 'Paga en el Hotel',
 
 
     'quotation-item001' => 'Todos los precios incluyen impuestos',

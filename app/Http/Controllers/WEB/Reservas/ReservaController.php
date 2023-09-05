@@ -19,6 +19,7 @@ use App\Http\Controllers\WEB\Santander\SantanderController;
 use App\Mail\ConfirmationMail;
 
 #Modelos
+use App\Models\PagoDestino;
 use App\Models\Temporada;
 use App\Models\TipoCambio;
 use App\Models\Habitacion;
@@ -345,6 +346,18 @@ class ReservaController extends Controller
 
         $clubestrella = (Cookie::get('user') !== null) ? json_decode(Cookie::get('user')) : null;
 
+        $pagoDestino = PagoDestino::whereDate('startDate','<=', date('Y-m-d'))
+            ->whereDate('endDate','>=', date('Y-m-d'))
+            ->where('hotel_id', 2)
+            ->get();
+
+        $enable_pago_destino = false;
+
+        if (!$pagoDestino->isEmpty())
+        {
+            $enable_pago_destino = true;
+        }
+
         return view('storefront.reservations',[
             'paises' => $paises,
             'habitaciones' =>  $request->cuartos,
@@ -366,7 +379,8 @@ class ReservaController extends Controller
             'id' => 0,
             'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
             'rate' => $rate,
-            'clubestrella' => $clubestrella
+            'clubestrella' => $clubestrella,
+            'enable_pago_destino' => $enable_pago_destino
         ]);
 
     }
@@ -396,7 +410,7 @@ class ReservaController extends Controller
                     'ciudad' => $request->ciudad,
                     'pais_id' => $request->pais_id,
                     'habitacion_id' => $request->habitacion_id,
-                    'pago_x_destino' => 0,
+                    'pago_x_destino' => ($request->metodo_pago == 'pago_destino') ? 1 : 0,
                     'checkIn' => $request->checkIn,
                     'checkOut' => $request->checkOut,
                     'plataforma' => $request->plataforma,
@@ -409,7 +423,7 @@ class ReservaController extends Controller
                     'currency' => $request->currency,
                     'comentarios' => $request->comentarios,
                     'hotel_id' => 2,
-                    'payment' => 'pago_seguro', //$request->metodo_pago, #pago_seguro , pago_destino
+                    'payment' => $request->metodo_pago, //$request->metodo_pago, #pago_seguro , pago_destino
                     'login' => ($request->cookie('user') !== null )?1:0,//verificar si existe la cookie para saber si esta logueado
                     'lang' => App::getLocale()
         ]);

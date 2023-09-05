@@ -2,6 +2,23 @@
 
 @section('content')
 
+<style>
+    #lista_pagos {
+        display: flex;
+    }
+
+    #lista_pagos li {
+        margin-left: 10px;
+        margin-right: 10px;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    #lista_pagos li input{
+        margin-right: 10px;
+    }
+</style>
+
 @if (session('error-api'))
     <div class="alert alert-danger" style="position:absolute;z-index:100;">
         @foreach (session('error-api') as $item)
@@ -134,8 +151,18 @@
                                                 <p>@lang('main.reservations-item020')</p>
                                             </div>
                                             <div class="col-md-12">
-                                                <input class="form-check-input" type="radio" name="metodo_pago" value="pago_seguro" checked>
-                                                <img src="{{ asset('images/logos/tarjeta.png') }}" width="200" height="70" title="Magica">
+                                                <ul id="lista_pagos">
+                                                    <li>
+                                                        <input class="form-check-input" type="radio" name="metodo_pago" value="pago_seguro" checked>
+                                                        <img src="{{ asset('images/logos/tarjeta.png') }}" width="200" height="70" title="Magica">
+                                                    </li>
+                                                    @if ($enable_pago_destino)
+                                                        <li>
+                                                            <input class="form-check-input" type="radio" name="metodo_pago" value="pago_destino">
+                                                            @lang('main.book.at.hotel')
+                                                        </li>
+                                                    @endif
+                                                </ul>
                                             </div>
                                             <div class="col-md-6">
                                                 <input type="hidden" name="habitaciones"    value="{{ $habitaciones }}">
