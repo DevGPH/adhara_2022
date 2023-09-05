@@ -449,6 +449,4 @@
 </div>
 <!-- Site Main End -->
 
-
-
 @endsection
