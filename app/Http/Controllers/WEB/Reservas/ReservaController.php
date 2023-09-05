@@ -491,7 +491,8 @@ class ReservaController extends Controller
         return view('storefront.response')->with([
             'folio' => $id,
             'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
-            'rate' => $rate
+            'rate' => $rate,
+            'id' => 0
         ]);
 
     }
