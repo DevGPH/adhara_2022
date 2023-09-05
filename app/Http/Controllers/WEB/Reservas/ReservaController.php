@@ -485,9 +485,13 @@ class ReservaController extends Controller
 
     public function response($locale,$id = '#00000')
     {
+        $homecontroller = new HomeController();
+        $rate = $homecontroller->rateToday($locale);
+
         return view('storefront.response')->with([
             'folio' => $id,
-            'lang' =>(App::getLocale() == 'es') ? 'en' : 'es'
+            'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
+            'rate' => $rate
         ]);
 
     }
