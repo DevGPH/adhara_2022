@@ -284,6 +284,8 @@ class ReservaController extends Controller
         $interval = $datetime1->diff($datetime2);
         $days = $interval->format('%a');
 
+        dd($request->all());
+
         if ( (int)$days < 4 && $habitacion->categoria->tag_es == 'one-bedroom-suite') {
             //dd('here');
             return redirect()->back()->with('error', 'La habitación One Bedroom Suite solo se puede reservar con una estancia mínima de 4 noches');
@@ -346,8 +348,8 @@ class ReservaController extends Controller
 
         $clubestrella = (Cookie::get('user') !== null) ? json_decode(Cookie::get('user')) : null;
 
-        $pagoDestino = PagoDestino::whereDate('startDate','<=', date('Y-m-d'))
-            ->whereDate('endDate','>=', date('Y-m-d'))
+        $pagoDestino = PagoDestino::whereDate('startDate','<=', $request->checkIn)
+            ->whereDate('endDate','>=', $request->checkOut)
             ->where('hotel_id', 2)
             ->get();
 

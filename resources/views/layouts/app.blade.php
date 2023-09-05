@@ -170,12 +170,12 @@
     @if(Route::is('inicio') )
         {{-- Promociones 6 meses sin interes --}}
         <div id="mesesSinInteres" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mesesSinInteres">
-            <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-dialog modal-md" role="document">
                 <div class="modal-content">
-                    <div class="modal-header">
+                    <!--div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    </div>
-                <p>Hola mundo</p>
+                    </div-->
+                    <img src="{{ asset('images/offers/meses_sin_intereses.png') }}" alt="Meses sin Intereses">
                 </div>
             </div>
         </div>
