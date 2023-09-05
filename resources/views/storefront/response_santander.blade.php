@@ -10,6 +10,14 @@
             <img src="{{ asset('images/santander/line-error.svg') }}" class="img-responsive" alt="">
             <p style="text-align: center;"> {{ $response }} </p>
             <p style="text-align: center;"> {{ $msg }} </p>
+        @elseif($status == 'pending')
+            <img src="{{ asset('images/mail/reserva.png') }}" alt="Hotel Adhara Cancun" style="display: block;margin:0px auto;margin-bottom:40px;">
+            <p style="text-align: center;margin-bottom:0px;">@lang('main.pending.text')</p>
+            <p style="text-align: center;margin-bottom:0px;">@lang('main.pending.text2')</p>
+            <p style="text-align: center;">@lang('main.succesfully-item003')</p>
+            <h3 style="text-align: center; margin-top:20px;margin-bottom:20px;">{{ $referencia ?? "0000" }}</h3>
+            <p style="text-align: center;margin-bottom:0px;"> <small>@lang('main.succesfully-item004')</small></p>
+            <p style="text-align: center;margin-top:0px;"> <strong>@lang('main.pending.text3')</strong></p>
         @else
             <img src="{{ asset('images/mail/reserva.png') }}" alt="Hotel Adhara Cancun" style="display: block;margin:0px auto;margin-bottom:40px;">
             <p style="text-align: center;margin-bottom:0px;">@lang('main.succesfully-item001')</p>

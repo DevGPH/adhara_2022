@@ -438,6 +438,10 @@ return [
     'succesfully-item005' => 'Card Payment',
     'succesfully-item006' => '',
 
+    'pending.text' => 'Your reservation was made successfully and with STATUS => PENDING,',
+    'pending.text2' => 'any questions please contact the reservations department',
+    'pending.text3' => 'Make payment at the Hotel',
+
 
 
     'covid-item001' => 'COVID19 update',

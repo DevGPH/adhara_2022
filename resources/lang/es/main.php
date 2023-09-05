@@ -440,6 +440,10 @@ return [
     'succesfully-item005' => 'Pagado con tarjeta',
     'succesfully-item006' => '',
 
+    'pending.text' => 'Su reservación se realizo de manera exitosa y esta con STATUS => PENDIENTE,',
+    'pending.text2' => 'cualquier duda favor de comunicarse con el departamento de reservaciones',
+    'pending.text3' => 'Realizar pago en el Hotel',
+
 
     'covid-item001' => 'Actualización COVID19',
     'covid-item002' => '',

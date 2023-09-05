@@ -483,13 +483,16 @@ class ReservaController extends Controller
     }
 
 
-    public function response($locale,$id = '#00000')
+    public function response($lang,$id = '#00000')
     {
         $homecontroller = new HomeController();
-        $rate = $homecontroller->rateToday($locale);
+        $rate = $homecontroller->rateToday($lang);
 
-        return view('storefront.response')->with([
-            'folio' => $id,
+        return view('storefront.response_santander')->with([
+            'status' => 'pending',
+            'msg' => (App::getLocale() == 'es') ? 'Reservacion Pendiente' : 'Pending Reservation',
+            'response' => null,
+            'referencia' => $id,
             'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
             'rate' => $rate,
             'id' => 0
