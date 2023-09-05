@@ -175,7 +175,7 @@
                     <!--div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     </div-->
-                    <img src="{{ asset('images/offers/meses_intereses.png') }}" alt="Meses sin Intereses">
+                    <img src="{{ asset('images/offers/meses_interes.png') }}" alt="Meses sin Intereses">
                 </div>
             </div>
         </div>
