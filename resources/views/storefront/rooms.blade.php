@@ -110,13 +110,13 @@
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <i class="fa fa-calendar-plus-o"></i>
-                                                <input type="text" name="checkin" placeholder="@lang('main.booking.checkIn')" class="datepicker" required autocomplete="off">
+                                                <input type="text" name="checkIn" placeholder="@lang('main.booking.checkIn')" class="datepicker" required autocomplete="off">
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <i class="fa fa-calendar-plus-o"></i>
-                                                <input type="text" name="checkout" placeholder="@lang('main.booking.checkOut')" class="datepicker" required autocomplete="off">
+                                                <input type="text" name="checkOut" placeholder="@lang('main.booking.checkOut')" class="datepicker" required autocomplete="off">
                                             </div>
                                         </div>
                                         <div class="row">

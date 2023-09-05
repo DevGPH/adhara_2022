@@ -284,7 +284,19 @@ class ReservaController extends Controller
         $interval = $datetime1->diff($datetime2);
         $days = $interval->format('%a');
 
-        dd($request->all());
+        $pagoDestino = PagoDestino::whereDate('startDate','<=', $request->checkIn)
+            ->whereDate('endDate','>=', $request->checkOut)
+            ->where('hotel_id', 2)
+            ->get();
+
+        $enable_pago_destino = false;
+
+        if (!$pagoDestino->isEmpty())
+        {
+            $enable_pago_destino = true;
+        }
+
+        $clubestrella = (Cookie::get('user') !== null) ? json_decode(Cookie::get('user')) : null;
 
         if ( (int)$days < 4 && $habitacion->categoria->tag_es == 'one-bedroom-suite') {
             //dd('here');
@@ -294,8 +306,8 @@ class ReservaController extends Controller
             $url = $this->endpoint.$locale.'/select-habitacion/' . $habitacion->id;
 
             $response = Http::asForm()->post($url, [
-                'checkIn' => $request->checkin,
-                'checkOut' => $request->checkout,
+                'checkIn' => $request->checkIn,
+                'checkOut' => $request->checkOut,
                 'habitaciones' => $request->rooms,
                 'adultos' => $request->adultos,
                 'infantes' => $request->infantes,
@@ -308,13 +320,11 @@ class ReservaController extends Controller
             $price = $request->cookie('user') ? ($result['data']['total']*.9) : $result['data']['total'];
             $total = (App::getLocale() == 'es') ? $price * $cambio->valor_x_moneda : $price;
 
-            $clubestrella = (Cookie::get('user') !== null) ? json_decode(Cookie::get('user')) : null;
-
             return view('storefront.reservations',[
                 'paises' => $paises,
                 'habitaciones' =>  $result['data']['cuartos'],
-                'checkIn'      =>  $request->checkin,
-                'checkOut'     =>  $request->checkout,
+                'checkIn'      =>  $request->checkIn,
+                'checkOut'     =>  $request->checkOut,
                 'total'        =>  $total,
                 'currency'     =>  (App::getLocale() == 'es') ? 'MXN' : 'USD',
                 'noches'       =>  $result['data']['noches'],
@@ -331,7 +341,8 @@ class ReservaController extends Controller
                 'id' => 0,
                 'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
                 'rate' => $rate,
-                'clubestrella' => $clubestrella
+                'clubestrella' => $clubestrella,
+                'enable_pago_destino' => $enable_pago_destino
             ]);
         }
 
@@ -344,20 +355,6 @@ class ReservaController extends Controller
         if (App::getLocale() == 'es' && $request->currency != 'MXN') {
             $total = $total * $cambio->valor_x_moneda ;
             $currency = 'MXN';
-        }
-
-        $clubestrella = (Cookie::get('user') !== null) ? json_decode(Cookie::get('user')) : null;
-
-        $pagoDestino = PagoDestino::whereDate('startDate','<=', $request->checkIn)
-            ->whereDate('endDate','>=', $request->checkOut)
-            ->where('hotel_id', 2)
-            ->get();
-
-        $enable_pago_destino = false;
-
-        if (!$pagoDestino->isEmpty())
-        {
-            $enable_pago_destino = true;
         }
 
         return view('storefront.reservations',[
