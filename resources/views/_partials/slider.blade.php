@@ -3,7 +3,7 @@
         <div class="wrapper-full">
             <!-- Slider Carousel -->
             <div class="widget-carousel owl-carousel owl-theme">
-                <div class="slider-item" data-background="{{ asset('images/sliders/prueba_slider.png') }}">
+                <div class="slider-item" data-background="{{ asset('images/sliders/prueba_slide.png') }}">
                     <!--div class="wrapper">
                         <div class="item-inner">
                             <h5 style="color:white;">@lang('main.slider.01')</h5>
