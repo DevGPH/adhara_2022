@@ -3,6 +3,17 @@
         <div class="wrapper-full">
             <!-- Slider Carousel -->
             <div class="widget-carousel owl-carousel owl-theme">
+                <div class="slider-item" data-background="{{ asset('images/sliders/prueba_slider.png') }}">
+                    <!--div class="wrapper">
+                        <div class="item-inner">
+                            <h5 style="color:white;">@lang('main.slider.01')</h5>
+                            <h1>${{ $rate }}</h1>
+                            <h2 style="font-family: 'Playfair Display', sans-serif;">@lang('main.slider.02')</h2>
+                            <h5 style="color:white;margin-top:10px;">@lang('main.slider.011')</h5>
+                            <h5 style="color:white;margin-top:10px;">@lang('main.nav.taxes')</h5>
+                        </div>
+                    </div-->
+                </div>
                 <div class="slider-item" data-background="{{ asset('images/sliders/slider1.png') }}">
                     <div class="wrapper">
                         <div class="item-inner">
