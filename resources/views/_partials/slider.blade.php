@@ -27,9 +27,9 @@
 
                 <div class="widget-carousel owl-carousel owl-theme">
                     @if (App::getLocale() == 'es')
-                        <div class="slider-item" data-background="{{ asset('images/sliders/slide_es.png') }}"></div>
+                        <div class="slider-item" data-background="{{ asset('images/sliders/meses_es.png') }}"></div>
                     @else
-                        <div class="slider-item" data-background="{{ asset('images/sliders/slide_en.png') }}"></div>
+                        <div class="slider-item" data-background="{{ asset('images/sliders/meses_en.png') }}"></div>
                     @endif
                     <div class="slider-item" data-background="{{ asset('images/sliders/slider1.png') }}">
                         <div class="wrapper">
