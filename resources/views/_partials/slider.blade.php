@@ -10,12 +10,21 @@
 .slide-desktop{
     display: block;
 }
-@media (max-width: 768px) {
-    .slide-mob {
-        display: block;
+
+.slide_es {
+    background-image: url('/images/sliders/intereses_mob_es.png');
+}
+
+.slide_en {
+    background-image: url('/images/sliders/intereses_mob_en.png')
+}
+@media (min-width: 768px) {
+    .slide_es {
+        background-image: url('/images/sliders/intereses_es.png');
     }
-    .slide-desktop {
-        display: none;
+
+    .slide_en {
+        background-image: url('/images/sliders/intereses_en.png')
     }
 }
 
@@ -27,9 +36,9 @@
 
                 <div class="widget-carousel owl-carousel owl-theme">
                     @if (App::getLocale() == 'es')
-                        <div class="slider-item" data-background="{{ asset('images/sliders/meses_es.png') }}"></div>
+                        <div class="slider-item slide_es"></div>
                     @else
-                        <div class="slider-item" data-background="{{ asset('images/sliders/meses_en.png') }}"></div>
+                        <div class="slider-item slide_en"></div>
                     @endif
                     <div class="slider-item" data-background="{{ asset('images/sliders/slider1.png') }}">
                         <div class="wrapper">
