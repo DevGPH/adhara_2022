@@ -20,11 +20,16 @@
 </style>
 
 @if (session('error-api'))
-{{dd(session('error-api'))}}
     <div class="alert alert-danger" style="position:absolute;z-index:100;">
         @foreach (session('error-api') as $item)
             <p>{{ $item[0] }}</p>
         @endforeach
+    </div>
+@endif
+
+@if (session('error-string'))
+    <div class="alert alert-danger" style="position:absolute;z-index:100;">
+        <p>{{ session('error-string') }}</p>
     </div>
 @endif
 @error('condiciones')
