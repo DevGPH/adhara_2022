@@ -429,6 +429,7 @@ class ReservaController extends Controller
 
 
         $result = $response->json();
+        dd($result);
 
         if((int)$result['code'] == 500 || (int) $result['code'] == 422)
         {
