@@ -29,7 +29,7 @@
                     @if (Cookie::get('user'))
                         <li class="custom-tarifa" style="margin-left:10px;"><a class="nav-link" href="https://clubestrella.mx" target="_blank" style="color: white;" data-toggle="modal" data-target="#modal-login"><img src="{{ asset('images/logos/clubestrella.png') }}" alt="Clubestrella" style="width: 25px;margin-right:6px;">{{ json_decode(Cookie::get('user'))->name }}</a></li>
                     @else
-                       <li class="custom-tarifa" style="margin-left:10px;"><a class="nav-link" href="https://clubestrella.mx" target="_blank" style="color: white;" data-toggle="modal" data-target="#modal-login"><img src="{{ asset('images/logos/clubestrella.png') }}" alt="Clubestrella" style="width: 25px;margin-right:6px;">CLUB ESTRELLA</a></li>
+                       <li class="custom-tarifa" style="margin-left:10px;"><a class="nav-link" href="https://clubestrella.mx" target="_blank" style="color: white;"><img src="{{ asset('images/logos/clubestrella.png') }}" alt="Clubestrella" style="width: 25px;margin-right:6px;">CLUB ESTRELLA</a></li>
                     @endif
                     <!--li><a class="nav-link" href="https://www.instagram.com/adharacancun/" target="_blank"><i class="fa fa-instagram"></i></a></li>
                     <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
