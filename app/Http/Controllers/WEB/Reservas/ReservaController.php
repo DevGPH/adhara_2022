@@ -53,15 +53,18 @@ class ReservaController extends Controller
         } else { // si tiene informacion quiere decir que viene del la consulta de reserva
 
             $dataBooking = $request->all();
-            /*if (count($dataBooking) > 1) {
+            if (count($dataBooking) < 1) {
                 // Se tiene data de la request
                 //se borra el cookie guardado para poder guardar la nueva informacion
-                Cookie::queue(Cookie::forget('dataBooking'));
-                Cookie::queue(Cookie::make('dataBooking', json_encode($request->all()))); // cookie utilizada para guardar la informacion de booking en caso de cambiar el idioma o refrescar la pagina
-            } else {
-                dd('here');
-                $dataBooking = (array)json_decode(Cookie::get('dataBooking'));
-            }*/
+                //Cookie::queue(Cookie::forget('dataBooking'));
+                //Cookie::queue(Cookie::make('dataBooking', json_encode($request->all()))); // cookie utilizada para guardar la informacion de booking en caso de cambiar el idioma o refrescar la pagina
+                $dataBooking = [
+                    'dates_booking' => date('Y-m-d', strtotime('+1 day')) .' - '. date('Y-m-d', strtotime('+2 day')),
+                    'rooms' => 1,
+                    'room_1_adults' => 1,
+                    'kids' => 0
+                ];//$dataBooking: variable utilizada para no tomarla directamente del request ya que puede estar vacio y entonces se toma de los cookies
+            }
         }
 
         config(['app.timezone' => 'America/Cancun']);
