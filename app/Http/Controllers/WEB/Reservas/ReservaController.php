@@ -54,7 +54,6 @@ class ReservaController extends Controller
             }
 
         } else { // si tiene informacion quiere decir que viene del la consulta de reserva
-
             $dataBooking = $request->all();
             if (count($dataBooking) < 1) {
                 // Se tiene data de la request
@@ -62,7 +61,7 @@ class ReservaController extends Controller
                 //Cookie::queue(Cookie::forget('dataBooking'));
                 //Cookie::queue(Cookie::make('dataBooking', json_encode($request->all()))); // cookie utilizada para guardar la informacion de booking en caso de cambiar el idioma o refrescar la pagina
                 if ($request->session()->has('dataBooking')) {
-                    $dataBooking = json_decode(session('dataBooking'));
+                    $dataBooking = json_decode(session('dataBooking'), true);
                 } else {
                     $dataBooking = [
                         'dates_booking' => date('Y-m-d', strtotime('+1 day')) .' - '. date('Y-m-d', strtotime('+2 day')),
@@ -72,8 +71,22 @@ class ReservaController extends Controller
                     ];
                 }
             } else {
-                //We create a session. this information will store it in case the page is refreshed
-                session(['dataBooking' => json_encode($request->all())]);
+                if ($request->has('dates_booking')) {
+                    //We create a session. this information will store it in case the page is refreshed
+                    session(['dataBooking' => json_encode($request->all())]);
+                } else {
+                    if ($request->session()->has('dataBooking')) {
+                        $dataBooking = json_decode(session('dataBooking'), true);
+                    } else {
+                        $dataBooking = [
+                            'dates_booking' => date('Y-m-d', strtotime('+1 day')) .' - '. date('Y-m-d', strtotime('+2 day')),
+                            'rooms' => 1,
+                            'room_1_adults' => 1,
+                            'kids' => 0
+                        ];
+                    }
+                }
+                
             }
         }
 
