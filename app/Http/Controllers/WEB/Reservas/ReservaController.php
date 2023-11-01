@@ -39,16 +39,19 @@ class ReservaController extends Controller
 
     public function index(Request $request,$locale)
     {
-        //dd($request->all());
+        $dataBooking = null;
         if(empty($request->all())){ //se verifiva si el request esta vacio que quiere decir que viene de un refresh o cambio de idioma
             //si esta vacio, se toma la informacion del cookie
-            $dataBooking = [
-                'dates_booking' => date('Y-m-d', strtotime('+1 day')) .' - '. date('Y-m-d', strtotime('+2 day')),
-                'rooms' => 1,
-                'room_1_adults' => 1,
-                'kids' => 0
-            ];//$dataBooking: variable utilizada para no tomarla directamente del request ya que puede estar vacio y entonces se toma de los cookies
-            //return redirect('/');
+            if ($request->session()->has('dataBooking')) {
+                $dataBooking = json_decode(session('dataBooking'));
+            } else {
+                $dataBooking = [
+                    'dates_booking' => date('Y-m-d', strtotime('+1 day')) .' - '. date('Y-m-d', strtotime('+2 day')),
+                    'rooms' => 1,
+                    'room_1_adults' => 1,
+                    'kids' => 0
+                ];
+            }
 
         } else { // si tiene informacion quiere decir que viene del la consulta de reserva
 
@@ -58,12 +61,19 @@ class ReservaController extends Controller
                 //se borra el cookie guardado para poder guardar la nueva informacion
                 //Cookie::queue(Cookie::forget('dataBooking'));
                 //Cookie::queue(Cookie::make('dataBooking', json_encode($request->all()))); // cookie utilizada para guardar la informacion de booking en caso de cambiar el idioma o refrescar la pagina
-                $dataBooking = [
-                    'dates_booking' => date('Y-m-d', strtotime('+1 day')) .' - '. date('Y-m-d', strtotime('+2 day')),
-                    'rooms' => 1,
-                    'room_1_adults' => 1,
-                    'kids' => 0
-                ];//$dataBooking: variable utilizada para no tomarla directamente del request ya que puede estar vacio y entonces se toma de los cookies
+                if ($request->session()->has('dataBooking')) {
+                    $dataBooking = json_decode(session('dataBooking'));
+                } else {
+                    $dataBooking = [
+                        'dates_booking' => date('Y-m-d', strtotime('+1 day')) .' - '. date('Y-m-d', strtotime('+2 day')),
+                        'rooms' => 1,
+                        'room_1_adults' => 1,
+                        'kids' => 0
+                    ];
+                }
+            } else {
+                //We create a session. this information will store it in case the page is refreshed
+                session(['dataBooking' => json_encode($request->all())]);
             }
         }
 
