@@ -72,8 +72,8 @@
                             <div class="room-thumbnails">
                                 <div class="owl-carousel">
                                     @if ($habitacion->categoria->tag_es == 'estandar')
-                                        <a href="#" data-background="{{ asset('images/rooms/estandar_1.png') }}" title="Standar Room"></a>
-                                        <a href="#" data-background="{{ asset('images/rooms/estandar_2.png') }}" title="Standar Room"></a>
+                                        <a href="#" data-background="{{ asset('images/rooms/room_normal.png') }}" title="Standar Room"></a>
+                                        <a href="#" data-background="{{ asset('images/rooms/toilet_estandar.png') }}" title="Standar Room"></a>
                                         <a href="#" data-background="{{ asset('images/rooms/estandar_3.png') }}" title="Standar Room"></a>
                                         <!--a href="#" data-background="{{ asset('images/rooms/estandar_4.png') }}" title="Standar Room"></a-->
 
