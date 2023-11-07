@@ -50,8 +50,8 @@
                                 <!--div class="room-price">$ 160.00 <small>PER NIGHT</small></div-->
                                 <div class="owl-carousel owl-theme owl-type1">
                                     @if ($habitacion->categoria->tag_es == 'estandar')
-                                        <a href="{{ asset('images/rooms/estandar_1.png') }}" data-background="{{ asset('images/rooms/estandar_1.png') }}" title="Standar Room" class="popup-gallery"></a>
-                                        <a href="{{ asset('images/rooms/estandar_2.png') }}" data-background="{{ asset('images/rooms/estandar_2.png') }}" title="Standar Room" class="popup-gallery"></a>
+                                        <a href="{{ asset('images/rooms/room_normal.png') }}" data-background="{{ asset('images/rooms/room_normal.png') }}" title="Standar Room" class="popup-gallery"></a>
+                                        <a href="{{ asset('images/rooms/toilet_estandar.png') }}" data-background="{{ asset('images/rooms/toilet_estandar.png') }}" title="Standar Room" class="popup-gallery"></a>
                                         <a href="{{ asset('images/rooms/estandar_3.png') }}" data-background="{{ asset('images/rooms/estandar_3.png') }}" title="Standar Room" class="popup-gallery"></a>
                                         <!--a href="{{ asset('images/rooms/estandar_4.png') }}" data-background="{{ asset('images/rooms/estandar_4.png') }}" title="Standar Room" class="popup-gallery"></a-->
                                     @elseif ($habitacion->categoria->tag_es == 'one-bedroom-suite')
