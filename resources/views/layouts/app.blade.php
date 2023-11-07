@@ -176,9 +176,9 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     </div-->
                     @if (App::getLocale() == 'es')
-                        <img src="{{ asset('images/sliders/pop_es.png') }}" alt="Meses sin Intereses">
+                        <img src="{{ asset('images/sliders/popadhara_es.png') }}" alt="Meses sin Intereses">
                     @else
-                        <img src="{{ asset('images/sliders/pop_en.png') }}" alt="Meses sin Intereses">
+                        <img src="{{ asset('images/sliders/popadhara_en.png') }}" alt="Meses sin Intereses">
                     @endif
                 </div>
             </div>

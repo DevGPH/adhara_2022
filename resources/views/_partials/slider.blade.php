@@ -12,19 +12,19 @@
 }
 
 .slide_es {
-    background-image: url('/images/sliders/mob_es.png');
+    background-image: url('/images/sliders/adhara_mob_es.png');
 }
 
 .slide_en {
-    background-image: url('/images/sliders/mob_en.png')
+    background-image: url('/images/sliders/adhara_mob_en.png')
 }
 @media (min-width: 768px) {
     .slide_es {
-        background-image: url('/images/sliders/back_es.png');
+        background-image: url('/images/sliders/adhara_es.png');
     }
 
     .slide_en {
-        background-image: url('/images/sliders/back_en.png')
+        background-image: url('/images/sliders/adhara_en.png')
     }
 }
 
