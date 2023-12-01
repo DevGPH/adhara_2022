@@ -169,7 +169,7 @@
 
     @if(Route::is('inicio') )
         {{-- Promociones 6 meses sin interes --}}
-        <div id="mesesSinInteres" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mesesSinInteres">
+        <div id="mesesSinInteres#" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mesesSinInteres">
             <div class="modal-dialog modal-md" role="document">
                 <div class="modal-content">
                     <!--div class="modal-header">
