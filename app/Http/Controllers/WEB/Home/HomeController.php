@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Response;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\DB;
 
 use App\Models\AmenidadHabitacion;
 use App\Models\AmenidadCuarto;
@@ -234,12 +235,41 @@ class HomeController extends Controller
     function rateToday($locale)
     {
         $pointer = now();
-        $temporada = Temporada::where('hotel_id',2)->where('startDate','<',$pointer->toDateString())->where('endDate','>',$pointer->toDateString())->orWhere('startDate', $pointer->toDateString())->orWhere('endDate', $pointer->toDateString())->first();
+        //$temporada = Temporada::where('hotel_id',2)->where('startDate','<',$pointer->toDateString())->where('endDate','>',$pointer->toDateString())->orWhere('startDate', $pointer->toDateString())->orWhere('endDate', $pointer->toDateString())->first();
+        $temporada_raw = DB::select('select * from temporadas WHERE hotel_id = ? AND( startDate < ? AND endDate > ? OR startDate = ? OR endDate = ?)',
+        [
+            2,
+            $pointer->toDateString(),
+            $pointer->toDateString(),
+            $pointer->toDateString(),
+            $pointer->toDateString()
+        ]);
+
+        if (count($temporada_raw) > 0)
+            $temporada = $temporada_raw[0];
+
+        if ($temporada == null) {
+            return ($locale == 'es') ? 'Sin definir' : 'Undefined';
+        }
+
         $conversion = TipoCambio::first();
+
+        
         if($temporada == null)
         {
             $today = Carbon::now()->addDay();
-            $temporada = Temporada::where('hotel_id',2)->where('startDate','<',$today->toDateString())->where('endDate','>',$today->toDateString())->orWhere('startDate', $today->toDateString())->orWhere('endDate', $today->toDateString())->first();
+            //$temporada = Temporada::where('hotel_id',2)->where('startDate','<',$today->toDateString())->where('endDate','>',$today->toDateString())->orWhere('startDate', $today->toDateString())->orWhere('endDate', $today->toDateString())->first();
+            $temporada_raw = DB::select('select * from temporadas WHERE hotel_id = ? AND( startDate < ? AND endDate > ? OR startDate = ? OR endDate = ?)',
+            [
+                2,
+                $today->toDateString(),
+                $today->toDateString(),
+                $today->toDateString(),
+                $today->toDateString()
+            ]);
+
+            if (count($temporada_raw) > 0)
+                $temporada = $temporada_raw[0];
 
             if ($temporada == null) {
                 return ($locale == 'es') ? 'Sin definir' : 'Undefined';
