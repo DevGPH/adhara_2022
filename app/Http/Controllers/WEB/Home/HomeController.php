@@ -279,10 +279,9 @@ class HomeController extends Controller
         $plan = PlanHab::findOrFail(4);
 
         $plan_total = (double) $plan->desayuno_adulto * 2;
-        dd($temporada);
 
         $price = ($locale == 'es') ? ($conversion->valor_x_moneda * ($temporada->tarifa_x_dolares + $plan_total)) : $temporada->tarifa_x_dolares + $plan_total;
-        $price = ($locale == 'es') ? 1700 : $temporada->tarifa_x_dolares + $plan_total;
+        //$price = ($locale == 'es') ? 1700 : $temporada->tarifa_x_dolares + $plan_total;
         $currency = ($locale == 'es') ? 'MXN' : $temporada->currency;
         if($temporada != null)
             return number_format(round($price)).' '.$currency;
