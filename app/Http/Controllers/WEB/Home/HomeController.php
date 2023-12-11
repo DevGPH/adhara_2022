@@ -235,7 +235,6 @@ class HomeController extends Controller
     function rateToday($locale)
     {
         $pointer = now();
-        //$temporada = Temporada::where('hotel_id',2)->where('startDate','<',$pointer->toDateString())->where('endDate','>',$pointer->toDateString())->orWhere('startDate', $pointer->toDateString())->orWhere('endDate', $pointer->toDateString())->first();
         $temporada_raw = DB::select('select * from temporadas WHERE hotel_id = ? AND( startDate < ? AND endDate > ? OR startDate = ? OR endDate = ?)',
         [
             2,
@@ -258,7 +257,6 @@ class HomeController extends Controller
         if($temporada == null)
         {
             $today = Carbon::now()->addDay();
-            //$temporada = Temporada::where('hotel_id',2)->where('startDate','<',$today->toDateString())->where('endDate','>',$today->toDateString())->orWhere('startDate', $today->toDateString())->orWhere('endDate', $today->toDateString())->first();
             $temporada_raw = DB::select('select * from temporadas WHERE hotel_id = ? AND( startDate < ? AND endDate > ? OR startDate = ? OR endDate = ?)',
             [
                 2,
@@ -281,7 +279,6 @@ class HomeController extends Controller
         $plan_total = (double) $plan->desayuno_adulto * 2;
 
         $price = ($locale == 'es') ? ($conversion->valor_x_moneda * ($temporada->tarifa_x_dolares + $plan_total)) : $temporada->tarifa_x_dolares + $plan_total;
-        //$price = ($locale == 'es') ? 1700 : $temporada->tarifa_x_dolares + $plan_total;
         $currency = ($locale == 'es') ? 'MXN' : $temporada->currency;
         if($temporada != null)
             return number_format(round($price)).' '.$currency;
