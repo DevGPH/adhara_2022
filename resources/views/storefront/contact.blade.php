@@ -80,6 +80,15 @@
                                     <li><a href="mailto:ecommerce@gphoteles.com">ecommerce@gphoteles.com</a></li>
                                 </ul>
                             </li>
+                            <li>
+                                <h5>@lang('main.contact.groups')</h5>
+                                <ul>
+                                    <li>Jakeline Camacho - Grupos & Congresos</li>
+                                    <li>Teléfono: 998 881 6500 | Ext. 6534</li>
+                                    <li>WhatsApp: (+52) 998 147 8870</li>
+                                    <li><a href="mailto:grupos@gphoteles.com">grupos@gphoteles.com</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                     <!-- Contact Info End -->
