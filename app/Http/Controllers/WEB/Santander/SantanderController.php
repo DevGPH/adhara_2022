@@ -463,8 +463,15 @@ class SantanderController extends Controller
         $correo = ($response->email != "") ? $response->email : "none@gmail.com";
         $id = $aux[1];
 
-        $date = $fecha->format('Y-m-d');
+        $date = null;
+        if ($response_xml == 'denied') {
+            $date = $fecha->format('Y-m-d');
+        }
 
+        $dates = explode('/', $fecha);
+
+        $date = $dates[2] . '-' . $dates[1] . '-' . $dates[0];
+        
 
         $reserva = Reserva::where('folio',$id)->first();
         $huesped = NULL; #Huesped dummy equivale al 0
