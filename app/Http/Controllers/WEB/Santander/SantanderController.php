@@ -200,9 +200,10 @@ class SantanderController extends Controller
             $correo = ($response->email != "") ? $response->email : "none@gmail.com";
             $id = $aux[1];
 
-            $dates = explode('/', $fecha);
+            /*$dates = explode('/', $fecha);
 
-            $date = $dates[2] . '-' . $dates[1] . '-' . $dates[0];
+            $date = $dates[2] . '-' . $dates[1] . '-' . $dates[0];*/
+            $date = $fecha->format('Y-m-d');
 
             $reserva = Reserva::where('folio',$id)->first();
             $huesped = NULL; #Huesped dummy equivale al 0
@@ -462,10 +463,8 @@ class SantanderController extends Controller
         $correo = ($response->email != "") ? $response->email : "none@gmail.com";
         $id = $aux[1];
 
-        $dates = $fecha->format('Y-m-d');
-        /*$dates = explode('/', $fecha);
+        $date = $fecha->format('Y-m-d');
 
-        $date = $dates[2] . '-' . $dates[1] . '-' . $dates[0];*/
 
         $reserva = Reserva::where('folio',$id)->first();
         $huesped = NULL; #Huesped dummy equivale al 0
@@ -481,7 +480,7 @@ class SantanderController extends Controller
             'cd_error' => $cd_error,
             'hora' => $hora,
             'fecha' => $fecha,
-            'fecha_formatted' => $dates,
+            'fecha_formatted' => $date,
             'merchant' => $merchant,
             'cc_type' => $cc_type,
             'operation' => $operation,
