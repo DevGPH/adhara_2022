@@ -515,7 +515,7 @@ class SantanderController extends Controller
             'apellidos' => $reserva->huesped->apellidos,
             'noches' => $reserva->noches
         ];
-        dd($response, $test, $hotel);
+        
 
         if ($reserva->hotel_id == 2) {
             Mail::to('ecommerce@gphoteles.com')->bcc(['juan_alucard@hotmail.com'])->send(new ReservaFailed($id, $hotel->nombre_es, App::getLocale(), $info));
@@ -523,6 +523,7 @@ class SantanderController extends Controller
             Mail::to('ecommerce@gphoteles.com')->bcc(['juan_alucard@hotmail.com'])->send(new ReservaFailedAdex($id, 'Hotel Adhara Express Cancun', App::getLocale(), $info));
         }
 
+        dd($response, $test, $hotel);
         
     }
 
