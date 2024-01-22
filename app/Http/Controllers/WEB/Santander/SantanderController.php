@@ -184,6 +184,7 @@ class SantanderController extends Controller
 
 
             $estatus = $response->reference;
+            $response_xml = $response->response;
             $reference = ($response->reference != "") ? $response->reference : "0000";
             $folio = ($response->foliocpagos != "") ? $response->foliocpagos : "0000";
             $auth = ($response->auth != "") ? $response->auth : "0000";
@@ -200,10 +201,13 @@ class SantanderController extends Controller
             $correo = ($response->email != "") ? $response->email : "none@gmail.com";
             $id = $aux[1];
 
-            /*$dates = explode('/', $fecha);
+            $date = null;
+            if ($response_xml != 'approved') {
+                $date = $fecha->format('Y-m-d');
+            }
 
-            $date = $dates[2] . '-' . $dates[1] . '-' . $dates[0];*/
-            $date = $fecha->format('Y-m-d');
+            $dates = explode('/', $fecha);
+            $date = $dates[2] . '-' . $dates[1] . '-' . $dates[0];
 
             $reserva = Reserva::where('folio',$id)->first();
             $huesped = NULL; #Huesped dummy equivale al 0
@@ -464,7 +468,7 @@ class SantanderController extends Controller
         $id = $aux[1];
 
         $date = null;
-        if ($response_xml == 'denied') {
+        if ($response_xml != 'approved') {
             $date = $fecha->format('Y-m-d');
         }
 
