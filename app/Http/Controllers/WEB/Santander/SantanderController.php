@@ -204,10 +204,10 @@ class SantanderController extends Controller
             $date = null;
             if ($response_xml != 'approved') {
                 $date = $fecha->format('Y-m-d');
+            } else {
+                $dates = explode('/', $fecha);
+                $date = $dates[2] . '-' . $dates[1] . '-' . $dates[0];
             }
-
-            $dates = explode('/', $fecha);
-            $date = $dates[2] . '-' . $dates[1] . '-' . $dates[0];
 
             $reserva = Reserva::where('folio',$id)->first();
             $huesped = NULL; #Huesped dummy equivale al 0
@@ -467,21 +467,20 @@ class SantanderController extends Controller
         $correo = ($response->email != "") ? $response->email : "none@gmail.com";
         $id = $aux[1];
 
-        /*$date = null;
+        $date = null;
         if ($response_xml != 'approved') {
             $date = $fecha->format('Y-m-d');
+        } else {
+            $dates = explode('/', $fecha);
+            $date = $dates[2] . '-' . $dates[1] . '-' . $dates[0];
         }
-
-        $dates = explode('/', $fecha);
-
-        $date = $dates[2] . '-' . $dates[1] . '-' . $dates[0];*/
         
 
         $reserva = Reserva::where('folio',$id)->first();
         $huesped = NULL; #Huesped dummy equivale al 0
         $hotel = Hotel::find($reserva->hotel_id);
 
-        $viajes = [
+        $testing = [
             'estatus' => $estatus,
             'response' => $response_xml,
             'reference' => $reference,
@@ -491,6 +490,7 @@ class SantanderController extends Controller
             'cd_error' => $cd_error,
             'hora' => $hora,
             'fecha' => $fecha,
+            'fecha_formatted' => $date,
             'merchant' => $merchant,
             'cc_type' => $cc_type,
             'operation' => $operation,
@@ -514,13 +514,14 @@ class SantanderController extends Controller
             'apellidos' => $reserva->huesped->apellidos,
             'noches' => $reserva->noches
         ];
-        dd($response, $viajes, $hotel);
 
         if ($reserva->hotel_id == 2) {
             Mail::to('ecommerce@gphoteles.com')->bcc(['juan_alucard@hotmail.com'])->send(new ReservaFailed($id, $hotel->nombre_es, App::getLocale(), $info));
         } else {
             Mail::to('ecommerce@gphoteles.com')->bcc(['juan_alucard@hotmail.com'])->send(new ReservaFailedAdex($id, 'Hotel Adhara Express Cancun', App::getLocale(), $info));
         }
+
+        dd($response, $testing, $hotel);
 
         
     }
