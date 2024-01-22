@@ -445,6 +445,7 @@ class SantanderController extends Controller
         $aux = Str::of($response->reference)->explode('-');
 
         $estatus = $response->reference;
+        $response_xml = (string) $response->response;
         $reference = ($response->reference != "") ? $response->reference : "0000";
         $folio = ($response->foliocpagos != "") ? $response->foliocpagos : "0000";
         $auth = ($response->auth != "") ? $response->auth : "0000";
@@ -462,6 +463,7 @@ class SantanderController extends Controller
         $id = $aux[1];
         $test = [
             'estatus' => $estatus,
+            'response' => $response_xml,
             'reference' => $reference,
             'folio' => $folio,
             'auth' => $auth,
