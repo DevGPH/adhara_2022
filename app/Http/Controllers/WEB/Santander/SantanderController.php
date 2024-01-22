@@ -173,7 +173,6 @@ class SantanderController extends Controller
 
         if($request->filled('strResponse'))
         {
-            $hotel = Hotel::find(2);
 
             $keys = SantanderKeys::where('hotel_id',2)->where('ambiente','prod')->first();
             $semilla_xml= Crypt::decryptString($keys['semilla_xml']);
@@ -207,6 +206,7 @@ class SantanderController extends Controller
 
             $reserva = Reserva::where('folio',$id)->first();
             $huesped = NULL; #Huesped dummy equivale al 0
+            $hotel = Hotel::find($reserva->hotel_id);
 
             if($reserva != null)
             {
@@ -442,7 +442,51 @@ class SantanderController extends Controller
         $aes = new AesCrypto();
         $descrypted_xml = $aes->desencriptar($request->strResponse, $semilla_xml);
         $response = new \SimpleXMLElement($descrypted_xml);
-        dd($response);
+        $aux = Str::of($response->reference)->explode('-');
+
+        $estatus = $response->reference;
+        $reference = ($response->reference != "") ? $response->reference : "0000";
+        $folio = ($response->foliocpagos != "") ? $response->foliocpagos : "0000";
+        $auth = ($response->auth != "") ? $response->auth : "0000";
+        $cd_response = ($response->cd_response != "") ? $response->cd_response : "none";
+        $cd_error = ($response->cd_error != "") ? $response->cd_error : "none";
+        $hora = ($response->time != "") ? $response->time : "0000";
+        $fecha = ($response->date != "") ? $response->date : now();
+        $merchant = ($response->nb_merchant != "") ? $response->nb_merchant : "0000";
+        $cc_type = ($response->cc_type != "") ? $response->cc_type : "0000";
+        $operation = ($response->tp_operation != "") ? $response->tp_operation : "0000";
+        $number = ($response->cc_number != "") ? $response->cc_number : "0000";
+        $amount = ($response->amount != "") ? $response->amount : "0000";
+        $id_url = ($response->id_url != "") ? $response->id_url : "0000";
+        $correo = ($response->email != "") ? $response->email : "none@gmail.com";
+        $id = $aux[1];
+        $test = [
+            'estatus' => $estatus,
+            'reference' => $reference,
+            'folio' => $folio,
+            'auth' => $auth,
+            'cd_response' => $cd_response,
+            'cd_error' => $cd_error,
+            'hora' => $hora,
+            'fecha' => $fecha,
+            'merchant' => $merchant,
+            'cc_type' => $cc_type,
+            'operation' => $operation,
+            'number' => $number,
+            'amount' => $amount,
+            'id_url' => $id_url,
+            'correo' => $correo,
+            'id' => $id
+        ];
+
+        //$dates = explode('/', $fecha);
+
+        //$date = $dates[2] . '-' . $dates[1] . '-' . $dates[0];
+
+        $reserva = Reserva::where('folio',$id)->first();
+        $huesped = NULL; #Huesped dummy equivale al 0
+        $hotel = Hotel::find($reserva->hotel_id);
+        dd($response, $test, $hotel);
     }
 
      public function mail(Request $request) {
