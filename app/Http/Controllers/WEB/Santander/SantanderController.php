@@ -481,7 +481,7 @@ class SantanderController extends Controller
         $huesped = NULL; #Huesped dummy equivale al 0
         $hotel = Hotel::find($reserva->hotel_id);
 
-        $test = [
+        $testing = [
             'estatus' => $estatus,
             'response' => $response_xml,
             'reference' => $reference,
@@ -491,7 +491,7 @@ class SantanderController extends Controller
             'cd_error' => $cd_error,
             'hora' => $hora,
             'fecha' => $fecha,
-            'fecha_formatted' => $date,
+            'date_formatted' => $date,
             'merchant' => $merchant,
             'cc_type' => $cc_type,
             'operation' => $operation,
@@ -515,7 +515,7 @@ class SantanderController extends Controller
             'apellidos' => $reserva->huesped->apellidos,
             'noches' => $reserva->noches
         ];
-        
+        dd($response, $testing, $hotel);
 
         if ($reserva->hotel_id == 2) {
             Mail::to('ecommerce@gphoteles.com')->bcc(['juan_alucard@hotmail.com'])->send(new ReservaFailed($id, $hotel->nombre_es, App::getLocale(), $info));
@@ -523,7 +523,6 @@ class SantanderController extends Controller
             Mail::to('ecommerce@gphoteles.com')->bcc(['juan_alucard@hotmail.com'])->send(new ReservaFailedAdex($id, 'Hotel Adhara Express Cancun', App::getLocale(), $info));
         }
 
-        dd($response, $test, $hotel);
         
     }
 
