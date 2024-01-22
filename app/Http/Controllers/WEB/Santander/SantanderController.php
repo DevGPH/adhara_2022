@@ -466,26 +466,7 @@ class SantanderController extends Controller
         $id_url = ($response->id_url != "") ? $response->id_url : "0000";
         $correo = ($response->email != "") ? $response->email : "none@gmail.com";
         $id = $aux[1];
-        $test = [
-            'estatus' => $estatus,
-            'response' => $response_xml,
-            'reference' => $reference,
-            'folio' => $folio,
-            'auth' => $auth,
-            'cd_response' => $cd_response,
-            'cd_error' => $cd_error,
-            'hora' => $hora,
-            'fecha' => $fecha,
-            'merchant' => $merchant,
-            'cc_type' => $cc_type,
-            'operation' => $operation,
-            'number' => $number,
-            'amount' => $amount,
-            'id_url' => $id_url,
-            'correo' => $correo,
-            'id' => $id
-        ];
-        dd($response, $test);
+
         $date = null;
         if ($response_xml != 'approved') {
             $date = $fecha->format('Y-m-d');
@@ -534,6 +515,7 @@ class SantanderController extends Controller
             'apellidos' => $reserva->huesped->apellidos,
             'noches' => $reserva->noches
         ];
+        dd($response, $test, $hotel);
 
         if ($reserva->hotel_id == 2) {
             Mail::to('ecommerce@gphoteles.com')->bcc(['juan_alucard@hotmail.com'])->send(new ReservaFailed($id, $hotel->nombre_es, App::getLocale(), $info));
