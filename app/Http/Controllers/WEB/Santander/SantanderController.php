@@ -502,6 +502,26 @@ class SantanderController extends Controller
             'id' => $id
         ];
 
+        $info = [
+            'plan_x_habitacion' => $reserva->habitacion->plan->nombre_es,
+            'habitacion' => $reserva->habitacion->categoria->nombre_es,
+            'created_at' => $reserva->created_at,
+            'checkIn' => $reserva->checkIn,
+            'checkOut' => $reserva->checkOut,
+            'total' => $reserva->precio,
+            'adultos' => $reserva->adultos,
+            'infantes' => $reserva->infantes,
+            'nombre' => $reserva->huesped->nombre,
+            'apellidos' => $reserva->huesped->apellidos,
+            'noches' => $reserva->noches
+        ];
+
+        if ($reserva->hotel_id == 2) {
+            Mail::to('ecommerce@gphoteles.com')->bcc(['juan_alucard@hotmail.com'])->send(new ReservaFailed($id, $hotel->nombre_es, App::getLocale(), $info));
+        } else {
+            Mail::to('ecommerce@gphoteles.com')->bcc(['juan_alucard@hotmail.com'])->send(new ReservaFailedAdex($id, 'Hotel Adhara Express Cancun', App::getLocale(), $info));
+        }
+
         dd($response, $test, $hotel);
     }
 
