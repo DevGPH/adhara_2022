@@ -481,6 +481,7 @@ class SantanderController extends Controller
             'cd_error' => $cd_error,
             'hora' => $hora,
             'fecha' => $fecha,
+            'fecha_formatted' => $dates,
             'merchant' => $merchant,
             'cc_type' => $cc_type,
             'operation' => $operation,
