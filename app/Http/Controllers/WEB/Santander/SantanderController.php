@@ -466,7 +466,26 @@ class SantanderController extends Controller
         $id_url = ($response->id_url != "") ? $response->id_url : "0000";
         $correo = ($response->email != "") ? $response->email : "none@gmail.com";
         $id = $aux[1];
-
+        $test = [
+            'estatus' => $estatus,
+            'response' => $response_xml,
+            'reference' => $reference,
+            'folio' => $folio,
+            'auth' => $auth,
+            'cd_response' => $cd_response,
+            'cd_error' => $cd_error,
+            'hora' => $hora,
+            'fecha' => $fecha,
+            'merchant' => $merchant,
+            'cc_type' => $cc_type,
+            'operation' => $operation,
+            'number' => $number,
+            'amount' => $amount,
+            'id_url' => $id_url,
+            'correo' => $correo,
+            'id' => $id
+        ];
+        dd($response, $test);
         $date = null;
         if ($response_xml != 'approved') {
             $date = $fecha->format('Y-m-d');
@@ -522,7 +541,7 @@ class SantanderController extends Controller
             Mail::to('ecommerce@gphoteles.com')->bcc(['juan_alucard@hotmail.com'])->send(new ReservaFailedAdex($id, 'Hotel Adhara Express Cancun', App::getLocale(), $info));
         }
 
-        dd($response, $test, $hotel);
+        
     }
 
      public function mail(Request $request) {
