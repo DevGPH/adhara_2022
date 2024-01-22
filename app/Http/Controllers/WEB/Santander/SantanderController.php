@@ -462,6 +462,7 @@ class SantanderController extends Controller
         $correo = ($response->email != "") ? $response->email : "none@gmail.com";
         $id = $aux[1];
 
+        $dates = $fecha->format('Y-m-d');
         /*$dates = explode('/', $fecha);
 
         $date = $dates[2] . '-' . $dates[1] . '-' . $dates[0];*/
