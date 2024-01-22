@@ -461,6 +461,15 @@ class SantanderController extends Controller
         $id_url = ($response->id_url != "") ? $response->id_url : "0000";
         $correo = ($response->email != "") ? $response->email : "none@gmail.com";
         $id = $aux[1];
+
+        $dates = explode('/', $fecha);
+
+        $date = $dates[2] . '-' . $dates[1] . '-' . $dates[0];
+
+        $reserva = Reserva::where('folio',$id)->first();
+        $huesped = NULL; #Huesped dummy equivale al 0
+        $hotel = Hotel::find($reserva->hotel_id);
+
         $test = [
             'estatus' => $estatus,
             'response' => $response_xml,
@@ -471,6 +480,7 @@ class SantanderController extends Controller
             'cd_error' => $cd_error,
             'hora' => $hora,
             'fecha' => $fecha,
+            'fecha_formatted' => $date,
             'merchant' => $merchant,
             'cc_type' => $cc_type,
             'operation' => $operation,
@@ -481,13 +491,6 @@ class SantanderController extends Controller
             'id' => $id
         ];
 
-        //$dates = explode('/', $fecha);
-
-        //$date = $dates[2] . '-' . $dates[1] . '-' . $dates[0];
-
-        $reserva = Reserva::where('folio',$id)->first();
-        $huesped = NULL; #Huesped dummy equivale al 0
-        $hotel = Hotel::find($reserva->hotel_id);
         dd($response, $test, $hotel);
     }
 
