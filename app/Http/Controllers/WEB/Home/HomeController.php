@@ -235,6 +235,7 @@ class HomeController extends Controller
     function rateToday($locale)
     {
         $pointer = now();
+        $temporada = null;
         $temporada_raw = DB::select('select * from temporadas WHERE hotel_id = ? AND( startDate < ? AND endDate > ? OR startDate = ? OR endDate = ?)',
         [
             2,
