@@ -260,7 +260,7 @@
                                 <p>@lang('main.reserve.help.text')</p>
                                 <p><a href="mailto:reservaciones@gphoteles.com">reservaciones@gphoteles.com</a></p>
                                 <h3 style="font-size: 20px;"><i class="fa fa-phone-square"></i>998 881 6500 EXT. 6503</h3>
-                                <h3 style="font-size: 20px;"><i class="fa fa-phone-square"></i>998 122 1861 EXT. 6503</h3>
+                                <h3 style="font-size: 20px;"><i class="fa fa-phone-square"></i>998 122 1861 EXT. 6523</h3>
                             </div>
                             <!-- Booking Help End -->
                         </div>

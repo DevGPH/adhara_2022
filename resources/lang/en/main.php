@@ -50,6 +50,8 @@ return [
     'booking.search' => 'Search',
     'booking.apply' => 'Apply',
     'booking.room' => 'ROOM',
+    'booking.room.detail' => 'Room:',
+    'booking.room.details' => 'Details',
     'booking.adults' => 'ADULTS',
     'booking.adult' => 'ADULT',
     'booking.kids' => 'KIDS',

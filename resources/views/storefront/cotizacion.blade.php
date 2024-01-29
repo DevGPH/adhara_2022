@@ -32,13 +32,16 @@
         </div>
     </div>
     <!-- Section Page Title End -->
-
     <!-- Section Rooms -->
     <div class="section">
+        @include('_partials.booking')
         <div class="wrapper-inner">
-            <div style="display: flex;justify-content: flex-end;margin-bottom: 40px;">
+            <div style="display: flex;justify-content: flex-end;margin-bottom: 20px;">
                 <h4 style="margin-right: auto;">@lang('main.tax.done')</h4>
                 <h4>@lang('main.tax.missing')</h4>
+            </div>
+            <div style="display: flex;justify-content: flex-end;margin-bottom: 40px;">
+                <h4 style="margin-right: auto;"><strong>@lang('main.booking.room.details')</strong> <br> Total Pax: {{ $total_adultos }} <br> @lang('main.booking.room.detail') {{$habitaciones}} <br> {{ $full_date . ' - ' . $full_date_2 }}</h4>
             </div>
             <!-- Rooms List -->
             <div class="widget-rooms-list">
