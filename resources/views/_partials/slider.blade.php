@@ -12,19 +12,19 @@
 }
 
 .slide_es {
-    background-image: url('/images/sliders/adhara_mob_es.png');
+    background-image: url('/images/sliders/fire_mob_es.png');
 }
 
 .slide_en {
-    background-image: url('/images/sliders/adhara_mob_en.png')
+    background-image: url('/images/sliders/fire_mob_en.png')
 }
 @media (min-width: 768px) {
     .slide_es {
-        background-image: url('/images/sliders/adhara_es.png');
+        background-image: url('/images/sliders/fire_es.png');
     }
 
     .slide_en {
-        background-image: url('/images/sliders/adhara_en.png')
+        background-image: url('/images/sliders/fire_en.png')
     }
 }
 
@@ -35,11 +35,11 @@
             <!-- Slider Carousel -->
 
                 <div class="widget-carousel owl-carousel owl-theme">
-                    <!--@if (App::getLocale() == 'es')
+                    @if (App::getLocale() == 'es')
                         <div class="slider-item slide_es"></div>
                     @else
                         <div class="slider-item slide_en"></div>
-                    @endif-->
+                    @endif
                     <div class="slider-item" data-background="{{ asset('images/sliders/slider1.png') }}">
                         <div class="wrapper">
                             <div class="item-inner">

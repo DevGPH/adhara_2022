@@ -169,16 +169,16 @@
 
     @if(Route::is('inicio') )
         {{-- Promociones 6 meses sin interes --}}
-        <div id="mesesSinInteres#" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mesesSinInteres">
+        <div id="mesesSinInteres" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mesesSinInteres">
             <div class="modal-dialog modal-md" role="document">
                 <div class="modal-content">
                     <!--div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     </div-->
                     @if (App::getLocale() == 'es')
-                        <img src="{{ asset('images/sliders/popadhara_es.png') }}" alt="Meses sin Intereses">
+                        <img src="{{ asset('images/sliders/pop24_es.png') }}" alt="Meses sin Intereses">
                     @else
-                        <img src="{{ asset('images/sliders/popadhara_en.png') }}" alt="Meses sin Intereses">
+                        <img src="{{ asset('images/sliders/pop24_en.png') }}" alt="Meses sin Intereses">
                     @endif
                 </div>
             </div>
