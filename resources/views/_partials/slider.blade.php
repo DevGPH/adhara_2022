@@ -45,10 +45,10 @@
                 <div class="widget-carousel owl-carousel owl-theme">
                     @if (App::getLocale() == 'es')
                         <div class="slider-item slide_es slide-desktop"></div>
-                        <div class="slider-item slide-mob"></div>
+                        <div class="slider-item slide_es slide-mob"></div>
                     @else
                         <div class="slider-item slide_en slide-desktop"></div>
-                        <div class="slider-item slide-mob"></div>
+                        <div class="slider-item slide_en slide-mob"></div>
                     @endif
                     <div class="slider-item" data-background="{{ asset('images/sliders/slider1.png') }}">
                         <div class="wrapper">
