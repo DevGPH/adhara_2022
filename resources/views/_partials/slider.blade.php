@@ -4,11 +4,11 @@
 
 /* Small devices (tablets, 768px and up) */
 .slide-mob{
-    display: none;
+    display: block;
 }
 
 .slide-desktop{
-    display: block;
+    display: none;
 }
 
 .slide_es {
@@ -26,6 +26,14 @@
     .slide_en {
         background-image: url('/images/sliders/fire_en.png')
     }
+
+    .slide-mob {
+        display: none;
+    }
+
+    .slide-desktop {
+        display: block
+    }
 }
 
 </style>
@@ -36,9 +44,11 @@
 
                 <div class="widget-carousel owl-carousel owl-theme">
                     @if (App::getLocale() == 'es')
-                        <div class="slider-item slide_es"></div>
+                        <div class="slider-item slide_es slide-desktop"></div>
+                        <div class="slider-item slide-mob"></div>
                     @else
-                        <div class="slider-item slide_en"></div>
+                        <div class="slider-item slide_en slide-desktop"></div>
+                        <div class="slider-item slide-mob"></div>
                     @endif
                     <div class="slider-item" data-background="{{ asset('images/sliders/slider1.png') }}">
                         <div class="wrapper">
