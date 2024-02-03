@@ -12,11 +12,11 @@
 }
 
 .slide_es {
-    background-image: url('/images/sliders/mob24_es.png');
+    background-image: url('/images/sliders/port24_es.png');
 }
 
 .slide_en {
-    background-image: url('/images/sliders/mob24_en.png');
+    background-image: url('/images/sliders/port24_en.png');
 }
 @media (min-height: 768px) {
     .slide_es {
