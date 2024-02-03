@@ -13,18 +13,22 @@
 
 .slide_es {
     background-image: url('/images/sliders/mob24_es.png');
+    min-height: 60vh !important;
 }
 
 .slide_en {
-    background-image: url('/images/sliders/mob24_en.png')
+    background-image: url('/images/sliders/mob24_en.png');
+    min-height: 60vh !important;
 }
-@media (min-width: 768px) {
+@media (min-min-height: 768px) {
     .slide_es {
         background-image: url('/images/sliders/fire_es.png');
+        min-height: 100vh !important;
     }
 
     .slide_en {
-        background-image: url('/images/sliders/fire_en.png')
+        background-image: url('/images/sliders/fire_en.png');
+        min-height: 100vh !important;
     }
 }
 
