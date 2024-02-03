@@ -13,18 +13,22 @@
 
 .slide_es {
     background-image: url('/images/sliders/port24_es.png');
+    background-size: contain;
 }
 
 .slide_en {
     background-image: url('/images/sliders/port24_en.png');
+    background-size: contain;
 }
 @media (min-width: 768px) {
     .slide_es {
         background-image: url('/images/sliders/fire_es.png');
+        background-size: cover;
     }
 
     .slide_en {
         background-image: url('/images/sliders/fire_en.png');
+        background-size: cover;
     }
 }
 
