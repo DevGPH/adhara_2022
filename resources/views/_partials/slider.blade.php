@@ -13,22 +13,18 @@
 
 .slide_es {
     background-image: url('/images/sliders/mob24_es.png');
-    min-height: 60vh !important;
 }
 
 .slide_en {
     background-image: url('/images/sliders/mob24_en.png');
-    min-height: 60vh !important;
 }
 @media (min-min-height: 768px) {
     .slide_es {
         background-image: url('/images/sliders/fire_es.png');
-        min-height: 100vh !important;
     }
 
     .slide_en {
         background-image: url('/images/sliders/fire_en.png');
-        min-height: 100vh !important;
     }
 }
 
@@ -39,7 +35,7 @@
             <!-- Slider Carousel -->
 
                 <div class="widget-carousel owl-carousel owl-theme">
-                    <@if (App::getLocale() == 'es')
+                    @if (App::getLocale() == 'es')
                         <div class="slider-item slide_es"></div>
                     @else
                         <div class="slider-item slide_en"></div>
