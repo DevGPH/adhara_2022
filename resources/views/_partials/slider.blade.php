@@ -18,7 +18,7 @@
 .slide_en {
     background-image: url('/images/sliders/port24_en.png');
 }
-@media (min-height: 768px) {
+@media (min-width: 768px) {
     .slide_es {
         background-image: url('/images/sliders/fire_es.png');
     }
