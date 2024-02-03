@@ -18,7 +18,7 @@
 .slide_en {
     background-image: url('/images/sliders/mob24_en.png');
 }
-@media (min-min-height: 768px) {
+@media (min-height: 768px) {
     .slide_es {
         background-image: url('/images/sliders/fire_es.png');
     }
