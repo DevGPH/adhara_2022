@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\DB;
 
 use App\Models\AmenidadHabitacion;
 use App\Models\AmenidadCuarto;
+use App\Models\Config;
 use App\Models\Habitacion;
 use App\Models\TipoCambio;
 use App\Models\Temporada;
@@ -27,8 +28,21 @@ use App;
 
 class HomeController extends Controller
 {
+    public $clubestrella;
+
+    /**
+     * Instantiate a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->clubestrella = Config::where('module', 'clubestrella')->first();
+    }
+    
     public function index($locale)
     {
+        
         $rate = $this->rateToday($locale);
         $rooms = Habitacion::where('hotel_id', 2)->get();
 
@@ -37,7 +51,8 @@ class HomeController extends Controller
             'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
             'id' => 0,
             'rate' => $rate,
-            'rooms' => $rooms
+            'rooms' => $rooms,
+            'enableClub' => $this->clubestrella->enable
         ]);
     }
 
@@ -53,7 +68,8 @@ class HomeController extends Controller
             'rate' => $rate,
             'name' => (App::getLocale() == 'es') ? $habitacion->categoria->nombre_es : $habitacion->categoria->nombre_en,
             'amenidades' => $amenidades,
-            'habitacion' => $habitacion
+            'habitacion' => $habitacion,
+            'enableClub' => $this->clubestrella->enable
         ]);
     }
 
@@ -64,7 +80,8 @@ class HomeController extends Controller
             'contact_active' => 'active-link',
             'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
             'id' => 0,
-            'rate' => $rate
+            'rate' => $rate,
+            'enableClub' => $this->clubestrella->enable
         ]);
     }
 
@@ -109,7 +126,8 @@ class HomeController extends Controller
             'covid_active' => 'active-link',
             'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
             'id' => 0,
-            'rate' => $rate
+            'rate' => $rate,
+            'enableClub' => $this->clubestrella->enable
         ]);
     }
 
@@ -119,7 +137,8 @@ class HomeController extends Controller
         return view('storefront.menu')->with([
             'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
             'id' => 0,
-            'rate' => $rate
+            'rate' => $rate,
+            'enableClub' => $this->clubestrella->enable
         ]);
     }
 
@@ -129,7 +148,8 @@ class HomeController extends Controller
         return view('storefront.room_service')->with([
             'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
             'id' => 0,
-            'rate' => $rate
+            'rate' => $rate,
+            'enableClub' => $this->clubestrella->enable
         ]);
     }
 
@@ -139,7 +159,8 @@ class HomeController extends Controller
         return view('storefront.grupos')->with([
             'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
             'id' => 0,
-            'rate' => $rate
+            'rate' => $rate,
+            'enableClub' => $this->clubestrella->enable
         ]);
     }
 
@@ -149,7 +170,8 @@ class HomeController extends Controller
         return view('storefront.servicios')->with([
             'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
             'id' => 0,
-            'rate' => $rate
+            'rate' => $rate,
+            'enableClub' => $this->clubestrella->enable
         ]);
     }
 
@@ -159,7 +181,8 @@ class HomeController extends Controller
         return view('storefront.hotel_details')->with([
             'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
             'id' => 0,
-            'rate' => $rate
+            'rate' => $rate,
+            'enableClub' => $this->clubestrella->enable
         ]);
     }
 
@@ -169,7 +192,8 @@ class HomeController extends Controller
         return view('storefront.gallery')->with([
             'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
             'id' => 0,
-            'rate' => $rate
+            'rate' => $rate,
+            'enableClub' => $this->clubestrella->enable
         ]);
     }
 

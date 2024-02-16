@@ -75,10 +75,12 @@
                             </div>
                             <div class="item-price">
                                 <div class="price-inner">
-                                    <h5>@lang('main.check.club')</h5>
-                                    <h4 style="text-decoration: none;">$ {{ (App::getLocale() == 'es') ? number_format(round($room['clubestrella'] * $cambio_moneda)) .' '. 'MXN' : $room['clubestrella'] .' '. $room['currency']}}</h4>
-                                    <hr style="border-bottom: 1px solid #6e5e78">
-                                    <div style="margin-bottom: 15px;"></div>
+                                    @if ($enableClub)
+                                        <h5>@lang('main.check.club')</h5>
+                                        <h4 style="text-decoration: none;">$ {{ (App::getLocale() == 'es') ? number_format(round($room['clubestrella'] * $cambio_moneda)) .' '. 'MXN' : $room['clubestrella'] .' '. $room['currency']}}</h4>
+                                        <hr style="border-bottom: 1px solid #6e5e78">
+                                        <div style="margin-bottom: 15px;"></div>
+                                    @endif
                                     <i class="fa fa-star"></i>
                                     <h5>@lang('main.check.regular')</h5>
                                     <h3>$ {{ (App::getLocale() == 'es') ? number_format(round($room['total'] * $cambio_moneda)) .' '. 'MXN' : $room['total'] .' '. $room['currency']}}</h3>
