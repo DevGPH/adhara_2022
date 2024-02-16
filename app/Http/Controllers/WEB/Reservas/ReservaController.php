@@ -39,6 +39,7 @@ class ReservaController extends Controller
     private $endpoint = 'https://adharaexpress.com.mx/api/';
 
     private $clubestrella;
+    private $finde;
 
     /**
      * Instantiate a new controller instance.
@@ -48,6 +49,7 @@ class ReservaController extends Controller
     public function __construct()
     {
         $this->clubestrella = Config::where('module', 'clubestrella')->first();
+        $this->finde = Config::where('module', 'finde')->first();
     }
 
     public function index(Request $request,$locale)
@@ -245,7 +247,8 @@ class ReservaController extends Controller
                 'rate' => $rate,
                 'id' => 0,
                 'minStay' => (App::getLocale() == 'es') ? 'Ésta   Categoría  la puedes  reservar  con una estancia  mínima de 4  noches' : 'Minimun stay for this room is 4 nights',
-                'enableClub' => $this->clubestrella->enable
+                'enableClub' => $this->clubestrella->enable,
+                'finde' => $this->finde->enable
             ]);
         }
 
@@ -305,7 +308,8 @@ class ReservaController extends Controller
             'rate' => $rate,
             'id' => 0,
             'minStay' => (App::getLocale() == 'es') ? 'Ésta   Categoría  la puedes  reservar  con una estancia  mínima de 4  noches' : 'Minimun stay for this room is 4 nights',
-            'enableClub' => $this->clubestrella->enable
+            'enableClub' => $this->clubestrella->enable,
+            'finde' => $this->finde->enable
         ]);
     }
 
@@ -384,7 +388,8 @@ class ReservaController extends Controller
                 'rate' => $rate,
                 'clubestrella' => $clubestrella,
                 'enable_pago_destino' => $enable_pago_destino,
-                'enableClub' => $this->clubestrella->enable
+                'enableClub' => $this->clubestrella->enable,
+                'finde' => $this->finde->enable
             ]);
         }
 
@@ -422,7 +427,8 @@ class ReservaController extends Controller
             'rate' => $rate,
             'clubestrella' => $clubestrella,
             'enable_pago_destino' => $enable_pago_destino,
-            'enableClub' => $this->clubestrella->enable
+            'enableClub' => $this->clubestrella->enable,
+            'finde' => $this->finde->enable
         ]);
 
     }
@@ -543,7 +549,8 @@ class ReservaController extends Controller
             'referencia' => $id,
             'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
             'rate' => $rate,
-            'id' => 0
+            'id' => 0,
+            'finde' => $this->finde->enable
         ]);
 
     }
