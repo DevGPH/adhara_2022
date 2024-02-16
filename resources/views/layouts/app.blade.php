@@ -167,53 +167,56 @@
 		</div>
 	</div>
 
-    @if(Route::is('inicio') )
-        {{-- Promociones 6 meses sin interes --}}
-        <div id="mesesSinInteres#" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mesesSinInteres">
-            <div class="modal-dialog modal-md" role="document">
-                <div class="modal-content">
-                    <!--div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    </div-->
-                    @if (App::getLocale() == 'es')
-                        <img src="{{ asset('images/sliders/pop24_es.png') }}" alt="Meses sin Intereses">
-                    @else
-                        <img src="{{ asset('images/sliders/pop24_en.png') }}" alt="Meses sin Intereses">
-                    @endif
-                </div>
-            </div>
-        </div>
-    @endif
+	@if ($finde)
+		
+		@if(Route::is('inicio') )
+			{{-- Promociones 6 meses sin interes --}}
+			<div id="mesesSinInteres" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mesesSinInteres">
+				<div class="modal-dialog modal-md" role="document">
+					<div class="modal-content">
+						<!--div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						</div-->
+						@if (App::getLocale() == 'es')
+							<img src="{{ asset('images/sliders/pop24_es.png') }}" alt="Meses sin Intereses">
+						@else
+							<img src="{{ asset('images/sliders/pop24_en.png') }}" alt="Meses sin Intereses">
+						@endif
+					</div>
+				</div>
+			</div>
+		@endif
 
-	<script type="text/javascript">
+		<script type="text/javascript">
 
-		$(document).ready(function(){
-            $('#mesesSinInteres').modal('show');
-			$("#login-modal").on('submit', function(e){
-				console.log('here');
-				e.preventDefault();
-				$.ajax({
-					url: "/es/get-user-clubestrella",
-					type: "POST",
-					data: $( this ).serialize()
-				}).done(function() {
-					location.reload();
-				}).fail(function(jqXHR, textStatus, errorThrown) {
-					var errorTxt;
-					if(jqXHR.responseJSON.error == 403){
-						errorTxt = 'Error al iniciar sesi&#xF3;n, compruebe sus credenciales';
-					} else {
-						errorTxt = 'Error al iniciar sesi&#xF3;n';
-					}
+			$(document).ready(function(){
+				$('#mesesSinInteres').modal('show');
+				$("#login-modal").on('submit', function(e){
+					console.log('here');
+					e.preventDefault();
+					$.ajax({
+						url: "/es/get-user-clubestrella",
+						type: "POST",
+						data: $( this ).serialize()
+					}).done(function() {
+						location.reload();
+					}).fail(function(jqXHR, textStatus, errorThrown) {
+						var errorTxt;
+						if(jqXHR.responseJSON.error == 403){
+							errorTxt = 'Error al iniciar sesi&#xF3;n, compruebe sus credenciales';
+						} else {
+							errorTxt = 'Error al iniciar sesi&#xF3;n';
+						}
 
-					var alert = '<div class="alert alert-danger alert-dismissible" id="#login-error" role="alert">'+errorTxt+'<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>';
-					$('#login-error').html(alert);
+						var alert = '<div class="alert alert-danger alert-dismissible" id="#login-error" role="alert">'+errorTxt+'<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>';
+						$('#login-error').html(alert);
+					});
 				});
+
+
 			});
-
-
-		});
-	</script>
+		</script>
+	@endif
 
 
 	<!-- Modal Terminos y Condiciones -->
