@@ -13,22 +13,22 @@
 
 .slide_es {
     /* Mob */
-    background-image: url('/images/sliders/ajust_es.png');
+    background-image: url('/images/sliders/promo_mob_es.png');
     background-size: contain;
 }
 
 .slide_en {
-    background-image: url('/images/sliders/ajust_en.png');
+    background-image: url('/images/sliders/promo_mob_en.png');
     background-size: contain;
 }
 @media (min-width: 768px) {
     .slide_es {
-        background-image: url('/images/sliders/fire_es.png');
+        background-image: url('/images/sliders/promo_es.png');
         background-size: cover;
     }
 
     .slide_en {
-        background-image: url('/images/sliders/fire_en.png');
+        background-image: url('/images/sliders/promo_en.png');
         background-size: cover;
     }
 }
