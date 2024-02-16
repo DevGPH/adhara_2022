@@ -40,10 +40,12 @@
             <!-- Slider Carousel -->
 
                 <div class="widget-carousel owl-carousel owl-theme">
-                    @if (App::getLocale() == 'es')
-                        <div class="slider-item slide_es"></div>
-                    @else
-                        <div class="slider-item slide_en"></div>
+                    @if ($finde)
+                        @if (App::getLocale() == 'es')
+                            <div class="slider-item slide_es"></div>
+                        @else
+                            <div class="slider-item slide_en"></div>
+                        @endif
                     @endif
                     <div class="slider-item" data-background="{{ asset('images/sliders/slider1.png') }}">
                         <div class="wrapper">

@@ -29,6 +29,7 @@ use App;
 class HomeController extends Controller
 {
     public $clubestrella;
+    public $finde;
 
     /**
      * Instantiate a new controller instance.
@@ -38,6 +39,7 @@ class HomeController extends Controller
     public function __construct()
     {
         $this->clubestrella = Config::where('module', 'clubestrella')->first();
+        $this->finde = Config::where('module', 'finde')->first();
     }
     
     public function index($locale)
@@ -52,7 +54,8 @@ class HomeController extends Controller
             'id' => 0,
             'rate' => $rate,
             'rooms' => $rooms,
-            'enableClub' => $this->clubestrella->enable
+            'enableClub' => $this->clubestrella->enable,
+            'finde' => $this->finde->enable
         ]);
     }
 
@@ -69,7 +72,8 @@ class HomeController extends Controller
             'name' => (App::getLocale() == 'es') ? $habitacion->categoria->nombre_es : $habitacion->categoria->nombre_en,
             'amenidades' => $amenidades,
             'habitacion' => $habitacion,
-            'enableClub' => $this->clubestrella->enable
+            'enableClub' => $this->clubestrella->enable,
+            'finde' => $this->finde->enable
         ]);
     }
 
@@ -81,7 +85,8 @@ class HomeController extends Controller
             'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
             'id' => 0,
             'rate' => $rate,
-            'enableClub' => $this->clubestrella->enable
+            'enableClub' => $this->clubestrella->enable,
+            'finde' => $this->finde->enable
         ]);
     }
 
@@ -127,7 +132,8 @@ class HomeController extends Controller
             'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
             'id' => 0,
             'rate' => $rate,
-            'enableClub' => $this->clubestrella->enable
+            'enableClub' => $this->clubestrella->enable,
+            'finde' => $this->finde->enable
         ]);
     }
 
@@ -138,7 +144,8 @@ class HomeController extends Controller
             'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
             'id' => 0,
             'rate' => $rate,
-            'enableClub' => $this->clubestrella->enable
+            'enableClub' => $this->clubestrella->enable,
+            'finde' => $this->finde->enable
         ]);
     }
 
@@ -149,7 +156,8 @@ class HomeController extends Controller
             'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
             'id' => 0,
             'rate' => $rate,
-            'enableClub' => $this->clubestrella->enable
+            'enableClub' => $this->clubestrella->enable,
+            'finde' => $this->finde->enable
         ]);
     }
 
@@ -160,7 +168,8 @@ class HomeController extends Controller
             'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
             'id' => 0,
             'rate' => $rate,
-            'enableClub' => $this->clubestrella->enable
+            'enableClub' => $this->clubestrella->enable,
+            'finde' => $this->finde->enable
         ]);
     }
 
@@ -171,7 +180,8 @@ class HomeController extends Controller
             'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
             'id' => 0,
             'rate' => $rate,
-            'enableClub' => $this->clubestrella->enable
+            'enableClub' => $this->clubestrella->enable,
+            'finde' => $this->finde->enable
         ]);
     }
 
@@ -182,7 +192,8 @@ class HomeController extends Controller
             'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
             'id' => 0,
             'rate' => $rate,
-            'enableClub' => $this->clubestrella->enable
+            'enableClub' => $this->clubestrella->enable,
+            'finde' => $this->finde->enable
         ]);
     }
 
@@ -193,7 +204,8 @@ class HomeController extends Controller
             'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
             'id' => 0,
             'rate' => $rate,
-            'enableClub' => $this->clubestrella->enable
+            'enableClub' => $this->clubestrella->enable,
+            'finde' => $this->finde->enable
         ]);
     }
 
