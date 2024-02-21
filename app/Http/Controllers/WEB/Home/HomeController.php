@@ -293,6 +293,7 @@ class HomeController extends Controller
         
         if($temporada == null)
         {
+            dd('estoy nulo');
             $today = Carbon::now()->addDay();
             $temporada_raw = DB::select('select * from temporadas WHERE hotel_id = ? AND( startDate < ? AND endDate > ? OR startDate = ? OR endDate = ?)',
             [
@@ -317,6 +318,7 @@ class HomeController extends Controller
 
         $price = ($locale == 'es') ? ($conversion->valor_x_moneda * ($temporada->tarifa_x_dolares + $plan_total)) : $temporada->tarifa_x_dolares + $plan_total;
         $currency = ($locale == 'es') ? 'MXN' : $temporada->currency;
+        dd($price, $temporada->tarifa_x_dolares, $plan_total,$conversion->valor_x_moneda);
         if($temporada != null)
             return number_format(round($price)).' '.$currency;
     }
