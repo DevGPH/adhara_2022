@@ -318,7 +318,7 @@ class HomeController extends Controller
 
         $price = ($locale == 'es') ? ($conversion->valor_x_moneda * ($temporada->tarifa_x_dolares + $plan_total)) : $temporada->tarifa_x_dolares + $plan_total;
         $currency = ($locale == 'es') ? 'MXN' : $temporada->currency;
-        dd($price, $temporada->tarifa_x_dolares, $plan_total,$conversion->valor_x_moneda);
+        dd($price, $temporada->tarifa_x_dolares, $plan_total,$conversion->valor_x_moneda,$temporada, $temporada_raw);
         if($temporada != null)
             return number_format(round($price)).' '.$currency;
     }
