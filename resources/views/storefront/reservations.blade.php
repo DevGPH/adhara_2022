@@ -189,7 +189,12 @@
                                                 @endforeach
                                                 <input type="hidden" name="plataforma"      value="WEB">
                                                 <input type="hidden" name="habitacion_id"   value="{{ $habitacion_id }}">
-                                                <input type="submit" value="RESERVA AHORA" class="btn">
+                                                <input type="submit" value="RESERVA AHORA" class="btn" id="trackSale">
+                                                <script type="text/javascript">
+                                                    $('#trackSale').click(function() {
+                                                      fbq('track', 'Purchase', {currency: {{ $currency }}, value: {{ $total }} });
+                                                    });
+                                                </script>
                                             </div>
                                         </div>
                                     </form>
