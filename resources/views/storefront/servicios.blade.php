@@ -60,6 +60,7 @@
                         <h2>@lang('main.service.bus.subtitle')</h2>
                         <p>@lang('main.service.bus.text')</p>
                         <p>@lang('main.service.bus.text2')</p>
+                        <p>@lang('main.service.bus.text3')</p>
                     </div>
                 </div>
                 <div class="services-item">

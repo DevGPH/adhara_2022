@@ -182,6 +182,7 @@ return [
     'service.bus.subtitle' => 'We take you there for free',
     'service.bus.text' => 'All guests of our hotel have included the transportation service of: <br> Hotel - Beach - Hotel <br> <hr/> <br> <strong style="margin-bottom:10px;">Exclusive for Mafic Rate clients*</strong> <br> Hotel - Cancun International Airport.',
     'service.bus.text2' => 'This service only applies when booking your stay through our website: www.adharacancun.com or via WhatsApp* This service is subject to availability and schedule* Book with us and schedule your transportation in advance* Restrictions apply*',
+    'service.bus.text3' => '<strong>Does not apply when booking with other agencies*</strong>',
     'service.parking.title' => 'Free parking ',
     'service.parking.subtitle' => 'We take you for free',
     'service.parking.text' => 'As a valued guest, we want to ensure your comfort, safety, and peace of mind during your stay with us. Our parking facility offers a variety of benefits designed to enhance your overall experience:',
