@@ -221,7 +221,7 @@
     position: fixed;
     top: 100px;
     right: 0px;
-    z-index: 10;">
+    z-index: 100;">
        <div id='widgetContainerBox' data-isaddnofollow='false'></div>
 	   <script src='https://apps.expediapartnercentral.com/lodging/content/award/static/js/reviewCount/26030/Expedia-Dark-Portrait-es_MX.js?widgetName=Widget de los comentarios verificados&hotelName=Adhara Hacienda Cancun&noFollow=false'></script>
 	   <div id='widgetContainerBox' data-isaddnofollow='false'></div>
