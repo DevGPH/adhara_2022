@@ -217,7 +217,16 @@
 			});
 		</script>
 	@endif
-
+	<div class="widget" style="
+    position: fixed;
+    top: 100px;
+    right: 0px;
+    z-index: 10;">
+       <div id='widgetContainerBox' data-isaddnofollow='false'></div>
+	   <script src='https://apps.expediapartnercentral.com/lodging/content/award/static/js/reviewCount/26030/Expedia-Dark-Portrait-es_MX.js?widgetName=Widget de los comentarios verificados&hotelName=Adhara Hacienda Cancun&noFollow=false'></script>
+	   <div id='widgetContainerBox' data-isaddnofollow='false'></div>
+	   <script src='https://apps.expediapartnercentral.com/lodging/content/award/static/js/recommendation/26030/Travelocity-Dark-Portrait-en_US.js?widgetName=Widget de las recomendaciones de los huéspedes&hotelName=Adhara Hacienda Cancun&noFollow=false'></script>
+    </div>
 
 	<!-- Modal Terminos y Condiciones -->
 	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -377,7 +386,6 @@
 			</div>
 		</div>
 	</div>
-
 	<!-- Modal Politica de Privacidad -->
 	<div class="modal fade" id="privacidadModal" tabindex="-1" role="dialog" aria-labelledby="privacidad">
 
@@ -562,9 +570,7 @@
 		</div>
 
 	</div>
-
 </body>
-
 </html>
 
 
