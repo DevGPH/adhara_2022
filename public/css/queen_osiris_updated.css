@@ -3359,3 +3359,18 @@ a,
     display: block;
     margin: 0 auto;
 }
+
+
+.widget-custom {
+    position: fixed;
+    top: 100px;
+    right: 0px;
+    z-index: 1000;
+    display: none;
+}
+
+@media screen and (min-width: 900px) {
+    .widget-custom {
+        display: initial;
+    }
+}
