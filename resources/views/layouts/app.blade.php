@@ -217,19 +217,6 @@
 			});
 		</script>
 	@endif
-	<div class="widget-custom">
-       <div id='widgetContainerBox' class="d-flex align-items-start flex-column" data-isaddnofollow='false'></div>
-	   <script src='https://apps.expediapartnercentral.com/lodging/content/award/static/js/reviewCount/26030/Expedia-Dark-Portrait-es_MX.js?widgetName=Widget de los comentarios verificados&hotelName=Adhara Hacienda Cancun&noFollow=false'></script>
-	   <script src='https://apps.expediapartnercentral.com/lodging/content/award/static/js/recommendation/26030/Travelocity-Dark-Portrait-en_US.js?widgetName=Widget de las recomendaciones de los huéspedes&hotelName=Adhara Hacienda Cancun&noFollow=false'></script>
-	   <script>
-		$(document).ready(function(){
-			$("#widgetContainerBox").children("div").css("display", "block");
-		});
-			
-	   </script>
-	   <div id="TA_certificateOfExcellence136" class="TA_certificateOfExcellence"><ul id="th37cDau" class="TA_links FvbpfSUhMw"><li id="a1lMEWLSd" class="RLeKBzD"><a target="_blank" href=https://www.tripadvisor.es/Hotel_Review-g150807-d154412-Reviews-Hotel_Adhara_Cancun-Cancun_Yucatan_Peninsula.html><img src=https://static.tacdn.com/img2/travelers_choice/widgets/tchotel_2024_LL.png alt="TripAdvisor" class="widCOEImg" id="CDSWIDCOELOGO"/></a></li></ul></div>
-	   <script async src=https://www.jscache.com/wejs?wtype=certificateOfExcellence&amp;uniq=136&amp;locationId=154412&amp;lang=es&amp;year=2024&amp;display_version=2 data-loadtrk onload="this.loadtrk=true"></script>   
-    </div>
 	
 	<!-- Modal Terminos y Condiciones -->
 	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
