@@ -12,7 +12,7 @@
     <meta name=”twitter:description” content="Hotel Adhara Cancún reserva en línea tu hospedaje con nuestra tarifa mágica, reserva, somos tu mejor  opción en el centro de Cancún, nuestra ubicación es privilegiada, viajeros de negocios y placer, habitaciones muy amplias y confortables, Wifi gratis, alberca, gimnasio, desayuno buffet, transportación gratis en horario establecido sujeto a  disponibilidad, contamos  con nuestro  programa de  lealtad  Club  Estrella ,  acumula  puntos  y  obtén recompensas, reserva  en  nuestro  sitio  oficial y  obtén  grandes beneficios, hoteles en  Cancun">
 	<meta name="description" content="Hotel Adhara Cancún reserva en línea tu hospedaje con nuestra tarifa mágica, reserva, somos tu mejor  opción en el centro de Cancún, nuestra ubicación es privilegiada, viajeros de negocios y placer, habitaciones muy amplias y confortables, Wifi gratis, alberca, gimnasio, desayuno buffet, transportación gratis en horario establecido sujeto a  disponibilidad, contamos  con nuestro  programa de  lealtad  Club  Estrella ,  acumula  puntos  y  obtén recompensas, reserva  en  nuestro  sitio  oficial y  obtén  grandes beneficios, hoteles en  Cancun">
 	<meta name="author" content="JuanPi@juan.alucard.02@gmail.com">
-	<meta name="keywords" content="hotel, hostel, motel, guesthouse, booking, accommodation, inn, resort, travel, holiday, tourism, vacation, Adhara, Adhara Cancun, Cancún, Caribe Mexicano, Cancun, hoteles en  el  centro de  Cancun, Hot sale  2022 ,buen  fin 2022, buen fin ">
+	<meta name="keywords" content="hotsale, hotel, hostel, motel, guesthouse, booking, accommodation, inn, resort, travel, holiday, tourism, vacation, Adhara, Adhara Cancun, Cancún, Caribe Mexicano, Cancun, hoteles en  el  centro de  Cancun, Hot sale  2022 ,buen  fin 2022, buen fin ">
 
 	<!-- Mobile Meta -->
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -178,9 +178,9 @@
 							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 						</div-->
 						@if (App::getLocale() == 'es')
-							<img src="{{ asset('images/sliders/promo_pop_es.png') }}" alt="Meses sin Intereses">
+							<img src="{{ asset('images/sliders/hotsale_es.png') }}" alt="HotSale">
 						@else
-							<img src="{{ asset('images/sliders/promo_pop_en.png') }}" alt="Meses sin Intereses">
+							<img src="{{ asset('images/sliders/hotsale_en.png') }}" alt="HotSale">
 						@endif
 					</div>
 				</div>
