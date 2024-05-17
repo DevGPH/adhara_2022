@@ -167,26 +167,23 @@
 		</div>
 	</div>
 
-	@if ($finde)
-		
-		@if(Route::is('inicio') )
-			{{-- Promociones 6 meses sin interes --}}
-			<div id="mesesSinInteres" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mesesSinInteres">
-				<div class="modal-dialog modal-md" role="document">
-					<div class="modal-content">
-						<!--div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						</div-->
-						@if (App::getLocale() == 'es')
-							<img src="{{ asset('images/sliders/hotsale_es.png') }}" alt="HotSale">
-						@else
-							<img src="{{ asset('images/sliders/hotsale_en.png') }}" alt="HotSale">
-						@endif
-					</div>
+	@if (Route::is('inicio') && $finde == true)
+		{{-- Promociones 6 meses sin interes --}}
+		<div id="mesesSinInteres" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mesesSinInteres">
+			<div class="modal-dialog modal-md" role="document">
+				<div class="modal-content">
+					<!--div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					</div-->
+					@if (App::getLocale() == 'es')
+						<img src="{{ asset('images/sliders/hotsale_es.png') }}" alt="HotSale">
+					@else
+						<img src="{{ asset('images/sliders/hotsale_en.png') }}" alt="HotSale">
+					@endif
 				</div>
 			</div>
-		@endif
-
+		</div>
+		
 		<script type="text/javascript">
 
 			$(document).ready(function(){
