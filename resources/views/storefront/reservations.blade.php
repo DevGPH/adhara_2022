@@ -192,7 +192,7 @@
                                                 <input type="submit" value="RESERVA AHORA" class="btn" id="trackSale">
                                                 <script type="text/javascript">
                                                     $('#trackSale').click(function() {
-                                                      fbq('track', 'Purchase', {currency: {{ $currency }}, value: {{ $total }} });
+                                                      fbq('track', 'Purchase', {currency: '{{ $currency }}', value: {{ $total }} });
                                                     });
                                                 </script>
                                             </div>
