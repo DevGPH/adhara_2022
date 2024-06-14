@@ -223,7 +223,7 @@
 					type: "POST",
 					data: $( this ).serialize()
 				}).done(function() {
-					//location.reload();
+					location.reload();
 				}).fail(function(jqXHR, textStatus, errorThrown) {
 					var errorTxt;
 					if(jqXHR.responseJSON.error == 403){
