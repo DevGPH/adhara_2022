@@ -213,6 +213,31 @@
 
 			});
 		</script>
+	@else<script type="text/javascript">
+		$(document).ready(function(){
+			$("#login-modal").on('submit', function(e){
+				console.log('here');
+				e.preventDefault();
+				$.ajax({
+					url: "/es/get-user-clubestrella",
+					type: "POST",
+					data: $( this ).serialize()
+				}).done(function() {
+					//location.reload();
+				}).fail(function(jqXHR, textStatus, errorThrown) {
+					var errorTxt;
+					if(jqXHR.responseJSON.error == 403){
+						errorTxt = 'Error al iniciar sesi&#xF3;n, compruebe sus credenciales';
+					} else {
+						errorTxt = 'Error al iniciar sesi&#xF3;n';
+					}
+
+					var alert = '<div class="alert alert-danger alert-dismissible" id="#login-error" role="alert">'+errorTxt+'<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>';
+					$('#login-error').html(alert);
+				});
+			});
+		});
+	</script>
 	@endif
 	
 	<!-- Modal Terminos y Condiciones -->
