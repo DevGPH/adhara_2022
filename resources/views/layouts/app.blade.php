@@ -42,7 +42,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500&display=swap" rel="stylesheet">
 
-    <script src="https://kit.fontawesome.com/8d420a663d.js" crossorigin="anonymous"></script>
+    <!--script src="https://kit.fontawesome.com/8d420a663d.js" crossorigin="anonymous"></script-->
+	<script src="https://kit.fontawesome.com/e2ac827bc5.js" crossorigin="anonymous"></script>
     <style>
         .fa-tripadvisor:before{content:"\f262"}
     </style>
