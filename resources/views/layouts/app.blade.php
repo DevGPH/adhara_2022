@@ -188,9 +188,9 @@
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 					</div-->
 					@if (App::getLocale() == 'es')
-						<img src="{{ asset('images/sliders/sepop_es.png') }}" alt="HotSale">
+						<img src="{{ asset('images/sliders/attum_es.png') }}" alt="HotSale">
 					@else
-						<img src="{{ asset('images/sliders/sepop_en.png') }}" alt="HotSale">
+						<img src="{{ asset('images/sliders/attum_en.png') }}" alt="HotSale">
 					@endif
 				</div>
 			</div>
