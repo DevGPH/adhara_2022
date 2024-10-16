@@ -400,7 +400,8 @@ class SantanderController extends Controller
             'referencia' => $referencia,
             'lang' => $lang,
             'id' => 0,
-            'rate' => $rate
+            'rate' => $rate,
+            'enableClub' => false
         ]);
     }
 
@@ -437,7 +438,8 @@ class SantanderController extends Controller
             'referencia' => '455453-Adhara',
             'lang' => $lang,
             'rate' => $rate,
-            'id' => 0
+            'id' => 0,
+            'enableClub' => false
         ]);
     }
 
