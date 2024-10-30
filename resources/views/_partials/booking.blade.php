@@ -86,17 +86,17 @@
                                     <div class="room_feature" id="room_1_adult">
                                         @lang('main.booking.adults')
                                         <div class="controls-box room_adult">
-                                            <button class="btn-controls down"><i class="fa-solid fa-circle-minus"></i></button>
+                                            <button class="btn-controls down"><img src="{{ asset('images/icons/buscador/minus.png') }}" style="width: 15px;"/></button>
                                             <span class="total-pax">1</span>
-                                            <button class="btn-controls up"><i class="fa-solid fa-circle-plus"></i></button>
+                                            <button class="btn-controls up"><img src="{{ asset('images/icons/buscador/plus.png') }}" style="width: 15px;"/></button>
                                         </div>
                                     </div>
                                     <div class="room_feature" id="room_1_kid">
                                         @lang('main.booking.kids')
                                         <div class="controls-box room_kid">
-                                            <button class="btn-controls down"><i class="fa-solid fa-circle-minus"></i></button>
+                                            <button class="btn-controls down"><img src="{{ asset('images/icons/buscador/minus.png') }}" style="width: 15px;"/></button>
                                             <span class="total-pax">0</span>
-                                            <button class="btn-controls up"><i class="fa-solid fa-circle-plus"></i></button>
+                                            <button class="btn-controls up"><img src="{{ asset('images/icons/buscador/plus.png') }}" style="width: 15px;"/></button>
                                         </div>
                                     </div>
                                     <div class="room_feature pax_Age" id="room_1_age">
@@ -112,23 +112,23 @@
                             <div id="room_2" class="pax-room">
                                 <div class="header.room" style="padding-left:5px;">
                                     <span><!--i class="fa-solid fa-bed" style="margin-right: 10px;"></i-->@lang('main.booking.room') 2</span>
-                                    <div class="minus-room"><i class="fa-solid fa-trash-can"></i></div>
+                                    <div class="minus-room"><img src="{{ asset('images/icons/buscador/minus.png') }}" style="width: 15px;" alt=""></div>
                                 </div>
                                 <div class="body room">
                                     <div class="room_feature" id="room_2_adult">
                                     @lang('main.booking.adults')
                                         <div class="controls-box room_adult">
-                                            <button class="btn-controls down"><i class="fa-solid fa-circle-minus"></i></button>
+                                            <button class="btn-controls down"><img src="{{ asset('images/icons/buscador/minus.png') }}" style="width: 15px;"/></button>
                                             <span class="total-pax">1</span>
-                                            <button class="btn-controls up"><i class="fa-solid fa-circle-plus"></i></button>
+                                            <button class="btn-controls up"><img src="{{ asset('images/icons/buscador/plus.png') }}" style="width: 15px;"/></button>
                                         </div>
                                     </div>
                                     <div class="room_feature" id="room_2_kid">
                                     @lang('main.booking.kids')
                                         <div class="controls-box room_kid">
-                                            <button class="btn-controls down"><i class="fa-solid fa-circle-minus"></i></button>
+                                            <button class="btn-controls down"><img src="{{ asset('images/icons/buscador/minus.png') }}" style="width: 15px;"/></button>
                                             <span class="total-pax">0</span>
-                                            <button class="btn-controls up"><i class="fa-solid fa-circle-plus"></i></button>
+                                            <button class="btn-controls up"><img src="{{ asset('images/icons/buscador/plus.png') }}" style="width: 15px;"/></button>
                                         </div>
                                     </div>
                                     <div class="room_feature pax_Age" id="room_2_age">
@@ -143,23 +143,23 @@
                             <div id="room_3" class="pax-room">
                                 <div class="header.room" style="padding-left:5px;">
                                     <span><!--i class="fa-solid fa-bed" style="margin-right: 10px;"></i-->@lang('main.booking.room') 3</span>
-                                    <div class="minus-room"> <i class="fa-solid fa-trash-can"></i> </div>
+                                    <div class="minus-room"> <img src="{{ asset('images/icons/buscador/minus.png') }}" style="width: 15px;" alt=""> </div>
                                 </div>
                                 <div class="body room">
                                     <div class="room_feature" id="room_3_adult">
                                     @lang('main.booking.adults')
                                         <div class="controls-box room_adult">
-                                            <button class="btn-controls down"><i class="fa-solid fa-circle-minus"></i></button>
+                                            <button class="btn-controls down"><img src="{{ asset('images/icons/buscador/minus.png') }}" style="width: 15px;"/></button>
                                             <span class="total-pax">1</span>
-                                            <button class="btn-controls up"><i class="fa-solid fa-circle-plus"></i></button>
+                                            <button class="btn-controls up"><img src="{{ asset('images/icons/buscador/plus.png') }}" style="width: 15px;"/></button>
                                         </div>
                                     </div>
                                     <div class="room_feature" id="room_3_kid">
                                     @lang('main.booking.kids')
                                         <div class="controls-box room_kid">
-                                            <button class="btn-controls down"><i class="fa-solid fa-circle-minus"></i></button>
+                                            <button class="btn-controls down"><img src="{{ asset('images/icons/buscador/minus.png') }}" style="width: 15px;"/></button>
                                             <span class="total-pax">0</span>
-                                            <button class="btn-controls up"><i class="fa-solid fa-circle-plus"></i></button>
+                                            <button class="btn-controls up"><img src="{{ asset('images/icons/buscador/plus.png') }}" style="width: 15px;"/></button>
                                         </div>
                                     </div>
                                     <div class="room_feature pax_Age" id="room_3_age">
