@@ -44,7 +44,7 @@
             <ul class="client-footers">
                 <li><img src="{{ asset('images/footer/express.png') }}" alt=""></li>
                 <li><img src="{{ asset('images/footer/clubestrella.png') }}" alt=""></li>
-                <li><img src="{{ asset('images/footer/oktrip.png') }}" alt=""></li>
+                <!--li><img src="{{ asset('images/footer/oktrip.png') }}" alt=""></li-->
                 <li><img src="{{ asset('images/footer/grill.png') }}" alt=""></li>
                 <li><img src="{{ asset('images/footer/cocodrillos.png') }}" alt=""></li>
                 <li><img src="{{ asset('images/footer/eventos.png') }}" alt=""></li>
