@@ -75,7 +75,7 @@
                             <li>
                                 <h5>@lang('main.contact.sales')</h5>
                                 <ul>
-                                    <li>Francisco Rodríguez - {{ ($lang == 'es') ? 'Gerencia Ventas & Ecommerce' : 'Ecommerce & Sales Manager' }}</li>
+                                    <li>Francisco Rodríguez - @lang('main.contact.manager')</li>
                                     <li>WhatsApp: (+52) 998 241 1535</li>
                                     <li><a href="mailto:ecommerce@gphoteles.com">ecommerce@gphoteles.com</a></li>
                                 </ul>

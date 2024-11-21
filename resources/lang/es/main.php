@@ -364,6 +364,7 @@ return [
     'contact.form.label' => 'Estamos ansiosos por saber de usted; por favor complete su información de contacto y uno de los miembros de nuestro personal se pondrá en contacto con usted en breve.',
     'contact.sales' => 'VENTAS',
     'contact.groups' => 'GRUPOS',
+    'contact.manager' => 'Gerencia Ventas & Ecommerce',
 
 
     // PAGINA DE RESERVACIONES
