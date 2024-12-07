@@ -262,9 +262,13 @@
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 					</div-->
 					@if (App::getLocale() == 'es')
-						<img src="{{ asset('images/sliders/cenaopo_es.png') }}" alt="Cena de Navidad">
+						<a href="https://api.whatsapp.com/send?phone=529981221861" target="_blank">
+							<img src="{{ asset('images/sliders/cenaopo_es.png') }}" alt="Cena de Navidad">
+						</a>
 					@else
-						<img src="{{ asset('images/sliders/cenaopo_en.png') }}" alt="Cena de Navidad">
+						<a href="https://api.whatsapp.com/send?phone=529981221861" target="_blank">
+							<img src="{{ asset('images/sliders/cenaopo_en.png') }}" alt="Cena de Navidad">
+						</a>
 					@endif
 				</div>
 			</div>
