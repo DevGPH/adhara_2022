@@ -225,31 +225,57 @@
 
 			});
 		</script>
-	@else<script type="text/javascript">
-		$(document).ready(function(){
-			$("#login-modal").on('submit', function(e){
-				console.log('here');
-				e.preventDefault();
-				$.ajax({
-					url: "/es/get-user-clubestrella",
-					type: "POST",
-					data: $( this ).serialize()
-				}).done(function() {
-					location.reload();
-				}).fail(function(jqXHR, textStatus, errorThrown) {
-					var errorTxt;
-					if(jqXHR.responseJSON.error == 403){
-						errorTxt = 'Error al iniciar sesi&#xF3;n, compruebe sus credenciales';
-					} else {
-						errorTxt = 'Error al iniciar sesi&#xF3;n';
-					}
+	@else
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#login-modal").on('submit', function(e){
+					console.log('here');
+					e.preventDefault();
+					$.ajax({
+						url: "/es/get-user-clubestrella",
+						type: "POST",
+						data: $( this ).serialize()
+					}).done(function() {
+						location.reload();
+					}).fail(function(jqXHR, textStatus, errorThrown) {
+						var errorTxt;
+						if(jqXHR.responseJSON.error == 403){
+							errorTxt = 'Error al iniciar sesi&#xF3;n, compruebe sus credenciales';
+						} else {
+							errorTxt = 'Error al iniciar sesi&#xF3;n';
+						}
 
-					var alert = '<div class="alert alert-danger alert-dismissible" id="#login-error" role="alert">'+errorTxt+'<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>';
-					$('#login-error').html(alert);
+						var alert = '<div class="alert alert-danger alert-dismissible" id="#login-error" role="alert">'+errorTxt+'<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>';
+						$('#login-error').html(alert);
+					});
 				});
 			});
-		});
-	</script>
+		</script>
+	@endif
+
+	@if (Route::is('inicio'))
+		{{-- Promociones 6 meses sin interes --}}
+		<div id="cenaNavidad" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="cenaNavidad">
+			<div class="modal-dialog modal-md" role="document">
+				<div class="modal-content">
+					<!--div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					</div-->
+					@if (App::getLocale() == 'es')
+						<img src="{{ asset('images/sliders/cenaopo_es.png') }}" alt="Cena de Navidad">
+					@else
+						<img src="{{ asset('images/sliders/cenaopo_en.png') }}" alt="Cena de Navidad">
+					@endif
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+
+			$(document).ready(function(){
+				$('#cenaNavidad').modal('show');
+			});
+		</script>
 	@endif
 	
 	<!-- Modal Terminos y Condiciones -->
