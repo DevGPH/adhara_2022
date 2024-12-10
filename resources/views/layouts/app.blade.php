@@ -30,7 +30,7 @@
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery-uit.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/queen_osiris_updated.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/mobile_home.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/homev2.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/styles_2024.css') }}">
 
 
     <!-- Google Fonts -->
@@ -121,6 +121,14 @@
     @include('layouts.web.navbar')
 
     <div id="app">
+
+		<div class="social-media">
+            <ul>
+                <li><a href="https://www.facebook.com/HotelAdharaCancun" target="_blank"><img src="{{ asset('images/icons/social_media/face.png') }}" alt="Facebook"></a></li>
+                <li><a href="hhttps://www.instagram.com/adharacancun" target="_blank"><img src="{{ asset('images/icons/social_media/instagram.png') }}" alt="Instagram"></a></li>
+                <li><a href="https://www.tiktok.com/@hoteladharacancun" target="_blank"><img src="{{ asset('images/icons/social_media/tiktok.png') }}" alt="Tiktok"></a></li>
+            </ul>
+        </div>
 
 		@yield('content')
 

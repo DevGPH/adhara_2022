@@ -114,3 +114,26 @@
         margin-top: 0px;
     }
 }
+
+.social-media{
+    position: fixed;
+    z-index: 100;
+    margin-top: 300px;
+    margin-left: 10px;
+  }
+  
+  .social-media ul {
+    list-style: none;
+    background-color: rgba(110, 94, 120, 1);
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .social-media ul li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .social-media ul li img {
+    width: 25px;
+  }
