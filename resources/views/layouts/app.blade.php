@@ -285,27 +285,24 @@
 		<script type="text/javascript">
 
 			$(document).ready(function(){
-				$('#cenaNavidad').modal('show');
+				//$('#cenaNavidad').modal('show');
 			});
 		</script>
 	@endif
 	
 	<!-- Modal Terminos y Condiciones -->
-	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-
-		<div class="modal-dialog" role="document">
+	<div class="modal fade" id="terminoCondiciones" tabindex="-1" role="dialog" aria-labelledby="terminosCondiciones">
+		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h4 class="modal-title" id="myModalLabel">@lang('main.body-item35')</h4>
+					<h4 class="modal-title" id="terminosCondiciones">@lang('main.body-item35')</h4>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 				</div>
 				<div class="modal-body">
-					<input type="text" class="form-control" placeholder="Correo electr&#xF3;nico">
 					<div id="about" style="font-size:12px">
 						<p>
 							<strong><u>INTRODUCCION</u></strong><br />Bienvenido a la página <a href="https://www.adharacancun.com">www.adharacancun.com</a> , una de las páginas de Internet publicadas y administradas por OK TRAVEL S.A. de C.V. colectivamente denominado como el&nbsp;<strong>&ldquo;Sitio&rdquo;.</strong>&nbsp;El uso que haga de este Sitio está expresamente condicionado a su aceptación de los presentes Términos y Condiciones. Al usar este sitio, manifiesta su consentimiento con los Términos y Condiciones. OK TRAVEL S.A. de C.V.  sus marcas y filiales se reservan el derecho de adicionar o modificar los Términos y Condiciones en cualquier momento. Todos los términos adicionados o modificados causarán efecto en el momento en que éstos sean actualizados. El uso continuo de este sitio incluso posterior a la publicación de los cambios realizados a los Términos y Condiciones significará que Usted acepta dichos cambios. Por favor regrese periódicamente a esta página para consultar cualquier cambio.
 						</p>
-
 						<p><strong><u>DECLARACIONES.</u></strong></p>
 						<p>
 							a) GPHOTELES S.A. de C.V.es un prestador de servicios turísticos para agencia de viajes (operadora), y consumidor final, con constancia de inscripción en el Registro Nacional de Turismo número ## en la Secretaría de Turismo.
@@ -413,7 +410,7 @@
 							<li>A pesar de que actualizamos las tarifas de manera constante, en casos remotos existe la posibilidad de que haya cambios en las tarifas sin previo aviso por contingencias o causas de fuerza mayor. En estos casos, es posible que el proveedor no tenga forma de actualizar rápidamente las tarifas en la base de datos de OK TRAVEL S. A. de C.V., OK TRAVEL S. A. de C.V. hace revisiones periódicas donde es posible que haya diferencias entre el precio pagado por la reservación y el precio requerido para usar el servicio. En caso de haber cambios en las tarifas, si ésta resulta en un precio menor, se cobrará ese precio y se reembolsará la diferencia. Si resulta en un precio mayor, uno de nuestros Asesores de Viaje se pondrá en contacto con usted y le informará sobre el cambio. Si no está de acuerdo, OK TRAVEL S. A. de C.V. le reembolsará el 100% del monto pagado, pero no se hace responsable por reclamaciones o inconvenientes derivados del cambio de tarifas o la cancelación de la reservación. </li>
 						</ol>
 						<ol start="8" type="1">
-							<li>Las      fotografías mostradas en el (los) portal (es)  de Internet propiedad de o administradas      por OK TRAVEL S.A de C.V son con fines representativos y no garantizan que      a su llegada, todo sea exactamente igual como se describe en los sitios de      OK TRAVEL S. A. de C. V. </li>
+							<li>Las      fotografías mostradas en el (los) portal (es) de Internet propiedad de o administradas      por OK TRAVEL S.A de C.V son con fines representativos y no garantizan que      a su llegada, todo sea exactamente igual como se describe en los sitios de      OK TRAVEL S. A. de C. V. </li>
 							<li>La      categoría de estrellas asignada a los hoteles, está basada en la      interpretación de OK TRAVEL S. A. de C.V. y / o  la información proporcionada por el      hotel, por lo tanto  puede diferir      de las categorías reportadas en otros lugares. </li>
 							<li>Las      descripciones de los servicios de viaje son actualizadas por OK TRAVEL S.      A. de C.V. de manera constante pero no garantizan que todo será      exactamente igual a su llegada. Ya sea por mejoras en las instalaciones      afectaciones de uso, influencia de las condiciones climáticas o por obras      de mantenimiento de equipo e instalaciones o cualquier otra causa. </li>
 							<li>OK      TRAVEL S. A. de C.V. se reserva el derecho de rechazar a cualquier persona      o cliente en el momento que considere necesario por incurrir en conducta      inapropiada, alteración del orden público, comunicación obscena o lenguaje      ofensivo, por acoso de toda índole o bien por presentarse en estado de      ebriedad o bajo los efectos de drogas y narcóticos o cualquier otra causa      que vulnere o afecte en cualquier manera los intereses, propiedad, imagen      y operación de OK TRAVEL S. A. de C.V. o sus proveedores </li>
@@ -441,7 +438,6 @@
 						</p>
 					</div>
 				</div>
-
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				</div>
@@ -449,30 +445,21 @@
 		</div>
 	</div>
 	<!-- Modal Politica de Privacidad -->
-	<div class="modal fade" id="privacidadModal" tabindex="-1" role="dialog" aria-labelledby="privacidad">
-
-		<div class="modal-dialog" role="document">
-
+	<div class="modal fade" id="privacidadHotel" tabindex="-1" role="dialog" aria-labelledby="privacidad">
+		<div class="modal-dialog">
 			<div class="modal-content">
-
 				<div class="modal-header">
 					<h4 class="modal-title" id="privacidad">@lang('main.body-item34')</h4>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-
 				</div>
-
 				<div class="modal-body">
-
 					<div id="about2" style="font-size:12px">
-
 						<p>
-							<br /><strong>OKTRAVEL SA DE CV</strong>,  Identificado también como <strong>OKTRIP</strong>, para fines prácticos y en cumplimiento con lo dispuesto por la Ley,   con domicilio en Av. Carlos Nader lotes 1, a 3, Interior B, Manzana 1, SM 2, Ciudad de Cancún, municipio Benito Juárez, CP 77500, en la entidad de Quintana Roo, país México, cuyo portal de internet es <a href="https://www.oktrip.mx">www.oktrip.mx</a>,  es el responsable del uso y protección de sus datos personales, y al respecto le informamos lo siguiente:
+							<br /><strong>OKTRAVEL SA DE CV</strong>, Identificado también como <strong>OKTRIP</strong>, para fines prácticos y en cumplimiento con lo dispuesto por la Ley,   con domicilio en Av. Carlos Nader lotes 1, a 3, Interior B, Manzana 1, SM 2, Ciudad de Cancún, municipio Benito Juárez, CP 77500, en la entidad de Quintana Roo, país México, cuyo portal de internet es <a href="https://www.oktrip.mx">www.oktrip.mx</a>,  es el responsable del uso y protección de sus datos personales, y al respecto le informamos lo siguiente:
 						</p>
-
 						<p>
 							<strong>¿Para qué fines utilizaremos sus datos personales?</strong><br />Los datos personales que recabamos de usted, los utilizaremos para las siguientes finalidades que son necesarias para el servicio que solicita:
 						</p>
-
 						<ul>
 							<li>Procesar solicitudes de Servicios de Viaje</li>
 							<li>Realizar el cobro de los servicios de Viaje solicitados y reservados</li>
@@ -481,13 +468,10 @@
 							<li>Mercadotecnia o publicidad para informarle sobre beneficios, ofertas y novedades sobre viajes y turismo</li>
 							<li>Inscripción en nuestros programas de CRM (<strong>C</strong>ustomer <strong>R</strong>elationship <strong>M</strong>anagement)</li>
 							<li>Prospección comercial</li>
-
 						</ul>
-
 						<p>
 							<strong>¿Qué datos personales utilizaremos para estos fines?</strong><br />Para llevar a cabo las finalidades descritas en el presente aviso de privacidad, utilizaremos los siguientes datos personales:
 						</p>
-
 						<ul>
 							<li>Nombre</li>
 							<li>Estado Civil</li>
@@ -509,24 +493,18 @@
 							<li>Títulos</li>
 							<li>Pasatiempos</li>
 						</ul>
-
 						<p>
 							<strong>¿Cómo puede acceder, rectificar o cancelar sus datos personales, u oponerse a su uso?</strong><br />Usted tiene derecho a conocer qué datos personales tenemos de usted, para qué los utilizamos y las condiciones del uso que les damos (Acceso). Asimismo, es su derecho solicitar la corrección de su información personal en caso de que esté desactualizada, sea inexacta o incompleta (Rectificación); que la eliminemos de nuestros registros o bases de datos cuando considere que la misma no está siendo utilizada adecuadamente (Cancelación); así como oponerse al uso de sus datos personales para fines específicos (Oposición). Estos derechos se conocen como derechos ARCO.
 						</p>
-
 						<p>Para el ejercicio de cualquiera de los derechos ARCO, usted deberá presentar la solicitud respectiva a través del siguiente medio:</p>
-
 						<ul>
 							<li>Envío de correo electrónico a <a href="mailto:privacidad@oktravel.mx">privacidad@oktravel.mx</a>  &nbsp;&nbsp;&nbsp; <a href="#">Ver forma ARCO</a></li>
 
 						</ul>
-
-
 						<p>
 							Con relación al procedimiento y requisitos para el ejercicio de sus derechos ARCO, le informamos lo siguiente:<br />
 							a) ¿A través de qué medios pueden acreditar su identidad el titular y, en su caso, su representante, así como la personalidad este último?<br /><strong>R=</strong> Registro On Line
 						</p>
-
 						<p> b) ¿Qué información y/o documentación deberá contener la solicitud?<br /><strong>R= </strong>Usuario y contraseña</p>
 						<p> c) ¿En cuántos días le daremos respuesta a su solicitud?<br /><strong>R= </strong>24 hrs.</p>
 						<p> d) ¿Por qué medio le comunicaremos la respuesta a su solicitud?<br /><strong>R= </strong>Vía e-mail</p>
