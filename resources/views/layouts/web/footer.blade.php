@@ -60,9 +60,8 @@
             </div>
             <div class="footer-nav">
                 <ul>
-                    <!--li><a href="#">SITEMAP</a></li-->
-                    <li><a href="#">@lang('main.footer.privacy')</a></li>
-                    <li><a href="#">@lang('main.footer.policy')</a></li>
+                    <li><button data-toggle="modal" data-target="#terminoCondiciones">@lang('main.footer.policy')</button></li>
+                    <li><button data-toggle="modal" data-target="#privacidadHotel">@lang('main.footer.privacy')</button></li>
                 </ul>
             </div>
         </div>
