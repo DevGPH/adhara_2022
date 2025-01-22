@@ -231,7 +231,19 @@ class HomeController extends Controller
             'enableClub' => $this->clubestrella->enable,
             'finde' => $this->finde->enable
         ]);
- 
+    }
+
+    public function galleryGPH($locale)
+    {
+        $rate = $this->rateToday($locale);
+
+        return view('storefront.gallerygph')->with([
+            'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
+            'id' => 0,
+            'rate' => $rate,
+            'enableClub' => $this->clubestrella->enable,
+            'finde' => $this->finde->enable
+        ]);
     }
 
     public function getUserC(Request $request, $locale)

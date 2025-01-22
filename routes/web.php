@@ -57,6 +57,7 @@ Route::prefix('{locale}')->group(function ()
 
     //QR routes
     Route::get('staff/{member}',[HomeController::class,'getStaff'])->name('staff.member');
+    Route::get('gallery-gph',[HomeController::class,'galleryGPH'])->name('gallery.gph');
 });
 
 #Santander
