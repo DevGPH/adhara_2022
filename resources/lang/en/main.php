@@ -525,6 +525,9 @@ return [
 
     // TAXES
     'tax.done' => 'All prices include taxes!',
-    'tax.missing' => 'Tourist tax not included 5 USD per room/night to be paid at the hotel.'
+    'tax.missing' => 'Tourist tax not included 5 USD per room/night to be paid at the hotel.',
+
+    //QR CARDS
+    'keep.touch' => '¡KEEP IN TOUCH!'
 
 ];

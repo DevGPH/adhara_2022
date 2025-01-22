@@ -12,6 +12,7 @@ use Illuminate\Support\Str;
 use Illuminate\Support\Facades\DB;
 
 use App\Models\AmenidadHabitacion;
+use App\Models\Staffmember;
 use App\Models\AmenidadCuarto;
 use App\Models\Config;
 use App\Models\Habitacion;
@@ -215,6 +216,22 @@ class HomeController extends Controller
             'lang' => (App::getLocale() == 'es') ? 'en' : 'es',
             'id' => 0
         ]);
+    }
+
+    public function getStaff($locale, $staff)
+    {
+        $rate = $this->rateToday($locale);
+        $staff = Staffmember::where('deparment', $staff)->first();
+
+        return view('storefront.staffmember')->with([
+            'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
+            'id' => 0,
+            'rate' => $rate,
+            'staff' => $staff,
+            'enableClub' => $this->clubestrella->enable,
+            'finde' => $this->finde->enable
+        ]);
+ 
     }
 
     public function getUserC(Request $request, $locale)

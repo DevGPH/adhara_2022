@@ -527,4 +527,7 @@ return [
     'tax.done' => '¡Todos los precios Incluyen impuestos!',
     'tax.missing' => 'Tasa turística no incluida 76 MXN por habitación/noche a pagar en el hotel.',
 
+    //QR CARDS
+    'keep.touch' => '¡SIGAMOS EN CONTACTO!'
+
 ];

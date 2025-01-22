@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController as ControllersHomeController;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\WEB\Home\HomeController;
@@ -53,6 +54,9 @@ Route::prefix('{locale}')->group(function ()
     Route::get('logout-clubestrella',[HomeController::class,'closeUserC'])->name('logout.clubestrella');
 
     Route::get('/test-response',[SantanderController::class,'testPost'])->name('test.response');
+
+    //QR routes
+    Route::get('staff/{member}',[HomeController::class,'getStaff'])->name('staff.member');
 });
 
 #Santander
