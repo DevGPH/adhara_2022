@@ -83,10 +83,17 @@
                     <li><a href="{{ route('gallery', App::getLocale(), 0) }}">@lang('main.nav.gallery')</a></li>
                     <li><a href="{{ route('contact', ['locale' => App::getLocale()]) }}">@lang('main.nav-contact')</a></li>
                     <li class="mob-only">
-                        <a href="{{ route(Route::currentRouteName(),[$lang,$id])}}">
-                            <img src="/images/logos/{{(App::getLocale() == 'es') ? 'usa.png' : 'mexico.png' }}" alt="{{ (App::getLocale() == 'es') ? 'English' : 'Spanish'}}" class="flag-lang">
-                            {{ (App::getLocale() == 'es') ? 'EN' : 'ES' }}
-                        </a>
+                        @if (isset($enableStaff) && ($enableStaff))
+                            <a href="{{ route(Route::currentRouteName(),[$lang,$staff->deparment])}}">
+                                <img src="/images/logos/{{(App::getLocale() == 'es') ? 'usa.png' : 'mexico.png' }}" alt="{{ (App::getLocale() == 'es') ? 'English' : 'Spanish'}}" class="flag-lang">
+                                {{ (App::getLocale() == 'es') ? 'EN' : 'ES' }}
+                            </a>
+                        @else
+                            <a href="{{ route(Route::currentRouteName(),[$lang,$id])}}">
+                                <img src="/images/logos/{{(App::getLocale() == 'es') ? 'usa.png' : 'mexico.png' }}" alt="{{ (App::getLocale() == 'es') ? 'English' : 'Spanish'}}" class="flag-lang">
+                                {{ (App::getLocale() == 'es') ? 'EN' : 'ES' }}
+                            </a>
+                        @endif
                     </li>
                 </ul>
             </div>
