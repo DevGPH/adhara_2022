@@ -6,7 +6,7 @@
     <!-- Section Page Title -->
     <div class="section">
         <div class="widget-page-title">
-            <div class="widget-background" data-background="{{ asset('images/staff/back.png') }}"></div>
+            <div class="widget-background" data-background="{{ asset('images/staff/back_new.png') }}"></div>
             <div class="wrapper-inner" style="padding: 0px;">
                 <!-- Title -->
                 <div class="box-staff" style="width: 400px;display:block;margin:auto;">

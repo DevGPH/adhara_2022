@@ -45,6 +45,171 @@
             <!-- Gallery List -->
             <div class="widget-gallery-grid">
                 <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item restaurant">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/aspectos_comida.png') }}" data-background="{{ asset('images/gallery/aspectos_comida.png') }}" title="Loby Bar" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item restaurant">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/aspecto_estrella.png') }}" data-background="{{ asset('images/gallery/aspecto_estrella.png') }}" title="Loby Bar" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item restaurant">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/stuff_comida.png') }}" data-background="{{ asset('images/gallery/stuff_comida.png') }}" title="Loby Bar" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item restaurant">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/grill_stuff.png') }}" data-background="{{ asset('images/gallery/grill_stuff.png') }}" title="Loby Bar" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item skybar">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/vista_good.png') }}" data-background="{{ asset('images/gallery/vista_good.png') }}" title="Bar & Pool" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item skybar">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/vibra_noche.png') }}" data-background="{{ asset('images/gallery/vibra_noche.png') }}" title="Bar & Pool" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item skybar">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/verano_pool.png') }}" data-background="{{ asset('images/gallery/verano_pool.png') }}" title="Bar & Pool" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item skybar">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/terraza_pool.png') }}" data-background="{{ asset('images/gallery/terraza_pool.png') }}" title="Bar & Pool" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item skybar">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/pool_bebida.png') }}" data-background="{{ asset('images/gallery/pool_bebida.png') }}" title="Bar & Pool" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item skybar">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/pool_atras.png') }}" data-background="{{ asset('images/gallery/pool_atras.png') }}" title="Bar & Pool" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item skybar">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/pololo.png') }}" data-background="{{ asset('images/gallery/pololo.png') }}" title="Bar & Pool" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item skybar">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/family.png') }}" data-background="{{ asset('images/gallery/family.png') }}" title="Bar & Pool" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item skybar">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/espacio_poli.png') }}" data-background="{{ asset('images/gallery/espacio_poli.png') }}" title="Bar & Pool" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item skybar">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/enfrente_pool.png') }}" data-background="{{ asset('images/gallery/enfrente_pool.png') }}" title="Bar & Pool" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item skybar">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/comidal_pool.png') }}" data-background="{{ asset('images/gallery/comidal_pool.png') }}" title="Bar & Pool" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item skybar">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/club_playa.png') }}" data-background="{{ asset('images/gallery/club_playa.png') }}" title="Bar & Pool" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item skybar">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/bar_piso.png') }}" data-background="{{ asset('images/gallery/bar_piso.png') }}" title="Bar & Pool" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item skybar">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/bar_descanso.png') }}" data-background="{{ asset('images/gallery/bar_descanso.png') }}" title="Bar & Pool" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item rooms">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/toilet.png') }}" data-background="{{ asset('images/gallery/toilet.png') }}" title="Habitacion Doble" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item rooms">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/sala_room.png') }}" data-background="{{ asset('images/gallery/sala_room.png') }}" title="Habitacion Doble" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item rooms">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/pantunflas.png') }}" data-background="{{ asset('images/gallery/pantunflas.png') }}" title="Habitacion Doble" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item rooms">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/living.png') }}" data-background="{{ asset('images/gallery/living.png') }}" title="Habitacion Doble living" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item rooms">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/doble_room2.png') }}" data-background="{{ asset('images/gallery/doble_room2.png') }}" title="Habitacion Doble" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item rooms">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/doble_room.png') }}" data-background="{{ asset('images/gallery/doble_room.png') }}" title="Habitacion Doble" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item rooms">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/escritorio.png') }}" data-background="{{ asset('images/gallery/escritorio.png') }}" title="Escritorio" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item rooms">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/detallitos.png') }}" data-background="{{ asset('images/gallery/detallitos.png') }}" title="Detalles" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item rooms">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/cafecito.png') }}" data-background="{{ asset('images/gallery/cafecito.png') }}" title="Cafe" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item rooms">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/bathroom.png') }}" data-background="{{ asset('images/gallery/bathroom.png') }}" title="Baño" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item rooms">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/batas.png') }}" data-background="{{ asset('images/gallery/batas.png') }}" title="Batas" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item rooms">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/balcony.png') }}" data-background="{{ asset('images/gallery/balcony.png') }}" title="Balcon" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item rooms">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/amenidad_bath.png') }}" data-background="{{ asset('images/gallery/amenidad_bath.png') }}" title="Amenidades" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item rooms">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/amenidad.png') }}" data-background="{{ asset('images/gallery/amenidad.png') }}" title="Amenidades" class="popup-gallery"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item rooms">
+                        <div class="gallery-item">
+                            <a href="{{ asset('images/gallery/amenidad_agua.png') }}" data-background="{{ asset('images/gallery/amenidad_agua.png') }}" title="Amenidad Agua" class="popup-gallery"></a>
+                        </div>
+                    </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item rooms">
                         <div class="gallery-item">
                             <a href="{{ asset('images/gallery/1.png') }}" data-background="{{ asset('images/gallery/1.png') }}" title="Habitación estándar" class="popup-gallery"></a>
