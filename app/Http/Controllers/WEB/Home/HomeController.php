@@ -229,7 +229,8 @@ class HomeController extends Controller
             'rate' => $rate,
             'staff' => $staff,
             'enableClub' => $this->clubestrella->enable,
-            'finde' => $this->finde->enable
+            'finde' => $this->finde->enable,
+            'enableStaff' => 1
         ]);
     }
 

@@ -42,10 +42,17 @@
                 <ul style="padding-top: 8px;">
                     <li class="active"><a href="#"> {{ Str::of(App::getLocale())->upper() }}</a></li>
                     <li>
-                        <a href="{{ route(Route::currentRouteName(),[$lang,$id])}}">
-                            <img src="/images/logos/{{(App::getLocale() == 'es') ? 'usa.png' : 'mexico.png' }}" alt="{{ (App::getLocale() == 'es') ? 'English' : 'Spanish'}}" class="flag-lang">
-                            {{ (App::getLocale() == 'es') ? 'EN' : 'ES' }}
-                        </a>
+                        @if (isset($enableStaff) && ($enableStaff))
+                            <a href="{{ route(Route::currentRouteName(),[$lang,$staff->deparment])}}">
+                                <img src="/images/logos/{{(App::getLocale() == 'es') ? 'usa.png' : 'mexico.png' }}" alt="{{ (App::getLocale() == 'es') ? 'English' : 'Spanish'}}" class="flag-lang">
+                                {{ (App::getLocale() == 'es') ? 'EN' : 'ES' }}
+                            </a>
+                        @else
+                            <a href="{{ route(Route::currentRouteName(),[$lang,$id])}}">
+                                <img src="/images/logos/{{(App::getLocale() == 'es') ? 'usa.png' : 'mexico.png' }}" alt="{{ (App::getLocale() == 'es') ? 'English' : 'Spanish'}}" class="flag-lang">
+                                {{ (App::getLocale() == 'es') ? 'EN' : 'ES' }}
+                            </a>
+                        @endif
                     </li>
                 </ul>
             </div>
