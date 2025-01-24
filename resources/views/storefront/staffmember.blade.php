@@ -28,13 +28,13 @@
     <!-- Section Page Title End -->
 
     <!-- Section Services -->
-    <div class="section" style="padding-bottom: 45px;padding-top:40px;">
+    <div class="section" style="padding-bottom: 45px;padding-top:30px;">
         <div class="row" style="margin-top: 80px;">
-            <img src="{{ asset('images/staff/logo-adhara.png') }}" alt="Adhara Cancun" style="display: block;margin:auto;width:150px;margin-bottom:30px;">
+            <img src="{{ asset('images/staff/logo-adhara.png') }}" alt="Adhara Cancun" style="display: block;margin:auto;width:150px;margin-bottom:40px;">
             <p style="text-align: center;"><a href="https://adharacancun.com" target="_blank" style="padding:15px;border-radius:10px;background-color:white;">WWW.ADHARACANCUN.COM</a></p>       
         </div>
         <div class="row" style="margin-top: 50px;">
-            <img src="{{ asset('images/staff/logo-ex.png') }}" alt="Adhara Express" style="display: block;margin:auto;width:150px;margin-bottom:30px;">
+            <img src="{{ asset('images/staff/logo-ex.png') }}" alt="Adhara Express" style="display: block;margin:auto;width:150px;margin-bottom:40px;">
             <p style="text-align: center;"><a href="https://adharaexpress.com.mx" target="_blank" style="padding:15px;border-radius:10px;background-color:white;">WWW.ADHARAEXPRESS.COM.MX</a></p>   
         </div>
 
