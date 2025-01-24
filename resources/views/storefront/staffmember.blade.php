@@ -13,7 +13,7 @@
                     <img src="{{ asset('images/staff/' . $staff->deparment . '.jpg') }}" alt="{{ $staff->staff_member }}" style="width: 200px;display:block;margin:auto;">
                     <h5 style="width:100%;text-align: center;">@lang('main.keep.touch')</h5>
                     <h1 style="width:100%;text-align: center;">{{ $staff->staff_member }}</h1>
-                    <p style="width:100%;text-align: center;margin-top:12px; margin-bottom:20px;">{{ ($lang == 'es') ?  $staff->title_es : $staff->title_en }}</p>
+                    <p style="width:100%;text-align: center;margin-top:12px; margin-bottom:20px;">{{ ($lang == 'en') ?  $staff->title_es : $staff->title_en }}</p>
                     <ul style="margin: auto;width:fit-content;margin-left: 80px;text-align:left;">
                         <li style="margin-bottom: 10px;"><img src="{{ asset('images/staff/t.png') }}" alt="Telephone" style="width: 15px; margin-right:15px;"> Tel. <a href="tel:+52{{  str_replace(' ', '', $staff->telephone)  }}" target="_blank"> {{ $staff->telephone }}</a></li>
                         <li style="margin-bottom: 10px;"><img src="{{ asset('images/staff/c.png') }}" alt="Mobile" style="width: 15px; margin-right:15px;"> Cel. <a href="tel:+52{{  str_replace(' ', '', $staff->mobile)  }}" target="_blank"> {{ $staff->mobile }}</a></li>

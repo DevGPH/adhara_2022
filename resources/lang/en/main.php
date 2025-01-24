@@ -528,6 +528,6 @@ return [
     'tax.missing' => 'Tourist tax not included 5 USD per room/night to be paid at the hotel.',
 
     //QR CARDS
-    'keep.touch' => '¡KEEP IN TOUCH!'
+    'keep.touch' => 'KEEP IN TOUCH!'
 
 ];
