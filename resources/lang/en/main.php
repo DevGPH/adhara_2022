@@ -16,7 +16,7 @@ return [
     'nav.breakfast' => 'BREAKFAST INCLUDED',
     'nav.gallery' => 'GALLERY',
     'nav.whats' => 'QUOTE, RESERVE AND PAY BY WHATSAPP: 998 122 1861',
-    'nav.taxes' => 'TAXES INCLUDED',
+    'nav.taxes' => 'SANITATION TAXES NOT INCLUDED',
 
     'slider.01' => 'BOOK NOW THE BEST AVAILABLE RATE',
     'slider.011' => 'BREAKFAST INCLUDED',
@@ -35,7 +35,7 @@ return [
     'mini-banner2-07' => 'years',
     'special-rate' => 'Magic Fee! </br> Breakfast Buffet',
     'rates-special-mob' => 'Magic Fee! Breakfast Buffet',
-    'taxes-rate' => 'Taxes included',
+    'taxes-rate' => 'Sanitation tax not included',
 
     // BREADCRUMBS
     'breadcrumb.home' => 'HOME',

@@ -16,7 +16,7 @@ return [
     'nav.breakfast' => 'INCLUYE DESAYUNO',
     'nav.gallery' => 'GALERÍA',
     'nav.whats' => 'COTIZA, RESERVA Y PAGA POR WHATSAPP: 998 122 1861',
-    'nav.taxes' => 'IMPUESTOS INCLUIDOS',
+    'nav.taxes' => 'IMPUESTO DE SANEAMIENTO NO INCLUIDO',
 
     'slider.01' => 'RESERVA AHORA LA MEJOR TARÍFA DISPONIBLE',
     'slider.011' => 'Incluye Desayuno Buffet',
@@ -35,7 +35,7 @@ return [
     'mini-banner2-07' => 'años',
     'special-rate' => '¡Tarifa Mágica! </br> Con Desayuno',
     'rates-special-mob' => '¡Tarifa Mágica! Con Desayuno',
-    'taxes-rate' => 'Impuestos incluidos',
+    'taxes-rate' => 'Impuesto de saneamiento no incluido',
 
     // BREADCRUMBS
     'breadcrumb.home' => 'INICIO',
