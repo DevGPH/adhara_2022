@@ -125,7 +125,7 @@
 		<div class="social-media">
             <ul>
                 <li><a href="https://www.facebook.com/HotelAdharaCancun" target="_blank"><img src="{{ asset('images/icons/social_media/face.png') }}" alt="Facebook"></a></li>
-                <li><a href="hhttps://www.instagram.com/adharacancun" target="_blank"><img src="{{ asset('images/icons/social_media/instagram.png') }}" alt="Instagram"></a></li>
+                <li><a href="https://www.instagram.com/adharacancun" target="_blank"><img src="{{ asset('images/icons/social_media/instagram.png') }}" alt="Instagram"></a></li>
                 <li><a href="https://www.tiktok.com/@hoteladharacancun" target="_blank"><img src="{{ asset('images/icons/social_media/tiktok.png') }}" alt="Tiktok"></a></li>
             </ul>
         </div>
