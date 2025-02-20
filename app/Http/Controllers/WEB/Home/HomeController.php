@@ -221,6 +221,21 @@ class HomeController extends Controller
     public function getStaff($locale, $staff)
     {
         $rate = $this->rateToday($locale);
+
+        if ($staff == 'all-members') {
+            $staff = Staffmember::all();
+
+            return view('storefront.global_staff')->with([
+                'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
+                'id' => 0,
+                'rate' => $rate,
+                'members' => $staff,
+                'enableClub' => $this->clubestrella->enable,
+                'finde' => $this->finde->enable,
+                'enableStaff' => 1
+            ]);
+        }
+        
         $staff = Staffmember::where('deparment', $staff)->first();
 
         return view('storefront.staffmember')->with([
@@ -233,6 +248,8 @@ class HomeController extends Controller
             'enableStaff' => 1
         ]);
     }
+
+    
 
     public function galleryGPH($locale)
     {
