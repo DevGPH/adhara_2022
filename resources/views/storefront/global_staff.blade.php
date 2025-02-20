@@ -13,7 +13,6 @@
                     <p>Hotel Adhara Cancún & Hotel Adhara Express</p>
                     <ul style="margin: auto;width:fit-content;margin-left: 80px;text-align:left;">
                         <li style="margin-bottom: 10px;"><img src="{{ asset('images/staff/t.png') }}" alt="Telephone" style="width: 15px; margin-right:15px;"> Tel. <a href="tel:+529988816500" target="_blank">998 881 6500</a></li>
-                        <!--li style="margin-bottom: 10px;"><img src="{{ asset('images/staff/c.png') }}" alt="Mobile" style="width: 15px; margin-right:15px;"> Cel. <a href="tel:+52{{  str_replace(' ', '', $staff->mobile)  }}" target="_blank"> {{ $staff->mobile }}</a></li-->
                         <li style="margin-bottom: 10px;"><img src="{{ asset('images/staff/m.png') }}" alt="Email" style="width: 15px; margin-right:15px;"> <a href="mailto:reservaciones@gphoteles.com" target="_blank">reservaciones@gphoteles.com</a></li>
                         <li style="margin-bottom: 10px;"><img src="{{ asset('images/staff/w.png') }}" alt="Whatsapp" style="width: 15px; margin-right:15px;"> Whats <a href="https://api.whatsapp.com/send?phone=529981221861" target="_blank"> +52 998 122 1861</a></li>
                     </ul>
