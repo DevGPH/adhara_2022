@@ -9,8 +9,8 @@
             <div class="widget-background" data-background="{{ asset('images/staff/back_new.png') }}"></div>
             <div class="wrapper-inner" style="padding: 0px;padding-top:30px;padding-bottom:30px;">
                 <div class="box-staff" style="width: 400px;display:block;margin:auto;">
-                    <h5 style="width:100%;text-align: center;">@lang('main.keep.touch')</h5>
-                    <p style="width:100%;text-align: center;">Hotel Adhara Cancún & Hotel Adhara Express</p>
+                    <h5 style="width:100%;text-align: center;margin-bottom:10px;">@lang('main.keep.touch')</h5>
+                    <p style="width:100%;text-align: center;margin-bottom:10px;">Hotel Adhara Cancún & Hotel Adhara Express</p>
                     <ul style="margin: auto;width:fit-content;margin-left: 80px;text-align:left;">
                         <li style="margin-bottom: 10px;"><img src="{{ asset('images/staff/t.png') }}" alt="Telephone" style="width: 15px; margin-right:15px;"> Tel. <a href="tel:+529988816500" target="_blank">998 881 6500</a></li>
                         <li style="margin-bottom: 10px;"><img src="{{ asset('images/staff/m.png') }}" alt="Email" style="width: 15px; margin-right:15px;"> <a href="mailto:reservaciones@gphoteles.com" target="_blank">reservaciones@gphoteles.com</a></li>
