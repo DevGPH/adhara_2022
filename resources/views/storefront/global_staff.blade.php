@@ -18,12 +18,15 @@
                     </ul>
                 </div>
                 @foreach ($members as $staff)
+                    @if ($staff->deparment != 'general-manager')
+                        
+                    @endif
                     <!-- Title -->
                     <div class="box-staff" style="width: 400px;display:block;margin:auto;margin-top:60px;">
                         <!--img src="{{ asset('images/staff/' . $staff->deparment . '.jpg') }}" alt="{{ $staff->staff_member }}" style="width: 200px;display:block;margin:auto;">
                         <h5 style="width:100%;text-align: center;">@lang('main.keep.touch')</h5-->
                         <h2 style="width:100%;text-align: center;margin-bottom:10px;">{{ $staff->staff_member }}</h2>
-                        <p style="width:100%;text-align: center;margin-top:12px; margin-bottom:20px;">{{ ($lang == 'en') ?  $staff->title_es : $staff->title_en }}</p>
+                        <p style="width:100%;text-align: center;margin-top:12px; margin-bottom:20px;">{{ $staff->title_es . ' / ' . $staff->title_en }}</p>
                         <ul style="margin: auto;width:fit-content;margin-left: 80px;text-align:left;">
                             <li style="margin-bottom: 10px;"><img src="{{ asset('images/staff/t.png') }}" alt="Telephone" style="width: 15px; margin-right:15px;"> Tel. <a href="tel:+52{{  str_replace(' ', '', $staff->telephone)  }}" target="_blank"> {{ $staff->telephone }}</a></li>
                             <li style="margin-bottom: 10px;"><img src="{{ asset('images/staff/c.png') }}" alt="Mobile" style="width: 15px; margin-right:15px;"> Cel. <a href="tel:+52{{  str_replace(' ', '', $staff->mobile)  }}" target="_blank"> {{ $staff->mobile }}</a></li>
@@ -41,6 +44,10 @@
     <!-- Section Services -->
     <div class="section" style="padding-bottom: 45px;padding-top:30px;">
         <div class="row" style="margin-top: 80px;">
+            <img src="{{ asset('images/staff/rewards.png') }}" alt="Adhara Rewards" style="display: block;margin:auto;width:150px;margin-bottom:40px;">
+            <p style="text-align: center;"><a href="https://adhararewards.com/es/" target="_blank" style="padding:15px;border-radius:10px;background-color:white;">WWW.ADHARAREWARDS.COM</a></p>       
+        </div>
+        <div class="row" style="margin-top: 50px;">
             <img src="{{ asset('images/staff/logo-adhara.png') }}" alt="Adhara Cancun" style="display: block;margin:auto;width:150px;margin-bottom:40px;">
             <p style="text-align: center;"><a href="https://adharacancun.com" target="_blank" style="padding:15px;border-radius:10px;background-color:white;">WWW.ADHARACANCUN.COM</a></p>       
         </div>
