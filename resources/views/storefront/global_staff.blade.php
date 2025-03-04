@@ -19,22 +19,21 @@
                 </div>
                 @foreach ($members as $staff)
                     @if ($staff->deparment != 'general-manager')
-                        
+                        <!-- Title -->
+                        <div class="box-staff" style="width: 400px;display:block;margin:auto;margin-top:60px;">
+                            <!--img src="{{ asset('images/staff/' . $staff->deparment . '.jpg') }}" alt="{{ $staff->staff_member }}" style="width: 200px;display:block;margin:auto;">
+                            <h5 style="width:100%;text-align: center;">@lang('main.keep.touch')</h5-->
+                            <h2 style="width:100%;text-align: center;margin-bottom:10px;">{{ $staff->staff_member }}</h2>
+                            <p style="width:100%;text-align: center;margin-top:12px; margin-bottom:20px;">{{ $staff->title_es . ' / ' . $staff->title_en }}</p>
+                            <ul style="margin: auto;width:fit-content;margin-left: 80px;text-align:left;">
+                                <li style="margin-bottom: 10px;"><img src="{{ asset('images/staff/t.png') }}" alt="Telephone" style="width: 15px; margin-right:15px;"> Tel. <a href="tel:+52{{  str_replace(' ', '', $staff->telephone)  }}" target="_blank"> {{ $staff->telephone }}</a></li>
+                                <li style="margin-bottom: 10px;"><img src="{{ asset('images/staff/c.png') }}" alt="Mobile" style="width: 15px; margin-right:15px;"> Cel. <a href="tel:+52{{  str_replace(' ', '', $staff->mobile)  }}" target="_blank"> {{ $staff->mobile }}</a></li>
+                                <li style="margin-bottom: 10px;"><img src="{{ asset('images/staff/m.png') }}" alt="Email" style="width: 15px; margin-right:15px;"> <a href="mailto:{{ $staff->email }}" target="_blank"> {{ $staff->email }}</a></li>
+                                <li style="margin-bottom: 10px;"><img src="{{ asset('images/staff/w.png') }}" alt="Whatsapp" style="width: 15px; margin-right:15px;"> Whats <a href="https://api.whatsapp.com/send?phone=52{{  str_replace(' ', '', $staff->mobile)  }}" target="_blank"> {{ $staff->mobile }}</a></li>
+                            </ul>
+                        </div>
+                        <!-- Title End -->
                     @endif
-                    <!-- Title -->
-                    <div class="box-staff" style="width: 400px;display:block;margin:auto;margin-top:60px;">
-                        <!--img src="{{ asset('images/staff/' . $staff->deparment . '.jpg') }}" alt="{{ $staff->staff_member }}" style="width: 200px;display:block;margin:auto;">
-                        <h5 style="width:100%;text-align: center;">@lang('main.keep.touch')</h5-->
-                        <h2 style="width:100%;text-align: center;margin-bottom:10px;">{{ $staff->staff_member }}</h2>
-                        <p style="width:100%;text-align: center;margin-top:12px; margin-bottom:20px;">{{ $staff->title_es . ' / ' . $staff->title_en }}</p>
-                        <ul style="margin: auto;width:fit-content;margin-left: 80px;text-align:left;">
-                            <li style="margin-bottom: 10px;"><img src="{{ asset('images/staff/t.png') }}" alt="Telephone" style="width: 15px; margin-right:15px;"> Tel. <a href="tel:+52{{  str_replace(' ', '', $staff->telephone)  }}" target="_blank"> {{ $staff->telephone }}</a></li>
-                            <li style="margin-bottom: 10px;"><img src="{{ asset('images/staff/c.png') }}" alt="Mobile" style="width: 15px; margin-right:15px;"> Cel. <a href="tel:+52{{  str_replace(' ', '', $staff->mobile)  }}" target="_blank"> {{ $staff->mobile }}</a></li>
-                            <li style="margin-bottom: 10px;"><img src="{{ asset('images/staff/m.png') }}" alt="Email" style="width: 15px; margin-right:15px;"> <a href="mailto:{{ $staff->email }}" target="_blank"> {{ $staff->email }}</a></li>
-                            <li style="margin-bottom: 10px;"><img src="{{ asset('images/staff/w.png') }}" alt="Whatsapp" style="width: 15px; margin-right:15px;"> Whats <a href="https://api.whatsapp.com/send?phone=52{{  str_replace(' ', '', $staff->mobile)  }}" target="_blank"> {{ $staff->mobile }}</a></li>
-                        </ul>
-                    </div>
-                    <!-- Title End --> 
                 @endforeach
             </div>
         </div>
