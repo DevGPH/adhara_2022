@@ -204,9 +204,9 @@
 						<div class="carousel-inner" role="listbox">
 							<div class="item active">
 								@if (App::getLocale() == 'es')
-									<img src="{{ asset('images/sliders/santa_es.png') }}" alt="Semana Santa">
-								@else
 									<img src="{{ asset('images/sliders/santa_en.png') }}" alt="Semana Santa">
+								@else
+									<img src="{{ asset('images/sliders/santa_es.png') }}" alt="Semana Santa">
 								@endif
 							</div>
 						</div>
