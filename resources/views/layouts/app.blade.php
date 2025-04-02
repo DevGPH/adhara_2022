@@ -192,14 +192,35 @@
 		<div id="mesesSinInteres" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mesesSinInteres">
 			<div class="modal-dialog modal-md" role="document">
 				<div class="modal-content">
-					<!--div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					</div-->
-					@if (App::getLocale() == 'es')
-						<img src="{{ asset('images/sliders/saint_es.png') }}" alt="Semana Santa">
-					@else
-						<img src="{{ asset('images/sliders/saint_en.png') }}" alt="Semana Santa">
-					@endif
+					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+						  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+						  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+						  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+						</ol>
+					  
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								@if (App::getLocale() == 'es')
+									<img src="{{ asset('images/sliders/santa_es.png') }}" alt="Semana Santa">
+								@else
+									<img src="{{ asset('images/sliders/santa_en.png') }}" alt="Semana Santa">
+								@endif
+							</div>
+						</div>
+					  
+						<!-- Controls -->
+						<a class="left carousel-control" style="background-image: none;" href="#carousel-example-generic" role="button" data-slide="prev">
+						  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						  <span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" style="background-image: none;" href="#carousel-example-generic" role="button" data-slide="next">
+						  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						  <span class="sr-only">Next</span>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -207,6 +228,7 @@
 		<script type="text/javascript">
 
 			$(document).ready(function(){
+				$('.carousel').carousel();
 				$('#mesesSinInteres').modal('show');
 				$("#login-modal").on('submit', function(e){
 					console.log('here');
