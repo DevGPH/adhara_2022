@@ -36,8 +36,7 @@ use Facade\Ignition\DumpRecorder\Dump;
 
 class ReservaController extends Controller
 {
-    private $endpoint = 'https://adharaexpress.com.mx/api/';
-
+    private $endpoint;
     private $clubestrella;
     private $finde;
 
@@ -50,6 +49,11 @@ class ReservaController extends Controller
     {
         $this->clubestrella = Config::where('module', 'clubestrella')->first();
         $this->finde = Config::where('module', 'finde')->first();
+        if (env("APP_ENV") != 'prod') {
+            $this->endpoint = "https://adharaexpress:8890/api/";
+        } else {
+            $this->endpoint = 'https://adharaexpress.com.mx/api/';
+        }
     }
 
     public function index(Request $request,$locale)
@@ -209,16 +213,27 @@ class ReservaController extends Controller
         }
 
         $url = $this->endpoint.$locale.'/temporada-habitacion';
-
-        $response = Http::asForm()->post($url, [
-            'checkIn' => $checkIn,
-            'checkOut' => $checkOut,
-            'habitaciones' => $dataBooking['rooms'],
-            'adultos' => $adultos,
-            'infantes' => $infantes,
-            'infantes_no_bf' => $infantes_no_bf,
-            'hotel_id' => 2
-        ]);
+        if (env("APP_ENV") != 'prod') { 
+            $response = Http::withoutVerifying()->asForm()->post($url, [
+                'checkIn' => $checkIn,
+                'checkOut' => $checkOut,
+                'habitaciones' => $dataBooking['rooms'],
+                'adultos' => $adultos,
+                'infantes' => $infantes,
+                'infantes_no_bf' => $infantes_no_bf,
+                'hotel_id' => 2
+            ]);   
+        } else {
+            $response = Http::asForm()->post($url, [
+                'checkIn' => $checkIn,
+                'checkOut' => $checkOut,
+                'habitaciones' => $dataBooking['rooms'],
+                'adultos' => $adultos,
+                'infantes' => $infantes,
+                'infantes_no_bf' => $infantes_no_bf,
+                'hotel_id' => 2
+            ]);
+        }
 
         $result = $response->json();
 
@@ -350,15 +365,28 @@ class ReservaController extends Controller
         if ($request->has('custom_booking')) {
             $url = $this->endpoint.$locale.'/select-habitacion/' . $habitacion->id;
 
-            $response = Http::asForm()->post($url, [
-                'checkIn' => $request->checkIn,
-                'checkOut' => $request->checkOut,
-                'habitaciones' => $request->rooms,
-                'adultos' => $request->adultos,
-                'infantes' => $request->infantes,
-                'noches' => 0,
-                'hotel_id' => 2
-            ]);
+            if (env("APP_ENV") != 'prod') { 
+                $response = Http::withoutVerifying()->asForm()->post($url, [
+                    'checkIn' => $request->checkIn,
+                    'checkOut' => $request->checkOut,
+                    'habitaciones' => $request->rooms,
+                    'adultos' => $request->adultos,
+                    'infantes' => $request->infantes,
+                    'noches' => 0,
+                    'hotel_id' => 2
+                ]);
+            } else {
+                $response = Http::asForm()->post($url, [
+                    'checkIn' => $request->checkIn,
+                    'checkOut' => $request->checkOut,
+                    'habitaciones' => $request->rooms,
+                    'adultos' => $request->adultos,
+                    'infantes' => $request->infantes,
+                    'noches' => 0,
+                    'hotel_id' => 2
+                ]);
+            }
+            
 
             $result = $response->json();
 
@@ -447,34 +475,66 @@ class ReservaController extends Controller
 
         $url = $this->endpoint.'es/reserva';
 
-        $response = Http::post($url, [
-                    'nombre' => $request->nombre,
-                    'apellidos' => $request->apellidos,
-                    'email' => $request->email,
-                    'telefono' => $request->telefono,
-                    'estado_region' => $request->estado_region,
-                    'isWhatsApp' => ($request->isWhatsApp == null) ? 0 : $request->isWhatsApp,
-                    'isClub' => ($request->isClub == null) ? 0 : $request->isClub,
-                    'ciudad' => $request->ciudad,
-                    'pais_id' => $request->pais_id,
-                    'habitacion_id' => $request->habitacion_id,
-                    'pago_x_destino' => ($request->metodo_pago == 'pago_destino') ? 1 : 0,
-                    'checkIn' => $request->checkIn,
-                    'checkOut' => $request->checkOut,
-                    'plataforma' => $request->plataforma,
-                    'noches' => $request->noches,
-                    'habitaciones' => $request->habitaciones,
-                    'adultos' => $request->adultoss,
-                    'infantes' => $request->infantess,
-                    'infantes_no_bf' => $request->infantess_no_bf,
-                    'precio' => $request->precio,
-                    'currency' => $request->currency,
-                    'comentarios' => $request->comentarios,
-                    'hotel_id' => 2,
-                    'payment' => $request->metodo_pago, //$request->metodo_pago, #pago_seguro , pago_destino
-                    'login' => ($request->cookie('user') !== null )?1:0,//verificar si existe la cookie para saber si esta logueado
-                    'lang' => App::getLocale()
-        ]);
+        if (env("APP_ENV") != 'prod') { 
+            $response = Http::withoutVerifying()->post($url, [
+                'nombre' => $request->nombre,
+                'apellidos' => $request->apellidos,
+                'email' => $request->email,
+                'telefono' => $request->telefono,
+                'estado_region' => $request->estado_region,
+                'isWhatsApp' => ($request->isWhatsApp == null) ? 0 : $request->isWhatsApp,
+                'isClub' => ($request->isClub == null) ? 0 : $request->isClub,
+                'ciudad' => $request->ciudad,
+                'pais_id' => $request->pais_id,
+                'habitacion_id' => $request->habitacion_id,
+                'pago_x_destino' => ($request->metodo_pago == 'pago_destino') ? 1 : 0,
+                'checkIn' => $request->checkIn,
+                'checkOut' => $request->checkOut,
+                'plataforma' => $request->plataforma,
+                'noches' => $request->noches,
+                'habitaciones' => $request->habitaciones,
+                'adultos' => $request->adultoss,
+                'infantes' => $request->infantess,
+                'infantes_no_bf' => $request->infantess_no_bf,
+                'precio' => $request->precio,
+                'currency' => $request->currency,
+                'comentarios' => $request->comentarios,
+                'hotel_id' => 2,
+                'payment' => $request->metodo_pago, //$request->metodo_pago, #pago_seguro , pago_destino
+                'login' => ($request->cookie('user') !== null )?1:0,//verificar si existe la cookie para saber si esta logueado
+                'lang' => App::getLocale()
+            ]);
+        } else {
+            $response = Http::post($url, [
+                'nombre' => $request->nombre,
+                'apellidos' => $request->apellidos,
+                'email' => $request->email,
+                'telefono' => $request->telefono,
+                'estado_region' => $request->estado_region,
+                'isWhatsApp' => ($request->isWhatsApp == null) ? 0 : $request->isWhatsApp,
+                'isClub' => ($request->isClub == null) ? 0 : $request->isClub,
+                'ciudad' => $request->ciudad,
+                'pais_id' => $request->pais_id,
+                'habitacion_id' => $request->habitacion_id,
+                'pago_x_destino' => ($request->metodo_pago == 'pago_destino') ? 1 : 0,
+                'checkIn' => $request->checkIn,
+                'checkOut' => $request->checkOut,
+                'plataforma' => $request->plataforma,
+                'noches' => $request->noches,
+                'habitaciones' => $request->habitaciones,
+                'adultos' => $request->adultoss,
+                'infantes' => $request->infantess,
+                'infantes_no_bf' => $request->infantess_no_bf,
+                'precio' => $request->precio,
+                'currency' => $request->currency,
+                'comentarios' => $request->comentarios,
+                'hotel_id' => 2,
+                'payment' => $request->metodo_pago, //$request->metodo_pago, #pago_seguro , pago_destino
+                'login' => ($request->cookie('user') !== null )?1:0,//verificar si existe la cookie para saber si esta logueado
+                'lang' => App::getLocale()
+            ]);
+        }
+        
 
 
         $result = $response->json();
