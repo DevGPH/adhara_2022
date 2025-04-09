@@ -187,7 +187,7 @@
 		</div>
 	</div>
 
-	@if (Route::is('inicio') && $finde == true)
+	@if (Route::is('inicio') && $finde == true && App::getLocale() == 'es')
 		{{-- Promociones 6 meses sin interes --}}
 		<div id="mesesSinInteres" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mesesSinInteres">
 			<div class="modal-dialog modal-md" role="document">
@@ -203,11 +203,13 @@
 						<!-- Wrapper for slides -->
 						<div class="carousel-inner" role="listbox">
 							<div class="item active">
-								@if (App::getLocale() == 'es')
-									<img src="{{ asset('images/sliders/weeksaint_es.png') }}" alt="Semana Santa">
-								@else
-									<img src="{{ asset('images/sliders/weeksaint_en.png') }}" alt="Semana Santa">
-								@endif
+								<img src="{{ asset('images/sliders/weeksaint1_es.png') }}" alt="Semana Santa">
+							</div>
+							<div class="item">
+								<img src="{{ asset('images/sliders/weeksaint2_es.png') }}" alt="Semana Santa">
+							</div>
+							<div class="item">
+								<img src="{{ asset('images/sliders/weeksaint3_es.png') }}" alt="Semana Santa">
 							</div>
 						</div>
 					  
