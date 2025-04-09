@@ -36,7 +36,7 @@ use Facade\Ignition\DumpRecorder\Dump;
 
 class ReservaController extends Controller
 {
-    private $endpoint;
+    private $endpoint = "https://adharaexpress.com.mx/api/";
     private $clubestrella;
     private $finde;
 
@@ -49,11 +49,11 @@ class ReservaController extends Controller
     {
         $this->clubestrella = Config::where('module', 'clubestrella')->first();
         $this->finde = Config::where('module', 'finde')->first();
-        if (env("APP_ENV") != 'prod') {
+        /*if (env("APP_ENV") != 'prod') {
             $this->endpoint = "https://adharaexpress:8890/api/";
         } else {
             $this->endpoint = 'https://adharaexpress.com.mx/api/';
-        }
+        }*/
     }
 
     public function index(Request $request,$locale)
@@ -213,7 +213,7 @@ class ReservaController extends Controller
         }
 
         $url = $this->endpoint.$locale.'/temporada-habitacion';
-        if (env("APP_ENV") != 'prod') { 
+        /*if (env("APP_ENV") != 'prod') { 
             $response = Http::withoutVerifying()->asForm()->post($url, [
                 'checkIn' => $checkIn,
                 'checkOut' => $checkOut,
@@ -223,7 +223,7 @@ class ReservaController extends Controller
                 'infantes_no_bf' => $infantes_no_bf,
                 'hotel_id' => 2
             ]);   
-        } else {
+        } else {*/
             $response = Http::asForm()->post($url, [
                 'checkIn' => $checkIn,
                 'checkOut' => $checkOut,
@@ -233,7 +233,7 @@ class ReservaController extends Controller
                 'infantes_no_bf' => $infantes_no_bf,
                 'hotel_id' => 2
             ]);
-        }
+        //}
 
         $result = $response->json();
 
@@ -365,7 +365,7 @@ class ReservaController extends Controller
         if ($request->has('custom_booking')) {
             $url = $this->endpoint.$locale.'/select-habitacion/' . $habitacion->id;
 
-            if (env("APP_ENV") != 'prod') { 
+            /*if (env("APP_ENV") != 'prod') { 
                 $response = Http::withoutVerifying()->asForm()->post($url, [
                     'checkIn' => $request->checkIn,
                     'checkOut' => $request->checkOut,
@@ -375,7 +375,7 @@ class ReservaController extends Controller
                     'noches' => 0,
                     'hotel_id' => 2
                 ]);
-            } else {
+            } else {*/
                 $response = Http::asForm()->post($url, [
                     'checkIn' => $request->checkIn,
                     'checkOut' => $request->checkOut,
@@ -385,7 +385,7 @@ class ReservaController extends Controller
                     'noches' => 0,
                     'hotel_id' => 2
                 ]);
-            }
+            //}
             
 
             $result = $response->json();
@@ -475,7 +475,7 @@ class ReservaController extends Controller
 
         $url = $this->endpoint.'es/reserva';
 
-        if (env("APP_ENV") != 'prod') { 
+        /*if (env("APP_ENV") != 'prod') { 
             $response = Http::withoutVerifying()->post($url, [
                 'nombre' => $request->nombre,
                 'apellidos' => $request->apellidos,
@@ -504,7 +504,7 @@ class ReservaController extends Controller
                 'login' => ($request->cookie('user') !== null )?1:0,//verificar si existe la cookie para saber si esta logueado
                 'lang' => App::getLocale()
             ]);
-        } else {
+        } else {*/
             $response = Http::post($url, [
                 'nombre' => $request->nombre,
                 'apellidos' => $request->apellidos,
@@ -533,7 +533,7 @@ class ReservaController extends Controller
                 'login' => ($request->cookie('user') !== null )?1:0,//verificar si existe la cookie para saber si esta logueado
                 'lang' => App::getLocale()
             ]);
-        }
+        //}
         
 
 
