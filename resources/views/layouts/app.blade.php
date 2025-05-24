@@ -187,7 +187,8 @@
 		</div>
 	</div>
 
-	@if (Route::is('inicio') && $finde == true && App::getLocale() == 'es')
+	@if (Route::is('inicio') && $finde == 1 && App::getLocale() == 'es')
+		
 		{{-- Promociones 6 meses sin interes --}}
 		<div id="mesesSinInteres" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mesesSinInteres">
 			<div class="modal-dialog modal-md" role="document">
@@ -232,13 +233,11 @@
 			$('#slider-main-home').owlCarousel({
 				autoHeight: false,
 				navigation: true,
-				navigationText: arrowIcons,
 				items: 1,
 				singleItem: true,
 				addClassActive: true,
 				transitionStyle: "fadeUp",
 				loop:true,
-				afterMove: animatetCaptions,
 				autoPlay: true,
 				autoplayTimeout:3000,
 				stopOnHover: true
@@ -273,6 +272,7 @@
 			});
 		</script>
 	@else
+
 		<script type="text/javascript">
 			$(document).ready(function(){
 				$("#login-modal").on('submit', function(e){
