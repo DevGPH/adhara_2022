@@ -39,7 +39,7 @@
         <div class="wrapper-full">
             <!-- Slider Carousel -->
 
-                <div class="widget-carousel owl-carousel owl-theme">
+                <div class="widget-carousel owl-carousel owl-theme" id="slider-main-home">
                     <!--@if ($finde)
                         @if (App::getLocale() == 'es')
                             <div class="slider-item slide_es"></div>

@@ -36,7 +36,7 @@ $('.owl-carousel').({
     loop:false,
     margin:10,
     autoplay:true,
-    autoplayTimeout:5000,
+    autoplayTimeout:3000,
     autoplayHoverPause:false,
     responsiveClass:true,
     rewind: true,

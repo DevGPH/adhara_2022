@@ -229,6 +229,21 @@
 		
 		<script type="text/javascript">
 
+			$('#slider-main-home').owlCarousel({
+				autoHeight: false,
+				navigation: true,
+				navigationText: arrowIcons,
+				items: 1,
+				singleItem: true,
+				addClassActive: true,
+				transitionStyle: "fadeUp",
+				loop:true,
+				afterMove: animatetCaptions,
+				autoPlay: true,
+				autoplayTimeout:3000,
+				stopOnHover: true
+			});
+
 			$(document).ready(function(){
 				$('.carousel').carousel();
 				$('#mesesSinInteres').modal('show');
@@ -295,11 +310,11 @@
 					</div-->
 					@if (App::getLocale() == 'es')
 						<a href="https://api.whatsapp.com/send?phone=529981221861" target="_blank">
-							<img src="{{ asset('images/sliders/cenaopo_es.png') }}" alt="Cena de Navidad">
+							<img src="" alt="Cena de Navidad">
 						</a>
 					@else
 						<a href="https://api.whatsapp.com/send?phone=529981221861" target="_blank">
-							<img src="{{ asset('images/sliders/cenaopo_en.png') }}" alt="Cena de Navidad">
+							<img src="" alt="Cena de Navidad">
 						</a>
 					@endif
 				</div>
