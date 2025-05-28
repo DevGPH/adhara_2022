@@ -48,10 +48,11 @@
         .fa-tripadvisor:before{content:"\f262"}
     </style>
 
-	<!--script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script-->
+    <!--script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script-->
 	<script src="{{ asset('js/jquery.min.js') }}"></script>
+
 	<script src="{{ asset('js/jquery-ui.min.js') }}"></script>
+	<script src="{{ asset('js/jquery.owl.carousel.js') }}"></script>
 	<script src="https://cdn.jsdelivr.net/npm/litepicker/dist/litepicker.js"></script>
 	<script src="{{ asset('js/moment.min.js')}}"></script>
     <!-- Meta Pixel Code -->
@@ -229,19 +230,6 @@
 		</div>
 		
 		<script type="text/javascript">
-
-			$('#slider-main-home').owlCarousel({
-				autoHeight: false,
-				navigation: true,
-				items: 1,
-				singleItem: true,
-				addClassActive: true,
-				transitionStyle: "fadeUp",
-				loop:true,
-				autoPlay: true,
-				autoplayTimeout:3000,
-				stopOnHover: true
-			});
 
 			$(document).ready(function(){
 				$('.carousel').carousel();

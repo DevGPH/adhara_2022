@@ -117,6 +117,8 @@
             autoHeight: true,
             animateOut: 'fadeOut',
             animateIn: 'fadeIn',
+            autoplay:true,
+            autoplayTimeout:4000,
             onInitialized: function () {
                 $(".site-header").addClass("header-over");
 
