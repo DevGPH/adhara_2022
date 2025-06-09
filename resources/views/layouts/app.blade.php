@@ -205,13 +205,13 @@
 						<!-- Wrapper for slides -->
 						<div class="carousel-inner" role="listbox">
 							<div class="item active">
-								<img src="{{ asset('images/sliders/t1_es.png') }}" alt="Semana Santa">
+								<img src="{{ asset('images/sliders/p1_es.png') }}" alt="Semana Santa">
 							</div>
 							<div class="item">
-								<img src="{{ asset('images/sliders/t2_es.png') }}" alt="Semana Santa">
+								<img src="{{ asset('images/sliders/p2_es.png') }}" alt="Semana Santa">
 							</div>
 							<div class="item">
-								<img src="{{ asset('images/sliders/t3_es.png') }}" alt="Semana Santa">
+								<img src="{{ asset('images/sliders/p3_es.png') }}" alt="Semana Santa">
 							</div>
 						</div>
 					  
