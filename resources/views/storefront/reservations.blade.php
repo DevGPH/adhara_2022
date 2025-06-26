@@ -189,6 +189,7 @@
                                                 @endforeach
                                                 <input type="hidden" name="plataforma"      value="WEB">
                                                 <input type="hidden" name="habitacion_id"   value="{{ $habitacion_id }}">
+                                                <input type="hidden" name="infantes_age"   value="{{ $infantes_age }}">
                                                 <input type="submit" value="RESERVA AHORA" class="btn" id="trackSale">
                                                 <script type="text/javascript">
                                                     $('#trackSale').click(function() {

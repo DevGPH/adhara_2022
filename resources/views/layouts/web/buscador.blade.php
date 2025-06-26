@@ -543,7 +543,6 @@
 
         $(document).on('change',".ageKids",function(e){
             KidsNoBF($(this).parent());
-            console.log('hola');
         });
 
         function buildKidSelect (container, value) {

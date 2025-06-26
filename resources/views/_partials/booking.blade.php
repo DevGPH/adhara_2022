@@ -184,15 +184,15 @@
                         <input type="hidden" class="form-control" name="total-paxs" value="1" readonly>
                         <input type="hidden" class="form-control" name="room.1.adults" id="room_1" value="1" readonly>
                         <input type="hidden" class="form-control" name="room.1.kids" id="kid_1" value="0" readonly>
-                        <input type="hidden" class="form-control" name="room.1.kids.age[]" id="kid_1_age" readonly>
+                        <input type="hidden" class="form-control" name="room.1.kids.age" id="kid_1_age" readonly>
                         <input type="hidden" class="form-control" name="room.1.kids.no.bf" id="kid_br_1" value="0" readonly>
                         <input type="hidden" class="form-control" name="room.2.adults" id="room_2" value="1" readonly>
                         <input type="hidden" class="form-control" name="room.2.kids" id="kid_2" value="0" readonly>
-                        <input type="hidden" class="form-control" name="room.2.kids.age[]" id="kid_2_age" readonly>
+                        <input type="hidden" class="form-control" name="room.2.kids.age" id="kid_2_age" readonly>
                         <input type="hidden" class="form-control" name="room.2.kids.no.bf" id="kid_br_2" value="0" readonly>
                         <input type="hidden" class="form-control" name="room.3.adults" id="room_3" value="1" readonly>
                         <input type="hidden" class="form-control" name="room.3.kids" id="kid_3" value="0" readonly>
-                        <input type="hidden" class="form-control" name="room.3.kids.age[]" id="kid_3_age" readonly>
+                        <input type="hidden" class="form-control" name="room.3.kids.age" id="kid_3_age" readonly>
                         <input type="hidden" class="form-control" name="room.3.kids.no.bf" id="kid_br_3" value="0" readonly>
                         <input type="hidden" class="form-control" name="adults" value="1" readonly>
                         <input type="hidden" class="form-control" name="kids" value="0" readonly>

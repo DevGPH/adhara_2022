@@ -41,7 +41,11 @@
                 <h4>@lang('main.tax.missing')</h4>
             </div>
             <div style="display: flex;justify-content: flex-end;margin-bottom: 40px;">
-                <h4 style="margin-right: auto;"><strong>@lang('main.booking.room.details')</strong> <br> Total Pax: {{ $total_adultos }} <br> @lang('main.booking.room.detail') {{$habitaciones}} <br> {{ $full_date . ' - ' . $full_date_2 }}</h4>
+                <h4 style="margin-right: auto;">
+                    <strong>@lang('main.booking.room.details')</strong> <br> 
+                    Total Pax: {{ $total_adultos + $total_kids }} <br>
+                    @lang('main.booking.room.detail') {{$habitaciones}} <br> 
+                    {{ $full_date . ' - ' . $full_date_2 }}</h4>
             </div>
             <!-- Rooms List -->
             <div class="widget-rooms-list">
@@ -108,6 +112,7 @@
                                         @foreach ($infantes_no_bf as $infante_no_bf)
                                             <input type="hidden" name="infantes_no_bf[]" value="{{ $infante_no_bf }}">
                                         @endforeach
+                                        <input type="hidden" name="infantes_age" value="{{ $infantes_age }}" />
                                         <button type="submit" id="" class="btn">@lang('main.breadcrumb.book')</button>
                                     </form>
                                 </div>

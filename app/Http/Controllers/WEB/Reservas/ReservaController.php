@@ -118,6 +118,7 @@ class ReservaController extends Controller
 
         $adultos = [];
         $infantes = [];
+        $infantes_age = [];
         $infantes_no_bf = [];
         $total_adultos = 0;
         $total_kids = 0;
@@ -142,13 +143,20 @@ class ReservaController extends Controller
             }
         }
 
-        if($dataBooking['kids'] > 0)
+        if ($dataBooking['kids'] > 0)
         {
             $total_kids += $dataBooking['room_1_kids'];
             array_push($infantes,$dataBooking['room_1_kids']);
 
             $total_kids_no_bf += $dataBooking['room_1_kids_no_bf'];
             array_push($infantes_no_bf,$dataBooking['room_1_kids_no_bf']);
+
+            for ($i = 0; $i < $dataBooking['room_1_kids']; $i++) {
+                $kids_ages = json_decode($dataBooking['room_1_kids_age']);
+                if ($kids_ages[$i] != null) {
+                    array_push($infantes_age, $kids_ages[$i]);
+                }
+            }
 
             if($dataBooking['rooms'] > 1)
             {
@@ -159,6 +167,13 @@ class ReservaController extends Controller
 
                     $total_kids_no_bf += $dataBooking['room_2_kids_no_bf'];
                     array_push($infantes_no_bf,$dataBooking['room_2_kids_no_bf']);
+
+                    for ($i = 0; $i < $dataBooking['room_2_kids']; $i++) {
+                        $kids_ages = json_decode($dataBooking['room_2_kids_age']);
+                        if ($kids_ages[$i] != null) {
+                            array_push($infantes_age, $kids_ages[$i]);
+                        }
+                    }
                 }
 
 
@@ -169,10 +184,17 @@ class ReservaController extends Controller
 
                     $total_kids_no_bf += $dataBooking['room_3_kids_no_bf'];
                     array_push($infantes_no_bf,$dataBooking['room_3_kids_no_bf']);
+
+                    for ($i = 0; $i < $dataBooking['room_3_kids']; $i++) {
+                        $kids_ages = json_decode($dataBooking['room_3_kids_age']);
+                        if ($kids_ages[$i] != null) {
+                            array_push($infantes_age, $kids_ages[$i]);
+                        }
+                    }
                 }
 
             }
-        }else{
+        } else {
             for ($i=0; $i < $dataBooking['rooms'] ; $i++) {
                 array_push($infantes,0);
                 array_push($infantes_no_bf,0);
@@ -257,6 +279,7 @@ class ReservaController extends Controller
                 'adultos'           => $adultos,
                 'infantes'          => $infantes,
                 'infantes_no_bf'    => $infantes_no_bf,
+                'infantes_age'      => json_encode($infantes_age),
                 'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
                 'status' => 'Error',
                 'rate' => $rate,
@@ -318,6 +341,7 @@ class ReservaController extends Controller
             'adultos'           => $adultos,
             'infantes'          => $infantes,
             'infantes_no_bf'    => $infantes_no_bf,
+            'infantes_age'      => json_encode($infantes_age),
             'lang' => (App::getLocale() == 'es') ? 'en' : 'es',
             'status' => $result['status'],
             'rate' => $rate,
@@ -332,6 +356,7 @@ class ReservaController extends Controller
     public function reservations(Request $request,$locale)
     {
         //dd($request->all(),'pre booking');
+        $all = $request->all();
         $paises = Pais::all();
         $habitacion = Habitacion::findOrFail($request->habitacion_id);
         $homecontroller = new HomeController();
@@ -343,6 +368,7 @@ class ReservaController extends Controller
         $datetime2 = new DateTime($request->checkOut);
         $interval = $datetime1->diff($datetime2);
         $days = $interval->format('%a');
+        $infantes_age = ($request->filled('infantes_age')) ? json_decode($request->infantes_age) : [];
 
         $pagoDestino = PagoDestino::whereDate('startDate','<=', $request->checkIn)
             ->whereDate('endDate','>=', $request->checkOut)
@@ -404,6 +430,7 @@ class ReservaController extends Controller
                 'adultos'      =>  [$result['data']['habitacion_1']['adultos']],
                 'infantes'     =>  [$result['data']['habitacion_1']['infantes']],
                 'infantes_no_bf'=> [0],
+                'infantes_age' => json_encode($infantes_age),
                 'habitacion_id'=>  $habitacion->id,
                 '_tot_adultos'  =>  $result['data']['habitacion_1']['adultos'],
                 '_tot_infantes' =>  $result['data']['habitacion_1']['infantes'],
@@ -443,6 +470,7 @@ class ReservaController extends Controller
             'adultos'      =>  $request->adultos,
             'infantes'     =>  $request->infantes,
             'infantes_no_bf'=> $request->infantes_no_bf,
+            'infantes_age' =>  json_encode($infantes_age),
             'habitacion_id'=>  $habitacion->id,
             '_tot_adultos'  =>  $request->total_adultos,
             '_tot_infantes' =>  $request->total_kids,
@@ -505,6 +533,7 @@ class ReservaController extends Controller
                 'lang' => App::getLocale()
             ]);
         } else {*/
+
             $response = Http::post($url, [
                 'nombre' => $request->nombre,
                 'apellidos' => $request->apellidos,
@@ -525,6 +554,7 @@ class ReservaController extends Controller
                 'adultos' => $request->adultoss,
                 'infantes' => $request->infantess,
                 'infantes_no_bf' => $request->infantess_no_bf,
+                'infantes_age' => $request->infantes_age,
                 'precio' => $request->precio,
                 'currency' => $request->currency,
                 'comentarios' => $request->comentarios,
