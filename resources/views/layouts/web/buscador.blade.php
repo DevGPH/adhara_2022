@@ -193,7 +193,7 @@
 
         var warning_kids = '<p style="font-size: 11px;text-align: center;">Edad de los menores (0 a 11 años)</p>';
 
-        var age_template = '<select name="" id="" class="form-control ageKids">'+
+        var age_template = '<select name="ageKids" id="" class="form-control ageKids">'+
                             '<option value="0">0 @lang("main.mini-banner2-07") </option>'+
                             '<option value="1">1 @lang("main.mini-banner2-07")</option>'+
                             '<option value="2">2 @lang("main.mini-banner2-07")</option>'+
@@ -441,7 +441,8 @@
 
                     case 'room_1_kid':
                         $("input[name='room.1.kids']").val(pax);
-                        $("#room_1_age").append(age_template);
+                        buildKidSelect($("input[name='room.1.kids']"), 1);
+                        //$("#room_1_age").append(age_template);
 
                         kids_no_bf = $("input[name='room.1.kids.no.bf']").val();
                         kids_no_bf ++;
@@ -542,7 +543,23 @@
 
         $(document).on('change',".ageKids",function(e){
             KidsNoBF($(this).parent());
+            console.log('hola');
         });
+
+        function buildKidSelect (container, value) {
+            var selectList = document.createElement("select");
+            selectList.id = "ageKids-" + value;
+            selectList.name = "subtype";
+            var age = 'AÑOS';
+            for (i = 0; i < 12; i++) {
+                if (i == 1) {
+                    age = 'AÑO';
+                }
+                selectList.append('<option value="' + i + '">' + i + ' ' + age + '</option>');
+            }
+            
+            container.appendChild(selectList);
+        }
 
     });
 </script>

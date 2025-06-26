@@ -114,7 +114,7 @@
                                     <span><!--i class="fa-solid fa-bed" style="margin-right: 10px;"></i-->@lang('main.booking.room') 2</span>
                                     <div class="minus-room"><img src="{{ asset('images/icons/buscador/minus.png') }}" style="width: 15px;" alt=""></div>
                                 </div>
-                                <div class="body room">
+                                <div class="body room" id ="body_room_2">
                                     <div class="room_feature" id="room_2_adult">
                                     @lang('main.booking.adults')
                                         <div class="controls-box room_adult">
@@ -145,7 +145,7 @@
                                     <span><!--i class="fa-solid fa-bed" style="margin-right: 10px;"></i-->@lang('main.booking.room') 3</span>
                                     <div class="minus-room"> <img src="{{ asset('images/icons/buscador/minus.png') }}" style="width: 15px;" alt=""> </div>
                                 </div>
-                                <div class="body room">
+                                <div class="body room" id="body_room_3">
                                     <div class="room_feature" id="room_3_adult">
                                     @lang('main.booking.adults')
                                         <div class="controls-box room_adult">
@@ -184,7 +184,16 @@
                         <input type="hidden" class="form-control" name="total-paxs" value="1" readonly>
                         <input type="hidden" class="form-control" name="room.1.adults" id="room_1" value="1" readonly>
                         <input type="hidden" class="form-control" name="room.1.kids" id="kid_1" value="0" readonly>
+                        <input type="hidden" class="form-control" name="room.1.kids.age[]" id="kid_1_age" readonly>
                         <input type="hidden" class="form-control" name="room.1.kids.no.bf" id="kid_br_1" value="0" readonly>
+                        <input type="hidden" class="form-control" name="room.2.adults" id="room_2" value="1" readonly>
+                        <input type="hidden" class="form-control" name="room.2.kids" id="kid_2" value="0" readonly>
+                        <input type="hidden" class="form-control" name="room.2.kids.age[]" id="kid_2_age" readonly>
+                        <input type="hidden" class="form-control" name="room.2.kids.no.bf" id="kid_br_2" value="0" readonly>
+                        <input type="hidden" class="form-control" name="room.3.adults" id="room_3" value="1" readonly>
+                        <input type="hidden" class="form-control" name="room.3.kids" id="kid_3" value="0" readonly>
+                        <input type="hidden" class="form-control" name="room.3.kids.age[]" id="kid_3_age" readonly>
+                        <input type="hidden" class="form-control" name="room.3.kids.no.bf" id="kid_br_3" value="0" readonly>
                         <input type="hidden" class="form-control" name="adults" value="1" readonly>
                         <input type="hidden" class="form-control" name="kids" value="0" readonly>
                         <input type="hidden" class="form-control" name="rooms" value="1" readonly>
@@ -198,6 +207,7 @@
 </form>
 
 <script type="text/javascript">
+    var test = [];
     $(document).ready(function(){
 
         var picker = new Litepicker({
@@ -214,28 +224,9 @@
             }
         });
 
-        /*var iconPick = new Litepicker({
-            element: document.getElementById('calendar'),
-            singleMode: false,
-            format: 'DD-MM-YYYY',
-            resetButton: true,
-            minDate:moment(),
-            onSelect: function(date1, date2) {
-                console.log(iconPick.getStartDate().format('YYYY-MM-DD'));
-                $("input[name='checkIn']").val(iconPick.getStartDate().format('YYYY-MM-DD'));
-                $("input[name='checkOut']").val(iconPick.getEndDate().format('YYYY-MM-DD'));
-                var str = "";
-                str = iconPick.getStartDate().format('YYYY-MM-DD')+' - '+iconPick.getEndDate().format('YYYY-MM-DD');
-                console.log(str, 'hola');
-                $('#start').val(str);
-            }
-        });*/
-
         var rooms = 1;
         var years = 'años';
-       /* if(Cookies.get("lang") == "en"){
-            years = "years";
-        } years = "years";*/
+
         $("#pax_rooms").on('click',function(){
             $(".rooms_all").css('display','block');
         });
@@ -260,33 +251,24 @@
             }
         });
 
-        var warning_kids = '<p style="font-size: 11px;text-align: center;">Edad de los menores (0 a 11 años)</p>';
-
-        var age_template = '<select name="" id="" class="form-control ageKids">'+
-                            '<option value="0">0 @lang("main.mini-banner2-07") </option>'+
-                            '<option value="1">1 @lang("main.mini-banner2-077")</option>'+
-                            '<option value="2">2 @lang("main.mini-banner2-07")</option>'+
-                            '<option value="3">3 @lang("main.mini-banner2-07")</option>'+
-                            '<option value="4">4 @lang("main.mini-banner2-07")</option>'+
-                            '<option value="5">5 @lang("main.mini-banner2-07")</option>'+
-                            '<option value="6">6 @lang("main.mini-banner2-07")</option>'+
-                            '<option value="7">7 @lang("main.mini-banner2-07")</option>'+
-                            '<option value="8">8 @lang("main.mini-banner2-07")</option>'+
-                            '<option value="9">9 @lang("main.mini-banner2-07")</option>'+
-                            '<option value="10">10 @lang("main.mini-banner2-07")</option>'+
-                            '<option value="11">11 @lang("main.mini-banner2-07")</option>'+
-                            '</select>';
-
         $(".room_feature .label-plus").on('click',addRoom);
-
         $(".minus-room").on('click',deleteRoom);
 
         function deleteRoom(){
             var element = $(this).parents()[1];
+            var id_element = $(this).parents()[1].id;
+            var body_room = $('#' + id_element).children('div')[1].id;
+            var age_kids = $('#' + body_room).children('div')[2].id;
+            $("#" + age_kids).empty();
+          
             var spanAdults = $(element).find('span')[1];
             var spanKids = $(element).find('span')[2];
+
             //Para obtener valores de un W.fn.init JQUERY
             var pax_ = parseInt($(spanAdults).text()) + parseInt($(spanKids).text());
+            $(element).find('span')[1].innerHTML = '1';
+            $(element).find('span')[2].innerHTML = '0';
+            
             var paxs = $("input[name='total-paxs']").val();
             var total = paxs - pax_;
 
@@ -484,7 +466,7 @@
         });
 
 
-        $(".room_kid .up").on('click',function(e){
+        $(".room_kid .up").on('click',function(e) {
             e.preventDefault();
             var element = $(this).siblings('.total-pax');
             var divParent = $(this).parents()[1];
@@ -497,6 +479,7 @@
                 if(pax_)
                     pax_++;
 
+                console.log('total paxs' + pax_);
                 var newPlaceholder = pax_+"pax, "+rooms+"hab";
                 $("#pax_rooms").attr('placeholder',newPlaceholder);
                 $("input[name='total-paxs']").val(pax_);
@@ -509,7 +492,8 @@
 
                     case 'room_1_kid':
                         $("input[name='room.1.kids']").val(pax);
-                        $("#room_1_age").append(age_template);
+                        buildKidSelect($("#room_1_age"), pax, 1);
+                        //$("#room_1_age").append(age_template);
 
                         kids_no_bf = $("input[name='room.1.kids.no.bf']").val();
                         kids_no_bf ++;
@@ -518,7 +502,8 @@
                         break;
                     case 'room_2_kid':
                         $("input[name='room.2.kids']").val(pax);
-                        $("#room_2_age").append(age_template);
+                        buildKidSelect($("#room_2_age"), pax, 2);
+                        //$("#room_2_age").append(age_template);
 
                         kids_no_bf = $("input[name='room.2.kids.no.bf']").val();
                         kids_no_bf ++;
@@ -527,7 +512,8 @@
                         break;
                     case 'room_3_kid':
                         $("input[name='room.3.kids']").val(pax);
-                        $("#room_3_age").append(age_template);
+                        buildKidSelect($("#room_3_age"), pax, 3);
+                        //$("#room_3_age").append(age_template);
 
                         kids_no_bf = $("input[name='room.3.kids.no.bf']").val();
                         kids_no_bf ++;
@@ -552,18 +538,18 @@
 
         });
 
-        $(".room_kid .down").on('click',function(e){
+        $(".room_kid .down").on('click',function(e) {
             e.preventDefault();
             var element = $(this).siblings('.total-pax');
             var divParent = $(this).parents()[1];
             var pax = parseInt(element[0].innerHTML);
             var divRoomAge = '';
-            if(pax >= 1){
+            if (pax >= 1) {
                 pax--;
                 element.html(pax);
                 var pax_ = parseInt($("input[name='total-paxs']").val());
-                if(pax_)
-                    pax_--;
+                if (pax_)
+                    pax_ --;
 
                 var newPlaceholder = pax_+"pax, "+rooms+"hab";
                 $("#pax_rooms").attr('placeholder',newPlaceholder);
@@ -578,16 +564,46 @@
                         $("input[name='room.1.kids']").val(pax);
                         $("#room_1_age select:last-child").remove();
                         divRoomAge = 'room_1_age';
+                        // We need to eliminate the kids age array 
+                        var value_input = JSON.parse($("#kid_1_age").val());
+                        var new_array = [];
+                        if (value_input != null && value_input != '') {
+                            for (i = 0; i < pax; i++) {
+                                new_array[i] = value_input[i];
+                            }
+                            console.log(new_array);
+                            $("#kid_1_age").val(JSON.stringify(new_array))
+                        }
                         break;
                     case 'room_2_kid':
                         $("input[name='room.2.kids']").val(pax);
                         $("#room_2_age select:last-child").remove();
                         divRoomAge = 'room_2_age';
+                        // We need to eliminate the kids age array 
+                        var value_input = JSON.parse($("#kid_2_age").val());
+                        var new_array = [];
+                        if (value_input != null && value_input != '') {
+                            for (i = 0; i < pax; i++) {
+                                new_array[i] = value_input[i];
+                            }
+                            console.log(new_array);
+                            $("#kid_2_age").val(JSON.stringify(new_array))
+                        }
                         break;
                     case 'room_3_kid':
                         $("input[name='room.3.kids']").val(pax);
                         $("#room_3_age select:last-child").remove();
                         divRoomAge = 'room_3_age';
+                        // We need to eliminate the kids age array 
+                        var value_input = JSON.parse($("#kid_2_age").val());
+                        var new_array = [];
+                        if (value_input != null && value_input != '') {
+                            for (i = 0; i < pax; i++) {
+                                new_array[i] = value_input[i];
+                            }
+                            console.log(new_array);
+                            $("#kid_3_age").val(JSON.stringify(new_array))
+                        }
                         break;
                 }
 
@@ -608,9 +624,131 @@
 
         });
 
-        $(document).on('change',".ageKids",function(e){
+        $(document).on('change',".ageKids",function(e) {
+            //Meter aqui las edades
+            var element = $(this).parent().attr("id");
+            var value_input = $("#" + element ).val();
+            //var value_input = JSON.parse($("#kid_1_age").val());
+            var id = $(this).attr("id");
+
+            if (id == 'ageKids-room-1-1') {
+                if (value_input != null && value_input != '') {
+                    test = JSON.parse($("#kid_1_age").val());
+                }
+                test[0] = $(this).find(":selected").val();
+                $("#kid_1_age").val(JSON.stringify(test));
+            }
+            if (id == 'ageKids-room-1-2') {
+                if (value_input != null && value_input != '') {
+                    test = JSON.parse($("#kid_1_age").val());
+                }
+                test[1] = $(this).find(":selected").val();
+                $("#kid_1_age").val(JSON.stringify(test));
+            }
+            if (id == 'ageKids-room-1-3') {
+                if (value_input != null && value_input != '') {
+                    test = JSON.parse($("#kid_1_age").val());
+                }
+                test[2] = $(this).find(":selected").val();
+                $("#kid_1_age").val(JSON.stringify(test));
+            }
+            // ROOM 2
+            if (id == 'ageKids-room-2-1') {
+                if (value_input != null && value_input != '') {
+                    test = JSON.parse($("#kid_2_age").val());
+                }
+                test[0] = $(this).find(":selected").val();
+                $("#kid_2_age").val(JSON.stringify(test));
+            }
+            if (id == 'ageKids-room-2-2') {
+                if (value_input != null && value_input != '') {
+                    test = JSON.parse($("#kid_2_age").val());
+                }
+                test[1] = $(this).find(":selected").val();
+                $("#kid_2_age").val(JSON.stringify(test));
+            }
+            if (id == 'ageKids-room-2-3') {
+                if (value_input != null && value_input != '') {
+                    test = JSON.parse($("#kid_2_age").val());
+                }
+                test[2] = $(this).find(":selected").val();
+                $("#kid_2_age").val(JSON.stringify(test));
+            }
+            // ROOM 3
+            if (id == 'ageKids-room-3-1') {
+                if (value_input != null && value_input != '') {
+                    test = JSON.parse($("#kid_3_age").val());
+                }
+                test[0] = $(this).find(":selected").val();
+                $("#kid_3_age").val(JSON.stringify(test));
+            }
+            if (id == 'ageKids-room-3-2') {
+                if (value_input != null && value_input != '') {
+                    test = JSON.parse($("#kid_3_age").val());
+                }
+                test[1] = $(this).find(":selected").val();
+                $("#kid_3_age").val(JSON.stringify(test));
+            }
+            if (id == 'ageKids-room-3-3') {
+                if (value_input != null && value_input != '') {
+                    test = JSON.parse($("#kid_3_age").val());
+                }
+                test[2] = $(this).find(":selected").val();
+                $("#kid_3_age").val(JSON.stringify(test));
+            }
+            console.log(test);
             KidsNoBF($(this).parent());
         });
+
+        function buildKidSelect (container, value, room) {
+            var value_input = null;
+            var room_1_kids_age = null;
+            var warning_kids = '<p style="font-size: 11px;text-align: center;">Edad de los menores (0 a 11 años)</p>';
+            container.empty();
+            var age = 'AÑOS';
+            var index = 0;
+            var find_value = null;
+            for (y = 1; y <= value; y++) {
+                value_input = $("#kid_" + room + "_age");
+                var find_select = false;
+                if (value_input.val() != null && value_input.val() != '') {
+                    room_1_kids_age = JSON.parse(value_input.val());
+                    if (index in room_1_kids_age) {
+                        find_select = true;
+                    }
+                } 
+                
+                //var div = document.createElement("div");
+                var selectList = document.createElement("select");
+                selectList.id = "ageKids-room-" + room + "-" + y;
+                selectList.name = "subtype";
+                selectList.className = 'ageKids';
+                container.append(selectList);
+
+                for (i = 0; i < 12; i++) {
+                    if (find_select) {
+                        if (i == room_1_kids_age[index]) {
+                            find_value = i;
+                        }
+                    }
+
+                    if (i == 1) {
+                        age = 'AÑO';
+                    } else {
+                        age = 'AÑOS';
+                    }
+                    var opt = $("<option>").val(i).text(i + ' ' + age);
+                    //append option to the select element
+                    $("#ageKids-room-" + room + "-" + y).append(opt);
+
+                }
+                if (find_select) {
+                    $("#ageKids-room-" + room + "-" + y + " option[value=" + find_value + "]").attr('selected','selected');
+                }
+                
+                index++;
+            }
+        }
 
     });
 </script>
