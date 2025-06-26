@@ -219,7 +219,7 @@
                 <!-- Offers Title End -->
                 <!-- Offers Content -->
                 <div class="widget-inner">
-                    <div class="offers-item">
+                    <div class="offers-item" onclick="location.href='https://api.whatsapp.com/send?phone=529981221861';">
                         <div class="item-inner">
                             <div class="item-photo" data-background="{{ asset('images/offers/desayuno.png') }}"></div>
                             <div class="item-desc">
@@ -230,7 +230,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="offers-item">
+                    <div class="offers-item" onclick="location.href='https://clubestrella.mx/es';">
                         <div class="item-inner">
                             <div class="item-photo" data-background="{{ asset('images/offers/clubestrella.png') }}"></div>
                             <div class="item-desc">
@@ -241,7 +241,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="offers-item">
+                    <div class="offers-item" onclick="location.href='https://www.adharacancun.com/es/menu_adhara';">
                         <div class="item-inner">
                             <div class="item-photo" data-background="{{ asset('images/offers/meal.png') }}"></div>
                             <div class="item-desc">
@@ -252,13 +252,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="offers-item">
+                    <div class="offers-item" onclick="location.href='https://adhararewards.com/es';">
                         <div class="item-inner">
-                            <div class="item-photo" data-background="{{ asset('images/offers/oktrip.png') }}"></div>
+                            <div class="item-photo" data-background="{{ asset('images/offers/rewards.png') }}"></div>
                             <div class="item-desc">
                                 <h3>@lang('main.index.offers.oktrip.title')</h3>
                                 <p>@lang('main.index.offers.oktrip.text')</p>
-                                <a href="https://oktrip.mx/" target="_blank" class="btn-link">@lang('main.button.more')</a>
+                                <a href="https://adhararewards.com/es" target="_blank" class="btn-link">@lang('main.button.more')</a>
                             </div>
                         </div>
                     </div>
