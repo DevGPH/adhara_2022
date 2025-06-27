@@ -221,7 +221,7 @@
                 <div class="widget-inner">
                     <div class="offers-item" onclick="location.href='https://api.whatsapp.com/send?phone=529981221861';">
                         <div class="item-inner">
-                            <div class="item-photo" data-background="{{ asset('images/offers/desayuno.png') }}"></div>
+                            <div class="item-photo" data-background="{{ asset('images/offers/breakfast.png') }}"></div>
                             <div class="item-desc">
                                 <h3>@lang('main.index.offers.hotel.title')</h3>
                                 <p>@lang('main.index.offers.hotel.subtitle')</p>
@@ -243,7 +243,11 @@
                     </div>
                     <div class="offers-item" onclick="location.href='https://www.adharacancun.com/es/menu_adhara';">
                         <div class="item-inner">
-                            <div class="item-photo" data-background="{{ asset('images/offers/meal.png') }}"></div>
+                            @if (App::getLocale() == 'es')
+                                <div class="item-photo" data-background="{{ asset('images/offers/meal_es.jpg') }}"></div>
+                                @else
+                                <div class="item-photo" data-background="{{ asset('images/offers/meal_en.jpg') }}"></div>
+                            @endif
                             <div class="item-desc">
                                 <h3>@lang('main.index.offers.restaurant.title')</h3>
                                 <p>@lang('main.index.offers.restaurant.subtitle')</p>
