@@ -175,7 +175,7 @@ return [
     'service.whats.text2' => 'Le recordamos que toda la información usada por este medio, está protegida por nuestro aviso de privacidad.',
     'service.bus.title' => 'Transportación incluida',
     'service.bus.subtitle' => 'Nosotros te llevamos gratis',
-    'service.bus.text' => 'Todos los huéspedes de nuestro hotel tienen incluido el servicio de transportación de: <br> Hotel - Playa - Hotel <br> <br> <small>Este servicio está sujeto a disponibilidad y horarios establecidos* Reserva con nosotros y agenda tu transporte con anticipación* Aplican restricciones*</small> <br>  <hr/> <br> <strong style="margin-bottom:10px;">Exclusivo para clientes Tarifa Mágica*</strong> <br> Hotel - Aeropuerto Internacional de Cancún.',
+    'service.bus.text' => 'Todos los huéspedes de nuestro hotel tienen incluido el servicio de transportación de: <br> Hotel - Playa - Hotel <br> <br> <small>Este servicio está sujeto a disponibilidad y horarios establecidos* Reserva con nosotros y agenda tu transporte con anticipación* Aplican restricciones*</small> <br>',
     'service.bus.text2' => '<small>Este servicio solo aplica reservando tu estancia en nuestro sitio web: www.adharacancun.com o vía WhatsApp* Este servicio está sujeto a disponibilidad y horario* Reserva con nosotros y agenda tu transporte con anticipación* Aplican restricciones*</small>',
     'service.bus.text3' => '<small>Este servicio no aplica reservando con otras agencias de viaje o sitios web ajenos a nuestros canales de reserva ya mencionados*</small>',
     'service.parking.title' => 'Estacionamiento',

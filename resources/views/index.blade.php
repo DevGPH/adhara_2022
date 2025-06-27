@@ -316,7 +316,7 @@
                             <h5>@lang('main.index.service.bus.subtitle')</h5>
                             <p>@lang('main.index.service.bus.text')</p>
                             <p>@lang('main.index.service.bus.text2')</p>
-                            <p>@lang('main.index.service.bus.text3')</p>
+                            <!--p>@lang('main.index.service.bus.text3')</p-->
                             <a href="{{ route('servicios',[App::getLocale()]) }}" class="btn-link">@lang('main.button.info')</a>
                         </div>
                     </div>
