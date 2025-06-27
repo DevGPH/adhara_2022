@@ -222,6 +222,10 @@ return [
 
     //BOTON VER MAS
     'button.more' => 'SEE MORE',
+    'button.more0' => 'BOOK HERE',
+    'button.more1' => 'VIEW MENU',
+    'button.more2' => 'SIGN UP',
+    'button.more3' => 'SIGN UP',
     'button.info' => 'MORE INFO',
 
     'check.title' => 'ROOM LIST',

@@ -226,7 +226,7 @@
                                 <h3>@lang('main.index.offers.hotel.title')</h3>
                                 <p>@lang('main.index.offers.hotel.subtitle')</p>
                                 <p>@lang('main.index.offers.hotel.text')</p>
-                                <a href="#" class="btn-link">@lang('main.button.more')</a>
+                                <a href="#" class="btn-link">@lang('main.button.more0')</a>
                             </div>
                         </div>
                     </div>
@@ -237,7 +237,7 @@
                                 <h3>@lang('main.index.offers.club.title')</h3>
                                 <p>@lang('main.index.offers.club.subtitle')</p>
                                 <p>@lang('main.index.offers.text')</p>
-                                <a href="https://clubestrella.mx/es" target="_blank" class="btn-link">@lang('main.button.more')</a>
+                                <a href="https://clubestrella.mx/es" target="_blank" class="btn-link">@lang('main.button.more2')</a>
                             </div>
                         </div>
                     </div>
@@ -252,7 +252,7 @@
                                 <h3>@lang('main.index.offers.restaurant.title')</h3>
                                 <p>@lang('main.index.offers.restaurant.subtitle')</p>
                                 <p>@lang('main.index.offers.restaurant.text')</p>
-                                <a href="#" class="btn-link">@lang('main.button.more')</a>
+                                <a href="#" class="btn-link">@lang('main.button.more1')</a>
                             </div>
                         </div>
                     </div>
@@ -262,7 +262,7 @@
                             <div class="item-desc">
                                 <h3>@lang('main.index.offers.oktrip.title')</h3>
                                 <p>@lang('main.index.offers.oktrip.text')</p>
-                                <a href="https://adhararewards.com/es" target="_blank" class="btn-link">@lang('main.button.more')</a>
+                                <a href="https://adhararewards.com/es" target="_blank" class="btn-link">@lang('main.button.more3')</a>
                             </div>
                         </div>
                     </div>

@@ -218,6 +218,10 @@ return [
 
     //BOTON VER MAS
     'button.more' => 'VER MÁS',
+    'button.more0' => 'RESERVA AQUÍ',
+    'button.more1' => 'VER MENU',
+    'button.more2' => 'REGÍSTRATE',
+    'button.more3' => 'INSCRÍBETE',
     'button.info' => 'MÁS INFORMACIÓN',
 
     // VISTA COTIZACION
