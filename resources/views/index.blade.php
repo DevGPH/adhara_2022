@@ -315,9 +315,9 @@
                             <h3><a href="{{ route('servicios',[App::getLocale()]) }}"></a>@lang('main.index.service.bus.title')</h3>
                             <h5>@lang('main.index.service.bus.subtitle')</h5>
                             <p>@lang('main.index.service.bus.text')</p>
-                            <p>@lang('main.index.service.bus.text2')</p>
-                            <!--p>@lang('main.index.service.bus.text3')</p-->
-                            <a href="{{ route('servicios',[App::getLocale()]) }}" class="btn-link">@lang('main.button.info')</a>
+                            <!--p>@lang('main.index.service.bus.text2')</p>
+                            <p>@lang('main.index.service.bus.text3')</p-->
+                            <a href="{{ route('servicios',[App::getLocale()]) }}" class="btn-link">@lang('main.index.service.grupos.button')</a>
                         </div>
                     </div>
                     <div class="blog-item">
@@ -343,9 +343,9 @@
                         </div>
                         <div class="item-desc">
                             <h3><a href="{{ route('servicios',[App::getLocale()]) }}"></a>@lang('main.index.service.room.title')</h3>
-                            <h5>@lang('main.index.service.room.subtitle')</h5>
+                            <!--h5>@lang('main.index.service.room.subtitle')</h5-->
                             <p>@lang('main.index.service.room.text')</p>
-                            <a href="{{ route('servicios',[App::getLocale()]) }}" class="btn-link">@lang('main.button.info')</a>
+                            <a href="{{ route('servicios',[App::getLocale()]) }}" class="btn-link">@lang('main.index.service.room.button')</a>
                         </div>
                     </div>
                     <!--div class="blog-item">
