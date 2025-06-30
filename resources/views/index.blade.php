@@ -291,9 +291,9 @@
                             <!--div class="item-date"><img src="{{ asset('images/services/icon.png') }}" alt=""></div-->
                             <div class="media-photo">
                                 @if (App::getLocale() == 'en')
-                                    <a href="https://api.whatsapp.com/send?phone=529981221861" data-background="{{ asset('images/services/movile_en.png') }}"></a>
+                                    <a href="https://api.whatsapp.com/send?phone=529981221861" data-background="{{ asset('images/services/whatsf_en.png') }}"></a>
                                 @else
-                                    <a href="https://api.whatsapp.com/send?phone=529981221861" data-background="{{ asset('images/services/movile_es.png') }}"></a>
+                                    <a href="https://api.whatsapp.com/send?phone=529981221861" data-background="{{ asset('images/services/whatsf_es.png') }}"></a>
                                 @endif
                             </div>
                         </div>
@@ -308,7 +308,7 @@
                         <div class="item-media">
                             <!--div class="item-date"><img src="{{ asset('images/services/icon3.png') }}" alt=""></div-->
                             <div class="media-photo">
-                                <a href="{{ route('servicios',[App::getLocale()]) }}" data-background="{{ asset('images/services/service2.png') }}"></a>
+                                <a href="{{ route('servicios',[App::getLocale()]) }}" data-background="{{ asset('images/services/service22.png') }}"></a>
                             </div>
                         </div>
                         <div class="item-desc">
@@ -338,7 +338,7 @@
                         <div class="item-media">
                             <!--div class="item-date"><img src="{{ asset('images/services/icon2.png') }}" alt=""></div-->
                             <div class="media-photo">
-                                <a href="{{ route('servicios',[App::getLocale()]) }}" data-background="{{ asset('images/services/baño.png') }}"></a>
+                                <a href="{{ route('servicios',[App::getLocale()]) }}" data-background="{{ asset('images/services/service23.png') }}"></a>
                             </div>
                         </div>
                         <div class="item-desc">
