@@ -78,6 +78,19 @@ class HomeController extends Controller
         ]);
     }
 
+    public function mandala($locale)
+    {
+        $rate = $this->rateToday($locale);
+        return view('storefront.mandala')->with([
+            'room_active' => 'active-link',
+            'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
+            'rate' => $rate,
+            'enableClub' => $this->clubestrella->enable,
+            'finde' => $this->finde->enable,
+            'id' => 0
+        ]);
+    }
+
     public function contact($locale)
     {
         $rate = $this->rateToday($locale);

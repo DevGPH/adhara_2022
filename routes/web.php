@@ -47,6 +47,7 @@ Route::prefix('{locale}')->group(function ()
     Route::get('/reserva-response/{id?}',[ReservaController::class,'response'])->name('response.reserva');
     Route::post('/reservas/booking',[ReservaController::class,'store'])->name('book.reserve');
     Route::get('/test-mail',[HomeController::class,'mail'])->name('test_mail');
+    Route::get('/mandala-beach',[HomeController::class,'mandala'])->name('mandala');
 
 
     #CLUBESTRELLA

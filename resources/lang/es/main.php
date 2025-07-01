@@ -5,7 +5,7 @@ return [
     'nav-home' => 'Inicio',
     'nav-rooms' => 'Habitaciones',
     'nav-contact' => 'Contáctanos',
-    'nav-services' => 'Servicios',
+    'nav-services' => 'Diversión adicional',
     'nav-hotel' => 'Hotel',
     'nav-flag' => 'usa.png',
     'nav-lang' => 'English',
@@ -166,9 +166,9 @@ return [
     'details.hotel.gym.text2' => 'El ambiente del gimnasio es limpio, bien iluminado y climatizado, lo que proporciona un entorno cómodo y agradable para realizar ejercicios. Se proporcionan toallas y agua potable para mantener a los huéspedes hidratados durante sus entrenamientos.',
 
     // SECCION SERVICIOS
-    'services.title' => 'Servicios',
-    'services.subtitle' => 'Especiales para ti',
-    'services.text' => 'Crear una buena experiencia para tus vacaciones no ocurre por coincidencia. Ocurre por que nos esforzamos de hacerlo realidad con magia en cada detalle.',
+    'services.title' => 'Diversión adicional',
+    'services.subtitle' => '¡Obtén descuentos por ser nuestro huésped!',
+    'services.text' => 'Ya sea que busques relajación junto a la piscina, emocionantes deportes acuáticos o vibrantes',
     'service.whats.title' => 'Asistencia vía WhatsApp',
     'service.whats.subtitle' => 'Una respuesta inmediata para ti',
     'service.whats.text' => 'Ahora todo es más cómodo, fácil y sencillo por WhatsApp, hemos puesto a tu disposición asistencia inmediata vía WhatsApp, ahora todo es más cómodo, fácil y sencillo, sólo envíanos un mensaje al número: 998 122 1861. Después de enviarnos un mensaje deberá elegir en nuestro menú de opciones el servicio u opción que requiera tales como:  Servicio al huésped, reservaciones, eventos, grupos u/o tours.',
@@ -532,6 +532,38 @@ return [
     'tax.missing' => 'Tasa turística no incluida 79.20 MXN por habitación/noche a pagar en el hotel.',
 
     //QR CARDS
-    'keep.touch' => '¡SIGAMOS EN CONTACTO!'
+    'keep.touch' => '¡SIGAMOS EN CONTACTO!',
+    //diversion
+    'fun.beach.title' => 'Club de Playa Mandala Beach',
+    'fun.beach.text' => 'Observa en tiempo real el estado del clima y de la playa, reserva tu servicio de transportación y disfruta.',
+    'fun.bus.title' => 'Traslado Hotel - Aeropuerto',
+    'fun.bus.text' => 'Ofrecemos tarifas preferenciales para nuestros huéspedes con el servicio de traslado hacía el aeropuerto. Reserva con anticipación y obtén beneficios en costos.',
+    'fun.port.title' => 'Traslado a Puerto Juárez / Isla Mujeres',
+    'fun.port.text' => '¡Visita la majestuosa Isla Mujeres y disfruta de una tarde relajante con nuestro convenio para un mejor precio en Bech Club ubicado en Playa Norte.',
+    'fun.cenote.title' => 'Tour a Cenote en Riviera Maya',
+    'fun.cenote.text' => 'Conoce esta opción que tenemos para ti, con un precio especial para nuestros huéspedes.',
+    'fun.explore.title' => 'Explorando Chiapas',
+    'fun.explore.text' => 'Sumérgete en la cultura viva, los paisajes exuberantes y la rica historia de este destino único. ¡Una aventura inolvidable te espera!',
+    'fun.rent.title' => 'Renta de Autos',
+    'fun.rent.text' => 'Consulta sobre la alternativa de la renta de un auto para conocer mejor tu destino favorito ¡La Riviera Maya te espera!',
+    //MANDALA
+    'beach.title' => 'Diversión adicional',
+    'beach.subtitle' => 'Club de Playa Mandala Beach',
+    'beach.text' => 'Reserva tu estancia y obtén traslado exclusivo a Mandala Beach, uno de los clubes de playa más vibrantes de la Zona Hotelera de Cancún. Relájate en una de las playas más espectaculares del Caribe, una imagen vale más que mil palabras <br><br> (Traslados diarios a la playa sujetos a cambios sin previo aviso, reserva con antelación en recepción, consulta horarios, el acceso a club de playa tiene un costo extra).',
+    'beach.p' => 'Obrserva',
+    'beach.p2' => 'En tiempo real la playa',
+    'beach.p3' => 'Que la diversión no termine',
+    'beach.p4' => 'Mandala Beach Club, parte del reconocido Grupo Mandala, es un exclusivo club de playa ubicado en el corazón de la Zona Hotelera de Cancún, específicamente en el Bulevar Kukulcán Km 9.5. Es conocido por ser uno de los lugares más vibrantes y emocionantes de la zona, ofreciendo una doble experiencia: un ambiente relajado de playa durante el día y animadas fiestas en la piscina por la noche.',
+    'beach.p5' => '- Ubicación: Situado en una de las hermosas playas de arena blanca de Cancún, con impresionantes vistas al mar Caribe. <br>
+        - Ambiente: Durante el día, el ambiente es generalmente más relajado y tropical, perfecto para tomar el sol. Sin embargo, se transforma fácilmente en un lugar de fiesta lleno de energía, especialmente al atardecer, con DJs de talla mundial que tocan música house, hip-hop y otros géneros populares. Es particularmente famoso por sus fiestas en la piscina.<br>
+        - Servicios: Mandala Beach Club cuenta con impresionantes instalaciones, que incluyen:<br>
+        - Múltiples piscinas y jacuzzis.<br>
+        - Cómodas camas lounge, camas balinesas e incluso villas privadas para una experiencia más exclusiva.<br>
+        - Servicio completo de alimentos y bebidas, ofreciendo una variedad de cócteles y platillos gourmet directamente en tu área de descanso.<br>
+        - Regaderas y baños.<br>
+        - Experiencia: Ya sea que busques relajarte junto a la piscina, bailar al ritmo de los últimos éxitos o disfrutar de bebidas refrescantes con amigos, Mandala Beach Club busca ofrecer una experiencia memorable. Es una opción popular tanto para locales como para turistas que buscan un día o una noche divertida y animada.<br>
+        - Entrada: Generalmente hay un costo de entrada, que a menudo se convierte en un crédito para alimentos y bebidas, permitiéndote usar lo que pagas por tu entrada para bebidas y comidas.',
+    'beach.p6' => 'En esencia, Mandala Beach Club combina lo mejor de un resort de playa con la energía de un lugar de entretenimiento de primer nivel, lo que lo convierte en una visita obligada para quienes buscan experimentar la vibrante vida diurna y nocturna de Cancún.',
+    'beach.live' => 'Observa aquí'
 
 ];

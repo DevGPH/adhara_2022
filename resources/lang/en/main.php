@@ -4,7 +4,7 @@ return [
 
     'nav-home' => 'Home',
     'nav-rooms' => 'Rooms',
-    'nav-services' => 'Services',
+    'nav-services' => 'Additional fun',
     'nav-hotel' => 'Hotel',
     'nav-contact' => 'Contact us',
     'nav-flag' => 'mexico.png',
@@ -123,9 +123,9 @@ return [
     'index.offers.oktrip.text' => "Discover the exclusive benefits of joining our loyalty program for travel agents. Earn cash from your clients' bookings and redeem it for stays or amazing perks like gift certificates.",
 
     // SECCION DE SERVICIOS INDEX
-    'index.services.title' => 'Services',
-    'index.services.subtitle' => 'Special for you',
-    'index.services.text' => "Creating a good experience for your vacation doesn't happen by coincidence. It happens because we strive to make it a reality with magic in every detail.",
+    'index.services.title' => 'Additional fun',
+    'index.services.subtitle' => 'Get Guest Discounts!',
+    'index.services.text' => "Whether you're looking for relaxation by the pool, thrilling water sports, or vibrant nightly shows, we have something for everyone.",
     'index.service.whats.title' => 'WhatsApp Assistance',
     'index.service.whats.subtitle' => 'Immediate response for you',
     'index.service.whats.text' => 'We provide immediate assistance via WhatsApp. Now everything is more convenient, easy',
@@ -534,6 +534,39 @@ return [
     'tax.missing' => 'Tourist tax not included 5 USD per room/night to be paid at the hotel.',
 
     //QR CARDS
-    'keep.touch' => 'KEEP IN TOUCH!'
+    'keep.touch' => 'KEEP IN TOUCH!',
+    //diversion
+    'fun.beach.title' => 'Mandala Beach Club',
+    'fun.beach.text' => 'Check the real-time weather and beach conditions, book your transportation, and get ready to have a great time!.',
+    'fun.bus.title' => 'Hotel - Airport Transfer',
+    'fun.bus.text' => 'We offer special rates for our guests on airport shuttle services. Book in advance to save on costs.',
+    'fun.port.title' => 'Transfer to Puerto Juárez / Isla Mujeres',
+    'fun.port.text' => 'Visit the majestic Isla Mujeres and enjoy a relaxing afternoon with our exclusive deal for a better price at Beach Club, located on North Beach.',
+    'fun.cenote.title' => 'Cenote Tour in Riviera Maya',
+    'fun.cenote.text' => 'Discover this amazing option we have for you, at a special price just for our guests.',
+    'fun.explore.title' => 'Exploring Chiapas',
+    'fun.explore.text' => 'Immerse yourself in the vibrant culture, lush landscapes, and rich history of this unique destination. An unforgettable adventure awaits!',
+    'fun.rent.title' => 'Car Rental',
+    'fun.rent.text' => 'Ask about our car rental option to better explore your favorite destination. The Riviera Maya is waiting for you!',
+    //MANDALA
+    'beach.title' => 'Extra fun',
+    'beach.subtitle' => 'Mandala Beach Club',
+    'beach.text' => "Book your stay and get exclusive transportation to Mandala Beach, one of the most vibrant beach clubs in Cancun's Hotel Zone. Relax on one of the Caribbean's most spectacular beaches—a picture is worth a thousand words!
+        <br><br> (Daily beach transfers are subject to change without prior notice. Please book in advance at reception and check schedules. Access to the beach club has an extra cost.)",
+    'beach.p' => 'Obrserva',
+    'beach.p2' => 'En tiempo real la playa',
+    'beach.p3' => 'Keep the Fun Going',
+    'beach.p4' => "Mandala Beach Club, part of the renowned Grupo Mandala, is an exclusive beach club located in the heart of Cancun's Hotel Zone at Boulevard Kukulcan Km 9.5. It's famous for being one of the most exciting spots in the area, offering a dual experience: a relaxed beach vibe during the day and lively pool parties at night.",
+    'beach.p5' => "- Location: Situated on one of Cancun's beautiful white-sand beaches, boasting stunning Caribbean Sea views.<br>
+        - Atmosphere: During the day, the atmosphere is generally more relaxed and tropical—perfect for soaking up the sun. However, it easily transforms into an energetic party spot as the sun sets, with world-class DJs spinning house, hip-hop, and other popular music. It's particularly known for its pool parties.<br>
+        - Amenities: Mandala Beach Club features impressive facilities, including:<br>
+        - Multiple swimming pools and jacuzzis.<br>
+        - Comfortable lounge chairs, Balinese beds, and even private villas for a more exclusive experience.<br>
+        - Full food and beverage service, offering a variety of cocktails and gourmet dishes delivered directly to your lounge area.<br>
+        - Showers and restrooms.<br>
+        - Experience: Whether you're looking to unwind by the pool, dance to the latest beats, or enjoy refreshing drinks with friends, Mandala Beach Club aims to provide a memorable experience. It's a popular choice for both locals and tourists seeking a fun and lively day or night out.<br>
+        - Entry: There's typically an entry fee, which often converts into a food and beverage credit, allowing you to use what you pay for your entry towards drinks and meals.",
+    'beach.p6' => "Essentially, Mandala Beach Club combines the best of a beach resort with the energy of a top-tier entertainment venue, making it a must-visit for those looking to experience Cancun's vibrant day and nightlife.",
+    'beach.live' => 'Observa aquí'
 
 ];

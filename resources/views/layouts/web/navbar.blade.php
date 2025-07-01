@@ -79,7 +79,7 @@
                     </li>
                 </ul>
                 <ul class="nav-right">
-                    <li><a href="{{ route('servicios', [App::getLocale()]) }}">@lang('main.nav-services')</a></li>
+                    <li><a href="{{ route('servicios', [App::getLocale()]) }}" style="color: red;">@lang('main.nav-services')</a></li>
                     <li><a href="{{ route('gallery', App::getLocale(), 0) }}">@lang('main.nav.gallery')</a></li>
                     <li><a href="{{ route('contact', ['locale' => App::getLocale()]) }}">@lang('main.nav-contact')</a></li>
                     <li class="mob-only">

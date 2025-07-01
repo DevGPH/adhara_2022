@@ -1,6 +1,24 @@
 @extends('layouts.app')
 
 @section('content')
+<style>
+    .wrapper-inner{
+        max-width               : 1300px;
+        margin                  : 0 auto;
+        padding-top             : 100px;
+        padding-bottom          : 100px;
+        padding-left            : 60px;
+        padding-right           : 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        .wrapper-inner{
+            padding-top: 50px;
+            padding-left: 150px;
+            padding-right: 150px;
+        }
+    }
+</style>
 
 <div class="site-main">
     <!-- Section Page Title -->
@@ -26,86 +44,67 @@
     </div>
     <!-- Section Page Title End -->
 
-    <!-- Section Services -->
+    <!-- Section Features -->
     <div class="section">
-        <div class="wrapper-inner">
-            <!-- Services List -->
-            <div class="widget-services-list">
-                <div class="services-item">
-                    <div class="item-photo">
-                        <div class="photo-big" data-background="{{ asset('images/services/whats3.png') }}"></div>
-                        @if (App::getLocale() == 'es')
-                            <div class="photo-small" data-background="{{ asset('images/services/whats_es.png') }}"></div>
-                        @else
-                            <div class="photo-small" data-background="{{ asset('images/services/whats_en.png') }}"></div>
-                        @endif
-
-                        <a href="https://api.whatsapp.com/send?phone=529981221861" target="_blank" class="btn btn-default">@lang('main.service.whats.button')</a>
-                    </div>
-                    <div class="item-desc">
-                        <h5>@lang('main.service.whats.title')</h5>
-                        <h2>@lang('main.service.whats.subtitle')</h2>
-                        <p>@lang('main.service.whats.text')</p>
-                        <p>@lang('main.service.whats.text2')</p>
-                    </div>
-                </div>
-                <div class="services-item">
-                    <div class="item-photo">
-                        <div class="photo-big" data-background="{{ asset('images/services/transpor1.png') }}"></div>
-                        <div class="photo-small" data-background="{{ asset('images/services/transpor2.png') }}"></div>
-                        <!--a href="#" class="btn btn-default">LEARN MORE</a-->
-                    </div>
-                    <div class="item-desc">
-                        <h5>@lang('main.service.bus.title')</h5>
-                        <h2>@lang('main.service.bus.subtitle')</h2>
-                        <p>@lang('main.service.bus.text')</p>
-                        <!--p>@lang('main.service.bus.text2')</p>
-                        <p>@lang('main.service.bus.text3')</p-->
-                    </div>
-                </div>
-                <div class="services-item">
-                    <div class="item-photo">
-                        <div class="photo-big" data-background="{{ asset('images/services/park_intern.png') }}"></div>
-                        <div class="photo-small" data-background="{{ asset('images/services/estacionamiento2.png') }}"></div>
-                        <!--a href="#" class="btn btn-default">LEARN MORE</a-->
-                    </div>
-                    <div class="item-desc">
-                        <h5>@lang('main.service.parking.title')</h5>
-                        <h2>@lang('main.service.parking.subtitle')</h2>
-                        <p>@lang('main.service.parking.text')</p>
-                        <p>@lang('main.service.parking.text2')</p>
-                    </div>
-                </div>
-                <div class="services-item">
-                    <div class="item-photo">
-                        <div class="photo-big" data-background="{{ asset('images/services/especial1.png') }}"></div>
-                        <div class="photo-small" data-background="{{ asset('images/services/especial3.png') }}"></div>
-                        <!--a href="#" class="btn btn-default">LEARN MORE</a-->
-                    </div>
-                    <div class="item-desc">
-                        <h5>@lang('main.service.room.title')</h5>
-                        <h2>@lang('main.service.room.subtitle')</h2>
-                        <p>@lang('main.service.room.text')</p>
+        <div class="widget-features-grid">
+            <div class="wrapper-inner">
+                <!-- Features Content -->
+                <div class="widget-inner">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="features-item" data-background="{{ asset('images/fun/mandala.png') }}">
+                                <a href="{{ route('mandala',[App::getLocale()]) }}">
+                                    <h3>@lang('main.fun.beach.title')</h3>
+                                    <p>@lang('main.fun.beach.text')</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="features-item" data-background="{{ asset('images/fun/traslados.png') }}">
+                                <a href="#">
+                                    <h3>@lang('main.fun.bus.title')</h3>
+                                    <p>@lang('main.fun.bus.text')</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="features-item" data-background="{{ asset('images/fun/puerto.png') }}">
+                                <a href="#">
+                                    <h3>@lang('main.fun.port.title')</h3>
+                                    <p>@lang('main.fun.port.text')</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="features-item" data-background="{{ asset('images/fun/cenote.png') }}">
+                                <a href="#">
+                                    <h3>@lang('main.fun.cenote.title')</h3>
+                                    <p>@lang('main.fun.cenote.text')</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="features-item" data-background="{{ asset('images/fun/chiapas.png') }}">
+                                <a href="#">
+                                    <h3>@lang('main.fun.explore.title')</h3>
+                                    <p>@lang('main.fun.explore.text')</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="features-item" data-background="{{ asset('images/fun/avis.png') }}">
+                                <a href="{{ route('hotel.details',[App::getLocale()]) }}">
+                                    <h3>@lang('main.fun.rent.title')</h3>
+                                    <p>@lang('main.fun.rent.text')</p>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!--div class="services-item">
-                    <div class="item-photo">
-                        <div class="photo-big" data-background="assets/img/photo-services-5-1.jpg"></div>
-                        <div class="photo-small" data-background="assets/img/photo-services-5-2.jpg"></div>
-                        <a href="#" class="btn btn-default">LEARN MORE</a>
-                    </div>
-                    <div class="item-desc">
-                        <h5>OUR FACILITIES</h5>
-                        <h2>Spa &amp; Beauty Center</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget commodo orci. Integer varius nibh eu mattis porta. Pellentesque dictum sem eget cursus semper. Nullam quis blandit lorem.</p>
-                        <p>Pellentesque dictum sem eget cursus semper. Nullam quis blandit lorem. Morbi blandit orci urna, eu congue magna faucibus at. In bibendum in mauris nec ultrices.</p>
-                    </div>
-                </div-->
+                <!-- Features Content End -->
             </div>
-            <!-- Services List End -->
         </div>
     </div>
-    <!-- Section Services End -->
 </div>
 
 @endsection
