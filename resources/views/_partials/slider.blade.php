@@ -47,10 +47,9 @@
                             <div class="slider-item slide_en"></div>
                         @endif
                     @endif-->
-                    <div class="item slider-item" data-background="{{ asset('images/sliders/girl_background.png') }}">
+                    <!--div class="item slider-item" data-background="{{ asset('images/sliders/girl_background.png') }}">
                         <div class="wrapper">
                             <div class="item-inner">
-                                <!--img src="{{ asset('images/sliders/data.png') }}" alt="" class="slider-special"-->
                                 <h5 style="color:white;">@lang('main.slider.01')</h5>
                                 <h1>${{ $rate }}</h1>
                                 <h2 style="font-family: 'Playfair Display', sans-serif;">@lang('main.slider.02')</h2>
@@ -58,7 +57,7 @@
                                 <h5 style="color:white;margin-top:10px;">@lang('main.nav.taxes')</h5>
                             </div>
                         </div>
-                    </div>
+                    </div-->
                     <div class="item slider-item" data-background="{{ asset('images/sliders/slider1.png') }}">
                         <div class="wrapper">
                             <div class="item-inner">
