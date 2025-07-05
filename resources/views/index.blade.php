@@ -476,7 +476,7 @@
                             Nous avons passé un bon séjour dans este hotel. Le plus est clairement le personal qui est d'une gentillesse incroyable, 
                             notamment Maria qui a pris le temps de nous expliquer plein de choses Merci à elle d'avoir rendu ce petit moment doux et agréable.
                         <div class="item-customer">
-                            <div class="customer-photo" data-background="{{ asset('images/utilities/pauline.png') }}"></div>
+                            <div class="customer-photo" data-background="{{ asset('images/utilities/paulline.png') }}"></div>
                             <h5>Pauline</h5>
                             <h6>Francia</h6>
                         </div>
