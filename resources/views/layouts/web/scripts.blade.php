@@ -10,7 +10,7 @@
 
 <!-- Map Scripts -->
 <!--script src="https://maps.google.com/maps/api/js?sensor=false&amp;language=en"></script-->
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGp4a2I1yctVHpeRE4SyF_8JQmLtMijdw&callback=initMap"></script>
+  <!--script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGp4a2I1yctVHpeRE4SyF_8JQmLtMijdw&callback=initMap"></script-->
 
 <script src="{{ asset('js/gmap3.min.js') }}"></script>
 
