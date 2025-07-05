@@ -5,7 +5,7 @@ return [
     'nav-home' => 'Inicio',
     'nav-rooms' => 'Habitaciones',
     'nav-contact' => 'Contáctanos',
-    'nav-services' => 'Diversión adicional',
+    'nav-services' => 'Diversión<br>adicional',
     'nav-hotel' => 'Hotel',
     'nav-flag' => 'usa.png',
     'nav-lang' => 'English',
