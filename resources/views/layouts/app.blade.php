@@ -188,7 +188,7 @@
 		</div>
 	</div>
 
-	@if (Route::is('inicio') && $finde == 1 && App::getLocale() == 'es')
+	@if (Route::is('inicio') && $finde == 1)
 		
 		{{-- Promociones 6 meses sin interes --}}
 		<div id="mesesSinInteres" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mesesSinInteres">
@@ -204,15 +204,27 @@
 					  
 						<!-- Wrapper for slides -->
 						<div class="carousel-inner" role="listbox">
-							<div class="item active">
-								<img src="{{ asset('images/sliders/p1.png') }}" alt="Semana Santa">
-							</div>
-							<div class="item">
-								<img src="{{ asset('images/sliders/p2.png') }}" alt="Semana Santa">
-							</div>
-							<div class="item">
-								<img src="{{ asset('images/sliders/p3.png') }}" alt="Semana Santa">
-							</div>
+							@if (App::getLocale() == 'es')
+								<div class="item active">
+									<img src="{{ asset('images/sliders/ver_es.png') }}" alt="Semana Santa">
+								</div>
+								<div class="item">
+									<img src="{{ asset('images/sliders/vera_es.png') }}" alt="Semana Santa">
+								</div>
+								<div class="item">
+									<img src="{{ asset('images/sliders/veran_es.png') }}" alt="Semana Santa">
+								</div>
+							@else
+								<div class="item active">
+									<img src="{{ asset('images/sliders/ver_en.png') }}" alt="Semana Santa">
+								</div>
+								<div class="item">
+									<img src="{{ asset('images/sliders/vera_en.png') }}" alt="Semana Santa">
+								</div>
+								<div class="item">
+									<img src="{{ asset('images/sliders/veran_en.png') }}" alt="Semana Santa">
+								</div>
+							@endif
 						</div>
 					  
 						<!-- Controls -->

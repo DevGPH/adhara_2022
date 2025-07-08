@@ -427,7 +427,7 @@
                     </div>
                     <div class="testimonials-item">
                         <div class="item-comment">
-                            Todo me gustó, me toco salir un día antes… temas de la secadora.
+                            Todo me gustó, me toco salir un día antes… temas de la aereolínea.
                         </div>
                         <div class="item-customer">
                             <div class="customer-photo" data-background="{{ asset('images/utilities/daniel.png') }}"></div>
@@ -462,7 +462,7 @@
                         <div class="item-customer">
                             <div class="customer-photo" data-background="{{ asset('images/utilities/jhonatan.png') }}"></div>
                             <h5>Jonathan Luigi</h5>
-                            <h6>Telefono</h6>
+                            <h6>Ph</h6>
                         </div>
                     </div>
                     <div class="testimonials-item">
