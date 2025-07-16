@@ -304,20 +304,20 @@
                             <a href="https://api.whatsapp.com/send?phone=529981221861" target="_blank" class="btn-link">@lang('main.button.info')</a>
                         </div>
                     </div>
-                    <div class="blog-item">
+                    <div class="blog-item" onclick="location.href='/es/grupos'">
                         <div class="item-media">
                             <!--div class="item-date"><img src="{{ asset('images/services/icon3.png') }}" alt=""></div-->
                             <div class="media-photo">
-                                <a href="{{ route('servicios',[App::getLocale()]) }}" data-background="{{ asset('images/services/service22.png') }}"></a>
+                                <a href="{{ route('grupos.hotel',[App::getLocale()]) }}" data-background="{{ asset('images/services/service22.png') }}"></a>
                             </div>
                         </div>
                         <div class="item-desc">
-                            <h3><a href="{{ route('servicios',[App::getLocale()]) }}"></a>@lang('main.index.service.bus.title')</h3>
+                            <h3><a href="{{ route('grupos.hotel',[App::getLocale()]) }}"></a>@lang('main.index.service.bus.title')</h3>
                             <h5>@lang('main.index.service.bus.subtitle')</h5>
                             <p>@lang('main.index.service.bus.text')</p>
                             <!--p>@lang('main.index.service.bus.text2')</p>
                             <p>@lang('main.index.service.bus.text3')</p-->
-                            <a href="{{ route('servicios',[App::getLocale()]) }}" class="btn-link">@lang('main.index.service.grupos.button')</a>
+                            <a href="{{ route('grupos.hotel',[App::getLocale()]) }}" class="btn-link">@lang('main.index.service.grupos.button')</a>
                         </div>
                     </div>
                     <div class="blog-item">
