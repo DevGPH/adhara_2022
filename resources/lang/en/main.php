@@ -567,6 +567,23 @@ return [
         - Experience: Whether you're looking to unwind by the pool, dance to the latest beats, or enjoy refreshing drinks with friends, Mandala Beach Club aims to provide a memorable experience. It's a popular choice for both locals and tourists seeking a fun and lively day or night out.<br>
         - Entry: There's typically an entry fee, which often converts into a food and beverage credit, allowing you to use what you pay for your entry towards drinks and meals.",
     'beach.p6' => "Essentially, Mandala Beach Club combines the best of a beach resort with the energy of a top-tier entertainment venue, making it a must-visit for those looking to experience Cancun's vibrant day and nightlife.",
-    'beach.live' => 'Observa aquí'
-
+    'beach.live' => 'Observa aquí',
+    //NEW GROUPS
+    //NEW GROUPS
+    'gpr.title' => 'Personalized Attention',
+    'gpr.subtitle' => 'For Groups ',
+    'gpr.text' => "At Hotel Adhara Cancun, we understand that every detail matters when it comes to group travel. That's why we offer personalized and preferential service, designed to ensure your group's stay is exceptional from beginning to end.",
+    'gpr.p' => 'Quote and Book',
+    'gpr.p2' => 'Follow this link',
+    'gpr.p3' => 'A Hotel for Everyone',
+    'gpr.p4' => 'From the moment you book, a dedicated team will be at your disposal to coordinate every aspect, from room assignments to event and activity logistics. Our focus is on providing a seamless and worry-free experience, with continuous assistance for any needs that may arise.',
+    'gpr.p5' => "Additionally, your group will benefit from special pricing and preferred rates that maximize your budget's value, without compromising the quality of our service or the comfort of our facilities. Let us make your group's stay in Cancun a memorable and economically advantageous experience.",
+    'gpr.live' => 'Groups',
+    'gpr.feafures.title' => 'Amenities',
+    'gpr.feafures.subtitle' => 'Our hotel has everything for you',
+    'gpr.list.1' => 'Group check-in',
+    'gpr.list.2' => 'Personalized attention',
+    'gpr.list.3' => 'Stay planning assistance',
+    'gpr.list.4' => 'Accommodation benefits',
+    'gpr.list.5' => 'Accessible location'
 ];

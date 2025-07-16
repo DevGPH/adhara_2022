@@ -178,7 +178,7 @@ class HomeController extends Controller
     public function grupos($locale)
     {
         $rate = $this->rateToday($locale);
-        return view('storefront.grupos')->with([
+        return view('storefront.grupos_new')->with([
             'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
             'id' => 0,
             'rate' => $rate,

@@ -564,6 +564,23 @@ return [
         - Experiencia: Ya sea que busques relajarte junto a la piscina, bailar al ritmo de los últimos éxitos o disfrutar de bebidas refrescantes con amigos, Mandala Beach Club busca ofrecer una experiencia memorable. Es una opción popular tanto para locales como para turistas que buscan un día o una noche divertida y animada.<br>
         - Entrada: Generalmente hay un costo de entrada, que a menudo se convierte en un crédito para alimentos y bebidas, permitiéndote usar lo que pagas por tu entrada para bebidas y comidas.',
     'beach.p6' => 'En esencia, Mandala Beach Club combina lo mejor de un resort de playa con la energía de un lugar de entretenimiento de primer nivel, lo que lo convierte en una visita obligada para quienes buscan experimentar la vibrante vida diurna y nocturna de Cancún.',
-    'beach.live' => 'Observa aquí'
+    'beach.live' => 'Observa aquí',
+    //NEW GROUPS
+    'gpr.title' => 'atención personalizada',
+    'gpr.subtitle' => 'Para grupos ',
+    'gpr.text' => 'En el Hotel Adhara Cancún, entendemos la importancia de cada detalle cuando se trata de viajes en grupo. Por eso, ofrecemos un servicio de atención personalizado y preferencial diseñado para asegurar que la estancia de su grupo sea excepcional de principio a fin.',
+    'gpr.p' => 'cotiza y reserva',
+    'gpr.p2' => 'En el siguiente enlace',
+    'gpr.p3' => 'un hotel para todos',
+    'gpr.p4' => 'Desde el momento de su reserva, un equipo dedicado estará a su disposición para coordinar cada aspecto, desde la asignación de habitaciones hasta la logística de eventos o actividades. Nos enfocamos en brindar una experiencia fluida y sin preocupaciones, con asistencia continua para cualquier necesidad que pueda surgir.',
+    'gpr.p5' => 'Además, su grupo se beneficiará de precios especiales y tarifas preferenciales que maximizan el valor de su presupuesto, sin comprometer la calidad de nuestro servicio ni la comodidad de nuestras instalaciones. Permítanos hacer de la estancia de su grupo en Cancún una experiencia memorable y económicamente ventajosa.',
+    'gpr.live' => 'Grupos',
+    'gpr.feafures.title' => 'Amenidades',
+    'gpr.feafures.subtitle' => 'Nuestro Hotel tiene todo para ti',
+    'gpr.list.1' => 'Check in grupal',
+    'gpr.list.2' => 'atención personalizada',
+    'gpr.list.3' => 'asesoría para estancias',
+    'gpr.list.4' => 'Beneficios en hospedaje',
+    'gpr.list.5' => 'ubicación accesible'
 
 ];
