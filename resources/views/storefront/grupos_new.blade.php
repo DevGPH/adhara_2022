@@ -23,7 +23,7 @@
                     <ul>
                         <li><a href="{{ route('inicio', App::getLocale()) }}">@lang('main.breadcrumb.home')</a></li>
                         <li><a href="#">@lang('main.gpr.title')</a></li>
-                        <li>Club de playa Mandala beach</li>
+                        <li>{{ (App::getLocale() == 'es') ? 'Grupo' : 'Groups' }}</li>
                     </ul>
                 </div>
                 <!-- Breadcrumb End -->
