@@ -52,7 +52,7 @@
                 <div class="widget-inner">
                     <div class="row">
                         <div class="col-lg-6 col-sm-6">
-                            <div class="features-item" data-background="{{ asset('images/fun/mandala.png') }}">
+                            <div class="features-item" data-background="{{ asset('images/fun/mujer.png') }}">
                                 <a href="{{ route('mandala',[App::getLocale()]) }}">
                                     <h3>@lang('main.fun.beach.title')</h3>
                                     <p>@lang('main.fun.beach.text')</p>
@@ -60,7 +60,7 @@
                             </div>
                         </div>
                         <div class="col-lg-6 col-sm-6">
-                            <div class="features-item" data-background="{{ asset('images/fun/traslados.png') }}">
+                            <div class="features-item" data-background="{{ asset('images/fun/renfe.png') }}">
                                 <a href="#">
                                     <h3>@lang('main.fun.bus.title')</h3>
                                     <p>@lang('main.fun.bus.text')</p>
@@ -68,7 +68,7 @@
                             </div>
                         </div>
                         <div class="col-lg-6 col-sm-6">
-                            <div class="features-item" data-background="{{ asset('images/fun/puerto.png') }}">
+                            <div class="features-item" data-background="{{ asset('images/fun/palmera.png') }}">
                                 <a href="#">
                                     <h3>@lang('main.fun.port.title')</h3>
                                     <p>@lang('main.fun.port.text')</p>
@@ -76,7 +76,7 @@
                             </div>
                         </div>
                         <div class="col-lg-6 col-sm-6">
-                            <div class="features-item" data-background="{{ asset('images/fun/cenote.png') }}">
+                            <div class="features-item" data-background="{{ asset('images/fun/zapote.png') }}">
                                 <a href="#">
                                     <h3>@lang('main.fun.cenote.title')</h3>
                                     <p>@lang('main.fun.cenote.text')</p>
@@ -84,7 +84,7 @@
                             </div>
                         </div>
                         <div class="col-lg-6 col-sm-6">
-                            <div class="features-item" data-background="{{ asset('images/fun/chiapas.png') }}">
+                            <div class="features-item" data-background="{{ asset('images/fun/chiap.png') }}">
                                 <a href="#">
                                     <h3>@lang('main.fun.explore.title')</h3>
                                     <p>@lang('main.fun.explore.text')</p>
@@ -92,7 +92,7 @@
                             </div>
                         </div>
                         <div class="col-lg-6 col-sm-6">
-                            <div class="features-item" data-background="{{ asset('images/fun/avis.png') }}">
+                            <div class="features-item" data-background="{{ asset('images/fun/auto.png') }}">
                                 <a href="{{ route('hotel.details',[App::getLocale()]) }}">
                                     <h3>@lang('main.fun.rent.title')</h3>
                                     <p>@lang('main.fun.rent.text')</p>

@@ -48,6 +48,12 @@
                                     <a href="{{ asset('images/mandala/m3.png') }}" data-background="{{ asset('images/mandala/m3.png') }}" title="Standar Room" class="popup-gallery"></a>
                                     <a href="{{ asset('images/mandala/m4.png') }}" data-background="{{ asset('images/mandala/m4.png') }}" title="Standar Room" class="popup-gallery"></a>
                                     <a href="{{ asset('images/mandala/m5.png') }}" data-background="{{ asset('images/mandala/m5.png') }}" title="Standar Room" class="popup-gallery"></a>
+                                    <a href="{{ asset('images/mandala/m6.png') }}" data-background="{{ asset('images/mandala/m6.png') }}" title="Standar Room" class="popup-gallery"></a>
+                                    <a href="{{ asset('images/mandala/m7.png') }}" data-background="{{ asset('images/mandala/m7.png') }}" title="Standar Room" class="popup-gallery"></a>
+                                    <a href="{{ asset('images/mandala/m8.png') }}" data-background="{{ asset('images/mandala/m8.png') }}" title="Standar Room" class="popup-gallery"></a>
+                                    <a href="{{ asset('images/mandala/m9.png') }}" data-background="{{ asset('images/mandala/m9.png') }}" title="Standar Room" class="popup-gallery"></a>
+                                    <a href="{{ asset('images/mandala/m10.png') }}" data-background="{{ asset('images/mandala/m10.png') }}" title="Standar Room" class="popup-gallery"></a>
+                                    <a href="{{ asset('images/mandala/m11.png') }}" data-background="{{ asset('images/mandala/m11.png') }}" title="Standar Room" class="popup-gallery"></a>
                                 </div>
                             </div>
                             <!-- Room Slider End -->
@@ -59,6 +65,12 @@
                                         <a href="#" data-background="{{ asset('images/mandala/m3.png') }}" title="Standar Room"></a>
                                         <a href="#" data-background="{{ asset('images/mandala/m4.png') }}" title="Standar Room"></a>
                                         <a href="#" data-background="{{ asset('images/mandala/m5.png') }}" title="Standar Room"></a>
+                                        <a href="#" data-background="{{ asset('images/mandala/m6.png') }}" title="Standar Room"></a>
+                                        <a href="#" data-background="{{ asset('images/mandala/m7.png') }}" title="Standar Room"></a>
+                                        <a href="#" data-background="{{ asset('images/mandala/m8.png') }}" title="Standar Room"></a>
+                                        <a href="#" data-background="{{ asset('images/mandala/m9.png') }}" title="Standar Room"></a>
+                                        <a href="#" data-background="{{ asset('images/mandala/m10.png') }}" title="Standar Room"></a>
+                                        <a href="#" data-background="{{ asset('images/mandala/m11.png') }}" title="Standar Room"></a>
                                 </div>
                             </div>
                             <!-- Room Thumbnails End -->
