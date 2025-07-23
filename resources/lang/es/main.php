@@ -581,6 +581,26 @@ return [
     'gpr.list.2' => 'atención personalizada',
     'gpr.list.3' => 'asesoría para estancias',
     'gpr.list.4' => 'Beneficios en hospedaje',
-    'gpr.list.5' => 'ubicación accesible'
+    'gpr.list.5' => 'ubicación accesible',
+    // AVIS RENTAL
+    'avis.title' => 'Diversión adicional',
+    'avis.subtitle' => 'Renta de autos AVIS',
+    'avis.text' => '¿Te gusta la aventura y explorar a tu propio ritmo? En el Hotel Adhara Cancún queremos que tu estancia sea inolvidable y que descubras todos los tesoros que Cancún tiene para ofrecer. Por eso, hemos preparado un descuento especial en renta de autos exclusivamente para nuestros huéspedes.
+    <br> Acércate a nuestra recepción para solicitar el enlace y así podrás reservar tu vehículo y comenzar a planear tu ruta por las impresionantes playas, zonas arqueológicas y rincones mágicos de este paraíso. ¡La libertad de explorar te espera!',
+    'avis.live' => 'Renta de autos AVIS',
+    'avis.p' => 'Solicita mas información',
+    'avis.p2' => 'En el siguiente enlace',
+    'avis.p3' => 'Que la diversión no termine',
+    'avis.p4' => 'Avis es una compañía global de alquiler de vehículos con una larga trayectoria y presencia en numerosos países, incluyendo México y, por supuesto, Cancún. Se caracterizan por ofrecer una amplia variedad de vehículos, desde compactos y económicos hasta SUVs, autos de lujo y vans, para adaptarse a las diferentes necesidades de los viajeros.
+    Su operación en Cancún, como en muchas otras ubicaciones, suele incluir oficinas convenientes en el aeropuerto y otros puntos estratégicos, lo que facilita la recogida y devolución del vehículo. Además, Avis suele poner énfasis en la calidad de su flota, ofreciendo vehículos en buen estado y con un mantenimiento adecuado.',
+    'avis.p5' => 'Beneficios de Rentar un Auto con Avis en Cancún',
+    'avis.p6' => '1.- Variedad de Vehículos: Tienen una flota diversa que te permite elegir el auto ideal para tu tipo de viaje, ya sea que necesites algo económico para moverte por la ciudad o una camioneta para explorar la Riviera Maya con toda la familia.
+    <br>2.- Calidad y Mantenimiento: Avis se esfuerza por ofrecer vehículos modernos y bien mantenidos, lo que contribuye a una experiencia de conducción más segura y cómoda.
+    <br>3.- Presencia y Ubicación: Cuentan con múltiples oficinas en Cancún, incluyendo el aeropuerto, lo que brinda flexibilidad para recoger y devolver el auto. Algunas incluso ofrecen servicio de traslado desde la terminal a su oficina.
+    <br>4.- Opciones de Seguro y Cobertura: Avis ofrece diversas opciones de protección y seguros para cubrir diferentes escenarios, dándote tranquilidad durante tu viaje.
+    <br>5.- Descuentos y Promociones: Avis con frecuencia ofrece promociones y descuentos, especialmente al reservar con anticipación o al prepagar en línea. Como huésped del Hotel Adhara Cancún, el descuento especial que se les ofrece es un gran beneficio adicional.
+    <br>6.- Flexibilidad de Reserva: Suelen ofrecer opciones de cancelación flexible, lo cual es conveniente si tus planes de viaje cambian.
+    <br>7.- Atención al Cliente: Al ser una marca global, Avis generalmente cuenta con un servicio al cliente establecido para resolver dudas o incidencias durante la renta.',
+    'avis.p7' => 'Rentar un auto con Avis te brinda la libertad de explorar Cancún y sus alrededores a tu propio ritmo, descubriendo joyas como Tulum, Playa del Carmen, los cenotes y mucho más, sin depender de tours o transporte público.',
 
 ];

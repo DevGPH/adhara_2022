@@ -322,10 +322,23 @@ class HomeController extends Controller
 
         // return "session iniciada";
     }
+
     public function closeUserC(Request $request, $locale)
     {
         Cookie::queue(Cookie::forget('user'));
         return redirect('/');
+    }
+
+    public function rentCar($locale)
+    {
+        $rate = $this->rateToday($locale);
+        return view('storefront.rent_car')->with([
+            'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
+            'id' => 0,
+            'rate' => $rate,
+            'enableClub' => $this->clubestrella->enable,
+            'finde' => $this->finde->enable
+        ]);
     }
 
     function rateToday($locale)

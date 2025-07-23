@@ -584,5 +584,11 @@ return [
     'gpr.list.2' => 'Personalized attention',
     'gpr.list.3' => 'Stay planning assistance',
     'gpr.list.4' => 'Accommodation benefits',
-    'gpr.list.5' => 'Accessible location'
+    'gpr.list.5' => 'Accessible location',
+    // AVIS RENTAL
+    'avis.title' => 'Extra fun',
+    'avis.subtitle' => 'Your Cancun Adventure Awaits!',
+    'avis.text' => "Do you love adventure and exploring at your own pace? At Hotel Adhara Cancún, we want your stay to be unforgettable and for you to discover all the treasures Cancun has to offer. That's why we've arranged a special discount on car rentals exclusively for our guests!
+    <br>Just stop by our front desk to get the link. You'll then be able to reserve your vehicle and start planning your route through the stunning beaches, ancient archaeological sites, and magical hidden gems of this paradise. The freedom to explore is waiting for you!",
+    'avis.p' => 'Renta de autos AVIS',
 ];

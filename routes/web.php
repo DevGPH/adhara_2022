@@ -48,6 +48,7 @@ Route::prefix('{locale}')->group(function ()
     Route::post('/reservas/booking',[ReservaController::class,'store'])->name('book.reserve');
     Route::get('/test-mail',[HomeController::class,'mail'])->name('test_mail');
     Route::get('/mandala-beach',[HomeController::class,'mandala'])->name('mandala');
+    Route::get('/rent-car',[HomeController::class,'rentCar'])->name('rent.car');
 
 
     #CLUBESTRELLA

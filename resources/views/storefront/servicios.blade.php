@@ -93,7 +93,7 @@
                         </div>
                         <div class="col-lg-6 col-sm-6">
                             <div class="features-item" data-background="{{ asset('images/fun/auto.png') }}">
-                                <a href="{{ route('hotel.details',[App::getLocale()]) }}">
+                                <a href="{{ route('rent.car',[App::getLocale()]) }}">
                                     <h3>@lang('main.fun.rent.title')</h3>
                                     <p>@lang('main.fun.rent.text')</p>
                                 </a>
