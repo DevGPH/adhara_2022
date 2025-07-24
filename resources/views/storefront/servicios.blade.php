@@ -78,7 +78,7 @@
                             </div>
                         </div>
                         <div class="col-lg-6 col-sm-6">
-                            <div class="features-item" data-background="{{ asset('images/fun/zapote.png') }}">
+                            <div class="features-item" data-background="{{ asset('images/fun/zapote_extra.png') }}">
                                 <a href="#">
                                     <h3>@lang('main.fun.cenote.title')</h3>
                                     <p>@lang('main.fun.cenote.text')</p>
