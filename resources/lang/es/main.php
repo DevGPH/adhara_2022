@@ -538,7 +538,7 @@ return [
     'fun.beach.text' => 'Observa en tiempo real el estado del clima y de la playa, reserva tu servicio de transporte y disfruta.',
     'fun.bus.title' => 'Traslado Hotel - Aeropuerto',
     'fun.bus.text' => 'Ofrecemos tarifas preferenciales para nuestros huéspedes con el servicio de traslado hacia el aeropuerto. Reserve con anticipación y obtenga beneficios en costos.',
-    'fun.port.title' => 'Traslado hacía Ferri (Puerto Juárez) y Descuento en Mayan Club de playa en Isla Mujeres',
+    'fun.port.title' => 'Traslado hacía Ferri (Puerto Juárez) y Descuento en Mayan Beach Club en Isla Mujeres',
     'fun.port.text' => '¡Visita la majestuosa Isla Mujeres y disfruta de una tarde relajante con nuestro convenio para un mejor precio en Bech Club ubicado en Playa Norte.',
     'fun.cenote.title' => 'Tour Cenote Zapote / Hotel Adhara Cancún',
     'fun.cenote.text' => 'Conoce esta opción que tenemos para ti, con un precio especial para nuestros huéspedes.',
@@ -602,5 +602,25 @@ return [
     <br>6.- Flexibilidad de Reserva: Suelen ofrecer opciones de cancelación flexible, lo cual es conveniente si tus planes de viaje cambian.
     <br>7.- Atención al Cliente: Al ser una marca global, Avis generalmente cuenta con un servicio al cliente establecido para resolver dudas o incidencias durante la renta.',
     'avis.p7' => 'Rentar un auto con Avis te brinda la libertad de explorar Cancún y sus alrededores a tu propio ritmo, descubriendo joyas como Tulum, Playa del Carmen, los cenotes y mucho más, sin depender de tours o transporte público.',
-
+    // Mayan Beach Club
+    'mayan.title' => 'Diversión adicional',
+    'mayan.subtitle' => '¡Tu Aventura en Isla Mujeres Comienza Aquí!',
+    'mayan.text' => '¿Planeando un día en la paradisíaca Isla Mujeres? En el Hotel Adhara Cancún, queremos que tu experiencia sea perfecta desde el inicio. Por ser nuestro huésped, te ofrecemos traslado gratuito al ferry de Puerto Juárez. Los horarios y la disponibilidad están sujetos a cambios, así que te recomendamos reservar con anticipación en nuestra recepción para asegurar tu lugar.',
+    'mayan.text2' => '¿Qué hacer en Isla Mujeres? Una vez allí, prepárate para un día inolvidable. ¡Y tenemos otra sorpresa para ti! También por ser nuestro huésped, disfruta de un descuento especial en el acceso a Mayan Beach, un exclusivo beach club ubicado en Playa Norte, considerada una de las playas más hermosas del mundo. Pasa un día agradable y relajante bajo el sol, con la ventaja de que el costo de tu acceso es reembolsable en consumo de alimentos y bebidas dentro del club.',
+    'mayan.text3' => "Para conocer los términos y condiciones de este increíble beneficio en Mayan Beach, por favor, consulta en nuestra recepción.
+    <br>Importante: El costo del boleto del ferry para cruzar a Isla Mujeres no está incluido en tu estancia en el hotel ni en el acceso al beach club.
+    <br><br>¡Esperamos que tus huéspedes disfruten al máximo su visita a Isla Mujeres!",
+    'mayan.live' => 'WHATSAPP',
+    'mayan.p' => 'Reserva con anticipación',
+    'mayan.p2' => 'Tu traslado hacía Ferri',
+    'mayan.p3' => 'Mayan Beach Club',
+    'mayan.p4' => 'Situado en la idílica Playa Norte de Isla Mujeres, el Mayan Beach Club te invita a experimentar la esencia del Caribe mexicano. Con sus aguas turquesas y arena blanca, este club de playa ofrece el escenario perfecto para relajarse y disfrutar.',
+    'mayan.p5' => 'Aquí encontrarás cómodas camas balinesas y camastros para tomar el sol, un refrescante servicio de bar con cócteles tropicales y una deliciosa oferta gastronómica con especialidades locales e internacionales. Ya sea que busques un día tranquilo bajo el sol, un vibrante ambiente con música o simplemente un lugar para admirar las impresionantes puestas de sol, el Mayan Beach Club es el destino ideal para crear recuerdos inolvidables en el paraíso.',
+    'mayan.feafures.title' => 'Isla Mujeres',
+    'mayan.feafures.subtitle' => 'Un paraíso de ensueño',
+    'mayan.list.1' => 'Aventura Marina',
+    'mayan.list.2' => 'Relax Auténtico',
+    'mayan.list.3' => 'Paz Azul',
+    'mayan.list.4' => 'Atardeceres inigualables',
+    'mayan.list.5' => 'Precios accesibles',
 ];

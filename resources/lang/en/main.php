@@ -586,9 +586,45 @@ return [
     'gpr.list.4' => 'Accommodation benefits',
     'gpr.list.5' => 'Accessible location',
     // AVIS RENTAL
-    'avis.title' => 'Extra fun',
+    // AVIS RENTAL
+    'avis.title' => 'Extra Fun',
     'avis.subtitle' => 'Your Cancun Adventure Awaits!',
     'avis.text' => "Do you love adventure and exploring at your own pace? At Hotel Adhara Cancún, we want your stay to be unforgettable and for you to discover all the treasures Cancun has to offer. That's why we've arranged a special discount on car rentals exclusively for our guests!
-    <br>Just stop by our front desk to get the link. You'll then be able to reserve your vehicle and start planning your route through the stunning beaches, ancient archaeological sites, and magical hidden gems of this paradise. The freedom to explore is waiting for you!",
-    'avis.p' => 'Renta de autos AVIS',
+    Just stop by our front desk to get the link. You'll then be able to reserve your vehicle and start planning your route through the stunning beaches, ancient archaeological sites, and magical hidden gems of this paradise. The freedom to explore is waiting for you!",
+    'avis.live' => 'Avis Car Rental',
+    'avis.p' => 'Get more information',
+    'avis.p2' => 'In the following link',
+    'avis.p3' => 'Keep the Fun Going!',
+    'avis.p4' => "Avis is a global car rental company with a long history and a strong presence in many countries, including Mexico and, of course, Cancun. They're known for offering a wide variety of vehicles, from compact and economical cars to SUVs, luxury vehicles, and vans, to suit every traveler's needs.
+    In Cancun, just like in many other locations, Avis typically has convenient offices at the airport and other key spots, making it easy to pick up and return your car. Plus, Avis focuses on the quality of its fleet, providing well-maintained vehicles for your peace of mind.",
+    'avis.p5' => 'Benefits of Renting a Car with Avis in Cancun',
+    'avis.p6' => "1.- Vehicle Variety: Their diverse fleet lets you pick the perfect car for your trip, whether you need something economical for city driving or an SUV to explore the Riviera Maya with your whole family.
+    2.- Quality and Maintenance: Avis works hard to offer modern, well-maintained vehicles, which helps ensure a safer and more comfortable driving experience.
+    3.- Presence and Location: With multiple offices in Cancun, including at the airport, you get flexibility for picking up and dropping off your car. Some locations even offer shuttle service from the terminal to their office.
+    4.- Insurance and Coverage Options: Avis provides various protection and insurance options to cover different scenarios, giving you peace of mind during your trip.
+    5.- Discounts and Promotions: Avis frequently offers promotions and discounts, especially when you book in advance or prepay online. As a guest of Hotel Adhara Cancun, the special discount you're offered is a great added benefit!
+    6.- Booking Flexibility: They often provide flexible cancellation options, which is handy if your travel plans change.
+    7.- Customer Service: As a global brand, Avis generally has established customer service to help resolve any questions or issues during your rental.",
+    'avis.p7' => 'Renting a car with Avis gives you the freedom to explore Cancun and its surroundings at your own pace. You can discover gems like Tulum, Playa del Carmen, the cenotes, and much more, without relying on tours or public transportation.',
+    // Mayan Beach Club
+    'mayan.title' => 'Extra Fun',
+    'mayan.subtitle' => 'Your Isla Mujeres Adventure Starts Here!',
+    'mayan.text' => "Planning a day trip to the paradise of Isla Mujeres? At Hotel Adhara Cancún, we want your experience to be perfect from the very start. As our guest, we're offering you complimentary transportation to the Puerto Juárez ferry. Please note that schedules and availability are subject to change, so we highly recommend reserving your spot in advance at our front desk to ensure your seamless journey.",
+    'mayan.text2' => "What to do in Isla Mujeres? Once you arrive, get ready for an unforgettable day! And we have another surprise for you: as our guest, you also get a special discount on admission to Mayan Beach, an exclusive beach club located on Playa Norte, considered one of the most beautiful beaches in the world.",
+    'mayan.text3' => "Spend a pleasant and relaxing day under the sun, with the added benefit that your admission fee is reimbursable towards food and beverage consumption within the club.
+    <br>For the full terms and conditions of this amazing Mayan Beach benefit, please inquire at our front desk.
+    <br><br>Important: The cost of the ferry ticket to Isla Mujeres is not included in your hotel stay or beach club access.",
+    'mayan.live' => 'WHATSAPP',
+    'mayan.p' => 'Book in Advance',
+    'mayan.p2' => 'Your Ferry Transfer',
+    'mayan.p3' => 'Mayan Beach Club: Your Island Oasis',
+    'mayan.p4' => "Nestled on the idyllic Playa Norte of Isla Mujeres, Mayan Beach Club invites you to experience the true essence of the Mexican Caribbean. With its turquoise waters and white sand, this beach club offers the perfect setting to relax and soak it all in.",
+    'mayan.p5' => "Here, you'll find comfortable Bali beds and loungers for sunbathing, a refreshing bar service with tropical cocktails, and delicious dining options featuring both local and international specialties. Whether you're looking for a peaceful day under the sun, a vibrant atmosphere with music, or simply a place to admire breathtaking sunsets, Mayan Beach Club is the ideal destination to create unforgettable memories in paradise.",
+    'mayan.feafures.title' => 'Isla Mujeres',
+    'mayan.feafures.subtitle' => 'A Dream Paradise',
+    'mayan.list.1' => 'Marine Adventure',
+    'mayan.list.2' => 'Authentic Relaxation',
+    'mayan.list.3' => 'Blue Tranquility',
+    'mayan.list.4' => 'Unforgettable Sunsets',
+    'mayan.list.5' => 'Affordable Prices'
 ];

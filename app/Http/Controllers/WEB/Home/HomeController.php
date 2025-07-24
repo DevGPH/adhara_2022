@@ -341,6 +341,18 @@ class HomeController extends Controller
         ]);
     }
 
+    public function mayanBeachClub($locale)
+    {
+        $rate = $this->rateToday($locale);
+        return view('storefront.beach')->with([
+            'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
+            'id' => 0,
+            'rate' => $rate,
+            'enableClub' => $this->clubestrella->enable,
+            'finde' => $this->finde->enable
+        ]);
+    }
+
     function rateToday($locale)
     {
         $pointer = now();

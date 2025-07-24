@@ -23,7 +23,7 @@
                     <ul>
                         <li><a href="{{ route('inicio', App::getLocale()) }}">@lang('main.breadcrumb.home')</a></li>
                         <li><a href="#">@lang('main.beach.title')</a></li>
-                        <li>Club de playa Mandala beach</li>
+                        <li>@if (App::getLocale() == 'en') Avis rental car @else Renta de autos Avis @endif</li>
                     </ul>
                 </div>
                 <!-- Breadcrumb End -->
