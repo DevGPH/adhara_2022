@@ -614,7 +614,7 @@ return [
     <br>Importante: El costo del acceso al beach club no esta incluido en tu estancia.",
     'mayan.live' => 'WHATSAPP',
     'mayan.p' => 'Reserva con anticipación',
-    'mayan.p2' => 'Tu acceso a',
+    'mayan.p2' => 'Tu acceso a Mayan Beach Club',
     'mayan.p3' => 'Mayan Beach Club',
     'mayan.p4' => 'Situado en la idílica Playa Norte de Isla Mujeres, el Mayan Beach Club te invita a experimentar la esencia del Caribe mexicano. Con sus aguas turquesas y arena blanca, este club de playa ofrece el escenario perfecto para relajarse y disfrutar.',
     'mayan.p5' => 'Aquí encontrarás cómodas camas balinesas y camastros para tomar el sol, un refrescante servicio de bar con cócteles tropicales y una deliciosa oferta gastronómica con especialidades locales e internacionales. Ya sea que busques un día tranquilo bajo el sol, un vibrante ambiente con música o simplemente un lugar para admirar las impresionantes puestas de sol, el Mayan Beach Club es el destino ideal para crear recuerdos inolvidables en el paraíso.',
