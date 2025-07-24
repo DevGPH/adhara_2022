@@ -174,8 +174,12 @@ return [
 
     // SECCION SERVICIOS
     'services.title' => 'Services',
-    'services.subtitle' => 'Special for you',
-    'services.text' => "Creating a wonderful experience for your vacation doesn't happen by chance. It happens because we strive to make it a reality with magic in every detail.",
+    'services.subtitle' => 'Exclusive Discounts Just for You!',
+    'services.text' => "At Hotel Adhara Cancún, we want to make your experience even more unforgettable! That's why we've put together a series of special discounts on selected services, designed exclusively for you.
+    Enjoy unique benefits on beach club access, convenient transfers, exciting tours, and much more. Your Cancun adventure is about to get even better!
+    To find out all the details, check availability, and make your reservations, please stop by our front desk directly or contact us through our most accessible channels:",
+    'services.text2' => 'and/or phone',
+    'services.text3' => "We're here to help you make the most of your stay!",
     'service.whats.title' => 'ASSISTANCE VIA WHATSAPP',
     'service.whats.subtitle' => 'Immediate response for you',
     'service.whats.text' => "Now everything is more convenient, easy, and simple through WhatsApp. We have provided you with immediate assistance via WhatsApp. It's now more convenient, easy, and simple. Just send us a message to the number: 998 122 1861. After sending us a message, you will need to choose from our menu of options the service or option you require, such as Guest Service.",
@@ -540,7 +544,7 @@ return [
     'fun.beach.text' => 'Check real-time weather and beach conditions, book your transportation service, and enjoy your day!',
     'fun.bus.title' => 'Hotel - Airport Shuttle',
     'fun.bus.text' => 'We offer special rates for our guests on airport shuttle services. Book in advance and save!',
-    'fun.port.title' => 'Ferry Shuttle (Puerto Juárez) & Discount at Mayan Beach Club in Isla Mujeres',
+    'fun.port.title' => 'Mayan Beach Club in Isla Mujeres',
     'fun.port.text' => 'Visit the majestic Isla Mujeres and enjoy a relaxing afternoon with our special discount at a beach club located on North Beach!',
     'fun.cenote.title' => 'Cenote Zapote Tour / Hotel Adhara Cancun',
     'fun.cenote.text' => 'Discover this exclusive option just for you, with a special price for our guests.',
@@ -609,11 +613,8 @@ return [
     // Mayan Beach Club
     'mayan.title' => 'Extra Fun',
     'mayan.subtitle' => 'Your Isla Mujeres Adventure Starts Here!',
-    'mayan.text' => "Planning a day trip to the paradise of Isla Mujeres? At Hotel Adhara Cancún, we want your experience to be perfect from the very start. As our guest, we're offering you complimentary transportation to the Puerto Juárez ferry. Please note that schedules and availability are subject to change, so we highly recommend reserving your spot in advance at our front desk to ensure your seamless journey.",
-    'mayan.text2' => "What to do in Isla Mujeres? Once you arrive, get ready for an unforgettable day! And we have another surprise for you: as our guest, you also get a special discount on admission to Mayan Beach, an exclusive beach club located on Playa Norte, considered one of the most beautiful beaches in the world.",
-    'mayan.text3' => "Spend a pleasant and relaxing day under the sun, with the added benefit that your admission fee is reimbursable towards food and beverage consumption within the club.
-    <br>For the full terms and conditions of this amazing Mayan Beach benefit, please inquire at our front desk.
-    <br><br>Important: The cost of the ferry ticket to Isla Mujeres is not included in your hotel stay or beach club access.",
+    'mayan.text' => "Planning a day trip to the paradise of Isla Mujeres? At Hotel Adhara Cancún, we want your experience to be perfect from the very beginning. As our guest, you'll enjoy a special discount on admission to Mayan Beach, an exclusive beach club located on Playa Norte, considered one of the most beautiful beaches in the world. Spend a pleasant and relaxing day under the sun, with the added benefit that your admission fee is reimbursable towards food and beverage consumption within the club!",
+    'mayan.text2' => "For the full terms and conditions of this amazing Mayan Beach benefit, please inquire at our front desk.",
     'mayan.live' => 'WHATSAPP',
     'mayan.p' => 'Book in Advance',
     'mayan.p2' => 'Your Ferry Transfer',

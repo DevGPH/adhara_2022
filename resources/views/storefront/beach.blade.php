@@ -18,7 +18,6 @@
                 <h1>@lang('main.mayan.subtitle')</h1>
                 <p> @lang('main.mayan.text')</p>
                 <p> @lang('main.mayan.text2')</p>
-                <p> @lang('main.mayan.text3')</p>
                 <!-- Title End -->
                 <!-- Breadcrumb -->
                 <div class="widget-breadcrumb">

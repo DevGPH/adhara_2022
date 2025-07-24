@@ -167,8 +167,12 @@ return [
 
     // SECCION SERVICIOS
     'services.title' => 'Diversión adicional',
-    'services.subtitle' => '¡Obtén descuentos por ser nuestro huésped!',
-    'services.text' => 'Ya sea que busques relajación junto a la piscina, emocionantes deportes acuáticos o vibrantes',
+    'services.subtitle' => 'Descuentos Exclusivos para Ti',
+    'services.text' => '¡En el Hotel Adhara Cancún, queremos que tu experiencia sea aún más inolvidable! Por eso, hemos preparado una serie de descuentos especiales en servicios seleccionados, diseñados exclusivamente para ti.
+    Disfruta de beneficios únicos en accesos a clubes de playa, traslados convenientes, emocionantes tours y mucho más. Tu aventura en Cancún está a punto de mejorar.
+    Para conocer todos los detalles, disponibilidad y cómo hacer tus reservaciones, por favor acércate a nuestra recepción directamente o contáctanos a través de nuestros canales más accesibles:',
+    'services.text2' => "y/o teléfono",
+    'services.text3' => "¡Estamos aquí para ayudarte a aprovechar al máximo tu estancia!",
     'service.whats.title' => 'Asistencia vía WhatsApp',
     'service.whats.subtitle' => 'Una respuesta inmediata para ti',
     'service.whats.text' => 'Ahora todo es más cómodo, fácil y sencillo por WhatsApp, hemos puesto a tu disposición asistencia inmediata vía WhatsApp, ahora todo es más cómodo, fácil y sencillo, sólo envíanos un mensaje al número: 998 122 1861. Después de enviarnos un mensaje deberá elegir en nuestro menú de opciones el servicio u opción que requiera tales como:  Servicio al huésped, reservaciones, eventos, grupos u/o tours.',
@@ -538,7 +542,7 @@ return [
     'fun.beach.text' => 'Observa en tiempo real el estado del clima y de la playa, reserva tu servicio de transporte y disfruta.',
     'fun.bus.title' => 'Traslado Hotel - Aeropuerto',
     'fun.bus.text' => 'Ofrecemos tarifas preferenciales para nuestros huéspedes con el servicio de traslado hacia el aeropuerto. Reserve con anticipación y obtenga beneficios en costos.',
-    'fun.port.title' => 'Traslado hacía Ferri (Puerto Juárez) y Descuento en Mayan Beach Club en Isla Mujeres',
+    'fun.port.title' => 'Mayan Beach Club en Isla Mujeres',
     'fun.port.text' => '¡Visita la majestuosa Isla Mujeres y disfruta de una tarde relajante con nuestro convenio para un mejor precio en Bech Club ubicado en Playa Norte.',
     'fun.cenote.title' => 'Tour Cenote Zapote / Hotel Adhara Cancún',
     'fun.cenote.text' => 'Conoce esta opción que tenemos para ti, con un precio especial para nuestros huéspedes.',
@@ -605,14 +609,12 @@ return [
     // Mayan Beach Club
     'mayan.title' => 'Diversión adicional',
     'mayan.subtitle' => '¡Tu Aventura en Isla Mujeres Comienza Aquí!',
-    'mayan.text' => '¿Planeando un día en la paradisíaca Isla Mujeres? En el Hotel Adhara Cancún, queremos que tu experiencia sea perfecta desde el inicio. Por ser nuestro huésped, te ofrecemos traslado gratuito al ferry de Puerto Juárez. Los horarios y la disponibilidad están sujetos a cambios, así que te recomendamos reservar con anticipación en nuestra recepción para asegurar tu lugar.',
-    'mayan.text2' => '¿Qué hacer en Isla Mujeres? Una vez allí, prepárate para un día inolvidable. ¡Y tenemos otra sorpresa para ti! También por ser nuestro huésped, disfruta de un descuento especial en el acceso a Mayan Beach, un exclusivo beach club ubicado en Playa Norte, considerada una de las playas más hermosas del mundo. Pasa un día agradable y relajante bajo el sol, con la ventaja de que el costo de tu acceso es reembolsable en consumo de alimentos y bebidas dentro del club.',
-    'mayan.text3' => "Para conocer los términos y condiciones de este increíble beneficio en Mayan Beach, por favor, consulta en nuestra recepción.
-    <br>Importante: El costo del boleto del ferry para cruzar a Isla Mujeres no está incluido en tu estancia en el hotel ni en el acceso al beach club.
-    <br><br>¡Esperamos que tus huéspedes disfruten al máximo su visita a Isla Mujeres!",
+    'mayan.text' => '¿Planeando un día en la paradisíaca Isla Mujeres? En el Hotel Adhara Cancún, queremos que tu experiencia sea perfecta desde el inicio. Por ser nuestro huésped, disfruta de un descuento especial en el acceso a Mayan Beach, un exclusivo beach club ubicado en Playa Norte, considerada una de las playas más hermosas del mundo. Pasa un día agradable y relajante bajo el sol, con la ventaja de que el costo de tu acceso es reembolsable en consumo de alimentos y bebidas dentro del club.',
+    'mayan.text2' => "Para conocer los términos y condiciones de este increíble beneficio en Mayan Beach, por favor, consulta en nuestra recepción.
+    <br>Importante: El costo del acceso al beach club no esta incluido en tu estancia.",
     'mayan.live' => 'WHATSAPP',
     'mayan.p' => 'Reserva con anticipación',
-    'mayan.p2' => 'Tu traslado hacía Ferri',
+    'mayan.p2' => 'Tu acceso a',
     'mayan.p3' => 'Mayan Beach Club',
     'mayan.p4' => 'Situado en la idílica Playa Norte de Isla Mujeres, el Mayan Beach Club te invita a experimentar la esencia del Caribe mexicano. Con sus aguas turquesas y arena blanca, este club de playa ofrece el escenario perfecto para relajarse y disfrutar.',
     'mayan.p5' => 'Aquí encontrarás cómodas camas balinesas y camastros para tomar el sol, un refrescante servicio de bar con cócteles tropicales y una deliciosa oferta gastronómica con especialidades locales e internacionales. Ya sea que busques un día tranquilo bajo el sol, un vibrante ambiente con música o simplemente un lugar para admirar las impresionantes puestas de sol, el Mayan Beach Club es el destino ideal para crear recuerdos inolvidables en el paraíso.',

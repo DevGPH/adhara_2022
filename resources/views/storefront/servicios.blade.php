@@ -30,6 +30,8 @@
                 <h5>@lang('main.services.title')</h5>
                 <h1>@lang('main.services.subtitle')</h1>
                 <p>@lang('main.services.text')</p>
+                <p>WhatsApp: <a href="https://wa.me/529981221861" target="_blank" style="color: #8c8cdd">+52 998 122 1861</a> @lang('main.services.text2') <a href="tel:9988816500" style="color: #8c8cdd">998 881 6500</a></p>
+                <p>@lang('main.services.text3')</p>
                 <!-- Title End -->
                 <!-- Breadcrumb -->
                 <div class="widget-breadcrumb">
@@ -60,7 +62,7 @@
                             </div>
                         </div>
                         <div class="col-lg-6 col-sm-6">
-                            <div class="features-item" data-background="{{ asset('images/fun/renfe.png') }}">
+                            <div class="features-item" data-background="{{ asset('images/fun/renfe_wait.png') }}">
                                 <a href="#">
                                     <h3>@lang('main.fun.bus.title')</h3>
                                     <p>@lang('main.fun.bus.text')</p>
@@ -69,7 +71,7 @@
                         </div>
                         <div class="col-lg-6 col-sm-6">
                             <div class="features-item" data-background="{{ asset('images/fun/palmera.png') }}">
-                                <a href="#">
+                                <a href="{{ route('mayan.beach.club',[App::getLocale()]) }}">
                                     <h3>@lang('main.fun.port.title')</h3>
                                     <p>@lang('main.fun.port.text')</p>
                                 </a>
@@ -84,7 +86,7 @@
                             </div>
                         </div>
                         <div class="col-lg-6 col-sm-6">
-                            <div class="features-item" data-background="{{ asset('images/fun/chiap.png') }}">
+                            <div class="features-item" data-background="{{ asset('images/fun/chiap_wait.png') }}">
                                 <a href="#">
                                     <h3>@lang('main.fun.explore.title')</h3>
                                     <p>@lang('main.fun.explore.text')</p>
