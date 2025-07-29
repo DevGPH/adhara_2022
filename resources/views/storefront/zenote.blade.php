@@ -100,8 +100,8 @@
                             <!-- Room Booking End -->
                             <!-- Room Booking End -->
                             <div class="room-features">
-                                <h5>@lang('main.zenote.feafures.title')</h5>
-                                <h2>@lang('main.zenote.feafures.subtitle')</h2>
+                                <h5>@lang('main.zenote.features.title')</h5>
+                                <h2>@lang('main.zenote.features.subtitle')</h2>
                                 <ul>
                                     <li><i class="fa fa-check"></i> @lang('main.zenote.list.1')</li>
                                     <li><i class="fa fa-check"></i> @lang('main.zenote.list.2')</li>
