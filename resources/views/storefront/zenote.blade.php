@@ -44,20 +44,40 @@
                             <div class="room-slider">
                                 <!--div class="room-price">$ 160.00 <small>PER NIGHT</small></div-->
                                 <div class="owl-carousel owl-theme owl-type1">
-                                    <a href="{{ asset('images/mayan/beach1.png') }}" data-background="{{ asset('images/mayan/beach1.png') }}" title="Mayan Beach Club" class="popup-gallery"></a>
-                                    <a href="{{ asset('images/mayan/beach2.png') }}" data-background="{{ asset('images/mayan/beach2.png') }}" title="Mayan Beach Club" class="popup-gallery"></a>
-                                    <a href="{{ asset('images/mayan/beach3.png') }}" data-background="{{ asset('images/mayan/beach3.png') }}" title="Mayan Beach Club" class="popup-gallery"></a>
-                                    <a href="{{ asset('images/mayan/beach4.png') }}" data-background="{{ asset('images/mayan/beach4.png') }}" title="Mayan Beach Club" class="popup-gallery"></a>
+                                    <a href="{{ asset('images/cenotes/cenote1.png') }}" data-background="{{ asset('images/cenotes/cenote1.png') }}" title="Cenotes Zapotes" class="popup-gallery"></a>
+                                    <a href="{{ asset('images/cenotes/cenote2.png') }}" data-background="{{ asset('images/cenotes/cenote2.png') }}" title="Cenotes Zapotes" class="popup-gallery"></a>
+                                    <a href="{{ asset('images/cenotes/cenote3.png') }}" data-background="{{ asset('images/cenotes/cenote3.png') }}" title="Cenotes Zapotes" class="popup-gallery"></a>
+                                    <a href="{{ asset('images/cenotes/cenote4.png') }}" data-background="{{ asset('images/cenotes/cenote4.png') }}" title="Cenotes Zapotes" class="popup-gallery"></a>
+                                    <a href="{{ asset('images/cenotes/cenote5.png') }}" data-background="{{ asset('images/cenotes/cenote5.png') }}" title="Cenotes Zapotes" class="popup-gallery"></a>
+                                    <a href="{{ asset('images/cenotes/cenote6.png') }}" data-background="{{ asset('images/cenotes/cenote6.png') }}" title="Cenotes Zapotes" class="popup-gallery"></a>
+                                    <a href="{{ asset('images/cenotes/cenote7.png') }}" data-background="{{ asset('images/cenotes/cenote7.png') }}" title="Cenotes Zapotes" class="popup-gallery"></a>
+                                    <a href="{{ asset('images/cenotes/cenote8.png') }}" data-background="{{ asset('images/cenotes/cenote8.png') }}" title="Cenotes Zapotes" class="popup-gallery"></a>
+                                    <a href="{{ asset('images/cenotes/cenote9.png') }}" data-background="{{ asset('images/cenotes/cenote9.png') }}" title="Cenotes Zapotes" class="popup-gallery"></a>
+                                    <a href="{{ asset('images/cenotes/cenote10.png') }}" data-background="{{ asset('images/cenotes/cenote10.png') }}" title="Cenotes Zapotes" class="popup-gallery"></a>
+                                    <a href="{{ asset('images/cenotes/cenote11.png') }}" data-background="{{ asset('images/cenotes/cenote11.png') }}" title="Cenotes Zapotes" class="popup-gallery"></a>
+                                    <a href="{{ asset('images/cenotes/cenote12.png') }}" data-background="{{ asset('images/cenotes/cenote12.png') }}" title="Cenotes Zapotes" class="popup-gallery"></a>
+                                    <a href="{{ asset('images/cenotes/cenote13.png') }}" data-background="{{ asset('images/cenotes/cenote13.png') }}" title="Cenotes Zapotes" class="popup-gallery"></a>
+                                    <a href="{{ asset('images/cenotes/cenote14.png') }}" data-background="{{ asset('images/cenotes/cenote14.png') }}" title="Cenotes Zapotes" class="popup-gallery"></a>
                                 </div>
                             </div>
                             <!-- Room Slider End -->
                             <!-- Room Thumbnails -->
                             <div class="room-thumbnails">
                                 <div class="owl-carousel">
-                                        <a href="#" data-background="{{ asset('images/mayan/beach1.png') }}" title="Mayan Beach Club"></a>
-                                        <a href="#" data-background="{{ asset('images/mayan/beach2.png') }}" title="Mayan Beach Club"></a>
-                                        <a href="#" data-background="{{ asset('images/mayan/beach3.png') }}" title="Mayan Beach Club"></a>
-                                        <a href="#" data-background="{{ asset('images/mayan/beach4.png') }}" title="Mayan Beach Club"></a>
+                                        <a href="#" data-background="{{ asset('images/cenotes/cenote1.png') }}" title="Cenotes Zapotes"></a>
+                                        <a href="#" data-background="{{ asset('images/cenotes/cenote2.png') }}" title="Cenotes Zapotes"></a>
+                                        <a href="#" data-background="{{ asset('images/cenotes/cenote3.png') }}" title="Cenotes Zapotes"></a>
+                                        <a href="#" data-background="{{ asset('images/cenotes/cenote4.png') }}" title="Cenotes Zapotes"></a>
+                                        <a href="#" data-background="{{ asset('images/cenotes/cenote5.png') }}" title="Cenotes Zapotes"></a>
+                                        <a href="#" data-background="{{ asset('images/cenotes/cenote6.png') }}" title="Cenotes Zapotes"></a>
+                                        <a href="#" data-background="{{ asset('images/cenotes/cenote7.png') }}" title="Cenotes Zapotes"></a>
+                                        <a href="#" data-background="{{ asset('images/cenotes/cenote8.png') }}" title="Cenotes Zapotes"></a>
+                                        <a href="#" data-background="{{ asset('images/cenotes/cenote9.png') }}" title="Cenotes Zapotes"></a>
+                                        <a href="#" data-background="{{ asset('images/cenotes/cenote10.png') }}" title="Cenotes Zapotes"></a>
+                                        <a href="#" data-background="{{ asset('images/cenotes/cenote11.png') }}" title="Cenotes Zapotes"></a>
+                                        <a href="#" data-background="{{ asset('images/cenotes/cenote12.png') }}" title="Cenotes Zapotes"></a>
+                                        <a href="#" data-background="{{ asset('images/cenotes/cenote13.png') }}" title="Cenotes Zapotes"></a>
+                                        <a href="#" data-background="{{ asset('images/cenotes/cenote14.png') }}" title="Cenotes Zapotes"></a>
                                 </div>
                             </div>
                             <!-- Room Thumbnails End -->
