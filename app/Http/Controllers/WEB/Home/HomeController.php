@@ -353,6 +353,18 @@ class HomeController extends Controller
         ]);
     }
 
+    public function zenote($locale)
+    {
+        $rate = $this->rateToday($locale);
+        return view('storefront.zenote')->with([
+            'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
+            'id' => 0,
+            'rate' => $rate,
+            'enableClub' => $this->clubestrella->enable,
+            'finde' => $this->finde->enable
+        ]);
+    }
+
     function rateToday($locale)
     {
         $pointer = now();

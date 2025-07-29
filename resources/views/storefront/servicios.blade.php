@@ -78,8 +78,8 @@
                             </div>
                         </div>
                         <div class="col-lg-6 col-sm-6">
-                            <div class="features-item" data-background="{{ asset('images/fun/zapote_extra.png') }}">
-                                <a href="#">
+                            <div class="features-item" data-background="{{ asset('images/fun/zapote.png') }}">
+                                <a href="{{ route('zenote',[App::getLocale()]) }}">
                                     <h3>@lang('main.fun.cenote.title')</h3>
                                     <p>@lang('main.fun.cenote.text')</p>
                                 </a>
