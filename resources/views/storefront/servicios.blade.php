@@ -63,7 +63,7 @@
                         </div>
                         <div class="col-lg-6 col-sm-6">
                             <div class="features-item" data-background="{{ asset('images/fun/renfe.png') }}">
-                                <a href="#">
+                                <a href="{{ route('transporte',[App::getLocale()]) }}">
                                     <h3>@lang('main.fun.bus.title')</h3>
                                     <p>@lang('main.fun.bus.text')</p>
                                 </a>
@@ -87,7 +87,7 @@
                         </div>
                         <div class="col-lg-6 col-sm-6">
                             <div class="features-item" data-background="{{ asset('images/fun/chiap.png') }}">
-                                <a href="#">
+                                <a href="{{ route('tren.maya',[App::getLocale()]) }}">
                                     <h3>@lang('main.fun.explore.title')</h3>
                                     <p>@lang('main.fun.explore.text')</p>
                                 </a>
