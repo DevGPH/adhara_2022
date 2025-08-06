@@ -644,4 +644,58 @@ return [
     'zenote.list.3' => 'aventura familiar',
     'zenote.list.4' => 'cavernas',
     'zenote.list.5' => 'naturaleza',
+    // Transporte View
+    'transport.title' => 'Diversión adicional',
+    'transport.subtitle' => 'Traslado Hotel - Aeropuerto',
+    'transport.text' => '¡Viaja Cómodo y con Descuento desde el Hotel Adhara Cancún al Aeropuerto!
+    <br>¿Ya tienes tu próximo viaje planeado? ¡Haz tu llegada y salida de Cancún aún más sencilla!',
+    'transport.text2' => "En el Hotel Adhara Cancún, queremos que tu experiencia sea perfecta desde el momento en que aterrizas. Por eso, te invitamos a aprovechar nuestro servicio de transportación exclusivo desde y hacia el Aeropuerto Internacional de Cancún (CUN).
+    <br>¡Como nuestro valioso huésped, recibirás un descuento especial al adquirir este servicio! Olvídate del estrés de buscar transporte y disfruta de la comodidad de un traslado directo.",
+    'transport.text3' => "Para asegurar tu lugar y aprovechar este beneficio, es indispensable reservar con anticipación. Puedes hacerlo fácilmente en la recepción del Hotel durante tu estancia o a través de cualquiera de nuestros canales de comunicación oficiales antes de tu llegada.",
+    'transport.live' => 'WHATSAPP',
+    'transport.p' => 'Reserva con anticipación',
+    'transport.p2' => 'Traslado hacía Aeropuerto',
+    'transport.p3' => 'TRASLADOS:',
+    'transport.p4' => 'Estación de Tren Maya - Cancún Aeropuerto- Hotel Adhara Cancún.',
+    'transport.p5' => 'Hotel Adhara Cancún - Estación de Tren Maya Cancún - Aeropuerto.',
+    'transport.p6' => 'Aeropuerto - Hotel Adhara Cancún.',
+    'transport.p7' => 'Hotel Adhara Cancún - Aeropuerto.',
+    'transport.p8' => '1 a 4 pax, $800 MXN',
+    'transport.p9' => '5 a 6 pax, $980 MXN',
+    'transport.p10' => '5 a 7 pax, $1,100 MXN',
+    'transport.p11' => '8 a 13 pax, $1,600 MXN',
+    'transport.p12' => 'Precios sujetos a cambios sin previo aviso*',
+    'transport.features.title' => 'Comodidad y seguridad',
+    'transport.features.subtitle' => '¡El mejor precio para ti!',
+    'transport.list.1' => 'Servicio confiable',
+    'transport.list.2' => 'Puntualidad',
+    'transport.list.3' => 'Accesible para todos',
+    'transport.list.4' => 'Atención personalizada',
+    'transport.list.5' => 'Unidades climatizadas',
+    // Tren Maya View
+    'maya.title' => 'Diversión adicional',
+    'maya.subtitle' => 'Paquete Tren Maya',
+    'maya.text' => '¡Aventura en el sureste mexicano! Descubre la riqueza cultural y natural de Chiapas y el lujo de Cancún en un viaje inolvidable. Nuestro paquete de viaje te lleva desde la magia de Chiapas hasta las paradisíacas playas de Cancún, con una experiencia única a bordo del Tren Maya.',
+    'maya.text2' => "Lo que te espera en este viaje:<br>
+    Viaje en el Tren Maya: Disfruta de un recorrido cómodo y panorámico por la ruta histórica y natural de la península.
+    Cancún Paradisiaco: Relájate en las playas de arena blanca y el mar turquesa.",
+    'maya.text3' => "Tu hogar en Cancún<br>
+    Al llegar a Cancún, te hospedarás en el Hotel Adhara Hacienda Cancún, un oasis de tranquilidad en el corazón de la ciudad. Nuestras instalaciones, piscina y la calidad de nuestro servicio te harán sentir como en casa, con todas las comodidades de un hotel de lujo.",
+    'maya.text4' => "¡Precio especial!<br>
+    Hemos creado un precio exclusivo para este circuito que incluye el viaje desde Chiapas, la experiencia en el Tren Maya y tu hospedaje en el Hotel Adhara Cancún.
+    ¡No te pierdas esta oportunidad única! Contacta con nosotros para más información y reserva tu lugar.",
+    'maya.live' => 'WHATSAPP',
+    'maya.p' => 'Reserva con anticipación',
+    'maya.p2' => 'Circuito Tren Maya',
+    'maya.p3' => '¡Un circuito muy especial!',
+    'maya.p4' => '¿Listo para una experiencia que lo tiene todo? Nuestro paquete de viaje te invita a sumergirte en la esencia del sureste mexicano, combinando la mística de Chiapas con el esplendor del Caribe. ',
+    'maya.p5' => 'Recorre paisajes asombrosos a bordo del innovador Tren Maya, una aventura que une historia y modernidad, para luego culminar en el paraíso tropical de Cancún. Y lo mejor de todo es que tu descanso está garantizado en nuestro oasis de tranquilidad, el Hotel Adhara Hacienda Cancún, donde te ofrecemos un precio especial por ser parte de este increíble recorrido.',
+    'maya.p6' => '¡No dejes pasar esta oportunidad de vivir unas vacaciones inolvidables, llenas de cultura, aventura y relax! Reserva tu lugar y prepárate para crear recuerdos que durarán para siempre.',
+    'maya.features.title' => 'Comodidad y seguridad',
+    'maya.features.subtitle' => '¡El mejor precio para ti!',
+    'maya.list.1' => 'Servicio confiable',
+    'maya.list.2' => 'Puntualidad',
+    'maya.list.3' => 'Accesible para todos',
+    'maya.list.4' => 'Atención personalizada',
+    'maya.list.5' => 'Unidades climatizadas',
 ];

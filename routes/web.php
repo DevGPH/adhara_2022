@@ -51,6 +51,8 @@ Route::prefix('{locale}')->group(function ()
     Route::get('/rent-car',[HomeController::class,'rentCar'])->name('rent.car');
     Route::get('/mayan-beach-club',[HomeController::class,'mayanBeachClub'])->name('mayan.beach.club');
     Route::get('/cenote-zapote',[HomeController::class,'zenote'])->name('zenote');
+    Route::get('/transporte',[HomeController::class,'transporte'])->name('transporte');
+    Route::get('/tren-maya',[HomeController::class,'trenMaya'])->name('tren.maya');
 
 
     #CLUBESTRELLA

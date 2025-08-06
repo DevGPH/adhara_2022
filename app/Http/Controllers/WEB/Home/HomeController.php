@@ -365,6 +365,30 @@ class HomeController extends Controller
         ]);
     }
 
+    public function transporte($locale)
+    {
+        $rate = $this->rateToday($locale);
+        return view('storefront.transporte')->with([
+            'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
+            'id' => 0,
+            'rate' => $rate,
+            'enableClub' => $this->clubestrella->enable,
+            'finde' => $this->finde->enable
+        ]);
+    }
+
+    public function trenMaya($locale)
+    {
+        $rate = $this->rateToday($locale);
+        return view('storefront.tren_maya')->with([
+            'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
+            'id' => 0,
+            'rate' => $rate,
+            'enableClub' => $this->clubestrella->enable,
+            'finde' => $this->finde->enable
+        ]);
+    }
+
     function rateToday($locale)
     {
         $pointer = now();
