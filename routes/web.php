@@ -53,6 +53,7 @@ Route::prefix('{locale}')->group(function ()
     Route::get('/cenote-zapote',[HomeController::class,'zenote'])->name('zenote');
     Route::get('/transporte',[HomeController::class,'transporte'])->name('transporte');
     Route::get('/tren-maya',[HomeController::class,'trenMaya'])->name('tren.maya');
+    Route::get('/traslado-playa',[HomeController::class,'trasladoPlaya'])->name('traslado.playa');
 
 
     #CLUBESTRELLA

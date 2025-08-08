@@ -101,6 +101,14 @@
                                 </a>
                             </div>
                         </div>
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="features-item" data-background="{{ asset('images/fun/playa.png') }}">
+                                <a href="{{ route('traslado.playa',[App::getLocale()]) }}">
+                                    <h3>@lang('main.fun.playa.title')</h3>
+                                    <p>@lang('main.fun.playa.text')</p>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- Features Content End -->

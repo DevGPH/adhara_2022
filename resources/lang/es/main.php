@@ -550,6 +550,8 @@ return [
     'fun.explore.text' => 'Disfruta de un circuito especial Chiapas - Cancún (Hospedaje en Hotel Adhara) - Tren Maya ¡Vive una experiencia única y completa para todos!',
     'fun.rent.title' => 'Alquiler de Autos',
     'fun.rent.text' => '¡Por ser huésped en Hotel Adhara Cancún obtenga un descuento especial al alquilar un auto AVIS ¡Hazlo desde nuestra recepción!',
+    'fun.playa.title' => 'Traslado a la playa',
+    'fun.playa.text' => '¡Disfruta de nuestro servicio de traslado gratuito a la playa todos los dias! Inlcuido en tu reserva.',
     //MANDALA
     'beach.title' => 'Diversión adicional',
     'beach.subtitle' => 'Traslado a la playa & descuento en acceso Club Mandala Beach ',
@@ -698,4 +700,18 @@ return [
     'maya.list.3' => 'Accesible para todos',
     'maya.list.4' => 'Atención personalizada',
     'maya.list.5' => 'Unidades climatizadas',
+    // Traslado playa View
+    'playas.title' => 'Diversión adicional',
+    'playas.subtitle' => 'Servicio de traslado a la playa',
+    'playas.text' => '¡Disfruta de la mejor experiencia en la playa sin preocupaciones! En el hotel, queremos que tu estancia sea inolvidable, por eso ofrecemos un servicio de traslado de cortesía a una de las playas más hermosas y populares de la zona hotelera.',
+    'playas.text2' => "Para aprovechar este beneficio exclusivo para nuestros huéspedes, solo debes reservar tu lugar con anticipación en la recepción . Te llevaremos a la playa en nuestros horarios establecidos y también nos encargaremos de tu regreso al hotel.",
+    'playas.text3' => "Importante: La disponibilidad de este servicio está sujeta a cambios sin previo aviso.",
+    'playas.text4' => "¡Reserva tu traslado y prepárate para un día de sol, arena y mar!",
+    'playas.features.title' => 'Reserva con anticipación',
+    'playas.features.subtitle' => 'Tu traslado hacía la playa en nuestra recepción',
+    'playas.list.1' => 'Servicio incluido en tu reserva',
+    'playas.list.2' => 'Relax auténtico',
+    'playas.list.3' => 'Paz Azul',
+    'playas.list.4' => 'Atardeceres inigualables',
+    'playas.list.5' => 'Precios accesibles en la zona',
 ];

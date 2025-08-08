@@ -389,6 +389,18 @@ class HomeController extends Controller
         ]);
     }
 
+    public function trasladoPlaya($locale)
+    {
+        $rate = $this->rateToday($locale);
+        return view('storefront.traslado_playa')->with([
+            'lang' =>(App::getLocale() == 'es') ? 'en' : 'es',
+            'id' => 0,
+            'rate' => $rate,
+            'enableClub' => $this->clubestrella->enable,
+            'finde' => $this->finde->enable
+        ]);
+    }
+
     function rateToday($locale)
     {
         $pointer = now();

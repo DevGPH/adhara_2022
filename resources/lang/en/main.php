@@ -552,6 +552,8 @@ return [
     'fun.explore.text' => 'Enjoy a special Chiapas - Cancun circuit (including your stay at Hotel Adhara) and the Tren Maya! Live a unique and complete experience for everyone!',
     'fun.rent.title' => 'Car Rental',
     'fun.rent.text' => "As a guest at Hotel Adhara Cancun, you'll receive a special discount when renting an AVIS car! You can arrange it right from our front desk.",
+    'fun.playa.title' => 'Beach Shuttle Service',
+    'fun.playa.text' => "Enjoy our complimentary daily beach shuttle service! It's included with your reservation.",
     //MANDALA
     'beach.title' => 'Extra fun',
     'beach.subtitle' => 'Beach Shuttle & Discounted Access to Mandala Beach Club',
@@ -700,4 +702,18 @@ return [
     'maya.list.3' => 'Accessible for Everyone',
     'maya.list.4' => 'Personalized Attention',
     'maya.list.5' => 'Air-Conditioned Vehicles',
+    // Traslado playa View
+    'playas.title' => 'Extra Fun',
+    'playas.subtitle' => 'Beach Shuttle Service',
+    'playas.text' => 'Enjoy a perfect beach day without any hassle! We offer a complimentary shuttle service for our guests to one of the most beautiful and popular beaches in the hotel zone.',
+    'playas.text2' => "To use this service, just reserve your spot in advance at the front desk. We'll take you to the beach and bring you back to the hotel at our scheduled times.",
+    'playas.text3' => "Please note: This service is subject to change without prior notice.",
+    'playas.text4' => "Book your shuttle and get ready for a day of sun, sand, and sea!",
+    'playas.features.title' => 'Book in Advance',
+    'playas.features.subtitle' => 'Book your beach shuttle in advance at our front desk.',
+    'playas.list.1' => 'Service included with your reservation.',
+    'playas.list.2' => 'Authentic Relaxation',
+    'playas.list.3' => 'Blue Peace',
+    'playas.list.4' => 'Unmatched Sunsets',
+    'playas.list.5' => 'Affordable Prices in the Area',
 ];
