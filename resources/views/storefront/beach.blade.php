@@ -26,7 +26,10 @@
   -webkit-animation-name: animarsuperior;
   -webkit-animation-duration: 0.5s;
   animation-name: animarsuperior;
-  animation-duration: 0.5s
+  animation-duration: 0.5s;
+  width: fit-content !important;
+  display: block !important;
+  margin: 0 auto !important;
 }
 
 /* Animación */
@@ -122,7 +125,7 @@
                                 <p> @lang('main.mayan.p4') </p>
                                 <p> @lang('main.mayan.p5') </p>
                                 <btn id="abrirModal" class="btn btn-booking"> @lang('main.mayan.btn1')</btn>
-                                <a href="https://api.whatsapp.com/send?phone=529981221861" target="_blank" class="btn btn-booking"> @lang('main.mayan.btn2')</a>
+                                <btn id="abrirVideo" class="btn btn-booking"> @lang('main.mayan.btn2')</btn>
                             </div>
                             <!-- Room Description End -->
                         </div>
@@ -159,60 +162,81 @@
     <div class="contenido-modal">
         <span class="cerrar">&times;</span>
         @if ($lang == 'en')
-            <img src="{{ asset('images/mayan/des_pt1_es.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
-            <img src="{{ asset('images/mayan/des_pt2_es.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
-            <img src="{{ asset('images/mayan/des_pt3_es.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
-            <img src="{{ asset('images/mayan/des_pt4_es.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
-            <img src="{{ asset('images/mayan/menu_pt1_es.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
-            <img src="{{ asset('images/mayan/menu_pt2_es.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
-            <img src="{{ asset('images/mayan/menu_pt3_es.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
-            <img src="{{ asset('images/mayan/menu_pt4_es.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
-            <img src="{{ asset('images/mayan/cena_pt1_es.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
-            <img src="{{ asset('images/mayan/cena_pt2_es.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
-            <img src="{{ asset('images/mayan/cena_pt3_es.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
-            <img src="{{ asset('images/mayan/cena_pt4_es.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
+            <img src="{{ asset('images/mayan/des_pt1_es.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:700px;">
+            <img src="{{ asset('images/mayan/des_pt2_es.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:700px;">
+            <img src="{{ asset('images/mayan/des_pt3_es.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:700px;">
+            <img src="{{ asset('images/mayan/des_pt4_es.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:700px;">
+            <img src="{{ asset('images/mayan/menu_pt1_es.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:700px;">
+            <img src="{{ asset('images/mayan/menu_pt2_es.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:700px;">
+            <img src="{{ asset('images/mayan/menu_pt3_es.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:700px;">
+            <img src="{{ asset('images/mayan/menu_pt4_es.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:700px;">
+            <img src="{{ asset('images/mayan/cena_pt1_es.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:700px;">
+            <img src="{{ asset('images/mayan/cena_pt2_es.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:700px;">
+            <img src="{{ asset('images/mayan/cena_pt3_es.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:700px;">
+            <img src="{{ asset('images/mayan/cena_pt4_es.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:700px;">
         @else
-            <img src="{{ asset('images/mayan/des_pt1_en.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
-            <img src="{{ asset('images/mayan/des_pt2_en.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
-            <img src="{{ asset('images/mayan/des_pt3_en.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
-            <img src="{{ asset('images/mayan/des_pt4_en.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
-            <img src="{{ asset('images/mayan/menu_pt1_en.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
-            <img src="{{ asset('images/mayan/menu_pt2_en.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
-            <img src="{{ asset('images/mayan/menu_pt3_en.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
-            <img src="{{ asset('images/mayan/menu_pt4_en.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
-            <img src="{{ asset('images/mayan/cena_pt1_en.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
-            <img src="{{ asset('images/mayan/cena_pt2_en.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
-            <img src="{{ asset('images/mayan/cena_pt3_en.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
-            <img src="{{ asset('images/mayan/cena_pt4_en.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
+            <img src="{{ asset('images/mayan/des_pt1_en.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:700px;">
+            <img src="{{ asset('images/mayan/des_pt2_en.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:700px;">
+            <img src="{{ asset('images/mayan/des_pt3_en.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:700px;">
+            <img src="{{ asset('images/mayan/des_pt4_en.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:700px;">
+            <img src="{{ asset('images/mayan/menu_pt1_en.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:700px;">
+            <img src="{{ asset('images/mayan/menu_pt2_en.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:700px;">
+            <img src="{{ asset('images/mayan/menu_pt3_en.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:700px;">
+            <img src="{{ asset('images/mayan/menu_pt4_en.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:700px;">
+            <img src="{{ asset('images/mayan/cena_pt1_en.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:700px;">
+            <img src="{{ asset('images/mayan/cena_pt2_en.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:700px;">
+            <img src="{{ asset('images/mayan/cena_pt3_en.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:700px;">
+            <img src="{{ asset('images/mayan/cena_pt4_en.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:700px;">
         @endif
     </div>
 </div>
+<div id="videoModal" class="modal-custom">
+    <div class="contenido-modal">
+        <video controls="controls" autoplay width="800" height="600" name="Video Name">
+            <source src="{{ asset('images/mayan/promo.mov') }}" type="video/mp4">
+        </video>
+    </div>
+</div>
+
 
 <script type="text/javascript">
     // Ventana modal
     var modal = document.getElementById("ventanaModal");
+    var video = document.getElementById("videoModal");
 
     // Botón que abre el modal
     var boton = document.getElementById("abrirModal");
+    var botonVid = document.getElementById("abrirVideo");
 
     // Hace referencia al elemento <span> que tiene la X que cierra la ventana
     var span = document.getElementsByClassName("cerrar")[0];
 
     // Cuando el usuario hace click en el botón, se abre la ventana
     boton.addEventListener("click",function() {
-    modal.style.display = "block";
+        modal.style.display = "block";
+    });
+
+    botonVid.addEventListener("click",function() {
+        video.style.display = "block";
     });
 
     // Si el usuario hace click en la x, la ventana se cierra
     span.addEventListener("click",function() {
-    modal.style.display = "none";
+        modal.style.display = "none";
+    });
+
+    span.addEventListener("click",function() {
+        video.style.display = "none";
     });
 
     // Si el usuario hace click fuera de la ventana, se cierra.
     window.addEventListener("click",function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        if (event.target == video) {
+            video.style.display = "none";
+        }
     });
     
 </script>
