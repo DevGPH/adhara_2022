@@ -132,7 +132,7 @@
                                 <p> @lang('main.avis.p5') </p>
                                 <p> @lang('main.avis.p6') </p>
                                 <p> @lang('main.avis.p7') </p>
-                                <btn id="abrirModal" class="btn btn-booking"> @lang('main.mayan.btn1')</btn>
+                                <btn id="abrirModal" class="btn btn-booking"> @lang('main.mayan.btn2')</btn>
                             </div>
                             <!-- Room Description End -->
                         </div>
@@ -165,6 +165,11 @@
                     <div class="item active">
                         <video controls="controls" autoplay width="800" height="600" name="Video Name">
                             <source src="{{ asset('images/avis/avis1.mp4') }}" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item">
+                        <video controls="controls" autoplay width="800" height="600" name="Video Name">
+                            <source src="{{ asset('images/avis/avis2.mp4') }}" type="video/mp4">
                         </video>
                     </div>
                 </div>
