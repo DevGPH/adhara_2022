@@ -158,46 +158,46 @@
     <!-- Section Rooms Detail End -->
 </div>
 <!-- Section Rooms Detail End -->
-    <div id="ventanaModal" class="modal-custom">
-        <div class="contenido-modal">
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                </ol>
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <video controls="controls" width="800" height="600" name="Video Name">
-                            <source src="{{ asset('images/mandala/mandala.mp4') }}" type="video/mp4">
-                        </video>
-                    </div>
-                    <div class="item">
-                        <video controls="controls" width="800" height="600" name="Video Name">
-                            <source src="{{ asset('images/mandala/mandala2.mp4') }}" type="video/mp4">
-                        </video>
-                    </div>
-                    <div class="item">
-                        <video controls="controls" width="800" height="600" name="Video Name">
-                            <source src="{{ asset('images/mandala/mandala3.mp4') }}" type="video/mp4">
-                        </video>
-                    </div>
+<div id="ventanaModal" class="modal-custom">
+    <div class="contenido-modal">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <video controls="controls" width="800" height="600" name="Video Name">
+                        <source src="{{ asset('images/mandala/mandala.mp4') }}" type="video/mp4">
+                    </video>
                 </div>
-                
-                <!-- Controls -->
-                <a class="left carousel-control" style="background-image: none;" href="#carousel-example-generic" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" style="background-image: none;" href="#carousel-example-generic" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+                <div class="item">
+                    <video controls="controls" width="800" height="600" name="Video Name">
+                        <source src="{{ asset('images/mandala/mandala2.mp4') }}" type="video/mp4">
+                    </video>
+                </div>
+                <div class="item">
+                    <video controls="controls" width="800" height="600" name="Video Name">
+                        <source src="{{ asset('images/mandala/mandala3.mp4') }}" type="video/mp4">
+                    </video>
+                </div>
             </div>
+            
+            <!-- Controls -->
+            <a class="left carousel-control" style="background-image: none;" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" style="background-image: none;" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
     </div>
+</div>
 
 <script type="text/javascript">
     // Ventana modal
