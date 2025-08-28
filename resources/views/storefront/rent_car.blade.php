@@ -3,60 +3,60 @@
 @section('content')
 <style>
     /* Fondo modal: negro con opacidad al 50% */
-.modal-custom {
-  display: none; /* Por defecto, estará oculto */
-  position: fixed; /* Posición fija */
-  z-index: 1; /* Se situará por encima de otros elementos de la página*/
-  padding-top: 100px; /* El contenido estará situado a 200px de la parte superior */
-  left: 0;
-  top: 0;
-  width: 100%; /* Ancho completo */
-  height: 100%; /* Algura completa */
-  overflow: auto; /* Se activará el scroll si es necesario */
-  background-color: rgba(0,0,0,0.5); /* Color negro con opacidad del 50% */
-}
+    .modal-custom {
+    display: none; /* Por defecto, estará oculto */
+    position: fixed; /* Posición fija */
+    z-index: 1; /* Se situará por encima de otros elementos de la página*/
+    padding-top: 100px; /* El contenido estará situado a 200px de la parte superior */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Algura completa */
+    overflow: auto; /* Se activará el scroll si es necesario */
+    background-color: rgba(0,0,0,0.5); /* Color negro con opacidad del 50% */
+    }
 
-/* Ventana o caja modal */
-.contenido-modal {
-  position: relative; /* Relativo con respecto al contenedor -modal- */
-  background-color: white;
-  margin: auto; /* Centrada */
-  padding: 20px;
-  width: 60%;
-  -webkit-animation-name: animarsuperior;
-  -webkit-animation-duration: 0.5s;
-  animation-name: animarsuperior;
-  animation-duration: 0.5s;
-  width: fit-content !important;
-  display: block !important;
-  margin: 0 auto !important;
-}
+    /* Ventana o caja modal */
+    .contenido-modal {
+    position: relative; /* Relativo con respecto al contenedor -modal- */
+    background-color: white;
+    margin: auto; /* Centrada */
+    padding: 20px;
+    width: 60%;
+    -webkit-animation-name: animarsuperior;
+    -webkit-animation-duration: 0.5s;
+    animation-name: animarsuperior;
+    animation-duration: 0.5s;
+    width: fit-content !important;
+    display: block !important;
+    margin: 0 auto !important;
+    }
 
-/* Animación */
-@-webkit-keyframes animatetop {
-  from {top:-300px; opacity:0} 
-  to {top:0; opacity:1}
-}
+    /* Animación */
+    @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+    }
 
-@keyframes animarsuperior {
-  from {top:-300px; opacity:0}
-  to {top:0; opacity:1}
-}
+    @keyframes animarsuperior {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+    }
 
-/* Botón cerrar */
-.close {
-  color: black;
-  float: right;
-  font-size: 30px;
-  font-weight: bold;
-}
+    /* Botón cerrar */
+    .close {
+    color: black;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    }
 
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
+    .close:hover,
+    .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    }
 </style>
 @if (session('error'))
     <div class="alert alert-danger alert-dismissible" role="alert" style="display:inline-block;">
@@ -163,17 +163,17 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <video controls="controls" autoplay width="800" height="600" name="Video Name">
+                        <video controls="controls" width="800" height="600" name="Video Name">
                             <source src="{{ asset('images/avis/avis1.mp4') }}" type="video/mp4">
                         </video>
                     </div>
                     <div class="item">
-                        <video controls="controls" autoplay width="800" height="600" name="Video Name">
+                        <video controls="controls" width="800" height="600" name="Video Name">
                             <source src="{{ asset('images/avis/avis2.mp4') }}" type="video/mp4">
                         </video>
                     </div>
                     <div class="item">
-                        <video controls="controls" autoplay width="800" height="600" name="Video Name">
+                        <video controls="controls" width="800" height="600" name="Video Name">
                             <source src="{{ asset('images/avis/avis3.mp4') }}" type="video/mp4">
                         </video>
                     </div>
@@ -196,26 +196,14 @@
 <script type="text/javascript">
     // Ventana modal
     var modal = document.getElementById("ventanaModal");
-    //var video = document.getElementById("videoModal");
-    //var bebidas = document.getElementById("bebidasModal");
-
     // Botón que abre el modal
     var boton = document.getElementById("abrirModal");
-    //var botonVid = document.getElementById("abrirVideo");
-    //var botonBeb = document.getElementById("abrirBebidas");
 
-    // Hace referencia al elemento <span> que tiene la X que cierra la ventana
-    //var span = document.getElementsByClassName("cerrar")[0];
 
     // Cuando el usuario hace click en el botón, se abre la ventana
     boton.addEventListener("click",function() {
         modal.style.display = "block";
     });
-
-    // Si el usuario hace click en la x, la ventana se cierra
-    /*span.addEventListener("click",function() {
-        modal.style.display = "none";
-    });*/
 
     // Si el usuario hace click fuera de la ventana, se cierra.
     window.addEventListener("click",function(event) {
@@ -223,7 +211,7 @@
             modal.style.display = "none";
         }
     });
-    
+
 </script>
 
 @endsection

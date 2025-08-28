@@ -193,7 +193,7 @@
 </div>
 <div id="videoModal" class="modal-custom">
     <div class="contenido-modal">
-        <video controls="controls" autoplay width="800" height="600" name="Video Name">
+        <video controls="controls" width="800" height="600" name="Video Name">
             <source src="{{ asset('images/mayan/promo.mov') }}" type="video/mp4">
         </video>
     </div>
