@@ -1,8 +1,60 @@
 @extends('layouts.app')
-<style>
-    
-</style>
+
 @section('content')
+<style>
+    /* Fondo modal: negro con opacidad al 50% */
+.modal-custom {
+  display: none; /* Por defecto, estará oculto */
+  position: fixed; /* Posición fija */
+  z-index: 1; /* Se situará por encima de otros elementos de la página*/
+  padding-top: 200px; /* El contenido estará situado a 200px de la parte superior */
+  left: 0;
+  top: 0;
+  width: 100%; /* Ancho completo */
+  height: 100%; /* Algura completa */
+  overflow: auto; /* Se activará el scroll si es necesario */
+  background-color: rgba(0,0,0,0.5); /* Color negro con opacidad del 50% */
+}
+
+/* Ventana o caja modal */
+.contenido-modal {
+  position: relative; /* Relativo con respecto al contenedor -modal- */
+  background-color: white;
+  margin: auto; /* Centrada */
+  padding: 20px;
+  width: 60%;
+  -webkit-animation-name: animarsuperior;
+  -webkit-animation-duration: 0.5s;
+  animation-name: animarsuperior;
+  animation-duration: 0.5s
+}
+
+/* Animación */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animarsuperior {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* Botón cerrar */
+.close {
+  color: black;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
 @if (session('error'))
     <div class="alert alert-danger alert-dismissible" role="alert" style="display:inline-block;">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -69,8 +121,8 @@
                                 <h5>@lang('main.mayan.p3')</h5>
                                 <p> @lang('main.mayan.p4') </p>
                                 <p> @lang('main.mayan.p5') </p>
-                                <button id="abrirModal" class="btn btn-booking"> @lang('main.mayan.btn1')</button>
-                                <a href="#" target="_blank" class="btn btn-booking"> @lang('main.mayan.btn2')</a>
+                                <btn id="abrirModal" class="btn btn-booking"> @lang('main.mayan.btn1')</btn>
+                                <a href="https://api.whatsapp.com/send?phone=529981221861" target="_blank" class="btn btn-booking"> @lang('main.mayan.btn2')</a>
                             </div>
                             <!-- Room Description End -->
                         </div>
@@ -101,15 +153,41 @@
         </div>
     </div>
     <!-- Section Rooms Detail End -->
-    <!-- Ventana modal, por defecto no visiblel -->
-    <div id="ventanaModal" class="modal-custom">
-        <div class="contenido-modal">
-            <span class="cerrar">&times;</span>
-            <h2>Ventana modal</h2>
-            <p>Esto es el texto de la ventana</p>
-        </div>
+</div>
+<!-- Ventana modal, por defecto no visiblel -->
+<div id="ventanaModal" class="modal-custom">
+    <div class="contenido-modal">
+        <span class="cerrar">&times;</span>
+        @if ($lang == 'en')
+            <img src="{{ asset('images/mayan/des_pt1_es.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
+            <img src="{{ asset('images/mayan/des_pt2_es.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
+            <img src="{{ asset('images/mayan/des_pt3_es.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
+            <img src="{{ asset('images/mayan/des_pt4_es.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
+            <img src="{{ asset('images/mayan/menu_pt1_es.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
+            <img src="{{ asset('images/mayan/menu_pt2_es.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
+            <img src="{{ asset('images/mayan/menu_pt3_es.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
+            <img src="{{ asset('images/mayan/menu_pt4_es.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
+            <img src="{{ asset('images/mayan/cena_pt1_es.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
+            <img src="{{ asset('images/mayan/cena_pt2_es.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
+            <img src="{{ asset('images/mayan/cena_pt3_es.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
+            <img src="{{ asset('images/mayan/cena_pt4_es.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
+        @else
+            <img src="{{ asset('images/mayan/des_pt1_en.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
+            <img src="{{ asset('images/mayan/des_pt2_en.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
+            <img src="{{ asset('images/mayan/des_pt3_en.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
+            <img src="{{ asset('images/mayan/des_pt4_en.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
+            <img src="{{ asset('images/mayan/menu_pt1_en.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
+            <img src="{{ asset('images/mayan/menu_pt2_en.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
+            <img src="{{ asset('images/mayan/menu_pt3_en.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
+            <img src="{{ asset('images/mayan/menu_pt4_en.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
+            <img src="{{ asset('images/mayan/cena_pt1_en.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
+            <img src="{{ asset('images/mayan/cena_pt2_en.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
+            <img src="{{ asset('images/mayan/cena_pt3_en.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
+            <img src="{{ asset('images/mayan/cena_pt4_en.jpg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:100%;">
+        @endif
     </div>
 </div>
+
 <script type="text/javascript">
     // Ventana modal
     var modal = document.getElementById("ventanaModal");
@@ -127,7 +205,7 @@
 
     // Si el usuario hace click en la x, la ventana se cierra
     span.addEventListener("click",function() {
-        modal.style.display = "none";
+    modal.style.display = "none";
     });
 
     // Si el usuario hace click fuera de la ventana, se cierra.
