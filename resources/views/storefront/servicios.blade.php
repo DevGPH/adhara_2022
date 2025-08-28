@@ -28,10 +28,10 @@
             <div class="wrapper-inner">
                 <!-- Title -->
                 <h5>@lang('main.services.title')</h5>
-                <h1>@lang('main.services.subtitle')</h1>
-                <p>@lang('main.services.text')</p>
+                <h1 style="font-size: 40px;">@lang('main.services.subtitle')</h1>
+                <p style="text-align: justify;">@lang('main.services.text')</p>
                 <p>WhatsApp: <a href="https://wa.me/529981221861" target="_blank" style="color: #8c8cdd">+52 998 122 1861</a> @lang('main.services.text2') <a href="tel:9988816500" style="color: #8c8cdd">998 881 6500</a></p>
-                <p>@lang('main.services.text3')</p>
+                <p style="text-align: justify;">@lang('main.services.text3')</p>
                 <!-- Title End -->
                 <!-- Breadcrumb -->
                 <div class="widget-breadcrumb">
