@@ -635,8 +635,9 @@ return [
     'mayan.list.3' => 'Blue Tranquility',
     'mayan.list.4' => 'Unforgettable Sunsets',
     'mayan.list.5' => 'Affordable Prices',
-    'mayan.btn1' => 'See Menu',
-    'mayan.btn2' => 'See Videos',
+    'mayan.btn1' => 'Menu',
+    'mayan.btn2' => 'Videos',
+    'mayan.btn3' => 'Drinks',
     // Zenote Tour
     'zenote.title' => 'Extra Fun',
     'zenote.subtitle' => 'Tour Cenotes Zapote',

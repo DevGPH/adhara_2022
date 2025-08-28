@@ -7,7 +7,7 @@
   display: none; /* Por defecto, estará oculto */
   position: fixed; /* Posición fija */
   z-index: 1; /* Se situará por encima de otros elementos de la página*/
-  padding-top: 200px; /* El contenido estará situado a 200px de la parte superior */
+  padding-top: 100px; /* El contenido estará situado a 200px de la parte superior */
   left: 0;
   top: 0;
   width: 100%; /* Ancho completo */
@@ -125,6 +125,7 @@
                                 <p> @lang('main.mayan.p4') </p>
                                 <p> @lang('main.mayan.p5') </p>
                                 <btn id="abrirModal" class="btn btn-booking"> @lang('main.mayan.btn1')</btn>
+                                <btn id="abrirBebidas" class="btn btn-booking"> @lang('main.mayan.btn3')</btn>
                                 <btn id="abrirVideo" class="btn btn-booking"> @lang('main.mayan.btn2')</btn>
                             </div>
                             <!-- Room Description End -->
@@ -198,15 +199,26 @@
     </div>
 </div>
 
+<div id="bebidasModal" class="modal-custom">
+    <div class="contenido-modal">
+        <img src="{{ asset('images/mayan/bebidas_pt1_es.jpeg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:700px;">
+        <img src="{{ asset('images/mayan/bebidas_pt2_es.jpeg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:700px;">
+        <img src="{{ asset('images/mayan/bebidas_pt3_es.jpeg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:700px;">
+        <img src="{{ asset('images/mayan/bebidas_pt4_es.jpeg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:700px;">
+        <img src="{{ asset('images/mayan/bebidas_pt5_es.jpeg') }}" alt="Menu Mayan Beach Club" style="display:block;margin:0px auto;width:700px;">
+    </div>
+
 
 <script type="text/javascript">
     // Ventana modal
     var modal = document.getElementById("ventanaModal");
     var video = document.getElementById("videoModal");
+    var bebidas = document.getElementById("bebidasModal");
 
     // Botón que abre el modal
     var boton = document.getElementById("abrirModal");
     var botonVid = document.getElementById("abrirVideo");
+    var botonBeb = document.getElementById("abrirBebidas");
 
     // Hace referencia al elemento <span> que tiene la X que cierra la ventana
     var span = document.getElementsByClassName("cerrar")[0];
@@ -220,6 +232,10 @@
         video.style.display = "block";
     });
 
+    botonBeb.addEventListener("click",function() {
+        bebidas.style.display = "block";
+    });
+
     // Si el usuario hace click en la x, la ventana se cierra
     span.addEventListener("click",function() {
         modal.style.display = "none";
@@ -229,6 +245,10 @@
         video.style.display = "none";
     });
 
+    span.addEventListener("click",function() {
+        bebidas.style.display = "none";
+    });
+
     // Si el usuario hace click fuera de la ventana, se cierra.
     window.addEventListener("click",function(event) {
         if (event.target == modal) {
@@ -236,6 +256,10 @@
         }
         if (event.target == video) {
             video.style.display = "none";
+        }
+
+        if (event.target == bebidas) {
+            bebidas.style.display = "none";
         }
     });
     

@@ -634,6 +634,7 @@ return [
     'mayan.list.5' => 'Precios accesibles',
     'mayan.btn1' => 'Ver Menú',
     'mayan.btn2' => 'Ver Videos',
+    'mayan.btn3' => 'Ver Bebidas',
     // Zenote Tour
     'zenote.title' => 'Diversión adicional',
     'zenote.subtitle' => 'Tour Cenotes Zapote',
