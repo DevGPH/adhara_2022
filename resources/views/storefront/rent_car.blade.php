@@ -172,6 +172,11 @@
                             <source src="{{ asset('images/avis/avis2.mp4') }}" type="video/mp4">
                         </video>
                     </div>
+                    <div class="item">
+                        <video controls="controls" autoplay width="800" height="600" name="Video Name">
+                            <source src="{{ asset('images/avis/avis3.mp4') }}" type="video/mp4">
+                        </video>
+                    </div>
                 </div>
                 
                 <!-- Controls -->
