@@ -614,6 +614,11 @@ return [
     'mayan.text' => '¿Planeando un día en la paradisíaca Isla Mujeres? En el Hotel Adhara Cancún, queremos que tu experiencia sea perfecta desde el inicio. Por ser nuestro huésped, disfruta de un descuento especial en el acceso a Mayan Beach, un exclusivo beach club ubicado en Playa Norte, considerada una de las playas más hermosas del mundo. Pasa un día agradable y relajante bajo el sol, con la ventaja de que el costo de tu acceso es reembolsable en consumo de alimentos y bebidas dentro del club.',
     'mayan.text2' => "Para conocer los términos y condiciones de este increíble beneficio en Mayan Beach, por favor, consulta en nuestra recepción.
     <br>Importante: El costo del acceso al beach club no esta incluido en tu estancia.",
+    'mayan.text3' => '¿Te preguntas cómo llegar a Mayan Beach Club en Isla Mujeres? Es muy sencillo: solo necesitas tomar un ferri desde la Marina de Puerto Juárez.
+        Para que tu viaje sea más fácil, como huésped tienes el beneficio de un traslado gratuito de ida a la marina en nuestra van.
+        <br> - La van sale del hotel todos los días a las 9:00 a.m.
+        <br> - Para asegurar tu lugar, es importante que reserves el servicio con el personal de botones con antelación.
+        <br> - Ten en cuenta que la disponibilidad puede variar.',
     'mayan.live' => 'WHATSAPP',
     'mayan.p' => 'Reserva con anticipación',
     'mayan.p2' => 'Tu acceso a Mayan Beach Club',
@@ -627,6 +632,8 @@ return [
     'mayan.list.3' => 'Paz Azul',
     'mayan.list.4' => 'Atardeceres inigualables',
     'mayan.list.5' => 'Precios accesibles',
+    'mayan.btn1' => 'Ver Menú',
+    'mayan.btn2' => 'Ver Videos',
     // Zenote Tour
     'zenote.title' => 'Diversión adicional',
     'zenote.subtitle' => 'Tour Cenotes Zapote',

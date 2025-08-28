@@ -1,5 +1,7 @@
 @extends('layouts.app')
-
+<style>
+    
+</style>
 @section('content')
 @if (session('error'))
     <div class="alert alert-danger alert-dismissible" role="alert" style="display:inline-block;">
@@ -17,6 +19,7 @@
                 <h5>@lang('main.mayan.title')</h5>
                 <h1>@lang('main.mayan.subtitle')</h1>
                 <p> @lang('main.mayan.text')</p>
+                <p> @lang('main.mayan.text3')</p>
                 <p> @lang('main.mayan.text2')</p>
                 <!-- Title End -->
                 <!-- Breadcrumb -->
@@ -66,6 +69,8 @@
                                 <h5>@lang('main.mayan.p3')</h5>
                                 <p> @lang('main.mayan.p4') </p>
                                 <p> @lang('main.mayan.p5') </p>
+                                <button id="abrirModal" class="btn btn-booking"> @lang('main.mayan.btn1')</button>
+                                <a href="#" target="_blank" class="btn btn-booking"> @lang('main.mayan.btn2')</a>
                             </div>
                             <!-- Room Description End -->
                         </div>
@@ -96,7 +101,42 @@
         </div>
     </div>
     <!-- Section Rooms Detail End -->
+    <!-- Ventana modal, por defecto no visiblel -->
+    <div id="ventanaModal" class="modal-custom">
+        <div class="contenido-modal">
+            <span class="cerrar">&times;</span>
+            <h2>Ventana modal</h2>
+            <p>Esto es el texto de la ventana</p>
+        </div>
+    </div>
 </div>
+<script type="text/javascript">
+    // Ventana modal
+    var modal = document.getElementById("ventanaModal");
 
+    // Botón que abre el modal
+    var boton = document.getElementById("abrirModal");
+
+    // Hace referencia al elemento <span> que tiene la X que cierra la ventana
+    var span = document.getElementsByClassName("cerrar")[0];
+
+    // Cuando el usuario hace click en el botón, se abre la ventana
+    boton.addEventListener("click",function() {
+    modal.style.display = "block";
+    });
+
+    // Si el usuario hace click en la x, la ventana se cierra
+    span.addEventListener("click",function() {
+        modal.style.display = "none";
+    });
+
+    // Si el usuario hace click fuera de la ventana, se cierra.
+    window.addEventListener("click",function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+    });
+    
+</script>
 
 @endsection
